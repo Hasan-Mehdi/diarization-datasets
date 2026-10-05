@@ -92,6 +92,17 @@ Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar
 
 **Time-offset check (farfield):** 0 of 5 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.25 s.
 <!-- /auto:diagnosis -->
+**Reading the DiPCo numbers: padding plus a lot of real overlap.** DER on the eval sessions is 36.2% far-field and
+27.3% on the close-talk mix at collar 0 (28.1% / 19.4% at 0.25 s), almost all missed speech. Two causes:
+- **Padding (reference):** the 10-15 s segments contain pauses. About half of the speaker-agnostic missed speech
+  on the close-talk mix (6.3 of 12.3 points) is silent on the headsets, and the official segments hold 4.87 h of
+  speech against 4.04 h of measured headset activity. Against the close-talk activity reference, DER at collar
+  0.25 s drops from 28.1% to 18.3% (far-field) and from 19.4% to 17.2% (close-talk mix).
+- **Overlap (model):** the overlap is genuine: 26.5% of speech even by headset activity. Many of the remaining
+  misses are a second or third simultaneous talker that the model does not report, which is a real model limit.
+Speaker counting is perfect on the close-talk mix and 40% on the far-field mic (it finds 5 instead of 4 speakers). No
+session is time-shifted, and the few long audible false alarms are short unlabelled phrases.
+
 
 ## Quality rating
 

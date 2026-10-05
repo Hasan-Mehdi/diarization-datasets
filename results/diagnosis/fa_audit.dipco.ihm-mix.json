@@ -1,0 +1,37 @@
+{
+ "dataset": "dipco",
+ "view": "ihm-mix",
+ "regions_checked": 3,
+ "regions": [
+  {
+   "session_id": "dipco__S03",
+   "start": 718.6,
+   "end": 721.25,
+   "dur": 2.65,
+   "whisper": "It's also good to know that that's not what you will be remembering.",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "dipco__S01",
+   "start": 1349.88,
+   "end": 1351.64,
+   "dur": 1.76,
+   "whisper": "Especially for San Francisco.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "dipco__S03",
+   "start": 715.67,
+   "end": 716.95,
+   "dur": 1.28,
+   "whisper": "Definitely good to go out on a high note.",
+   "words": 9,
+   "speech": true
+  }
+ ],
+ "regions_with_speech": 3,
+ "seconds_checked": 5.7,
+ "seconds_with_speech": 5.7
+}

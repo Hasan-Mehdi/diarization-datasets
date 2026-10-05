@@ -1,0 +1,46 @@
+{
+ "dataset": "dipco",
+ "view": "ihm-mix",
+ "sessions": 5,
+ "median_abs_best_lag_s": 0.1,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "dipco__S01",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8804,
+   "agreement_best": 0.8824,
+   "gain": 0.0021
+  },
+  {
+   "session_id": "dipco__S03",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.9099,
+   "agreement_best": 0.9103,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "dipco__S06",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8784,
+   "agreement_best": 0.8786,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "dipco__S07",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8652,
+   "agreement_best": 0.8652,
+   "gain": 0.0
+  },
+  {
+   "session_id": "dipco__S08",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8438,
+   "agreement_best": 0.8454,
+   "gain": 0.0016
+  }
+ ]
+}
