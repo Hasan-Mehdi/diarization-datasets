@@ -6,10 +6,11 @@ speaker_cache_update_period=300, speaker_cache_length=264 (80 ms frames), i.e. e
 (30.4 s)" configuration of the model card. Frame probabilities are thresholded at 0.5 with no other
 post-processing (same as ``processor.extract_speaker_dict``).
 
-Outputs (under ``--out``, default ``<work>/nemotron/<dataset>.<view>``):
-  hyp/<session>.rttm        hypotheses
-  probs/<session>.npz       float16 speaker probabilities at 10 ms (for later analysis)
-  results.json / results.md per-session and overall DER/JER at collar 0 and 0.25 s (+ alternative references)
+Outputs:
+  <work>/nemotron/<dataset>.<view>/hyp/<session>.rttm   hypotheses (re-used on later runs: delete to recompute)
+  <work>/nemotron/<dataset>.<view>/probs/<session>.npz  float16 speaker probabilities at 10 ms
+  <out>/results.json, results.md                       per-session and overall DER/JER at collar 0 and 0.25 s
+                                                       (+ alternative references); default out = the work dir
 """
 from __future__ import annotations
 
@@ -77,6 +78,22 @@ class NemotronDiarizer:
         return sorted(segs)
 
 
+class _CachedInfo:
+    """Stand-in when every hypothesis is already cached (no model load needed)."""
+
+    def __init__(self, model_id):
+        self.model_id = model_id
+        self.config = {"chunk_length": 340, "chunk_right_context": 40, "fifo_length": 40,
+                       "speaker_cache_update_period": 300, "speaker_cache_length": 264, "dtype": "float32"}
+        self.frame = 0.01
+        try:
+            from huggingface_hub import model_info
+
+            self.revision = model_info(model_id).sha
+        except Exception:
+            self.revision = None
+
+
 def select_sessions(sessions: list[Session], splits=None, limit=None, max_hours=None, ids=None) -> list[Session]:
     if ids:
         wanted = set(ids)
@@ -104,17 +121,20 @@ def evaluate_dataset(name: str, root=None, view=None, splits=None, limit=None, m
     chosen = select_sessions(ds.sessions(view=view), splits, limit, max_hours, sessions)
     if not chosen:
         raise SystemExit(f"no sessions selected for {name}/{view}")
-    out = Path(out) if out else work_root() / "nemotron" / f"{name}.{view}"
-    (out / "hyp").mkdir(parents=True, exist_ok=True)
-    (out / "probs").mkdir(parents=True, exist_ok=True)
-    dz = diarizer or NemotronDiarizer(model_id)
+    work = work_root() / "nemotron" / f"{name}.{view}"
+    out = Path(out) if out else work
+    out.mkdir(parents=True, exist_ok=True)
+    (work / "hyp").mkdir(parents=True, exist_ok=True)
+    (work / "probs").mkdir(parents=True, exist_ok=True)
+    todo = [s for s in chosen if not (work / "hyp" / f"{s.session_id}.rttm").exists()]
+    dz = diarizer or (NemotronDiarizer(model_id) if todo else _CachedInfo(model_id))
     variants = sorted({k for s in chosen for k in s.alt_rttm})
     scorers = {(ref, c): Scorer(c) for ref in ["primary", *variants] for c in COLLARS}
     rows = []
     t_audio = t_proc = 0.0
     for s in chosen:
-        hyp_path = out / "hyp" / f"{s.session_id}.rttm"
-        prob_path = out / "probs" / f"{s.session_id}.npz"
+        hyp_path = work / "hyp" / f"{s.session_id}.rttm"
+        prob_path = work / "probs" / f"{s.session_id}.npz"
         if hyp_path.exists():
             hyp = read_rttm_single(hyp_path)
             proc = None

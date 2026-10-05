@@ -6,9 +6,10 @@ Audio: doctor and patient were recorded on separate channels (from the video-cal
 them (like the repo's ``scripts/mix_audio.sh``); the separate channels are kept under the raw directory.
 References:
   * primary: the official utterance-level TextGrid transcripts (one tier per channel; empty intervals = no speech).
-  * rttm_alt/channel_vad: speaker activity measured on each speaker's *own* channel with the energy VAD in
-    diards.vad (min speech 0.15 s, gaps < 0.3 s bridged). This is not human ground truth; it shows how far the
-    official timings are from what is actually audible on each channel.
+  * rttm_alt/channel_activity: when each speaker is actually making sound, measured on their *own* channel
+    (the channels are isolated by ~50 dB). Level threshold halfway (in dB) between the channel's median level inside
+    and outside its labelled utterances; 10 ms frames, 5-frame smoothing, gaps < 0.2 s bridged, < 0.1 s dropped.
+    Not human ground truth, but a much tighter speech/non-speech reference; see PRIMOCK57.md.
 Speaker ids: <consultation>_doctor / <consultation>_patient (doctor identities are not published per file).
 Split: ``all``. UEM: whole recording.
 """
@@ -24,7 +25,8 @@ from ..audio import is_normalized, load_mono16k, write_array
 from ..config import raw_root
 from ..core import DatasetMeta, DatasetWriter
 from ..download import download, git_clone
-from ..vad import energy_vad
+from ..annotation import merge_intervals
+from ..vad import HOP, frame_energy_db
 
 REPO = "https://github.com/babylonhealth/primock57.git"
 MEDIA = "https://media.githubusercontent.com/media/babylonhealth/primock57/main/audio/{name}"
@@ -46,9 +48,26 @@ META = DatasetMeta(
     gt_rating="D",
     gt_rating_reason="Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems.",
     choices=["Speaker ids: <consultation>_doctor / _patient.", "UEM: whole recording.",
-             "Alternative reference rttm_alt/channel_vad from per-channel energy VAD (diagnostic only)."],
+             "Alternative reference rttm_alt/channel_activity from calibrated per-channel activity (diagnostic)."],
     domain="medical consultations (remote, 2 speakers)",
 )
+
+
+def channel_activity(x: np.ndarray, labelled: list[tuple[float, float]], fill: float = 0.2,
+                     min_len: float = 0.1) -> tuple[list[tuple[float, float]], float]:
+    """Own-channel activity with a level threshold calibrated on the labelled vs unlabelled level medians."""
+    e = frame_energy_db(x)
+    lab = np.zeros(len(e), bool)
+    for a, b in labelled:
+        lab[int(a / HOP): int(b / HOP)] = True
+    if not lab.any() or lab.all():
+        return [], float("nan")
+    thr = (float(np.median(e[lab])) + float(np.median(e[~lab]))) / 2
+    act = np.convolve((e > thr).astype(float), np.ones(5) / 5, mode="same") > 0.5
+    d = np.diff(np.concatenate([[0], act.astype(np.int8), [0]]))
+    ivs = [(a * HOP, b * HOP) for a, b in zip(np.flatnonzero(d == 1), np.flatnonzero(d == -1))]
+    ivs = merge_intervals(ivs, gap=fill)
+    return [(a, b) for a, b in ivs if b - a >= min_len], thr
 
 
 def read_textgrid(path: Path) -> list[tuple[float, float, str]]:
@@ -81,13 +100,13 @@ def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
             if m > 0.9:
                 mixed *= 0.9 / m
             write_array(w.audio_path(sid), mixed.astype(np.float32))
-        segs, words, vad_segs = [], [], []
+        segs, act_segs = [], []
         for role in ("doctor", "patient"):
             spk = f"{c}_{role}"
-            for a, b, t in read_textgrid(repo / "transcripts" / f"{c}_{role}.TextGrid"):
-                segs.append(Segment(a, b, spk))
-            ivs, _ = energy_vad(chans[role])
-            vad_segs += [Segment(a, b, spk) for a, b in ivs]
-        w.add_session(c, "all", segs, alt_refs={"channel_vad": vad_segs})
+            utts = [(a, b) for a, b, t in read_textgrid(repo / "transcripts" / f"{c}_{role}.TextGrid")]
+            segs += [Segment(a, b, spk) for a, b in utts]
+            ivs, _ = channel_activity(chans[role], utts)
+            act_segs += [Segment(a, b, spk) for a, b in ivs]
+        w.add_session(c, "all", segs, alt_refs={"channel_activity": act_segs})
         print(f"  [primock57] {c} ok", flush=True)
     w.finalize([{"url": REPO}])
