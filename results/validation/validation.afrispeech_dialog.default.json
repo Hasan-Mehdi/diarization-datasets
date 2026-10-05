@@ -1,0 +1,2730 @@
+{
+ "summary": {
+  "dataset": "afrispeech_dialog",
+  "view": "default",
+  "sessions": 46,
+  "errors": 0,
+  "warnings": 35,
+  "issue_counts": {
+   "info:segments_under_50ms": 20,
+   "info:silence_over_30s": 5,
+   "warning:possible_unannotated_speech": 7,
+   "warning:segments_over_60s": 28
+  },
+  "raw_label_issue_totals": {
+   "zero_duration": 63,
+   "same_speaker_overlap": 5,
+   "negative_duration": 16,
+   "negative_start": 1
+  },
+  "sessions_with_raw_label_issues": 21,
+  "vad": {
+   "ref_speech_h": 6.16,
+   "vad_not_in_ref_frac": 0.0278,
+   "ref_not_in_vad_frac": 0.0473,
+   "worst_sessions": [
+    [
+     "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
+     0.2569
+    ],
+    [
+     "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
+     0.2206
+    ],
+    [
+     "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
+     0.1212
+    ],
+    [
+     "afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d",
+     0.1051
+    ],
+    [
+     "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
+     0.0896
+    ],
+    [
+     "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
+     0.0833
+    ],
+    [
+     "afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92",
+     0.06
+    ],
+    [
+     "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
+     0.042
+    ],
+    [
+     "afrispeech_dialog__eceb9468-7001-4ee0-9475-13486e5352ae",
+     0.041
+    ],
+    [
+     "afrispeech_dialog__cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d",
+     0.03
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "afrispeech_dialog__0adaefab-c0fa-4d55-9564-100d2bd5bd93",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "2 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 75.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -50.5,
+     "threshold_db": -41.5,
+     "p99_db": -22.0,
+     "vad_speech_s": 93.9,
+     "ref_speech_s": 122.0,
+     "vad_not_in_ref_s": 0.5,
+     "vad_not_in_ref_frac_of_ref": 0.0041,
+     "ref_not_in_vad_s": 12.9,
+     "ref_not_in_vad_frac": 0.1057,
+     "longest_vad_not_in_ref": [
+      [
+       29.25,
+       29.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 1,
+    "same_speaker_overlap": 1,
+    "examples": {
+     "zero_duration": [
+      [
+       44.01,
+       44.01,
+       "0adaefab-c0fa-4d55-9564-100d2bd5bd93_Speaker2"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       44.01,
+       116.01,
+       "0adaefab-c0fa-4d55-9564-100d2bd5bd93_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__0f572000-4660-4c37-addc-3443e3448e0c",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 260.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -53.2,
+     "threshold_db": -42.5,
+     "p99_db": -17.5,
+     "vad_speech_s": 309.0,
+     "ref_speech_s": 364.9,
+     "vad_not_in_ref_s": 3.6,
+     "vad_not_in_ref_frac_of_ref": 0.0098,
+     "ref_not_in_vad_s": 10.9,
+     "ref_not_in_vad_frac": 0.0298,
+     "longest_vad_not_in_ref": [
+      [
+       359.22,
+       361.65
+      ],
+      [
+       0.57,
+       1.71
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 2,
+    "examples": {
+     "zero_duration": [
+      [
+       360.99,
+       360.99,
+       "0f572000-4660-4c37-addc-3443e3448e0c_Speaker1"
+      ],
+      [
+       360.99,
+       360.99,
+       "0f572000-4660-4c37-addc-3443e3448e0c_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__136be64d-ca9e-473e-9c0e-fc4b008de0cd",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "13 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 135.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -68.8,
+     "threshold_db": -57.1,
+     "p99_db": -29.9,
+     "vad_speech_s": 709.4,
+     "ref_speech_s": 825.0,
+     "vad_not_in_ref_s": 12.4,
+     "vad_not_in_ref_frac_of_ref": 0.0151,
+     "ref_not_in_vad_s": 43.9,
+     "ref_not_in_vad_frac": 0.0533,
+     "longest_vad_not_in_ref": [
+      [
+       810.25,
+       813.72
+      ],
+      [
+       638.61,
+       641.72
+      ],
+      [
+       577.26,
+       578.77
+      ],
+      [
+       196.27,
+       197.48
+      ],
+      [
+       592.22,
+       592.77
+      ],
+      [
+       524.23,
+       524.77
+      ],
+      [
+       729.24,
+       729.77
+      ],
+      [
+       237.25,
+       237.76
+      ],
+      [
+       653.26,
+       653.77
+      ],
+      [
+       442.23,
+       442.73
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "negative_duration": 3,
+    "examples": {
+     "negative_duration": [
+      [
+       511.0,
+       510.98,
+       "136be64d-ca9e-473e-9c0e-fc4b008de0cd_Speaker1"
+      ],
+      [
+       524.02,
+       524.01,
+       "136be64d-ca9e-473e-9c0e-fc4b008de0cd_Speaker1"
+      ],
+      [
+       578.02,
+       578.0,
+       "136be64d-ca9e-473e-9c0e-fc4b008de0cd_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__17745a2c-6705-42df-9949-bbe78aa70307",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "4 segment(s) longer than 60 s (merged turns?)",
+     "longest": 128.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -46.9,
+     "threshold_db": -36.0,
+     "p99_db": -10.7,
+     "vad_speech_s": 348.1,
+     "ref_speech_s": 467.0,
+     "vad_not_in_ref_s": 1.1,
+     "vad_not_in_ref_frac_of_ref": 0.0022,
+     "ref_not_in_vad_s": 37.1,
+     "ref_not_in_vad_frac": 0.0795,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       0.53
+      ],
+      [
+       158.25,
+       158.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__185152d7-0c16-45e5-8f1e-862e5766f39a",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 77.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -53.3,
+     "threshold_db": -43.0,
+     "p99_db": -18.9,
+     "vad_speech_s": 730.2,
+     "ref_speech_s": 886.0,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0008,
+     "ref_not_in_vad_s": 51.2,
+     "ref_not_in_vad_frac": 0.0578,
+     "longest_vad_not_in_ref": [
+      [
+       886.24,
+       886.96
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 12,
+    "examples": {
+     "zero_duration": [
+      [
+       44.03,
+       44.03,
+       "185152d7-0c16-45e5-8f1e-862e5766f39a_Speaker2"
+      ],
+      [
+       163.01,
+       163.01,
+       "185152d7-0c16-45e5-8f1e-862e5766f39a_Speaker2"
+      ],
+      [
+       196.99,
+       196.99,
+       "185152d7-0c16-45e5-8f1e-862e5766f39a_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__27f9dfd2-193a-46f1-8d2b-f87fb84b6b6a",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "2 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 94.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.8,
+     "threshold_db": -62.0,
+     "p99_db": -25.1,
+     "vad_speech_s": 263.6,
+     "ref_speech_s": 292.0,
+     "vad_not_in_ref_s": 1.9,
+     "vad_not_in_ref_frac_of_ref": 0.0066,
+     "ref_not_in_vad_s": 10.3,
+     "ref_not_in_vad_frac": 0.0352,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       0.75
+      ],
+      [
+       114.28,
+       114.92
+      ],
+      [
+       311.27,
+       311.81
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__30a5b6a2-8370-4dac-bc7f-e4ae7c1d8562",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "8 segment(s) longer than 60 s (merged turns?)",
+     "longest": 199.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -58.1,
+     "threshold_db": -45.9,
+     "p99_db": -17.6,
+     "vad_speech_s": 1012.5,
+     "ref_speech_s": 1176.1,
+     "vad_not_in_ref_s": 6.3,
+     "vad_not_in_ref_frac_of_ref": 0.0053,
+     "ref_not_in_vad_s": 31.0,
+     "ref_not_in_vad_frac": 0.0263,
+     "longest_vad_not_in_ref": [
+      [
+       622.27,
+       627.26
+      ],
+      [
+       1040.26,
+       1041.04
+      ],
+      [
+       828.27,
+       828.78
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__363c7601-e830-4db8-ae3b-ae88b9fb29e1",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 457.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -73.5,
+     "threshold_db": -58.0,
+     "p99_db": -22.0,
+     "vad_speech_s": 591.0,
+     "ref_speech_s": 637.9,
+     "vad_not_in_ref_s": 2.1,
+     "vad_not_in_ref_frac_of_ref": 0.0033,
+     "ref_not_in_vad_s": 9.7,
+     "ref_not_in_vad_frac": 0.0152,
+     "longest_vad_not_in_ref": [
+      [
+       11.29,
+       12.09
+      ],
+      [
+       0.0,
+       0.75
+      ],
+      [
+       649.25,
+       649.8
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__3e27c06c-8ba1-4511-88e6-c75b2d9d8839",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "3 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 150.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -69.9,
+     "threshold_db": -54.8,
+     "p99_db": -19.7,
+     "vad_speech_s": 357.9,
+     "ref_speech_s": 370.9,
+     "vad_not_in_ref_s": 9.5,
+     "vad_not_in_ref_frac_of_ref": 0.0257,
+     "ref_not_in_vad_s": 5.6,
+     "ref_not_in_vad_frac": 0.0151,
+     "longest_vad_not_in_ref": [
+      [
+       80.28,
+       81.77
+      ],
+      [
+       165.28,
+       166.75
+      ],
+      [
+       133.26,
+       134.25
+      ],
+      [
+       394.55,
+       395.32
+      ],
+      [
+       38.99,
+       39.75
+      ],
+      [
+       1.03,
+       1.74
+      ],
+      [
+       400.31,
+       401.01
+      ],
+      [
+       87.23,
+       87.76
+      ],
+      [
+       52.25,
+       52.78
+      ],
+      [
+       157.24,
+       157.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 1,
+    "examples": {
+     "zero_duration": [
+      [
+       52.0,
+       52.0,
+       "3e27c06c-8ba1-4511-88e6-c75b2d9d8839_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__49542e8d-b799-4d91-94e8-fd1571e51741",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -50.2,
+     "threshold_db": -41.1,
+     "p99_db": -19.9,
+     "vad_speech_s": 343.2,
+     "ref_speech_s": 381.9,
+     "vad_not_in_ref_s": 3.6,
+     "vad_not_in_ref_frac_of_ref": 0.0093,
+     "ref_not_in_vad_s": 15.7,
+     "ref_not_in_vad_frac": 0.041,
+     "longest_vad_not_in_ref": [
+      [
+       339.27,
+       340.01
+      ],
+      [
+       0.03,
+       0.74
+      ],
+      [
+       405.81,
+       406.4
+      ],
+      [
+       132.25,
+       132.78
+      ],
+      [
+       291.25,
+       291.75
+      ],
+      [
+       341.24,
+       341.74
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 1,
+    "examples": {
+     "zero_duration": [
+      [
+       189.98,
+       189.98,
+       "49542e8d-b799-4d91-94e8-fd1571e51741_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__4d398d1f-5058-4e5b-8070-23f42089f14e",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "5 segment(s) longer than 60 s (merged turns?)",
+     "longest": 168.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -57.1,
+     "threshold_db": -44.4,
+     "p99_db": -14.6,
+     "vad_speech_s": 534.9,
+     "ref_speech_s": 619.8,
+     "vad_not_in_ref_s": 0.5,
+     "vad_not_in_ref_frac_of_ref": 0.0008,
+     "ref_not_in_vad_s": 19.1,
+     "ref_not_in_vad_frac": 0.0307,
+     "longest_vad_not_in_ref": [
+      [
+       537.24,
+       537.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "7 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -56.8,
+     "threshold_db": -43.7,
+     "p99_db": -13.1,
+     "vad_speech_s": 536.0,
+     "ref_speech_s": 560.1,
+     "vad_not_in_ref_s": 23.5,
+     "vad_not_in_ref_frac_of_ref": 0.042,
+     "ref_not_in_vad_s": 18.6,
+     "ref_not_in_vad_frac": 0.0331,
+     "longest_vad_not_in_ref": [
+      [
+       471.7,
+       481.7
+      ],
+      [
+       465.7,
+       470.94
+      ],
+      [
+       0.0,
+       1.69
+      ],
+      [
+       514.24,
+       515.69
+      ],
+      [
+       380.24,
+       381.49
+      ],
+      [
+       464.21,
+       465.17
+      ],
+      [
+       382.85,
+       383.71
+      ],
+      [
+       420.2,
+       420.75
+      ],
+      [
+       143.2,
+       143.72
+      ],
+      [
+       56.23,
+       56.74
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       163.99,
+       169.98,
+       "60344b07-b93e-4e14-8b1b-d544d9cd6a16_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__83a0b048-c0e3-4929-9b29-278a873ab7c6",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 190.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -54.2,
+     "threshold_db": -42.6,
+     "p99_db": -15.5,
+     "vad_speech_s": 769.3,
+     "ref_speech_s": 896.9,
+     "vad_not_in_ref_s": 2.5,
+     "vad_not_in_ref_frac_of_ref": 0.0028,
+     "ref_not_in_vad_s": 31.8,
+     "ref_not_in_vad_frac": 0.0355,
+     "longest_vad_not_in_ref": [
+      [
+       897.2,
+       898.54
+      ],
+      [
+       899.01,
+       900.17
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 11,
+    "examples": {
+     "zero_duration": [
+      [
+       51.96,
+       51.96,
+       "83a0b048-c0e3-4929-9b29-278a873ab7c6_Speaker1"
+      ],
+      [
+       122.99,
+       122.99,
+       "83a0b048-c0e3-4929-9b29-278a873ab7c6_Speaker2"
+      ],
+      [
+       146.97,
+       146.97,
+       "83a0b048-c0e3-4929-9b29-278a873ab7c6_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__98cc8263-54e8-4101-8942-7ae18f1e082b",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 417.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -69.6,
+     "threshold_db": -56.0,
+     "p99_db": -24.1,
+     "vad_speech_s": 728.8,
+     "ref_speech_s": 790.9,
+     "vad_not_in_ref_s": 3.3,
+     "vad_not_in_ref_frac_of_ref": 0.0041,
+     "ref_not_in_vad_s": 8.1,
+     "ref_not_in_vad_frac": 0.0103,
+     "longest_vad_not_in_ref": [
+      [
+       2.25,
+       3.75
+      ],
+      [
+       0.0,
+       0.74
+      ],
+      [
+       20.26,
+       20.78
+      ],
+      [
+       787.27,
+       787.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__9c267f6c-5a01-4174-bdd3-a53ff045f506",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "4 segment(s) longer than 60 s (merged turns?)",
+     "longest": 140.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -61.9,
+     "threshold_db": -50.7,
+     "p99_db": -24.5,
+     "vad_speech_s": 435.4,
+     "ref_speech_s": 527.0,
+     "vad_not_in_ref_s": 6.1,
+     "vad_not_in_ref_frac_of_ref": 0.0115,
+     "ref_not_in_vad_s": 32.1,
+     "ref_not_in_vad_frac": 0.0609,
+     "longest_vad_not_in_ref": [
+      [
+       370.58,
+       372.74
+      ],
+      [
+       473.34,
+       474.79
+      ],
+      [
+       0.73,
+       1.75
+      ],
+      [
+       534.29,
+       535.09
+      ],
+      [
+       536.13,
+       536.78
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__ad6848ae-2614-4da8-b129-62b0d86e8926",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 179.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -73.7,
+     "threshold_db": -58.5,
+     "p99_db": -23.2,
+     "vad_speech_s": 471.4,
+     "ref_speech_s": 521.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 16.0,
+     "ref_not_in_vad_frac": 0.0306,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 5,
+    "examples": {
+     "zero_duration": [
+      [
+       228.03,
+       228.03,
+       "ad6848ae-2614-4da8-b129-62b0d86e8926_Speaker1"
+      ],
+      [
+       295.04,
+       295.04,
+       "ad6848ae-2614-4da8-b129-62b0d86e8926_Speaker2"
+      ],
+      [
+       364.02,
+       364.02,
+       "ad6848ae-2614-4da8-b129-62b0d86e8926_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "4 segment(s) longer than 60 s (merged turns?)",
+     "longest": 168.0
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       797.0,
+       885.5
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 66 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 8.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -52.2,
+     "threshold_db": -43.0,
+     "p99_db": -21.6,
+     "vad_speech_s": 723.0,
+     "ref_speech_s": 797.0,
+     "vad_not_in_ref_s": 66.4,
+     "vad_not_in_ref_frac_of_ref": 0.0833,
+     "ref_not_in_vad_s": 47.2,
+     "ref_not_in_vad_frac": 0.0593,
+     "longest_vad_not_in_ref": [
+      [
+       829.94,
+       839.97
+      ],
+      [
+       862.56,
+       868.89
+      ],
+      [
+       815.15,
+       820.49
+      ],
+      [
+       809.4,
+       813.87
+      ],
+      [
+       846.46,
+       850.86
+      ],
+      [
+       853.82,
+       857.31
+      ],
+      [
+       825.08,
+       828.47
+      ],
+      [
+       869.85,
+       872.97
+      ],
+      [
+       797.25,
+       800.15
+      ],
+      [
+       841.05,
+       843.89
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 18,
+    "examples": {
+     "zero_duration": [
+      [
+       56.98,
+       56.98,
+       "b5079ba2-df1c-448d-89f4-685241747496_Speaker1"
+      ],
+      [
+       64.98,
+       64.98,
+       "b5079ba2-df1c-448d-89f4-685241747496_Speaker2"
+      ],
+      [
+       194.02,
+       194.02,
+       "b5079ba2-df1c-448d-89f4-685241747496_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__b945928d-8fd3-4b41-80ce-6c029486c454",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "11 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 108.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -48.7,
+     "threshold_db": -37.8,
+     "p99_db": -12.3,
+     "vad_speech_s": 833.2,
+     "ref_speech_s": 885.9,
+     "vad_not_in_ref_s": 6.4,
+     "vad_not_in_ref_frac_of_ref": 0.0072,
+     "ref_not_in_vad_s": 17.5,
+     "ref_not_in_vad_frac": 0.0197,
+     "longest_vad_not_in_ref": [
+      [
+       841.24,
+       842.31
+      ],
+      [
+       463.27,
+       464.33
+      ],
+      [
+       371.27,
+       372.0
+      ],
+      [
+       706.23,
+       706.76
+      ],
+      [
+       47.27,
+       47.78
+      ],
+      [
+       301.27,
+       301.78
+      ],
+      [
+       871.26,
+       871.77
+      ],
+      [
+       290.26,
+       290.76
+      ],
+      [
+       361.24,
+       361.74
+      ],
+      [
+       709.25,
+       709.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "negative_duration": 3,
+    "same_speaker_overlap": 1,
+    "examples": {
+     "negative_duration": [
+      [
+       403.03,
+       402.99,
+       "b945928d-8fd3-4b41-80ce-6c029486c454_Speaker1"
+      ],
+      [
+       783.03,
+       783.0,
+       "b945928d-8fd3-4b41-80ce-6c029486c454_Speaker2"
+      ],
+      [
+       842.02,
+       841.98,
+       "b945928d-8fd3-4b41-80ce-6c029486c454_Speaker1"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       319.0,
+       336.02,
+       "b945928d-8fd3-4b41-80ce-6c029486c454_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__bb52e43b-e30c-4fb7-87d6-97ee79ce25ea",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 376.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -70.6,
+     "threshold_db": -56.8,
+     "p99_db": -24.8,
+     "vad_speech_s": 715.7,
+     "ref_speech_s": 787.0,
+     "vad_not_in_ref_s": 5.5,
+     "vad_not_in_ref_frac_of_ref": 0.007,
+     "ref_not_in_vad_s": 6.7,
+     "ref_not_in_vad_frac": 0.0085,
+     "longest_vad_not_in_ref": [
+      [
+       794.23,
+       795.74
+      ],
+      [
+       81.65,
+       82.7
+      ],
+      [
+       86.7,
+       87.74
+      ],
+      [
+       66.71,
+       67.72
+      ],
+      [
+       0.0,
+       0.88
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__c1fd9c2e-cd94-46d4-83c1-7ad12c4720a2",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "3 segment(s) longer than 60 s (merged turns?)",
+     "longest": 365.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -72.7,
+     "threshold_db": -57.6,
+     "p99_db": -22.4,
+     "vad_speech_s": 739.9,
+     "ref_speech_s": 819.0,
+     "vad_not_in_ref_s": 1.5,
+     "vad_not_in_ref_frac_of_ref": 0.0019,
+     "ref_not_in_vad_s": 26.8,
+     "ref_not_in_vad_frac": 0.0327,
+     "longest_vad_not_in_ref": [
+      [
+       0.74,
+       1.73
+      ],
+      [
+       821.46,
+       822.01
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__c5d612f8-d493-4611-a5da-168ecbd3db35",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "5 segment(s) longer than 60 s (merged turns?)",
+     "longest": 181.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -62.3,
+     "threshold_db": -50.1,
+     "p99_db": -21.6,
+     "vad_speech_s": 837.1,
+     "ref_speech_s": 923.8,
+     "vad_not_in_ref_s": 2.2,
+     "vad_not_in_ref_frac_of_ref": 0.0024,
+     "ref_not_in_vad_s": 11.9,
+     "ref_not_in_vad_frac": 0.0129,
+     "longest_vad_not_in_ref": [
+      [
+       920.88,
+       921.72
+      ],
+      [
+       0.0,
+       0.72
+      ],
+      [
+       696.24,
+       696.91
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 1,
+    "examples": {
+     "zero_duration": [
+      [
+       921.0,
+       921.0,
+       "c5d612f8-d493-4611-a5da-168ecbd3db35_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__ca43d51b-8431-443a-bcd7-2742819032c8",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 266.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -69.2,
+     "threshold_db": -55.1,
+     "p99_db": -22.2,
+     "vad_speech_s": 399.9,
+     "ref_speech_s": 416.1,
+     "vad_not_in_ref_s": 3.4,
+     "vad_not_in_ref_frac_of_ref": 0.0083,
+     "ref_not_in_vad_s": 4.4,
+     "ref_not_in_vad_frac": 0.0105,
+     "longest_vad_not_in_ref": [
+      [
+       427.23,
+       428.92
+      ],
+      [
+       0.0,
+       0.75
+      ],
+      [
+       98.25,
+       98.76
+      ],
+      [
+       89.25,
+       89.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__ce541c27-b35d-4b11-ba04-24d3abcb85d3",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "2 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 92.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -48.9,
+     "threshold_db": -37.9,
+     "p99_db": -12.4,
+     "vad_speech_s": 334.1,
+     "ref_speech_s": 355.1,
+     "vad_not_in_ref_s": 0.6,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 4.2,
+     "ref_not_in_vad_frac": 0.0119,
+     "longest_vad_not_in_ref": [
+      [
+       363.24,
+       363.88
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "negative_start": 1,
+    "examples": {
+     "negative_start": [
+      [
+       -0.01,
+       0.95,
+       "ce541c27-b35d-4b11-ba04-24d3abcb85d3_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__df50b219-f5aa-4d56-9f33-6865c96fda2b",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "3 segment(s) longer than 60 s (merged turns?)",
+     "longest": 81.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -70.2,
+     "threshold_db": -57.6,
+     "p99_db": -28.4,
+     "vad_speech_s": 429.8,
+     "ref_speech_s": 476.9,
+     "vad_not_in_ref_s": 7.8,
+     "vad_not_in_ref_frac_of_ref": 0.0164,
+     "ref_not_in_vad_s": 8.3,
+     "ref_not_in_vad_frac": 0.0174,
+     "longest_vad_not_in_ref": [
+      [
+       478.26,
+       484.13
+      ],
+      [
+       485.0,
+       486.43
+      ],
+      [
+       208.25,
+       208.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__e0b202dc-17fe-4936-a3c7-d89c639d9cda",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 148.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -69.7,
+     "threshold_db": -55.1,
+     "p99_db": -21.1,
+     "vad_speech_s": 298.0,
+     "ref_speech_s": 338.9,
+     "vad_not_in_ref_s": 0.5,
+     "vad_not_in_ref_frac_of_ref": 0.0015,
+     "ref_not_in_vad_s": 17.3,
+     "ref_not_in_vad_frac": 0.0509,
+     "longest_vad_not_in_ref": [
+      [
+       2.27,
+       2.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "8 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "3 segment(s) longer than 60 s (merged turns?)",
+     "longest": 110.0
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       566.0,
+       622.4
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 50 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 9.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -50.2,
+     "threshold_db": -40.8,
+     "p99_db": -19.1,
+     "vad_speech_s": 489.4,
+     "ref_speech_s": 553.7,
+     "vad_not_in_ref_s": 49.6,
+     "vad_not_in_ref_frac_of_ref": 0.0896,
+     "ref_not_in_vad_s": 37.9,
+     "ref_not_in_vad_frac": 0.0684,
+     "longest_vad_not_in_ref": [
+      [
+       608.05,
+       622.45
+      ],
+      [
+       596.29,
+       607.64
+      ],
+      [
+       575.1,
+       580.34
+      ],
+      [
+       581.09,
+       586.0
+      ],
+      [
+       589.36,
+       592.63
+      ],
+      [
+       593.08,
+       595.52
+      ],
+      [
+       586.74,
+       589.06
+      ],
+      [
+       572.29,
+       574.14
+      ],
+      [
+       569.74,
+       571.16
+      ],
+      [
+       568.31,
+       569.13
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "negative_duration": 1,
+    "same_speaker_overlap": 1,
+    "examples": {
+     "negative_duration": [
+      [
+       403.03,
+       402.99,
+       "ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3_Speaker2"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       472.01,
+       499.01,
+       "ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__f01e751c-11e3-498b-a6ee-5d9bf11ac8cd",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 65.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -46.7,
+     "threshold_db": -36.4,
+     "p99_db": -12.3,
+     "vad_speech_s": 460.5,
+     "ref_speech_s": 473.2,
+     "vad_not_in_ref_s": 9.2,
+     "vad_not_in_ref_frac_of_ref": 0.0194,
+     "ref_not_in_vad_s": 3.5,
+     "ref_not_in_vad_frac": 0.0074,
+     "longest_vad_not_in_ref": [
+      [
+       302.24,
+       303.76
+      ],
+      [
+       488.25,
+       489.74
+      ],
+      [
+       341.26,
+       342.72
+      ],
+      [
+       502.38,
+       503.39
+      ],
+      [
+       19.26,
+       20.07
+      ],
+      [
+       501.24,
+       501.99
+      ],
+      [
+       476.26,
+       476.87
+      ],
+      [
+       424.22,
+       424.74
+      ],
+      [
+       154.26,
+       154.76
+      ],
+      [
+       439.26,
+       439.76
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__f1345c7a-87ca-4c7c-a22f-04dd30bdea30",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "3 segment(s) longer than 60 s (merged turns?)",
+     "longest": 253.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -74.3,
+     "threshold_db": -59.4,
+     "p99_db": -24.4,
+     "vad_speech_s": 481.3,
+     "ref_speech_s": 522.0,
+     "vad_not_in_ref_s": 6.2,
+     "vad_not_in_ref_frac_of_ref": 0.0119,
+     "ref_not_in_vad_s": 9.6,
+     "ref_not_in_vad_frac": 0.0184,
+     "longest_vad_not_in_ref": [
+      [
+       522.21,
+       528.41
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "3 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 20 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 6.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -54.6,
+     "threshold_db": -44.2,
+     "p99_db": -19.9,
+     "vad_speech_s": 289.8,
+     "ref_speech_s": 336.1,
+     "vad_not_in_ref_s": 20.1,
+     "vad_not_in_ref_frac_of_ref": 0.06,
+     "ref_not_in_vad_s": 23.9,
+     "ref_not_in_vad_frac": 0.0712,
+     "longest_vad_not_in_ref": [
+      [
+       19.23,
+       23.61
+      ],
+      [
+       24.88,
+       27.96
+      ],
+      [
+       37.85,
+       40.61
+      ],
+      [
+       244.2,
+       246.7
+      ],
+      [
+       35.83,
+       37.17
+      ],
+      [
+       32.2,
+       33.35
+      ],
+      [
+       377.7,
+       378.7
+      ],
+      [
+       366.22,
+       367.04
+      ],
+      [
+       28.74,
+       29.5
+      ],
+      [
+       0.0,
+       0.71
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__304d6402-91d8-4a4f-8a65-143a7c7675d8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -61.2,
+     "threshold_db": -49.1,
+     "p99_db": -20.9,
+     "vad_speech_s": 112.8,
+     "ref_speech_s": 208.0,
+     "vad_not_in_ref_s": 1.1,
+     "vad_not_in_ref_frac_of_ref": 0.005,
+     "ref_not_in_vad_s": 65.3,
+     "ref_not_in_vad_frac": 0.314,
+     "longest_vad_not_in_ref": [
+      [
+       208.23,
+       209.28
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "6 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 69 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -88.5,
+     "threshold_db": -66.1,
+     "p99_db": -13.8,
+     "vad_speech_s": 717.2,
+     "ref_speech_s": 654.3,
+     "vad_not_in_ref_s": 68.8,
+     "vad_not_in_ref_frac_of_ref": 0.1051,
+     "ref_not_in_vad_s": 31.6,
+     "ref_not_in_vad_frac": 0.0482,
+     "longest_vad_not_in_ref": [
+      [
+       567.24,
+       569.77
+      ],
+      [
+       113.25,
+       115.74
+      ],
+      [
+       11.26,
+       13.74
+      ],
+      [
+       99.28,
+       101.73
+      ],
+      [
+       541.68,
+       543.74
+      ],
+      [
+       0.0,
+       1.75
+      ],
+      [
+       456.27,
+       457.79
+      ],
+      [
+       57.26,
+       58.77
+      ],
+      [
+       223.24,
+       224.74
+      ],
+      [
+       546.24,
+       547.74
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       531.0,
+       685.3
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 116 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 25.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -67.7,
+     "threshold_db": -53.8,
+     "p99_db": -21.4,
+     "vad_speech_s": 532.3,
+     "ref_speech_s": 450.0,
+     "vad_not_in_ref_s": 115.6,
+     "vad_not_in_ref_frac_of_ref": 0.2569,
+     "ref_not_in_vad_s": 18.8,
+     "ref_not_in_vad_frac": 0.0418,
+     "longest_vad_not_in_ref": [
+      [
+       532.93,
+       537.62
+      ],
+      [
+       548.08,
+       552.64
+      ],
+      [
+       611.92,
+       616.16
+      ],
+      [
+       676.63,
+       680.7
+      ],
+      [
+       639.41,
+       643.47
+      ],
+      [
+       651.29,
+       655.28
+      ],
+      [
+       583.39,
+       587.24
+      ],
+      [
+       622.76,
+       626.38
+      ],
+      [
+       658.94,
+       662.45
+      ],
+      [
+       662.99,
+       665.9
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__5b8a8e4c-7463-47c4-858f-5cd8dd278d42",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "18 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -48.3,
+     "threshold_db": -38.4,
+     "p99_db": -15.4,
+     "vad_speech_s": 161.9,
+     "ref_speech_s": 162.2,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 8.8,
+     "ref_not_in_vad_frac": 0.0545,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "negative_duration": 1,
+    "zero_duration": 1,
+    "examples": {
+     "negative_duration": [
+      [
+       152.05,
+       152.0,
+       "5b8a8e4c-7463-47c4-858f-5cd8dd278d42_Speaker2"
+      ]
+     ],
+     "zero_duration": [
+      [
+       161.0,
+       161.0,
+       "5b8a8e4c-7463-47c4-858f-5cd8dd278d42_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__63e6abb7-2d8e-4df3-a52e-8e09aea762c6",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -59.4,
+     "threshold_db": -50.4,
+     "p99_db": -31.2,
+     "vad_speech_s": 197.4,
+     "ref_speech_s": 294.0,
+     "vad_not_in_ref_s": 0.6,
+     "vad_not_in_ref_frac_of_ref": 0.0019,
+     "ref_not_in_vad_s": 38.8,
+     "ref_not_in_vad_frac": 0.1319,
+     "longest_vad_not_in_ref": [
+      [
+       294.7,
+       295.26
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 5,
+    "examples": {
+     "zero_duration": [
+      [
+       109.99,
+       109.99,
+       "63e6abb7-2d8e-4df3-a52e-8e09aea762c6_Speaker2"
+      ],
+      [
+       114.0,
+       114.0,
+       "63e6abb7-2d8e-4df3-a52e-8e09aea762c6_Speaker2"
+      ],
+      [
+       116.99,
+       116.99,
+       "63e6abb7-2d8e-4df3-a52e-8e09aea762c6_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__656c42a7-6faa-4486-979f-6f64769bd221",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -45.0,
+     "threshold_db": -36.0,
+     "p99_db": -19.8,
+     "vad_speech_s": 154.8,
+     "ref_speech_s": 204.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 14.2,
+     "ref_not_in_vad_frac": 0.0696,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 2,
+    "examples": {
+     "zero_duration": [
+      [
+       80.01,
+       80.01,
+       "656c42a7-6faa-4486-979f-6f64769bd221_Speaker1"
+      ],
+      [
+       142.01,
+       142.01,
+       "656c42a7-6faa-4486-979f-6f64769bd221_Speaker1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__68f2adb6-06ab-46a6-9de6-395d89c2e1a3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -70.7,
+     "threshold_db": -55.6,
+     "p99_db": -20.6,
+     "vad_speech_s": 353.6,
+     "ref_speech_s": 400.0,
+     "vad_not_in_ref_s": 5.9,
+     "vad_not_in_ref_frac_of_ref": 0.0149,
+     "ref_not_in_vad_s": 7.9,
+     "ref_not_in_vad_frac": 0.0198,
+     "longest_vad_not_in_ref": [
+      [
+       400.23,
+       405.68
+      ],
+      [
+       406.06,
+       406.56
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 70.1
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       471.0,
+       542.0
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 57 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 12.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -55.3,
+     "threshold_db": -46.3,
+     "p99_db": -26.1,
+     "vad_speech_s": 420.8,
+     "ref_speech_s": 471.0,
+     "vad_not_in_ref_s": 57.1,
+     "vad_not_in_ref_frac_of_ref": 0.1212,
+     "ref_not_in_vad_s": 48.3,
+     "ref_not_in_vad_frac": 0.1026,
+     "longest_vad_not_in_ref": [
+      [
+       475.81,
+       481.08
+      ],
+      [
+       531.91,
+       536.61
+      ],
+      [
+       520.13,
+       524.44
+      ],
+      [
+       514.06,
+       517.72
+      ],
+      [
+       536.99,
+       540.59
+      ],
+      [
+       482.72,
+       486.14
+      ],
+      [
+       486.55,
+       489.92
+      ],
+      [
+       509.92,
+       513.27
+      ],
+      [
+       490.4,
+       493.55
+      ],
+      [
+       527.63,
+       530.64
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__818f0aa2-ce0f-4e82-96ee-d66e192a2fca",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "5 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -47.0,
+     "threshold_db": -38.0,
+     "p99_db": -18.8,
+     "vad_speech_s": 242.6,
+     "ref_speech_s": 279.8,
+     "vad_not_in_ref_s": 7.3,
+     "vad_not_in_ref_frac_of_ref": 0.0262,
+     "ref_not_in_vad_s": 22.5,
+     "ref_not_in_vad_frac": 0.0803,
+     "longest_vad_not_in_ref": [
+      [
+       6.27,
+       7.72
+      ],
+      [
+       194.26,
+       195.25
+      ],
+      [
+       138.27,
+       139.22
+      ],
+      [
+       226.08,
+       226.95
+      ],
+      [
+       139.54,
+       140.35
+      ],
+      [
+       112.02,
+       112.74
+      ],
+      [
+       225.24,
+       225.77
+      ],
+      [
+       256.27,
+       256.78
+      ],
+      [
+       38.27,
+       38.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__94009039-0507-492f-8b26-e53d20642089",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "21 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -48.0,
+     "threshold_db": -39.0,
+     "p99_db": -25.9,
+     "vad_speech_s": 225.0,
+     "ref_speech_s": 253.4,
+     "vad_not_in_ref_s": 3.4,
+     "vad_not_in_ref_frac_of_ref": 0.0134,
+     "ref_not_in_vad_s": 18.1,
+     "ref_not_in_vad_frac": 0.0712,
+     "longest_vad_not_in_ref": [
+      [
+       312.25,
+       313.29
+      ],
+      [
+       261.32,
+       262.04
+      ],
+      [
+       160.85,
+       161.42
+      ],
+      [
+       302.26,
+       302.81
+      ],
+      [
+       240.54,
+       241.06
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 1,
+    "negative_duration": 4,
+    "examples": {
+     "zero_duration": [
+      [
+       91.99,
+       91.99,
+       "94009039-0507-492f-8b26-e53d20642089_Speaker2"
+      ]
+     ],
+     "negative_duration": [
+      [
+       161.02,
+       161.01,
+       "94009039-0507-492f-8b26-e53d20642089_Speaker2"
+      ],
+      [
+       310.02,
+       309.98,
+       "94009039-0507-492f-8b26-e53d20642089_Speaker2"
+      ],
+      [
+       313.02,
+       312.98,
+       "94009039-0507-492f-8b26-e53d20642089_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__95aed576-a1d6-42f3-9651-7103e0717e5e",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "11 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -32.6,
+     "threshold_db": -23.6,
+     "p99_db": -17.8,
+     "vad_speech_s": 38.9,
+     "ref_speech_s": 163.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 97.4,
+     "ref_not_in_vad_frac": 0.5974,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "negative_duration": 1,
+    "examples": {
+     "negative_duration": [
+      [
+       125.04,
+       125.01,
+       "95aed576-a1d6-42f3-9651-7103e0717e5e_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__9d838ece-8db5-4736-96d8-581071bd5106",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -59.8,
+     "threshold_db": -48.7,
+     "p99_db": -22.9,
+     "vad_speech_s": 170.2,
+     "ref_speech_s": 198.0,
+     "vad_not_in_ref_s": 2.0,
+     "vad_not_in_ref_frac_of_ref": 0.01,
+     "ref_not_in_vad_s": 5.4,
+     "ref_not_in_vad_frac": 0.0274,
+     "longest_vad_not_in_ref": [
+      [
+       154.75,
+       156.74
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       305.0,
+       404.0
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 67 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 22.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -46.0,
+     "threshold_db": -37.0,
+     "p99_db": -17.2,
+     "vad_speech_s": 267.5,
+     "ref_speech_s": 305.0,
+     "vad_not_in_ref_s": 67.3,
+     "vad_not_in_ref_frac_of_ref": 0.2206,
+     "ref_not_in_vad_s": 55.5,
+     "ref_not_in_vad_frac": 0.1821,
+     "longest_vad_not_in_ref": [
+      [
+       398.54,
+       402.91
+      ],
+      [
+       377.09,
+       381.3
+      ],
+      [
+       337.05,
+       341.09
+      ],
+      [
+       321.44,
+       324.92
+      ],
+      [
+       345.81,
+       349.11
+      ],
+      [
+       357.11,
+       360.28
+      ],
+      [
+       382.83,
+       385.88
+      ],
+      [
+       390.23,
+       393.26
+      ],
+      [
+       363.64,
+       366.21
+      ],
+      [
+       305.44,
+       307.91
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "10 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -47.0,
+     "threshold_db": -38.0,
+     "p99_db": -21.6,
+     "vad_speech_s": 156.2,
+     "ref_speech_s": 162.6,
+     "vad_not_in_ref_s": 4.9,
+     "vad_not_in_ref_frac_of_ref": 0.03,
+     "ref_not_in_vad_s": 4.4,
+     "ref_not_in_vad_frac": 0.0271,
+     "longest_vad_not_in_ref": [
+      [
+       141.97,
+       143.19
+      ],
+      [
+       200.25,
+       200.97
+      ],
+      [
+       115.05,
+       115.73
+      ],
+      [
+       201.33,
+       201.99
+      ],
+      [
+       151.73,
+       152.29
+      ],
+      [
+       199.38,
+       199.91
+      ],
+      [
+       162.24,
+       162.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "negative_duration": 2,
+    "examples": {
+     "negative_duration": [
+      [
+       25.02,
+       24.98,
+       "cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d_Speaker2"
+      ],
+      [
+       163.02,
+       162.97,
+       "cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d_Speaker2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "afrispeech_dialog__d2f0bed6-f3e1-48a8-9fb2-ceb137670bc4",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "2 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 74.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -47.4,
+     "threshold_db": -38.4,
+     "p99_db": -18.0,
+     "vad_speech_s": 264.4,
+     "ref_speech_s": 292.9,
+     "vad_not_in_ref_s": 7.1,
+     "vad_not_in_ref_frac_of_ref": 0.0243,
+     "ref_not_in_vad_s": 17.1,
+     "ref_not_in_vad_frac": 0.0585,
+     "longest_vad_not_in_ref": [
+      [
+       211.14,
+       212.57
+      ],
+      [
+       274.25,
+       275.08
+      ],
+      [
+       163.26,
+       163.87
+      ],
+      [
+       0.0,
+       0.59
+      ],
+      [
+       30.25,
+       30.82
+      ],
+      [
+       130.23,
+       130.76
+      ],
+      [
+       165.18,
+       165.71
+      ],
+      [
+       120.23,
+       120.75
+      ],
+      [
+       6.23,
+       6.74
+      ],
+      [
+       203.25,
+       203.76
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__eceb9468-7001-4ee0-9475-13486e5352ae",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -46.1,
+     "threshold_db": -37.1,
+     "p99_db": -20.1,
+     "vad_speech_s": 147.1,
+     "ref_speech_s": 173.9,
+     "vad_not_in_ref_s": 7.1,
+     "vad_not_in_ref_frac_of_ref": 0.041,
+     "ref_not_in_vad_s": 15.8,
+     "ref_not_in_vad_frac": 0.0909,
+     "longest_vad_not_in_ref": [
+      [
+       16.24,
+       17.24
+      ],
+      [
+       85.27,
+       86.23
+      ],
+      [
+       182.26,
+       183.2
+      ],
+      [
+       133.97,
+       134.78
+      ],
+      [
+       90.39,
+       91.16
+      ],
+      [
+       217.02,
+       217.77
+      ],
+      [
+       200.07,
+       200.77
+      ],
+      [
+       87.06,
+       87.75
+      ],
+      [
+       4.27,
+       4.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "afrispeech_dialog__fd258274-0797-4cdd-b6ea-426ae9723bf7",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "19 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -74.3,
+     "threshold_db": -61.0,
+     "p99_db": -29.8,
+     "vad_speech_s": 395.4,
+     "ref_speech_s": 367.0,
+     "vad_not_in_ref_s": 10.6,
+     "vad_not_in_ref_frac_of_ref": 0.0289,
+     "ref_not_in_vad_s": 5.4,
+     "ref_not_in_vad_frac": 0.0147,
+     "longest_vad_not_in_ref": [
+      [
+       77.28,
+       78.76
+      ],
+      [
+       107.28,
+       108.75
+      ],
+      [
+       230.82,
+       231.78
+      ],
+      [
+       150.78,
+       151.73
+      ],
+      [
+       0.0,
+       0.56
+      ],
+      [
+       438.28,
+       438.83
+      ],
+      [
+       196.24,
+       196.78
+      ],
+      [
+       254.24,
+       254.78
+      ],
+      [
+       53.23,
+       53.76
+      ],
+      [
+       182.25,
+       182.76
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "zero_duration": 2,
+    "negative_duration": 1,
+    "same_speaker_overlap": 1,
+    "examples": {
+     "zero_duration": [
+      [
+       151.01,
+       151.01,
+       "fd258274-0797-4cdd-b6ea-426ae9723bf7_Speaker2"
+      ],
+      [
+       231.0,
+       231.0,
+       "fd258274-0797-4cdd-b6ea-426ae9723bf7_Speaker2"
+      ]
+     ],
+     "negative_duration": [
+      [
+       199.03,
+       198.99,
+       "fd258274-0797-4cdd-b6ea-426ae9723bf7_Speaker2"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       326.02,
+       332.01,
+       "fd258274-0797-4cdd-b6ea-426ae9723bf7_Speaker1"
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}

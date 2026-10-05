@@ -76,6 +76,16 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Why the DER is so high (30.8% at collar 0, 23.2% at 0.25 s).** Mostly the reference: 16% of reference speech is
+missed by the model, and 11.7 points of that lie where the audio is *silent*. The tiled TalkBank bullets label
+pauses and gaps as speech. Two more problems:
+- `eng-n_000` is only 6 s long in the HF conversion (a truncated item).
+- `eng-s_007` (two male speakers, 30 min) has 34% speaker confusion. In every 5-minute window both reference
+  speakers map to both model speakers in similar proportions. Either the two voices are too similar on the phone
+  line for the model, or the reference speaker codes are inconsistent; this was not resolved by listening.
+Use CallFriend at collar >= 0.25 s, and prefer CallHome English or Map Task for two-speaker evaluation.
+
+
 ## Quality rating
 
 **C.** Human turn-level transcription of natural phone calls, but tiled bullets and many same-speaker overlaps

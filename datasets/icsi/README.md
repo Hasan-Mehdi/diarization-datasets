@@ -41,6 +41,12 @@ words merged across pauses < 0.2 s.
   the word-based reference under-covers speech.
 - Many segments contain only noise or vocal-sound events; using all segments would label mic noise as speech.
 - The Kaldi/Lhotse test split is only 3 meetings.
+
+- **Corrupted end time:** in Bro025 one segment of speaker me013 runs from 2122.08 s to 4245.17 s, i.e. about 35
+  minutes past the end of the 2122.6 s recording (the end time is roughly double the start). The validator flags it
+  (`beyond_audio_end`) and normalization clips it.
+- 986 pairs of overlapping segments of the same speaker in the original segments (merged during normalization).
+
 - **Training-data contamination:** ICSI (full corpus) is in Nemotron 3 Diarization's training data, so scores here
   are not held-out results.
 
@@ -85,6 +91,12 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 <!-- auto:diagnosis -->
 _Not run yet._
 <!-- /auto:diagnosis -->
+
+**Reading the ICSI numbers.** Against the transcriber segments, Nemotron's errors are mostly *false alarm* (~12% at
+collar 0, ~4% at 0.25 s): it detects speech the segments do not cover. These are mainly backchannels, laughter and
+short interjections that ICSI transcribed inside other material or not at all, plus segment edges. Because ICSI
+is in the model's training data, treat these scores as a sanity check, not a benchmark.
+
 
 ## Quality rating
 

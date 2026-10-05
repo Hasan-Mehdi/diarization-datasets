@@ -1,0 +1,7247 @@
+{
+ "summary": {
+  "dataset": "ava_avd_en",
+  "view": "default",
+  "sessions": 96,
+  "errors": 0,
+  "warnings": 94,
+  "issue_counts": {
+   "info:silence_over_30s": 40,
+   "info:speaker_under_1s": 43,
+   "warning:possible_unannotated_speech": 94
+  },
+  "raw_label_issue_totals": {
+   "same_speaker_overlap": 2,
+   "beyond_audio_end": 1,
+   "seconds_beyond_audio_end": 0.371,
+   "negative_start": 1
+  },
+  "sessions_with_raw_label_issues": 4,
+  "vad": {
+   "ref_speech_h": 3.24,
+   "vad_not_in_ref_frac": 0.5574,
+   "ref_not_in_vad_frac": 0.0271,
+   "worst_sessions": [
+    [
+     "ava_avd_en__fD6VkIRlIRI_c_01",
+     3.6302
+    ],
+    [
+     "ava_avd_en__9mLYmkonWZQ_c_01",
+     3.5956
+    ],
+    [
+     "ava_avd_en__fD6VkIRlIRI_c_02",
+     3.2392
+    ],
+    [
+     "ava_avd_en__x-6CtPWVi6E_c_03",
+     2.8733
+    ],
+    [
+     "ava_avd_en__N0Dt9i9IUNg_c_02",
+     2.5156
+    ],
+    [
+     "ava_avd_en__yMtGmGa8KZ0_c_01",
+     2.4916
+    ],
+    [
+     "ava_avd_en__-IELREHX_js_c_02",
+     2.3139
+    ],
+    [
+     "ava_avd_en__UOyyTUX5Vo4_c_03",
+     1.9643
+    ],
+    [
+     "ava_avd_en__mAfwH6i90E_c_02",
+     1.759
+    ],
+    [
+     "ava_avd_en__UOyyTUX5Vo4_c_01",
+     1.6494
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "ava_avd_en__BCiuXAuCKAU_c_01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 48 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 26.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -54.7,
+     "threshold_db": -45.7,
+     "p99_db": -31.8,
+     "vad_speech_s": 236.4,
+     "ref_speech_s": 181.3,
+     "vad_not_in_ref_s": 48.5,
+     "vad_not_in_ref_frac_of_ref": 0.2673,
+     "ref_not_in_vad_s": 6.5,
+     "ref_not_in_vad_frac": 0.036,
+     "longest_vad_not_in_ref": [
+      [
+       68.81,
+       78.88
+      ],
+      [
+       145.09,
+       150.39
+      ],
+      [
+       255.11,
+       258.88
+      ],
+      [
+       86.73,
+       89.64
+      ],
+      [
+       97.57,
+       100.44
+      ],
+      [
+       168.22,
+       171.0
+      ],
+      [
+       157.94,
+       160.53
+      ],
+      [
+       238.12,
+       240.38
+      ],
+      [
+       108.88,
+       110.95
+      ],
+      [
+       179.47,
+       181.44
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__BCiuXAuCKAU_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       100.1,
+       131.5
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 32 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 21.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -64.0,
+     "threshold_db": -54.3,
+     "p99_db": -31.8,
+     "vad_speech_s": 183.2,
+     "ref_speech_s": 149.6,
+     "vad_not_in_ref_s": 31.9,
+     "vad_not_in_ref_frac_of_ref": 0.2132,
+     "ref_not_in_vad_s": 5.7,
+     "ref_not_in_vad_frac": 0.0379,
+     "longest_vad_not_in_ref": [
+      [
+       109.13,
+       131.24
+      ],
+      [
+       19.44,
+       21.93
+      ],
+      [
+       150.44,
+       151.96
+      ],
+      [
+       145.02,
+       146.46
+      ],
+      [
+       137.03,
+       138.44
+      ],
+      [
+       26.03,
+       27.16
+      ],
+      [
+       160.81,
+       161.75
+      ],
+      [
+       153.44,
+       154.3
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__BCiuXAuCKAU_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 34 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 20.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -66.0,
+     "threshold_db": -55.7,
+     "p99_db": -31.7,
+     "vad_speech_s": 185.9,
+     "ref_speech_s": 170.1,
+     "vad_not_in_ref_s": 34.3,
+     "vad_not_in_ref_frac_of_ref": 0.2015,
+     "ref_not_in_vad_s": 19.3,
+     "ref_not_in_vad_frac": 0.1136,
+     "longest_vad_not_in_ref": [
+      [
+       148.28,
+       164.3
+      ],
+      [
+       19.22,
+       23.78
+      ],
+      [
+       232.79,
+       236.41
+      ],
+      [
+       45.81,
+       47.5
+      ],
+      [
+       51.62,
+       53.28
+      ],
+      [
+       43.25,
+       44.61
+      ],
+      [
+       229.17,
+       230.48
+      ],
+      [
+       195.26,
+       196.34
+      ],
+      [
+       17.05,
+       18.03
+      ],
+      [
+       6.51,
+       7.25
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__HKjR70GCRPE_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "HKjR70GCRPE_c_01_spk03"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 57 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 39.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -43.8,
+     "threshold_db": -34.8,
+     "p99_db": -17.6,
+     "vad_speech_s": 225.9,
+     "ref_speech_s": 145.3,
+     "vad_not_in_ref_s": 57.2,
+     "vad_not_in_ref_frac_of_ref": 0.3938,
+     "ref_not_in_vad_s": 2.1,
+     "ref_not_in_vad_frac": 0.0144,
+     "longest_vad_not_in_ref": [
+      [
+       199.85,
+       211.06
+      ],
+      [
+       290.63,
+       298.91
+      ],
+      [
+       103.34,
+       109.94
+      ],
+      [
+       90.41,
+       94.91
+      ],
+      [
+       280.84,
+       285.06
+      ],
+      [
+       120.92,
+       123.44
+      ],
+      [
+       130.12,
+       132.15
+      ],
+      [
+       83.82,
+       85.63
+      ],
+      [
+       274.77,
+       276.51
+      ],
+      [
+       196.16,
+       197.76
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__HKjR70GCRPE_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       77.8,
+       108.1
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 85 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 58.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -47.2,
+     "threshold_db": -38.2,
+     "p99_db": -18.3,
+     "vad_speech_s": 262.9,
+     "ref_speech_s": 144.9,
+     "vad_not_in_ref_s": 84.8,
+     "vad_not_in_ref_frac_of_ref": 0.5853,
+     "ref_not_in_vad_s": 0.6,
+     "ref_not_in_vad_frac": 0.0041,
+     "longest_vad_not_in_ref": [
+      [
+       78.08,
+       107.74
+      ],
+      [
+       199.75,
+       215.59
+      ],
+      [
+       44.77,
+       49.46
+      ],
+      [
+       58.06,
+       61.79
+      ],
+      [
+       190.61,
+       193.57
+      ],
+      [
+       10.98,
+       13.62
+      ],
+      [
+       137.53,
+       139.88
+      ],
+      [
+       6.72,
+       9.03
+      ],
+      [
+       66.13,
+       68.31
+      ],
+      [
+       173.83,
+       175.94
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__HKjR70GCRPE_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "HKjR70GCRPE_c_03_spk06"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 19 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 11.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -46.7,
+     "threshold_db": -37.6,
+     "p99_db": -16.6,
+     "vad_speech_s": 205.0,
+     "ref_speech_s": 163.8,
+     "vad_not_in_ref_s": 19.0,
+     "vad_not_in_ref_frac_of_ref": 0.1158,
+     "ref_not_in_vad_s": 0.5,
+     "ref_not_in_vad_frac": 0.0029,
+     "longest_vad_not_in_ref": [
+      [
+       141.29,
+       143.94
+      ],
+      [
+       120.93,
+       123.37
+      ],
+      [
+       275.19,
+       277.22
+      ],
+      [
+       199.91,
+       201.75
+      ],
+      [
+       281.41,
+       282.99
+      ],
+      [
+       136.77,
+       137.94
+      ],
+      [
+       108.76,
+       109.86
+      ],
+      [
+       218.61,
+       219.54
+      ],
+      [
+       231.81,
+       232.71
+      ],
+      [
+       283.3,
+       284.17
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__kMy-6RtoOVU_c_01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 39 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 21.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -43.6,
+     "threshold_db": -34.6,
+     "p99_db": -15.4,
+     "vad_speech_s": 233.5,
+     "ref_speech_s": 179.6,
+     "vad_not_in_ref_s": 38.6,
+     "vad_not_in_ref_frac_of_ref": 0.2146,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.0328,
+     "longest_vad_not_in_ref": [
+      [
+       178.38,
+       189.33
+      ],
+      [
+       125.24,
+       131.13
+      ],
+      [
+       131.48,
+       134.42
+      ],
+      [
+       155.11,
+       158.0
+      ],
+      [
+       210.24,
+       212.94
+      ],
+      [
+       138.31,
+       140.07
+      ],
+      [
+       204.38,
+       206.01
+      ],
+      [
+       194.14,
+       195.11
+      ],
+      [
+       277.12,
+       278.07
+      ],
+      [
+       76.39,
+       77.34
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__kMy-6RtoOVU_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 69 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 57.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -42.1,
+     "threshold_db": -32.8,
+     "p99_db": -11.1,
+     "vad_speech_s": 201.9,
+     "ref_speech_s": 120.5,
+     "vad_not_in_ref_s": 69.1,
+     "vad_not_in_ref_frac_of_ref": 0.5732,
+     "ref_not_in_vad_s": 6.3,
+     "ref_not_in_vad_frac": 0.0525,
+     "longest_vad_not_in_ref": [
+      [
+       117.22,
+       137.44
+      ],
+      [
+       181.15,
+       191.46
+      ],
+      [
+       220.91,
+       228.32
+      ],
+      [
+       141.29,
+       148.69
+      ],
+      [
+       98.92,
+       102.31
+      ],
+      [
+       110.57,
+       113.77
+      ],
+      [
+       294.68,
+       297.48
+      ],
+      [
+       198.2,
+       200.39
+      ],
+      [
+       153.47,
+       155.62
+      ],
+      [
+       193.18,
+       194.72
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__kMy-6RtoOVU_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       16.4,
+       62.6
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 104 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 93.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -40.9,
+     "threshold_db": -31.9,
+     "p99_db": -12.0,
+     "vad_speech_s": 207.9,
+     "ref_speech_s": 111.5,
+     "vad_not_in_ref_s": 103.6,
+     "vad_not_in_ref_frac_of_ref": 0.9297,
+     "ref_not_in_vad_s": 8.5,
+     "ref_not_in_vad_frac": 0.076,
+     "longest_vad_not_in_ref": [
+      [
+       33.03,
+       62.33
+      ],
+      [
+       146.35,
+       164.14
+      ],
+      [
+       129.74,
+       143.16
+      ],
+      [
+       16.69,
+       29.43
+      ],
+      [
+       66.0,
+       74.3
+      ],
+      [
+       10.7,
+       15.78
+      ],
+      [
+       79.93,
+       82.64
+      ],
+      [
+       86.22,
+       88.8
+      ],
+      [
+       29.86,
+       32.43
+      ],
+      [
+       89.14,
+       90.97
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__-IELREHX_js_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       162.5,
+       197.8
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 76 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 58.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -46.9,
+     "threshold_db": -37.9,
+     "p99_db": -18.4,
+     "vad_speech_s": 233.1,
+     "ref_speech_s": 129.6,
+     "vad_not_in_ref_s": 76.0,
+     "vad_not_in_ref_frac_of_ref": 0.5865,
+     "ref_not_in_vad_s": 0.9,
+     "ref_not_in_vad_frac": 0.0069,
+     "longest_vad_not_in_ref": [
+      [
+       163.24,
+       197.58
+      ],
+      [
+       205.87,
+       217.35
+      ],
+      [
+       198.41,
+       205.09
+      ],
+      [
+       262.96,
+       268.14
+      ],
+      [
+       286.19,
+       290.94
+      ],
+      [
+       220.38,
+       224.38
+      ],
+      [
+       64.32,
+       65.89
+      ],
+      [
+       218.19,
+       219.2
+      ],
+      [
+       47.96,
+       48.88
+      ],
+      [
+       275.92,
+       276.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__-IELREHX_js_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "3 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       24.5,
+       57.5
+      ],
+      [
+       136.6,
+       168.5
+      ],
+      [
+       168.8,
+       251.9
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 99 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 231.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -51.7,
+     "threshold_db": -41.9,
+     "p99_db": -19.0,
+     "vad_speech_s": 154.6,
+     "ref_speech_s": 42.6,
+     "vad_not_in_ref_s": 98.5,
+     "vad_not_in_ref_frac_of_ref": 2.3139,
+     "ref_not_in_vad_s": 0.4,
+     "ref_not_in_vad_frac": 0.0092,
+     "longest_vad_not_in_ref": [
+      [
+       178.39,
+       196.21
+      ],
+      [
+       80.29,
+       96.45
+      ],
+      [
+       24.72,
+       36.19
+      ],
+      [
+       67.24,
+       77.1
+      ],
+      [
+       142.88,
+       151.46
+      ],
+      [
+       197.57,
+       204.37
+      ],
+      [
+       173.2,
+       177.99
+      ],
+      [
+       61.13,
+       64.91
+      ],
+      [
+       137.84,
+       140.9
+      ],
+      [
+       165.32,
+       168.26
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__-IELREHX_js_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "-IELREHX_js_c_03_spk11",
+      "-IELREHX_js_c_03_spk08"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 46 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 48.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 12,
+    "vad": {
+     "floor_db": -50.9,
+     "threshold_db": -40.5,
+     "p99_db": -16.5,
+     "vad_speech_s": 182.4,
+     "ref_speech_s": 95.3,
+     "vad_not_in_ref_s": 45.8,
+     "vad_not_in_ref_frac_of_ref": 0.4806,
+     "ref_not_in_vad_s": 0.9,
+     "ref_not_in_vad_frac": 0.0094,
+     "longest_vad_not_in_ref": [
+      [
+       193.79,
+       200.79
+      ],
+      [
+       202.13,
+       207.96
+      ],
+      [
+       53.15,
+       56.79
+      ],
+      [
+       127.89,
+       130.37
+      ],
+      [
+       155.36,
+       157.53
+      ],
+      [
+       82.43,
+       84.51
+      ],
+      [
+       169.61,
+       171.57
+      ],
+      [
+       50.46,
+       52.31
+      ],
+      [
+       176.89,
+       178.61
+      ],
+      [
+       151.93,
+       153.64
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__0f39OWEqJ24_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "0f39OWEqJ24_c_01_spk07"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 82 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 105.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.4,
+     "threshold_db": -43.3,
+     "p99_db": -20.0,
+     "vad_speech_s": 176.7,
+     "ref_speech_s": 77.8,
+     "vad_not_in_ref_s": 82.2,
+     "vad_not_in_ref_frac_of_ref": 1.0567,
+     "ref_not_in_vad_s": 11.2,
+     "ref_not_in_vad_frac": 0.1437,
+     "longest_vad_not_in_ref": [
+      [
+       5.62,
+       27.37
+      ],
+      [
+       123.08,
+       128.75
+      ],
+      [
+       165.24,
+       170.86
+      ],
+      [
+       148.48,
+       154.09
+      ],
+      [
+       142.14,
+       147.69
+      ],
+      [
+       118.44,
+       122.63
+      ],
+      [
+       136.69,
+       139.05
+      ],
+      [
+       181.7,
+       183.99
+      ],
+      [
+       139.53,
+       141.81
+      ],
+      [
+       28.91,
+       30.98
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__0f39OWEqJ24_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       31.9,
+       67.8
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 102 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 138.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -57.2,
+     "threshold_db": -48.2,
+     "p99_db": -30.0,
+     "vad_speech_s": 192.3,
+     "ref_speech_s": 73.5,
+     "vad_not_in_ref_s": 101.9,
+     "vad_not_in_ref_frac_of_ref": 1.3868,
+     "ref_not_in_vad_s": 7.0,
+     "ref_not_in_vad_frac": 0.0949,
+     "longest_vad_not_in_ref": [
+      [
+       43.64,
+       67.52
+      ],
+      [
+       71.39,
+       80.74
+      ],
+      [
+       156.49,
+       163.15
+      ],
+      [
+       169.54,
+       174.73
+      ],
+      [
+       98.84,
+       103.39
+      ],
+      [
+       93.49,
+       97.07
+      ],
+      [
+       247.03,
+       250.56
+      ],
+      [
+       148.47,
+       151.91
+      ],
+      [
+       163.66,
+       166.23
+      ],
+      [
+       237.74,
+       240.18
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__0f39OWEqJ24_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       18.7,
+       53.1
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 76 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 79.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 9,
+    "vad": {
+     "floor_db": -59.8,
+     "threshold_db": -50.3,
+     "p99_db": -28.3,
+     "vad_speech_s": 198.5,
+     "ref_speech_s": 96.1,
+     "vad_not_in_ref_s": 75.9,
+     "vad_not_in_ref_frac_of_ref": 0.7898,
+     "ref_not_in_vad_s": 1.9,
+     "ref_not_in_vad_frac": 0.0197,
+     "longest_vad_not_in_ref": [
+      [
+       104.5,
+       123.86
+      ],
+      [
+       276.75,
+       287.34
+      ],
+      [
+       163.79,
+       172.12
+      ],
+      [
+       45.58,
+       52.83
+      ],
+      [
+       5.78,
+       9.05
+      ],
+      [
+       100.44,
+       103.64
+      ],
+      [
+       158.59,
+       160.79
+      ],
+      [
+       272.21,
+       274.15
+      ],
+      [
+       2.75,
+       4.48
+      ],
+      [
+       14.27,
+       15.95
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__20TAGRElvfE_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "20TAGRElvfE_c_01_spk05"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 27 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 15.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -41.6,
+     "threshold_db": -31.1,
+     "p99_db": -6.7,
+     "vad_speech_s": 207.6,
+     "ref_speech_s": 175.9,
+     "vad_not_in_ref_s": 26.7,
+     "vad_not_in_ref_frac_of_ref": 0.1516,
+     "ref_not_in_vad_s": 5.6,
+     "ref_not_in_vad_frac": 0.0319,
+     "longest_vad_not_in_ref": [
+      [
+       37.37,
+       45.54
+      ],
+      [
+       257.53,
+       264.74
+      ],
+      [
+       45.86,
+       48.96
+      ],
+      [
+       19.18,
+       21.46
+      ],
+      [
+       198.68,
+       199.82
+      ],
+      [
+       269.18,
+       270.06
+      ],
+      [
+       266.81,
+       267.68
+      ],
+      [
+       285.53,
+       286.39
+      ],
+      [
+       194.96,
+       195.79
+      ],
+      [
+       63.47,
+       64.18
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__20TAGRElvfE_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "20TAGRElvfE_c_02_spk05"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 40 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 30.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -36.8,
+     "threshold_db": -27.8,
+     "p99_db": -7.3,
+     "vad_speech_s": 192.3,
+     "ref_speech_s": 129.7,
+     "vad_not_in_ref_s": 39.7,
+     "vad_not_in_ref_frac_of_ref": 0.3062,
+     "ref_not_in_vad_s": 8.4,
+     "ref_not_in_vad_frac": 0.0644,
+     "longest_vad_not_in_ref": [
+      [
+       8.25,
+       12.49
+      ],
+      [
+       218.05,
+       222.27
+      ],
+      [
+       19.12,
+       22.66
+      ],
+      [
+       53.8,
+       56.82
+      ],
+      [
+       49.84,
+       52.02
+      ],
+      [
+       253.01,
+       255.06
+      ],
+      [
+       63.83,
+       65.7
+      ],
+      [
+       29.27,
+       30.84
+      ],
+      [
+       184.21,
+       185.55
+      ],
+      [
+       186.63,
+       187.97
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__20TAGRElvfE_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 48 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 37.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -47.0,
+     "threshold_db": -34.9,
+     "p99_db": -6.7,
+     "vad_speech_s": 202.1,
+     "ref_speech_s": 127.9,
+     "vad_not_in_ref_s": 48.1,
+     "vad_not_in_ref_frac_of_ref": 0.3764,
+     "ref_not_in_vad_s": 0.2,
+     "ref_not_in_vad_frac": 0.0016,
+     "longest_vad_not_in_ref": [
+      [
+       14.72,
+       27.04
+      ],
+      [
+       32.96,
+       40.75
+      ],
+      [
+       284.36,
+       290.34
+      ],
+      [
+       28.6,
+       31.88
+      ],
+      [
+       9.42,
+       12.28
+      ],
+      [
+       99.53,
+       100.97
+      ],
+      [
+       7.68,
+       9.05
+      ],
+      [
+       12.88,
+       14.22
+      ],
+      [
+       6.05,
+       7.34
+      ],
+      [
+       87.25,
+       88.46
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__9mLYmkonWZQ_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       45.8,
+       201.7
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 124 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 359.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -63.9,
+     "threshold_db": -52.0,
+     "p99_db": -24.2,
+     "vad_speech_s": 165.3,
+     "ref_speech_s": 34.6,
+     "vad_not_in_ref_s": 124.3,
+     "vad_not_in_ref_frac_of_ref": 3.5956,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       85.67,
+       149.69
+      ],
+      [
+       155.15,
+       199.23
+      ],
+      [
+       229.53,
+       233.88
+      ],
+      [
+       258.48,
+       261.41
+      ],
+      [
+       81.08,
+       83.73
+      ],
+      [
+       249.1,
+       250.57
+      ],
+      [
+       150.16,
+       151.16
+      ],
+      [
+       16.85,
+       17.75
+      ],
+      [
+       79.38,
+       80.19
+      ],
+      [
+       84.05,
+       84.83
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__9mLYmkonWZQ_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "9mLYmkonWZQ_c_02_spk00"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 16 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 14.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -64.8,
+     "threshold_db": -52.7,
+     "p99_db": -24.6,
+     "vad_speech_s": 148.6,
+     "ref_speech_s": 112.6,
+     "vad_not_in_ref_s": 16.3,
+     "vad_not_in_ref_frac_of_ref": 0.1445,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       60.25,
+       62.03
+      ],
+      [
+       281.53,
+       283.12
+      ],
+      [
+       278.35,
+       279.74
+      ],
+      [
+       263.94,
+       265.22
+      ],
+      [
+       283.58,
+       284.82
+      ],
+      [
+       76.33,
+       77.5
+      ],
+      [
+       135.66,
+       136.79
+      ],
+      [
+       268.72,
+       269.6
+      ],
+      [
+       159.11,
+       159.9
+      ],
+      [
+       146.65,
+       147.39
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__9mLYmkonWZQ_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "9mLYmkonWZQ_c_03_spk04"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       130.0,
+       236.2
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 88 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 105.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -63.7,
+     "threshold_db": -51.4,
+     "p99_db": -22.5,
+     "vad_speech_s": 187.9,
+     "ref_speech_s": 83.5,
+     "vad_not_in_ref_s": 87.7,
+     "vad_not_in_ref_frac_of_ref": 1.0515,
+     "ref_not_in_vad_s": 0.0,
+     "ref_not_in_vad_frac": 0.0004,
+     "longest_vad_not_in_ref": [
+      [
+       135.49,
+       161.09
+      ],
+      [
+       222.2,
+       229.72
+      ],
+      [
+       230.09,
+       236.0
+      ],
+      [
+       197.72,
+       202.47
+      ],
+      [
+       112.24,
+       115.34
+      ],
+      [
+       215.3,
+       218.25
+      ],
+      [
+       192.37,
+       194.99
+      ],
+      [
+       218.64,
+       221.09
+      ],
+      [
+       189.54,
+       191.95
+      ],
+      [
+       61.95,
+       64.14
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__CrlfWnsS7ac_c_01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 45 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 31.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -46.8,
+     "threshold_db": -36.7,
+     "p99_db": -13.3,
+     "vad_speech_s": 209.6,
+     "ref_speech_s": 142.4,
+     "vad_not_in_ref_s": 44.5,
+     "vad_not_in_ref_frac_of_ref": 0.3125,
+     "ref_not_in_vad_s": 2.5,
+     "ref_not_in_vad_frac": 0.0179,
+     "longest_vad_not_in_ref": [
+      [
+       72.38,
+       89.24
+      ],
+      [
+       138.97,
+       145.98
+      ],
+      [
+       155.66,
+       161.14
+      ],
+      [
+       120.01,
+       123.0
+      ],
+      [
+       152.18,
+       155.08
+      ],
+      [
+       150.32,
+       151.79
+      ],
+      [
+       136.39,
+       137.8
+      ],
+      [
+       61.16,
+       62.19
+      ],
+      [
+       38.83,
+       39.69
+      ],
+      [
+       98.93,
+       99.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       162.467,
+       163.5,
+       "CrlfWnsS7ac_c_01_spk05"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "ava_avd_en__CrlfWnsS7ac_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 45 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 29.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -58.2,
+     "threshold_db": -46.1,
+     "p99_db": -17.9,
+     "vad_speech_s": 221.9,
+     "ref_speech_s": 155.2,
+     "vad_not_in_ref_s": 44.9,
+     "vad_not_in_ref_frac_of_ref": 0.2895,
+     "ref_not_in_vad_s": 1.0,
+     "ref_not_in_vad_frac": 0.0062,
+     "longest_vad_not_in_ref": [
+      [
+       129.06,
+       145.1
+      ],
+      [
+       167.31,
+       174.38
+      ],
+      [
+       162.12,
+       166.17
+      ],
+      [
+       186.67,
+       189.79
+      ],
+      [
+       191.02,
+       194.1
+      ],
+      [
+       179.14,
+       181.5
+      ],
+      [
+       182.71,
+       185.04
+      ],
+      [
+       159.66,
+       161.01
+      ],
+      [
+       113.99,
+       115.26
+      ],
+      [
+       155.53,
+       156.47
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__K_SpqDJnlps_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "K_SpqDJnlps_c_01_spk05"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       67.4,
+       104.1
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 72 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 66.8% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 13,
+    "vad": {
+     "floor_db": -49.2,
+     "threshold_db": -40.2,
+     "p99_db": -21.5,
+     "vad_speech_s": 198.2,
+     "ref_speech_s": 107.5,
+     "vad_not_in_ref_s": 71.7,
+     "vad_not_in_ref_frac_of_ref": 0.6676,
+     "ref_not_in_vad_s": 1.1,
+     "ref_not_in_vad_frac": 0.01,
+     "longest_vad_not_in_ref": [
+      [
+       70.23,
+       103.88
+      ],
+      [
+       191.33,
+       199.24
+      ],
+      [
+       173.76,
+       180.33
+      ],
+      [
+       105.59,
+       110.9
+      ],
+      [
+       211.66,
+       214.9
+      ],
+      [
+       216.8,
+       219.45
+      ],
+      [
+       219.82,
+       221.9
+      ],
+      [
+       200.62,
+       202.09
+      ],
+      [
+       238.74,
+       240.18
+      ],
+      [
+       187.64,
+       188.85
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__K_SpqDJnlps_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 24 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 15.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -53.5,
+     "threshold_db": -43.8,
+     "p99_db": -21.3,
+     "vad_speech_s": 198.0,
+     "ref_speech_s": 148.9,
+     "vad_not_in_ref_s": 23.7,
+     "vad_not_in_ref_frac_of_ref": 0.1594,
+     "ref_not_in_vad_s": 0.4,
+     "ref_not_in_vad_frac": 0.003,
+     "longest_vad_not_in_ref": [
+      [
+       262.11,
+       265.38
+      ],
+      [
+       292.8,
+       295.16
+      ],
+      [
+       146.34,
+       148.51
+      ],
+      [
+       150.77,
+       152.92
+      ],
+      [
+       155.24,
+       157.37
+      ],
+      [
+       258.92,
+       260.2
+      ],
+      [
+       272.55,
+       273.83
+      ],
+      [
+       17.56,
+       18.79
+      ],
+      [
+       106.71,
+       107.92
+      ],
+      [
+       31.84,
+       32.98
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__K_SpqDJnlps_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 18 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 9,
+    "vad": {
+     "floor_db": -52.2,
+     "threshold_db": -43.0,
+     "p99_db": -21.6,
+     "vad_speech_s": 220.0,
+     "ref_speech_s": 182.3,
+     "vad_not_in_ref_s": 18.3,
+     "vad_not_in_ref_frac_of_ref": 0.1007,
+     "ref_not_in_vad_s": 0.6,
+     "ref_not_in_vad_frac": 0.0034,
+     "longest_vad_not_in_ref": [
+      [
+       280.65,
+       289.98
+      ],
+      [
+       291.11,
+       296.01
+      ],
+      [
+       296.96,
+       298.83
+      ],
+      [
+       196.51,
+       197.4
+      ],
+      [
+       260.54,
+       261.32
+      ],
+      [
+       144.35,
+       144.92
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__Ma2hgTmveKQ_c_01",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -50.3,
+     "threshold_db": -41.3,
+     "p99_db": -20.3,
+     "vad_speech_s": 68.7,
+     "ref_speech_s": 61.3,
+     "vad_not_in_ref_s": 1.6,
+     "vad_not_in_ref_frac_of_ref": 0.0269,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       81.46,
+       82.44
+      ],
+      [
+       5.28,
+       5.95
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__Ma2hgTmveKQ_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "Ma2hgTmveKQ_c_02_spk05"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       198.7,
+       271.0
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 106 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 86.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -36.1,
+     "threshold_db": -27.1,
+     "p99_db": -19.9,
+     "vad_speech_s": 214.0,
+     "ref_speech_s": 121.8,
+     "vad_not_in_ref_s": 105.9,
+     "vad_not_in_ref_frac_of_ref": 0.8691,
+     "ref_not_in_vad_s": 12.7,
+     "ref_not_in_vad_frac": 0.1042,
+     "longest_vad_not_in_ref": [
+      [
+       211.46,
+       240.95
+      ],
+      [
+       241.41,
+       270.72
+      ],
+      [
+       276.01,
+       288.99
+      ],
+      [
+       198.9,
+       210.96
+      ],
+      [
+       292.63,
+       300.0
+      ],
+      [
+       98.07,
+       104.59
+      ],
+      [
+       74.62,
+       79.64
+      ],
+      [
+       104.99,
+       106.77
+      ],
+      [
+       72.13,
+       73.46
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "beyond_audio_end": 1,
+    "seconds_beyond_audio_end": 0.371,
+    "examples": {
+     "beyond_audio_end": [
+      [
+       355.541,
+       355.912,
+       "Ma2hgTmveKQ_c_02_spk02"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "ava_avd_en__Ma2hgTmveKQ_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 64 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 53.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -47.6,
+     "threshold_db": -38.6,
+     "p99_db": -21.4,
+     "vad_speech_s": 194.5,
+     "ref_speech_s": 120.0,
+     "vad_not_in_ref_s": 64.4,
+     "vad_not_in_ref_frac_of_ref": 0.5368,
+     "ref_not_in_vad_s": 0.2,
+     "ref_not_in_vad_frac": 0.0015,
+     "longest_vad_not_in_ref": [
+      [
+       56.2,
+       85.11
+      ],
+      [
+       262.74,
+       290.5
+      ],
+      [
+       119.37,
+       120.87
+      ],
+      [
+       255.75,
+       257.24
+      ],
+      [
+       87.79,
+       89.06
+      ],
+      [
+       250.12,
+       251.19
+      ],
+      [
+       244.65,
+       245.43
+      ],
+      [
+       232.62,
+       233.2
+      ],
+      [
+       208.99,
+       209.56
+      ],
+      [
+       122.78,
+       123.29
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__N0Dt9i9IUNg_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       54.2,
+       87.3
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 38 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 22.8% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.5,
+     "threshold_db": -43.8,
+     "p99_db": -21.2,
+     "vad_speech_s": 207.4,
+     "ref_speech_s": 168.2,
+     "vad_not_in_ref_s": 38.3,
+     "vad_not_in_ref_frac_of_ref": 0.2278,
+     "ref_not_in_vad_s": 6.3,
+     "ref_not_in_vad_frac": 0.0374,
+     "longest_vad_not_in_ref": [
+      [
+       264.62,
+       287.5
+      ],
+      [
+       80.81,
+       86.11
+      ],
+      [
+       77.05,
+       79.53
+      ],
+      [
+       261.21,
+       263.59
+      ],
+      [
+       190.62,
+       192.69
+      ],
+      [
+       234.53,
+       236.6
+      ],
+      [
+       164.89,
+       165.52
+      ],
+      [
+       73.9,
+       74.42
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__N0Dt9i9IUNg_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "N0Dt9i9IUNg_c_02_spk02",
+      "N0Dt9i9IUNg_c_02_spk06"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       124.6,
+       198.9
+      ],
+      [
+       222.0,
+       258.7
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 152 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 251.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -50.5,
+     "threshold_db": -41.5,
+     "p99_db": -22.4,
+     "vad_speech_s": 228.9,
+     "ref_speech_s": 60.4,
+     "vad_not_in_ref_s": 151.9,
+     "vad_not_in_ref_frac_of_ref": 2.5156,
+     "ref_not_in_vad_s": 0.1,
+     "ref_not_in_vad_frac": 0.0018,
+     "longest_vad_not_in_ref": [
+      [
+       124.88,
+       160.46
+      ],
+      [
+       2.74,
+       27.24
+      ],
+      [
+       245.74,
+       258.43
+      ],
+      [
+       234.8,
+       244.76
+      ],
+      [
+       56.66,
+       66.55
+      ],
+      [
+       172.93,
+       180.69
+      ],
+      [
+       45.87,
+       53.35
+      ],
+      [
+       276.09,
+       282.82
+      ],
+      [
+       191.75,
+       198.47
+      ],
+      [
+       261.59,
+       265.8
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__N0Dt9i9IUNg_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "N0Dt9i9IUNg_c_03_spk10"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       31.8,
+       77.5
+      ],
+      [
+       166.0,
+       213.6
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 63 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 65.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -43.7,
+     "threshold_db": -34.7,
+     "p99_db": -20.8,
+     "vad_speech_s": 155.6,
+     "ref_speech_s": 96.2,
+     "vad_not_in_ref_s": 63.2,
+     "vad_not_in_ref_frac_of_ref": 0.6568,
+     "ref_not_in_vad_s": 2.9,
+     "ref_not_in_vad_frac": 0.0297,
+     "longest_vad_not_in_ref": [
+      [
+       48.27,
+       77.24
+      ],
+      [
+       78.16,
+       94.54
+      ],
+      [
+       188.99,
+       196.24
+      ],
+      [
+       196.67,
+       199.07
+      ],
+      [
+       246.73,
+       248.83
+      ],
+      [
+       45.25,
+       46.6
+      ],
+      [
+       23.64,
+       24.55
+      ],
+      [
+       14.58,
+       15.39
+      ],
+      [
+       168.29,
+       169.03
+      ],
+      [
+       131.94,
+       132.59
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__OGNnUvJq9RI_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "3 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "OGNnUvJq9RI_c_01_spk01",
+      "OGNnUvJq9RI_c_01_spk06",
+      "OGNnUvJq9RI_c_01_spk03"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 124 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 163.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -55.7,
+     "threshold_db": -46.6,
+     "p99_db": -25.4,
+     "vad_speech_s": 239.6,
+     "ref_speech_s": 75.8,
+     "vad_not_in_ref_s": 123.8,
+     "vad_not_in_ref_frac_of_ref": 1.6339,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       261.54,
+       289.9
+      ],
+      [
+       247.12,
+       256.14
+      ],
+      [
+       177.06,
+       185.31
+      ],
+      [
+       203.62,
+       210.56
+      ],
+      [
+       223.86,
+       230.62
+      ],
+      [
+       137.37,
+       143.51
+      ],
+      [
+       152.93,
+       157.56
+      ],
+      [
+       195.16,
+       199.49
+      ],
+      [
+       211.59,
+       215.79
+      ],
+      [
+       169.76,
+       173.49
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__OGNnUvJq9RI_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 82 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 82.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -66.7,
+     "threshold_db": -53.6,
+     "p99_db": -23.1,
+     "vad_speech_s": 207.9,
+     "ref_speech_s": 99.9,
+     "vad_not_in_ref_s": 82.5,
+     "vad_not_in_ref_frac_of_ref": 0.8255,
+     "ref_not_in_vad_s": 1.5,
+     "ref_not_in_vad_frac": 0.0151,
+     "longest_vad_not_in_ref": [
+      [
+       4.36,
+       18.64
+      ],
+      [
+       213.56,
+       227.01
+      ],
+      [
+       270.31,
+       278.91
+      ],
+      [
+       192.89,
+       200.82
+      ],
+      [
+       76.29,
+       80.33
+      ],
+      [
+       132.79,
+       136.63
+      ],
+      [
+       129.44,
+       132.36
+      ],
+      [
+       86.72,
+       89.61
+      ],
+      [
+       1.03,
+       3.68
+      ],
+      [
+       28.41,
+       30.82
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__OGNnUvJq9RI_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 50 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 52.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -60.2,
+     "threshold_db": -50.4,
+     "p99_db": -27.7,
+     "vad_speech_s": 174.3,
+     "ref_speech_s": 95.9,
+     "vad_not_in_ref_s": 49.9,
+     "vad_not_in_ref_frac_of_ref": 0.5202,
+     "ref_not_in_vad_s": 0.0,
+     "ref_not_in_vad_frac": 0.0004,
+     "longest_vad_not_in_ref": [
+      [
+       182.62,
+       196.15
+      ],
+      [
+       255.45,
+       260.85
+      ],
+      [
+       34.38,
+       39.12
+      ],
+      [
+       280.64,
+       284.46
+      ],
+      [
+       284.92,
+       288.73
+      ],
+      [
+       56.52,
+       58.7
+      ],
+      [
+       84.68,
+       86.51
+      ],
+      [
+       54.4,
+       56.11
+      ],
+      [
+       94.64,
+       96.29
+      ],
+      [
+       289.22,
+       290.66
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__P90hF2S1JzA_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "P90hF2S1JzA_c_03_spk03"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 30 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 24.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -25.8,
+     "threshold_db": -16.8,
+     "p99_db": -7.8,
+     "vad_speech_s": 108.9,
+     "ref_speech_s": 123.4,
+     "vad_not_in_ref_s": 29.6,
+     "vad_not_in_ref_frac_of_ref": 0.2401,
+     "ref_not_in_vad_s": 23.4,
+     "ref_not_in_vad_frac": 0.19,
+     "longest_vad_not_in_ref": [
+      [
+       53.46,
+       60.88
+      ],
+      [
+       41.62,
+       46.73
+      ],
+      [
+       113.06,
+       116.94
+      ],
+      [
+       47.83,
+       50.67
+      ],
+      [
+       73.46,
+       76.12
+      ],
+      [
+       65.47,
+       67.22
+      ],
+      [
+       70.65,
+       72.02
+      ],
+      [
+       51.26,
+       52.62
+      ],
+      [
+       64.01,
+       65.14
+      ],
+      [
+       68.23,
+       69.29
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__T-Fc9ctuNVI_c_01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 13 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 6.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -52.8,
+     "threshold_db": -43.3,
+     "p99_db": -21.1,
+     "vad_speech_s": 232.7,
+     "ref_speech_s": 196.4,
+     "vad_not_in_ref_s": 13.1,
+     "vad_not_in_ref_frac_of_ref": 0.0665,
+     "ref_not_in_vad_s": 0.8,
+     "ref_not_in_vad_frac": 0.0042,
+     "longest_vad_not_in_ref": [
+      [
+       154.55,
+       157.03
+      ],
+      [
+       140.05,
+       142.32
+      ],
+      [
+       158.45,
+       160.58
+      ],
+      [
+       142.66,
+       144.07
+      ],
+      [
+       144.95,
+       146.12
+      ],
+      [
+       250.32,
+       251.32
+      ],
+      [
+       133.57,
+       134.31
+      ],
+      [
+       287.08,
+       287.76
+      ],
+      [
+       248.24,
+       248.91
+      ],
+      [
+       148.58,
+       149.1
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__T-Fc9ctuNVI_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "T-Fc9ctuNVI_c_02_spk05"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 39 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 23.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -56.5,
+     "threshold_db": -46.3,
+     "p99_db": -22.5,
+     "vad_speech_s": 225.3,
+     "ref_speech_s": 170.7,
+     "vad_not_in_ref_s": 39.4,
+     "vad_not_in_ref_frac_of_ref": 0.2308,
+     "ref_not_in_vad_s": 0.0,
+     "ref_not_in_vad_frac": 0.0003,
+     "longest_vad_not_in_ref": [
+      [
+       270.09,
+       297.02
+      ],
+      [
+       225.08,
+       229.23
+      ],
+      [
+       166.15,
+       168.11
+      ],
+      [
+       68.55,
+       69.79
+      ],
+      [
+       211.42,
+       212.34
+      ],
+      [
+       66.97,
+       67.84
+      ],
+      [
+       217.59,
+       218.4
+      ],
+      [
+       13.35,
+       14.1
+      ],
+      [
+       269.08,
+       269.73
+      ],
+      [
+       128.75,
+       129.35
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__T-Fc9ctuNVI_c_03",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -59.2,
+     "threshold_db": -47.3,
+     "p99_db": -19.5,
+     "vad_speech_s": 198.7,
+     "ref_speech_s": 177.7,
+     "vad_not_in_ref_s": 6.2,
+     "vad_not_in_ref_frac_of_ref": 0.0346,
+     "ref_not_in_vad_s": 0.1,
+     "ref_not_in_vad_frac": 0.0005,
+     "longest_vad_not_in_ref": [
+      [
+       5.95,
+       7.61
+      ],
+      [
+       8.75,
+       9.98
+      ],
+      [
+       3.72,
+       4.48
+      ],
+      [
+       75.11,
+       75.84
+      ],
+      [
+       11.96,
+       12.63
+      ],
+      [
+       30.5,
+       31.06
+      ],
+      [
+       216.01,
+       216.55
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__U6m3kNFjdTs_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "5 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "U6m3kNFjdTs_c_01_spk06",
+      "U6m3kNFjdTs_c_01_spk12",
+      "U6m3kNFjdTs_c_01_spk15",
+      "U6m3kNFjdTs_c_01_spk16",
+      "U6m3kNFjdTs_c_01_spk18"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 49 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 28.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 24,
+    "vad": {
+     "floor_db": -41.7,
+     "threshold_db": -32.7,
+     "p99_db": -14.4,
+     "vad_speech_s": 250.3,
+     "ref_speech_s": 169.0,
+     "vad_not_in_ref_s": 48.8,
+     "vad_not_in_ref_frac_of_ref": 0.2886,
+     "ref_not_in_vad_s": 0.4,
+     "ref_not_in_vad_frac": 0.0024,
+     "longest_vad_not_in_ref": [
+      [
+       40.77,
+       49.15
+      ],
+      [
+       266.72,
+       271.25
+      ],
+      [
+       261.25,
+       264.65
+      ],
+      [
+       247.43,
+       250.61
+      ],
+      [
+       243.24,
+       246.39
+      ],
+      [
+       236.0,
+       238.68
+      ],
+      [
+       231.6,
+       234.1
+      ],
+      [
+       131.4,
+       133.88
+      ],
+      [
+       93.57,
+       95.9
+      ],
+      [
+       123.61,
+       125.79
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__U6m3kNFjdTs_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "U6m3kNFjdTs_c_02_spk04"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 41 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 21.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -41.9,
+     "threshold_db": -32.9,
+     "p99_db": -14.4,
+     "vad_speech_s": 244.0,
+     "ref_speech_s": 188.2,
+     "vad_not_in_ref_s": 41.2,
+     "vad_not_in_ref_frac_of_ref": 0.2187,
+     "ref_not_in_vad_s": 0.1,
+     "ref_not_in_vad_frac": 0.0003,
+     "longest_vad_not_in_ref": [
+      [
+       23.25,
+       29.98
+      ],
+      [
+       118.33,
+       124.57
+      ],
+      [
+       71.46,
+       75.86
+      ],
+      [
+       65.9,
+       70.07
+      ],
+      [
+       61.2,
+       65.11
+      ],
+      [
+       54.81,
+       58.46
+      ],
+      [
+       12.46,
+       15.72
+      ],
+      [
+       98.79,
+       101.22
+      ],
+      [
+       129.4,
+       131.36
+      ],
+      [
+       10.27,
+       11.62
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__U6m3kNFjdTs_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "U6m3kNFjdTs_c_03_spk08",
+      "U6m3kNFjdTs_c_03_spk09"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       145.9,
+       212.5
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 92 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 58.8% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -41.3,
+     "threshold_db": -32.3,
+     "p99_db": -15.0,
+     "vad_speech_s": 260.4,
+     "ref_speech_s": 156.7,
+     "vad_not_in_ref_s": 92.1,
+     "vad_not_in_ref_frac_of_ref": 0.5876,
+     "ref_not_in_vad_s": 0.8,
+     "ref_not_in_vad_frac": 0.0052,
+     "longest_vad_not_in_ref": [
+      [
+       146.13,
+       212.28
+      ],
+      [
+       121.42,
+       128.07
+      ],
+      [
+       104.77,
+       111.17
+      ],
+      [
+       240.93,
+       246.97
+      ],
+      [
+       135.13,
+       137.69
+      ],
+      [
+       77.19,
+       79.55
+      ],
+      [
+       46.41,
+       47.13
+      ],
+      [
+       51.98,
+       52.7
+      ],
+      [
+       7.96,
+       8.46
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__UOyyTUX5Vo4_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       122.3,
+       181.0
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 124 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 164.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 9,
+    "vad": {
+     "floor_db": -55.3,
+     "threshold_db": -45.0,
+     "p99_db": -20.7,
+     "vad_speech_s": 215.4,
+     "ref_speech_s": 75.0,
+     "vad_not_in_ref_s": 123.6,
+     "vad_not_in_ref_frac_of_ref": 1.6494,
+     "ref_not_in_vad_s": 0.8,
+     "ref_not_in_vad_frac": 0.0105,
+     "longest_vad_not_in_ref": [
+      [
+       240.79,
+       257.24
+      ],
+      [
+       99.4,
+       113.79
+      ],
+      [
+       72.15,
+       86.15
+      ],
+      [
+       184.99,
+       196.04
+      ],
+      [
+       199.47,
+       208.31
+      ],
+      [
+       62.87,
+       69.84
+      ],
+      [
+       162.39,
+       168.55
+      ],
+      [
+       169.9,
+       175.12
+      ],
+      [
+       20.35,
+       25.15
+      ],
+      [
+       46.56,
+       49.6
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__UOyyTUX5Vo4_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "UOyyTUX5Vo4_c_02_spk07",
+      "UOyyTUX5Vo4_c_02_spk08"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 79 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 63.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -50.6,
+     "threshold_db": -41.6,
+     "p99_db": -20.9,
+     "vad_speech_s": 208.5,
+     "ref_speech_s": 124.9,
+     "vad_not_in_ref_s": 78.9,
+     "vad_not_in_ref_frac_of_ref": 0.6319,
+     "ref_not_in_vad_s": 5.0,
+     "ref_not_in_vad_frac": 0.0397,
+     "longest_vad_not_in_ref": [
+      [
+       98.55,
+       120.83
+      ],
+      [
+       224.89,
+       241.22
+      ],
+      [
+       22.48,
+       31.72
+      ],
+      [
+       129.56,
+       134.53
+      ],
+      [
+       83.0,
+       87.79
+      ],
+      [
+       91.84,
+       96.0
+      ],
+      [
+       279.32,
+       282.24
+      ],
+      [
+       50.47,
+       53.26
+      ],
+      [
+       32.13,
+       34.51
+      ],
+      [
+       59.82,
+       61.62
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__UOyyTUX5Vo4_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       64.4,
+       113.5
+      ],
+      [
+       156.9,
+       201.6
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 145 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 196.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -50.7,
+     "threshold_db": -41.7,
+     "p99_db": -23.2,
+     "vad_speech_s": 231.4,
+     "ref_speech_s": 73.7,
+     "vad_not_in_ref_s": 144.8,
+     "vad_not_in_ref_frac_of_ref": 1.9643,
+     "ref_not_in_vad_s": 2.3,
+     "ref_not_in_vad_frac": 0.0311,
+     "longest_vad_not_in_ref": [
+      [
+       157.14,
+       201.38
+      ],
+      [
+       121.25,
+       143.48
+      ],
+      [
+       78.58,
+       98.55
+      ],
+      [
+       202.3,
+       221.76
+      ],
+      [
+       104.37,
+       113.23
+      ],
+      [
+       65.89,
+       74.2
+      ],
+      [
+       239.86,
+       246.55
+      ],
+      [
+       75.21,
+       78.23
+      ],
+      [
+       251.97,
+       253.9
+      ],
+      [
+       118.08,
+       119.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__WlgxRNCHQzw_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "WlgxRNCHQzw_c_01_spk05"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 68 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 48.8% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -50.0,
+     "threshold_db": -40.0,
+     "p99_db": -16.8,
+     "vad_speech_s": 221.6,
+     "ref_speech_s": 138.9,
+     "vad_not_in_ref_s": 67.7,
+     "vad_not_in_ref_frac_of_ref": 0.4876,
+     "ref_not_in_vad_s": 0.2,
+     "ref_not_in_vad_frac": 0.0016,
+     "longest_vad_not_in_ref": [
+      [
+       116.78,
+       136.02
+      ],
+      [
+       198.81,
+       210.27
+      ],
+      [
+       8.65,
+       16.09
+      ],
+      [
+       191.24,
+       197.34
+      ],
+      [
+       1.25,
+       6.72
+      ],
+      [
+       175.33,
+       180.26
+      ],
+      [
+       106.91,
+       110.16
+      ],
+      [
+       151.41,
+       153.5
+      ],
+      [
+       84.77,
+       86.1
+      ],
+      [
+       29.5,
+       30.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__WlgxRNCHQzw_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "WlgxRNCHQzw_c_02_spk07"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       185.9,
+       231.5
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 85 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 89.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.7,
+     "threshold_db": -41.0,
+     "p99_db": -15.9,
+     "vad_speech_s": 194.8,
+     "ref_speech_s": 94.6,
+     "vad_not_in_ref_s": 85.0,
+     "vad_not_in_ref_frac_of_ref": 0.8991,
+     "ref_not_in_vad_s": 0.2,
+     "ref_not_in_vad_frac": 0.0026,
+     "longest_vad_not_in_ref": [
+      [
+       186.18,
+       231.27
+      ],
+      [
+       135.08,
+       141.66
+      ],
+      [
+       151.74,
+       158.06
+      ],
+      [
+       145.09,
+       150.88
+      ],
+      [
+       121.89,
+       126.86
+      ],
+      [
+       129.83,
+       133.71
+      ],
+      [
+       35.86,
+       38.15
+      ],
+      [
+       244.56,
+       246.67
+      ],
+      [
+       109.28,
+       111.07
+      ],
+      [
+       163.2,
+       164.54
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__WlgxRNCHQzw_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       84.3,
+       134.5
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 81 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 82.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -41.5,
+     "threshold_db": -32.5,
+     "p99_db": -16.3,
+     "vad_speech_s": 186.2,
+     "ref_speech_s": 98.5,
+     "vad_not_in_ref_s": 80.8,
+     "vad_not_in_ref_frac_of_ref": 0.8205,
+     "ref_not_in_vad_s": 1.7,
+     "ref_not_in_vad_frac": 0.0177,
+     "longest_vad_not_in_ref": [
+      [
+       84.51,
+       111.19
+      ],
+      [
+       73.94,
+       83.46
+      ],
+      [
+       201.16,
+       205.43
+      ],
+      [
+       19.37,
+       23.06
+      ],
+      [
+       208.88,
+       212.5
+      ],
+      [
+       44.64,
+       48.13
+      ],
+      [
+       176.27,
+       179.29
+      ],
+      [
+       23.45,
+       26.34
+      ],
+      [
+       70.69,
+       72.98
+      ],
+      [
+       51.53,
+       53.71
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__a9SWtcaNj8_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 40 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 32.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -49.0,
+     "threshold_db": -39.8,
+     "p99_db": -18.3,
+     "vad_speech_s": 173.9,
+     "ref_speech_s": 124.4,
+     "vad_not_in_ref_s": 39.8,
+     "vad_not_in_ref_frac_of_ref": 0.32,
+     "ref_not_in_vad_s": 0.8,
+     "ref_not_in_vad_frac": 0.0063,
+     "longest_vad_not_in_ref": [
+      [
+       157.22,
+       172.16
+      ],
+      [
+       91.11,
+       98.32
+      ],
+      [
+       100.9,
+       103.6
+      ],
+      [
+       103.97,
+       106.59
+      ],
+      [
+       288.73,
+       291.16
+      ],
+      [
+       152.76,
+       154.79
+      ],
+      [
+       119.92,
+       121.55
+      ],
+      [
+       85.87,
+       87.4
+      ],
+      [
+       89.26,
+       90.32
+      ],
+      [
+       83.72,
+       84.72
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__a9SWtcaNj8_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "_a9SWtcaNj8_c_03_spk03",
+      "_a9SWtcaNj8_c_03_spk05"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 55 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 35.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -53.7,
+     "threshold_db": -43.3,
+     "p99_db": -19.2,
+     "vad_speech_s": 222.3,
+     "ref_speech_s": 154.4,
+     "vad_not_in_ref_s": 54.8,
+     "vad_not_in_ref_frac_of_ref": 0.3549,
+     "ref_not_in_vad_s": 0.8,
+     "ref_not_in_vad_frac": 0.0049,
+     "longest_vad_not_in_ref": [
+      [
+       270.01,
+       299.14
+      ],
+      [
+       238.8,
+       243.64
+      ],
+      [
+       63.64,
+       66.62
+      ],
+      [
+       74.39,
+       77.05
+      ],
+      [
+       261.37,
+       263.57
+      ],
+      [
+       249.32,
+       251.41
+      ],
+      [
+       43.7,
+       45.49
+      ],
+      [
+       70.63,
+       72.28
+      ],
+      [
+       93.79,
+       94.84
+      ],
+      [
+       244.58,
+       245.43
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__c9pEMjPT16M_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       38.6,
+       71.4
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 32 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 19.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -34.9,
+     "threshold_db": -25.9,
+     "p99_db": -8.7,
+     "vad_speech_s": 236.9,
+     "ref_speech_s": 163.1,
+     "vad_not_in_ref_s": 32.2,
+     "vad_not_in_ref_frac_of_ref": 0.1973,
+     "ref_not_in_vad_s": 8.5,
+     "ref_not_in_vad_frac": 0.0523,
+     "longest_vad_not_in_ref": [
+      [
+       158.59,
+       162.49
+      ],
+      [
+       150.96,
+       154.29
+      ],
+      [
+       174.89,
+       177.66
+      ],
+      [
+       138.57,
+       140.67
+      ],
+      [
+       69.21,
+       71.18
+      ],
+      [
+       275.15,
+       276.96
+      ],
+      [
+       263.92,
+       265.42
+      ],
+      [
+       134.89,
+       136.27
+      ],
+      [
+       163.82,
+       164.89
+      ],
+      [
+       180.65,
+       181.65
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       107.44,
+       108.44,
+       "c9pEMjPT16M_c_01_spk03"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "ava_avd_en__c9pEMjPT16M_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       130.5,
+       257.7
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 84 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 122.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -40.4,
+     "threshold_db": -30.9,
+     "p99_db": -8.8,
+     "vad_speech_s": 179.7,
+     "ref_speech_s": 68.5,
+     "vad_not_in_ref_s": 84.0,
+     "vad_not_in_ref_frac_of_ref": 1.2265,
+     "ref_not_in_vad_s": 0.6,
+     "ref_not_in_vad_frac": 0.0084,
+     "longest_vad_not_in_ref": [
+      [
+       130.76,
+       146.27
+      ],
+      [
+       21.97,
+       29.67
+      ],
+      [
+       120.25,
+       127.09
+      ],
+      [
+       103.09,
+       106.59
+      ],
+      [
+       176.42,
+       178.83
+      ],
+      [
+       157.29,
+       159.46
+      ],
+      [
+       36.18,
+       38.35
+      ],
+      [
+       166.37,
+       168.34
+      ],
+      [
+       72.49,
+       74.43
+      ],
+      [
+       112.03,
+       113.87
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__fpprSy6AzKk_c_01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 73 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 48.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -59.9,
+     "threshold_db": -47.1,
+     "p99_db": -17.2,
+     "vad_speech_s": 251.9,
+     "ref_speech_s": 150.5,
+     "vad_not_in_ref_s": 73.1,
+     "vad_not_in_ref_frac_of_ref": 0.4857,
+     "ref_not_in_vad_s": 0.7,
+     "ref_not_in_vad_frac": 0.0048,
+     "longest_vad_not_in_ref": [
+      [
+       261.81,
+       281.79
+      ],
+      [
+       179.06,
+       183.98
+      ],
+      [
+       69.24,
+       73.81
+      ],
+      [
+       195.19,
+       199.29
+      ],
+      [
+       190.88,
+       193.69
+      ],
+      [
+       140.73,
+       143.44
+      ],
+      [
+       163.53,
+       165.6
+      ],
+      [
+       133.25,
+       135.32
+      ],
+      [
+       87.23,
+       89.29
+      ],
+      [
+       128.05,
+       130.1
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__fpprSy6AzKk_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       18.6,
+       49.3
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 68 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 41.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -47.1,
+     "threshold_db": -38.1,
+     "p99_db": -17.9,
+     "vad_speech_s": 249.9,
+     "ref_speech_s": 164.9,
+     "vad_not_in_ref_s": 68.2,
+     "vad_not_in_ref_frac_of_ref": 0.4137,
+     "ref_not_in_vad_s": 6.7,
+     "ref_not_in_vad_frac": 0.0406,
+     "longest_vad_not_in_ref": [
+      [
+       189.17,
+       207.74
+      ],
+      [
+       37.06,
+       49.06
+      ],
+      [
+       151.49,
+       158.74
+      ],
+      [
+       18.88,
+       23.06
+      ],
+      [
+       270.58,
+       273.24
+      ],
+      [
+       69.22,
+       71.72
+      ],
+      [
+       237.77,
+       239.81
+      ],
+      [
+       186.92,
+       188.83
+      ],
+      [
+       216.32,
+       218.08
+      ],
+      [
+       97.05,
+       98.72
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__fpprSy6AzKk_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "fpprSy6AzKk_c_03_spk09"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 21 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 14.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -58.6,
+     "threshold_db": -46.7,
+     "p99_db": -19.1,
+     "vad_speech_s": 190.9,
+     "ref_speech_s": 147.0,
+     "vad_not_in_ref_s": 21.4,
+     "vad_not_in_ref_frac_of_ref": 0.1453,
+     "ref_not_in_vad_s": 0.5,
+     "ref_not_in_vad_frac": 0.0035,
+     "longest_vad_not_in_ref": [
+      [
+       266.39,
+       269.64
+      ],
+      [
+       36.29,
+       39.07
+      ],
+      [
+       77.4,
+       79.97
+      ],
+      [
+       127.2,
+       129.57
+      ],
+      [
+       15.83,
+       18.0
+      ],
+      [
+       5.65,
+       7.05
+      ],
+      [
+       123.18,
+       124.27
+      ],
+      [
+       70.66,
+       71.72
+      ],
+      [
+       83.88,
+       84.94
+      ],
+      [
+       117.42,
+       118.32
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__mAfwH6i90E_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       73.8,
+       110.5
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 56 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 60.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -46.7,
+     "threshold_db": -36.8,
+     "p99_db": -13.7,
+     "vad_speech_s": 154.3,
+     "ref_speech_s": 92.5,
+     "vad_not_in_ref_s": 55.7,
+     "vad_not_in_ref_frac_of_ref": 0.6025,
+     "ref_not_in_vad_s": 2.1,
+     "ref_not_in_vad_frac": 0.0224,
+     "longest_vad_not_in_ref": [
+      [
+       86.08,
+       110.3
+      ],
+      [
+       61.82,
+       72.42
+      ],
+      [
+       76.87,
+       85.27
+      ],
+      [
+       46.79,
+       49.74
+      ],
+      [
+       235.7,
+       237.69
+      ],
+      [
+       55.08,
+       56.53
+      ],
+      [
+       58.04,
+       59.43
+      ],
+      [
+       246.57,
+       247.55
+      ],
+      [
+       51.86,
+       52.78
+      ],
+      [
+       37.69,
+       38.42
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__mAfwH6i90E_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "_mAfwH6i90E_c_02_spk06"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       114.3,
+       158.9
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 132 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 175.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -43.4,
+     "threshold_db": -34.3,
+     "p99_db": -13.1,
+     "vad_speech_s": 215.7,
+     "ref_speech_s": 75.2,
+     "vad_not_in_ref_s": 132.3,
+     "vad_not_in_ref_frac_of_ref": 1.759,
+     "ref_not_in_vad_s": 0.1,
+     "ref_not_in_vad_frac": 0.0012,
+     "longest_vad_not_in_ref": [
+      [
+       115.09,
+       158.64
+      ],
+      [
+       161.8,
+       189.34
+      ],
+      [
+       206.22,
+       232.18
+      ],
+      [
+       253.17,
+       266.68
+      ],
+      [
+       197.4,
+       203.63
+      ],
+      [
+       270.86,
+       276.86
+      ],
+      [
+       244.06,
+       248.7
+      ],
+      [
+       235.95,
+       238.58
+      ],
+      [
+       70.63,
+       71.76
+      ],
+      [
+       239.77,
+       240.43
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__mAfwH6i90E_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "_mAfwH6i90E_c_03_spk05",
+      "_mAfwH6i90E_c_03_spk08"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       147.7,
+       207.9
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 123 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 124.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 9,
+    "vad": {
+     "floor_db": -41.0,
+     "threshold_db": -32.0,
+     "p99_db": -13.0,
+     "vad_speech_s": 229.6,
+     "ref_speech_s": 98.4,
+     "vad_not_in_ref_s": 122.6,
+     "vad_not_in_ref_frac_of_ref": 1.2463,
+     "ref_not_in_vad_s": 0.6,
+     "ref_not_in_vad_frac": 0.0064,
+     "longest_vad_not_in_ref": [
+      [
+       178.26,
+       207.62
+      ],
+      [
+       150.81,
+       176.93
+      ],
+      [
+       221.86,
+       242.46
+      ],
+      [
+       18.2,
+       35.31
+      ],
+      [
+       43.48,
+       53.03
+      ],
+      [
+       93.42,
+       96.82
+      ],
+      [
+       214.63,
+       217.87
+      ],
+      [
+       81.68,
+       84.57
+      ],
+      [
+       40.37,
+       42.7
+      ],
+      [
+       53.91,
+       56.0
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__phrYEKv0rmw_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "phrYEKv0rmw_c_01_spk06"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 72 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 55.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -45.2,
+     "threshold_db": -36.2,
+     "p99_db": -21.6,
+     "vad_speech_s": 220.2,
+     "ref_speech_s": 129.2,
+     "vad_not_in_ref_s": 71.8,
+     "vad_not_in_ref_frac_of_ref": 0.5555,
+     "ref_not_in_vad_s": 3.0,
+     "ref_not_in_vad_frac": 0.0231,
+     "longest_vad_not_in_ref": [
+      [
+       37.16,
+       52.98
+      ],
+      [
+       145.39,
+       160.98
+      ],
+      [
+       268.5,
+       280.63
+      ],
+      [
+       249.58,
+       256.18
+      ],
+      [
+       290.31,
+       293.17
+      ],
+      [
+       172.67,
+       175.21
+      ],
+      [
+       163.71,
+       165.82
+      ],
+      [
+       234.59,
+       236.24
+      ],
+      [
+       191.32,
+       192.8
+      ],
+      [
+       266.15,
+       267.54
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__phrYEKv0rmw_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "phrYEKv0rmw_c_02_spk01"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 40 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 22.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -47.0,
+     "threshold_db": -38.0,
+     "p99_db": -21.7,
+     "vad_speech_s": 199.1,
+     "ref_speech_s": 174.9,
+     "vad_not_in_ref_s": 39.6,
+     "vad_not_in_ref_frac_of_ref": 0.2267,
+     "ref_not_in_vad_s": 11.2,
+     "ref_not_in_vad_frac": 0.0643,
+     "longest_vad_not_in_ref": [
+      [
+       6.51,
+       23.64
+      ],
+      [
+       114.59,
+       118.47
+      ],
+      [
+       159.0,
+       162.04
+      ],
+      [
+       163.52,
+       166.04
+      ],
+      [
+       34.74,
+       36.74
+      ],
+      [
+       180.38,
+       181.75
+      ],
+      [
+       155.83,
+       156.96
+      ],
+      [
+       63.38,
+       64.46
+      ],
+      [
+       284.71,
+       285.75
+      ],
+      [
+       44.55,
+       45.49
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__phrYEKv0rmw_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 22 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 12.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 14,
+    "vad": {
+     "floor_db": -41.8,
+     "threshold_db": -32.8,
+     "p99_db": -20.9,
+     "vad_speech_s": 205.2,
+     "ref_speech_s": 185.2,
+     "vad_not_in_ref_s": 22.4,
+     "vad_not_in_ref_frac_of_ref": 0.121,
+     "ref_not_in_vad_s": 1.9,
+     "ref_not_in_vad_frac": 0.0103,
+     "longest_vad_not_in_ref": [
+      [
+       68.86,
+       75.86
+      ],
+      [
+       106.41,
+       110.27
+      ],
+      [
+       132.31,
+       136.16
+      ],
+      [
+       166.5,
+       169.72
+      ],
+      [
+       82.37,
+       83.6
+      ],
+      [
+       80.31,
+       81.31
+      ],
+      [
+       164.58,
+       165.38
+      ],
+      [
+       142.62,
+       143.39
+      ],
+      [
+       261.63,
+       262.31
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__rXFlJbXyZyc_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       197.2,
+       233.8
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 55 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 31.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -48.9,
+     "threshold_db": -39.9,
+     "p99_db": -22.6,
+     "vad_speech_s": 253.5,
+     "ref_speech_s": 176.5,
+     "vad_not_in_ref_s": 55.1,
+     "vad_not_in_ref_frac_of_ref": 0.3124,
+     "ref_not_in_vad_s": 3.3,
+     "ref_not_in_vad_frac": 0.0187,
+     "longest_vad_not_in_ref": [
+      [
+       197.44,
+       233.55
+      ],
+      [
+       16.78,
+       28.33
+      ],
+      [
+       136.31,
+       138.32
+      ],
+      [
+       139.85,
+       141.03
+      ],
+      [
+       296.43,
+       297.34
+      ],
+      [
+       194.66,
+       195.44
+      ],
+      [
+       138.79,
+       139.51
+      ],
+      [
+       234.84,
+       235.55
+      ],
+      [
+       131.84,
+       132.47
+      ],
+      [
+       142.16,
+       142.7
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__rXFlJbXyZyc_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       183.9,
+       230.2
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 38 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 28.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -40.3,
+     "threshold_db": -31.3,
+     "p99_db": -23.1,
+     "vad_speech_s": 149.1,
+     "ref_speech_s": 133.5,
+     "vad_not_in_ref_s": 37.9,
+     "vad_not_in_ref_frac_of_ref": 0.2841,
+     "ref_not_in_vad_s": 7.1,
+     "ref_not_in_vad_frac": 0.0534,
+     "longest_vad_not_in_ref": [
+      [
+       187.31,
+       211.62
+      ],
+      [
+       215.82,
+       220.26
+      ],
+      [
+       222.15,
+       226.24
+      ],
+      [
+       184.17,
+       186.99
+      ],
+      [
+       213.23,
+       215.48
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__rXFlJbXyZyc_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "rXFlJbXyZyc_c_03_spk02"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 35 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 23.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -59.9,
+     "threshold_db": -49.2,
+     "p99_db": -24.4,
+     "vad_speech_s": 206.7,
+     "ref_speech_s": 146.1,
+     "vad_not_in_ref_s": 35.0,
+     "vad_not_in_ref_frac_of_ref": 0.2393,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       62.08,
+       76.46
+      ],
+      [
+       11.79,
+       16.33
+      ],
+      [
+       18.16,
+       22.1
+      ],
+      [
+       77.32,
+       80.28
+      ],
+      [
+       81.85,
+       83.68
+      ],
+      [
+       84.69,
+       86.05
+      ],
+      [
+       180.83,
+       181.9
+      ],
+      [
+       274.81,
+       275.83
+      ],
+      [
+       90.86,
+       91.67
+      ],
+      [
+       93.63,
+       94.32
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__uNT6HrrnqPU_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "4 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "uNT6HrrnqPU_c_01_spk10",
+      "uNT6HrrnqPU_c_01_spk03",
+      "uNT6HrrnqPU_c_01_spk11",
+      "uNT6HrrnqPU_c_01_spk05"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 83 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 64.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 17,
+    "vad": {
+     "floor_db": -50.6,
+     "threshold_db": -39.5,
+     "p99_db": -13.8,
+     "vad_speech_s": 238.2,
+     "ref_speech_s": 128.8,
+     "vad_not_in_ref_s": 83.0,
+     "vad_not_in_ref_frac_of_ref": 0.6441,
+     "ref_not_in_vad_s": 2.6,
+     "ref_not_in_vad_frac": 0.0201,
+     "longest_vad_not_in_ref": [
+      [
+       201.44,
+       215.23
+      ],
+      [
+       167.75,
+       181.14
+      ],
+      [
+       237.72,
+       245.35
+      ],
+      [
+       215.79,
+       222.59
+      ],
+      [
+       6.83,
+       12.82
+      ],
+      [
+       133.65,
+       139.18
+      ],
+      [
+       140.96,
+       146.27
+      ],
+      [
+       149.89,
+       153.98
+      ],
+      [
+       36.17,
+       40.23
+      ],
+      [
+       224.88,
+       228.31
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__uNT6HrrnqPU_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "uNT6HrrnqPU_c_02_spk09"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       232.2,
+       285.4
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 119 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 104.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -37.8,
+     "threshold_db": -28.8,
+     "p99_db": -13.5,
+     "vad_speech_s": 232.3,
+     "ref_speech_s": 114.5,
+     "vad_not_in_ref_s": 119.2,
+     "vad_not_in_ref_frac_of_ref": 1.0406,
+     "ref_not_in_vad_s": 6.8,
+     "ref_not_in_vad_frac": 0.0598,
+     "longest_vad_not_in_ref": [
+      [
+       236.22,
+       285.15
+      ],
+      [
+       103.12,
+       117.96
+      ],
+      [
+       181.97,
+       196.58
+      ],
+      [
+       76.01,
+       86.95
+      ],
+      [
+       93.42,
+       101.38
+      ],
+      [
+       118.28,
+       126.01
+      ],
+      [
+       294.25,
+       299.34
+      ],
+      [
+       87.37,
+       91.92
+      ],
+      [
+       232.86,
+       235.44
+      ],
+      [
+       198.89,
+       199.98
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__uNT6HrrnqPU_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "3 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "uNT6HrrnqPU_c_03_spk06",
+      "uNT6HrrnqPU_c_03_spk08",
+      "uNT6HrrnqPU_c_03_spk09"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 123 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 148.8% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -38.2,
+     "threshold_db": -29.2,
+     "p99_db": -14.1,
+     "vad_speech_s": 212.6,
+     "ref_speech_s": 82.8,
+     "vad_not_in_ref_s": 123.2,
+     "vad_not_in_ref_frac_of_ref": 1.4884,
+     "ref_not_in_vad_s": 3.3,
+     "ref_not_in_vad_frac": 0.0396,
+     "longest_vad_not_in_ref": [
+      [
+       72.31,
+       90.58
+      ],
+      [
+       31.38,
+       49.29
+      ],
+      [
+       18.89,
+       29.55
+      ],
+      [
+       164.25,
+       172.92
+      ],
+      [
+       153.6,
+       162.09
+      ],
+      [
+       280.93,
+       289.23
+      ],
+      [
+       259.56,
+       266.41
+      ],
+      [
+       1.09,
+       6.78
+      ],
+      [
+       246.41,
+       251.97
+      ],
+      [
+       253.62,
+       258.1
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__x-6CtPWVi6E_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "x-6CtPWVi6E_c_01_spk03"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 99 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 92.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.3,
+     "threshold_db": -40.6,
+     "p99_db": -17.9,
+     "vad_speech_s": 234.6,
+     "ref_speech_s": 107.3,
+     "vad_not_in_ref_s": 98.8,
+     "vad_not_in_ref_frac_of_ref": 0.9205,
+     "ref_not_in_vad_s": 3.3,
+     "ref_not_in_vad_frac": 0.031,
+     "longest_vad_not_in_ref": [
+      [
+       193.25,
+       206.58
+      ],
+      [
+       141.05,
+       153.28
+      ],
+      [
+       30.45,
+       38.96
+      ],
+      [
+       111.78,
+       119.68
+      ],
+      [
+       129.14,
+       134.0
+      ],
+      [
+       83.7,
+       88.48
+      ],
+      [
+       91.11,
+       95.84
+      ],
+      [
+       70.18,
+       74.68
+      ],
+      [
+       65.14,
+       68.96
+      ],
+      [
+       45.23,
+       47.74
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__x-6CtPWVi6E_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "x-6CtPWVi6E_c_02_spk04"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       46.5,
+       80.1
+      ],
+      [
+       80.5,
+       123.3
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 64 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 83.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -37.6,
+     "threshold_db": -28.6,
+     "p99_db": -17.2,
+     "vad_speech_s": 167.5,
+     "ref_speech_s": 77.0,
+     "vad_not_in_ref_s": 63.9,
+     "vad_not_in_ref_frac_of_ref": 0.8297,
+     "ref_not_in_vad_s": 0.7,
+     "ref_not_in_vad_frac": 0.0094,
+     "longest_vad_not_in_ref": [
+      [
+       219.83,
+       225.25
+      ],
+      [
+       150.71,
+       155.75
+      ],
+      [
+       118.77,
+       123.05
+      ],
+      [
+       253.02,
+       256.9
+      ],
+      [
+       247.84,
+       251.38
+      ],
+      [
+       133.57,
+       137.11
+      ],
+      [
+       128.85,
+       131.49
+      ],
+      [
+       278.35,
+       280.37
+      ],
+      [
+       179.76,
+       181.74
+      ],
+      [
+       201.2,
+       203.07
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "negative_start": 1,
+    "examples": {
+     "negative_start": [
+      [
+       -0.014,
+       0.652,
+       "x-6CtPWVi6E_c_02_spk03"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "ava_avd_en__x-6CtPWVi6E_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       95.1,
+       198.0
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 136 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 287.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -56.5,
+     "threshold_db": -44.3,
+     "p99_db": -15.8,
+     "vad_speech_s": 195.9,
+     "ref_speech_s": 47.4,
+     "vad_not_in_ref_s": 136.3,
+     "vad_not_in_ref_frac_of_ref": 2.8733,
+     "ref_not_in_vad_s": 0.3,
+     "ref_not_in_vad_frac": 0.0063,
+     "longest_vad_not_in_ref": [
+      [
+       157.6,
+       189.89
+      ],
+      [
+       269.75,
+       293.5
+      ],
+      [
+       139.79,
+       153.84
+      ],
+      [
+       256.24,
+       266.74
+      ],
+      [
+       121.89,
+       126.25
+      ],
+      [
+       127.54,
+       131.59
+      ],
+      [
+       11.27,
+       15.16
+      ],
+      [
+       23.13,
+       26.51
+      ],
+      [
+       17.98,
+       21.17
+      ],
+      [
+       6.28,
+       9.39
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__xp67EC-Hvwk_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "xp67EC-Hvwk_c_01_spk01"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       56.4,
+       90.9
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 107 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 88.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -62.9,
+     "threshold_db": -50.6,
+     "p99_db": -21.9,
+     "vad_speech_s": 240.7,
+     "ref_speech_s": 121.5,
+     "vad_not_in_ref_s": 107.1,
+     "vad_not_in_ref_frac_of_ref": 0.8816,
+     "ref_not_in_vad_s": 1.2,
+     "ref_not_in_vad_frac": 0.0103,
+     "longest_vad_not_in_ref": [
+      [
+       28.64,
+       55.19
+      ],
+      [
+       69.08,
+       90.63
+      ],
+      [
+       220.31,
+       233.3
+      ],
+      [
+       56.6,
+       68.75
+      ],
+      [
+       6.85,
+       16.93
+      ],
+      [
+       21.88,
+       26.98
+      ],
+      [
+       91.7,
+       96.08
+      ],
+      [
+       213.84,
+       218.04
+      ],
+      [
+       210.39,
+       212.09
+      ],
+      [
+       200.89,
+       202.5
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__xp67EC-Hvwk_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 27 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 17.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -63.2,
+     "threshold_db": -50.0,
+     "p99_db": -19.3,
+     "vad_speech_s": 191.2,
+     "ref_speech_s": 158.2,
+     "vad_not_in_ref_s": 26.8,
+     "vad_not_in_ref_frac_of_ref": 0.1696,
+     "ref_not_in_vad_s": 1.8,
+     "ref_not_in_vad_frac": 0.0115,
+     "longest_vad_not_in_ref": [
+      [
+       237.44,
+       249.48
+      ],
+      [
+       85.74,
+       96.66
+      ],
+      [
+       80.32,
+       82.04
+      ],
+      [
+       75.94,
+       77.56
+      ],
+      [
+       280.16,
+       280.7
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__xp67EC-Hvwk_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 16 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 7.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.9,
+     "threshold_db": -44.0,
+     "p99_db": -20.7,
+     "vad_speech_s": 234.6,
+     "ref_speech_s": 209.4,
+     "vad_not_in_ref_s": 15.6,
+     "vad_not_in_ref_frac_of_ref": 0.0745,
+     "ref_not_in_vad_s": 4.3,
+     "ref_not_in_vad_frac": 0.0207,
+     "longest_vad_not_in_ref": [
+      [
+       237.97,
+       240.77
+      ],
+      [
+       21.22,
+       23.98
+      ],
+      [
+       291.27,
+       293.74
+      ],
+      [
+       33.61,
+       35.65
+      ],
+      [
+       25.38,
+       26.93
+      ],
+      [
+       280.22,
+       281.35
+      ],
+      [
+       236.66,
+       237.59
+      ],
+      [
+       30.06,
+       30.74
+      ],
+      [
+       6.94,
+       7.57
+      ],
+      [
+       173.83,
+       174.45
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__y7ncweROe9U_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       156.1,
+       203.6
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 82 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 56.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -41.7,
+     "threshold_db": -32.7,
+     "p99_db": -13.1,
+     "vad_speech_s": 247.4,
+     "ref_speech_s": 147.1,
+     "vad_not_in_ref_s": 82.3,
+     "vad_not_in_ref_frac_of_ref": 0.5598,
+     "ref_not_in_vad_s": 0.2,
+     "ref_not_in_vad_frac": 0.001,
+     "longest_vad_not_in_ref": [
+      [
+       159.03,
+       203.31
+      ],
+      [
+       71.44,
+       80.15
+      ],
+      [
+       38.57,
+       43.3
+      ],
+      [
+       213.47,
+       218.18
+      ],
+      [
+       226.0,
+       229.94
+      ],
+      [
+       207.65,
+       211.01
+      ],
+      [
+       289.94,
+       292.25
+      ],
+      [
+       156.39,
+       158.66
+      ],
+      [
+       26.35,
+       28.11
+      ],
+      [
+       99.9,
+       101.59
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__y7ncweROe9U_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "3 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "y7ncweROe9U_c_02_spk02",
+      "y7ncweROe9U_c_02_spk13",
+      "y7ncweROe9U_c_02_spk12"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 88 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 61.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 14,
+    "vad": {
+     "floor_db": -37.8,
+     "threshold_db": -28.8,
+     "p99_db": -12.8,
+     "vad_speech_s": 252.1,
+     "ref_speech_s": 144.8,
+     "vad_not_in_ref_s": 88.4,
+     "vad_not_in_ref_frac_of_ref": 0.6107,
+     "ref_not_in_vad_s": 0.6,
+     "ref_not_in_vad_frac": 0.0041,
+     "longest_vad_not_in_ref": [
+      [
+       39.21,
+       58.6
+      ],
+      [
+       240.35,
+       255.39
+      ],
+      [
+       286.1,
+       295.0
+      ],
+      [
+       207.63,
+       214.67
+      ],
+      [
+       270.41,
+       277.34
+      ],
+      [
+       201.92,
+       206.92
+      ],
+      [
+       133.99,
+       138.06
+      ],
+      [
+       228.78,
+       232.75
+      ],
+      [
+       129.17,
+       132.55
+      ],
+      [
+       192.76,
+       195.31
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__y7ncweROe9U_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "y7ncweROe9U_c_03_spk11"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 67 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 51.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 12,
+    "vad": {
+     "floor_db": -46.3,
+     "threshold_db": -36.2,
+     "p99_db": -12.7,
+     "vad_speech_s": 222.7,
+     "ref_speech_s": 131.3,
+     "vad_not_in_ref_s": 67.2,
+     "vad_not_in_ref_frac_of_ref": 0.5117,
+     "ref_not_in_vad_s": 0.0,
+     "ref_not_in_vad_frac": 0.0003,
+     "longest_vad_not_in_ref": [
+      [
+       247.55,
+       260.63
+      ],
+      [
+       102.3,
+       114.14
+      ],
+      [
+       287.4,
+       293.48
+      ],
+      [
+       130.94,
+       136.53
+      ],
+      [
+       114.47,
+       119.88
+      ],
+      [
+       15.93,
+       21.22
+      ],
+      [
+       214.41,
+       217.7
+      ],
+      [
+       1.14,
+       4.03
+      ],
+      [
+       139.44,
+       142.3
+      ],
+      [
+       227.18,
+       229.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__2XeFK-DTSZk_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "2XeFK-DTSZk_c_01_spk02"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 59 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 55.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -50.0,
+     "threshold_db": -37.0,
+     "p99_db": -6.8,
+     "vad_speech_s": 210.5,
+     "ref_speech_s": 105.9,
+     "vad_not_in_ref_s": 59.0,
+     "vad_not_in_ref_frac_of_ref": 0.5575,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       49.58,
+       60.51
+      ],
+      [
+       69.13,
+       76.36
+      ],
+      [
+       40.14,
+       46.61
+      ],
+      [
+       13.46,
+       17.86
+      ],
+      [
+       166.62,
+       170.42
+      ],
+      [
+       123.34,
+       125.58
+      ],
+      [
+       290.22,
+       291.67
+      ],
+      [
+       264.44,
+       265.85
+      ],
+      [
+       66.01,
+       67.32
+      ],
+      [
+       164.36,
+       165.63
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__2XeFK-DTSZk_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       126.4,
+       226.2
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 98 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 118.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -47.7,
+     "threshold_db": -36.2,
+     "p99_db": -9.2,
+     "vad_speech_s": 209.5,
+     "ref_speech_s": 82.7,
+     "vad_not_in_ref_s": 97.9,
+     "vad_not_in_ref_frac_of_ref": 1.1845,
+     "ref_not_in_vad_s": 0.4,
+     "ref_not_in_vad_frac": 0.0047,
+     "longest_vad_not_in_ref": [
+      [
+       169.0,
+       225.99
+      ],
+      [
+       157.71,
+       168.0
+      ],
+      [
+       227.36,
+       230.28
+      ],
+      [
+       154.36,
+       157.04
+      ],
+      [
+       233.44,
+       236.0
+      ],
+      [
+       148.6,
+       150.59
+      ],
+      [
+       250.92,
+       252.85
+      ],
+      [
+       17.92,
+       19.72
+      ],
+      [
+       246.47,
+       248.18
+      ],
+      [
+       21.55,
+       23.2
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__2XeFK-DTSZk_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       86.3,
+       118.9
+      ],
+      [
+       211.5,
+       245.0
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 104 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 160.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -43.8,
+     "threshold_db": -33.0,
+     "p99_db": -7.7,
+     "vad_speech_s": 190.1,
+     "ref_speech_s": 65.3,
+     "vad_not_in_ref_s": 104.5,
+     "vad_not_in_ref_frac_of_ref": 1.6005,
+     "ref_not_in_vad_s": 0.6,
+     "ref_not_in_vad_frac": 0.0088,
+     "longest_vad_not_in_ref": [
+      [
+       86.6,
+       118.02
+      ],
+      [
+       153.17,
+       172.64
+      ],
+      [
+       175.57,
+       189.85
+      ],
+      [
+       232.54,
+       239.02
+      ],
+      [
+       59.43,
+       65.13
+      ],
+      [
+       191.07,
+       195.31
+      ],
+      [
+       81.01,
+       84.59
+      ],
+      [
+       213.75,
+       217.29
+      ],
+      [
+       278.04,
+       280.24
+      ],
+      [
+       131.14,
+       133.14
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__55Ihr6uVIDA_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       140.9,
+       192.6
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 63 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 91.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 9,
+    "vad": {
+     "floor_db": -57.7,
+     "threshold_db": -44.8,
+     "p99_db": -14.8,
+     "vad_speech_s": 156.5,
+     "ref_speech_s": 69.6,
+     "vad_not_in_ref_s": 63.4,
+     "vad_not_in_ref_frac_of_ref": 0.9107,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       90.35,
+       100.62
+      ],
+      [
+       200.92,
+       208.9
+      ],
+      [
+       61.87,
+       68.34
+      ],
+      [
+       141.2,
+       146.69
+      ],
+      [
+       48.4,
+       53.84
+      ],
+      [
+       55.57,
+       58.96
+      ],
+      [
+       123.19,
+       126.35
+      ],
+      [
+       167.77,
+       170.0
+      ],
+      [
+       82.83,
+       85.03
+      ],
+      [
+       29.38,
+       31.24
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__55Ihr6uVIDA_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 89 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 136.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -49.9,
+     "threshold_db": -39.0,
+     "p99_db": -13.4,
+     "vad_speech_s": 170.8,
+     "ref_speech_s": 65.4,
+     "vad_not_in_ref_s": 89.2,
+     "vad_not_in_ref_frac_of_ref": 1.3646,
+     "ref_not_in_vad_s": 0.6,
+     "ref_not_in_vad_frac": 0.0095,
+     "longest_vad_not_in_ref": [
+      [
+       168.96,
+       185.42
+      ],
+      [
+       159.57,
+       166.27
+      ],
+      [
+       191.12,
+       197.67
+      ],
+      [
+       242.29,
+       248.28
+      ],
+      [
+       211.14,
+       216.91
+      ],
+      [
+       72.53,
+       77.38
+      ],
+      [
+       110.27,
+       114.49
+      ],
+      [
+       219.89,
+       223.28
+      ],
+      [
+       268.96,
+       272.34
+      ],
+      [
+       259.62,
+       262.65
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__55Ihr6uVIDA_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 73 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 75.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -48.1,
+     "threshold_db": -37.6,
+     "p99_db": -13.2,
+     "vad_speech_s": 186.4,
+     "ref_speech_s": 97.0,
+     "vad_not_in_ref_s": 73.1,
+     "vad_not_in_ref_frac_of_ref": 0.7537,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.0608,
+     "longest_vad_not_in_ref": [
+      [
+       47.74,
+       62.2
+      ],
+      [
+       65.42,
+       73.95
+      ],
+      [
+       245.41,
+       253.29
+      ],
+      [
+       234.67,
+       239.75
+      ],
+      [
+       262.83,
+       266.97
+      ],
+      [
+       184.68,
+       188.09
+      ],
+      [
+       206.17,
+       209.49
+      ],
+      [
+       179.2,
+       181.64
+      ],
+      [
+       136.65,
+       139.02
+      ],
+      [
+       221.82,
+       223.78
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__914yZXz-iRs_c_01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 51 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 35.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -52.2,
+     "threshold_db": -43.2,
+     "p99_db": -32.4,
+     "vad_speech_s": 207.8,
+     "ref_speech_s": 146.7,
+     "vad_not_in_ref_s": 51.4,
+     "vad_not_in_ref_frac_of_ref": 0.3506,
+     "ref_not_in_vad_s": 4.7,
+     "ref_not_in_vad_frac": 0.0319,
+     "longest_vad_not_in_ref": [
+      [
+       112.69,
+       119.46
+      ],
+      [
+       101.01,
+       107.19
+      ],
+      [
+       30.42,
+       34.92
+      ],
+      [
+       90.74,
+       95.19
+      ],
+      [
+       140.83,
+       145.16
+      ],
+      [
+       135.01,
+       138.2
+      ],
+      [
+       161.27,
+       164.04
+      ],
+      [
+       149.2,
+       151.92
+      ],
+      [
+       43.2,
+       45.69
+      ],
+      [
+       179.38,
+       181.76
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__914yZXz-iRs_c_02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 37 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 28.5% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 14,
+    "vad": {
+     "floor_db": -56.6,
+     "threshold_db": -47.6,
+     "p99_db": -31.6,
+     "vad_speech_s": 176.4,
+     "ref_speech_s": 129.3,
+     "vad_not_in_ref_s": 36.8,
+     "vad_not_in_ref_frac_of_ref": 0.2847,
+     "ref_not_in_vad_s": 4.0,
+     "ref_not_in_vad_frac": 0.0307,
+     "longest_vad_not_in_ref": [
+      [
+       279.03,
+       284.39
+      ],
+      [
+       247.92,
+       250.71
+      ],
+      [
+       270.74,
+       272.92
+      ],
+      [
+       120.08,
+       121.98
+      ],
+      [
+       103.77,
+       105.6
+      ],
+      [
+       100.97,
+       102.8
+      ],
+      [
+       112.17,
+       113.82
+      ],
+      [
+       128.95,
+       130.54
+      ],
+      [
+       106.57,
+       108.03
+      ],
+      [
+       126.16,
+       127.46
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__914yZXz-iRs_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 16 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -54.8,
+     "threshold_db": -45.8,
+     "p99_db": -32.7,
+     "vad_speech_s": 143.0,
+     "ref_speech_s": 158.9,
+     "vad_not_in_ref_s": 16.2,
+     "vad_not_in_ref_frac_of_ref": 0.1018,
+     "ref_not_in_vad_s": 27.0,
+     "ref_not_in_vad_frac": 0.17,
+     "longest_vad_not_in_ref": [
+      [
+       287.85,
+       291.39
+      ],
+      [
+       240.29,
+       243.75
+      ],
+      [
+       18.22,
+       19.72
+      ],
+      [
+       294.04,
+       295.06
+      ],
+      [
+       255.25,
+       256.27
+      ],
+      [
+       250.25,
+       251.27
+      ],
+      [
+       266.01,
+       266.96
+      ],
+      [
+       271.61,
+       272.42
+      ],
+      [
+       63.62,
+       64.39
+      ],
+      [
+       276.29,
+       277.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__fD6VkIRlIRI_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "3 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       56.4,
+       130.0
+      ],
+      [
+       174.5,
+       231.3
+      ],
+      [
+       232.8,
+       291.4
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 171 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 363.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -62.2,
+     "threshold_db": -52.4,
+     "p99_db": -29.4,
+     "vad_speech_s": 225.8,
+     "ref_speech_s": 47.1,
+     "vad_not_in_ref_s": 171.1,
+     "vad_not_in_ref_frac_of_ref": 3.6302,
+     "ref_not_in_vad_s": 0.2,
+     "ref_not_in_vad_frac": 0.004,
+     "longest_vad_not_in_ref": [
+      [
+       233.1,
+       291.15
+      ],
+      [
+       174.71,
+       231.05
+      ],
+      [
+       81.14,
+       129.79
+      ],
+      [
+       17.01,
+       20.96
+      ],
+      [
+       170.76,
+       172.24
+      ],
+      [
+       78.85,
+       80.17
+      ],
+      [
+       33.69,
+       34.42
+      ],
+      [
+       67.24,
+       67.82
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__fD6VkIRlIRI_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "fD6VkIRlIRI_c_02_spk05"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       19.2,
+       61.6
+      ],
+      [
+       138.2,
+       269.7
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 159 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 323.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -63.4,
+     "threshold_db": -52.7,
+     "p99_db": -27.8,
+     "vad_speech_s": 219.8,
+     "ref_speech_s": 49.1,
+     "vad_not_in_ref_s": 158.9,
+     "vad_not_in_ref_frac_of_ref": 3.2392,
+     "ref_not_in_vad_s": 0,
+     "ref_not_in_vad_frac": 0.0,
+     "longest_vad_not_in_ref": [
+      [
+       199.51,
+       242.0
+      ],
+      [
+       43.25,
+       61.32
+      ],
+      [
+       123.05,
+       137.18
+      ],
+      [
+       242.36,
+       255.92
+      ],
+      [
+       27.79,
+       39.31
+      ],
+      [
+       289.65,
+       299.4
+      ],
+      [
+       263.76,
+       269.41
+      ],
+      [
+       71.62,
+       75.55
+      ],
+      [
+       163.58,
+       167.21
+      ],
+      [
+       117.22,
+       120.06
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__fD6VkIRlIRI_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 81 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 72.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 9,
+    "vad": {
+     "floor_db": -60.9,
+     "threshold_db": -49.8,
+     "p99_db": -23.7,
+     "vad_speech_s": 208.2,
+     "ref_speech_s": 112.3,
+     "vad_not_in_ref_s": 81.2,
+     "vad_not_in_ref_frac_of_ref": 0.7232,
+     "ref_not_in_vad_s": 1.6,
+     "ref_not_in_vad_frac": 0.0142,
+     "longest_vad_not_in_ref": [
+      [
+       4.32,
+       17.19
+      ],
+      [
+       254.88,
+       265.81
+      ],
+      [
+       17.68,
+       27.04
+      ],
+      [
+       43.87,
+       50.16
+      ],
+      [
+       72.09,
+       78.33
+      ],
+      [
+       268.68,
+       274.01
+      ],
+      [
+       200.39,
+       204.24
+      ],
+      [
+       174.36,
+       178.14
+      ],
+      [
+       27.35,
+       30.32
+      ],
+      [
+       248.12,
+       250.94
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__o4xQ-BEa3Ss_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "o4xQ-BEa3Ss_c_02_spk04"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 72 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 44.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -38.4,
+     "threshold_db": -29.4,
+     "p99_db": -17.5,
+     "vad_speech_s": 238.7,
+     "ref_speech_s": 162.5,
+     "vad_not_in_ref_s": 72.0,
+     "vad_not_in_ref_frac_of_ref": 0.4431,
+     "ref_not_in_vad_s": 1.6,
+     "ref_not_in_vad_frac": 0.0101,
+     "longest_vad_not_in_ref": [
+      [
+       178.36,
+       198.7
+      ],
+      [
+       140.09,
+       150.64
+      ],
+      [
+       158.62,
+       168.57
+      ],
+      [
+       83.86,
+       91.56
+      ],
+      [
+       116.77,
+       123.86
+      ],
+      [
+       294.63,
+       296.75
+      ],
+      [
+       267.61,
+       269.49
+      ],
+      [
+       171.77,
+       173.59
+      ],
+      [
+       242.47,
+       244.08
+      ],
+      [
+       174.48,
+       175.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__o4xQ-BEa3Ss_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 62 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 52.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -34.0,
+     "threshold_db": -25.0,
+     "p99_db": -17.9,
+     "vad_speech_s": 149.2,
+     "ref_speech_s": 118.8,
+     "vad_not_in_ref_s": 62.2,
+     "vad_not_in_ref_frac_of_ref": 0.5231,
+     "ref_not_in_vad_s": 18.5,
+     "ref_not_in_vad_frac": 0.1553,
+     "longest_vad_not_in_ref": [
+      [
+       80.4,
+       92.63
+      ],
+      [
+       70.33,
+       79.2
+      ],
+      [
+       61.36,
+       68.09
+      ],
+      [
+       163.91,
+       170.24
+      ],
+      [
+       227.37,
+       231.07
+      ],
+      [
+       93.54,
+       97.1
+      ],
+      [
+       17.12,
+       20.51
+      ],
+      [
+       130.05,
+       132.6
+      ],
+      [
+       127.23,
+       129.55
+      ],
+      [
+       23.28,
+       25.59
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__oD_wxyTHJ2I_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "oD_wxyTHJ2I_c_01_spk01",
+      "oD_wxyTHJ2I_c_01_spk07"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 79 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 61.8% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 15,
+    "vad": {
+     "floor_db": -54.3,
+     "threshold_db": -42.5,
+     "p99_db": -14.8,
+     "vad_speech_s": 231.2,
+     "ref_speech_s": 127.4,
+     "vad_not_in_ref_s": 78.7,
+     "vad_not_in_ref_frac_of_ref": 0.6182,
+     "ref_not_in_vad_s": 2.2,
+     "ref_not_in_vad_frac": 0.017,
+     "longest_vad_not_in_ref": [
+      [
+       22.88,
+       42.83
+      ],
+      [
+       60.2,
+       69.43
+      ],
+      [
+       6.16,
+       14.85
+      ],
+      [
+       51.67,
+       58.51
+      ],
+      [
+       70.74,
+       77.43
+      ],
+      [
+       109.37,
+       113.58
+      ],
+      [
+       45.62,
+       48.96
+      ],
+      [
+       157.84,
+       160.71
+      ],
+      [
+       178.73,
+       181.38
+      ],
+      [
+       18.25,
+       20.25
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__oD_wxyTHJ2I_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "oD_wxyTHJ2I_c_02_spk04"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 36 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 31.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -60.2,
+     "threshold_db": -49.7,
+     "p99_db": -25.4,
+     "vad_speech_s": 170.2,
+     "ref_speech_s": 114.4,
+     "vad_not_in_ref_s": 35.6,
+     "vad_not_in_ref_frac_of_ref": 0.3114,
+     "ref_not_in_vad_s": 1.0,
+     "ref_not_in_vad_frac": 0.0091,
+     "longest_vad_not_in_ref": [
+      [
+       140.97,
+       145.03
+      ],
+      [
+       249.17,
+       252.55
+      ],
+      [
+       11.19,
+       13.98
+      ],
+      [
+       31.48,
+       33.56
+      ],
+      [
+       18.47,
+       20.31
+      ],
+      [
+       149.94,
+       151.55
+      ],
+      [
+       130.45,
+       131.94
+      ],
+      [
+       239.85,
+       241.25
+      ],
+      [
+       161.08,
+       162.37
+      ],
+      [
+       197.1,
+       198.18
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__oD_wxyTHJ2I_c_03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 64 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 58.3% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -56.5,
+     "threshold_db": -45.2,
+     "p99_db": -18.9,
+     "vad_speech_s": 199.3,
+     "ref_speech_s": 109.7,
+     "vad_not_in_ref_s": 63.9,
+     "vad_not_in_ref_frac_of_ref": 0.5829,
+     "ref_not_in_vad_s": 0.1,
+     "ref_not_in_vad_frac": 0.0005,
+     "longest_vad_not_in_ref": [
+      [
+       37.06,
+       50.79
+      ],
+      [
+       57.92,
+       63.25
+      ],
+      [
+       190.53,
+       194.79
+      ],
+      [
+       254.12,
+       257.89
+      ],
+      [
+       195.73,
+       199.19
+      ],
+      [
+       21.92,
+       25.2
+      ],
+      [
+       51.15,
+       54.31
+      ],
+      [
+       130.4,
+       133.37
+      ],
+      [
+       173.25,
+       175.7
+      ],
+      [
+       227.38,
+       229.8
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__yMtGmGa8KZ0_c_01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "yMtGmGa8KZ0_c_01_spk03"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       8.0,
+       61.2
+      ],
+      [
+       129.4,
+       244.9
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 90 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 249.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -45.6,
+     "threshold_db": -36.6,
+     "p99_db": -25.0,
+     "vad_speech_s": 125.6,
+     "ref_speech_s": 36.1,
+     "vad_not_in_ref_s": 90.0,
+     "vad_not_in_ref_frac_of_ref": 2.4916,
+     "ref_not_in_vad_s": 4.0,
+     "ref_not_in_vad_frac": 0.1115,
+     "longest_vad_not_in_ref": [
+      [
+       175.56,
+       190.3
+      ],
+      [
+       161.14,
+       175.21
+      ],
+      [
+       207.29,
+       214.94
+      ],
+      [
+       142.25,
+       149.88
+      ],
+      [
+       218.78,
+       224.54
+      ],
+      [
+       45.87,
+       51.36
+      ],
+      [
+       197.29,
+       199.62
+      ],
+      [
+       231.21,
+       233.51
+      ],
+      [
+       38.88,
+       40.95
+      ],
+      [
+       43.7,
+       45.0
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__yMtGmGa8KZ0_c_02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       113.6,
+       144.7
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 27 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 25.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -41.3,
+     "threshold_db": -32.3,
+     "p99_db": -24.7,
+     "vad_speech_s": 111.3,
+     "ref_speech_s": 107.7,
+     "vad_not_in_ref_s": 26.9,
+     "vad_not_in_ref_frac_of_ref": 0.2495,
+     "ref_not_in_vad_s": 7.2,
+     "ref_not_in_vad_frac": 0.0665,
+     "longest_vad_not_in_ref": [
+      [
+       113.83,
+       129.24
+      ],
+      [
+       110.41,
+       112.86
+      ],
+      [
+       99.2,
+       101.45
+      ],
+      [
+       129.73,
+       131.07
+      ],
+      [
+       92.84,
+       93.97
+      ],
+      [
+       94.32,
+       95.25
+      ],
+      [
+       89.31,
+       90.21
+      ],
+      [
+       131.59,
+       132.33
+      ],
+      [
+       132.74,
+       133.41
+      ],
+      [
+       105.3,
+       105.83
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "ava_avd_en__yMtGmGa8KZ0_c_03",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "yMtGmGa8KZ0_c_03_spk04"
+     ]
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       2.9,
+       98.2
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 57 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 47.7% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -37.8,
+     "threshold_db": -28.8,
+     "p99_db": -24.5,
+     "vad_speech_s": 162.2,
+     "ref_speech_s": 118.9,
+     "vad_not_in_ref_s": 56.7,
+     "vad_not_in_ref_frac_of_ref": 0.4767,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.0498,
+     "longest_vad_not_in_ref": [
+      [
+       9.8,
+       14.42
+      ],
+      [
+       30.34,
+       34.46
+      ],
+      [
+       93.99,
+       97.92
+      ],
+      [
+       55.17,
+       58.93
+      ],
+      [
+       25.23,
+       28.78
+      ],
+      [
+       47.09,
+       50.1
+      ],
+      [
+       36.91,
+       39.49
+      ],
+      [
+       222.34,
+       224.83
+      ],
+      [
+       72.11,
+       74.51
+      ],
+      [
+       218.94,
+       221.32
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  }
+ ]
+}

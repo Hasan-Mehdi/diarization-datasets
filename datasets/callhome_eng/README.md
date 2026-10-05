@@ -94,6 +94,16 @@ Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar
 **Whisper audit of the longest audible false alarms (default):** 38 of 40 regions (>= 1 s) contain >= 3 intelligible words, i.e. speech the reference does not label (92.2 of 94.7 s). Examples: `callhome_eng__eng_013` 44.9-50.3 s: "They said he doesn't want to start working because you didn't tell him exactly e"; `callhome_eng__eng_073` 603.6-607.2 s: "See, I should have planned to arrive on the same day that you arrived."; `callhome_eng__eng_047` 202.2-205.7 s: "and the barges go so slowly that like you can get off at a bridge"
 <!-- /auto:diagnosis -->
 
+**Missing turns in the TalkBank / HF version (annotation error, verified).** The model's longest audible "false
+alarms" were transcribed with Whisper: **38 of the 40 longest regions contain clear speech** that has no label at
+all in the reference, for example `eng_037` 380.4-383.7 s *"It's really interesting. It's University of
+Pennsylvania."* and `eng_076` 452.0-454.9 s *"How much does a hamburger cost at Burger King, do you know?"*. In
+`eng_037` about 121 s of audible speech is unlabelled (32% of its reference speech; the energy-VAD check flags the
+same file). At least 12 calls are affected. So part of the 3.9% false alarm is reference error. The overall DER
+(11.7% at collar 0, 7.2% at 0.25 s) is in line with the model card's CALLHOME results (9.1% at 0.25 s), so the bulk
+of the data is usable. Drop or re-check the flagged calls (see `results/diagnosis/fa_audit.callhome_eng.default.json`).
+
+
 ## Quality rating
 
 **C+.** Human transcripts of natural telephone conversation (a classic benchmark domain), but turn-level bullets

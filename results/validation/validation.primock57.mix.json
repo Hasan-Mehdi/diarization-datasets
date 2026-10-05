@@ -1,0 +1,1710 @@
+{
+ "summary": {
+  "dataset": "primock57",
+  "view": "mix",
+  "sessions": 57,
+  "errors": 0,
+  "warnings": 19,
+  "issue_counts": {
+   "warning:segments_over_60s": 19
+  },
+  "raw_label_issue_totals": {},
+  "sessions_with_raw_label_issues": 0,
+  "vad": {
+   "ref_speech_h": 7.91,
+   "vad_not_in_ref_frac": 0.0026,
+   "ref_not_in_vad_frac": 0.0125,
+   "worst_sessions": [
+    [
+     "primock57__day4_consultation08",
+     0.0146
+    ],
+    [
+     "primock57__day4_consultation10",
+     0.0127
+    ],
+    [
+     "primock57__day1_consultation02",
+     0.0089
+    ],
+    [
+     "primock57__day4_consultation09",
+     0.0085
+    ],
+    [
+     "primock57__day1_consultation09",
+     0.0076
+    ],
+    [
+     "primock57__day1_consultation15",
+     0.0075
+    ],
+    [
+     "primock57__day1_consultation08",
+     0.0072
+    ],
+    [
+     "primock57__day2_consultation09",
+     0.0066
+    ],
+    [
+     "primock57__day4_consultation01",
+     0.0059
+    ],
+    [
+     "primock57__day4_consultation06",
+     0.0058
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "primock57__day1_consultation01",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.1,
+     "threshold_db": -57.6,
+     "p99_db": -12.0,
+     "vad_speech_s": 421.0,
+     "ref_speech_s": 447.4,
+     "vad_not_in_ref_s": 0.6,
+     "vad_not_in_ref_frac_of_ref": 0.0013,
+     "ref_not_in_vad_s": 1.8,
+     "ref_not_in_vad_frac": 0.0039,
+     "longest_vad_not_in_ref": [
+      [
+       1.64,
+       2.23
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 85.3
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.4,
+     "threshold_db": -59.0,
+     "p99_db": -13.7,
+     "vad_speech_s": 493.7,
+     "ref_speech_s": 517.2,
+     "vad_not_in_ref_s": 4.6,
+     "vad_not_in_ref_frac_of_ref": 0.0089,
+     "ref_not_in_vad_s": 4.6,
+     "ref_not_in_vad_frac": 0.0089,
+     "longest_vad_not_in_ref": [
+      [
+       343.09,
+       345.06
+      ],
+      [
+       556.06,
+       557.13
+      ],
+      [
+       340.02,
+       341.07
+      ],
+      [
+       268.17,
+       268.68
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation03",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -79.7,
+     "threshold_db": -59.6,
+     "p99_db": -12.7,
+     "vad_speech_s": 474.4,
+     "ref_speech_s": 502.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 2.2,
+     "ref_not_in_vad_frac": 0.0043,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation04",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 65.4
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -83.7,
+     "threshold_db": -62.7,
+     "p99_db": -13.7,
+     "vad_speech_s": 524.0,
+     "ref_speech_s": 567.2,
+     "vad_not_in_ref_s": 1.3,
+     "vad_not_in_ref_frac_of_ref": 0.0023,
+     "ref_not_in_vad_s": 5.6,
+     "ref_not_in_vad_frac": 0.0098,
+     "longest_vad_not_in_ref": [
+      [
+       270.49,
+       271.2
+      ],
+      [
+       444.44,
+       445.01
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation05",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -80.1,
+     "threshold_db": -60.0,
+     "p99_db": -13.1,
+     "vad_speech_s": 504.2,
+     "ref_speech_s": 532.4,
+     "vad_not_in_ref_s": 0.5,
+     "vad_not_in_ref_frac_of_ref": 0.001,
+     "ref_not_in_vad_s": 4.0,
+     "ref_not_in_vad_frac": 0.0075,
+     "longest_vad_not_in_ref": [
+      [
+       364.08,
+       364.61
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation06",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -82.1,
+     "threshold_db": -60.7,
+     "p99_db": -11.0,
+     "vad_speech_s": 530.9,
+     "ref_speech_s": 580.1,
+     "vad_not_in_ref_s": 1.3,
+     "vad_not_in_ref_frac_of_ref": 0.0023,
+     "ref_not_in_vad_s": 11.4,
+     "ref_not_in_vad_frac": 0.0197,
+     "longest_vad_not_in_ref": [
+      [
+       372.66,
+       373.4
+      ],
+      [
+       466.19,
+       466.8
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation07",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -82.9,
+     "threshold_db": -62.0,
+     "p99_db": -13.1,
+     "vad_speech_s": 750.8,
+     "ref_speech_s": 800.5,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.001,
+     "ref_not_in_vad_s": 3.1,
+     "ref_not_in_vad_frac": 0.0039,
+     "longest_vad_not_in_ref": [
+      [
+       855.81,
+       856.61
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation08",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -81.2,
+     "threshold_db": -60.1,
+     "p99_db": -10.8,
+     "vad_speech_s": 369.9,
+     "ref_speech_s": 410.0,
+     "vad_not_in_ref_s": 3.0,
+     "vad_not_in_ref_frac_of_ref": 0.0072,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.0144,
+     "longest_vad_not_in_ref": [
+      [
+       342.7,
+       343.86
+      ],
+      [
+       285.9,
+       286.93
+      ],
+      [
+       225.72,
+       226.49
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation09",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 69.1
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -80.4,
+     "threshold_db": -59.6,
+     "p99_db": -11.1,
+     "vad_speech_s": 459.6,
+     "ref_speech_s": 490.4,
+     "vad_not_in_ref_s": 3.7,
+     "vad_not_in_ref_frac_of_ref": 0.0076,
+     "ref_not_in_vad_s": 5.0,
+     "ref_not_in_vad_frac": 0.0103,
+     "longest_vad_not_in_ref": [
+      [
+       159.36,
+       160.47
+      ],
+      [
+       161.17,
+       161.92
+      ],
+      [
+       213.59,
+       214.29
+      ],
+      [
+       130.81,
+       131.46
+      ],
+      [
+       76.51,
+       77.02
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation10",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 80.2
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -80.4,
+     "threshold_db": -60.3,
+     "p99_db": -13.4,
+     "vad_speech_s": 552.3,
+     "ref_speech_s": 585.5,
+     "vad_not_in_ref_s": 1.5,
+     "vad_not_in_ref_frac_of_ref": 0.0025,
+     "ref_not_in_vad_s": 6.9,
+     "ref_not_in_vad_frac": 0.0118,
+     "longest_vad_not_in_ref": [
+      [
+       617.88,
+       618.66
+      ],
+      [
+       388.06,
+       388.75
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation11",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -82.2,
+     "threshold_db": -61.5,
+     "p99_db": -13.2,
+     "vad_speech_s": 686.1,
+     "ref_speech_s": 762.5,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.001,
+     "ref_not_in_vad_s": 11.9,
+     "ref_not_in_vad_frac": 0.0156,
+     "longest_vad_not_in_ref": [
+      [
+       196.61,
+       197.39
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation12",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -79.7,
+     "threshold_db": -58.9,
+     "p99_db": -10.4,
+     "vad_speech_s": 416.7,
+     "ref_speech_s": 441.4,
+     "vad_not_in_ref_s": 1.3,
+     "vad_not_in_ref_frac_of_ref": 0.0029,
+     "ref_not_in_vad_s": 3.1,
+     "ref_not_in_vad_frac": 0.0069,
+     "longest_vad_not_in_ref": [
+      [
+       311.81,
+       312.58
+      ],
+      [
+       197.07,
+       197.59
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation13",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -79.9,
+     "threshold_db": -59.3,
+     "p99_db": -11.2,
+     "vad_speech_s": 552.0,
+     "ref_speech_s": 584.5,
+     "vad_not_in_ref_s": 1.4,
+     "vad_not_in_ref_frac_of_ref": 0.0024,
+     "ref_not_in_vad_s": 8.5,
+     "ref_not_in_vad_frac": 0.0145,
+     "longest_vad_not_in_ref": [
+      [
+       412.43,
+       413.28
+      ],
+      [
+       77.93,
+       78.5
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation14",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -80.1,
+     "threshold_db": -59.9,
+     "p99_db": -12.9,
+     "vad_speech_s": 550.3,
+     "ref_speech_s": 579.8,
+     "vad_not_in_ref_s": 2.1,
+     "vad_not_in_ref_frac_of_ref": 0.0036,
+     "ref_not_in_vad_s": 3.6,
+     "ref_not_in_vad_frac": 0.0061,
+     "longest_vad_not_in_ref": [
+      [
+       0.01,
+       0.9
+      ],
+      [
+       405.26,
+       405.85
+      ],
+      [
+       186.96,
+       187.55
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day1_consultation15",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -82.1,
+     "threshold_db": -60.9,
+     "p99_db": -11.7,
+     "vad_speech_s": 402.4,
+     "ref_speech_s": 456.2,
+     "vad_not_in_ref_s": 3.4,
+     "vad_not_in_ref_frac_of_ref": 0.0075,
+     "ref_not_in_vad_s": 11.7,
+     "ref_not_in_vad_frac": 0.0257,
+     "longest_vad_not_in_ref": [
+      [
+       0.87,
+       2.44
+      ],
+      [
+       351.99,
+       353.3
+      ],
+      [
+       485.61,
+       486.13
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 65.4
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -70.2,
+     "threshold_db": -52.0,
+     "p99_db": -9.5,
+     "vad_speech_s": 282.0,
+     "ref_speech_s": 314.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 1.6,
+     "ref_not_in_vad_frac": 0.0052,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation02",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 96.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -73.7,
+     "threshold_db": -54.9,
+     "p99_db": -11.1,
+     "vad_speech_s": 448.5,
+     "ref_speech_s": 519.6,
+     "vad_not_in_ref_s": 0.5,
+     "vad_not_in_ref_frac_of_ref": 0.001,
+     "ref_not_in_vad_s": 10.8,
+     "ref_not_in_vad_frac": 0.0207,
+     "longest_vad_not_in_ref": [
+      [
+       0.1,
+       0.61
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation03",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -73.1,
+     "threshold_db": -54.7,
+     "p99_db": -11.6,
+     "vad_speech_s": 379.6,
+     "ref_speech_s": 430.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 5.4,
+     "ref_not_in_vad_frac": 0.0126,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation04",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -73.8,
+     "threshold_db": -55.0,
+     "p99_db": -11.0,
+     "vad_speech_s": 473.1,
+     "ref_speech_s": 531.1,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0014,
+     "ref_not_in_vad_s": 7.5,
+     "ref_not_in_vad_frac": 0.0142,
+     "longest_vad_not_in_ref": [
+      [
+       260.01,
+       260.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation05",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 147.1
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.0,
+     "threshold_db": -58.6,
+     "p99_db": -13.3,
+     "vad_speech_s": 525.5,
+     "ref_speech_s": 574.2,
+     "vad_not_in_ref_s": 1.7,
+     "vad_not_in_ref_frac_of_ref": 0.003,
+     "ref_not_in_vad_s": 3.5,
+     "ref_not_in_vad_frac": 0.0062,
+     "longest_vad_not_in_ref": [
+      [
+       99.24,
+       100.42
+      ],
+      [
+       60.46,
+       61.01
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation06",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 91.7
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.0,
+     "threshold_db": -56.3,
+     "p99_db": -12.6,
+     "vad_speech_s": 500.1,
+     "ref_speech_s": 557.8,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 3.8,
+     "ref_not_in_vad_frac": 0.0067,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation07",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -74.9,
+     "threshold_db": -56.6,
+     "p99_db": -13.9,
+     "vad_speech_s": 391.5,
+     "ref_speech_s": 434.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 1.5,
+     "ref_not_in_vad_frac": 0.0034,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation08",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 104.4
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -79.3,
+     "threshold_db": -59.1,
+     "p99_db": -11.9,
+     "vad_speech_s": 527.3,
+     "ref_speech_s": 572.8,
+     "vad_not_in_ref_s": 2.5,
+     "vad_not_in_ref_frac_of_ref": 0.0043,
+     "ref_not_in_vad_s": 4.3,
+     "ref_not_in_vad_frac": 0.0074,
+     "longest_vad_not_in_ref": [
+      [
+       447.58,
+       448.92
+      ],
+      [
+       279.04,
+       279.63
+      ],
+      [
+       249.74,
+       250.26
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation09",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -81.1,
+     "threshold_db": -60.9,
+     "p99_db": -13.9,
+     "vad_speech_s": 337.7,
+     "ref_speech_s": 370.5,
+     "vad_not_in_ref_s": 2.4,
+     "vad_not_in_ref_frac_of_ref": 0.0066,
+     "ref_not_in_vad_s": 3.0,
+     "ref_not_in_vad_frac": 0.0081,
+     "longest_vad_not_in_ref": [
+      [
+       83.18,
+       83.89
+      ],
+      [
+       311.98,
+       312.64
+      ],
+      [
+       363.28,
+       363.84
+      ],
+      [
+       157.98,
+       158.48
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day2_consultation10",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 128.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.6,
+     "threshold_db": -56.5,
+     "p99_db": -12.0,
+     "vad_speech_s": 484.3,
+     "ref_speech_s": 544.4,
+     "vad_not_in_ref_s": 1.2,
+     "vad_not_in_ref_frac_of_ref": 0.0021,
+     "ref_not_in_vad_s": 8.0,
+     "ref_not_in_vad_frac": 0.0147,
+     "longest_vad_not_in_ref": [
+      [
+       172.82,
+       173.46
+      ],
+      [
+       62.4,
+       62.92
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation01",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 71.6
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.1,
+     "threshold_db": -58.3,
+     "p99_db": -12.1,
+     "vad_speech_s": 429.3,
+     "ref_speech_s": 475.8,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 3.9,
+     "ref_not_in_vad_frac": 0.0081,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation02",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.3,
+     "threshold_db": -59.2,
+     "p99_db": -14.8,
+     "vad_speech_s": 389.5,
+     "ref_speech_s": 431.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 6.8,
+     "ref_not_in_vad_frac": 0.0158,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 101.3
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.0,
+     "threshold_db": -58.9,
+     "p99_db": -14.4,
+     "vad_speech_s": 614.4,
+     "ref_speech_s": 657.0,
+     "vad_not_in_ref_s": 1.9,
+     "vad_not_in_ref_frac_of_ref": 0.0029,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.009,
+     "longest_vad_not_in_ref": [
+      [
+       391.72,
+       392.41
+      ],
+      [
+       191.06,
+       191.69
+      ],
+      [
+       509.81,
+       510.37
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation04",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 97.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.9,
+     "threshold_db": -56.9,
+     "p99_db": -12.4,
+     "vad_speech_s": 381.1,
+     "ref_speech_s": 396.4,
+     "vad_not_in_ref_s": 1.4,
+     "vad_not_in_ref_frac_of_ref": 0.0034,
+     "ref_not_in_vad_s": 1.8,
+     "ref_not_in_vad_frac": 0.0045,
+     "longest_vad_not_in_ref": [
+      [
+       277.09,
+       278.46
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation05",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 72.2
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -76.1,
+     "threshold_db": -57.4,
+     "p99_db": -13.8,
+     "vad_speech_s": 366.1,
+     "ref_speech_s": 389.0,
+     "vad_not_in_ref_s": 1.3,
+     "vad_not_in_ref_frac_of_ref": 0.0033,
+     "ref_not_in_vad_s": 3.1,
+     "ref_not_in_vad_frac": 0.008,
+     "longest_vad_not_in_ref": [
+      [
+       410.36,
+       411.64
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation06",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.7,
+     "threshold_db": -59.0,
+     "p99_db": -15.5,
+     "vad_speech_s": 196.5,
+     "ref_speech_s": 206.9,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 0.3,
+     "ref_not_in_vad_frac": 0.0016,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation07",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 72.5
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.4,
+     "threshold_db": -56.3,
+     "p99_db": -11.9,
+     "vad_speech_s": 405.8,
+     "ref_speech_s": 434.3,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 1.6,
+     "ref_not_in_vad_frac": 0.0036,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation08",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -73.5,
+     "threshold_db": -55.1,
+     "p99_db": -12.4,
+     "vad_speech_s": 306.3,
+     "ref_speech_s": 327.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 2.8,
+     "ref_not_in_vad_frac": 0.0084,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation09",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -74.5,
+     "threshold_db": -56.1,
+     "p99_db": -13.1,
+     "vad_speech_s": 637.1,
+     "ref_speech_s": 686.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 4.9,
+     "ref_not_in_vad_frac": 0.0071,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day3_consultation10",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.3,
+     "threshold_db": -58.3,
+     "p99_db": -11.7,
+     "vad_speech_s": 449.9,
+     "ref_speech_s": 500.8,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0013,
+     "ref_not_in_vad_s": 8.9,
+     "ref_not_in_vad_frac": 0.0178,
+     "longest_vad_not_in_ref": [
+      [
+       0.52,
+       1.19
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation01",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.9,
+     "threshold_db": -58.9,
+     "p99_db": -12.3,
+     "vad_speech_s": 387.1,
+     "ref_speech_s": 420.7,
+     "vad_not_in_ref_s": 2.5,
+     "vad_not_in_ref_frac_of_ref": 0.0059,
+     "ref_not_in_vad_s": 2.1,
+     "ref_not_in_vad_frac": 0.0049,
+     "longest_vad_not_in_ref": [
+      [
+       1.71,
+       4.18
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation02",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -83.5,
+     "threshold_db": -62.4,
+     "p99_db": -13.3,
+     "vad_speech_s": 356.9,
+     "ref_speech_s": 407.1,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 6.1,
+     "ref_not_in_vad_frac": 0.015,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation03",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -83.3,
+     "threshold_db": -62.4,
+     "p99_db": -13.8,
+     "vad_speech_s": 278.7,
+     "ref_speech_s": 312.1,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0023,
+     "ref_not_in_vad_s": 2.1,
+     "ref_not_in_vad_frac": 0.0068,
+     "longest_vad_not_in_ref": [
+      [
+       5.54,
+       6.25
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation04",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -79.4,
+     "threshold_db": -58.8,
+     "p99_db": -10.9,
+     "vad_speech_s": 284.0,
+     "ref_speech_s": 308.6,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 1.8,
+     "ref_not_in_vad_frac": 0.0058,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation05",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.6,
+     "threshold_db": -58.6,
+     "p99_db": -11.7,
+     "vad_speech_s": 462.2,
+     "ref_speech_s": 547.6,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 20.6,
+     "ref_not_in_vad_frac": 0.0376,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation06",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.3,
+     "threshold_db": -56.6,
+     "p99_db": -13.1,
+     "vad_speech_s": 522.1,
+     "ref_speech_s": 553.0,
+     "vad_not_in_ref_s": 3.2,
+     "vad_not_in_ref_frac_of_ref": 0.0058,
+     "ref_not_in_vad_s": 1.7,
+     "ref_not_in_vad_frac": 0.0031,
+     "longest_vad_not_in_ref": [
+      [
+       1.88,
+       3.2
+      ],
+      [
+       313.54,
+       314.74
+      ],
+      [
+       6.98,
+       7.64
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation07",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 69.2
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -72.7,
+     "threshold_db": -54.4,
+     "p99_db": -11.9,
+     "vad_speech_s": 530.3,
+     "ref_speech_s": 584.6,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 4.8,
+     "ref_not_in_vad_frac": 0.0082,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation08",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.2,
+     "threshold_db": -57.4,
+     "p99_db": -11.3,
+     "vad_speech_s": 568.1,
+     "ref_speech_s": 632.9,
+     "vad_not_in_ref_s": 9.2,
+     "vad_not_in_ref_frac_of_ref": 0.0146,
+     "ref_not_in_vad_s": 11.7,
+     "ref_not_in_vad_frac": 0.0185,
+     "longest_vad_not_in_ref": [
+      [
+       4.29,
+       5.5
+      ],
+      [
+       17.97,
+       19.08
+      ],
+      [
+       1.9,
+       2.92
+      ],
+      [
+       552.11,
+       553.1
+      ],
+      [
+       132.73,
+       133.68
+      ],
+      [
+       152.97,
+       153.74
+      ],
+      [
+       296.11,
+       296.84
+      ],
+      [
+       145.33,
+       146.02
+      ],
+      [
+       237.43,
+       238.11
+      ],
+      [
+       269.1,
+       269.68
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation09",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 72.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.5,
+     "threshold_db": -56.8,
+     "p99_db": -13.2,
+     "vad_speech_s": 534.0,
+     "ref_speech_s": 586.1,
+     "vad_not_in_ref_s": 5.0,
+     "vad_not_in_ref_frac_of_ref": 0.0085,
+     "ref_not_in_vad_s": 5.6,
+     "ref_not_in_vad_frac": 0.0096,
+     "longest_vad_not_in_ref": [
+      [
+       361.65,
+       362.95
+      ],
+      [
+       113.43,
+       114.72
+      ],
+      [
+       107.7,
+       108.75
+      ],
+      [
+       131.02,
+       131.8
+      ],
+      [
+       34.27,
+       34.85
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day4_consultation10",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.9,
+     "threshold_db": -56.4,
+     "p99_db": -10.9,
+     "vad_speech_s": 598.3,
+     "ref_speech_s": 639.8,
+     "vad_not_in_ref_s": 8.1,
+     "vad_not_in_ref_frac_of_ref": 0.0127,
+     "ref_not_in_vad_s": 5.4,
+     "ref_not_in_vad_frac": 0.0085,
+     "longest_vad_not_in_ref": [
+      [
+       550.32,
+       552.7
+      ],
+      [
+       373.48,
+       375.28
+      ],
+      [
+       345.73,
+       346.53
+      ],
+      [
+       1.43,
+       2.11
+      ],
+      [
+       189.0,
+       189.68
+      ],
+      [
+       356.96,
+       357.57
+      ],
+      [
+       116.67,
+       117.26
+      ],
+      [
+       316.13,
+       316.71
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation01",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.3,
+     "threshold_db": -59.0,
+     "p99_db": -16.1,
+     "vad_speech_s": 360.3,
+     "ref_speech_s": 431.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 14.5,
+     "ref_not_in_vad_frac": 0.0337,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation02",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -76.2,
+     "threshold_db": -57.1,
+     "p99_db": -12.7,
+     "vad_speech_s": 330.9,
+     "ref_speech_s": 395.8,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 6.3,
+     "ref_not_in_vad_frac": 0.0159,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation03",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 66.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.3,
+     "threshold_db": -58.5,
+     "p99_db": -14.6,
+     "vad_speech_s": 627.8,
+     "ref_speech_s": 739.1,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 20.5,
+     "ref_not_in_vad_frac": 0.0277,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation04",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.0,
+     "threshold_db": -58.1,
+     "p99_db": -14.0,
+     "vad_speech_s": 397.5,
+     "ref_speech_s": 474.3,
+     "vad_not_in_ref_s": 2.2,
+     "vad_not_in_ref_frac_of_ref": 0.0046,
+     "ref_not_in_vad_s": 8.6,
+     "ref_not_in_vad_frac": 0.0182,
+     "longest_vad_not_in_ref": [
+      [
+       373.01,
+       374.03
+      ],
+      [
+       414.35,
+       415.0
+      ],
+      [
+       543.06,
+       543.58
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation05",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.7,
+     "threshold_db": -59.4,
+     "p99_db": -14.4,
+     "vad_speech_s": 317.7,
+     "ref_speech_s": 358.0,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0027,
+     "ref_not_in_vad_s": 2.5,
+     "ref_not_in_vad_frac": 0.0069,
+     "longest_vad_not_in_ref": [
+      [
+       314.26,
+       315.22
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation06",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -76.1,
+     "threshold_db": -57.2,
+     "p99_db": -13.2,
+     "vad_speech_s": 480.4,
+     "ref_speech_s": 552.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 8.6,
+     "ref_not_in_vad_frac": 0.0156,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation07",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.3,
+     "threshold_db": -58.5,
+     "p99_db": -14.4,
+     "vad_speech_s": 380.1,
+     "ref_speech_s": 440.3,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 6.4,
+     "ref_not_in_vad_frac": 0.0146,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation08",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.9,
+     "threshold_db": -58.4,
+     "p99_db": -12.8,
+     "vad_speech_s": 421.4,
+     "ref_speech_s": 490.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 6.5,
+     "ref_not_in_vad_frac": 0.0133,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation09",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -77.4,
+     "threshold_db": -58.4,
+     "p99_db": -14.0,
+     "vad_speech_s": 456.3,
+     "ref_speech_s": 534.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 14.0,
+     "ref_not_in_vad_frac": 0.0263,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation10",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.4,
+     "threshold_db": -56.8,
+     "p99_db": -13.5,
+     "vad_speech_s": 460.5,
+     "ref_speech_s": 542.4,
+     "vad_not_in_ref_s": 0.6,
+     "vad_not_in_ref_frac_of_ref": 0.0011,
+     "ref_not_in_vad_s": 12.3,
+     "ref_not_in_vad_frac": 0.0227,
+     "longest_vad_not_in_ref": [
+      [
+       13.64,
+       14.24
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation11",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 68.7
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -75.5,
+     "threshold_db": -57.2,
+     "p99_db": -14.6,
+     "vad_speech_s": 565.1,
+     "ref_speech_s": 631.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 6.9,
+     "ref_not_in_vad_frac": 0.0109,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "primock57__day5_consultation12",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -78.3,
+     "threshold_db": -59.4,
+     "p99_db": -15.4,
+     "vad_speech_s": 253.8,
+     "ref_speech_s": 297.9,
+     "vad_not_in_ref_s": 0.6,
+     "vad_not_in_ref_frac_of_ref": 0.0021,
+     "ref_not_in_vad_s": 7.2,
+     "ref_not_in_vad_frac": 0.024,
+     "longest_vad_not_in_ref": [
+      [
+       83.73,
+       84.37
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  }
+ ]
+}

@@ -75,6 +75,8 @@ Times before 13:27 are approximate (reconstructed from commit times).
 
 - 2026-10-05 16:17: NeMo 3.1.0 (git) installed in a separate env, cross-check done; diagnosis + Whisper false-alarm audit added; CallHome missing-turn finding.
 
+- 16:20: reproduction check: AMI test ihm-mix vs forced-aligned reference = 9.22% DER here vs 9.25% on the Nemotron model card (AMI Test MHM, 30.4 s config). AMI SDM: 11.35% here (OpenBench reports 0.11).
+
 ## Skipped / blocked (with reasons)
 
 - (resolved 13:38) CallHome English: HF access works for Hasan's account; being prepared now.

@@ -108,6 +108,16 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the AMI numbers.** On the SDM test set Nemotron scores 11.3% DER against the MFA reference, close to
+published numbers for this model and protocol. Against BUT `only_words` it scores 27.5%, and against the
+transcriber segments 32.5%. Almost all of the difference is *missed speech* that persists at collar 0.25 s (about
+24%): the looser references label ~28% more speaker time (8.5 h vs 6.7 h), mostly pauses absorbed into words and
+turns. This is a **reference-convention effect, not model error**, and it matches the 21-25% gap Horiguchi et al.
+report. Note that Nemotron was trained on forced-aligned AMI labels, so it has learned the tight convention: a
+model trained on `only_words`-style labels would show the opposite pattern. Always state which AMI reference you
+score against.
+
+
 ## Quality rating
 
 **A-.** Close-talk transcription of every participant gives complete coverage with overlap and backchannels. The

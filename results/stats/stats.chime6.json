@@ -1,0 +1,180 @@
+{
+ "dataset": "chime6",
+ "view": "farfield",
+ "summary": {
+  "dev": {
+   "sessions": 2,
+   "hours": 4.46,
+   "scored_hours": 4.43,
+   "speech_hours": 3.39,
+   "speech_ratio": 0.764,
+   "overlap_ratio": 0.286,
+   "overlap3plus_ratio": 0.0521,
+   "speakers_min": 4,
+   "speakers_median": 4.0,
+   "speakers_max": 4,
+   "sessions_with_1_speaker": 0,
+   "segments": 11016,
+   "segment_s": {
+    "p5": 0.17,
+    "p25": 0.48,
+    "p50": 0.95,
+    "p75": 1.86,
+    "p95": 4.702,
+    "mean": 1.488
+   },
+   "segments_under_0.2s_frac": 0.0619,
+   "same_speaker_pause_s": {
+    "p5": 0.35,
+    "p25": 0.63,
+    "p50": 1.42,
+    "p75": 3.78,
+    "p95": 16.94
+   },
+   "pauses_under_0.25s_frac": 0.0,
+   "silence_gap_s": {
+    "p5": 0.04,
+    "p25": 0.2,
+    "p50": 0.38,
+    "p75": 0.64,
+    "p95": 1.562
+   },
+   "speaker_changes_per_min": 33.66,
+   "dominant_speaker_share_median": 0.301
+  },
+  "ALL": {
+   "sessions": 4,
+   "hours": 9.67,
+   "scored_hours": 9.62,
+   "speech_hours": 6.85,
+   "speech_ratio": 0.712,
+   "overlap_ratio": 0.255,
+   "overlap3plus_ratio": 0.0484,
+   "speakers_min": 4,
+   "speakers_median": 4.0,
+   "speakers_max": 4,
+   "sessions_with_1_speaker": 0,
+   "segments": 22954,
+   "segment_s": {
+    "p5": 0.18,
+    "p25": 0.48,
+    "p50": 0.93,
+    "p75": 1.757,
+    "p95": 4.25,
+    "mean": 1.408
+   },
+   "segments_under_0.2s_frac": 0.0599,
+   "same_speaker_pause_s": {
+    "p5": 0.36,
+    "p25": 0.72,
+    "p50": 1.76,
+    "p75": 4.64,
+    "p95": 17.791
+   },
+   "pauses_under_0.25s_frac": 0.0,
+   "silence_gap_s": {
+    "p5": 0.04,
+    "p25": 0.24,
+    "p50": 0.44,
+    "p75": 0.82,
+    "p95": 2.71
+   },
+   "speaker_changes_per_min": 32.2,
+   "dominant_speaker_share_median": 0.316
+  },
+  "eval": {
+   "sessions": 2,
+   "hours": 5.21,
+   "scored_hours": 5.19,
+   "speech_hours": 3.46,
+   "speech_ratio": 0.667,
+   "overlap_ratio": 0.226,
+   "overlap3plus_ratio": 0.0447,
+   "speakers_min": 4,
+   "speakers_median": 4.0,
+   "speakers_max": 4,
+   "sessions_with_1_speaker": 0,
+   "segments": 11938,
+   "segment_s": {
+    "p5": 0.18,
+    "p25": 0.49,
+    "p50": 0.92,
+    "p75": 1.69,
+    "p95": 3.83,
+    "mean": 1.334
+   },
+   "segments_under_0.2s_frac": 0.058,
+   "same_speaker_pause_s": {
+    "p5": 0.38,
+    "p25": 0.84,
+    "p50": 2.11,
+    "p75": 5.42,
+    "p95": 18.345
+   },
+   "pauses_under_0.25s_frac": 0.0,
+   "silence_gap_s": {
+    "p5": 0.05,
+    "p25": 0.27,
+    "p50": 0.5,
+    "p75": 1.0,
+    "p95": 3.403
+   },
+   "speaker_changes_per_min": 30.95,
+   "dominant_speaker_share_median": 0.392
+  }
+ },
+ "sessions": [
+  {
+   "scored_s": 8863.541,
+   "speech_s": 7271.92,
+   "overlap_s": 2181.16,
+   "overlap3_s": 443.17,
+   "num_speakers": 4,
+   "num_segments": 6724,
+   "speaker_changes": 5363,
+   "dominant_speaker_share": 0.31,
+   "session_id": "chime6__S02",
+   "split": "dev",
+   "duration": 8904.515
+  },
+  {
+   "scored_s": 7095.928,
+   "speech_s": 4926.89,
+   "overlap_s": 1304.22,
+   "overlap3_s": 192.56,
+   "num_speakers": 4,
+   "num_segments": 4292,
+   "speaker_changes": 3591,
+   "dominant_speaker_share": 0.292,
+   "session_id": "chime6__S09",
+   "split": "dev",
+   "duration": 7162.197
+  },
+  {
+   "scored_s": 9543.86,
+   "speech_s": 6390.93,
+   "overlap_s": 1623.4,
+   "overlap3_s": 436.23,
+   "num_speakers": 4,
+   "num_segments": 6603,
+   "speaker_changes": 5443,
+   "dominant_speaker_share": 0.322,
+   "session_id": "chime6__S01",
+   "split": "eval",
+   "duration": 9546.976
+  },
+  {
+   "scored_s": 9143.34,
+   "speech_s": 6075.13,
+   "overlap_s": 1188.07,
+   "overlap3_s": 121.29,
+   "num_speakers": 4,
+   "num_segments": 5335,
+   "speaker_changes": 4195,
+   "dominant_speaker_share": 0.462,
+   "session_id": "chime6__S21",
+   "split": "eval",
+   "duration": 9200.43
+  }
+ ]
+}

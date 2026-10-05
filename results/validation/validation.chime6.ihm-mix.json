@@ -1,0 +1,357 @@
+{
+ "summary": {
+  "dataset": "chime6",
+  "view": "ihm-mix",
+  "sessions": 4,
+  "errors": 0,
+  "warnings": 2,
+  "issue_counts": {
+   "info:segments_under_50ms": 4,
+   "info:silence_over_30s": 2,
+   "warning:possible_unannotated_speech": 2
+  },
+  "raw_label_issue_totals": {},
+  "sessions_with_raw_label_issues": 0,
+  "vad": {
+   "ref_speech_h": 6.85,
+   "vad_not_in_ref_frac": 0.0425,
+   "ref_not_in_vad_frac": 0.0866,
+   "worst_sessions": [
+    [
+     "chime6__S21",
+     0.0802
+    ],
+    [
+     "chime6__S01",
+     0.0582
+    ],
+    [
+     "chime6__S02",
+     0.0161
+    ],
+    [
+     "chime6__S09",
+     0.0147
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "chime6__S02",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "68 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -47.6,
+     "threshold_db": -36.0,
+     "p99_db": -9.0,
+     "vad_speech_s": 5981.5,
+     "ref_speech_s": 7271.9,
+     "vad_not_in_ref_s": 117.0,
+     "vad_not_in_ref_frac_of_ref": 0.0161,
+     "ref_not_in_vad_s": 961.0,
+     "ref_not_in_vad_frac": 0.1322,
+     "longest_vad_not_in_ref": [
+      [
+       5086.82,
+       5094.27
+      ],
+      [
+       5064.13,
+       5069.19
+      ],
+      [
+       3032.0,
+       3036.75
+      ],
+      [
+       5010.41,
+       5013.74
+      ],
+      [
+       5109.97,
+       5113.19
+      ],
+      [
+       1591.82,
+       1594.95
+      ],
+      [
+       5046.23,
+       5049.03
+      ],
+      [
+       5026.46,
+       5028.94
+      ],
+      [
+       3935.01,
+       3937.32
+      ],
+      [
+       5257.27,
+       5259.48
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "chime6__S09",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "53 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "13 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       2132.3,
+       2175.5
+      ],
+      [
+       2187.8,
+       2244.5
+      ],
+      [
+       2290.0,
+       2357.8
+      ],
+      [
+       2365.9,
+       2428.4
+      ],
+      [
+       2742.4,
+       2858.0
+      ]
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -53.1,
+     "threshold_db": -44.1,
+     "p99_db": -28.6,
+     "vad_speech_s": 3779.6,
+     "ref_speech_s": 4926.9,
+     "vad_not_in_ref_s": 72.4,
+     "vad_not_in_ref_frac_of_ref": 0.0147,
+     "ref_not_in_vad_s": 656.6,
+     "ref_not_in_vad_frac": 0.1333,
+     "longest_vad_not_in_ref": [
+      [
+       2270.31,
+       2273.66
+      ],
+      [
+       373.67,
+       376.84
+      ],
+      [
+       6220.0,
+       6222.78
+      ],
+      [
+       1903.07,
+       1905.55
+      ],
+      [
+       2145.44,
+       2147.6
+      ],
+      [
+       2142.87,
+       2144.98
+      ],
+      [
+       1138.3,
+       1140.34
+      ],
+      [
+       2140.61,
+       2142.52
+      ],
+      [
+       135.7,
+       137.55
+      ],
+      [
+       1662.76,
+       1664.53
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "chime6__S01",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "38 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 372 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.8% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -68.2,
+     "threshold_db": -56.7,
+     "p99_db": -29.8,
+     "vad_speech_s": 6557.6,
+     "ref_speech_s": 6390.9,
+     "vad_not_in_ref_s": 372.2,
+     "vad_not_in_ref_frac_of_ref": 0.0582,
+     "ref_not_in_vad_s": 359.9,
+     "ref_not_in_vad_frac": 0.0563,
+     "longest_vad_not_in_ref": [
+      [
+       5923.74,
+       5932.16
+      ],
+      [
+       6049.67,
+       6056.15
+      ],
+      [
+       5935.08,
+       5940.75
+      ],
+      [
+       6015.36,
+       6020.72
+      ],
+      [
+       5917.78,
+       5922.67
+      ],
+      [
+       237.91,
+       242.8
+      ],
+      [
+       230.96,
+       235.62
+      ],
+      [
+       5941.28,
+       5945.66
+      ],
+      [
+       6000.07,
+       6004.31
+      ],
+      [
+       5981.17,
+       5985.22
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "chime6__S21",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "80 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       3663.2,
+       3707.6
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 487 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 8.0% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -61.9,
+     "threshold_db": -52.3,
+     "p99_db": -29.8,
+     "vad_speech_s": 6736.6,
+     "ref_speech_s": 6075.1,
+     "vad_not_in_ref_s": 487.0,
+     "vad_not_in_ref_frac_of_ref": 0.0802,
+     "ref_not_in_vad_s": 159.7,
+     "ref_not_in_vad_frac": 0.0263,
+     "longest_vad_not_in_ref": [
+      [
+       1078.42,
+       1099.1
+      ],
+      [
+       938.84,
+       954.95
+      ],
+      [
+       1059.3,
+       1074.64
+      ],
+      [
+       1549.63,
+       1563.05
+      ],
+      [
+       1407.96,
+       1417.08
+      ],
+      [
+       1587.5,
+       1595.52
+      ],
+      [
+       810.61,
+       817.8
+      ],
+      [
+       1876.42,
+       1883.44
+      ],
+      [
+       831.68,
+       838.16
+      ],
+      [
+       660.21,
+       664.86
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  }
+ ]
+}
