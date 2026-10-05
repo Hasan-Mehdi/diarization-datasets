@@ -81,8 +81,9 @@ def download(url: str, dst: str | Path, md5: str | None = None, sha256: str | No
                             print(f"  [download] {dst.name}: {pct} ({rate:.1f} MB/s)", flush=True)
             break
         except (requests.RequestException, OSError) as exc:
-            if attempt == retries:
-                raise
+            status = getattr(getattr(exc, "response", None), "status_code", None)
+            if attempt == retries or (status is not None and 400 <= status < 500 and status not in (408, 429)):
+                raise  # missing files (404/403/410) will not appear by retrying
             print(f"  [download] {dst.name}: attempt {attempt} failed ({exc}); retrying", flush=True)
             time.sleep(min(60, 5 * attempt))
     if (md5 or sha256) and not _check(part, md5, sha256):

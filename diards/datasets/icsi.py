@@ -6,8 +6,9 @@ Audio from the AMI/ICSI mirror at Edinburgh:
 Annotations from ICSI_core_NXT.zip (v1.0, 2016):
   * primary: manual transcriber segments (Segments/*.segs.xml) that contain at least one word; segments made
     only of non-speech events (mike noise, breath, laughter without words) are dropped.
-  * rttm_alt/words: word timings (forced alignment shipped with the corpus), same-speaker adjacent words merged
-    (no pause bridging), words without timing skipped.
+  * rttm_alt/words_gap0.2: word timings (forced alignment shipped with the corpus), same-speaker words merged
+    across pauses < 0.2 s (DIHARD-style rule); words without timing are skipped (their share is recorded in the
+    manifest as extra.untimed_word_frac).
 Splits: the Kaldi/Lhotse partition (train 70 / dev 2 / test 3 meetings).
 """
 from __future__ import annotations
@@ -76,6 +77,7 @@ _HREF = re.compile(r"#id\(([^)]+)\)(?:\.\.id\(([^)]+)\))?")
 
 def _parse_meeting(nxt: Path, meeting: str):
     segs, word_segs, words = [], [], []
+    n_words = n_untimed = 0
     for segfile in sorted((nxt / "Segments").glob(f"{meeting}.*.segs.xml")):
         letter = segfile.name.split(".")[1]
         order, by_id = _words_index(nxt / "Words" / f"{meeting}.{letter}.words.xml")
@@ -96,17 +98,20 @@ def _parse_meeting(nxt: Path, meeting: str):
                     el = by_id[wid]
                     if el.tag.split("}")[-1] == "w":
                         has_word = True
+                        n_words += 1
                         ws, we = el.get("starttime"), el.get("endtime")
+                        if not (ws and we):
+                            n_untimed += 1
                         if ws and we and float(we) > float(ws):
-                            spk_words.append((float(ws), float(we)))
+                            spk_words.append((float(ws), float(we), spk))
                             words.append({"start": float(ws), "end": float(we), "speaker": spk,
                                           "word": (el.text or "").strip()})
             if has_word and st and et and float(et) > float(st):
                 segs.append(Segment(float(st), float(et), spk))
-        if spk_words and segs:
-            spk = segs[-1].speaker
-            word_segs += [Segment(a, b, spk) for a, b in merge_intervals(spk_words)]
-    return segs, word_segs, words
+        for who in {x[2] for x in spk_words}:
+            ivs = [(a, b) for a, b, p in spk_words if p == who]
+            word_segs += [Segment(a, b, who) for a, b in merge_intervals(ivs, gap=0.2)]
+    return segs, word_segs, words, (n_untimed / n_words if n_words else 0.0)
 
 
 def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
@@ -137,7 +142,8 @@ def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
                     audio["sdm"] = dst
                 except Exception as exc:
                     print(f"  [icsi] {meeting}: sdm unavailable ({exc})")
-            segs, word_segs, words = _parse_meeting(nxt, meeting)
-            w.add_session(meeting, split, segs, audio=audio, words=words, alt_refs={"words": word_segs})
+            segs, word_segs, words, untimed = _parse_meeting(nxt, meeting)
+            w.add_session(meeting, split, segs, audio=audio, words=words, alt_refs={"words_gap0.2": word_segs},
+                          extra={"untimed_word_frac": round(untimed, 4)})
             print(f"  [icsi] {split} {meeting} ok", flush=True)
     w.finalize([{"url": NXT_ZIP}, {"url": f"{BASE_URL}/ICSIsignals/"}])

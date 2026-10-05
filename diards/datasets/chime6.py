@@ -104,10 +104,10 @@ def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
         speakers = {s: sorted({u["speaker"] for u in anns[s]}) for s in sessions}
         wanted = set()
         for s in sessions:
-            wanted.add(f"CHiME6/audio/{split}/{s}_{refs[s]}.CH1.wav")
-            wanted |= {f"CHiME6/audio/{split}/{s}_{p}.wav" for p in speakers[s]}
+            wanted.add(f"CHiME6_{split}/CHiME6/audio/{split}/{s}_{refs[s]}.CH1.wav")
+            wanted |= {f"CHiME6_{split}/CHiME6/audio/{split}/{s}_{p}.wav" for p in speakers[s]}
         _extract_members(tgz, base / "extracted", wanted)
-        adir = base / "extracted" / "CHiME6" / "audio" / split
+        adir = base / "extracted" / f"CHiME6_{split}" / "CHiME6" / "audio" / split
         for s in sessions:
             sid = w.session_id(s)
             audio = {}
