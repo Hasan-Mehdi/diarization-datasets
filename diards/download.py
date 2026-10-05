@@ -40,12 +40,19 @@ def download(url: str, dst: str | Path, md5: str | None = None, sha256: str | No
              retries: int = 5, headers: dict | None = None, quiet: bool = False) -> Path:
     """Download ``url`` to ``dst`` with HTTP range resume. Verifies md5/sha256 when given."""
     dst = Path(dst)
-    if dst.exists():
-        if (md5 or sha256) and not _check(dst, md5, sha256):
-            raise RuntimeError(f"checksum mismatch for existing file {dst}; delete it to re-download")
-        return dst
-    dst.parent.mkdir(parents=True, exist_ok=True)
     part = dst.with_name(dst.name + ".part")
+    if dst.exists():
+        if md5 or sha256:
+            if not _check(dst, md5, sha256):
+                raise RuntimeError(f"checksum mismatch for existing file {dst}; delete it to re-download")
+            return dst
+        expected = remote_size(url, headers)
+        if expected is None or dst.stat().st_size >= expected:
+            return dst
+        # a truncated file (e.g. left by an interrupted external tool): resume it
+        print(f"  [download] {dst.name} is incomplete ({dst.stat().st_size} < {expected}); resuming", flush=True)
+        os.replace(dst, part)
+    dst.parent.mkdir(parents=True, exist_ok=True)
     hdrs = {"User-Agent": USER_AGENT, **(headers or {})}
     for attempt in range(1, retries + 1):
         try:
@@ -82,6 +89,17 @@ def download(url: str, dst: str | Path, md5: str | None = None, sha256: str | No
         raise RuntimeError(f"checksum mismatch for {url}")
     os.replace(part, dst)
     return dst
+
+
+def remote_size(url: str, headers: dict | None = None) -> int | None:
+    """Content-Length of ``url`` via HEAD (following redirects), or None if unknown."""
+    try:
+        r = requests.head(url, headers={"User-Agent": USER_AGENT, **(headers or {})}, allow_redirects=True, timeout=30)
+        if r.ok and r.headers.get("Content-Length"):
+            return int(r.headers["Content-Length"])
+    except requests.RequestException:
+        pass
+    return None
 
 
 def extract(archive: str | Path, dest: str | Path, marker: str | None = None, members: list[str] | None = None) -> Path:

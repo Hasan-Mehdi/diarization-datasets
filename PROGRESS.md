@@ -4,20 +4,19 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 13:28 EDT (from `date`)_
+_Last updated: 2026-10-05 13:38 EDT (from the system clock)_
 
-- **Now doing:** writing per-dataset recipes in the `diards` package and running them in the background
-  (AMI, VoxConverse, CallFriend done/near-done; NOTSOFAR-1, Earnings-21, ICSI running; CHiME-6, DiPCo, SBCSAE downloading).
-- **Done so far:** private repo; conda env on D: (Python 3.12, PyTorch 2.11+cu128, RTX 5080 OK);
-  model identified = `nvidia/Nemotron-3-Diarization` (2026-09-23), runs via Transformers on the GPU at ~800x real time;
-  normalized layout + loader + validator + stats + DER/JER scorer + Nemotron harness working end to end
-  (first result: AMI SDM test, 2 meetings: 8.8% DER vs forced-aligned reference, 17-19% vs manual-derived references).
-- **Next:** CHiME-6 / DiPCo / MSDWild / AVA-AVD / SBCSAE / Map Task / AfriSpeech-Dialog / PriMock57 / LibriCSS recipes;
-  NeMo / pyannote / Lhotse exports + tests; full Nemotron runs; dataset cards; PriMock57 analysis.
-- **Needs Hasan (small, optional):** CallHome English (TalkBank) is gated on Hugging Face and the form asks for company
-  and country, which I should not invent. To enable it: open https://huggingface.co/datasets/talkbank/callhome while
-  logged in as `Hmehdi515`, click "Agree and access", then run `python -m diards prepare callhome_eng`.
-  CallFriend English (same TalkBank family) is ungated and already verified.
+- **Now doing:** dataset recipes (running in background: AMI train split, NOTSOFAR-1, ICSI, AVA-AVD English LID,
+  Map Task, CallHome English; downloading: CHiME-6 eval, DiPCo, SBCSAE, MSDWild). Next code: PriMock57, LibriCSS,
+  SBCSAE, DiPCo recipes; NeMo / pyannote / Lhotse exports and tests.
+- **Done so far:** env + model (Nemotron 3 Diarization via Transformers on the RTX 5080); `diards` package with
+  normalized layout, loader, validator (incl. energy VAD), stats, DER/JER scorer, Nemotron harness.
+  Verified recipes: AMI, VoxConverse, CallFriend English, Earnings-21, AfriSpeech-Dialog (stats + validation on disk).
+- **Findings so far:** AMI forced-aligned vs manual-derived references change Nemotron DER from ~9% to ~18% (2 meetings);
+  VoxConverse has 37/448 single-speaker files; CallFriend (TalkBank) turn bullets have 3,074 same-speaker overlaps;
+  AfriSpeech-Dialog times are hand-typed with ~1 s effective precision; AVA-AVD has VAD-marked speech without
+  speaker labels; CHiME-6's first (enrolment) minute is unannotated (CHiME-7 UEM fixes it).
+- **Needs Hasan:** nothing right now (CallHome access confirmed working, thanks).
 
 ## Environment decisions
 
@@ -42,7 +41,7 @@ _Last updated: 2026-10-05 13:28 EDT (from `date`)_
 | Conda env + PyTorch CUDA | done |
 | Nemotron install (Transformers) | done; NeMo install optional, not attempted yet |
 | Normalized layout + `diards` package (prepare/validate/stats/evaluate) | done (core), recipes in progress |
-| Recipes verified | ami, voxconverse, callfriend_eng; running: notsofar1, earnings21, icsi |
+| Recipes verified | ami (test/dev), voxconverse, callfriend_eng, earnings21, afrispeech_dialog; running: notsofar1, icsi, ava_avd_en, maptask, callhome_eng, chime6 (waiting for download) |
 | PriMock57 ground-truth analysis | not started |
 | Exports (NeMo / pyannote / Lhotse) + tests | not started |
 | Nemotron evaluation | harness done; 2-meeting AMI smoke test done |
@@ -63,10 +62,12 @@ Times before 13:27 are approximate (reconstructed from commit times).
 - 13:27: VoxConverse (448 files), CallFriend English (40 calls) normalized, validated (with energy VAD) and profiled.
   CallHome English blocked on the HF access form (see "Needs Hasan").
 
+- 2026-10-05 13:38: INBOX 13:36 (CallHome access works) read and acknowledged; callhome_eng prepare started.
+- 2026-10-05 13:38: recipes added: NOTSOFAR-1, Earnings-21, ICSI, CHiME-6, AVA-AVD (English LID), MSDWild (English LID), Map Task, AfriSpeech-Dialog.
+
 ## Skipped / blocked (with reasons)
 
-- CallHome English (TalkBank): HF gated form asks for company/country; TalkBank's own media server needs a login.
-  Recipe written (`callhome_eng`), cannot be verified until Hasan clicks through.
+- (resolved 13:38) CallHome English: HF access works for Hasan's account; being prepared now.
 
 ## Open items
 
