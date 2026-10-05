@@ -4,19 +4,21 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 16:01 EDT (from the system clock)_
+_Last updated: 2026-10-05 16:17 EDT (from the system clock)_
 
-- **Now doing:** batch Nemotron evaluation (`scripts/run_nemotron_all.sh`) and batch validation with energy VAD
-  (`scripts/validate_all.sh`) over all prepared datasets; CHiME-6 eval split and EasyCom still preparing.
-- **Done so far:** `diards` package (layout, loader, validator, stats, scorer, Nemotron harness, NeMo/pyannote/Lhotse
-  exports, tests). 19 recipes. Prepared and normalized: AMI, ICSI, NOTSOFAR-1, CHiME-6 (dev), DiPCo, LibriCSS,
-  VoxConverse, CallHome Eng, CallFriend Eng, Earnings-21, MSDWild-en (894 clips), AVA-AVD-en (96 clips), SBCSAE, Map Task,
-  AfriSpeech-Dialog, PriMock57, SCOTUS sample. Dataset cards drafted for all 18 (auto-filled numbers pending).
-  [PRIMOCK57.md](PRIMOCK57.md) done. Appendix of excluded / sign-up / paid datasets: [docs/OTHER_DATASETS.md](docs/OTHER_DATASETS.md).
-- **Next:** finish evaluations + validation, fill cards (`scripts/make_cards.py`), interpret surprising scores per
-  dataset, write README catalog + recommendations, final DONE.
-- **Needs Hasan (optional, for later):** free sign-ups I could not do unattended: Ego4D, MMCSG, CHiME-9 ECHI (DUA),
-  Fearless Steps, MLC-SLM (Nexdata). Details in docs/OTHER_DATASETS.md, section A.
+- **Now doing:** Nemotron batches (AMI, CHiME-6, DiPCo, LibriCSS, EasyCom, then MSDWild, AVA-AVD, SBCSAE, Map Task,
+  AfriSpeech, SCOTUS), validation batch, and per-dataset "model error vs reference error" diagnosis + Whisper audit.
+- **Done so far:** all 18 datasets prepared; `diards` package with exports/tests (19 passing); cards drafted with
+  auto-filled numbers (`scripts/make_cards.py`); PRIMOCK57.md; appendix docs/OTHER_DATASETS.md.
+  **NeMo 3.1 cross-check:** official NeMo inference and the Transformers port agree within ~1% DER
+  ([results/nemo_crosscheck](results/nemo_crosscheck/README.md)).
+- **Results so far (Nemotron, collar 0):** VoxConverse test 8.4% (but in training data), CallHome Eng 11.7%,
+  NOTSOFAR-1 eval far-field 18.4% vs official utterances / 11.3% vs MFA reference; close-talk mix 14.5% / 9.6%;
+  PriMock57 24.2% vs official / 10.4% vs channel activity.
+- **New finding:** CallHome English (TalkBank HF version) has unlabelled turns: 38 of the 40 longest audible
+  "false alarm" regions contain intelligible speech per Whisper (e.g. eng_037: 121 s of speech with no reference).
+- **Next:** finish batches, diagnose every dataset, finalize cards + README recommendations, DONE.
+- **Needs Hasan (optional):** free sign-ups for Ego4D, MMCSG, CHiME-9 ECHI, Fearless Steps, MLC-SLM (docs/OTHER_DATASETS.md A).
 
 ## Environment decisions
 
@@ -70,6 +72,8 @@ Times before 13:27 are approximate (reconstructed from commit times).
 - 2026-10-05 15:42: resumed; all downloads (CHiME-6, DiPCo, SBCSAE, MSDWild) had completed; CHiME-6 + MSDWild prepare started.
 
 - 2026-10-05 16:01: added recipes DiPCo, SBCSAE, LibriCSS, EasyCom (LFS per-file), SCOTUS (Oyez API); cards for all datasets; docs/FORMAT.md, docs/OTHER_DATASETS.md.
+
+- 2026-10-05 16:17: NeMo 3.1.0 (git) installed in a separate env, cross-check done; diagnosis + Whisper false-alarm audit added; CallHome missing-turn finding.
 
 ## Skipped / blocked (with reasons)
 

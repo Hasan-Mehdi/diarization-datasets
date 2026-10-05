@@ -1,0 +1,370 @@
+{
+ "dataset": "callhome_eng",
+ "view": "default",
+ "regions_checked": 40,
+ "regions": [
+  {
+   "session_id": "callhome_eng__eng_013",
+   "start": 44.92,
+   "end": 50.33,
+   "dur": 5.41,
+   "whisper": "They said he doesn't want to start working because you didn't tell him exactly everything you looked on his phone. He doesn't want to make mistakes.",
+   "words": 26,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_073",
+   "start": 603.63,
+   "end": 607.23,
+   "dur": 3.6,
+   "whisper": "See, I should have planned to arrive on the same day that you arrived.",
+   "words": 14,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_047",
+   "start": 202.2,
+   "end": 205.74,
+   "dur": 3.54,
+   "whisper": "and the barges go so slowly that like you can get off at a bridge",
+   "words": 15,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_011",
+   "start": 549.69,
+   "end": 553.2,
+   "dur": 3.51,
+   "whisper": "and then came roaring up on a motorcycle, dead drunk or something, and said, yeah, you know, so why",
+   "words": 19,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_138",
+   "start": 330.17,
+   "end": 333.53,
+   "dur": 3.36,
+   "whisper": "In Spanish, oh, you dirty, rotten rat.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_037",
+   "start": 380.44,
+   "end": 383.73,
+   "dur": 3.29,
+   "whisper": "It's really interesting. It's University of Pennsylvania.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_081",
+   "start": 420.6,
+   "end": 423.81,
+   "dur": 3.21,
+   "whisper": "Yo, he's in the house. Man, I get you. Kimball's married.",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_037",
+   "start": 540.29,
+   "end": 543.34,
+   "dur": 3.05,
+   "whisper": "I'll call you over there, and I can get the information I need.",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_011",
+   "start": 532.26,
+   "end": 535.31,
+   "dur": 3.05,
+   "whisper": "I got another laugh, too, when you talk about old names. You remember John Zotto?",
+   "words": 15,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_108",
+   "start": 3.24,
+   "end": 6.23,
+   "dur": 2.99,
+   "whisper": "You're lucky there ain't no milk in that bottle while you're turning it upside down.",
+   "words": 15,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_076",
+   "start": 451.97,
+   "end": 454.89,
+   "dur": 2.92,
+   "whisper": "How much does a hamburger cost at Burger King, do you know?",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_011",
+   "start": 540.95,
+   "end": 543.85,
+   "dur": 2.9,
+   "whisper": "And I got the whole histrionics on this from Martha and said, you know, let's go out.",
+   "words": 17,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_012",
+   "start": 559.54,
+   "end": 562.36,
+   "dur": 2.82,
+   "whisper": "a lot more serious problems. I tell them that.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_037",
+   "start": 436.29,
+   "end": 439.1,
+   "dur": 2.81,
+   "whisper": "the papers, you know, so they could call and",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_073",
+   "start": 607.43,
+   "end": 610.23,
+   "dur": 2.8,
+   "whisper": "and then I could have had an extra day to recover from jet lag.",
+   "words": 14,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_037",
+   "start": 513.52,
+   "end": 516.14,
+   "dur": 2.62,
+   "whisper": "THOUGHT, WELL, I WOULD CALL. AND THEY ALSO, BESIDES THE",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_037",
+   "start": 452.0,
+   "end": 454.59,
+   "dur": 2.59,
+   "whisper": "you know, why does it have to be Egyptian?",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_012",
+   "start": 563.05,
+   "end": 565.57,
+   "dur": 2.52,
+   "whisper": "In fact, I've made it my... Disease can be...",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_012",
+   "start": 567.59,
+   "end": 570.11,
+   "dur": 2.52,
+   "whisper": "very good at all. Well, his cousin's husband was in",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_011",
+   "start": 538.07,
+   "end": 540.45,
+   "dur": 2.38,
+   "whisper": "He breezed into San Diego. He definitely called more, so.",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_108",
+   "start": 436.85,
+   "end": 439.09,
+   "dur": 2.24,
+   "whisper": "If you bite me with your two teeth, I'm going to hurt you.",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_013",
+   "start": 51.17,
+   "end": 53.4,
+   "dur": 2.23,
+   "whisper": "I'll wait until you come back. I told him you'll be back like 3.15.",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_089",
+   "start": 183.17,
+   "end": 185.37,
+   "dur": 2.2,
+   "whisper": "So Monday I worked and I was able to",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_012",
+   "start": 555.98,
+   "end": 558.15,
+   "dur": 2.17,
+   "whisper": "I mean, he has terrible problems. Well, you shouldn't let it go because he could...",
+   "words": 15,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_100",
+   "start": 574.37,
+   "end": 576.53,
+   "dur": 2.16,
+   "whisper": "Wasn't I screaming last night, Mom?",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_072",
+   "start": 209.72,
+   "end": 211.64,
+   "dur": 1.92,
+   "whisper": "last Thursday. Oh,",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_011",
+   "start": 527.23,
+   "end": 528.96,
+   "dur": 1.73,
+   "whisper": "And then he'll probably go back to the Admiralty.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_076",
+   "start": 447.33,
+   "end": 449.01,
+   "dur": 1.68,
+   "whisper": "I don't even know. I think it's like...",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_013",
+   "start": 54.54,
+   "end": 56.13,
+   "dur": 1.59,
+   "whisper": "3-3-15. It says right here.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_029",
+   "start": 76.12,
+   "end": 77.62,
+   "dur": 1.5,
+   "whisper": "your mother's side, the Epstein's, right?",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_061",
+   "start": 59.14,
+   "end": 60.63,
+   "dur": 1.49,
+   "whisper": "Such wonderful work, Ida.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_073",
+   "start": 613.61,
+   "end": 615.07,
+   "dur": 1.46,
+   "whisper": "Too late for that now.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_006",
+   "start": 308.13,
+   "end": 309.59,
+   "dur": 1.46,
+   "whisper": "you know, on a regular basis.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_026",
+   "start": 103.41,
+   "end": 104.83,
+   "dur": 1.42,
+   "whisper": "and it's a real soft",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_053",
+   "start": 294.06,
+   "end": 295.44,
+   "dur": 1.38,
+   "whisper": "But he's about ready to come back.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_023",
+   "start": 533.98,
+   "end": 535.26,
+   "dur": 1.28,
+   "whisper": "but I just",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_109",
+   "start": 588.33,
+   "end": 589.58,
+   "dur": 1.25,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "callhome_eng__eng_044",
+   "start": 369.26,
+   "end": 370.5,
+   "dur": 1.24,
+   "whisper": "Oh...",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "callhome_eng__eng_013",
+   "start": 43.32,
+   "end": 44.55,
+   "dur": 1.23,
+   "whisper": "One minute. Tony James.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "callhome_eng__eng_106",
+   "start": 519.37,
+   "end": 520.59,
+   "dur": 1.22,
+   "whisper": "In the house where you stayed in",
+   "words": 7,
+   "speech": true
+  }
+ ],
+ "regions_with_speech": 38,
+ "seconds_checked": 94.7,
+ "seconds_with_speech": 92.2
+}

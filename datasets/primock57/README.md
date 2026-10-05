@@ -6,6 +6,17 @@ research. **Full ground-truth audit: [PRIMOCK57.md](../../PRIMOCK57.md).** In sh
 timings are padded and ASR-oriented, but the clean separate channels let us derive a much tighter reference.
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | CC-BY-4.0 ([link](https://github.com/babylonhealth/primock57/blob/main/LICENSE.md)) |
+| Annotations redistributable here | yes |
+| Access | Free download from GitHub (audio in Git LFS). |
+| Source version used | babylonhealth/primock57 (git HEAD) |
+| Domain | medical consultations (remote, 2 speakers) |
+| Views (normalized) | `mix`: Doctor + patient channels summed (as scripts/mix_audio.sh) |
+| Reference used as primary RTTM | Utterance-level TextGrid transcripts per channel (made for ASR evaluation). |
+| Ground-truth rating | **D** - Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems. |
+| Prepared splits (sessions) | all: 57 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -33,21 +44,39 @@ channel (the channels are isolated by ~50 dB). The same RTTMs are published unde
 ## Verified statistics
 
 <!-- auto:stats -->
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| all | 57 | 8.64 | 7.92 | 0.917 | 0.063 | 0.0 | 2/2/2 | 0.594/2.65/15.149 | 0.0 | 3.506 | 9.58 |
+| ALL | 57 | 8.64 | 7.92 | 0.917 | 0.063 | 0.0 | 2/2/2 | 0.594/2.65/15.149 | 0.0 | 3.506 | 9.58 |
+
+Computed by `python -m diards stats primock57` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.primock57.md`](../../results/stats/stats.primock57.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+_Validation not run yet._
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| mix (all) | 57 | 8.64 | primary | **24.15** | 0.10 | 24.00 | 0.05 | 24.92 | 15.99 | 84% |
+| mix (all) | 57 | 8.64 | channel_activity | **10.38** | 1.12 | 9.15 | 0.11 | 10.55 | 4.08 | 84% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/primock57.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| mix | mix | 57 | 20.03 | 8.61 | 11.42 | 0.07 | 0.04 | 0.03 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 <!-- /auto:diagnosis -->
 
 Against the official TextGrids almost all error is "missed speech", and 80% of it falls where the labelled
@@ -63,6 +92,19 @@ and coughs too).
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare primock57            # download (resumable) + normalize (idempotent)
+python -m diards validate primock57 --vad     # ground-truth checks
+python -m diards stats primock57
+python -m diards export primock57 --format nemo      # or pyannote / lhotse
+python -m diards evaluate primock57 --view mix  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("primock57", view="mix"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation

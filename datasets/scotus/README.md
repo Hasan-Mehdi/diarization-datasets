@@ -6,6 +6,17 @@ public-record audio for ~8,500 arguments (1955-2025). This repo prepares a **sam
 term by default) to measure how usable Oyez timing is as a court-domain diarization reference.
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | Audio: public record; Oyez transcripts/sync: CC-BY-NC-4.0 ([link](https://www.oyez.org/license)) |
+| Annotations redistributable here | no (scripts only) |
+| Access | Free public API, no registration. |
+| Source version used | api.oyez.org (fetched at prepare time) |
+| Domain | court (oral arguments) |
+| Views (normalized) | `default`: Oyez MP3 (court recording) to mono 16 kHz |
+| Reference used as primary RTTM | Oyez speaker-attributed transcript turns synchronised to the audio (no overlap). |
+| Ground-truth rating | **C** - Human-transcribed and speaker-attributed with stable global ids, but turn-level sync that tiles the timeline and never marks the frequent interruptions/overlaps. |
+| Prepared splits (sessions) | term2022: 12 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -33,21 +44,25 @@ are contiguous: each turn ends where the next begins, so pauses belong to the tu
 ## Verified statistics
 
 <!-- auto:stats -->
+_Statistics not computed yet._
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+_Validation not run yet._
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+_Not evaluated yet._
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+_Not run yet._
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -58,6 +73,19 @@ overlap. Use collar 0.25 s or more and expect inflated miss/FA numbers that are 
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare scotus            # download (resumable) + normalize (idempotent)
+python -m diards validate scotus --vad     # ground-truth checks
+python -m diards stats scotus
+python -m diards export scotus --format nemo      # or pyannote / lhotse
+python -m diards evaluate scotus --view default  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("scotus", view="default"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 Options: `--opt term=2019 --opt n_cases=30` to sample a different term or more cases.

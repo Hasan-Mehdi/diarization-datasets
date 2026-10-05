@@ -7,6 +7,17 @@ Voice activity and transcripts are human-annotated per participant, including th
 egocentric / hearing-aid-style diarization test.
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | CC-BY-NC-4.0 ([link](https://creativecommons.org/licenses/by-nc/4.0/)) |
+| Annotations redistributable here | yes |
+| Access | Free (GitHub, Git LFS or a 70 GB split release archive). |
+| Source version used | facebookresearch/EasyComDataset main (Git LFS files, release v1.0.0) |
+| Domain | egocentric conversation in noise (AR glasses) |
+| Views (normalized) | `glasses`: AR-glasses microphone array, channel 1, 1-minute files concatenated per session |
+| Reference used as primary RTTM | Human transcription with per-utterance voice-activity frames (20 fps). |
+| Ground-truth rating | **B** - Human-annotated voice activity per participant (including the glasses wearer), overlap present, but utterance-level with 50 ms frame quantization; noise is played from loudspeakers. |
+| Prepared splits (sessions) | all: 12 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -34,21 +45,25 @@ is split into 1-minute files named by their start time in the session. The recip
 ## Verified statistics
 
 <!-- auto:stats -->
+_Statistics not computed yet._
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+_Validation not run yet._
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+_Not evaluated yet._
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+_Not run yet._
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -59,6 +74,19 @@ utterance-level labels, 50 ms quantization, noise played from loudspeakers, non-
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare easycom            # download (resumable) + normalize (idempotent)
+python -m diards validate easycom --vad     # ground-truth checks
+python -m diards stats easycom
+python -m diards export easycom --format nemo      # or pyannote / lhotse
+python -m diards evaluate easycom --view glasses  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("easycom", view="glasses"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation

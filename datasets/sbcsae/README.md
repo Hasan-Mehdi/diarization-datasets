@@ -6,6 +6,17 @@ linguists, with every intonation unit time-stamped and overlap marked. Free, but
 derived RTTMs may not be redistributed. This repo ships only the scripts and statistics.
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | CC-BY-ND-3.0-US ([link](https://creativecommons.org/licenses/by-nd/3.0/us/)) |
+| Annotations redistributable here | no (scripts only) |
+| Access | Free download from OpenSLR (6.2 GB), no registration. |
+| Source version used | OpenSLR SLR155 SBCSAE.tar.gz (CHAT transcripts + WAV) |
+| Domain | everyday conversation (mixed situations) |
+| Views (normalized) | `default`: Original recording (22.05 kHz stereo) downmixed to mono 16 kHz |
+| Reference used as primary RTTM | Linguist transcription, intonation units time-stamped (ms bullets), overlap bracketed. |
+| Ground-truth rating | **B-** - Careful human transcription of every participant with overlap marked and IU-level timing, but IU bullets tile the timeline (pauses inside units) and recordings vary widely in quality. |
+| Prepared splits (sessions) | all: 60 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -34,21 +45,25 @@ coded. The reference here has one segment per IU that contains at least one lexi
 ## Verified statistics
 
 <!-- auto:stats -->
+_Statistics not computed yet._
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+_Validation not run yet._
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+_Not evaluated yet._
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+_Not run yet._
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -59,6 +74,19 @@ tiling (loose boundaries), variable audio, no-derivatives license.
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare sbcsae            # download (resumable) + normalize (idempotent)
+python -m diards validate sbcsae --vad     # ground-truth checks
+python -m diards stats sbcsae
+python -m diards export sbcsae --format nemo      # or pyannote / lhotse
+python -m diards evaluate sbcsae --view default  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("sbcsae", view="default"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation

@@ -5,6 +5,17 @@ room (5.3 h), with headsets and five 7-microphone devices. Background music is p
 session. It is small, permissively licensed (CDLA-Permissive), and a cleaner, shorter companion to CHiME-6.
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | CDLA-Permissive-1.0 ([link](https://cdla.dev/permissive-1-0/)) |
+| Annotations redistributable here | yes |
+| Access | Free download from Zenodo (13.4 GB), no registration. |
+| Source version used | Zenodo 8122551 DipCo.tgz (md5 2297eb93...) |
+| Domain | dinner party (lab, far-field) |
+| Views (normalized) | `farfield`: Device U01, channel 1 (far-field); `ihm-mix`: Sum of the 4 close-talk headsets |
+| Reference used as primary RTTM | Human transcription of each headset, utterance segments of up to 10-15 s. |
+| Ground-truth rating | **B** - Every participant on a headset and transcribed, overlap fully covered, but segments are ASR-oriented (split only at 'logical' points, up to 10-15 s), so pauses are labelled as speech. |
+| Prepared splits (sessions) | dev: 5, eval: 5 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -36,21 +47,25 @@ This shows how much of the labelled time is silent.
 ## Verified statistics
 
 <!-- auto:stats -->
+_Statistics not computed yet._
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+_Validation not run yet._
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+_Not evaluated yet._
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+_Not run yet._
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -61,6 +76,19 @@ time; prefer collar 0.25 s or the close-talk activity reference when you need ti
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare dipco            # download (resumable) + normalize (idempotent)
+python -m diards validate dipco --vad     # ground-truth checks
+python -m diards stats dipco
+python -m diards export dipco --format nemo      # or pyannote / lhotse
+python -m diards evaluate dipco --view farfield  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("dipco", view="farfield"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation

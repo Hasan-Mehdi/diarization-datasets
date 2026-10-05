@@ -7,6 +7,17 @@ cleanest free two-speaker reference set: clean channels, word timing, natural (i
 backchannels.
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | CC-BY-NC-SA-2.5 (audio + NXT zip); download page states CC BY 4.0 for annotations v2.1 ([link](https://groups.inf.ed.ac.uk/maptask/maptasknxt.html)) |
+| Annotations redistributable here | no (scripts only) |
+| Access | Free download, no registration. |
+| Source version used | NXT annotations v2.1 (2011-02-10); signals/dialogues *.mix.wav |
+| Domain | two-person task dialogue (close-talk) |
+| Views (normalized) | `default`: Official stereo mix of the two close-talk channels, downmixed to mono 16 kHz |
+| Reference used as primary RTTM | Word-level timed units per speaker (silence and noise also time-marked). |
+| Ground-truth rating | **A-** - Each speaker on a separate close-talk channel with word-level timings, silences explicitly marked, overlap naturally represented; task-oriented (not free) conversation, studio audio. |
+| Prepared splits (sessions) | all: 128 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -34,21 +45,25 @@ same id across their four dialogues.
 ## Verified statistics
 
 <!-- auto:stats -->
+_Statistics not computed yet._
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+_Validation not run yet._
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+_Not evaluated yet._
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+_Not run yet._
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -59,6 +74,19 @@ overlap and backchannels. Minus: narrow task domain, studio audio, license ambig
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare maptask            # download (resumable) + normalize (idempotent)
+python -m diards validate maptask --vad     # ground-truth checks
+python -m diards stats maptask
+python -m diards export maptask --format nemo      # or pyannote / lhotse
+python -m diards evaluate maptask --view default  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("maptask", view="default"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation

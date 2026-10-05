@@ -6,6 +6,17 @@ language tags, so this repo derives a reproducible **English subset with Whisper
 publishes the per-clip language probabilities ([`metadata/msdwild_lid.json`](../../metadata/msdwild_lid.json)).
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | MSDWild license agreement (research only, no redistribution) ([link](https://github.com/X-LANCE/MSDWILD/blob/master/MSDWILD_license_agreement.pdf)) |
+| Annotations redistributable here | no (scripts only) |
+| Access | Free download (Google Drive); accept the research-only license agreement. |
+| Source version used | X-LANCE/MSDWILD (git HEAD rttms) + wav archive (Google Drive, md5 0057f82d...) |
+| Domain | vlogs (in-the-wild media) |
+| Views (normalized) | `default`: Clip audio, mono 16 kHz |
+| Reference used as primary RTTM | Manual audio-visual annotation (pauses > 0.25 s split), later corrections credited in the repo. |
+| Ground-truth rating | **B** - Human, diarization-oriented labels with overlap, but short clips, no language tags, and the maintainers withdrew ~90 files; label quality checked below. |
+| Prepared splits (sessions) | few.train: 744, few.val: 114, many.val: 36 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -39,21 +50,25 @@ splits are the usual test material.
 ## Verified statistics
 
 <!-- auto:stats -->
+_Statistics not computed yet._
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+_Validation not run yet._
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+_Not evaluated yet._
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+_Not run yet._
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -64,6 +79,19 @@ research-only license, LID-derived English subset, short clips.
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare msdwild_en            # download (resumable) + normalize (idempotent)
+python -m diards validate msdwild_en --vad     # ground-truth checks
+python -m diards stats msdwild_en
+python -m diards export msdwild_en --format nemo      # or pyannote / lhotse
+python -m diards evaluate msdwild_en --view default  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("msdwild_en", view="default"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation

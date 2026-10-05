@@ -5,6 +5,17 @@ Southern dialects), as transcribed and time-bulleted in TalkBank's CABank: 40 ca
 Same family and format as CallHome English, but **not gated** on Hugging Face.
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | TalkBank ground rules (research, cite); HF card states no license ([link](https://talkbank.org/share/rules.html)) |
+| Annotations redistributable here | no (scripts only) |
+| Access | Free on Hugging Face (not gated). |
+| Source version used | huggingface.co/datasets/talkbank/callfriend (configs eng-n, eng-s) |
+| Domain | telephone (2+ speakers) |
+| Views (normalized) | `default`: Telephone audio (channels summed), 16 kHz |
+| Reference used as primary RTTM | TalkBank CHAT transcripts with per-turn time bullets. |
+| Ground-truth rating | **C** - Human transcription with turn-level bullets; see dataset card for measured boundary quality. |
+| Prepared splits (sessions) | data: 40 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -31,21 +42,38 @@ silences are absorbed into turns.
 ## Verified statistics
 
 <!-- auto:stats -->
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| data | 40 | 10.44 | 9.38 | 0.899 | 0.07 | 0.0 | 2/2/4 | 0.312/1.312/6.144 | 0.0098 | 0.974 | 20.17 |
+| ALL | 40 | 10.44 | 9.38 | 0.899 | 0.07 | 0.0 | 2/2/4 | 0.312/1.312/6.144 | 0.0098 | 0.974 | 20.17 |
+
+Computed by `python -m diards stats callfriend_eng` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.callfriend_eng.md`](../../results/stats/stats.callfriend_eng.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+View `default`: 40 sessions, **1 errors**, 4 warnings (normalized files); 32 sessions had problems in the ORIGINAL labels that normalization fixed.
+- original-label issues: same_speaker_overlap = 3074, beyond_audio_end = 5, seconds_beyond_audio_end = 0.34, placeholder_speaker_label = 1
+- checks that fired (sessions): `error:normalized_placeholder_speaker_label` 1, `info:segments_under_50ms` 2, `info:silence_over_30s` 1, `info:speaker_under_1s` 1, `warning:possible_unannotated_speech` 3, `warning:segments_over_60s` 1
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.7% of reference speech; reference speech without energy = 5.0%. Most-flagged sessions: `callfriend_eng__eng-n_002` (0.18), `callfriend_eng__eng-s_001` (0.14), `callfriend_eng__eng-n_027` (0.05), `callfriend_eng__eng-n_004` (0.04), `callfriend_eng__eng-n_028` (0.03)
+- full report: [`results/validation/validation.callfriend_eng.default.md`](../../results/validation/validation.callfriend_eng.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (data) | 40 | 10.44 | primary | **30.80** | 7.90 | 18.58 | 4.32 | 38.29 | 23.24 | 75% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/callfriend_eng.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+_Not run yet._
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -56,6 +84,19 @@ make boundaries loose. Useful as an ungated, free stand-in for CallHome at colla
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare callfriend_eng            # download (resumable) + normalize (idempotent)
+python -m diards validate callfriend_eng --vad     # ground-truth checks
+python -m diards stats callfriend_eng
+python -m diards export callfriend_eng --format nemo      # or pyannote / lhotse
+python -m diards evaluate callfriend_eng --view default  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("callfriend_eng", view="default"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation

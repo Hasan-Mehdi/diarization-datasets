@@ -142,17 +142,28 @@ def block_diagnosis(name):
     files = sorted((REPO / "results" / "diagnosis").glob(f"diagnosis.{name}.*.json"))
     if not files:
         return "_Not run yet._"
+    audits = []
     out = ["| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |",
            "|---|---|---:|---:|---:|---:|---:|---:|---:|"]
     for f in files:
         s = json.loads(f.read_text(encoding="utf-8"))["summary"]
         out.append(f"| {s['hyp_view']} | {s['vad_view']} | {s['sessions']} | {s['miss_pct']} | {s['miss_in_silence_pct']} | "
                    f"{s['miss_with_energy_pct']} | {s['fa_pct']} | {s['fa_with_energy_pct']} | {s['fa_in_silence_pct']} |")
+        audits.append((s["hyp_view"], REPO / "results" / "diagnosis" / f"fa_audit.{name}.{s['hyp_view']}.json"))
     out.append("")
     out.append("Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, "
                "split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per "
                "session). \"Miss in silence\" is a lower bound on reference padding; \"FA with energy\" mixes unlabelled "
                "speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).")
+    for view, ap in audits:
+        if ap.exists():
+            a = json.loads(ap.read_text(encoding="utf-8"))
+            ex = [r for r in a["regions"] if r["speech"]][:3]
+            out.append("")
+            out.append(f"**Whisper audit of the longest audible false alarms ({view}):** {a['regions_with_speech']} of "
+                       f"{a['regions_checked']} regions (>= 1 s) contain >= 3 intelligible words, i.e. speech the reference "
+                       f"does not label ({a['seconds_with_speech']} of {a['seconds_checked']} s)."
+                       + (" Examples: " + "; ".join(f"`{r['session_id']}` {r['start']:.1f}-{r['end']:.1f} s: " + chr(34) + r['whisper'][:80] + chr(34) for r in ex) if ex else ""))
     return "\n".join(out)
 
 

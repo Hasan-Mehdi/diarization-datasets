@@ -8,6 +8,17 @@ CallHome English. The LDC packages cost money.
 Not to be confused with the "CALLHOME" diarization benchmark (NIST SRE 2000 Disk 8, multilingual, LDC-only).
 
 <!-- auto:meta -->
+| | |
+|---|---|
+| License | CC-BY-NC-SA-4.0 ([link](https://creativecommons.org/licenses/by-nc-sa/4.0/)) |
+| Annotations redistributable here | no (scripts only) |
+| Access | Free, gated on Hugging Face (click-through form asking company + country). |
+| Source version used | huggingface.co/datasets/talkbank/callhome (config eng) |
+| Domain | telephone (2+ speakers) |
+| Views (normalized) | `default`: Telephone audio (both channels summed), 8 kHz source upsampled to 16 kHz |
+| Reference used as primary RTTM | LDC transcripts re-formatted by TalkBank (CHAT), per-turn time bullets. |
+| Ground-truth rating | **C+** - Human transcription with turn-level bullets; see dataset card for measured boundary quality. |
+| Prepared splits (sessions) | data: 140 |
 <!-- /auto:meta -->
 
 ## Source and access
@@ -41,21 +52,46 @@ alignment.
 ## Verified statistics
 
 <!-- auto:stats -->
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| data | 140 | 20.3 | 17.53 | 0.863 | 0.09 | 0.0001 | 2/2/4 | 0.29/1.42/5.93 | 0.017 | 1.08 | 19.56 |
+| ALL | 140 | 20.3 | 17.53 | 0.863 | 0.09 | 0.0001 | 2/2/4 | 0.29/1.42/5.93 | 0.017 | 1.08 | 19.56 |
+
+Computed by `python -m diards stats callhome_eng` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.callhome_eng.md`](../../results/stats/stats.callhome_eng.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
+View `default`: 140 sessions, **0 errors**, 3 warnings (normalized files); 23 sessions had problems in the ORIGINAL labels that normalization fixed.
+- original-label issues: same_speaker_overlap = 30
+- checks that fired (sessions): `info:segments_under_50ms` 17, `info:silence_over_30s` 2, `info:speaker_under_1s` 4, `warning:possible_unannotated_speech` 3
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.6% of reference speech; reference speech without energy = 0.8%. Most-flagged sessions: `callhome_eng__eng_037` (0.32), `callhome_eng__eng_011` (0.08), `callhome_eng__eng_099` (0.06), `callhome_eng__eng_013` (0.03), `callhome_eng__eng_072` (0.03)
+- full report: [`results/validation/validation.callhome_eng.default.md`](../../results/validation/validation.callhome_eng.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (data) | 140 | 20.3 | primary | **11.68** | 3.92 | 7.35 | 0.41 | 15.29 | 7.23 | 93% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/callhome_eng.*/results.md`.
+
+> **Training-data overlap:** The model was trained on NIST SRE 2000 CALLHOME part 1, which contains CallHome calls in several languages; overlap with these CallHome English calls cannot be ruled out.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 140 | 5.17 | 2.42 | 2.75 | 2.53 | 0.98 | 1.56 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 38 of 40 regions (>= 1 s) contain >= 3 intelligible words, i.e. speech the reference does not label (92.2 of 94.7 s). Examples: `callhome_eng__eng_013` 44.9-50.3 s: "They said he doesn't want to start working because you didn't tell him exactly e"; `callhome_eng__eng_073` 603.6-607.2 s: "See, I should have planned to arrive on the same day that you arrived."; `callhome_eng__eng_047` 202.2-205.7 s: "and the barges go so slowly that like you can get off at a bridge"
 <!-- /auto:diagnosis -->
 
 ## Quality rating
@@ -66,6 +102,19 @@ with loose boundaries and spotty backchannel coverage. Fine at collar 0.25 s, we
 ## Download and prepare
 
 <!-- auto:prepare -->
+```bash
+python -m diards prepare callhome_eng            # download (resumable) + normalize (idempotent)
+python -m diards validate callhome_eng --vad     # ground-truth checks
+python -m diards stats callhome_eng
+python -m diards export callhome_eng --format nemo      # or pyannote / lhotse
+python -m diards evaluate callhome_eng --view default  # Nemotron 3 Diarization + DER/JER
+```
+
+```python
+from diards import load_dataset
+for s in load_dataset("callhome_eng", view="default"):
+    s.audio_path, s.segments, s.uem, s.words
+```
 <!-- /auto:prepare -->
 
 ## Citation
