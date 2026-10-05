@@ -4,7 +4,7 @@ Post-hoc variants use the cached Nemotron outputs (hypothesis RTTMs and 10 ms sp
 ``diards evaluate``) and need no GPU:
 
 * ``gate`` / ``gate+P``: hypothesis speech is kept only inside VAD speech (dilated by P seconds); for Silero (with
-  and without the 30 s state reset), WebRTC (mode 2) and the energy VAD.
+  stock, with the 30 s state reset, and the max of both), WebRTC (mode 2), the energy VAD and pyannote.
 * ``fill``: frames inside VAD speech where no speaker is above 0.5 get the speaker with the highest probability.
 * ``vad_decides``: ``gate`` + ``fill``, i.e. the VAD decides speech / non-speech and the model only decides who.
 
@@ -12,7 +12,8 @@ Protocol variants change the scoring region, not the hypothesis (reported separa
 official numbers): ``uem_span`` (UEM cut to first VAD speech - 1 s .. last VAD speech + 1 s) and ``uem_speech``
 (UEM restricted to VAD speech +/- 0.5 s).
 
-VAD-derived variants other than ``gate`` use ``silero_r30`` (Silero with the 30 s state reset, see diards.vads).
+VAD-derived variants other than ``gate`` use ``silero_x2`` (Silero, frame-wise max of the stock and the 30 s-reset
+runs; see diards.vads).
 
 Re-inference variants run Nemotron (GPU, same settings as ``diards evaluate``) on modified audio for a sample of
 sessions: ``trim`` (VAD non-speech longer than 1 s shortened to 0.5 s, output mapped back to original time) and
@@ -24,7 +25,7 @@ and must reproduce ``results/nemotron/<tag>/results.json``.
 
 Usage:
   python -m diards.vad_assist posthoc [--tags ami.sdm,...] [--out results/vad/pipeline]
-  python -m diards.vad_assist rerun <tag> [--variants trim,zero,none] [--max-hours 1.0]
+  python -m diards.vad_assist rerun <tag>[,<tag>...] [--variants none,trim,zero] [--max-hours 1.0]
 """
 from __future__ import annotations
 
@@ -43,7 +44,7 @@ from .score import Scorer
 from .vads import VadCache, frames_to_intervals, study_root, to_raster
 
 RESULTS = Path(__file__).resolve().parents[1] / "results" / "nemotron"
-VADS = ("silero_r30", "silero", "webrtc", "energy", "pyannote")
+VADS = ("silero_x2", "silero", "silero_r30", "webrtc", "energy", "pyannote")
 
 
 # ----------------------------------------------------------------------------- tags (= main agent's evaluations)
@@ -229,9 +230,9 @@ def posthoc(tag: str, root=None, vads=VADS) -> dict:
             with np.load(p) as z:
                 probs[s.session_id] = (z["probs"].astype(np.float32), float(z["frame_s"]))
     if len(probs) == len(sessions):
-        sp = speech["silero_r30"]
-        run("fill:silero_r30", {sid: fill_from_probs(pr, fr, sp[sid], hyp=base[sid]) for sid, (pr, fr) in probs.items()})
-        run("vad_decides:silero_r30", {sid: fill_from_probs(pr, fr, sp[sid], gate_too=True, hyp=base[sid])
+        sp = speech["silero_x2"]
+        run("fill:silero_x2", {sid: fill_from_probs(pr, fr, sp[sid], hyp=base[sid]) for sid, (pr, fr) in probs.items()})
+        run("vad_decides:silero_x2", {sid: fill_from_probs(pr, fr, sp[sid], gate_too=True, hyp=base[sid])
                                    for sid, (pr, fr) in probs.items()})
         # sanity: the rasterised cached hypothesis must give back the cached hypothesis
         out["hyp_raster_roundtrip"] = all(_same(probs_to_segments(hyp_raster(base[sid], len(pr), fr), fr), base[sid])
@@ -239,9 +240,9 @@ def posthoc(tag: str, root=None, vads=VADS) -> dict:
     else:
         out["note"] = f"probabilities cached for {len(probs)}/{len(sessions)} sessions; fill variants skipped"
     uems = {s.session_id: s.uem for s in sessions}
-    sp = speech["silero_r30"]
-    run("uem_span:silero_r30", base, {sid: uem_span(u, sp[sid]) for sid, u in uems.items()})
-    run("uem_speech:silero_r30", base, {sid: uem_speech(u, sp[sid]) for sid, u in uems.items()})
+    sp = speech["silero_x2"]
+    run("uem_span:silero_x2", base, {sid: uem_span(u, sp[sid]) for sid, u in uems.items()})
+    run("uem_speech:silero_x2", base, {sid: uem_speech(u, sp[sid]) for sid, u in uems.items()})
     out["uem_hours"] = {
         "official": round(sum(total_duration(merge_intervals(u)) for u in uems.values()) / 3600, 3),
         "uem_span": round(sum(total_duration(uem_span(u, sp[sid])) for sid, u in uems.items()) / 3600, 3),
@@ -261,7 +262,7 @@ def rerun(tag: str, variants=("none", "trim", "zero"), max_hours: float = 1.0, l
     sessions = select_sessions(tag_sessions(tag, root), limit=limit, max_hours=max_hours)
     base = {s.session_id: read_rttm_single(hyp_dir(tag) / "hyp" / f"{s.session_id}.rttm") for s in sessions}
     dz = diarizer or NemotronDiarizer()
-    work = study_root() / "rerun" / tag
+    work = study_root() / "rerun" / "silero_x2" / tag
     out = {"tag": tag, "sessions": [s.session_id for s in sessions],
            "hours": round(sum(s.duration for s in sessions) / 3600, 3), "variants": {}, "audio_hours": {}}
     out["variants"]["baseline(cached)"] = score(sessions, base)
@@ -270,7 +271,7 @@ def rerun(tag: str, variants=("none", "trim", "zero"), max_hours: float = 1.0, l
         for s in sessions:
             hp = work / var / f"{s.session_id}.rttm"
             x, sr = sf.read(str(s.audio_path), dtype="float32")
-            speech = merge_intervals(VadCache.load(name, view, s.session_id).silero(reset=True))
+            speech = merge_intervals(VadCache.load(name, view, s.session_id).silero(variant="x2"))
             pieces = None
             if var == "trim":
                 pieces = trim_plan(speech, len(x) / sr)
@@ -305,7 +306,7 @@ def main(argv=None):
     p.add_argument("--tags", help="comma-separated results/nemotron tags (default: all)")
     p.add_argument("--out", default="results/vad/pipeline")
     p = sub.add_parser("rerun")
-    p.add_argument("tag")
+    p.add_argument("tag", help="results/nemotron tag, or several comma-separated (the model is loaded once)")
     p.add_argument("--variants", default="none,trim,zero")
     p.add_argument("--max-hours", type=float, default=1.0)
     p.add_argument("--limit", type=int)
@@ -323,8 +324,12 @@ def main(argv=None):
                 continue
             (out / f"posthoc.{tag}.json").write_text(json.dumps(r, indent=1), encoding="utf-8", newline="\n")
     else:
-        r = rerun(a.tag, tuple(a.variants.split(",")), a.max_hours, a.limit)
-        (out / f"rerun.{a.tag}.json").write_text(json.dumps(r, indent=1), encoding="utf-8", newline="\n")
+        from .evaluate import NemotronDiarizer
+
+        dz = NemotronDiarizer()
+        for tag in a.tag.split(","):
+            r = rerun(tag, tuple(a.variants.split(",")), a.max_hours, a.limit, diarizer=dz)
+            (out / f"rerun.{tag}.json").write_text(json.dumps(r, indent=1), encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

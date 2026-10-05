@@ -7,9 +7,13 @@ Detectors (all run on the normalized 16 kHz mono audio, on CPU):
   (``get_speech_timestamps_from_probs``) with its documented defaults (:data:`SILERO_DEFAULTS`): threshold 0.5
   (exit threshold 0.35), min speech 250 ms, min silence 100 ms, 30 ms padding on each side.
 * ``silero_r30``: the same model with its recurrent state reset every 30 s (each window warmed up on the preceding
-  2 s). The stock streaming loop never resets the state, and on some long recordings with continuous speech the
-  state drifts into a regime where the model outputs ~0 for minutes over clearly audible speech (seen on CallHome
-  English, MSDWild); the reset removes that failure and otherwise changes < 1% of frames.
+  2 s).
+* ``silero_x2``: frame-wise maximum of the stock and the ``silero_r30`` probabilities, then the same
+  post-processing. Silero's output depends on its recurrent state, and on some audio (telephone speech, far-field
+  homes, film soundtracks) the model is bistable: the same stretch of clear speech gets probabilities near 1 or near
+  0 depending on where the stream started, and a bad state can persist for minutes (CallHome eng_125: 0.00 for
+  most of the call). Two runs with different state histories rarely fail in the same place, so their maximum
+  removes most of these drop-outs (scripts/vad_reset_check.py).
 * ``webrtc``: WebRTC VAD (``webrtcvad``), 30 ms frames, aggressiveness 0-3 (all four cached as a bit mask), then the
   same min-silence / min-speech / padding rules as Silero.
 * ``energy``: the repo's transparent energy VAD (:func:`diards.vad.energy_vad`, default settings, as used by
@@ -211,8 +215,19 @@ class VadCache:
     def silero_probs(self) -> np.ndarray:
         return self.data["silero"].astype(np.float32)
 
-    def silero(self, reset: bool = False, **params) -> list[tuple[float, float]]:
-        p = self.data["silero_r30" if reset else "silero"].astype(np.float32)
+    def silero_variant(self, variant: str = "x2") -> np.ndarray:
+        """Probabilities of ``stock``, ``r30`` (30 s state reset) or ``x2`` (frame-wise max of both)."""
+        if variant == "stock":
+            return self.data["silero"].astype(np.float32)
+        if variant == "r30":
+            return self.data["silero_r30"].astype(np.float32)
+        if variant == "x2":
+            return np.maximum(self.data["silero"], self.data["silero_r30"]).astype(np.float32)
+        raise KeyError(variant)
+
+    def silero(self, reset: bool = False, variant: str | None = None, **params) -> list[tuple[float, float]]:
+        """Silero intervals; ``variant`` (``stock`` / ``r30`` / ``x2``) overrides ``reset``."""
+        p = self.silero_variant(variant or ("r30" if reset else "stock"))
         return silero_intervals(p, int(self.data["n_samples"]), **params)
 
     def webrtc(self, mode: int = 2, **params) -> list[tuple[float, float]]:
@@ -222,11 +237,12 @@ class VadCache:
         return [(float(a), float(b)) for a, b in self.data["energy_ivs"]]
 
     def get(self, vad: str) -> list[tuple[float, float]]:
-        """``silero`` / ``silero_r30`` / ``silero@0.3`` (threshold) / ``webrtc`` / ``webrtc@3`` (mode) / ``energy`` /
-        ``pyannote``."""
+        """``silero`` (stock) / ``silero_r30`` / ``silero_x2`` / ``silero_x2@0.3`` (threshold) / ``webrtc`` /
+        ``webrtc@3`` (mode) / ``energy`` / ``pyannote``."""
         name, _, arg = vad.partition("@")
-        if name in ("silero", "silero_r30"):
-            return self.silero(reset=name == "silero_r30", **({"threshold": float(arg)} if arg else {}))
+        if name in ("silero", "silero_r30", "silero_x2"):
+            variant = {"silero": "stock", "silero_r30": "r30", "silero_x2": "x2"}[name]
+            return self.silero(variant=variant, **({"threshold": float(arg)} if arg else {}))
         if name == "webrtc":
             return self.webrtc(int(arg) if arg else WEBRTC_DEFAULTS["mode"])
         if name == "energy":

@@ -25,8 +25,8 @@ sys.path.insert(0, str(ROOT))
 from diards.core import NormalizedDataset  # noqa: E402
 
 V = ROOT / "results" / "vad"
-DETECTORS = ("silero_r30", "silero", "webrtc", "energy", "pyannote", "nemotron")
-LABEL = {"silero_r30": "Silero (30 s reset)", "silero": "Silero (stock)", "webrtc": "WebRTC (mode 2)",
+DETECTORS = ("silero_x2", "silero", "silero_r30", "webrtc", "energy", "pyannote", "nemotron")
+LABEL = {"silero_x2": "Silero x2", "silero_r30": "Silero (30 s reset)", "silero": "Silero (stock)", "webrtc": "WebRTC (mode 2)",
          "energy": "energy", "pyannote": "pyannote seg-3.0", "nemotron": "Nemotron (union)"}
 CMDS = """```bash
 # env: D:\\diarization-data\\envs\\diar (+ silero-vad 6.2.3 installed with --no-deps); pyannote in envs\\vad
@@ -79,7 +79,7 @@ def table_audit(A):
              "silent-ref % | onset p50 s | offset p50 s | time-shifted sessions |",
              "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for name, r in A.items():
-        x = r["summary"]["primary"].get("silero_r30")
+        x = r["summary"]["primary"].get("silero_x2")
         if not x:
             continue
         lines.append(f"| {name} | {r['view']} | {grade(name)} | {x['sessions']} | {x['ref_h']:.2f} | {x['vad_h']:.2f} | "
@@ -89,11 +89,13 @@ def table_audit(A):
 
 
 def table_detectors(A, key):
+    """Every detector on the same sessions (those with pyannote and Nemotron outputs, i.e. the evaluated subset)."""
     dets = [d for d in DETECTORS]
-    lines = ["| dataset | " + " | ".join(LABEL[d] for d in dets) + " |", "|---|" + "---:|" * len(dets)]
+    lines = ["| dataset | sessions | " + " | ".join(LABEL[d] for d in dets) + " |", "|---|---:|" + "---:|" * len(dets)]
     for name, r in A.items():
-        s = r["summary"]["primary"]
-        lines.append(f"| {name} | " + " | ".join(f(s[d][key], 2) if d in s else "-" for d in dets) + " |")
+        c = r.get("common_subset", {"sessions": r["sessions"], "summary": r["summary"]})
+        s = c["summary"]["primary"]
+        lines.append(f"| {name} | {c['sessions']} | " + " | ".join(f(s[d][key], 2) if d in s else "-" for d in dets) + " |")
     return "\n".join(lines)
 
 
@@ -106,8 +108,8 @@ def whisper_rows():
 
 
 def table_whisper(W):
-    kinds = [("unref", "silero_r30"), ("unref", "energy"), ("unref", "webrtc"),
-             ("unvoiced", "silero_r30"), ("unvoiced", "energy"), ("unvoiced", "webrtc"), ("control", None)]
+    kinds = [("unref", "silero_x2"), ("unref", "energy"), ("unref", "webrtc"),
+             ("unvoiced", "silero_x2"), ("unvoiced", "energy"), ("unvoiced", "webrtc"), ("control", None)]
     head = ["unannotated: Silero", "unannotated: energy", "unannotated: WebRTC",
             "silent-ref: Silero", "silent-ref: energy", "silent-ref: WebRTC", "control (both silent)"]
     lines = ["| dataset | " + " | ".join(head) + " |", "|---|" + "---:|" * len(head)]
@@ -138,7 +140,7 @@ def table_refs(A, N):
     for name, r in A.items():
         tags = [t for t in N if t.split(".")[0] == name and t.split(".")[1] == r["view"]]
         for ref_name, by in r["summary"].items():
-            x = by.get("silero_r30")
+            x = by.get("silero_x2")
             if not x:
                 continue
             nem = None
@@ -181,7 +183,7 @@ def correlation(N, root=None):
                 segs = s.segments if ref_name == "primary" else s.alt_segments(ref_name)
                 uem = merge_intervals(s.uem)
                 ref = intersect(merge_intervals((g.start, g.end) for g in segs), uem)
-                vad = intersect(merge_intervals(caches[s.session_id].silero(reset=True)), uem)
+                vad = intersect(merge_intervals(caches[s.session_id].silero(variant="x2")), uem)
                 ref_s += total_duration(ref)
                 miss_s += total_duration(subtract(ref, vad))
                 fa_s += total_duration(subtract(vad, ref))
@@ -211,8 +213,8 @@ def table_corr(rows):
     return "\n".join(lines)
 
 
-POSTHOC = ["gate:silero_r30", "gate+0.25:silero_r30", "gate:silero", "gate:webrtc", "gate:energy", "gate:pyannote",
-           "gate+0.25:pyannote", "fill:silero_r30", "vad_decides:silero_r30"]
+POSTHOC = ["gate:silero_x2", "gate+0.25:silero_x2", "gate:silero", "gate:silero_r30", "gate:webrtc", "gate:energy", "gate:pyannote",
+           "gate+0.25:pyannote", "fill:silero_x2", "vad_decides:silero_x2"]
 
 
 def table_posthoc(P, key):
@@ -246,8 +248,8 @@ def table_uem_protocol(P):
              "|---|---:|---:|---:|---:|---:|---:|"]
     for tag, r in P.items():
         b = r["variants"]["baseline"]["summary"]["primary@0.0"]["der"]
-        us = r["variants"].get("uem_span:silero_r30", {}).get("summary", {}).get("primary@0.0")
-        up = r["variants"].get("uem_speech:silero_r30", {}).get("summary", {}).get("primary@0.0")
+        us = r["variants"].get("uem_span:silero_x2", {}).get("summary", {}).get("primary@0.0")
+        up = r["variants"].get("uem_speech:silero_x2", {}).get("summary", {}).get("primary@0.0")
         u = r.get("uem_hours", {})
         lines.append(f"| {tag} | {u.get('official', '-')} | {u.get('uem_span', '-')} | {u.get('uem_speech', '-')} | "
                      f"{100 * b:.2f} | {f(us and us['der'], 2, True)} | {f(up and up['der'], 2, True)} |")
@@ -301,7 +303,7 @@ def table_calibration(A):
             continue
         s = r["summary"][ref]
         cells = [f"{s[d]['fa_pct']:.1f} / {s[d]['miss_pct']:.1f}" if d in s else "-" for d in dets]
-        x = s.get("silero_r30", {})
+        x = s.get("silero_x2", {})
         lines.append(f"| {name} ({r['view']}) | {ref}: {desc} | " + " | ".join(cells) +
                      f" | {f(x.get('onset', {}).get('p50'), 3)} / {f(x.get('offset', {}).get('p50'), 3)} |")
     return "\n".join(lines)
@@ -325,8 +327,8 @@ def main():
              "*silent-ref* = reference speech >= 0.5 s long and > 0.25 s away from any VAD speech; FA / miss = frame-level "
              "disagreement at collar 0. Boundary offsets: positive = the reference is wider than the VAD (starts "
              "earlier / ends later). Silero = `silero-vad` 6.2.3 defaults (threshold 0.5, min speech 250 ms, min "
-             "silence 100 ms, pad 30 ms) with its state reset every 30 s unless marked *stock*.", "",
-             "## 1. Ground-truth audit (primary reference, Silero with 30 s reset)", "", table_audit(A), "",
+             "silence 100 ms, pad 30 ms) applied to the frame-wise maximum of two runs (stock streaming, and state reset every 30 s): *Silero x2*. *stock* = the plain streaming run.", "",
+             "## 1. Ground-truth audit (primary reference, Silero x2)", "", table_audit(A), "",
              "### Unannotated speech (% of reference speech) by detector", "", table_detectors(A, "unref_pct"), "",
              "### Silent reference speech (% of reference speech) by detector", "", table_detectors(A, "unvoiced_pct"), "",
              "### Whisper check of the longest flagged regions (regions with intelligible speech / regions checked)", "",
@@ -341,7 +343,7 @@ def main():
                   "Primary reference, collar 0:", "", table_posthoc(P, "primary@0.0"), "",
                   "Primary reference, collar 0.25 s:", "", table_posthoc(P, "primary@0.25"), "",
                   "Error components, gate with Silero (collar 0):", "",
-                  table_posthoc_components(P, "primary@0.0", "gate:silero_r30"), "",
+                  table_posthoc_components(P, "primary@0.0", "gate:silero_x2"), "",
                   "Protocol variants (scoring region changed; not comparable to official numbers):", "",
                   table_uem_protocol(P), ""]
     if R:

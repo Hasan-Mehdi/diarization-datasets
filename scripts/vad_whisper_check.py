@@ -8,7 +8,7 @@ Whisper large-v3 (English, fp16 on GPU), the longest flagged regions of each VAD
   the reference; no words = a VAD false alarm (noise, music, laughter, breathing) or unintelligible speech.
 * ``unvoiced``: the reference has speech where the VAD hears none. Words = the VAD missed speech; no words =
   padding / a pause inside a segment / non-speech labelled as speech.
-* ``control``: random >= 1 s stretches where both the reference and Silero (30 s state reset) say non-speech, to measure how often
+* ``control``: random >= 1 s stretches where both the reference and Silero (silero_x2) say non-speech, to measure how often
   this Whisper check itself reports speech in silence.
 
 Usage: python scripts/vad_whisper_check.py <dataset> [--view V] [--vads silero,energy,webrtc] [--per-kind 20]
@@ -60,7 +60,7 @@ def controls(ds_name, view, sessions, n, seed=0, min_len=1.0, max_len=5.0):
     cands = []
     for s in sessions:
         try:
-            v = merge_intervals(VadCache.load(ds_name, view, s.session_id).silero(reset=True))
+            v = merge_intervals(VadCache.load(ds_name, view, s.session_id).silero(variant="x2"))
         except FileNotFoundError:
             continue
         uem = merge_intervals(s.uem)
@@ -75,7 +75,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("dataset")
     ap.add_argument("--view")
-    ap.add_argument("--vads", default="silero_r30,energy,webrtc")
+    ap.add_argument("--vads", default="silero_x2,energy,webrtc")
     ap.add_argument("--per-kind", type=int, default=20)
     ap.add_argument("--min-dur", type=float, default=1.0)
     ap.add_argument("--audit-dir", default=str(ROOT / "results" / "vad" / "audit"))
@@ -92,7 +92,7 @@ def main():
                     for e in r["refs"]["primary"].get(vad, {}).get(f"top_{kind}", []) if e["dur"] >= a.min_dur]
             regs.sort(key=lambda t: -t[1]["dur"])
             todo += [(kind, vad, sid, e["start"], e["end"], e) for sid, e in regs[: a.per_kind]]
-    todo += [("control", "silero_r30", sid, st, en, {}) for sid, st, en in
+    todo += [("control", "silero_x2", sid, st, en, {}) for sid, st, en in
              controls(a.dataset, view, list(sessions.values()), a.per_kind)]
     todo.sort(key=lambda t: (t[2], t[3]))
     out = {"dataset": a.dataset, "view": view, "regions": []}

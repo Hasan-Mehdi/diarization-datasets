@@ -5,7 +5,7 @@ Doctor and patient were recorded on separate channels, isolated by ~50 dB, so a 
 that person spoke. This script compares, per speaker:
 
   * TextGrid utterances (primary reference), energy channel activity (``rttm_alt/channel_activity``), and Silero
-    (default settings with the 30 s state reset of ``diards.vads``, and without its 30 ms padding) on the
+    (``silero_x2`` of ``diards.vads``, with and without its 30 ms padding) on the
     speaker's own channel;
   * labelled time Silero calls silence, Silero speech with no label nearby, boundary offsets;
   * where energy activity and Silero disagree (breaths/coughs vs speech), checked with Whisper (``--whisper``);
@@ -72,8 +72,8 @@ def main():
             tg = merge_intervals((g.start, g.end) for g in tg_all if g.speaker == spk)
             en = merge_intervals((g.start, g.end) for g in en_all if g.speaker == spk)
             cache = VadCache.load("primock57", "channels", f"{c}_{r}")
-            sil = merge_intervals(cache.silero(reset=True))
-            nopad = merge_intervals(cache.silero(reset=True, speech_pad_ms=0))
+            sil = merge_intervals(cache.silero(variant="x2"))
+            nopad = merge_intervals(cache.silero(variant="x2", speech_pad_ms=0))
             sil_segs += [Segment(x, y, spk) for x, y in sil]
             nopad_segs += [Segment(x, y, spk) for x, y in nopad]
             d = acc[r]

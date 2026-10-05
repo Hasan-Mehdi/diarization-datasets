@@ -14,13 +14,15 @@ detector's intervals inside the UEM. Reported (seconds, and % of reference speec
   the reference is *wider* than the VAD. Onsets/offsets where the VAD speech runs into the neighbouring island
   are skipped (ambiguous).
 * ``best_lag``: time shift of the reference that maximises frame agreement with the VAD (50 ms raster, +/- 5 s);
-  a clear gain away from 0 means the reference is offset in time.
+  a clear gain away from 0 means the reference is offset in time. A session counts as *shifted* when
+  |lag| >= 0.3 s, the agreement gain is >= 2 points, the lag is not at the edge of the search range, and the
+  session is >= 120 s long (on short clips the search finds spurious lags).
 
 The longest ``unref`` / ``unvoiced`` regions are listed with evidence from the other witnesses: coverage by the
 other VADs, by the cached Nemotron hypothesis, by word timings, and the region's level above the session's noise
 floor, so they can be checked without listening.
 
-Usage: python -m diards.vad_audit <dataset> [--view V] [--vads silero_r30,silero,webrtc,energy,nemotron] [--out results/vad/audit]
+Usage: python -m diards.vad_audit <dataset> [--view V] [--vads silero_x2,silero,silero_r30,webrtc,energy,pyannote,nemotron] [--out results/vad/audit]
 """
 from __future__ import annotations
 
@@ -38,10 +40,12 @@ from .vads import ENERGY_HOP, SILERO_HOP, VadCache, cache_path, nemotron_interva
 
 AUDIT_VIEWS = {"ami": "ihm-mix", "icsi": "ihm-mix", "notsofar1": "ihm-mix", "chime6": "ihm-mix", "dipco": "ihm-mix",
                "libricss": "clean-mix", "easycom": "glasses", "primock57": "mix"}
-DEFAULT_VADS = ("silero_r30", "silero", "webrtc", "energy", "pyannote", "nemotron")
+DEFAULT_VADS = ("silero_x2", "silero", "silero_r30", "webrtc", "energy", "pyannote", "nemotron")
 TOL = 0.25
 MIN_LEN = 0.5
 ISLAND_GAP = 0.3
+LAG_MAX = 5.0
+LAG_MIN_DURATION = 120.0
 
 
 # ----------------------------------------------------------------------------- interval helpers
@@ -173,7 +177,7 @@ def audit_session(s: Session, vads, view: str, refs: dict, hyp_path: Path | None
             rec.update(islands=b["islands"], islands_without_vad=b["islands_without_vad"],
                        onsets=[round(x, 3) for x in b["onsets"]], offsets=[round(x, 3) for x in b["offsets"]])
             if ref_name == "primary":
-                rec["lag"] = best_lag(ref, ivs, s.duration)
+                rec["lag"] = best_lag(ref, ivs, s.duration, LAG_MAX)
                 if v not in ("nemotron", "pyannote"):
                     rstarts = [a for a, _ in ref]
                     rec["top_unref"] = [_evidence(a, b_, v, detected, starts, words, cache, floor, ref, rstarts)
@@ -195,9 +199,9 @@ def _evidence(a, b, me, detected, starts, words, cache, floor, ref, rstarts) -> 
     if words is not None:
         ev["words_cov"] = round(coverage(words, a, b), 2)
     i, j = int(a / SILERO_HOP), max(int(a / SILERO_HOP) + 1, int(b / SILERO_HOP))
-    for key in ("silero", "silero_r30"):
-        p = cache.data[key]
-        ev[f"{key}_mean_prob"] = round(float(np.mean(p[i:j].astype(np.float32))), 2) if j <= len(p) else None
+    for key in ("stock", "r30"):
+        p = cache.silero_variant(key)
+        ev[f"silero_{key}_mean_prob"] = round(float(np.mean(p[i:j])), 2) if j <= len(p) else None
     return ev
 
 
@@ -217,13 +221,18 @@ def audit_dataset(name: str, view: str | None = None, vads=DEFAULT_VADS, root=No
         refs = {"primary": s.segments, **{k: s.alt_segments(k) for k in sorted(s.alt_rttm)}}
         rows.append(audit_session(s, vads, view, refs, hyp_dir / f"{s.session_id}.rttm"))
     summary = summarize(rows)
+    # detectors cached only for some sessions (pyannote, Nemotron: evaluated subsets) are compared on the
+    # sessions where every detector is available
+    common = [r for r in rows if all(v in r["refs"]["primary"] for v in vads)]
+    summary_common = summarize(common) if common and len(common) < len(rows) else None
     for r in rows:  # keep the JSON small: per-session boundary deltas as medians only
         for by_vad in r["refs"].values():
             for x in by_vad.values():
                 x["onset_p50"] = pct(x.pop("onsets"), (50,)).get("p50")
                 x["offset_p50"] = pct(x.pop("offsets"), (50,)).get("p50")
     result = {"dataset": name, "view": view, "vads": list(vads), "tol_s": TOL, "min_len_s": MIN_LEN,
-              "island_gap_s": ISLAND_GAP, "sessions": len(rows), "summary": summary, "per_session": rows}
+              "island_gap_s": ISLAND_GAP, "sessions": len(rows), "summary": summary,
+              "common_subset": {"sessions": len(common), "summary": summary_common or summary}, "per_session": rows}
     if out:
         out = Path(out)
         out.mkdir(parents=True, exist_ok=True)
@@ -238,8 +247,14 @@ def audit_dataset(name: str, view: str | None = None, vads=DEFAULT_VADS, root=No
     return result
 
 
+def is_shifted(lag: dict, duration: float) -> bool:
+    return (abs(lag["best_lag_s"]) >= 0.3 and lag["gain"] >= 0.02 and abs(lag["best_lag_s"]) < LAG_MAX - 1e-6
+            and duration >= LAG_MIN_DURATION)
+
+
 def summarize(rows) -> dict:
     out: dict = {}
+    dur = {r["session_id"]: r["duration"] for r in rows}
     for r in rows:
         for ref_name, by_vad in r["refs"].items():
             for v, x in by_vad.items():
@@ -255,14 +270,14 @@ def summarize(rows) -> dict:
                 acc["onsets"] += x["onsets"]
                 acc["offsets"] += x["offsets"]
                 if "lag" in x:
-                    acc["lags"].append(x["lag"])
+                    acc["lags"].append((x["lag"], r["duration"]))
     summary: dict = {}
     for ref_name, by_vad in out.items():
         for v, a in by_vad.items():
             ref = a["ref_s"] or 1.0
             per = {r["session_id"]: r["refs"][ref_name][v] for r in rows if v in r["refs"].get(ref_name, {})}
             on, off = np.asarray(a["onsets"]), np.asarray(a["offsets"])
-            shifted = [x for x in a["lags"] if abs(x["best_lag_s"]) >= 0.3 and x["gain"] >= 0.02]
+            shifted = [x for x, d in a["lags"] if is_shifted(x, d)]
             summary.setdefault(ref_name, {})[v] = {
                 "sessions": a["sessions"], "ref_h": round(a["ref_s"] / 3600, 3), "vad_h": round(a["vad_s"] / 3600, 3),
                 "uem_h": round(a["uem_s"] / 3600, 3),
@@ -279,8 +294,10 @@ def summarize(rows) -> dict:
                                        for k, x in per.items()), key=lambda t: -(t[1] or 0))[:10],
                 "worst_unvoiced": sorted(((k, round(100 * x["unvoiced_s"] / x["ref_s"], 2) if x["ref_s"] else None)
                                           for k, x in per.items()), key=lambda t: -(t[1] or 0))[:10],
+                "median_lag_s": round(float(np.median([x["best_lag_s"] for x, d in a["lags"] if d >= LAG_MIN_DURATION])), 3)
+                if any(d >= LAG_MIN_DURATION for _, d in a["lags"]) else None,
                 "shifted": sorted(((k, x["lag"]["best_lag_s"], x["lag"]["gain"]) for k, x in per.items()
-                                   if "lag" in x and abs(x["lag"]["best_lag_s"]) >= 0.3 and x["lag"]["gain"] >= 0.02),
+                                   if "lag" in x and is_shifted(x["lag"], dur[k])),
                                   key=lambda t: -t[2])[:10],
             }
     return summary

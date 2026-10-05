@@ -1,0 +1,2 @@
+  afrispeech_dialog.default    baseline               DER  26.69  FA  6.44  MISS 15.15  CONF  5.10  (7 s)
+  afrispeech_dialog.default    gate:silero_x2         DER  28.62  FA  6.29  MISS 17.37  CONF  4.97  (7 s)

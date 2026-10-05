@@ -1,6 +1,6 @@
 """Data preparation with a VAD: how much silence could be trimmed, and could a VAD write the UEMs?
 
-Per dataset (audit view, all sessions), from the cached Silero VAD with the 30 s state reset (``silero_r30``):
+Per dataset (audit view, all sessions), from the cached Silero VAD with the 30 s state reset (``silero_x2``):
 
 * non-speech time in stretches longer than 1 / 2 / 5 s, and the audio kept by ``diards.vad_assist.trim_plan``
   (stretches > 1 s shortened to 0.5 s), i.e. how much shorter the audio fed to a diarizer would be;
@@ -43,7 +43,7 @@ def dataset_prep(name: str) -> dict:
         n += 1
         c = VadCache.load(name, view, s.session_id)
         dur = c.duration
-        sp = merge_intervals(c.silero(reset=True))
+        sp = merge_intervals(c.silero(variant="x2"))
         sil = subtract([(0.0, dur)], sp)
         acc["dur"] += dur
         acc["speech"] += total_duration(sp)
