@@ -1,0 +1,100 @@
+{
+ "dataset": "dipco",
+ "view": "farfield",
+ "regions_checked": 10,
+ "regions": [
+  {
+   "session_id": "dipco__S01",
+   "start": 1349.78,
+   "end": 1352.34,
+   "dur": 2.56,
+   "whisper": "It's actually quite different.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "dipco__S03",
+   "start": 718.71,
+   "end": 721.25,
+   "dur": 2.54,
+   "whisper": "It's also good to know that that's not what you will be",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "dipco__S01",
+   "start": 407.12,
+   "end": 408.97,
+   "dur": 1.85,
+   "whisper": "Ha, ha, ha, ha, ha, ha, ha.",
+   "words": 7,
+   "speech": false
+  },
+  {
+   "session_id": "dipco__S03",
+   "start": 833.57,
+   "end": 835.3,
+   "dur": 1.73,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "dipco__S08",
+   "start": 208.99,
+   "end": 210.56,
+   "dur": 1.57,
+   "whisper": "I'm sorry.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "dipco__S01",
+   "start": 2101.23,
+   "end": 2102.55,
+   "dur": 1.32,
+   "whisper": "Yeah, yeah, yeah, yeah, yeah.",
+   "words": 5,
+   "speech": false
+  },
+  {
+   "session_id": "dipco__S03",
+   "start": 715.67,
+   "end": 716.95,
+   "dur": 1.28,
+   "whisper": "Definitely good to go out on a hike.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "dipco__S03",
+   "start": 368.85,
+   "end": 370.05,
+   "dur": 1.2,
+   "whisper": "LAUGHTER",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "dipco__S01",
+   "start": 430.82,
+   "end": 431.91,
+   "dur": 1.09,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "dipco__S01",
+   "start": 690.91,
+   "end": 691.91,
+   "dur": 1.0,
+   "whisper": "Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time. Tissue time",
+   "words": 178,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 3,
+ "seconds_checked": 16.1,
+ "seconds_with_speech": 6.4
+}

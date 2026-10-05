@@ -245,7 +245,7 @@ def _best_nemotron(name):
     return rows
 
 
-def block_catalog():
+def block_catalog(prefix=""):
     lines = ["| # | dataset | domain | hours | recs | spk min/med/max | overlap | reference | GT | licence | access | size | mirrors | known issue |",
              "|---:|---|---|---:|---:|---|---:|---|---|---|---|---|---|---|"]
     for i, (name, size, gran, issue) in enumerate(CATALOG, 1):
@@ -255,12 +255,12 @@ def block_catalog():
         recs = st["sessions"] if st else "-"
         spk = f"{st['speakers_min']}/{st['speakers_median']:g}/{st['speakers_max']}" if st else "-"
         ovl = f"{100 * st['overlap_ratio']:.1f}%" if st and st["overlap_ratio"] is not None else "-"
-        lines.append(f"| {i} | [{name}](datasets/{name}/README.md) | {m.domain} | {hours} | {recs} | {spk} | {ovl} | {gran} | "
+        lines.append(f"| {i} | [{name}]({prefix}datasets/{name}/README.md) | {m.domain} | {hours} | {recs} | {spk} | {ovl} | {gran} | "
                      f"**{m.gt_rating}** | {m.license} | {m.access} | {size} | {MIRRORS.get(name, '')} | {issue} |")
     return "\n".join(lines)
 
 
-def block_nemotron_summary():
+def block_nemotron_summary(prefix=""):
     lines = ["| dataset | view (subset) | sessions | hours | DER % c=0 (primary ref) | DER % c=0.25 | other references (DER % c=0) | spk-count acc | held-out? |",
              "|---|---|---:|---:|---:|---:|---|---:|---|"]
     for name, *_ in CATALOG:
@@ -270,7 +270,7 @@ def block_nemotron_summary():
             alt = "; ".join(f"{k} {100 * v['der']:.1f}" for k, v in sorted(alts.items(), key=lambda kv: kv[1]["der"]))
             held = "NO (in training data)" if name in ("icsi", "voxconverse") else ("unclear" if name == "callhome_eng" else "yes")
             splits = ",".join(sorted({x["split"] for x in r["per_session"]}))
-            lines.append(f"| [{name}](datasets/{name}/README.md) | {tag} ({splits}) | {r['sessions']} | {r['hours']} | "
+            lines.append(f"| [{name}]({prefix}datasets/{name}/README.md) | {tag} ({splits}) | {r['sessions']} | {r['hours']} | "
                          f"{100 * p0['der']:.2f} | {100 * p25['der']:.2f} | {alt} | {100 * r['speaker_count_accuracy']:.0f}% | {held} |")
     return "\n".join(lines)
 
@@ -300,7 +300,7 @@ def main():
             text = target.read_text(encoding="utf-8")
             for b, fn in README_BLOCKS.items():
                 pat = re.compile(rf"(<!-- auto:{b} -->)(.*?)(<!-- /auto:{b} -->)", re.S)
-                content = fn()
+                content = fn("" if target.parent == REPO else "../")
                 text = pat.sub(lambda m: f"{m.group(1)}\n{content}\n{m.group(3)}", text)
             target.write_text(text, encoding="utf-8", newline="\n")
             print(f"[cards] {target.name} updated")

@@ -1,0 +1,282 @@
+{
+ "dataset": "dipco",
+ "view": "farfield",
+ "model": "nvidia/Nemotron-3-Diarization",
+ "model_revision": "f667ed73aee57d40cc39428eb768b4fd87a0a29e",
+ "inference": {
+  "implementation": "transformers (offline mode)",
+  "chunk_length": 340,
+  "chunk_right_context": 40,
+  "fifo_length": 40,
+  "speaker_cache_update_period": 300,
+  "speaker_cache_length": 264,
+  "dtype": "float32",
+  "threshold": 0.5,
+  "postprocessing": "none (threshold only)"
+ },
+ "scoring": {
+  "tool": "pyannote.metrics",
+  "collars_half_width_s": [
+   0.0,
+   0.25
+  ],
+  "overlap": "included",
+  "uem": "per-session UEM from the normalized dataset"
+ },
+ "sessions": 5,
+ "hours": 2.6,
+ "speaker_count_accuracy": 0.4,
+ "speaker_count_mae": 0.6,
+ "rtfx_overall": 803.5,
+ "summary": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.3616,
+   "fa": 0.0361,
+   "miss": 0.3049,
+   "conf": 0.0206,
+   "jer": 0.3906,
+   "ref_speech_h": 3.1679
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.2807,
+   "fa": 0.0348,
+   "miss": 0.232,
+   "conf": 0.0138,
+   "jer": 0.3093,
+   "ref_speech_h": 2.0655
+  },
+  "closetalk_activity@0.0": {
+   "collar": 0.0,
+   "der": 0.4032,
+   "fa": 0.1199,
+   "miss": 0.2528,
+   "conf": 0.0305,
+   "jer": 0.3901,
+   "ref_speech_h": 2.6714
+  },
+  "closetalk_activity@0.25": {
+   "collar": 0.25,
+   "der": 0.1831,
+   "fa": 0.0489,
+   "miss": 0.1162,
+   "conf": 0.018,
+   "jer": 0.2167,
+   "ref_speech_h": 1.2779
+  }
+ },
+ "per_session": [
+  {
+   "session_id": "dipco__S01",
+   "split": "eval",
+   "duration": 2845.219,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1759,
+   "rtfx": 980.9,
+   "primary@0.0": {
+    "der": 0.3452,
+    "fa": 0.0471,
+    "miss": 0.2796,
+    "conf": 0.0186,
+    "jer": 0.3972,
+    "ref_speech_s": 2952.28
+   },
+   "primary@0.25": {
+    "der": 0.2619,
+    "fa": 0.0426,
+    "miss": 0.2078,
+    "conf": 0.0116,
+    "jer": 0.3095,
+    "ref_speech_s": 2079.11
+   },
+   "closetalk_activity@0.0": {
+    "der": 0.4038,
+    "fa": 0.1362,
+    "miss": 0.2421,
+    "conf": 0.0254,
+    "jer": 0.4306,
+    "ref_speech_s": 2534.49
+   },
+   "closetalk_activity@0.25": {
+    "der": 0.174,
+    "fa": 0.0574,
+    "miss": 0.0975,
+    "conf": 0.019,
+    "jer": 0.2503,
+    "ref_speech_s": 1373.55
+   }
+  },
+  {
+   "session_id": "dipco__S03",
+   "split": "eval",
+   "duration": 2796.5,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.3473,
+   "rtfx": 521.0,
+   "primary@0.0": {
+    "der": 0.3445,
+    "fa": 0.0324,
+    "miss": 0.2913,
+    "conf": 0.0208,
+    "jer": 0.3753,
+    "ref_speech_s": 3800.21
+   },
+   "primary@0.25": {
+    "der": 0.2694,
+    "fa": 0.0302,
+    "miss": 0.2263,
+    "conf": 0.013,
+    "jer": 0.309,
+    "ref_speech_s": 2308.94
+   },
+   "closetalk_activity@0.0": {
+    "der": 0.4093,
+    "fa": 0.1152,
+    "miss": 0.2648,
+    "conf": 0.0293,
+    "jer": 0.4115,
+    "ref_speech_s": 3311.98
+   },
+   "closetalk_activity@0.25": {
+    "der": 0.1844,
+    "fa": 0.0393,
+    "miss": 0.1301,
+    "conf": 0.015,
+    "jer": 0.2271,
+    "ref_speech_s": 1493.34
+   }
+  },
+  {
+   "session_id": "dipco__S06",
+   "split": "eval",
+   "duration": 1204.562,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.283,
+   "rtfx": 961.0,
+   "primary@0.0": {
+    "der": 0.3951,
+    "fa": 0.0306,
+    "miss": 0.3423,
+    "conf": 0.0222,
+    "jer": 0.3968,
+    "ref_speech_s": 1531.0
+   },
+   "primary@0.25": {
+    "der": 0.2951,
+    "fa": 0.0349,
+    "miss": 0.2418,
+    "conf": 0.0184,
+    "jer": 0.298,
+    "ref_speech_s": 1013.79
+   },
+   "closetalk_activity@0.0": {
+    "der": 0.3408,
+    "fa": 0.0834,
+    "miss": 0.2271,
+    "conf": 0.0302,
+    "jer": 0.3277,
+    "ref_speech_s": 1230.71
+   },
+   "closetalk_activity@0.25": {
+    "der": 0.1863,
+    "fa": 0.0475,
+    "miss": 0.1178,
+    "conf": 0.021,
+    "jer": 0.1844,
+    "ref_speech_s": 587.94
+   }
+  },
+  {
+   "session_id": "dipco__S07",
+   "split": "eval",
+   "duration": 1575.25,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.3311,
+   "rtfx": 1153.4,
+   "primary@0.0": {
+    "der": 0.3707,
+    "fa": 0.026,
+    "miss": 0.3235,
+    "conf": 0.0212,
+    "jer": 0.3928,
+    "ref_speech_s": 2165.84
+   },
+   "primary@0.25": {
+    "der": 0.3025,
+    "fa": 0.023,
+    "miss": 0.2656,
+    "conf": 0.0139,
+    "jer": 0.3307,
+    "ref_speech_s": 1418.44
+   },
+   "closetalk_activity@0.0": {
+    "der": 0.4431,
+    "fa": 0.136,
+    "miss": 0.2687,
+    "conf": 0.0384,
+    "jer": 0.4251,
+    "ref_speech_s": 1754.45
+   },
+   "closetalk_activity@0.25": {
+    "der": 0.176,
+    "fa": 0.039,
+    "miss": 0.1194,
+    "conf": 0.0177,
+    "jer": 0.2065,
+    "ref_speech_s": 776.1
+   }
+  },
+  {
+   "session_id": "dipco__S08",
+   "split": "eval",
+   "duration": 948.875,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2231,
+   "rtfx": 1224.9,
+   "primary@0.0": {
+    "der": 0.406,
+    "fa": 0.0481,
+    "miss": 0.3357,
+    "conf": 0.0223,
+    "jer": 0.3907,
+    "ref_speech_s": 955.02
+   },
+   "primary@0.25": {
+    "der": 0.3122,
+    "fa": 0.0534,
+    "miss": 0.2422,
+    "conf": 0.0166,
+    "jer": 0.2993,
+    "ref_speech_s": 615.37
+   },
+   "closetalk_activity@0.0": {
+    "der": 0.3839,
+    "fa": 0.1079,
+    "miss": 0.2416,
+    "conf": 0.0344,
+    "jer": 0.3555,
+    "ref_speech_s": 785.25
+   },
+   "closetalk_activity@0.25": {
+    "der": 0.2216,
+    "fa": 0.079,
+    "miss": 0.1206,
+    "conf": 0.022,
+    "jer": 0.2149,
+    "ref_speech_s": 369.4
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5080"
+ },
+ "command": "python -m diards evaluate dipco --view farfield --out results/nemotron/dipco.farfield --split eval"
+}

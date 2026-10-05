@@ -151,10 +151,12 @@ pyannote.metrics DER/JER, overlap included, UEM applied, collar = half-width (0 
 | [ami](datasets/ami/README.md) | ihm-mix (test) | 16 | 9.06 | 9.22 | 3.56 | only_words 26.0; word_and_vocalsounds 27.7; segments 31.1 | 88% | yes |
 | [ami](datasets/ami/README.md) | sdm (test) | 16 | 9.06 | 11.35 | 4.73 | only_words 27.5; word_and_vocalsounds 29.2; segments 32.5 | 88% | yes |
 | [chime6](datasets/chime6/README.md) | farfield (eval) | 2 | 5.21 | 37.63 | 25.61 | annotation 43.6 | 0% | yes |
+| [chime6](datasets/chime6/README.md) | farfield.dev (dev) | 2 | 4.46 | 31.70 | 19.06 | annotation 41.6 | 0% | yes |
 | [chime6](datasets/chime6/README.md) | ihm-mix (eval) | 2 | 5.21 | 32.76 | 22.49 | annotation 37.8 | 50% | yes |
 | [voxconverse](datasets/voxconverse/README.md) | default (test) | 232 | 43.54 | 8.39 | 5.74 |  | 53% | NO (in training data) |
 | [icsi](datasets/icsi/README.md) | ihm-mix (test) | 3 | 2.77 | 15.86 | 5.31 | words_gap0.2 39.4 | 100% | NO (in training data) |
 | [icsi](datasets/icsi/README.md) | sdm (test) | 3 | 2.77 | 15.85 | 5.39 | words_gap0.2 38.2 | 100% | NO (in training data) |
+| [dipco](datasets/dipco/README.md) | farfield (eval) | 5 | 2.6 | 36.16 | 28.07 | closetalk_activity 40.3 | 40% | yes |
 | [msdwild_en](datasets/msdwild_en/README.md) | default (few.val,many.val) | 150 | 4.16 | 17.79 | 10.67 |  | 76% | yes |
 | [ava_avd_en](datasets/ava_avd_en/README.md) | default (test,val) | 29 | 2.42 | 49.79 | 33.98 |  | 21% | yes |
 | [earnings21](datasets/earnings21/README.md) | default (eval10,other) | 44 | 39.26 | 19.54 | 15.90 |  | 20% | yes |

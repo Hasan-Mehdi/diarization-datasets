@@ -1,0 +1,46 @@
+{
+ "dataset": "dipco",
+ "view": "farfield",
+ "sessions": 5,
+ "median_abs_best_lag_s": 0.25,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "dipco__S01",
+   "best_lag_s": 0.25,
+   "agreement_at_0": 0.8129,
+   "agreement_best": 0.8216,
+   "gain": 0.0088
+  },
+  {
+   "session_id": "dipco__S03",
+   "best_lag_s": 0.4,
+   "agreement_at_0": 0.8671,
+   "agreement_best": 0.8713,
+   "gain": 0.0042
+  },
+  {
+   "session_id": "dipco__S06",
+   "best_lag_s": -0.25,
+   "agreement_at_0": 0.8007,
+   "agreement_best": 0.8011,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "dipco__S07",
+   "best_lag_s": 0.4,
+   "agreement_at_0": 0.8315,
+   "agreement_best": 0.8341,
+   "gain": 0.0026
+  },
+  {
+   "session_id": "dipco__S08",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.7983,
+   "agreement_best": 0.7984,
+   "gain": 0.0001
+  }
+ ]
+}

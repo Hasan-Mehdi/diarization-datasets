@@ -76,6 +76,8 @@ View `ihm-mix`: 4 sessions, **0 errors**, 2 warnings (normalized files); 0 sessi
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
 | farfield (eval) | 2 | 5.21 | primary | **37.63** | 8.27 | 21.29 | 8.07 | 39.40 | 25.61 | 0% |
 | farfield (eval) | 2 | 5.21 | annotation | **43.62** | 1.49 | 36.15 | 5.98 | 46.85 | 34.28 | 0% |
+| farfield.dev (dev) | 2 | 4.46 | primary | **31.70** | 8.52 | 18.71 | 4.48 | 32.60 | 19.06 | 0% |
+| farfield.dev (dev) | 2 | 4.46 | annotation | **41.65** | 1.13 | 38.13 | 2.38 | 42.53 | 35.09 | 0% |
 | ihm-mix (eval) | 2 | 5.21 | primary | **32.76** | 10.12 | 16.60 | 6.05 | 33.78 | 22.49 | 50% |
 | ihm-mix (eval) | 2 | 5.21 | annotation | **37.81** | 1.90 | 31.65 | 4.25 | 40.11 | 29.04 | 50% |
 
@@ -88,8 +90,17 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 | hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | farfield | ihm-mix | 3 | 9.22 | 2.03 | 7.19 | 5.62 | 3.45 | 2.17 |
+| ihm-mix | ihm-mix | 2 | 8.0 | 2.01 | 5.99 | 6.39 | 4.44 | 1.95 |
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (farfield):** 9 of 15 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (14.3 of 26.5 s). Examples: `chime6__S21` 4547.2-4549.6 s: "That didn't sound very genuine."; `chime6__S02` 1575.6-1577.2 s: "put it on top or you can put it on this side"; `chime6__S21` 9057.9-9059.6 s: "the end. Oh, Basher and"
+
+**Time-offset check (farfield):** 0 of 3 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
+
+**Whisper audit of the longest audible false alarms (ihm-mix):** 4 of 10 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (6.6 of 19.0 s). Examples: `chime6__S21` 4547.5-4549.6 s: "sound very genuine, so..."; `chime6__S21` 9057.9-9059.6 s: "the end oh basher and"; `chime6__S21` 3746.9-3748.4 s: "What was, oh, the bar going, or?"
+
+**Time-offset check (ihm-mix):** 0 of 2 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
 <!-- /auto:diagnosis -->
 
 **Reading the CHiME-6 numbers: mostly genuine difficulty.** DER on the eval sessions is 37.6% far-field and 32.8% on
