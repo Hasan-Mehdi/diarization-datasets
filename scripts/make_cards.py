@@ -158,6 +158,86 @@ def block_prepare(name):
     ])
 
 
+# Catalog order (ranked) and static facts that are not in the recipe metadata.
+CATALOG = [
+    # name, size of what you download, granularity of the reference, main known issue
+    ("notsofar1", "~10 GB (eval+dev: close-talk + 1 far-field device)", "utterances + word times (human, close-talk)", "utterances keep short pauses; device differs per room"),
+    ("ami", "~30 GB (all meetings, 2 views)", "forced-aligned words (MFA) from manual transcripts", "4 meetings with known timing failures (2 in test)"),
+    ("chime6", "23 GB tarballs (dev+eval; only needed channels kept)", "forced-aligned utterances (official Track 2)", "enrolment minute unannotated (UEM fixes); very hard audio"),
+    ("maptask", "~2 GB", "word-level timed units, per close-talk channel", "task dialogue, studio audio; licence ambiguity (use NC)"),
+    ("voxconverse", "7.3 GB (HF mirror)", "human-verified diarization turns", "in many models' training data; 37 single-speaker files"),
+    ("icsi", "~15 GB (2 views)", "manual transcriber segments (+ word times)", "padded segments; 9-13% of words untimed; in Nemotron training data"),
+    ("dipco", "13.4 GB tarball", "manual utterances up to 10-15 s", "pauses inside segments; only 10 sessions"),
+    ("easycom", "~22 GB (glasses audio + labels, per-file LFS)", "human VAD per utterance (50 ms frames)", "loudspeaker noise; missing (redacted) minutes"),
+    ("msdwild_en", "8.1 GB (all clips)", "human diarization turns", "research-only licence; English by LID; short clips"),
+    ("earnings21", "~1.5 GB", "RTTM from human transcripts (timing method undocumented)", "almost no overlap/backchannels"),
+    ("ava_avd_en", "~5 GB (minutes 15-30 of 117 movies via HTTP range)", "human identity turns", "speech in .lab files without speaker label; English by LID"),
+    ("sbcsae", "6.2 GB", "intonation units (ms bullets), tiled", "pauses inside units; CC BY-ND (no derived RTTMs shared)"),
+    ("callhome_eng", "2.3 GB (HF parquet)", "turn bullets (LDC transcripts via TalkBank)", "loose turns, backchannels incomplete"),
+    ("callfriend_eng", "1.2 GB (HF parquet)", "turn bullets (TalkBank)", "tiled bullets, 3,074 same-speaker overlaps"),
+    ("scotus", "~0.7 GB (12-case sample)", "Oyez turn sync, tiled, no overlap", "interruptions never marked as overlap"),
+    ("afrispeech_dialog", "~0.8 GB", "hand-typed turn times (~1 s precision)", "coarse times, no overlap, 3/49 untimed"),
+    ("primock57", "~1 GB", "padded utterances per channel (+ our channel-activity RTTM)", "10-14% of labelled time is silence"),
+    ("libricss", "6.4 GB", "exact playback times (synthetic)", "read speech replayed; not real conversation"),
+]
+
+
+def _stats(name):
+    p = REPO / "results" / "stats" / f"stats.{name}.json"
+    return json.loads(p.read_text(encoding="utf-8"))["summary"]["ALL"] if p.exists() else None
+
+
+def _best_nemotron(name):
+    """(label, DER@0, DER@0.25, hours, sessions) for the primary reference of each evaluated view."""
+    rows = []
+    for d in sorted((REPO / "results" / "nemotron").glob(f"{name}.*")):
+        f = d / "results.json"
+        if not f.exists():
+            continue
+        r = json.loads(f.read_text(encoding="utf-8"))
+        p0 = r["summary"].get("primary@0.0")
+        p25 = r["summary"].get("primary@0.25")
+        alts = {k.split("@")[0]: v for k, v in r["summary"].items() if k.endswith("@0.0") and not k.startswith("primary")}
+        rows.append((d.name[len(name) + 1:], r, p0, p25, alts))
+    return rows
+
+
+def block_catalog():
+    lines = ["| # | dataset | domain | hours | recs | spk min/med/max | overlap | reference | GT | licence | access | size | known issue |",
+             "|---:|---|---|---:|---:|---|---:|---|---|---|---|---|---|"]
+    for i, (name, size, gran, issue) in enumerate(CATALOG, 1):
+        m = get_recipe(name).META
+        st = _stats(name)
+        hours = st["hours"] if st else "-"
+        recs = st["sessions"] if st else "-"
+        spk = f"{st['speakers_min']}/{st['speakers_median']:g}/{st['speakers_max']}" if st else "-"
+        ovl = f"{100 * st['overlap_ratio']:.1f}%" if st and st["overlap_ratio"] is not None else "-"
+        lines.append(f"| {i} | [{name}](datasets/{name}/README.md) | {m.domain} | {hours} | {recs} | {spk} | {ovl} | {gran} | "
+                     f"**{m.gt_rating}** | {m.license} | {m.access} | {size} | {issue} |")
+    return "\n".join(lines)
+
+
+def block_nemotron_summary():
+    lines = ["| dataset | view (subset) | sessions | hours | DER % c=0 (primary ref) | DER % c=0.25 | best alternative ref (DER % c=0) | spk-count acc | held-out? |",
+             "|---|---|---:|---:|---:|---:|---|---:|---|"]
+    for name, *_ in CATALOG:
+        for tag, r, p0, p25, alts in _best_nemotron(name):
+            if not p0:
+                continue
+            alt = ""
+            if alts:
+                k, v = min(alts.items(), key=lambda kv: kv[1]["der"])
+                alt = f"{k}: {100 * v['der']:.2f}"
+            held = "NO (in training data)" if name in ("icsi", "voxconverse") else ("unclear" if name == "callhome_eng" else "yes")
+            splits = ",".join(sorted({x["split"] for x in r["per_session"]}))
+            lines.append(f"| [{name}](datasets/{name}/README.md) | {tag} ({splits}) | {r['sessions']} | {r['hours']} | "
+                         f"{100 * p0['der']:.2f} | {100 * p25['der']:.2f} | {alt} | {100 * r['speaker_count_accuracy']:.0f}% | {held} |")
+    return "\n".join(lines)
+
+
+README_BLOCKS = {"catalog": block_catalog, "nemotron_summary": block_nemotron_summary}
+
+
 BLOCKS = {"meta": block_meta, "stats": block_stats, "validation": block_validation, "nemotron": block_nemotron,
           "prepare": block_prepare}
 
@@ -175,6 +255,15 @@ def main():
     ap.add_argument("--root")
     args = ap.parse_args()
     root = normalized_root(args.root)
+    for target in (REPO / "README.md", REPO / "results" / "SUMMARY.md"):
+        if target.exists():
+            text = target.read_text(encoding="utf-8")
+            for b, fn in README_BLOCKS.items():
+                pat = re.compile(rf"(<!-- auto:{b} -->)(.*?)(<!-- /auto:{b} -->)", re.S)
+                content = fn()
+                text = pat.sub(lambda m: f"{m.group(1)}\n{content}\n{m.group(3)}", text)
+            target.write_text(text, encoding="utf-8", newline="\n")
+            print(f"[cards] {target.name} updated")
     for name in sorted(RECIPES):
         card = REPO / "datasets" / name / "README.md"
         if not card.exists():

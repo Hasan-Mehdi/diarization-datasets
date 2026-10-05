@@ -67,3 +67,27 @@ def test_ami_relabel():
 
     segs = _relabel([Segment(0, 1, "EN2002a.D"), Segment(1, 2, "MEE073")], "EN2002a", {"D": "MEE071"})
     assert [s.speaker for s in segs] == ["MEE071", "MEE073"]
+
+
+def test_sbcsae_chat_parser(fixtures):
+    from diards.datasets.sbcsae import NON_HUMAN, has_words, parse_cha
+
+    rows = parse_cha(fixtures / "sample.cha")
+    assert [(a, b, s) for a, b, s, _ in rows] == [(0.0, 9.21, "LENO"), (9.21, 9.52, "LENO"), (15.01, 16.78, "LYNN"),
+                                                  (16.0, 16.5, "ENV"), (17.0, 17.4, "LYNN")]
+    kept = [r for r in rows if r[2] not in NON_HUMAN and has_words(r[3])]
+    assert [r[:3] for r in kept] == [(0.0, 9.21, "LENO"), (9.21, 9.52, "LENO"), (15.01, 16.78, "LYNN")]
+
+
+def test_channel_activity_isolated_channel():
+    import numpy as np
+
+    from conftest import tone_with_speech
+    from diards.datasets.primock57 import channel_activity
+
+    x = tone_with_speech([(2.0, 5.0), (7.0, 8.0)], duration=10.0)
+    # labels are padded by 1 s on each side; activity should be tight around the actual sound
+    ivs, thr = channel_activity(x, [(1.0, 6.0), (6.0, 9.0)])
+    assert len(ivs) == 2
+    assert abs(ivs[0][0] - 2.0) < 0.1 and abs(ivs[0][1] - 5.0) < 0.1
+    assert abs(ivs[1][0] - 7.0) < 0.1 and abs(ivs[1][1] - 8.0) < 0.1

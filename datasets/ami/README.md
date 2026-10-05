@@ -43,6 +43,14 @@ word boundaries and excluding inter-word silences.
   are skipped for the `sdm` view and kept for `ihm-mix`.
 - Two "official" partitions exist (Full-corpus-ASR, used here, and the older diarization partition). Results from
   different partitions are not comparable.
+- **The MFA reference drops some utterances.** Measured here: across all meetings only 1.0% of the `only_words`
+  speech lies in stretches of >= 2 s with no MFA speech of the same speaker nearby, so MFA mostly *tightens*
+  boundaries (it labels 20-35% less speech time than `only_words` in many meetings). But in the EN2002 test meetings
+  whole utterances are missing: EN2002d 5.3%, EN2002b 4.7%, EN2002a 2.7%, EN2002c 1.6% of `only_words` speech
+  (e.g. EN2002b, MEE073, 48.3-62.3 s). These are the meetings the AMI release already flags for bad timings.
+- The words JSONL comes from the original v1.6.2 alignment, which is looser than MFA: 15-29% of word time lies
+  outside the MFA segments of the same speaker (the validator's `words_outside_reference` warning). This is
+  expected and is why both references are shipped.
 - References: Horiguchi et al. (ASRU 2025) measured a **21-25% DER gap** between AMI's original segment-level
   labels and forced-aligned labels, mostly from pauses labelled as speech.
 

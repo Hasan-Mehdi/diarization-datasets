@@ -1,0 +1,6664 @@
+{
+ "dataset": "notsofar1",
+ "view": "ihm-mix",
+ "model": "nvidia/Nemotron-3-Diarization",
+ "model_revision": "f667ed73aee57d40cc39428eb768b4fd87a0a29e",
+ "inference": {
+  "implementation": "transformers (offline mode)",
+  "chunk_length": 340,
+  "chunk_right_context": 40,
+  "fifo_length": 40,
+  "speaker_cache_update_period": 300,
+  "speaker_cache_length": 264,
+  "dtype": "float32",
+  "threshold": 0.5,
+  "postprocessing": "none (threshold only)"
+ },
+ "scoring": {
+  "tool": "pyannote.metrics",
+  "collars_half_width_s": [
+   0.0,
+   0.25
+  ],
+  "overlap": "included",
+  "uem": "per-session UEM from the normalized dataset"
+ },
+ "sessions": 129,
+ "hours": 13.34,
+ "speaker_count_accuracy": 0.9535,
+ "speaker_count_mae": 0.0465,
+ "rtfx_overall": 1081.5,
+ "summary": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.1452,
+   "fa": 0.0068,
+   "miss": 0.1257,
+   "conf": 0.0127,
+   "jer": 0.1721,
+   "ref_speech_h": 17.1287
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.0551,
+   "fa": 0.0014,
+   "miss": 0.0455,
+   "conf": 0.0083,
+   "jer": 0.0835,
+   "ref_speech_h": 8.7558
+  },
+  "fastmss_mfa@0.0": {
+   "collar": 0.0,
+   "der": 0.0963,
+   "fa": 0.0437,
+   "miss": 0.0368,
+   "conf": 0.0158,
+   "jer": 0.1258,
+   "ref_speech_h": 9.4519
+  },
+  "fastmss_mfa@0.25": {
+   "collar": 0.25,
+   "der": 0.0256,
+   "fa": 0.0026,
+   "miss": 0.0146,
+   "conf": 0.0084,
+   "jer": 0.0537,
+   "ref_speech_h": 4.7692
+  },
+  "words_gap0.2@0.0": {
+   "collar": 0.0,
+   "der": 0.1116,
+   "fa": 0.0137,
+   "miss": 0.084,
+   "conf": 0.0139,
+   "jer": 0.1401,
+   "ref_speech_h": 16.2336
+  },
+  "words_gap0.2@0.25": {
+   "collar": 0.25,
+   "der": 0.0465,
+   "fa": 0.0027,
+   "miss": 0.0356,
+   "conf": 0.0081,
+   "jer": 0.0721,
+   "ref_speech_h": 8.8104
+  }
+ },
+ "per_session": [
+  {
+   "session_id": "notsofar1__MTG_32000",
+   "split": "eval",
+   "duration": 363.383,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2683,
+   "rtfx": 504.0,
+   "primary@0.0": {
+    "der": 0.1057,
+    "fa": 0.0073,
+    "miss": 0.0939,
+    "conf": 0.0045,
+    "jer": 0.1071,
+    "ref_speech_s": 448.638
+   },
+   "primary@0.25": {
+    "der": 0.0224,
+    "fa": 0.0014,
+    "miss": 0.0193,
+    "conf": 0.0017,
+    "jer": 0.0228,
+    "ref_speech_s": 211.25
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0714,
+    "fa": 0.0443,
+    "miss": 0.0202,
+    "conf": 0.0068,
+    "jer": 0.0722,
+    "ref_speech_s": 400.11
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0069,
+    "fa": 0.0026,
+    "miss": 0.0037,
+    "conf": 0.0006,
+    "jer": 0.0071,
+    "ref_speech_s": 196.32
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0973,
+    "fa": 0.0243,
+    "miss": 0.0656,
+    "conf": 0.0074,
+    "jer": 0.098,
+    "ref_speech_s": 427.405
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0263,
+    "fa": 0.0058,
+    "miss": 0.0184,
+    "conf": 0.0021,
+    "jer": 0.0263,
+    "ref_speech_s": 214.958
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32003",
+   "split": "eval",
+   "duration": 376.893,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2467,
+   "rtfx": 942.5,
+   "primary@0.0": {
+    "der": 0.1165,
+    "fa": 0.0067,
+    "miss": 0.108,
+    "conf": 0.0019,
+    "jer": 0.1167,
+    "ref_speech_s": 439.544
+   },
+   "primary@0.25": {
+    "der": 0.0242,
+    "fa": 0.0005,
+    "miss": 0.0235,
+    "conf": 0.0001,
+    "jer": 0.022,
+    "ref_speech_s": 207.806
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0631,
+    "fa": 0.039,
+    "miss": 0.0218,
+    "conf": 0.0023,
+    "jer": 0.0625,
+    "ref_speech_s": 388.36
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0067,
+    "fa": 0.0003,
+    "miss": 0.0064,
+    "conf": 0.0,
+    "jer": 0.0052,
+    "ref_speech_s": 193.37
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0965,
+    "fa": 0.0175,
+    "miss": 0.0768,
+    "conf": 0.0022,
+    "jer": 0.0964,
+    "ref_speech_s": 419.898
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0319,
+    "fa": 0.0034,
+    "miss": 0.0285,
+    "conf": 0.0,
+    "jer": 0.0268,
+    "ref_speech_s": 216.401
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32004",
+   "split": "eval",
+   "duration": 384.403,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2395,
+   "rtfx": 916.9,
+   "primary@0.0": {
+    "der": 0.1021,
+    "fa": 0.0077,
+    "miss": 0.0901,
+    "conf": 0.0043,
+    "jer": 0.1164,
+    "ref_speech_s": 452.169
+   },
+   "primary@0.25": {
+    "der": 0.029,
+    "fa": 0.0008,
+    "miss": 0.0243,
+    "conf": 0.004,
+    "jer": 0.0395,
+    "ref_speech_s": 239.878
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0691,
+    "fa": 0.0455,
+    "miss": 0.0198,
+    "conf": 0.0038,
+    "jer": 0.0812,
+    "ref_speech_s": 404.46
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0105,
+    "fa": 0.0036,
+    "miss": 0.0047,
+    "conf": 0.0022,
+    "jer": 0.0195,
+    "ref_speech_s": 220.84
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.087,
+    "fa": 0.0218,
+    "miss": 0.0586,
+    "conf": 0.0065,
+    "jer": 0.1004,
+    "ref_speech_s": 430.735
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0282,
+    "fa": 0.0032,
+    "miss": 0.0216,
+    "conf": 0.0034,
+    "jer": 0.0416,
+    "ref_speech_s": 241.92
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32005",
+   "split": "eval",
+   "duration": 460.888,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1509,
+   "rtfx": 977.9,
+   "primary@0.0": {
+    "der": 0.0962,
+    "fa": 0.0088,
+    "miss": 0.0841,
+    "conf": 0.0033,
+    "jer": 0.1056,
+    "ref_speech_s": 488.289
+   },
+   "primary@0.25": {
+    "der": 0.0244,
+    "fa": 0.0022,
+    "miss": 0.0215,
+    "conf": 0.0007,
+    "jer": 0.0238,
+    "ref_speech_s": 306.551
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0638,
+    "fa": 0.042,
+    "miss": 0.019,
+    "conf": 0.0028,
+    "jer": 0.0679,
+    "ref_speech_s": 441.39
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.01,
+    "fa": 0.0033,
+    "miss": 0.0067,
+    "conf": 0.0,
+    "jer": 0.0102,
+    "ref_speech_s": 279.6
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0855,
+    "fa": 0.0265,
+    "miss": 0.0557,
+    "conf": 0.0033,
+    "jer": 0.0934,
+    "ref_speech_s": 465.1
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0352,
+    "fa": 0.0102,
+    "miss": 0.0248,
+    "conf": 0.0002,
+    "jer": 0.0399,
+    "ref_speech_s": 306.625
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32006",
+   "split": "eval",
+   "duration": 382.993,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.3281,
+   "rtfx": 943.7,
+   "primary@0.0": {
+    "der": 0.1117,
+    "fa": 0.0107,
+    "miss": 0.0976,
+    "conf": 0.0034,
+    "jer": 0.1179,
+    "ref_speech_s": 483.008
+   },
+   "primary@0.25": {
+    "der": 0.034,
+    "fa": 0.0008,
+    "miss": 0.0317,
+    "conf": 0.0015,
+    "jer": 0.0343,
+    "ref_speech_s": 231.819
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0626,
+    "fa": 0.0428,
+    "miss": 0.0167,
+    "conf": 0.0031,
+    "jer": 0.0718,
+    "ref_speech_s": 429.83
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0048,
+    "fa": 0.0013,
+    "miss": 0.0019,
+    "conf": 0.0015,
+    "jer": 0.0095,
+    "ref_speech_s": 202.76
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0936,
+    "fa": 0.0245,
+    "miss": 0.066,
+    "conf": 0.0032,
+    "jer": 0.0985,
+    "ref_speech_s": 460.131
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0329,
+    "fa": 0.001,
+    "miss": 0.0305,
+    "conf": 0.0014,
+    "jer": 0.0274,
+    "ref_speech_s": 231.273
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32007",
+   "split": "eval",
+   "duration": 371.863,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2751,
+   "rtfx": 1219.7,
+   "primary@0.0": {
+    "der": 0.0923,
+    "fa": 0.0088,
+    "miss": 0.0816,
+    "conf": 0.0019,
+    "jer": 0.0988,
+    "ref_speech_s": 452.198
+   },
+   "primary@0.25": {
+    "der": 0.0299,
+    "fa": 0.0009,
+    "miss": 0.0289,
+    "conf": 0.0,
+    "jer": 0.0284,
+    "ref_speech_s": 264.618
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0502,
+    "fa": 0.0347,
+    "miss": 0.0142,
+    "conf": 0.0012,
+    "jer": 0.0594,
+    "ref_speech_s": 410.85
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0046,
+    "fa": 0.0026,
+    "miss": 0.0021,
+    "conf": 0.0,
+    "jer": 0.0065,
+    "ref_speech_s": 238.79
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0759,
+    "fa": 0.0193,
+    "miss": 0.055,
+    "conf": 0.0017,
+    "jer": 0.0838,
+    "ref_speech_s": 434.81
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0244,
+    "fa": 0.0027,
+    "miss": 0.0217,
+    "conf": 0.0,
+    "jer": 0.0244,
+    "ref_speech_s": 266.84
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32008",
+   "split": "eval",
+   "duration": 436.623,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.3989,
+   "rtfx": 1213.0,
+   "primary@0.0": {
+    "der": 0.1219,
+    "fa": 0.0103,
+    "miss": 0.1041,
+    "conf": 0.0075,
+    "jer": 0.1319,
+    "ref_speech_s": 610.087
+   },
+   "primary@0.25": {
+    "der": 0.0351,
+    "fa": 0.003,
+    "miss": 0.0296,
+    "conf": 0.0025,
+    "jer": 0.0378,
+    "ref_speech_s": 255.006
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0743,
+    "fa": 0.0405,
+    "miss": 0.0261,
+    "conf": 0.0077,
+    "jer": 0.0822,
+    "ref_speech_s": 545.09
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0092,
+    "fa": 0.0031,
+    "miss": 0.0047,
+    "conf": 0.0013,
+    "jer": 0.0123,
+    "ref_speech_s": 232.19
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1048,
+    "fa": 0.0244,
+    "miss": 0.0726,
+    "conf": 0.0078,
+    "jer": 0.1125,
+    "ref_speech_s": 580.87
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0383,
+    "fa": 0.0067,
+    "miss": 0.029,
+    "conf": 0.0025,
+    "jer": 0.0406,
+    "ref_speech_s": 258.145
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32009",
+   "split": "eval",
+   "duration": 354.953,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2223,
+   "rtfx": 1190.5,
+   "primary@0.0": {
+    "der": 0.0982,
+    "fa": 0.0049,
+    "miss": 0.0891,
+    "conf": 0.0042,
+    "jer": 0.0988,
+    "ref_speech_s": 391.639
+   },
+   "primary@0.25": {
+    "der": 0.0219,
+    "fa": 0.0002,
+    "miss": 0.0202,
+    "conf": 0.0015,
+    "jer": 0.0227,
+    "ref_speech_s": 219.589
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0612,
+    "fa": 0.0377,
+    "miss": 0.0187,
+    "conf": 0.0048,
+    "jer": 0.0604,
+    "ref_speech_s": 351.97
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.01,
+    "fa": 0.0003,
+    "miss": 0.0081,
+    "conf": 0.0016,
+    "jer": 0.0105,
+    "ref_speech_s": 197.71
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0753,
+    "fa": 0.0115,
+    "miss": 0.0592,
+    "conf": 0.0047,
+    "jer": 0.0772,
+    "ref_speech_s": 376.643
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0229,
+    "fa": 0.0013,
+    "miss": 0.0203,
+    "conf": 0.0014,
+    "jer": 0.0215,
+    "ref_speech_s": 221.19
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32020",
+   "split": "eval",
+   "duration": 358.593,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2582,
+   "rtfx": 1193.1,
+   "primary@0.0": {
+    "der": 0.126,
+    "fa": 0.006,
+    "miss": 0.1165,
+    "conf": 0.0035,
+    "jer": 0.1248,
+    "ref_speech_s": 444.777
+   },
+   "primary@0.25": {
+    "der": 0.0389,
+    "fa": 0.0019,
+    "miss": 0.037,
+    "conf": 0.0,
+    "jer": 0.0381,
+    "ref_speech_s": 225.171
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0708,
+    "fa": 0.0342,
+    "miss": 0.0308,
+    "conf": 0.0058,
+    "jer": 0.0735,
+    "ref_speech_s": 394.3
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0121,
+    "fa": 0.0015,
+    "miss": 0.0106,
+    "conf": 0.0001,
+    "jer": 0.0117,
+    "ref_speech_s": 201.83
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0958,
+    "fa": 0.0159,
+    "miss": 0.0764,
+    "conf": 0.0035,
+    "jer": 0.0954,
+    "ref_speech_s": 421.089
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0413,
+    "fa": 0.0042,
+    "miss": 0.0371,
+    "conf": 0.0,
+    "jer": 0.0407,
+    "ref_speech_s": 227.628
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32021",
+   "split": "eval",
+   "duration": 360.578,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2259,
+   "rtfx": 1201.7,
+   "primary@0.0": {
+    "der": 0.098,
+    "fa": 0.0086,
+    "miss": 0.0877,
+    "conf": 0.0016,
+    "jer": 0.1009,
+    "ref_speech_s": 426.016
+   },
+   "primary@0.25": {
+    "der": 0.024,
+    "fa": 0.0032,
+    "miss": 0.0208,
+    "conf": 0.0,
+    "jer": 0.023,
+    "ref_speech_s": 227.556
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0583,
+    "fa": 0.0387,
+    "miss": 0.0174,
+    "conf": 0.0022,
+    "jer": 0.0575,
+    "ref_speech_s": 384.15
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0056,
+    "fa": 0.003,
+    "miss": 0.0026,
+    "conf": 0.0,
+    "jer": 0.0043,
+    "ref_speech_s": 205.47
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0859,
+    "fa": 0.0219,
+    "miss": 0.0613,
+    "conf": 0.0028,
+    "jer": 0.0861,
+    "ref_speech_s": 408.4
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.03,
+    "fa": 0.0033,
+    "miss": 0.0267,
+    "conf": 0.0,
+    "jer": 0.0263,
+    "ref_speech_s": 230.52
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32022",
+   "split": "eval",
+   "duration": 359.988,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2577,
+   "rtfx": 1213.2,
+   "primary@0.0": {
+    "der": 0.1337,
+    "fa": 0.007,
+    "miss": 0.1235,
+    "conf": 0.0031,
+    "jer": 0.1536,
+    "ref_speech_s": 430.199
+   },
+   "primary@0.25": {
+    "der": 0.0423,
+    "fa": 0.0041,
+    "miss": 0.037,
+    "conf": 0.0013,
+    "jer": 0.0445,
+    "ref_speech_s": 213.77
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0666,
+    "fa": 0.0307,
+    "miss": 0.0319,
+    "conf": 0.004,
+    "jer": 0.0822,
+    "ref_speech_s": 380.52
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0156,
+    "fa": 0.0085,
+    "miss": 0.0067,
+    "conf": 0.0004,
+    "jer": 0.0267,
+    "ref_speech_s": 191.48
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1141,
+    "fa": 0.0217,
+    "miss": 0.0892,
+    "conf": 0.0032,
+    "jer": 0.1323,
+    "ref_speech_s": 407.585
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0456,
+    "fa": 0.0073,
+    "miss": 0.0383,
+    "conf": 0.0,
+    "jer": 0.0506,
+    "ref_speech_s": 212.865
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32023",
+   "split": "eval",
+   "duration": 360.918,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2944,
+   "rtfx": 1197.4,
+   "primary@0.0": {
+    "der": 0.112,
+    "fa": 0.0082,
+    "miss": 0.0974,
+    "conf": 0.0064,
+    "jer": 0.1239,
+    "ref_speech_s": 459.177
+   },
+   "primary@0.25": {
+    "der": 0.0282,
+    "fa": 0.0014,
+    "miss": 0.0264,
+    "conf": 0.0003,
+    "jer": 0.0327,
+    "ref_speech_s": 230.35
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0557,
+    "fa": 0.0248,
+    "miss": 0.0238,
+    "conf": 0.0071,
+    "jer": 0.0612,
+    "ref_speech_s": 417.78
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0102,
+    "fa": 0.0014,
+    "miss": 0.0073,
+    "conf": 0.0015,
+    "jer": 0.0141,
+    "ref_speech_s": 217.8
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0894,
+    "fa": 0.0139,
+    "miss": 0.0695,
+    "conf": 0.006,
+    "jer": 0.095,
+    "ref_speech_s": 442.828
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0337,
+    "fa": 0.0032,
+    "miss": 0.029,
+    "conf": 0.0016,
+    "jer": 0.0368,
+    "ref_speech_s": 243.267
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32024",
+   "split": "eval",
+   "duration": 359.028,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2731,
+   "rtfx": 1209.4,
+   "primary@0.0": {
+    "der": 0.1074,
+    "fa": 0.0084,
+    "miss": 0.0957,
+    "conf": 0.0033,
+    "jer": 0.1398,
+    "ref_speech_s": 429.289
+   },
+   "primary@0.25": {
+    "der": 0.0165,
+    "fa": 0.0032,
+    "miss": 0.013,
+    "conf": 0.0003,
+    "jer": 0.0261,
+    "ref_speech_s": 210.649
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0678,
+    "fa": 0.0425,
+    "miss": 0.0215,
+    "conf": 0.0038,
+    "jer": 0.0877,
+    "ref_speech_s": 383.75
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0075,
+    "fa": 0.0048,
+    "miss": 0.0027,
+    "conf": 0.0,
+    "jer": 0.0098,
+    "ref_speech_s": 198.11
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0851,
+    "fa": 0.0174,
+    "miss": 0.0641,
+    "conf": 0.0036,
+    "jer": 0.1087,
+    "ref_speech_s": 410.978
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0193,
+    "fa": 0.0049,
+    "miss": 0.0142,
+    "conf": 0.0002,
+    "jer": 0.0205,
+    "ref_speech_s": 212.852
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32025",
+   "split": "eval",
+   "duration": 359.653,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3681,
+   "rtfx": 1100.9,
+   "primary@0.0": {
+    "der": 0.1442,
+    "fa": 0.0042,
+    "miss": 0.1344,
+    "conf": 0.0056,
+    "jer": 0.1529,
+    "ref_speech_s": 494.128
+   },
+   "primary@0.25": {
+    "der": 0.0459,
+    "fa": 0.001,
+    "miss": 0.0422,
+    "conf": 0.0027,
+    "jer": 0.0466,
+    "ref_speech_s": 246.197
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0695,
+    "fa": 0.0293,
+    "miss": 0.0322,
+    "conf": 0.008,
+    "jer": 0.0805,
+    "ref_speech_s": 431.06
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0101,
+    "fa": 0.0038,
+    "miss": 0.0046,
+    "conf": 0.0018,
+    "jer": 0.0121,
+    "ref_speech_s": 215.98
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1038,
+    "fa": 0.0117,
+    "miss": 0.0863,
+    "conf": 0.0058,
+    "jer": 0.1122,
+    "ref_speech_s": 464.484
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0443,
+    "fa": 0.0045,
+    "miss": 0.0375,
+    "conf": 0.0023,
+    "jer": 0.0424,
+    "ref_speech_s": 258.275
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32026",
+   "split": "eval",
+   "duration": 364.438,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2301,
+   "rtfx": 1220.6,
+   "primary@0.0": {
+    "der": 0.1162,
+    "fa": 0.0095,
+    "miss": 0.0998,
+    "conf": 0.0069,
+    "jer": 0.123,
+    "ref_speech_s": 429.859
+   },
+   "primary@0.25": {
+    "der": 0.0377,
+    "fa": 0.0079,
+    "miss": 0.0291,
+    "conf": 0.0007,
+    "jer": 0.0402,
+    "ref_speech_s": 227.859
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0605,
+    "fa": 0.0321,
+    "miss": 0.0204,
+    "conf": 0.008,
+    "jer": 0.07,
+    "ref_speech_s": 386.55
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0116,
+    "fa": 0.0083,
+    "miss": 0.0033,
+    "conf": 0.0,
+    "jer": 0.0172,
+    "ref_speech_s": 212.48
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0997,
+    "fa": 0.0224,
+    "miss": 0.0697,
+    "conf": 0.0076,
+    "jer": 0.1048,
+    "ref_speech_s": 410.44
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0397,
+    "fa": 0.0095,
+    "miss": 0.0296,
+    "conf": 0.0005,
+    "jer": 0.0388,
+    "ref_speech_s": 233.84
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32027",
+   "split": "eval",
+   "duration": 360.973,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4342,
+   "rtfx": 1209.7,
+   "primary@0.0": {
+    "der": 0.2446,
+    "fa": 0.0066,
+    "miss": 0.2135,
+    "conf": 0.0245,
+    "jer": 0.2976,
+    "ref_speech_s": 574.414
+   },
+   "primary@0.25": {
+    "der": 0.0943,
+    "fa": 0.0032,
+    "miss": 0.0785,
+    "conf": 0.0126,
+    "jer": 0.1668,
+    "ref_speech_s": 223.741
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1421,
+    "fa": 0.04,
+    "miss": 0.0652,
+    "conf": 0.0369,
+    "jer": 0.1994,
+    "ref_speech_s": 467.37
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0365,
+    "fa": 0.0087,
+    "miss": 0.0125,
+    "conf": 0.0153,
+    "jer": 0.0921,
+    "ref_speech_s": 194.2
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1724,
+    "fa": 0.0209,
+    "miss": 0.1161,
+    "conf": 0.0354,
+    "jer": 0.2305,
+    "ref_speech_s": 503.475
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0566,
+    "fa": 0.0071,
+    "miss": 0.0333,
+    "conf": 0.0162,
+    "jer": 0.1178,
+    "ref_speech_s": 216.318
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32029",
+   "split": "eval",
+   "duration": 364.848,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3998,
+   "rtfx": 1175.1,
+   "primary@0.0": {
+    "der": 0.1677,
+    "fa": 0.0054,
+    "miss": 0.1558,
+    "conf": 0.0065,
+    "jer": 0.1927,
+    "ref_speech_s": 510.248
+   },
+   "primary@0.25": {
+    "der": 0.0617,
+    "fa": 0.0012,
+    "miss": 0.0574,
+    "conf": 0.0031,
+    "jer": 0.0779,
+    "ref_speech_s": 217.249
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0715,
+    "fa": 0.0418,
+    "miss": 0.0215,
+    "conf": 0.0082,
+    "jer": 0.089,
+    "ref_speech_s": 424.87
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0047,
+    "fa": 0.001,
+    "miss": 0.0009,
+    "conf": 0.0028,
+    "jer": 0.011,
+    "ref_speech_s": 186.54
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1094,
+    "fa": 0.0159,
+    "miss": 0.0865,
+    "conf": 0.007,
+    "jer": 0.1272,
+    "ref_speech_s": 466.418
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0309,
+    "fa": 0.0044,
+    "miss": 0.0235,
+    "conf": 0.003,
+    "jer": 0.0381,
+    "ref_speech_s": 209.024
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32030",
+   "split": "eval",
+   "duration": 359.238,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4354,
+   "rtfx": 1205.5,
+   "primary@0.0": {
+    "der": 0.1626,
+    "fa": 0.0045,
+    "miss": 0.1422,
+    "conf": 0.0159,
+    "jer": 0.1822,
+    "ref_speech_s": 547.559
+   },
+   "primary@0.25": {
+    "der": 0.0588,
+    "fa": 0.0039,
+    "miss": 0.0469,
+    "conf": 0.008,
+    "jer": 0.0748,
+    "ref_speech_s": 229.969
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.091,
+    "fa": 0.0291,
+    "miss": 0.04,
+    "conf": 0.0219,
+    "jer": 0.1126,
+    "ref_speech_s": 477.33
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0294,
+    "fa": 0.0041,
+    "miss": 0.0157,
+    "conf": 0.0096,
+    "jer": 0.0451,
+    "ref_speech_s": 198.21
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1262,
+    "fa": 0.0075,
+    "miss": 0.1006,
+    "conf": 0.0181,
+    "jer": 0.1465,
+    "ref_speech_s": 520.594
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0595,
+    "fa": 0.0047,
+    "miss": 0.0455,
+    "conf": 0.0092,
+    "jer": 0.0747,
+    "ref_speech_s": 236.446
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32040",
+   "split": "eval",
+   "duration": 359.198,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3143,
+   "rtfx": 1219.5,
+   "primary@0.0": {
+    "der": 0.1368,
+    "fa": 0.0088,
+    "miss": 0.1197,
+    "conf": 0.0083,
+    "jer": 0.1453,
+    "ref_speech_s": 473.206
+   },
+   "primary@0.25": {
+    "der": 0.0386,
+    "fa": 0.0,
+    "miss": 0.0354,
+    "conf": 0.0031,
+    "jer": 0.0418,
+    "ref_speech_s": 233.062
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1319,
+    "fa": 0.0753,
+    "miss": 0.0435,
+    "conf": 0.0131,
+    "jer": 0.1378,
+    "ref_speech_s": 407.75
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0103,
+    "fa": 0.0036,
+    "miss": 0.0065,
+    "conf": 0.0002,
+    "jer": 0.0099,
+    "ref_speech_s": 198.47
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1032,
+    "fa": 0.0193,
+    "miss": 0.0739,
+    "conf": 0.0101,
+    "jer": 0.1161,
+    "ref_speech_s": 445.038
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.021,
+    "fa": 0.0008,
+    "miss": 0.0168,
+    "conf": 0.0035,
+    "jer": 0.0281,
+    "ref_speech_s": 229.091
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32041",
+   "split": "eval",
+   "duration": 363.803,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4825,
+   "rtfx": 1152.7,
+   "primary@0.0": {
+    "der": 0.1654,
+    "fa": 0.0049,
+    "miss": 0.1511,
+    "conf": 0.0094,
+    "jer": 0.1801,
+    "ref_speech_s": 559.219
+   },
+   "primary@0.25": {
+    "der": 0.0659,
+    "fa": 0.0043,
+    "miss": 0.0545,
+    "conf": 0.0071,
+    "jer": 0.084,
+    "ref_speech_s": 230.849
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1031,
+    "fa": 0.0502,
+    "miss": 0.0396,
+    "conf": 0.0132,
+    "jer": 0.1123,
+    "ref_speech_s": 472.47
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0206,
+    "fa": 0.0029,
+    "miss": 0.0113,
+    "conf": 0.0064,
+    "jer": 0.0301,
+    "ref_speech_s": 188.11
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1215,
+    "fa": 0.0164,
+    "miss": 0.0942,
+    "conf": 0.011,
+    "jer": 0.1354,
+    "ref_speech_s": 517.778
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.036,
+    "fa": 0.0046,
+    "miss": 0.0275,
+    "conf": 0.0039,
+    "jer": 0.0477,
+    "ref_speech_s": 211.563
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32042",
+   "split": "eval",
+   "duration": 358.038,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4014,
+   "rtfx": 1203.2,
+   "primary@0.0": {
+    "der": 0.1653,
+    "fa": 0.0105,
+    "miss": 0.1365,
+    "conf": 0.0184,
+    "jer": 0.2196,
+    "ref_speech_s": 516.866
+   },
+   "primary@0.25": {
+    "der": 0.0484,
+    "fa": 0.0012,
+    "miss": 0.0427,
+    "conf": 0.0045,
+    "jer": 0.0957,
+    "ref_speech_s": 193.209
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1523,
+    "fa": 0.0788,
+    "miss": 0.0475,
+    "conf": 0.026,
+    "jer": 0.2057,
+    "ref_speech_s": 438.01
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0124,
+    "fa": 0.0012,
+    "miss": 0.0086,
+    "conf": 0.0026,
+    "jer": 0.0401,
+    "ref_speech_s": 170.12
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1303,
+    "fa": 0.0214,
+    "miss": 0.0868,
+    "conf": 0.0222,
+    "jer": 0.187,
+    "ref_speech_s": 483.318
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0307,
+    "fa": 0.001,
+    "miss": 0.0261,
+    "conf": 0.0036,
+    "jer": 0.0846,
+    "ref_speech_s": 190.831
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32045",
+   "split": "eval",
+   "duration": 358.483,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3399,
+   "rtfx": 1131.8,
+   "primary@0.0": {
+    "der": 0.1662,
+    "fa": 0.0079,
+    "miss": 0.1432,
+    "conf": 0.0151,
+    "jer": 0.1811,
+    "ref_speech_s": 485.658
+   },
+   "primary@0.25": {
+    "der": 0.0583,
+    "fa": 0.001,
+    "miss": 0.0527,
+    "conf": 0.0046,
+    "jer": 0.071,
+    "ref_speech_s": 229.861
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.116,
+    "fa": 0.0206,
+    "miss": 0.0779,
+    "conf": 0.0176,
+    "jer": 0.1381,
+    "ref_speech_s": 445.519
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0347,
+    "fa": 0.0042,
+    "miss": 0.0255,
+    "conf": 0.0051,
+    "jer": 0.0498,
+    "ref_speech_s": 233.18
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32046",
+   "split": "eval",
+   "duration": 359.553,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.0528,
+   "rtfx": 1203.3,
+   "primary@0.0": {
+    "der": 0.0672,
+    "fa": 0.0151,
+    "miss": 0.0518,
+    "conf": 0.0002,
+    "jer": 0.0736,
+    "ref_speech_s": 334.848
+   },
+   "primary@0.25": {
+    "der": 0.023,
+    "fa": 0.0004,
+    "miss": 0.0226,
+    "conf": 0.0,
+    "jer": 0.0236,
+    "ref_speech_s": 255.639
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0927,
+    "fa": 0.078,
+    "miss": 0.0148,
+    "conf": 0.0,
+    "jer": 0.0784,
+    "ref_speech_s": 303.37
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0111,
+    "fa": 0.0004,
+    "miss": 0.0107,
+    "conf": 0.0,
+    "jer": 0.0074,
+    "ref_speech_s": 230.95
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0519,
+    "fa": 0.0227,
+    "miss": 0.0289,
+    "conf": 0.0003,
+    "jer": 0.0497,
+    "ref_speech_s": 324.558
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.018,
+    "fa": 0.0005,
+    "miss": 0.0175,
+    "conf": 0.0,
+    "jer": 0.0136,
+    "ref_speech_s": 256.159
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32047",
+   "split": "eval",
+   "duration": 381.763,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2308,
+   "rtfx": 1183.0,
+   "primary@0.0": {
+    "der": 0.1246,
+    "fa": 0.0128,
+    "miss": 0.0829,
+    "conf": 0.0289,
+    "jer": 0.146,
+    "ref_speech_s": 454.699
+   },
+   "primary@0.25": {
+    "der": 0.0455,
+    "fa": 0.0024,
+    "miss": 0.0298,
+    "conf": 0.0133,
+    "jer": 0.0572,
+    "ref_speech_s": 262.82
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1264,
+    "fa": 0.0746,
+    "miss": 0.0219,
+    "conf": 0.03,
+    "jer": 0.1413,
+    "ref_speech_s": 401.62
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0285,
+    "fa": 0.0019,
+    "miss": 0.0131,
+    "conf": 0.0136,
+    "jer": 0.0416,
+    "ref_speech_s": 235.24
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0958,
+    "fa": 0.0201,
+    "miss": 0.0454,
+    "conf": 0.0303,
+    "jer": 0.1189,
+    "ref_speech_s": 433.77
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0407,
+    "fa": 0.0021,
+    "miss": 0.0241,
+    "conf": 0.0145,
+    "jer": 0.0541,
+    "ref_speech_s": 267.06
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32048",
+   "split": "eval",
+   "duration": 358.468,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3644,
+   "rtfx": 1151.4,
+   "primary@0.0": {
+    "der": 0.119,
+    "fa": 0.0051,
+    "miss": 0.109,
+    "conf": 0.0049,
+    "jer": 0.1402,
+    "ref_speech_s": 491.497
+   },
+   "primary@0.25": {
+    "der": 0.0436,
+    "fa": 0.0034,
+    "miss": 0.0396,
+    "conf": 0.0006,
+    "jer": 0.0506,
+    "ref_speech_s": 251.499
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0636,
+    "fa": 0.0291,
+    "miss": 0.0268,
+    "conf": 0.0078,
+    "jer": 0.0835,
+    "ref_speech_s": 439.43
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0132,
+    "fa": 0.0049,
+    "miss": 0.0078,
+    "conf": 0.0005,
+    "jer": 0.0197,
+    "ref_speech_s": 220.51
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0918,
+    "fa": 0.0077,
+    "miss": 0.0788,
+    "conf": 0.0052,
+    "jer": 0.1118,
+    "ref_speech_s": 474.179
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0365,
+    "fa": 0.0044,
+    "miss": 0.0316,
+    "conf": 0.0006,
+    "jer": 0.0413,
+    "ref_speech_s": 252.9
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32049",
+   "split": "eval",
+   "duration": 356.898,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4033,
+   "rtfx": 1210.0,
+   "primary@0.0": {
+    "der": 0.3067,
+    "fa": 0.0163,
+    "miss": 0.2667,
+    "conf": 0.0237,
+    "jer": 0.3499,
+    "ref_speech_s": 494.566
+   },
+   "primary@0.25": {
+    "der": 0.2014,
+    "fa": 0.0164,
+    "miss": 0.161,
+    "conf": 0.024,
+    "jer": 0.255,
+    "ref_speech_s": 202.291
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1681,
+    "fa": 0.0916,
+    "miss": 0.0487,
+    "conf": 0.0277,
+    "jer": 0.1949,
+    "ref_speech_s": 355.47
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0701,
+    "fa": 0.0169,
+    "miss": 0.0293,
+    "conf": 0.024,
+    "jer": 0.1137,
+    "ref_speech_s": 200.2
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1445,
+    "fa": 0.0362,
+    "miss": 0.08,
+    "conf": 0.0283,
+    "jer": 0.1836,
+    "ref_speech_s": 387.769
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0875,
+    "fa": 0.0173,
+    "miss": 0.042,
+    "conf": 0.0281,
+    "jer": 0.1242,
+    "ref_speech_s": 229.881
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32050",
+   "split": "eval",
+   "duration": 360.583,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4779,
+   "rtfx": 1219.6,
+   "primary@0.0": {
+    "der": 0.1724,
+    "fa": 0.0073,
+    "miss": 0.1528,
+    "conf": 0.0123,
+    "jer": 0.1932,
+    "ref_speech_s": 562.888
+   },
+   "primary@0.25": {
+    "der": 0.0573,
+    "fa": 0.0016,
+    "miss": 0.0492,
+    "conf": 0.0066,
+    "jer": 0.0808,
+    "ref_speech_s": 205.771
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1133,
+    "fa": 0.0541,
+    "miss": 0.0432,
+    "conf": 0.016,
+    "jer": 0.1277,
+    "ref_speech_s": 475.77
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0155,
+    "fa": 0.0044,
+    "miss": 0.0072,
+    "conf": 0.0039,
+    "jer": 0.0302,
+    "ref_speech_s": 176.94
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1221,
+    "fa": 0.0136,
+    "miss": 0.0957,
+    "conf": 0.0128,
+    "jer": 0.1415,
+    "ref_speech_s": 524.012
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0351,
+    "fa": 0.0017,
+    "miss": 0.0282,
+    "conf": 0.0053,
+    "jer": 0.0481,
+    "ref_speech_s": 212.872
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32051",
+   "split": "eval",
+   "duration": 361.958,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4289,
+   "rtfx": 1219.4,
+   "primary@0.0": {
+    "der": 0.1518,
+    "fa": 0.0141,
+    "miss": 0.1285,
+    "conf": 0.0092,
+    "jer": 0.1555,
+    "ref_speech_s": 530.886
+   },
+   "primary@0.25": {
+    "der": 0.055,
+    "fa": 0.0129,
+    "miss": 0.0392,
+    "conf": 0.0029,
+    "jer": 0.0567,
+    "ref_speech_s": 214.628
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1144,
+    "fa": 0.0266,
+    "miss": 0.078,
+    "conf": 0.0098,
+    "jer": 0.1192,
+    "ref_speech_s": 495.635
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0372,
+    "fa": 0.0172,
+    "miss": 0.0189,
+    "conf": 0.0012,
+    "jer": 0.0354,
+    "ref_speech_s": 218.023
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32052",
+   "split": "eval",
+   "duration": 360.628,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4391,
+   "rtfx": 1180.6,
+   "primary@0.0": {
+    "der": 0.1412,
+    "fa": 0.0062,
+    "miss": 0.1251,
+    "conf": 0.0099,
+    "jer": 0.1638,
+    "ref_speech_s": 530.289
+   },
+   "primary@0.25": {
+    "der": 0.0376,
+    "fa": 0.0005,
+    "miss": 0.0311,
+    "conf": 0.006,
+    "jer": 0.0536,
+    "ref_speech_s": 225.05
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0926,
+    "fa": 0.0571,
+    "miss": 0.0231,
+    "conf": 0.0123,
+    "jer": 0.1139,
+    "ref_speech_s": 451.9
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0107,
+    "fa": 0.0021,
+    "miss": 0.0026,
+    "conf": 0.006,
+    "jer": 0.0303,
+    "ref_speech_s": 197.22
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1027,
+    "fa": 0.0168,
+    "miss": 0.0747,
+    "conf": 0.0111,
+    "jer": 0.1262,
+    "ref_speech_s": 495.996
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0258,
+    "fa": 0.0027,
+    "miss": 0.0192,
+    "conf": 0.0039,
+    "jer": 0.0368,
+    "ref_speech_s": 217.747
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32053",
+   "split": "eval",
+   "duration": 366.058,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3443,
+   "rtfx": 1224.1,
+   "primary@0.0": {
+    "der": 0.1402,
+    "fa": 0.0112,
+    "miss": 0.1169,
+    "conf": 0.0121,
+    "jer": 0.1667,
+    "ref_speech_s": 475.608
+   },
+   "primary@0.25": {
+    "der": 0.0579,
+    "fa": 0.0046,
+    "miss": 0.0489,
+    "conf": 0.0044,
+    "jer": 0.0669,
+    "ref_speech_s": 222.782
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1136,
+    "fa": 0.0225,
+    "miss": 0.0763,
+    "conf": 0.0147,
+    "jer": 0.142,
+    "ref_speech_s": 449.507
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.047,
+    "fa": 0.0107,
+    "miss": 0.0293,
+    "conf": 0.007,
+    "jer": 0.0587,
+    "ref_speech_s": 217.541
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32054",
+   "split": "eval",
+   "duration": 360.318,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3489,
+   "rtfx": 1202.4,
+   "primary@0.0": {
+    "der": 0.1134,
+    "fa": 0.0126,
+    "miss": 0.0941,
+    "conf": 0.0067,
+    "jer": 0.1193,
+    "ref_speech_s": 479.179
+   },
+   "primary@0.25": {
+    "der": 0.0381,
+    "fa": 0.0011,
+    "miss": 0.0332,
+    "conf": 0.0039,
+    "jer": 0.0457,
+    "ref_speech_s": 228.33
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0859,
+    "fa": 0.0196,
+    "miss": 0.0597,
+    "conf": 0.0065,
+    "jer": 0.0941,
+    "ref_speech_s": 458.519
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.03,
+    "fa": 0.0012,
+    "miss": 0.0256,
+    "conf": 0.0032,
+    "jer": 0.0367,
+    "ref_speech_s": 227.278
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32055",
+   "split": "eval",
+   "duration": 361.598,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3656,
+   "rtfx": 1213.2,
+   "primary@0.0": {
+    "der": 0.1862,
+    "fa": 0.0087,
+    "miss": 0.1686,
+    "conf": 0.0089,
+    "jer": 0.2205,
+    "ref_speech_s": 499.767
+   },
+   "primary@0.25": {
+    "der": 0.0769,
+    "fa": 0.0001,
+    "miss": 0.0761,
+    "conf": 0.0007,
+    "jer": 0.1151,
+    "ref_speech_s": 230.581
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1252,
+    "fa": 0.0589,
+    "miss": 0.05,
+    "conf": 0.0163,
+    "jer": 0.1534,
+    "ref_speech_s": 416.15
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0206,
+    "fa": 0.0008,
+    "miss": 0.0184,
+    "conf": 0.0015,
+    "jer": 0.0353,
+    "ref_speech_s": 205.28
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1199,
+    "fa": 0.0144,
+    "miss": 0.0954,
+    "conf": 0.0101,
+    "jer": 0.1497,
+    "ref_speech_s": 456.862
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0297,
+    "fa": 0.0011,
+    "miss": 0.0273,
+    "conf": 0.0012,
+    "jer": 0.0426,
+    "ref_speech_s": 226.619
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32060",
+   "split": "eval",
+   "duration": 361.533,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.1731,
+   "rtfx": 1208.0,
+   "primary@0.0": {
+    "der": 0.0802,
+    "fa": 0.0096,
+    "miss": 0.0673,
+    "conf": 0.0033,
+    "jer": 0.0875,
+    "ref_speech_s": 389.229
+   },
+   "primary@0.25": {
+    "der": 0.0169,
+    "fa": 0.0,
+    "miss": 0.0169,
+    "conf": 0.0,
+    "jer": 0.0168,
+    "ref_speech_s": 237.728
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0544,
+    "fa": 0.0183,
+    "miss": 0.0339,
+    "conf": 0.0023,
+    "jer": 0.0558,
+    "ref_speech_s": 372.55
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.012,
+    "fa": 0.0,
+    "miss": 0.012,
+    "conf": 0.0,
+    "jer": 0.0115,
+    "ref_speech_s": 233.97
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32061",
+   "split": "eval",
+   "duration": 359.438,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2287,
+   "rtfx": 1197.9,
+   "primary@0.0": {
+    "der": 0.1208,
+    "fa": 0.0038,
+    "miss": 0.114,
+    "conf": 0.003,
+    "jer": 0.1227,
+    "ref_speech_s": 407.868
+   },
+   "primary@0.25": {
+    "der": 0.043,
+    "fa": 0.0,
+    "miss": 0.043,
+    "conf": 0.0,
+    "jer": 0.0364,
+    "ref_speech_s": 230.608
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0841,
+    "fa": 0.0101,
+    "miss": 0.07,
+    "conf": 0.004,
+    "jer": 0.0911,
+    "ref_speech_s": 386.035
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0277,
+    "fa": 0.0029,
+    "miss": 0.0249,
+    "conf": 0.0,
+    "jer": 0.0262,
+    "ref_speech_s": 226.345
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32062",
+   "split": "eval",
+   "duration": 358.708,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.1186,
+   "rtfx": 1223.2,
+   "primary@0.0": {
+    "der": 0.1215,
+    "fa": 0.0059,
+    "miss": 0.111,
+    "conf": 0.0046,
+    "jer": 0.136,
+    "ref_speech_s": 355.539
+   },
+   "primary@0.25": {
+    "der": 0.0467,
+    "fa": 0.0022,
+    "miss": 0.0443,
+    "conf": 0.0002,
+    "jer": 0.049,
+    "ref_speech_s": 232.539
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0765,
+    "fa": 0.014,
+    "miss": 0.0581,
+    "conf": 0.0044,
+    "jer": 0.0995,
+    "ref_speech_s": 332.86
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0232,
+    "fa": 0.0033,
+    "miss": 0.0199,
+    "conf": 0.0,
+    "jer": 0.0329,
+    "ref_speech_s": 221.49
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32063",
+   "split": "eval",
+   "duration": 365.968,
+   "ref_speakers": 3,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2925,
+   "rtfx": 1209.6,
+   "primary@0.0": {
+    "der": 0.0991,
+    "fa": 0.0046,
+    "miss": 0.0917,
+    "conf": 0.0027,
+    "jer": 0.1038,
+    "ref_speech_s": 450.918
+   },
+   "primary@0.25": {
+    "der": 0.0371,
+    "fa": 0.0,
+    "miss": 0.0361,
+    "conf": 0.001,
+    "jer": 0.0405,
+    "ref_speech_s": 239.04
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0797,
+    "fa": 0.0554,
+    "miss": 0.0202,
+    "conf": 0.004,
+    "jer": 0.0787,
+    "ref_speech_s": 397.61
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.006,
+    "fa": 0.0,
+    "miss": 0.006,
+    "conf": 0.0,
+    "jer": 0.0062,
+    "ref_speech_s": 203.75
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0698,
+    "fa": 0.0145,
+    "miss": 0.0511,
+    "conf": 0.0042,
+    "jer": 0.0728,
+    "ref_speech_s": 427.25
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0225,
+    "fa": 0.0034,
+    "miss": 0.0184,
+    "conf": 0.0007,
+    "jer": 0.022,
+    "ref_speech_s": 228.51
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32064",
+   "split": "eval",
+   "duration": 359.573,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2033,
+   "rtfx": 1216.8,
+   "primary@0.0": {
+    "der": 0.1,
+    "fa": 0.0191,
+    "miss": 0.0741,
+    "conf": 0.0067,
+    "jer": 0.1063,
+    "ref_speech_s": 412.798
+   },
+   "primary@0.25": {
+    "der": 0.0414,
+    "fa": 0.0093,
+    "miss": 0.0305,
+    "conf": 0.0016,
+    "jer": 0.0437,
+    "ref_speech_s": 248.739
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0768,
+    "fa": 0.0291,
+    "miss": 0.0398,
+    "conf": 0.008,
+    "jer": 0.0846,
+    "ref_speech_s": 394.29
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0259,
+    "fa": 0.0094,
+    "miss": 0.0148,
+    "conf": 0.0017,
+    "jer": 0.0291,
+    "ref_speech_s": 245.74
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32065",
+   "split": "eval",
+   "duration": 358.578,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2595,
+   "rtfx": 1220.0,
+   "primary@0.0": {
+    "der": 0.1238,
+    "fa": 0.0049,
+    "miss": 0.1152,
+    "conf": 0.0037,
+    "jer": 0.1303,
+    "ref_speech_s": 429.454
+   },
+   "primary@0.25": {
+    "der": 0.0399,
+    "fa": 0.0,
+    "miss": 0.0395,
+    "conf": 0.0004,
+    "jer": 0.0397,
+    "ref_speech_s": 226.762
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0792,
+    "fa": 0.0114,
+    "miss": 0.064,
+    "conf": 0.0037,
+    "jer": 0.0882,
+    "ref_speech_s": 403.279
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0248,
+    "fa": 0.0,
+    "miss": 0.0243,
+    "conf": 0.0005,
+    "jer": 0.0277,
+    "ref_speech_s": 224.666
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32066",
+   "split": "eval",
+   "duration": 357.993,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.4191,
+   "rtfx": 1197.4,
+   "primary@0.0": {
+    "der": 0.1226,
+    "fa": 0.0035,
+    "miss": 0.1113,
+    "conf": 0.0079,
+    "jer": 0.1391,
+    "ref_speech_s": 504.958
+   },
+   "primary@0.25": {
+    "der": 0.0427,
+    "fa": 0.0017,
+    "miss": 0.0379,
+    "conf": 0.003,
+    "jer": 0.05,
+    "ref_speech_s": 223.809
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0984,
+    "fa": 0.0076,
+    "miss": 0.0826,
+    "conf": 0.0082,
+    "jer": 0.1114,
+    "ref_speech_s": 487.035
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.048,
+    "fa": 0.0028,
+    "miss": 0.0417,
+    "conf": 0.0035,
+    "jer": 0.0528,
+    "ref_speech_s": 230.84
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32067",
+   "split": "eval",
+   "duration": 358.578,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.4154,
+   "rtfx": 1178.7,
+   "primary@0.0": {
+    "der": 0.1583,
+    "fa": 0.0053,
+    "miss": 0.1415,
+    "conf": 0.0114,
+    "jer": 0.1713,
+    "ref_speech_s": 501.089
+   },
+   "primary@0.25": {
+    "der": 0.0557,
+    "fa": 0.0002,
+    "miss": 0.053,
+    "conf": 0.0026,
+    "jer": 0.0585,
+    "ref_speech_s": 191.169
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1262,
+    "fa": 0.0179,
+    "miss": 0.0955,
+    "conf": 0.0127,
+    "jer": 0.1382,
+    "ref_speech_s": 469.263
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0374,
+    "fa": 0.0019,
+    "miss": 0.0329,
+    "conf": 0.0027,
+    "jer": 0.0389,
+    "ref_speech_s": 186.306
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32068",
+   "split": "eval",
+   "duration": 357.878,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2963,
+   "rtfx": 1217.8,
+   "primary@0.0": {
+    "der": 0.0909,
+    "fa": 0.0135,
+    "miss": 0.0739,
+    "conf": 0.0034,
+    "jer": 0.0971,
+    "ref_speech_s": 451.178
+   },
+   "primary@0.25": {
+    "der": 0.0153,
+    "fa": 0.0002,
+    "miss": 0.0131,
+    "conf": 0.002,
+    "jer": 0.0193,
+    "ref_speech_s": 216.338
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1092,
+    "fa": 0.0921,
+    "miss": 0.0131,
+    "conf": 0.004,
+    "jer": 0.1116,
+    "ref_speech_s": 392.85
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0084,
+    "fa": 0.0015,
+    "miss": 0.0056,
+    "conf": 0.0013,
+    "jer": 0.0096,
+    "ref_speech_s": 187.03
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0701,
+    "fa": 0.0259,
+    "miss": 0.0404,
+    "conf": 0.0037,
+    "jer": 0.0753,
+    "ref_speech_s": 430.158
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0173,
+    "fa": 0.0016,
+    "miss": 0.0136,
+    "conf": 0.0021,
+    "jer": 0.0188,
+    "ref_speech_s": 217.89
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32069",
+   "split": "eval",
+   "duration": 358.498,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2428,
+   "rtfx": 1191.4,
+   "primary@0.0": {
+    "der": 0.102,
+    "fa": 0.0165,
+    "miss": 0.0834,
+    "conf": 0.0022,
+    "jer": 0.1059,
+    "ref_speech_s": 387.13
+   },
+   "primary@0.25": {
+    "der": 0.0195,
+    "fa": 0.0,
+    "miss": 0.0195,
+    "conf": 0.0,
+    "jer": 0.0216,
+    "ref_speech_s": 195.75
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1147,
+    "fa": 0.0991,
+    "miss": 0.0141,
+    "conf": 0.0015,
+    "jer": 0.1109,
+    "ref_speech_s": 332.96
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0073,
+    "fa": 0.0042,
+    "miss": 0.0031,
+    "conf": 0.0,
+    "jer": 0.0094,
+    "ref_speech_s": 171.86
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0767,
+    "fa": 0.0293,
+    "miss": 0.0463,
+    "conf": 0.0011,
+    "jer": 0.0783,
+    "ref_speech_s": 367.488
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0153,
+    "fa": 0.0014,
+    "miss": 0.0139,
+    "conf": 0.0,
+    "jer": 0.0151,
+    "ref_speech_s": 197.167
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32070",
+   "split": "eval",
+   "duration": 360.158,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.3095,
+   "rtfx": 1229.4,
+   "primary@0.0": {
+    "der": 0.1044,
+    "fa": 0.0083,
+    "miss": 0.0942,
+    "conf": 0.0019,
+    "jer": 0.1061,
+    "ref_speech_s": 465.829
+   },
+   "primary@0.25": {
+    "der": 0.0359,
+    "fa": 0.0005,
+    "miss": 0.035,
+    "conf": 0.0004,
+    "jer": 0.0373,
+    "ref_speech_s": 230.758
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0676,
+    "fa": 0.0445,
+    "miss": 0.0204,
+    "conf": 0.0027,
+    "jer": 0.0674,
+    "ref_speech_s": 415.82
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.011,
+    "fa": 0.0025,
+    "miss": 0.0085,
+    "conf": 0.0,
+    "jer": 0.0111,
+    "ref_speech_s": 208.78
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0852,
+    "fa": 0.0191,
+    "miss": 0.0635,
+    "conf": 0.0026,
+    "jer": 0.0862,
+    "ref_speech_s": 445.634
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0319,
+    "fa": 0.0027,
+    "miss": 0.029,
+    "conf": 0.0003,
+    "jer": 0.0324,
+    "ref_speech_s": 229.209
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32071",
+   "split": "eval",
+   "duration": 364.193,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2879,
+   "rtfx": 1209.0,
+   "primary@0.0": {
+    "der": 0.1085,
+    "fa": 0.0115,
+    "miss": 0.0938,
+    "conf": 0.0032,
+    "jer": 0.1095,
+    "ref_speech_s": 459.257
+   },
+   "primary@0.25": {
+    "der": 0.0339,
+    "fa": 0.0,
+    "miss": 0.0339,
+    "conf": 0.0,
+    "jer": 0.0341,
+    "ref_speech_s": 230.156
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0839,
+    "fa": 0.0657,
+    "miss": 0.0142,
+    "conf": 0.004,
+    "jer": 0.0821,
+    "ref_speech_s": 400.849
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.003,
+    "fa": 0.0005,
+    "miss": 0.0025,
+    "conf": 0.0,
+    "jer": 0.003,
+    "ref_speech_s": 205.569
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0778,
+    "fa": 0.0258,
+    "miss": 0.0483,
+    "conf": 0.0037,
+    "jer": 0.0787,
+    "ref_speech_s": 431.169
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0218,
+    "fa": 0.004,
+    "miss": 0.0176,
+    "conf": 0.0002,
+    "jer": 0.021,
+    "ref_speech_s": 228.661
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32072",
+   "split": "eval",
+   "duration": 365.438,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2249,
+   "rtfx": 1241.8,
+   "primary@0.0": {
+    "der": 0.0756,
+    "fa": 0.0142,
+    "miss": 0.0529,
+    "conf": 0.0086,
+    "jer": 0.0897,
+    "ref_speech_s": 428.279
+   },
+   "primary@0.25": {
+    "der": 0.0168,
+    "fa": 0.0007,
+    "miss": 0.0152,
+    "conf": 0.001,
+    "jer": 0.0211,
+    "ref_speech_s": 252.369
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0969,
+    "fa": 0.0783,
+    "miss": 0.0108,
+    "conf": 0.0078,
+    "jer": 0.1024,
+    "ref_speech_s": 385.67
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0045,
+    "fa": 0.0004,
+    "miss": 0.0029,
+    "conf": 0.0012,
+    "jer": 0.0076,
+    "ref_speech_s": 220.38
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0607,
+    "fa": 0.0208,
+    "miss": 0.0312,
+    "conf": 0.0087,
+    "jer": 0.0736,
+    "ref_speech_s": 416.01
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0142,
+    "fa": 0.0009,
+    "miss": 0.0124,
+    "conf": 0.0009,
+    "jer": 0.0165,
+    "ref_speech_s": 254.95
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32073",
+   "split": "eval",
+   "duration": 357.213,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.2905,
+   "rtfx": 1181.5,
+   "primary@0.0": {
+    "der": 0.1126,
+    "fa": 0.0159,
+    "miss": 0.0912,
+    "conf": 0.0054,
+    "jer": 0.1133,
+    "ref_speech_s": 442.538
+   },
+   "primary@0.25": {
+    "der": 0.0292,
+    "fa": 0.0001,
+    "miss": 0.028,
+    "conf": 0.0011,
+    "jer": 0.0276,
+    "ref_speech_s": 231.23
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1131,
+    "fa": 0.086,
+    "miss": 0.0207,
+    "conf": 0.0064,
+    "jer": 0.1097,
+    "ref_speech_s": 384.12
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0073,
+    "fa": 0.0001,
+    "miss": 0.0069,
+    "conf": 0.0003,
+    "jer": 0.0069,
+    "ref_speech_s": 200.59
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0873,
+    "fa": 0.0329,
+    "miss": 0.0491,
+    "conf": 0.0052,
+    "jer": 0.0896,
+    "ref_speech_s": 415.969
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0184,
+    "fa": 0.0016,
+    "miss": 0.0161,
+    "conf": 0.0006,
+    "jer": 0.0188,
+    "ref_speech_s": 226.386
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32074",
+   "split": "eval",
+   "duration": 361.993,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.4903,
+   "rtfx": 1223.5,
+   "primary@0.0": {
+    "der": 0.1178,
+    "fa": 0.0032,
+    "miss": 0.1123,
+    "conf": 0.0023,
+    "jer": 0.1228,
+    "ref_speech_s": 542.128
+   },
+   "primary@0.25": {
+    "der": 0.0477,
+    "fa": 0.0,
+    "miss": 0.0477,
+    "conf": 0.0,
+    "jer": 0.0435,
+    "ref_speech_s": 256.509
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0631,
+    "fa": 0.0318,
+    "miss": 0.0277,
+    "conf": 0.0035,
+    "jer": 0.0653,
+    "ref_speech_s": 481.03
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.009,
+    "fa": 0.0008,
+    "miss": 0.0082,
+    "conf": 0.0,
+    "jer": 0.0071,
+    "ref_speech_s": 202.59
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0959,
+    "fa": 0.0088,
+    "miss": 0.0843,
+    "conf": 0.0028,
+    "jer": 0.0991,
+    "ref_speech_s": 522.48
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0464,
+    "fa": 0.0026,
+    "miss": 0.0438,
+    "conf": 0.0,
+    "jer": 0.0403,
+    "ref_speech_s": 253.805
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32075",
+   "split": "eval",
+   "duration": 358.863,
+   "ref_speakers": 3,
+   "hyp_speakers": 3,
+   "overlap_ratio": 0.3118,
+   "rtfx": 1212.2,
+   "primary@0.0": {
+    "der": 0.1323,
+    "fa": 0.0064,
+    "miss": 0.1205,
+    "conf": 0.0055,
+    "jer": 0.1593,
+    "ref_speech_s": 468.268
+   },
+   "primary@0.25": {
+    "der": 0.0533,
+    "fa": 0.0002,
+    "miss": 0.0504,
+    "conf": 0.0027,
+    "jer": 0.0647,
+    "ref_speech_s": 240.651
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0709,
+    "fa": 0.0348,
+    "miss": 0.0285,
+    "conf": 0.0076,
+    "jer": 0.0982,
+    "ref_speech_s": 412.28
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0113,
+    "fa": 0.0001,
+    "miss": 0.0086,
+    "conf": 0.0025,
+    "jer": 0.0229,
+    "ref_speech_s": 209.48
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1029,
+    "fa": 0.0108,
+    "miss": 0.0858,
+    "conf": 0.0063,
+    "jer": 0.1301,
+    "ref_speech_s": 448.489
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0446,
+    "fa": 0.0002,
+    "miss": 0.042,
+    "conf": 0.0024,
+    "jer": 0.0546,
+    "ref_speech_s": 243.511
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32080",
+   "split": "eval",
+   "duration": 357.768,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2022,
+   "rtfx": 1186.1,
+   "primary@0.0": {
+    "der": 0.1334,
+    "fa": 0.0061,
+    "miss": 0.1231,
+    "conf": 0.0043,
+    "jer": 0.2203,
+    "ref_speech_s": 405.787
+   },
+   "primary@0.25": {
+    "der": 0.0659,
+    "fa": 0.0006,
+    "miss": 0.0614,
+    "conf": 0.0038,
+    "jer": 0.1704,
+    "ref_speech_s": 229.108
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1059,
+    "fa": 0.0534,
+    "miss": 0.0467,
+    "conf": 0.0058,
+    "jer": 0.1953,
+    "ref_speech_s": 355.95
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0385,
+    "fa": 0.0005,
+    "miss": 0.0344,
+    "conf": 0.0035,
+    "jer": 0.1506,
+    "ref_speech_s": 200.63
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1033,
+    "fa": 0.0115,
+    "miss": 0.0873,
+    "conf": 0.0045,
+    "jer": 0.1966,
+    "ref_speech_s": 387.698
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0632,
+    "fa": 0.0003,
+    "miss": 0.0592,
+    "conf": 0.0037,
+    "jer": 0.1702,
+    "ref_speech_s": 229.548
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32081",
+   "split": "eval",
+   "duration": 357.873,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3282,
+   "rtfx": 1203.8,
+   "primary@0.0": {
+    "der": 0.1413,
+    "fa": 0.0026,
+    "miss": 0.1356,
+    "conf": 0.0031,
+    "jer": 0.1438,
+    "ref_speech_s": 446.15
+   },
+   "primary@0.25": {
+    "der": 0.0517,
+    "fa": 0.0004,
+    "miss": 0.0491,
+    "conf": 0.0023,
+    "jer": 0.0545,
+    "ref_speech_s": 226.41
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0727,
+    "fa": 0.0368,
+    "miss": 0.031,
+    "conf": 0.0049,
+    "jer": 0.0738,
+    "ref_speech_s": 384.62
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.01,
+    "fa": 0.001,
+    "miss": 0.0061,
+    "conf": 0.0029,
+    "jer": 0.0091,
+    "ref_speech_s": 183.4
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1057,
+    "fa": 0.0147,
+    "miss": 0.0872,
+    "conf": 0.0038,
+    "jer": 0.1103,
+    "ref_speech_s": 417.044
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0364,
+    "fa": 0.0028,
+    "miss": 0.0314,
+    "conf": 0.0023,
+    "jer": 0.0432,
+    "ref_speech_s": 221.308
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32082",
+   "split": "eval",
+   "duration": 359.093,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2148,
+   "rtfx": 1192.4,
+   "primary@0.0": {
+    "der": 0.1486,
+    "fa": 0.0139,
+    "miss": 0.1046,
+    "conf": 0.0301,
+    "jer": 0.2257,
+    "ref_speech_s": 400.44
+   },
+   "primary@0.25": {
+    "der": 0.0904,
+    "fa": 0.0093,
+    "miss": 0.0494,
+    "conf": 0.0317,
+    "jer": 0.1795,
+    "ref_speech_s": 243.22
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1278,
+    "fa": 0.0741,
+    "miss": 0.0209,
+    "conf": 0.0328,
+    "jer": 0.1945,
+    "ref_speech_s": 345.75
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0592,
+    "fa": 0.0137,
+    "miss": 0.0094,
+    "conf": 0.0361,
+    "jer": 0.152,
+    "ref_speech_s": 203.76
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1153,
+    "fa": 0.0251,
+    "miss": 0.0592,
+    "conf": 0.031,
+    "jer": 0.1903,
+    "ref_speech_s": 376.97
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.072,
+    "fa": 0.0119,
+    "miss": 0.0284,
+    "conf": 0.0317,
+    "jer": 0.1582,
+    "ref_speech_s": 236.3
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32084",
+   "split": "eval",
+   "duration": 358.233,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2053,
+   "rtfx": 1198.0,
+   "primary@0.0": {
+    "der": 0.138,
+    "fa": 0.0038,
+    "miss": 0.1339,
+    "conf": 0.0002,
+    "jer": 0.1758,
+    "ref_speech_s": 405.59
+   },
+   "primary@0.25": {
+    "der": 0.0799,
+    "fa": 0.0004,
+    "miss": 0.0796,
+    "conf": 0.0,
+    "jer": 0.1291,
+    "ref_speech_s": 251.25
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1168,
+    "fa": 0.0094,
+    "miss": 0.1065,
+    "conf": 0.0008,
+    "jer": 0.1558,
+    "ref_speech_s": 390.784
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.078,
+    "fa": 0.0014,
+    "miss": 0.0766,
+    "conf": 0.0,
+    "jer": 0.1276,
+    "ref_speech_s": 248.504
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32085",
+   "split": "eval",
+   "duration": 358.683,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.6692,
+   "rtfx": 1201.0,
+   "primary@0.0": {
+    "der": 0.344,
+    "fa": 0.0022,
+    "miss": 0.3317,
+    "conf": 0.01,
+    "jer": 0.3591,
+    "ref_speech_s": 711.088
+   },
+   "primary@0.25": {
+    "der": 0.2102,
+    "fa": 0.0009,
+    "miss": 0.202,
+    "conf": 0.0072,
+    "jer": 0.2316,
+    "ref_speech_s": 213.077
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1577,
+    "fa": 0.0316,
+    "miss": 0.1016,
+    "conf": 0.0245,
+    "jer": 0.1886,
+    "ref_speech_s": 512.64
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0541,
+    "fa": 0.0103,
+    "miss": 0.0384,
+    "conf": 0.0053,
+    "jer": 0.077,
+    "ref_speech_s": 155.57
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.2066,
+    "fa": 0.0202,
+    "miss": 0.1683,
+    "conf": 0.0181,
+    "jer": 0.2268,
+    "ref_speech_s": 559.684
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0474,
+    "fa": 0.0119,
+    "miss": 0.0336,
+    "conf": 0.002,
+    "jer": 0.0525,
+    "ref_speech_s": 163.577
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32086",
+   "split": "eval",
+   "duration": 358.023,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3573,
+   "rtfx": 1190.3,
+   "primary@0.0": {
+    "der": 0.1606,
+    "fa": 0.006,
+    "miss": 0.1506,
+    "conf": 0.004,
+    "jer": 0.2475,
+    "ref_speech_s": 486.836
+   },
+   "primary@0.25": {
+    "der": 0.0552,
+    "fa": 0.0021,
+    "miss": 0.0531,
+    "conf": 0.0,
+    "jer": 0.1362,
+    "ref_speech_s": 178.95
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1243,
+    "fa": 0.0147,
+    "miss": 0.104,
+    "conf": 0.0056,
+    "jer": 0.2067,
+    "ref_speech_s": 457.307
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0567,
+    "fa": 0.004,
+    "miss": 0.0527,
+    "conf": 0.0,
+    "jer": 0.1312,
+    "ref_speech_s": 185.353
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32087",
+   "split": "eval",
+   "duration": 358.063,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3027,
+   "rtfx": 1217.0,
+   "primary@0.0": {
+    "der": 0.13,
+    "fa": 0.0061,
+    "miss": 0.1211,
+    "conf": 0.0028,
+    "jer": 0.1401,
+    "ref_speech_s": 440.839
+   },
+   "primary@0.25": {
+    "der": 0.0376,
+    "fa": 0.0015,
+    "miss": 0.0358,
+    "conf": 0.0004,
+    "jer": 0.0383,
+    "ref_speech_s": 198.93
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0742,
+    "fa": 0.0464,
+    "miss": 0.0242,
+    "conf": 0.0036,
+    "jer": 0.0826,
+    "ref_speech_s": 381.72
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0067,
+    "fa": 0.0022,
+    "miss": 0.0045,
+    "conf": 0.0,
+    "jer": 0.0078,
+    "ref_speech_s": 181.22
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.096,
+    "fa": 0.0144,
+    "miss": 0.0792,
+    "conf": 0.0025,
+    "jer": 0.1054,
+    "ref_speech_s": 417.213
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0321,
+    "fa": 0.0048,
+    "miss": 0.0272,
+    "conf": 0.0001,
+    "jer": 0.0348,
+    "ref_speech_s": 203.73
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32088",
+   "split": "eval",
+   "duration": 358.348,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.272,
+   "rtfx": 1167.3,
+   "primary@0.0": {
+    "der": 0.1131,
+    "fa": 0.0091,
+    "miss": 0.0978,
+    "conf": 0.0061,
+    "jer": 0.1544,
+    "ref_speech_s": 440.259
+   },
+   "primary@0.25": {
+    "der": 0.0419,
+    "fa": 0.003,
+    "miss": 0.0379,
+    "conf": 0.001,
+    "jer": 0.0713,
+    "ref_speech_s": 232.05
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0947,
+    "fa": 0.0548,
+    "miss": 0.032,
+    "conf": 0.0078,
+    "jer": 0.127,
+    "ref_speech_s": 392.27
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.024,
+    "fa": 0.0028,
+    "miss": 0.0204,
+    "conf": 0.0008,
+    "jer": 0.0522,
+    "ref_speech_s": 206.22
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0933,
+    "fa": 0.0189,
+    "miss": 0.0674,
+    "conf": 0.007,
+    "jer": 0.1339,
+    "ref_speech_s": 421.69
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0372,
+    "fa": 0.0032,
+    "miss": 0.0327,
+    "conf": 0.0013,
+    "jer": 0.0696,
+    "ref_speech_s": 225.005
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32089",
+   "split": "eval",
+   "duration": 358.133,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1926,
+   "rtfx": 1198.9,
+   "primary@0.0": {
+    "der": 0.1195,
+    "fa": 0.0063,
+    "miss": 0.1115,
+    "conf": 0.0017,
+    "jer": 0.1296,
+    "ref_speech_s": 383.789
+   },
+   "primary@0.25": {
+    "der": 0.0515,
+    "fa": 0.0,
+    "miss": 0.0515,
+    "conf": 0.0,
+    "jer": 0.0631,
+    "ref_speech_s": 225.409
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0867,
+    "fa": 0.05,
+    "miss": 0.0341,
+    "conf": 0.0026,
+    "jer": 0.089,
+    "ref_speech_s": 338.03
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0161,
+    "fa": 0.0,
+    "miss": 0.0161,
+    "conf": 0.0,
+    "jer": 0.0235,
+    "ref_speech_s": 191.71
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0888,
+    "fa": 0.012,
+    "miss": 0.0746,
+    "conf": 0.0022,
+    "jer": 0.0947,
+    "ref_speech_s": 366.333
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0376,
+    "fa": 0.0006,
+    "miss": 0.0371,
+    "conf": 0.0,
+    "jer": 0.0433,
+    "ref_speech_s": 218.016
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32090",
+   "split": "eval",
+   "duration": 357.998,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.385,
+   "rtfx": 1209.2,
+   "primary@0.0": {
+    "der": 0.1192,
+    "fa": 0.01,
+    "miss": 0.0993,
+    "conf": 0.0099,
+    "jer": 0.1415,
+    "ref_speech_s": 495.59
+   },
+   "primary@0.25": {
+    "der": 0.0304,
+    "fa": 0.0,
+    "miss": 0.026,
+    "conf": 0.0044,
+    "jer": 0.0359,
+    "ref_speech_s": 219.38
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1078,
+    "fa": 0.0622,
+    "miss": 0.0333,
+    "conf": 0.0124,
+    "jer": 0.1222,
+    "ref_speech_s": 438.66
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0085,
+    "fa": 0.0002,
+    "miss": 0.0051,
+    "conf": 0.0032,
+    "jer": 0.0134,
+    "ref_speech_s": 191.29
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0937,
+    "fa": 0.0197,
+    "miss": 0.0626,
+    "conf": 0.0113,
+    "jer": 0.1142,
+    "ref_speech_s": 471.559
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0195,
+    "fa": 0.0,
+    "miss": 0.0146,
+    "conf": 0.0048,
+    "jer": 0.0243,
+    "ref_speech_s": 217.151
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32091",
+   "split": "eval",
+   "duration": 360.198,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1628,
+   "rtfx": 1206.7,
+   "primary@0.0": {
+    "der": 0.1247,
+    "fa": 0.01,
+    "miss": 0.1141,
+    "conf": 0.0006,
+    "jer": 0.1327,
+    "ref_speech_s": 390.349
+   },
+   "primary@0.25": {
+    "der": 0.0531,
+    "fa": 0.0121,
+    "miss": 0.041,
+    "conf": 0.0,
+    "jer": 0.0646,
+    "ref_speech_s": 241.689
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0652,
+    "fa": 0.0405,
+    "miss": 0.0238,
+    "conf": 0.0009,
+    "jer": 0.0746,
+    "ref_speech_s": 344.0
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0214,
+    "fa": 0.0142,
+    "miss": 0.0071,
+    "conf": 0.0,
+    "jer": 0.0394,
+    "ref_speech_s": 213.56
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0921,
+    "fa": 0.0142,
+    "miss": 0.0774,
+    "conf": 0.0004,
+    "jer": 0.1017,
+    "ref_speech_s": 373.339
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.049,
+    "fa": 0.012,
+    "miss": 0.037,
+    "conf": 0.0,
+    "jer": 0.0626,
+    "ref_speech_s": 243.205
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32092",
+   "split": "eval",
+   "duration": 358.478,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1586,
+   "rtfx": 1196.0,
+   "primary@0.0": {
+    "der": 0.151,
+    "fa": 0.0078,
+    "miss": 0.118,
+    "conf": 0.0252,
+    "jer": 0.1691,
+    "ref_speech_s": 381.809
+   },
+   "primary@0.25": {
+    "der": 0.0977,
+    "fa": 0.0007,
+    "miss": 0.0651,
+    "conf": 0.0318,
+    "jer": 0.1185,
+    "ref_speech_s": 240.069
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1343,
+    "fa": 0.0521,
+    "miss": 0.0534,
+    "conf": 0.0289,
+    "jer": 0.152,
+    "ref_speech_s": 340.16
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0706,
+    "fa": 0.0004,
+    "miss": 0.039,
+    "conf": 0.0312,
+    "jer": 0.0993,
+    "ref_speech_s": 209.54
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1302,
+    "fa": 0.0157,
+    "miss": 0.0884,
+    "conf": 0.0261,
+    "jer": 0.1503,
+    "ref_speech_s": 366.394
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.091,
+    "fa": 0.0012,
+    "miss": 0.0588,
+    "conf": 0.0311,
+    "jer": 0.1164,
+    "ref_speech_s": 234.22
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32093",
+   "split": "eval",
+   "duration": 356.268,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.5097,
+   "rtfx": 1162.4,
+   "primary@0.0": {
+    "der": 0.1171,
+    "fa": 0.0096,
+    "miss": 0.1028,
+    "conf": 0.0047,
+    "jer": 0.1198,
+    "ref_speech_s": 561.237
+   },
+   "primary@0.25": {
+    "der": 0.043,
+    "fa": 0.0099,
+    "miss": 0.0274,
+    "conf": 0.0057,
+    "jer": 0.0486,
+    "ref_speech_s": 244.649
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0982,
+    "fa": 0.0139,
+    "miss": 0.0787,
+    "conf": 0.0056,
+    "jer": 0.0977,
+    "ref_speech_s": 544.181
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0445,
+    "fa": 0.0108,
+    "miss": 0.0279,
+    "conf": 0.0057,
+    "jer": 0.045,
+    "ref_speech_s": 246.268
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32094",
+   "split": "eval",
+   "duration": 375.088,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.3695,
+   "rtfx": 1242.0,
+   "primary@0.0": {
+    "der": 0.119,
+    "fa": 0.0052,
+    "miss": 0.1107,
+    "conf": 0.0031,
+    "jer": 0.133,
+    "ref_speech_s": 506.857
+   },
+   "primary@0.25": {
+    "der": 0.0365,
+    "fa": 0.0,
+    "miss": 0.0365,
+    "conf": 0.0,
+    "jer": 0.0357,
+    "ref_speech_s": 234.478
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0942,
+    "fa": 0.0124,
+    "miss": 0.0776,
+    "conf": 0.0041,
+    "jer": 0.1047,
+    "ref_speech_s": 484.972
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0328,
+    "fa": 0.0016,
+    "miss": 0.0312,
+    "conf": 0.0,
+    "jer": 0.0315,
+    "ref_speech_s": 232.036
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32095",
+   "split": "eval",
+   "duration": 360.148,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.4404,
+   "rtfx": 1210.6,
+   "primary@0.0": {
+    "der": 0.1041,
+    "fa": 0.0097,
+    "miss": 0.0912,
+    "conf": 0.0033,
+    "jer": 0.1093,
+    "ref_speech_s": 528.327
+   },
+   "primary@0.25": {
+    "der": 0.0214,
+    "fa": 0.0,
+    "miss": 0.0214,
+    "conf": 0.0,
+    "jer": 0.0232,
+    "ref_speech_s": 232.08
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0774,
+    "fa": 0.0166,
+    "miss": 0.0577,
+    "conf": 0.0031,
+    "jer": 0.0818,
+    "ref_speech_s": 506.111
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0113,
+    "fa": 0.0,
+    "miss": 0.0113,
+    "conf": 0.0,
+    "jer": 0.0114,
+    "ref_speech_s": 231.005
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32100",
+   "split": "eval",
+   "duration": 478.163,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.3892,
+   "rtfx": 1047.2,
+   "primary@0.0": {
+    "der": 0.2247,
+    "fa": 0.0024,
+    "miss": 0.1988,
+    "conf": 0.0235,
+    "jer": 0.2687,
+    "ref_speech_s": 676.578
+   },
+   "primary@0.25": {
+    "der": 0.1055,
+    "fa": 0.0011,
+    "miss": 0.0852,
+    "conf": 0.0192,
+    "jer": 0.1462,
+    "ref_speech_s": 291.869
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1681,
+    "fa": 0.0062,
+    "miss": 0.1356,
+    "conf": 0.0262,
+    "jer": 0.219,
+    "ref_speech_s": 624.499
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0779,
+    "fa": 0.0024,
+    "miss": 0.056,
+    "conf": 0.0195,
+    "jer": 0.1198,
+    "ref_speech_s": 281.097
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32101",
+   "split": "eval",
+   "duration": 476.868,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.5317,
+   "rtfx": 954.7,
+   "primary@0.0": {
+    "der": 0.3393,
+    "fa": 0.0017,
+    "miss": 0.3244,
+    "conf": 0.0132,
+    "jer": 0.3543,
+    "ref_speech_s": 799.086
+   },
+   "primary@0.25": {
+    "der": 0.1502,
+    "fa": 0.0007,
+    "miss": 0.1437,
+    "conf": 0.0058,
+    "jer": 0.1821,
+    "ref_speech_s": 240.2
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1269,
+    "fa": 0.0354,
+    "miss": 0.0717,
+    "conf": 0.0197,
+    "jer": 0.1521,
+    "ref_speech_s": 561.64
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0349,
+    "fa": 0.0061,
+    "miss": 0.0246,
+    "conf": 0.0043,
+    "jer": 0.0678,
+    "ref_speech_s": 262.24
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1535,
+    "fa": 0.011,
+    "miss": 0.1259,
+    "conf": 0.0166,
+    "jer": 0.178,
+    "ref_speech_s": 611.538
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0517,
+    "fa": 0.0057,
+    "miss": 0.0413,
+    "conf": 0.0047,
+    "jer": 0.0823,
+    "ref_speech_s": 295.805
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32102",
+   "split": "eval",
+   "duration": 478.643,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.4825,
+   "rtfx": 951.9,
+   "primary@0.0": {
+    "der": 0.2181,
+    "fa": 0.0061,
+    "miss": 0.2021,
+    "conf": 0.0098,
+    "jer": 0.2298,
+    "ref_speech_s": 757.061
+   },
+   "primary@0.25": {
+    "der": 0.0809,
+    "fa": 0.0016,
+    "miss": 0.0744,
+    "conf": 0.0049,
+    "jer": 0.0848,
+    "ref_speech_s": 267.592
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1239,
+    "fa": 0.0445,
+    "miss": 0.0656,
+    "conf": 0.0138,
+    "jer": 0.1395,
+    "ref_speech_s": 621.85
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0314,
+    "fa": 0.0069,
+    "miss": 0.0178,
+    "conf": 0.0067,
+    "jer": 0.0354,
+    "ref_speech_s": 237.57
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1536,
+    "fa": 0.0143,
+    "miss": 0.1279,
+    "conf": 0.0114,
+    "jer": 0.1676,
+    "ref_speech_s": 686.624
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0394,
+    "fa": 0.0035,
+    "miss": 0.0286,
+    "conf": 0.0073,
+    "jer": 0.0492,
+    "ref_speech_s": 264.122
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32103",
+   "split": "eval",
+   "duration": 478.223,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.3873,
+   "rtfx": 939.4,
+   "primary@0.0": {
+    "der": 0.1821,
+    "fa": 0.0038,
+    "miss": 0.1583,
+    "conf": 0.02,
+    "jer": 0.177,
+    "ref_speech_s": 673.259
+   },
+   "primary@0.25": {
+    "der": 0.0785,
+    "fa": 0.0,
+    "miss": 0.0669,
+    "conf": 0.0116,
+    "jer": 0.0725,
+    "ref_speech_s": 309.15
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1502,
+    "fa": 0.0073,
+    "miss": 0.1216,
+    "conf": 0.0213,
+    "jer": 0.1471,
+    "ref_speech_s": 642.72
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0693,
+    "fa": 0.0,
+    "miss": 0.0572,
+    "conf": 0.0121,
+    "jer": 0.0638,
+    "ref_speech_s": 308.13
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32104",
+   "split": "eval",
+   "duration": 477.768,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.391,
+   "rtfx": 949.5,
+   "primary@0.0": {
+    "der": 0.2131,
+    "fa": 0.0031,
+    "miss": 0.1791,
+    "conf": 0.0309,
+    "jer": 0.2743,
+    "ref_speech_s": 696.909
+   },
+   "primary@0.25": {
+    "der": 0.0678,
+    "fa": 0.0012,
+    "miss": 0.0552,
+    "conf": 0.0114,
+    "jer": 0.1457,
+    "ref_speech_s": 286.631
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1784,
+    "fa": 0.0059,
+    "miss": 0.1381,
+    "conf": 0.0344,
+    "jer": 0.2478,
+    "ref_speech_s": 661.735
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0612,
+    "fa": 0.0015,
+    "miss": 0.0471,
+    "conf": 0.0126,
+    "jer": 0.1456,
+    "ref_speech_s": 289.381
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32105",
+   "split": "eval",
+   "duration": 478.893,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.0012,
+   "rtfx": 968.8,
+   "primary@0.0": {
+    "der": 0.1752,
+    "fa": 0.0041,
+    "miss": 0.1711,
+    "conf": 0.0,
+    "jer": 0.1709,
+    "ref_speech_s": 428.98
+   },
+   "primary@0.25": {
+    "der": 0.1298,
+    "fa": 0.0,
+    "miss": 0.1298,
+    "conf": 0.0,
+    "jer": 0.1205,
+    "ref_speech_s": 369.12
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.125,
+    "fa": 0.0198,
+    "miss": 0.1052,
+    "conf": 0.0,
+    "jer": 0.1177,
+    "ref_speech_s": 390.68
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0895,
+    "fa": 0.0,
+    "miss": 0.0895,
+    "conf": 0.0,
+    "jer": 0.0895,
+    "ref_speech_s": 318.83
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1511,
+    "fa": 0.0065,
+    "miss": 0.1445,
+    "conf": 0.0,
+    "jer": 0.1461,
+    "ref_speech_s": 414.53
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.1223,
+    "fa": 0.0004,
+    "miss": 0.1219,
+    "conf": 0.0,
+    "jer": 0.1145,
+    "ref_speech_s": 363.43
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32106",
+   "split": "eval",
+   "duration": 478.338,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.4018,
+   "rtfx": 964.0,
+   "primary@0.0": {
+    "der": 0.1792,
+    "fa": 0.0041,
+    "miss": 0.161,
+    "conf": 0.014,
+    "jer": 0.2155,
+    "ref_speech_s": 708.576
+   },
+   "primary@0.25": {
+    "der": 0.04,
+    "fa": 0.0032,
+    "miss": 0.0323,
+    "conf": 0.0044,
+    "jer": 0.0701,
+    "ref_speech_s": 298.888
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0912,
+    "fa": 0.0269,
+    "miss": 0.0448,
+    "conf": 0.0195,
+    "jer": 0.1368,
+    "ref_speech_s": 608.35
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0155,
+    "fa": 0.0035,
+    "miss": 0.0062,
+    "conf": 0.0058,
+    "jer": 0.0584,
+    "ref_speech_s": 268.1
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1352,
+    "fa": 0.0099,
+    "miss": 0.1096,
+    "conf": 0.0158,
+    "jer": 0.1762,
+    "ref_speech_s": 663.584
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0396,
+    "fa": 0.0053,
+    "miss": 0.029,
+    "conf": 0.0053,
+    "jer": 0.0727,
+    "ref_speech_s": 302.516
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32107",
+   "split": "eval",
+   "duration": 478.463,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.5504,
+   "rtfx": 908.2,
+   "primary@0.0": {
+    "der": 0.2094,
+    "fa": 0.0047,
+    "miss": 0.1644,
+    "conf": 0.0403,
+    "jer": 0.2311,
+    "ref_speech_s": 828.344
+   },
+   "primary@0.25": {
+    "der": 0.0918,
+    "fa": 0.0025,
+    "miss": 0.064,
+    "conf": 0.0253,
+    "jer": 0.1128,
+    "ref_speech_s": 315.759
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1437,
+    "fa": 0.0238,
+    "miss": 0.0712,
+    "conf": 0.0488,
+    "jer": 0.1695,
+    "ref_speech_s": 730.729
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0596,
+    "fa": 0.0037,
+    "miss": 0.0324,
+    "conf": 0.0235,
+    "jer": 0.0804,
+    "ref_speech_s": 278.13
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1754,
+    "fa": 0.0066,
+    "miss": 0.1256,
+    "conf": 0.0431,
+    "jer": 0.1978,
+    "ref_speech_s": 790.094
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0805,
+    "fa": 0.0033,
+    "miss": 0.0513,
+    "conf": 0.0259,
+    "jer": 0.1005,
+    "ref_speech_s": 315.292
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32108",
+   "split": "eval",
+   "duration": 477.688,
+   "ref_speakers": 7,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.4111,
+   "rtfx": 942.1,
+   "primary@0.0": {
+    "der": 0.2349,
+    "fa": 0.0099,
+    "miss": 0.1551,
+    "conf": 0.0698,
+    "jer": 0.3357,
+    "ref_speech_s": 697.237
+   },
+   "primary@0.25": {
+    "der": 0.1313,
+    "fa": 0.0026,
+    "miss": 0.0668,
+    "conf": 0.0618,
+    "jer": 0.2744,
+    "ref_speech_s": 291.65
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.2213,
+    "fa": 0.0598,
+    "miss": 0.0811,
+    "conf": 0.0804,
+    "jer": 0.3265,
+    "ref_speech_s": 609.0
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.1181,
+    "fa": 0.0026,
+    "miss": 0.0519,
+    "conf": 0.0636,
+    "jer": 0.2635,
+    "ref_speech_s": 249.9
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.2138,
+    "fa": 0.0174,
+    "miss": 0.123,
+    "conf": 0.0734,
+    "jer": 0.3214,
+    "ref_speech_s": 666.323
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.1316,
+    "fa": 0.0037,
+    "miss": 0.0664,
+    "conf": 0.0615,
+    "jer": 0.2746,
+    "ref_speech_s": 291.368
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32109",
+   "split": "eval",
+   "duration": 479.378,
+   "ref_speakers": 7,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.1528,
+   "rtfx": 945.6,
+   "primary@0.0": {
+    "der": 0.1718,
+    "fa": 0.0056,
+    "miss": 0.1404,
+    "conf": 0.0257,
+    "jer": 0.3478,
+    "ref_speech_s": 512.41
+   },
+   "primary@0.25": {
+    "der": 0.0929,
+    "fa": 0.0013,
+    "miss": 0.0706,
+    "conf": 0.021,
+    "jer": 0.2681,
+    "ref_speech_s": 342.75
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1283,
+    "fa": 0.0492,
+    "miss": 0.0479,
+    "conf": 0.0313,
+    "jer": 0.3134,
+    "ref_speech_s": 442.76
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0568,
+    "fa": 0.002,
+    "miss": 0.0301,
+    "conf": 0.0246,
+    "jer": 0.2526,
+    "ref_speech_s": 283.04
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1429,
+    "fa": 0.01,
+    "miss": 0.1055,
+    "conf": 0.0274,
+    "jer": 0.3251,
+    "ref_speech_s": 490.169
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0824,
+    "fa": 0.0027,
+    "miss": 0.0571,
+    "conf": 0.0227,
+    "jer": 0.2668,
+    "ref_speech_s": 336.063
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32110",
+   "split": "eval",
+   "duration": 478.703,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.6429,
+   "rtfx": 962.5,
+   "primary@0.0": {
+    "der": 0.2337,
+    "fa": 0.0025,
+    "miss": 0.212,
+    "conf": 0.0191,
+    "jer": 0.2523,
+    "ref_speech_s": 954.148
+   },
+   "primary@0.25": {
+    "der": 0.0579,
+    "fa": 0.0,
+    "miss": 0.0473,
+    "conf": 0.0107,
+    "jer": 0.0871,
+    "ref_speech_s": 189.531
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1531,
+    "fa": 0.0359,
+    "miss": 0.0832,
+    "conf": 0.0341,
+    "jer": 0.1823,
+    "ref_speech_s": 791.69
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0178,
+    "fa": 0.0,
+    "miss": 0.0089,
+    "conf": 0.0088,
+    "jer": 0.0401,
+    "ref_speech_s": 164.38
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1925,
+    "fa": 0.007,
+    "miss": 0.1613,
+    "conf": 0.0241,
+    "jer": 0.2174,
+    "ref_speech_s": 891.855
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0424,
+    "fa": 0.0013,
+    "miss": 0.0317,
+    "conf": 0.0093,
+    "jer": 0.0703,
+    "ref_speech_s": 185.298
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32175",
+   "split": "eval",
+   "duration": 357.573,
+   "ref_speakers": 6,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2526,
+   "rtfx": 940.4,
+   "primary@0.0": {
+    "der": 0.2563,
+    "fa": 0.0075,
+    "miss": 0.1076,
+    "conf": 0.1412,
+    "jer": 0.3555,
+    "ref_speech_s": 440.509
+   },
+   "primary@0.25": {
+    "der": 0.1722,
+    "fa": 0.0009,
+    "miss": 0.0464,
+    "conf": 0.1248,
+    "jer": 0.3009,
+    "ref_speech_s": 235.79
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.2364,
+    "fa": 0.0164,
+    "miss": 0.0721,
+    "conf": 0.1479,
+    "jer": 0.3371,
+    "ref_speech_s": 419.74
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.1685,
+    "fa": 0.002,
+    "miss": 0.0396,
+    "conf": 0.1269,
+    "jer": 0.2978,
+    "ref_speech_s": 235.72
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32178",
+   "split": "eval",
+   "duration": 358.183,
+   "ref_speakers": 6,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.2108,
+   "rtfx": 1193.7,
+   "primary@0.0": {
+    "der": 0.1979,
+    "fa": 0.0096,
+    "miss": 0.1561,
+    "conf": 0.0322,
+    "jer": 0.3197,
+    "ref_speech_s": 410.828
+   },
+   "primary@0.25": {
+    "der": 0.1383,
+    "fa": 0.0001,
+    "miss": 0.1055,
+    "conf": 0.0328,
+    "jer": 0.2433,
+    "ref_speech_s": 219.4
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.2078,
+    "fa": 0.0686,
+    "miss": 0.1006,
+    "conf": 0.0385,
+    "jer": 0.3125,
+    "ref_speech_s": 362.25
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.1219,
+    "fa": 0.0012,
+    "miss": 0.0848,
+    "conf": 0.0359,
+    "jer": 0.2221,
+    "ref_speech_s": 190.71
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1836,
+    "fa": 0.0155,
+    "miss": 0.1338,
+    "conf": 0.0343,
+    "jer": 0.3058,
+    "ref_speech_s": 397.749
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.1357,
+    "fa": 0.0001,
+    "miss": 0.1038,
+    "conf": 0.0318,
+    "jer": 0.2401,
+    "ref_speech_s": 222.659
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32179",
+   "split": "eval",
+   "duration": 359.638,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.3609,
+   "rtfx": 1221.5,
+   "primary@0.0": {
+    "der": 0.1781,
+    "fa": 0.006,
+    "miss": 0.1428,
+    "conf": 0.0292,
+    "jer": 0.1916,
+    "ref_speech_s": 483.718
+   },
+   "primary@0.25": {
+    "der": 0.0952,
+    "fa": 0.001,
+    "miss": 0.0699,
+    "conf": 0.0243,
+    "jer": 0.1103,
+    "ref_speech_s": 233.569
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1342,
+    "fa": 0.0443,
+    "miss": 0.0552,
+    "conf": 0.0346,
+    "jer": 0.152,
+    "ref_speech_s": 422.149
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0635,
+    "fa": 0.0033,
+    "miss": 0.0394,
+    "conf": 0.0208,
+    "jer": 0.0768,
+    "ref_speech_s": 215.98
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1396,
+    "fa": 0.0137,
+    "miss": 0.096,
+    "conf": 0.03,
+    "jer": 0.1576,
+    "ref_speech_s": 455.001
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0785,
+    "fa": 0.0056,
+    "miss": 0.0524,
+    "conf": 0.0205,
+    "jer": 0.0906,
+    "ref_speech_s": 245.749
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32180",
+   "split": "eval",
+   "duration": 358.888,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.3277,
+   "rtfx": 1099.7,
+   "primary@0.0": {
+    "der": 0.1838,
+    "fa": 0.0055,
+    "miss": 0.1148,
+    "conf": 0.0635,
+    "jer": 0.2789,
+    "ref_speech_s": 476.328
+   },
+   "primary@0.25": {
+    "der": 0.0932,
+    "fa": 0.0005,
+    "miss": 0.0389,
+    "conf": 0.0539,
+    "jer": 0.2189,
+    "ref_speech_s": 243.998
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1551,
+    "fa": 0.0076,
+    "miss": 0.0802,
+    "conf": 0.0673,
+    "jer": 0.2559,
+    "ref_speech_s": 457.45
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0891,
+    "fa": 0.0006,
+    "miss": 0.0336,
+    "conf": 0.0549,
+    "jer": 0.2134,
+    "ref_speech_s": 246.95
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32181",
+   "split": "eval",
+   "duration": 358.558,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.308,
+   "rtfx": 1219.4,
+   "primary@0.0": {
+    "der": 0.1944,
+    "fa": 0.0037,
+    "miss": 0.1582,
+    "conf": 0.0325,
+    "jer": 0.2659,
+    "ref_speech_s": 470.868
+   },
+   "primary@0.25": {
+    "der": 0.1029,
+    "fa": 0.0,
+    "miss": 0.0848,
+    "conf": 0.0182,
+    "jer": 0.1794,
+    "ref_speech_s": 249.16
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1698,
+    "fa": 0.0064,
+    "miss": 0.1277,
+    "conf": 0.0357,
+    "jer": 0.2433,
+    "ref_speech_s": 453.012
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.1016,
+    "fa": 0.0005,
+    "miss": 0.0838,
+    "conf": 0.0173,
+    "jer": 0.1716,
+    "ref_speech_s": 254.56
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32182",
+   "split": "eval",
+   "duration": 356.963,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.3072,
+   "rtfx": 1194.2,
+   "primary@0.0": {
+    "der": 0.1613,
+    "fa": 0.0165,
+    "miss": 0.1156,
+    "conf": 0.0292,
+    "jer": 0.2486,
+    "ref_speech_s": 466.257
+   },
+   "primary@0.25": {
+    "der": 0.056,
+    "fa": 0.002,
+    "miss": 0.0396,
+    "conf": 0.0144,
+    "jer": 0.13,
+    "ref_speech_s": 219.421
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.155,
+    "fa": 0.0651,
+    "miss": 0.0528,
+    "conf": 0.0371,
+    "jer": 0.236,
+    "ref_speech_s": 414.94
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0407,
+    "fa": 0.003,
+    "miss": 0.0253,
+    "conf": 0.0124,
+    "jer": 0.1111,
+    "ref_speech_s": 215.65
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1368,
+    "fa": 0.0256,
+    "miss": 0.0807,
+    "conf": 0.0306,
+    "jer": 0.2233,
+    "ref_speech_s": 444.568
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0511,
+    "fa": 0.0035,
+    "miss": 0.0341,
+    "conf": 0.0135,
+    "jer": 0.1224,
+    "ref_speech_s": 230.711
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32183",
+   "split": "eval",
+   "duration": 365.903,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.3599,
+   "rtfx": 1212.6,
+   "primary@0.0": {
+    "der": 0.193,
+    "fa": 0.007,
+    "miss": 0.1247,
+    "conf": 0.0613,
+    "jer": 0.3018,
+    "ref_speech_s": 498.468
+   },
+   "primary@0.25": {
+    "der": 0.0953,
+    "fa": 0.0011,
+    "miss": 0.0549,
+    "conf": 0.0392,
+    "jer": 0.2275,
+    "ref_speech_s": 219.67
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1708,
+    "fa": 0.0485,
+    "miss": 0.0522,
+    "conf": 0.07,
+    "jer": 0.2889,
+    "ref_speech_s": 441.46
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0782,
+    "fa": 0.0038,
+    "miss": 0.036,
+    "conf": 0.0384,
+    "jer": 0.2161,
+    "ref_speech_s": 200.67
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1733,
+    "fa": 0.01,
+    "miss": 0.1004,
+    "conf": 0.0629,
+    "jer": 0.2865,
+    "ref_speech_s": 483.554
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.097,
+    "fa": 0.0011,
+    "miss": 0.0604,
+    "conf": 0.0355,
+    "jer": 0.2241,
+    "ref_speech_s": 229.845
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32184",
+   "split": "eval",
+   "duration": 358.628,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.4226,
+   "rtfx": 1170.7,
+   "primary@0.0": {
+    "der": 0.1868,
+    "fa": 0.0079,
+    "miss": 0.1274,
+    "conf": 0.0514,
+    "jer": 0.2321,
+    "ref_speech_s": 519.898
+   },
+   "primary@0.25": {
+    "der": 0.0742,
+    "fa": 0.003,
+    "miss": 0.0391,
+    "conf": 0.0321,
+    "jer": 0.1172,
+    "ref_speech_s": 210.982
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1627,
+    "fa": 0.0129,
+    "miss": 0.0957,
+    "conf": 0.0541,
+    "jer": 0.212,
+    "ref_speech_s": 499.108
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.067,
+    "fa": 0.0034,
+    "miss": 0.0323,
+    "conf": 0.0313,
+    "jer": 0.1101,
+    "ref_speech_s": 210.19
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32185",
+   "split": "eval",
+   "duration": 359.733,
+   "ref_speakers": 6,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1972,
+   "rtfx": 1200.9,
+   "primary@0.0": {
+    "der": 0.224,
+    "fa": 0.0067,
+    "miss": 0.086,
+    "conf": 0.1314,
+    "jer": 0.3176,
+    "ref_speech_s": 405.64
+   },
+   "primary@0.25": {
+    "der": 0.1871,
+    "fa": 0.0011,
+    "miss": 0.0547,
+    "conf": 0.1312,
+    "jer": 0.2915,
+    "ref_speech_s": 326.79
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.211,
+    "fa": 0.0303,
+    "miss": 0.0344,
+    "conf": 0.1462,
+    "jer": 0.3058,
+    "ref_speech_s": 375.0
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.1662,
+    "fa": 0.0009,
+    "miss": 0.0209,
+    "conf": 0.1445,
+    "jer": 0.2784,
+    "ref_speech_s": 278.03
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.2109,
+    "fa": 0.0103,
+    "miss": 0.0643,
+    "conf": 0.1364,
+    "jer": 0.3073,
+    "ref_speech_s": 394.769
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.1796,
+    "fa": 0.0011,
+    "miss": 0.0464,
+    "conf": 0.1322,
+    "jer": 0.2864,
+    "ref_speech_s": 319.86
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32186",
+   "split": "eval",
+   "duration": 359.013,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.3068,
+   "rtfx": 1135.4,
+   "primary@0.0": {
+    "der": 0.1259,
+    "fa": 0.0058,
+    "miss": 0.1127,
+    "conf": 0.0074,
+    "jer": 0.134,
+    "ref_speech_s": 461.189
+   },
+   "primary@0.25": {
+    "der": 0.0421,
+    "fa": 0.0011,
+    "miss": 0.0394,
+    "conf": 0.0017,
+    "jer": 0.0421,
+    "ref_speech_s": 241.119
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1052,
+    "fa": 0.0087,
+    "miss": 0.0875,
+    "conf": 0.009,
+    "jer": 0.1135,
+    "ref_speech_s": 447.127
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.041,
+    "fa": 0.0014,
+    "miss": 0.0376,
+    "conf": 0.002,
+    "jer": 0.0372,
+    "ref_speech_s": 244.67
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32188",
+   "split": "eval",
+   "duration": 358.313,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.6722,
+   "rtfx": 1200.3,
+   "primary@0.0": {
+    "der": 0.1687,
+    "fa": 0.0058,
+    "miss": 0.1523,
+    "conf": 0.0106,
+    "jer": 0.1948,
+    "ref_speech_s": 701.77
+   },
+   "primary@0.25": {
+    "der": 0.0582,
+    "fa": 0.0,
+    "miss": 0.0549,
+    "conf": 0.0032,
+    "jer": 0.0825,
+    "ref_speech_s": 211.34
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1344,
+    "fa": 0.0084,
+    "miss": 0.1146,
+    "conf": 0.0113,
+    "jer": 0.1613,
+    "ref_speech_s": 670.103
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0423,
+    "fa": 0.0009,
+    "miss": 0.0366,
+    "conf": 0.0048,
+    "jer": 0.0644,
+    "ref_speech_s": 217.894
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32189",
+   "split": "eval",
+   "duration": 357.453,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.4683,
+   "rtfx": 1212.0,
+   "primary@0.0": {
+    "der": 0.1632,
+    "fa": 0.0071,
+    "miss": 0.1289,
+    "conf": 0.0272,
+    "jer": 0.21,
+    "ref_speech_s": 557.585
+   },
+   "primary@0.25": {
+    "der": 0.0406,
+    "fa": 0.0012,
+    "miss": 0.0236,
+    "conf": 0.0158,
+    "jer": 0.0668,
+    "ref_speech_s": 204.628
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1397,
+    "fa": 0.0104,
+    "miss": 0.0992,
+    "conf": 0.0302,
+    "jer": 0.185,
+    "ref_speech_s": 537.367
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0439,
+    "fa": 0.0008,
+    "miss": 0.0286,
+    "conf": 0.0145,
+    "jer": 0.0663,
+    "ref_speech_s": 216.735
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32190",
+   "split": "eval",
+   "duration": 359.333,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.2725,
+   "rtfx": 1207.5,
+   "primary@0.0": {
+    "der": 0.2004,
+    "fa": 0.0061,
+    "miss": 0.1404,
+    "conf": 0.054,
+    "jer": 0.2844,
+    "ref_speech_s": 446.948
+   },
+   "primary@0.25": {
+    "der": 0.1159,
+    "fa": 0.0,
+    "miss": 0.0759,
+    "conf": 0.04,
+    "jer": 0.217,
+    "ref_speech_s": 242.478
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1784,
+    "fa": 0.043,
+    "miss": 0.0758,
+    "conf": 0.0596,
+    "jer": 0.2657,
+    "ref_speech_s": 400.02
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.1099,
+    "fa": 0.0,
+    "miss": 0.0743,
+    "conf": 0.0355,
+    "jer": 0.2068,
+    "ref_speech_s": 225.29
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1805,
+    "fa": 0.0101,
+    "miss": 0.1139,
+    "conf": 0.0564,
+    "jer": 0.2684,
+    "ref_speech_s": 431.72
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.1211,
+    "fa": 0.0,
+    "miss": 0.0795,
+    "conf": 0.0416,
+    "jer": 0.2199,
+    "ref_speech_s": 248.745
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32191",
+   "split": "eval",
+   "duration": 359.733,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.3143,
+   "rtfx": 1200.4,
+   "primary@0.0": {
+    "der": 0.1985,
+    "fa": 0.0028,
+    "miss": 0.1776,
+    "conf": 0.0181,
+    "jer": 0.2213,
+    "ref_speech_s": 472.699
+   },
+   "primary@0.25": {
+    "der": 0.1018,
+    "fa": 0.0,
+    "miss": 0.0917,
+    "conf": 0.0101,
+    "jer": 0.1235,
+    "ref_speech_s": 249.28
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.1026,
+    "fa": 0.0228,
+    "miss": 0.0561,
+    "conf": 0.0237,
+    "jer": 0.1223,
+    "ref_speech_s": 403.51
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0238,
+    "fa": 0.0001,
+    "miss": 0.0177,
+    "conf": 0.006,
+    "jer": 0.0331,
+    "ref_speech_s": 215.25
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1421,
+    "fa": 0.0059,
+    "miss": 0.1169,
+    "conf": 0.0193,
+    "jer": 0.1674,
+    "ref_speech_s": 438.8
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0473,
+    "fa": 0.0019,
+    "miss": 0.0369,
+    "conf": 0.0085,
+    "jer": 0.0613,
+    "ref_speech_s": 235.345
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32250",
+   "split": "eval",
+   "duration": 357.678,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2582,
+   "rtfx": 1179.8,
+   "primary@0.0": {
+    "der": 0.1269,
+    "fa": 0.0037,
+    "miss": 0.1192,
+    "conf": 0.004,
+    "jer": 0.1344,
+    "ref_speech_s": 436.168
+   },
+   "primary@0.25": {
+    "der": 0.0393,
+    "fa": 0.0,
+    "miss": 0.0375,
+    "conf": 0.0019,
+    "jer": 0.045,
+    "ref_speech_s": 237.649
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0538,
+    "fa": 0.0231,
+    "miss": 0.0247,
+    "conf": 0.006,
+    "jer": 0.0621,
+    "ref_speech_s": 386.42
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0087,
+    "fa": 0.0018,
+    "miss": 0.0055,
+    "conf": 0.0015,
+    "jer": 0.0118,
+    "ref_speech_s": 213.42
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0943,
+    "fa": 0.0092,
+    "miss": 0.081,
+    "conf": 0.0042,
+    "jer": 0.1012,
+    "ref_speech_s": 415.639
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0298,
+    "fa": 0.001,
+    "miss": 0.0277,
+    "conf": 0.0012,
+    "jer": 0.0314,
+    "ref_speech_s": 241.9
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32251",
+   "split": "eval",
+   "duration": 357.823,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2265,
+   "rtfx": 1178.0,
+   "primary@0.0": {
+    "der": 0.1098,
+    "fa": 0.0045,
+    "miss": 0.1042,
+    "conf": 0.001,
+    "jer": 0.1113,
+    "ref_speech_s": 429.509
+   },
+   "primary@0.25": {
+    "der": 0.0317,
+    "fa": 0.0,
+    "miss": 0.0317,
+    "conf": 0.0,
+    "jer": 0.0383,
+    "ref_speech_s": 257.369
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0783,
+    "fa": 0.0043,
+    "miss": 0.073,
+    "conf": 0.0009,
+    "jer": 0.082,
+    "ref_speech_s": 415.208
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0291,
+    "fa": 0.0,
+    "miss": 0.0291,
+    "conf": 0.0,
+    "jer": 0.0379,
+    "ref_speech_s": 269.558
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32252",
+   "split": "eval",
+   "duration": 358.228,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.3349,
+   "rtfx": 1195.1,
+   "primary@0.0": {
+    "der": 0.1304,
+    "fa": 0.0036,
+    "miss": 0.1247,
+    "conf": 0.002,
+    "jer": 0.1427,
+    "ref_speech_s": 474.669
+   },
+   "primary@0.25": {
+    "der": 0.0415,
+    "fa": 0.0,
+    "miss": 0.0414,
+    "conf": 0.0,
+    "jer": 0.0412,
+    "ref_speech_s": 242.179
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0475,
+    "fa": 0.0192,
+    "miss": 0.0257,
+    "conf": 0.0026,
+    "jer": 0.0599,
+    "ref_speech_s": 419.92
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0046,
+    "fa": 0.0003,
+    "miss": 0.0044,
+    "conf": 0.0,
+    "jer": 0.0073,
+    "ref_speech_s": 217.42
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1007,
+    "fa": 0.0108,
+    "miss": 0.0864,
+    "conf": 0.0035,
+    "jer": 0.112,
+    "ref_speech_s": 451.35
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0369,
+    "fa": 0.0007,
+    "miss": 0.0362,
+    "conf": 0.0,
+    "jer": 0.0356,
+    "ref_speech_s": 242.83
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32254",
+   "split": "eval",
+   "duration": 358.973,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.3096,
+   "rtfx": 1058.6,
+   "primary@0.0": {
+    "der": 0.124,
+    "fa": 0.0046,
+    "miss": 0.1177,
+    "conf": 0.0017,
+    "jer": 0.129,
+    "ref_speech_s": 468.4
+   },
+   "primary@0.25": {
+    "der": 0.0404,
+    "fa": 0.0002,
+    "miss": 0.0399,
+    "conf": 0.0003,
+    "jer": 0.0396,
+    "ref_speech_s": 243.09
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0906,
+    "fa": 0.0043,
+    "miss": 0.0846,
+    "conf": 0.0017,
+    "jer": 0.096,
+    "ref_speech_s": 451.653
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0345,
+    "fa": 0.0003,
+    "miss": 0.0341,
+    "conf": 0.0001,
+    "jer": 0.0367,
+    "ref_speech_s": 248.073
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32255",
+   "split": "eval",
+   "duration": 359.843,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1661,
+   "rtfx": 1196.9,
+   "primary@0.0": {
+    "der": 0.1027,
+    "fa": 0.0048,
+    "miss": 0.0969,
+    "conf": 0.001,
+    "jer": 0.1091,
+    "ref_speech_s": 403.668
+   },
+   "primary@0.25": {
+    "der": 0.0328,
+    "fa": 0.0009,
+    "miss": 0.0319,
+    "conf": 0.0,
+    "jer": 0.0333,
+    "ref_speech_s": 263.818
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0559,
+    "fa": 0.0309,
+    "miss": 0.0234,
+    "conf": 0.0015,
+    "jer": 0.0585,
+    "ref_speech_s": 363.769
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0072,
+    "fa": 0.0006,
+    "miss": 0.0066,
+    "conf": 0.0,
+    "jer": 0.0078,
+    "ref_speech_s": 237.909
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.077,
+    "fa": 0.0063,
+    "miss": 0.0698,
+    "conf": 0.0009,
+    "jer": 0.0814,
+    "ref_speech_s": 391.36
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0313,
+    "fa": 0.0009,
+    "miss": 0.0305,
+    "conf": 0.0,
+    "jer": 0.0308,
+    "ref_speech_s": 267.305
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32256",
+   "split": "eval",
+   "duration": 363.943,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.0,
+   "rtfx": 1135.1,
+   "primary@0.0": {
+    "der": 0.0698,
+    "fa": 0.0058,
+    "miss": 0.0641,
+    "conf": 0.0,
+    "jer": 0.0719,
+    "ref_speech_s": 321.15
+   },
+   "primary@0.25": {
+    "der": 0.0237,
+    "fa": 0.0,
+    "miss": 0.0237,
+    "conf": 0.0,
+    "jer": 0.0231,
+    "ref_speech_s": 267.65
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.039,
+    "fa": 0.025,
+    "miss": 0.014,
+    "conf": 0.0,
+    "jer": 0.0357,
+    "ref_speech_s": 299.16
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0057,
+    "fa": 0.0,
+    "miss": 0.0057,
+    "conf": 0.0,
+    "jer": 0.0052,
+    "ref_speech_s": 235.92
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0616,
+    "fa": 0.0076,
+    "miss": 0.054,
+    "conf": 0.0,
+    "jer": 0.0625,
+    "ref_speech_s": 317.13
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0353,
+    "fa": 0.0,
+    "miss": 0.0353,
+    "conf": 0.0,
+    "jer": 0.0369,
+    "ref_speech_s": 270.48
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32257",
+   "split": "eval",
+   "duration": 358.728,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.7046,
+   "rtfx": 1158.6,
+   "primary@0.0": {
+    "der": 0.1497,
+    "fa": 0.0104,
+    "miss": 0.1345,
+    "conf": 0.0049,
+    "jer": 0.1514,
+    "ref_speech_s": 697.418
+   },
+   "primary@0.25": {
+    "der": 0.053,
+    "fa": 0.0068,
+    "miss": 0.0456,
+    "conf": 0.0006,
+    "jer": 0.0534,
+    "ref_speech_s": 238.451
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0827,
+    "fa": 0.0386,
+    "miss": 0.036,
+    "conf": 0.0081,
+    "jer": 0.0875,
+    "ref_speech_s": 609.26
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0159,
+    "fa": 0.0088,
+    "miss": 0.0067,
+    "conf": 0.0004,
+    "jer": 0.0188,
+    "ref_speech_s": 187.09
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.124,
+    "fa": 0.0155,
+    "miss": 0.1033,
+    "conf": 0.0052,
+    "jer": 0.1254,
+    "ref_speech_s": 669.61
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0471,
+    "fa": 0.0073,
+    "miss": 0.0395,
+    "conf": 0.0003,
+    "jer": 0.0458,
+    "ref_speech_s": 237.72
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32260",
+   "split": "eval",
+   "duration": 359.063,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2939,
+   "rtfx": 1092.9,
+   "primary@0.0": {
+    "der": 0.1362,
+    "fa": 0.0057,
+    "miss": 0.1287,
+    "conf": 0.0019,
+    "jer": 0.1367,
+    "ref_speech_s": 462.988
+   },
+   "primary@0.25": {
+    "der": 0.0565,
+    "fa": 0.0002,
+    "miss": 0.0559,
+    "conf": 0.0004,
+    "jer": 0.0576,
+    "ref_speech_s": 248.002
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0553,
+    "fa": 0.0266,
+    "miss": 0.0262,
+    "conf": 0.0025,
+    "jer": 0.0597,
+    "ref_speech_s": 405.88
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0055,
+    "fa": 0.0009,
+    "miss": 0.0042,
+    "conf": 0.0004,
+    "jer": 0.0069,
+    "ref_speech_s": 213.12
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1046,
+    "fa": 0.0095,
+    "miss": 0.0926,
+    "conf": 0.0026,
+    "jer": 0.1063,
+    "ref_speech_s": 442.84
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0437,
+    "fa": 0.0003,
+    "miss": 0.0428,
+    "conf": 0.0006,
+    "jer": 0.0455,
+    "ref_speech_s": 251.21
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32261",
+   "split": "eval",
+   "duration": 358.398,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.4515,
+   "rtfx": 947.6,
+   "primary@0.0": {
+    "der": 0.1755,
+    "fa": 0.0062,
+    "miss": 0.1438,
+    "conf": 0.0254,
+    "jer": 0.2249,
+    "ref_speech_s": 532.555
+   },
+   "primary@0.25": {
+    "der": 0.0855,
+    "fa": 0.0014,
+    "miss": 0.0526,
+    "conf": 0.0315,
+    "jer": 0.1567,
+    "ref_speech_s": 248.52
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1459,
+    "fa": 0.0153,
+    "miss": 0.1064,
+    "conf": 0.0241,
+    "jer": 0.1923,
+    "ref_speech_s": 505.309
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0713,
+    "fa": 0.0057,
+    "miss": 0.0383,
+    "conf": 0.0273,
+    "jer": 0.1333,
+    "ref_speech_s": 243.641
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32263",
+   "split": "eval",
+   "duration": 359.403,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2873,
+   "rtfx": 928.6,
+   "primary@0.0": {
+    "der": 0.1178,
+    "fa": 0.0085,
+    "miss": 0.1059,
+    "conf": 0.0034,
+    "jer": 0.1252,
+    "ref_speech_s": 455.799
+   },
+   "primary@0.25": {
+    "der": 0.0414,
+    "fa": 0.0,
+    "miss": 0.0401,
+    "conf": 0.0012,
+    "jer": 0.0361,
+    "ref_speech_s": 233.729
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0755,
+    "fa": 0.0465,
+    "miss": 0.0239,
+    "conf": 0.0051,
+    "jer": 0.0847,
+    "ref_speech_s": 402.35
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0096,
+    "fa": 0.0,
+    "miss": 0.0081,
+    "conf": 0.0015,
+    "jer": 0.0129,
+    "ref_speech_s": 200.03
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0873,
+    "fa": 0.0127,
+    "miss": 0.0704,
+    "conf": 0.0042,
+    "jer": 0.0989,
+    "ref_speech_s": 436.618
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0314,
+    "fa": 0.0008,
+    "miss": 0.0295,
+    "conf": 0.0011,
+    "jer": 0.0323,
+    "ref_speech_s": 235.666
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32264",
+   "split": "eval",
+   "duration": 357.198,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.3663,
+   "rtfx": 944.2,
+   "primary@0.0": {
+    "der": 0.1254,
+    "fa": 0.0055,
+    "miss": 0.1109,
+    "conf": 0.0089,
+    "jer": 0.1493,
+    "ref_speech_s": 487.089
+   },
+   "primary@0.25": {
+    "der": 0.0473,
+    "fa": 0.0,
+    "miss": 0.0405,
+    "conf": 0.0068,
+    "jer": 0.0618,
+    "ref_speech_s": 245.599
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0963,
+    "fa": 0.0091,
+    "miss": 0.0783,
+    "conf": 0.0088,
+    "jer": 0.1141,
+    "ref_speech_s": 468.163
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0349,
+    "fa": 0.0003,
+    "miss": 0.029,
+    "conf": 0.0056,
+    "jer": 0.0421,
+    "ref_speech_s": 251.792
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32265",
+   "split": "eval",
+   "duration": 358.373,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2611,
+   "rtfx": 931.5,
+   "primary@0.0": {
+    "der": 0.1269,
+    "fa": 0.005,
+    "miss": 0.1189,
+    "conf": 0.0029,
+    "jer": 0.1343,
+    "ref_speech_s": 442.199
+   },
+   "primary@0.25": {
+    "der": 0.0416,
+    "fa": 0.0004,
+    "miss": 0.0412,
+    "conf": 0.0,
+    "jer": 0.0401,
+    "ref_speech_s": 246.079
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0521,
+    "fa": 0.0213,
+    "miss": 0.0248,
+    "conf": 0.006,
+    "jer": 0.0615,
+    "ref_speech_s": 393.17
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0071,
+    "fa": 0.0003,
+    "miss": 0.0068,
+    "conf": 0.0,
+    "jer": 0.0087,
+    "ref_speech_s": 228.37
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0962,
+    "fa": 0.0072,
+    "miss": 0.0849,
+    "conf": 0.004,
+    "jer": 0.1053,
+    "ref_speech_s": 424.854
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0372,
+    "fa": 0.0006,
+    "miss": 0.0367,
+    "conf": 0.0,
+    "jer": 0.0398,
+    "ref_speech_s": 258.106
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32266",
+   "split": "eval",
+   "duration": 359.023,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1808,
+   "rtfx": 948.9,
+   "primary@0.0": {
+    "der": 0.1144,
+    "fa": 0.0069,
+    "miss": 0.1026,
+    "conf": 0.0049,
+    "jer": 0.1189,
+    "ref_speech_s": 415.747
+   },
+   "primary@0.25": {
+    "der": 0.0444,
+    "fa": 0.0002,
+    "miss": 0.0432,
+    "conf": 0.001,
+    "jer": 0.0459,
+    "ref_speech_s": 260.767
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0942,
+    "fa": 0.01,
+    "miss": 0.0791,
+    "conf": 0.0051,
+    "jer": 0.0998,
+    "ref_speech_s": 403.889
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0514,
+    "fa": 0.001,
+    "miss": 0.0495,
+    "conf": 0.0009,
+    "jer": 0.0533,
+    "ref_speech_s": 274.049
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32310",
+   "split": "eval",
+   "duration": 359.398,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2247,
+   "rtfx": 948.9,
+   "primary@0.0": {
+    "der": 0.0994,
+    "fa": 0.0055,
+    "miss": 0.0934,
+    "conf": 0.0006,
+    "jer": 0.1022,
+    "ref_speech_s": 408.969
+   },
+   "primary@0.25": {
+    "der": 0.034,
+    "fa": 0.0001,
+    "miss": 0.0339,
+    "conf": 0.0,
+    "jer": 0.0346,
+    "ref_speech_s": 257.469
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0748,
+    "fa": 0.009,
+    "miss": 0.0649,
+    "conf": 0.0009,
+    "jer": 0.0759,
+    "ref_speech_s": 395.148
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0281,
+    "fa": 0.0002,
+    "miss": 0.028,
+    "conf": 0.0,
+    "jer": 0.0286,
+    "ref_speech_s": 251.358
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32311",
+   "split": "eval",
+   "duration": 358.528,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1028,
+   "rtfx": 916.7,
+   "primary@0.0": {
+    "der": 0.1061,
+    "fa": 0.0042,
+    "miss": 0.1014,
+    "conf": 0.0004,
+    "jer": 0.1155,
+    "ref_speech_s": 364.999
+   },
+   "primary@0.25": {
+    "der": 0.04,
+    "fa": 0.0,
+    "miss": 0.04,
+    "conf": 0.0,
+    "jer": 0.0421,
+    "ref_speech_s": 253.818
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0858,
+    "fa": 0.0075,
+    "miss": 0.0778,
+    "conf": 0.0004,
+    "jer": 0.0929,
+    "ref_speech_s": 354.447
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0404,
+    "fa": 0.0,
+    "miss": 0.0404,
+    "conf": 0.0,
+    "jer": 0.0456,
+    "ref_speech_s": 261.459
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32312",
+   "split": "eval",
+   "duration": 359.228,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1568,
+   "rtfx": 936.3,
+   "primary@0.0": {
+    "der": 0.1037,
+    "fa": 0.0054,
+    "miss": 0.0978,
+    "conf": 0.0005,
+    "jer": 0.1002,
+    "ref_speech_s": 389.53
+   },
+   "primary@0.25": {
+    "der": 0.0303,
+    "fa": 0.0,
+    "miss": 0.0303,
+    "conf": 0.0,
+    "jer": 0.0276,
+    "ref_speech_s": 243.1
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0541,
+    "fa": 0.0326,
+    "miss": 0.0208,
+    "conf": 0.0007,
+    "jer": 0.0534,
+    "ref_speech_s": 349.44
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0049,
+    "fa": 0.0014,
+    "miss": 0.0035,
+    "conf": 0.0,
+    "jer": 0.0039,
+    "ref_speech_s": 220.22
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0828,
+    "fa": 0.0094,
+    "miss": 0.0727,
+    "conf": 0.0007,
+    "jer": 0.0813,
+    "ref_speech_s": 377.467
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0339,
+    "fa": 0.0016,
+    "miss": 0.0322,
+    "conf": 0.0,
+    "jer": 0.0325,
+    "ref_speech_s": 249.148
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32313",
+   "split": "eval",
+   "duration": 359.258,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.0982,
+   "rtfx": 916.9,
+   "primary@0.0": {
+    "der": 0.093,
+    "fa": 0.0031,
+    "miss": 0.0896,
+    "conf": 0.0003,
+    "jer": 0.1138,
+    "ref_speech_s": 374.45
+   },
+   "primary@0.25": {
+    "der": 0.0351,
+    "fa": 0.0,
+    "miss": 0.0351,
+    "conf": 0.0,
+    "jer": 0.0493,
+    "ref_speech_s": 271.46
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0282,
+    "fa": 0.0142,
+    "miss": 0.0139,
+    "conf": 0.0,
+    "jer": 0.0383,
+    "ref_speech_s": 341.95
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0049,
+    "fa": 0.0,
+    "miss": 0.0049,
+    "conf": 0.0,
+    "jer": 0.0048,
+    "ref_speech_s": 245.35
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0691,
+    "fa": 0.0027,
+    "miss": 0.0662,
+    "conf": 0.0001,
+    "jer": 0.0839,
+    "ref_speech_s": 365.26
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0366,
+    "fa": 0.0,
+    "miss": 0.0366,
+    "conf": 0.0,
+    "jer": 0.0451,
+    "ref_speech_s": 274.46
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32314",
+   "split": "eval",
+   "duration": 358.258,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.4195,
+   "rtfx": 939.9,
+   "primary@0.0": {
+    "der": 0.1343,
+    "fa": 0.0076,
+    "miss": 0.1254,
+    "conf": 0.0012,
+    "jer": 0.153,
+    "ref_speech_s": 516.606
+   },
+   "primary@0.25": {
+    "der": 0.0442,
+    "fa": 0.0,
+    "miss": 0.0442,
+    "conf": 0.0,
+    "jer": 0.0551,
+    "ref_speech_s": 211.037
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0859,
+    "fa": 0.0519,
+    "miss": 0.0305,
+    "conf": 0.0034,
+    "jer": 0.0946,
+    "ref_speech_s": 446.2
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.014,
+    "fa": 0.002,
+    "miss": 0.012,
+    "conf": 0.0,
+    "jer": 0.0127,
+    "ref_speech_s": 179.91
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1162,
+    "fa": 0.0302,
+    "miss": 0.0826,
+    "conf": 0.0034,
+    "jer": 0.1276,
+    "ref_speech_s": 480.959
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0438,
+    "fa": 0.0073,
+    "miss": 0.0359,
+    "conf": 0.0006,
+    "jer": 0.0401,
+    "ref_speech_s": 204.031
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32315",
+   "split": "eval",
+   "duration": 359.133,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.5846,
+   "rtfx": 952.6,
+   "primary@0.0": {
+    "der": 0.0928,
+    "fa": 0.0053,
+    "miss": 0.0858,
+    "conf": 0.0017,
+    "jer": 0.0974,
+    "ref_speech_s": 613.22
+   },
+   "primary@0.25": {
+    "der": 0.0233,
+    "fa": 0.0002,
+    "miss": 0.023,
+    "conf": 0.0,
+    "jer": 0.0232,
+    "ref_speech_s": 293.41
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0508,
+    "fa": 0.0273,
+    "miss": 0.0207,
+    "conf": 0.0028,
+    "jer": 0.0559,
+    "ref_speech_s": 560.1
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0058,
+    "fa": 0.0007,
+    "miss": 0.005,
+    "conf": 0.0,
+    "jer": 0.0055,
+    "ref_speech_s": 258.12
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0707,
+    "fa": 0.0072,
+    "miss": 0.0617,
+    "conf": 0.0018,
+    "jer": 0.0772,
+    "ref_speech_s": 596.333
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0219,
+    "fa": 0.0002,
+    "miss": 0.0217,
+    "conf": 0.0,
+    "jer": 0.0248,
+    "ref_speech_s": 298.688
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32316",
+   "split": "eval",
+   "duration": 357.168,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.166,
+   "rtfx": 1010.7,
+   "primary@0.0": {
+    "der": 0.1095,
+    "fa": 0.0025,
+    "miss": 0.1068,
+    "conf": 0.0002,
+    "jer": 0.1106,
+    "ref_speech_s": 399.37
+   },
+   "primary@0.25": {
+    "der": 0.0429,
+    "fa": 0.0,
+    "miss": 0.0429,
+    "conf": 0.0,
+    "jer": 0.0427,
+    "ref_speech_s": 277.91
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0812,
+    "fa": 0.0035,
+    "miss": 0.0772,
+    "conf": 0.0004,
+    "jer": 0.0806,
+    "ref_speech_s": 386.14
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0338,
+    "fa": 0.0,
+    "miss": 0.0337,
+    "conf": 0.0,
+    "jer": 0.0321,
+    "ref_speech_s": 276.36
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32317",
+   "split": "eval",
+   "duration": 359.198,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2211,
+   "rtfx": 911.3,
+   "primary@0.0": {
+    "der": 0.1306,
+    "fa": 0.006,
+    "miss": 0.1041,
+    "conf": 0.0205,
+    "jer": 0.1476,
+    "ref_speech_s": 420.099
+   },
+   "primary@0.25": {
+    "der": 0.0658,
+    "fa": 0.001,
+    "miss": 0.0405,
+    "conf": 0.0243,
+    "jer": 0.0882,
+    "ref_speech_s": 263.351
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1057,
+    "fa": 0.007,
+    "miss": 0.0773,
+    "conf": 0.0214,
+    "jer": 0.1238,
+    "ref_speech_s": 407.534
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0658,
+    "fa": 0.0011,
+    "miss": 0.0409,
+    "conf": 0.0238,
+    "jer": 0.0875,
+    "ref_speech_s": 267.859
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32319",
+   "split": "eval",
+   "duration": 368.208,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1261,
+   "rtfx": 954.9,
+   "primary@0.0": {
+    "der": 0.1049,
+    "fa": 0.0036,
+    "miss": 0.1013,
+    "conf": 0.0001,
+    "jer": 0.1085,
+    "ref_speech_s": 387.609
+   },
+   "primary@0.25": {
+    "der": 0.0363,
+    "fa": 0.0,
+    "miss": 0.0363,
+    "conf": 0.0,
+    "jer": 0.0319,
+    "ref_speech_s": 273.089
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.079,
+    "fa": 0.0031,
+    "miss": 0.0758,
+    "conf": 0.0001,
+    "jer": 0.0806,
+    "ref_speech_s": 377.199
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0378,
+    "fa": 0.0,
+    "miss": 0.0378,
+    "conf": 0.0,
+    "jer": 0.0358,
+    "ref_speech_s": 276.76
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32320",
+   "split": "eval",
+   "duration": 357.348,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.169,
+   "rtfx": 1185.4,
+   "primary@0.0": {
+    "der": 0.0913,
+    "fa": 0.0052,
+    "miss": 0.0857,
+    "conf": 0.0005,
+    "jer": 0.0999,
+    "ref_speech_s": 384.32
+   },
+   "primary@0.25": {
+    "der": 0.0227,
+    "fa": 0.0002,
+    "miss": 0.0225,
+    "conf": 0.0,
+    "jer": 0.0238,
+    "ref_speech_s": 259.08
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0461,
+    "fa": 0.0284,
+    "miss": 0.0166,
+    "conf": 0.0011,
+    "jer": 0.0555,
+    "ref_speech_s": 349.24
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.007,
+    "fa": 0.0006,
+    "miss": 0.0064,
+    "conf": 0.0,
+    "jer": 0.0046,
+    "ref_speech_s": 235.16
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0653,
+    "fa": 0.0069,
+    "miss": 0.0577,
+    "conf": 0.0007,
+    "jer": 0.0731,
+    "ref_speech_s": 372.27
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0224,
+    "fa": 0.0005,
+    "miss": 0.0219,
+    "conf": 0.0,
+    "jer": 0.0255,
+    "ref_speech_s": 260.24
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32321",
+   "split": "eval",
+   "duration": 357.068,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.196,
+   "rtfx": 1050.6,
+   "primary@0.0": {
+    "der": 0.0864,
+    "fa": 0.0051,
+    "miss": 0.0805,
+    "conf": 0.0008,
+    "jer": 0.1014,
+    "ref_speech_s": 399.178
+   },
+   "primary@0.25": {
+    "der": 0.0279,
+    "fa": 0.0,
+    "miss": 0.0275,
+    "conf": 0.0004,
+    "jer": 0.0302,
+    "ref_speech_s": 274.43
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0327,
+    "fa": 0.0236,
+    "miss": 0.0083,
+    "conf": 0.0008,
+    "jer": 0.0478,
+    "ref_speech_s": 363.52
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0011,
+    "fa": 0.0,
+    "miss": 0.0011,
+    "conf": 0.0,
+    "jer": 0.0016,
+    "ref_speech_s": 247.41
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0657,
+    "fa": 0.0114,
+    "miss": 0.0534,
+    "conf": 0.0009,
+    "jer": 0.0738,
+    "ref_speech_s": 385.249
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0251,
+    "fa": 0.0037,
+    "miss": 0.0213,
+    "conf": 0.0,
+    "jer": 0.0227,
+    "ref_speech_s": 271.159
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32322",
+   "split": "eval",
+   "duration": 359.173,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2596,
+   "rtfx": 1025.5,
+   "primary@0.0": {
+    "der": 0.0923,
+    "fa": 0.0029,
+    "miss": 0.0884,
+    "conf": 0.001,
+    "jer": 0.1153,
+    "ref_speech_s": 431.938
+   },
+   "primary@0.25": {
+    "der": 0.0257,
+    "fa": 0.0,
+    "miss": 0.0251,
+    "conf": 0.0006,
+    "jer": 0.0312,
+    "ref_speech_s": 269.588
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0443,
+    "fa": 0.0268,
+    "miss": 0.016,
+    "conf": 0.0015,
+    "jer": 0.0668,
+    "ref_speech_s": 390.85
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0034,
+    "fa": 0.0005,
+    "miss": 0.0029,
+    "conf": 0.0,
+    "jer": 0.0064,
+    "ref_speech_s": 238.51
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0677,
+    "fa": 0.0041,
+    "miss": 0.0621,
+    "conf": 0.0015,
+    "jer": 0.0854,
+    "ref_speech_s": 419.388
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0236,
+    "fa": 0.0,
+    "miss": 0.0236,
+    "conf": 0.0,
+    "jer": 0.0291,
+    "ref_speech_s": 265.003
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32323",
+   "split": "eval",
+   "duration": 359.508,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2121,
+   "rtfx": 1173.1,
+   "primary@0.0": {
+    "der": 0.0892,
+    "fa": 0.0056,
+    "miss": 0.0834,
+    "conf": 0.0003,
+    "jer": 0.0899,
+    "ref_speech_s": 421.578
+   },
+   "primary@0.25": {
+    "der": 0.0343,
+    "fa": 0.0,
+    "miss": 0.0343,
+    "conf": 0.0,
+    "jer": 0.0294,
+    "ref_speech_s": 260.99
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0672,
+    "fa": 0.0072,
+    "miss": 0.0597,
+    "conf": 0.0003,
+    "jer": 0.0682,
+    "ref_speech_s": 410.305
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0283,
+    "fa": 0.0,
+    "miss": 0.0283,
+    "conf": 0.0,
+    "jer": 0.0244,
+    "ref_speech_s": 270.534
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32325",
+   "split": "eval",
+   "duration": 357.598,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.245,
+   "rtfx": 1033.2,
+   "primary@0.0": {
+    "der": 0.1033,
+    "fa": 0.0049,
+    "miss": 0.0967,
+    "conf": 0.0018,
+    "jer": 0.1062,
+    "ref_speech_s": 428.079
+   },
+   "primary@0.25": {
+    "der": 0.0335,
+    "fa": 0.0,
+    "miss": 0.0331,
+    "conf": 0.0004,
+    "jer": 0.032,
+    "ref_speech_s": 265.329
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0879,
+    "fa": 0.0089,
+    "miss": 0.0769,
+    "conf": 0.0021,
+    "jer": 0.0891,
+    "ref_speech_s": 417.148
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0322,
+    "fa": 0.0004,
+    "miss": 0.0318,
+    "conf": 0.0,
+    "jer": 0.028,
+    "ref_speech_s": 268.688
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32331",
+   "split": "eval",
+   "duration": 360.038,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.0924,
+   "rtfx": 1097.9,
+   "primary@0.0": {
+    "der": 0.1082,
+    "fa": 0.0027,
+    "miss": 0.1055,
+    "conf": 0.0,
+    "jer": 0.1128,
+    "ref_speech_s": 360.819
+   },
+   "primary@0.25": {
+    "der": 0.0309,
+    "fa": 0.0,
+    "miss": 0.0309,
+    "conf": 0.0,
+    "jer": 0.0369,
+    "ref_speech_s": 248.899
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.088,
+    "fa": 0.0062,
+    "miss": 0.0817,
+    "conf": 0.0001,
+    "jer": 0.0916,
+    "ref_speech_s": 350.164
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.039,
+    "fa": 0.0011,
+    "miss": 0.0379,
+    "conf": 0.0,
+    "jer": 0.041,
+    "ref_speech_s": 256.269
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32332",
+   "split": "eval",
+   "duration": 358.593,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.0983,
+   "rtfx": 941.3,
+   "primary@0.0": {
+    "der": 0.0998,
+    "fa": 0.0037,
+    "miss": 0.0958,
+    "conf": 0.0004,
+    "jer": 0.1189,
+    "ref_speech_s": 370.109
+   },
+   "primary@0.25": {
+    "der": 0.0382,
+    "fa": 0.0,
+    "miss": 0.0382,
+    "conf": 0.0,
+    "jer": 0.0499,
+    "ref_speech_s": 268.979
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0805,
+    "fa": 0.0048,
+    "miss": 0.0752,
+    "conf": 0.0004,
+    "jer": 0.0955,
+    "ref_speech_s": 361.49
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0425,
+    "fa": 0.0,
+    "miss": 0.0425,
+    "conf": 0.0,
+    "jer": 0.0481,
+    "ref_speech_s": 276.28
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32333",
+   "split": "eval",
+   "duration": 357.963,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1449,
+   "rtfx": 894.5,
+   "primary@0.0": {
+    "der": 0.1061,
+    "fa": 0.003,
+    "miss": 0.1018,
+    "conf": 0.0013,
+    "jer": 0.113,
+    "ref_speech_s": 387.4
+   },
+   "primary@0.25": {
+    "der": 0.0392,
+    "fa": 0.0,
+    "miss": 0.0389,
+    "conf": 0.0003,
+    "jer": 0.0464,
+    "ref_speech_s": 255.78
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0747,
+    "fa": 0.003,
+    "miss": 0.0704,
+    "conf": 0.0013,
+    "jer": 0.0835,
+    "ref_speech_s": 374.378
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0305,
+    "fa": 0.0,
+    "miss": 0.0302,
+    "conf": 0.0003,
+    "jer": 0.0374,
+    "ref_speech_s": 262.868
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32334",
+   "split": "eval",
+   "duration": 358.043,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1673,
+   "rtfx": 1061.3,
+   "primary@0.0": {
+    "der": 0.1137,
+    "fa": 0.0038,
+    "miss": 0.1095,
+    "conf": 0.0004,
+    "jer": 0.1214,
+    "ref_speech_s": 391.009
+   },
+   "primary@0.25": {
+    "der": 0.0436,
+    "fa": 0.0,
+    "miss": 0.0436,
+    "conf": 0.0,
+    "jer": 0.0444,
+    "ref_speech_s": 268.989
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0842,
+    "fa": 0.0048,
+    "miss": 0.0792,
+    "conf": 0.0001,
+    "jer": 0.0877,
+    "ref_speech_s": 377.794
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0385,
+    "fa": 0.0,
+    "miss": 0.0385,
+    "conf": 0.0,
+    "jer": 0.0354,
+    "ref_speech_s": 271.433
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32335",
+   "split": "eval",
+   "duration": 356.703,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.0885,
+   "rtfx": 951.7,
+   "primary@0.0": {
+    "der": 0.1084,
+    "fa": 0.0052,
+    "miss": 0.1023,
+    "conf": 0.0008,
+    "jer": 0.1135,
+    "ref_speech_s": 356.96
+   },
+   "primary@0.25": {
+    "der": 0.0378,
+    "fa": 0.0,
+    "miss": 0.0378,
+    "conf": 0.0,
+    "jer": 0.0383,
+    "ref_speech_s": 243.52
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0874,
+    "fa": 0.0106,
+    "miss": 0.0752,
+    "conf": 0.0015,
+    "jer": 0.096,
+    "ref_speech_s": 344.563
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0392,
+    "fa": 0.0011,
+    "miss": 0.0381,
+    "conf": 0.0,
+    "jer": 0.046,
+    "ref_speech_s": 250.669
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32336",
+   "split": "eval",
+   "duration": 358.343,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.0436,
+   "rtfx": 943.8,
+   "primary@0.0": {
+    "der": 0.0864,
+    "fa": 0.0043,
+    "miss": 0.0818,
+    "conf": 0.0003,
+    "jer": 0.0936,
+    "ref_speech_s": 331.129
+   },
+   "primary@0.25": {
+    "der": 0.0242,
+    "fa": 0.001,
+    "miss": 0.0232,
+    "conf": 0.0,
+    "jer": 0.0284,
+    "ref_speech_s": 252.149
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0668,
+    "fa": 0.0061,
+    "miss": 0.0604,
+    "conf": 0.0003,
+    "jer": 0.0734,
+    "ref_speech_s": 322.99
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0253,
+    "fa": 0.001,
+    "miss": 0.0243,
+    "conf": 0.0,
+    "jer": 0.0233,
+    "ref_speech_s": 251.88
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32337",
+   "split": "eval",
+   "duration": 405.038,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1491,
+   "rtfx": 1117.0,
+   "primary@0.0": {
+    "der": 0.0923,
+    "fa": 0.0042,
+    "miss": 0.0881,
+    "conf": 0.0,
+    "jer": 0.1005,
+    "ref_speech_s": 431.05
+   },
+   "primary@0.25": {
+    "der": 0.0278,
+    "fa": 0.0,
+    "miss": 0.0278,
+    "conf": 0.0,
+    "jer": 0.0223,
+    "ref_speech_s": 302.39
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0687,
+    "fa": 0.0058,
+    "miss": 0.0627,
+    "conf": 0.0002,
+    "jer": 0.0644,
+    "ref_speech_s": 418.697
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0312,
+    "fa": 0.0012,
+    "miss": 0.03,
+    "conf": 0.0,
+    "jer": 0.0219,
+    "ref_speech_s": 311.14
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32338",
+   "split": "eval",
+   "duration": 357.383,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2045,
+   "rtfx": 941.7,
+   "primary@0.0": {
+    "der": 0.0873,
+    "fa": 0.0028,
+    "miss": 0.0845,
+    "conf": 0.0,
+    "jer": 0.0865,
+    "ref_speech_s": 401.628
+   },
+   "primary@0.25": {
+    "der": 0.0431,
+    "fa": 0.0,
+    "miss": 0.0431,
+    "conf": 0.0,
+    "jer": 0.0429,
+    "ref_speech_s": 305.917
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0311,
+    "fa": 0.0121,
+    "miss": 0.0187,
+    "conf": 0.0003,
+    "jer": 0.0309,
+    "ref_speech_s": 371.23
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0117,
+    "fa": 0.0,
+    "miss": 0.0117,
+    "conf": 0.0,
+    "jer": 0.0118,
+    "ref_speech_s": 265.18
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.078,
+    "fa": 0.0038,
+    "miss": 0.0741,
+    "conf": 0.0001,
+    "jer": 0.0771,
+    "ref_speech_s": 396.689
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0561,
+    "fa": 0.001,
+    "miss": 0.0551,
+    "conf": 0.0,
+    "jer": 0.056,
+    "ref_speech_s": 320.568
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32339",
+   "split": "eval",
+   "duration": 357.023,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1708,
+   "rtfx": 917.7,
+   "primary@0.0": {
+    "der": 0.0947,
+    "fa": 0.0036,
+    "miss": 0.0909,
+    "conf": 0.0002,
+    "jer": 0.1014,
+    "ref_speech_s": 391.659
+   },
+   "primary@0.25": {
+    "der": 0.0339,
+    "fa": 0.0,
+    "miss": 0.0339,
+    "conf": 0.0,
+    "jer": 0.039,
+    "ref_speech_s": 261.338
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0702,
+    "fa": 0.0046,
+    "miss": 0.0652,
+    "conf": 0.0004,
+    "jer": 0.075,
+    "ref_speech_s": 380.498
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0257,
+    "fa": 0.0,
+    "miss": 0.0257,
+    "conf": 0.0,
+    "jer": 0.0298,
+    "ref_speech_s": 263.328
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32341",
+   "split": "eval",
+   "duration": 358.553,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1825,
+   "rtfx": 946.6,
+   "primary@0.0": {
+    "der": 0.0853,
+    "fa": 0.0052,
+    "miss": 0.0774,
+    "conf": 0.0027,
+    "jer": 0.0985,
+    "ref_speech_s": 409.649
+   },
+   "primary@0.25": {
+    "der": 0.035,
+    "fa": 0.0,
+    "miss": 0.0328,
+    "conf": 0.0022,
+    "jer": 0.0399,
+    "ref_speech_s": 281.58
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0666,
+    "fa": 0.0035,
+    "miss": 0.0594,
+    "conf": 0.0037,
+    "jer": 0.0801,
+    "ref_speech_s": 402.62
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0363,
+    "fa": 0.0,
+    "miss": 0.0343,
+    "conf": 0.0021,
+    "jer": 0.0396,
+    "ref_speech_s": 290.98
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32342",
+   "split": "eval",
+   "duration": 358.458,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.2862,
+   "rtfx": 911.0,
+   "primary@0.0": {
+    "der": 0.1056,
+    "fa": 0.0049,
+    "miss": 0.0978,
+    "conf": 0.0029,
+    "jer": 0.1409,
+    "ref_speech_s": 459.889
+   },
+   "primary@0.25": {
+    "der": 0.0317,
+    "fa": 0.0,
+    "miss": 0.0316,
+    "conf": 0.0001,
+    "jer": 0.0243,
+    "ref_speech_s": 238.139
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0886,
+    "fa": 0.0083,
+    "miss": 0.0771,
+    "conf": 0.0032,
+    "jer": 0.1219,
+    "ref_speech_s": 447.969
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.04,
+    "fa": 0.0016,
+    "miss": 0.0383,
+    "conf": 0.0,
+    "jer": 0.0458,
+    "ref_speech_s": 254.941
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32344",
+   "split": "eval",
+   "duration": 359.683,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1477,
+   "rtfx": 1114.7,
+   "primary@0.0": {
+    "der": 0.1048,
+    "fa": 0.0019,
+    "miss": 0.1029,
+    "conf": 0.0,
+    "jer": 0.1093,
+    "ref_speech_s": 393.097
+   },
+   "primary@0.25": {
+    "der": 0.0419,
+    "fa": 0.0,
+    "miss": 0.0419,
+    "conf": 0.0,
+    "jer": 0.0449,
+    "ref_speech_s": 266.227
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.0831,
+    "fa": 0.0076,
+    "miss": 0.0753,
+    "conf": 0.0002,
+    "jer": 0.0847,
+    "ref_speech_s": 379.029
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0437,
+    "fa": 0.0009,
+    "miss": 0.0429,
+    "conf": 0.0,
+    "jer": 0.0433,
+    "ref_speech_s": 268.14
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32345",
+   "split": "eval",
+   "duration": 357.878,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.0944,
+   "rtfx": 968.8,
+   "primary@0.0": {
+    "der": 0.0995,
+    "fa": 0.0053,
+    "miss": 0.0936,
+    "conf": 0.0006,
+    "jer": 0.1029,
+    "ref_speech_s": 363.477
+   },
+   "primary@0.25": {
+    "der": 0.0439,
+    "fa": 0.0,
+    "miss": 0.0439,
+    "conf": 0.0,
+    "jer": 0.0442,
+    "ref_speech_s": 263.246
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.035,
+    "fa": 0.0189,
+    "miss": 0.016,
+    "conf": 0.0002,
+    "jer": 0.0382,
+    "ref_speech_s": 330.43
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0057,
+    "fa": 0.0,
+    "miss": 0.0057,
+    "conf": 0.0,
+    "jer": 0.0054,
+    "ref_speech_s": 237.18
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.075,
+    "fa": 0.0053,
+    "miss": 0.0692,
+    "conf": 0.0005,
+    "jer": 0.0808,
+    "ref_speech_s": 353.992
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0353,
+    "fa": 0.0,
+    "miss": 0.0353,
+    "conf": 0.0,
+    "jer": 0.0411,
+    "ref_speech_s": 266.718
+   }
+  },
+  {
+   "session_id": "notsofar1__MTG_32346",
+   "split": "eval",
+   "duration": 358.688,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.5831,
+   "rtfx": 950.7,
+   "primary@0.0": {
+    "der": 0.1299,
+    "fa": 0.0128,
+    "miss": 0.113,
+    "conf": 0.0041,
+    "jer": 0.1374,
+    "ref_speech_s": 621.138
+   },
+   "primary@0.25": {
+    "der": 0.0336,
+    "fa": 0.0,
+    "miss": 0.0336,
+    "conf": 0.0,
+    "jer": 0.0308,
+    "ref_speech_s": 175.533
+   },
+   "fastmss_mfa@0.0": {
+    "der": 0.0814,
+    "fa": 0.0473,
+    "miss": 0.03,
+    "conf": 0.0041,
+    "jer": 0.0835,
+    "ref_speech_s": 549.42
+   },
+   "fastmss_mfa@0.25": {
+    "der": 0.0084,
+    "fa": 0.0,
+    "miss": 0.0084,
+    "conf": 0.0,
+    "jer": 0.0083,
+    "ref_speech_s": 151.49
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.1151,
+    "fa": 0.0348,
+    "miss": 0.0749,
+    "conf": 0.0054,
+    "jer": 0.1189,
+    "ref_speech_s": 582.314
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.0386,
+    "fa": 0.005,
+    "miss": 0.0336,
+    "conf": 0.0,
+    "jer": 0.0332,
+    "ref_speech_s": 178.228
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5080"
+ },
+ "command": "python -m diards evaluate notsofar1 --view ihm-mix --out results/nemotron/notsofar1.ihm-mix --split eval"
+}

@@ -212,7 +212,7 @@ def results_markdown(r: dict) -> str:
              f"- sessions: {r['sessions']} ({r['hours']} h); speaker-count accuracy {100 * r['speaker_count_accuracy']:.1f}%, "
              f"MAE {r['speaker_count_mae']:.2f}; RTFx {r['rtfx_overall']}",
              "- scoring: pyannote.metrics, overlap included, UEM applied; collar = half-width in seconds", "",
-             "| reference | collar | DER % | FA % | Miss % | Conf % | JER % | ref speech h |",
+             "| reference | collar | DER % | FA % | Miss % | Conf % | JER % | scored ref speaker-time h |",
              "|---|---:|---:|---:|---:|---:|---:|---:|"]
     for key, v in r["summary"].items():
         ref, c = key.split("@")

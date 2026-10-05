@@ -73,3 +73,32 @@ dataset cards and README; this file keeps sources and first impressions.
   no overlap). vcon-dev/vcon-supreme-court-arguments packs it. Candidate for court domain.
 - DISPLACE 2024: Zenodo 14097187, CC BY 4.0, Indian languages + Indian English code-mixed -> not English-only.
   Nemotron trained on DISPLACE 2024 dev+eval.
+
+## Second pass (2026-10-05 afternoon)
+
+- CHiME-6: two references, "annotation RTTM" (human utterances) and "alignment RTTM" (GMM-HMM forced alignment,
+  official Track 2; github.com/nateanl/chime6_rttm). CHiME-7/8 UEMs start at the first annotated utterance because the
+  enrolment minute is unannotated but was scored in CHiME-6. CHiME6_falign repo adds FA for train.
+  Tar member prefix is `CHiME6_<split>/CHiME6/audio/<split>/`. ELDA mirror (openslr.elda.org) ~6 MB/s vs ~1 MB/s main.
+- DiPCo: CHiME-style JSON, per-device times identical; segments up to 10-15 s (README). Zenodo ~1 MB/s.
+- NOTSOFAR-1 on HF microsoft/NOTSOFAR (ungated): per meeting close_talk/CT_*.wav, sc_*/ch0.wav, mc_*/ch*.wav,
+  gt_transcription.json (utterances + word_timing), devices.json, gt_meeting_metadata.json.
+  FastMSS sessions MFA RTTMs cover dev + 80-meeting eval_small (MTG ids).
+- ICSI NXT: Segments/*.segs.xml with participant ids; 9-13% of words lack timings; many segments are noise-only.
+- Earnings-21 RTTMs added 2023-12 ("Adding RTTM files for DER evaluation"), method undocumented.
+- AfriSpeech-Dialog: transcript times "MM:SS:cc" hand-typed, cc clusters at 96-100/00-04 (=> ~1 s precision);
+  46/49 files have times (card claims 30).
+- PriMock57: channels isolated by ~50 dB -> per-channel activity is a reliable reference (see PRIMOCK57.md).
+- EasyCom: files in Git LFS, fetchable individually; VAD in 20 fps frames; 1-minute files; some JSON in cp1252.
+- MMCSG (CHiME-8 T3): registration needed; official note says RTTM segments "might often overestimate the actual
+  speaking time"; word TSVs are forced-aligned.
+- CHiME-9 ECHI: HF gated (manual DUA) -> 403. CHiME-10 Task 1 = ECHI-2.
+- CHiME-9 MCoRec: HF gated DUA, ~15 h total, up to 4 simultaneous conversations; language not stated.
+- Fearless Steps: CC BY 4.0, NIST OpenSAT registration, 80 h GT (FSC P3), 8 kHz mission audio.
+- MLC-SLM: ~500 h English 2-speaker (Nexdata registration); eval GT on HF bsmu/MLC-SLM-Eval (CC BY-SA 4.0, text only).
+- M3SD (Igor97/MISP-M3SD): 770 h, 16 languages, automatic audio-visual pseudo-labels -> excluded.
+- Seamless Interaction (facebook/seamless-interaction): ungated CC BY-NC, 27 TB, per-participant denoised audio,
+  automatic VAD (100 Hz) + transcripts; human annotations are behavioural only.
+- This American Life (Mao et al. 2020): Kaggle transcripts+alignments, audio links (many dead), 637 h.
+- SCOTUS/Oyez: API api.oyez.org; turns tile the timeline, no overlap; Oyez content CC BY-NC 4.0.
+- Nemotron 3 Diarization Transformers port: offline mode == 30.4 s NeMo config (chunk 340/rc 40/fifo 40/upd 300).
