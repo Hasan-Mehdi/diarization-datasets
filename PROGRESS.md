@@ -4,20 +4,22 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 16:17 EDT (from the system clock)_
+_Last updated: 2026-10-05 16:39 EDT (from the system clock)_
 
-- **Now doing:** Nemotron batches (AMI, CHiME-6, DiPCo, LibriCSS, EasyCom, then MSDWild, AVA-AVD, SBCSAE, Map Task,
-  AfriSpeech, SCOTUS), validation batch, and per-dataset "model error vs reference error" diagnosis + Whisper audit.
-- **Done so far:** all 18 datasets prepared; `diards` package with exports/tests (19 passing); cards drafted with
-  auto-filled numbers (`scripts/make_cards.py`); PRIMOCK57.md; appendix docs/OTHER_DATASETS.md.
-  **NeMo 3.1 cross-check:** official NeMo inference and the Transformers port agree within ~1% DER
-  ([results/nemo_crosscheck](results/nemo_crosscheck/README.md)).
-- **Results so far (Nemotron, collar 0):** VoxConverse test 8.4% (but in training data), CallHome Eng 11.7%,
-  NOTSOFAR-1 eval far-field 18.4% vs official utterances / 11.3% vs MFA reference; close-talk mix 14.5% / 9.6%;
-  PriMock57 24.2% vs official / 10.4% vs channel activity.
-- **New finding:** CallHome English (TalkBank HF version) has unlabelled turns: 38 of the 40 longest audible
-  "false alarm" regions contain intelligible speech per Whisper (e.g. eng_037: 121 s of speech with no reference).
-- **Next:** finish batches, diagnose every dataset, finalize cards + README recommendations, DONE.
+- **Now doing:** last Nemotron runs (CHiME-6 close-talk + dev, DiPCo, LibriCSS, EasyCom), then diagnosis of those,
+  final card numbers, ratings, README findings, DONE.
+- **Done:** all 18 datasets prepared, validated and profiled; Nemotron evaluated on 15 of them so far; diagnosis
+  tools (energy split, Whisper audit of false alarms, time-offset check) run on most; NeMo cross-check; PRIMOCK57.md.
+- **Headline results (Nemotron 3 Diarization, collar 0 / 0.25 s, primary reference):**
+  Map Task 7.9 / 1.9; VoxConverse test 8.4 / 5.7 (in training data); AMI test close-talk 9.2 / 3.6 (model card: 9.25);
+  AMI SDM 11.3 / 4.7; CallHome Eng 11.7 / 7.2; NOTSOFAR far-field 18.4 / 6.9; MSDWild-en 17.8 / 10.7;
+  Earnings-21 19.5 / 15.9 (8-speaker model limit); PriMock57 24.2 / 16.0 (10.4 / 4.1 vs channel activity);
+  AfriSpeech 26.7 / 24.5; SBCSAE 27.4 / 24.2; CallFriend 30.8 / 23.2; SCOTUS 31.7 / 30.3; CHiME-6 far-field eval
+  37.6 / 25.6; AVA-AVD-en 49.8 / 34.0.
+- **Reference problems found by the checks:** CallHome + CallFriend (TalkBank): missing turns (38/40 and 39/40 long
+  false alarms are real speech); AfriSpeech: hand-typed times ~0.45 s early + missing turns; SBCSAE, SCOTUS,
+  PriMock57, DiPCo, CallFriend: pauses labelled as speech; AMI MFA reference: whole utterances dropped in EN2002
+  test meetings; ICSI: one segment ends 35 min after the audio; earlier AVA-AVD claim corrected (labels fine).
 - **Needs Hasan (optional):** free sign-ups for Ego4D, MMCSG, CHiME-9 ECHI, Fearless Steps, MLC-SLM (docs/OTHER_DATASETS.md A).
 
 ## Environment decisions
