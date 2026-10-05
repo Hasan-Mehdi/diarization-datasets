@@ -1,0 +1,410 @@
+{
+ "dataset": "primock57",
+ "view": "mix",
+ "sessions": 57,
+ "median_abs_best_lag_s": 0.05,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "primock57__day1_consultation01",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8268,
+   "agreement_best": 0.8268,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day1_consultation02",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8394,
+   "agreement_best": 0.8399,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "primock57__day1_consultation03",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8439,
+   "agreement_best": 0.8448,
+   "gain": 0.0009
+  },
+  {
+   "session_id": "primock57__day1_consultation04",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8136,
+   "agreement_best": 0.8136,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day1_consultation05",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8431,
+   "agreement_best": 0.8432,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day1_consultation06",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8128,
+   "agreement_best": 0.8131,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "primock57__day1_consultation07",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8311,
+   "agreement_best": 0.8311,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day1_consultation08",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7891,
+   "agreement_best": 0.7901,
+   "gain": 0.001
+  },
+  {
+   "session_id": "primock57__day1_consultation09",
+   "best_lag_s": 0.2,
+   "agreement_at_0": 0.8141,
+   "agreement_best": 0.8151,
+   "gain": 0.001
+  },
+  {
+   "session_id": "primock57__day1_consultation10",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8139,
+   "agreement_best": 0.8141,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day1_consultation11",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8128,
+   "agreement_best": 0.8128,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day1_consultation12",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8176,
+   "agreement_best": 0.8176,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day1_consultation13",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8232,
+   "agreement_best": 0.8239,
+   "gain": 0.0007
+  },
+  {
+   "session_id": "primock57__day1_consultation14",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8387,
+   "agreement_best": 0.8388,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day1_consultation15",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7614,
+   "agreement_best": 0.7614,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day2_consultation01",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8323,
+   "agreement_best": 0.8323,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day2_consultation02",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7818,
+   "agreement_best": 0.7823,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "primock57__day2_consultation03",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.7835,
+   "agreement_best": 0.7844,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "primock57__day2_consultation04",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8037,
+   "agreement_best": 0.8037,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day2_consultation05",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8177,
+   "agreement_best": 0.8188,
+   "gain": 0.0011
+  },
+  {
+   "session_id": "primock57__day2_consultation06",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8442,
+   "agreement_best": 0.8442,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day2_consultation07",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8412,
+   "agreement_best": 0.8415,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "primock57__day2_consultation08",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8318,
+   "agreement_best": 0.8318,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day2_consultation09",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7991,
+   "agreement_best": 0.7991,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day2_consultation10",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.8061,
+   "agreement_best": 0.8063,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day3_consultation01",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.826,
+   "agreement_best": 0.826,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day3_consultation02",
+   "best_lag_s": -0.15,
+   "agreement_at_0": 0.802,
+   "agreement_best": 0.8023,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "primock57__day3_consultation03",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8196,
+   "agreement_best": 0.8197,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "primock57__day3_consultation04",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.8337,
+   "agreement_best": 0.8339,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day3_consultation05",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8219,
+   "agreement_best": 0.8224,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "primock57__day3_consultation06",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8565,
+   "agreement_best": 0.857,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "primock57__day3_consultation07",
+   "best_lag_s": -0.1,
+   "agreement_at_0": 0.8202,
+   "agreement_best": 0.8205,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "primock57__day3_consultation08",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8324,
+   "agreement_best": 0.8325,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "primock57__day3_consultation09",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8601,
+   "agreement_best": 0.8601,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day3_consultation10",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8103,
+   "agreement_best": 0.8103,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day4_consultation01",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.846,
+   "agreement_best": 0.8479,
+   "gain": 0.0019
+  },
+  {
+   "session_id": "primock57__day4_consultation02",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7922,
+   "agreement_best": 0.7922,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day4_consultation03",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8257,
+   "agreement_best": 0.8262,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "primock57__day4_consultation04",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8546,
+   "agreement_best": 0.8549,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "primock57__day4_consultation05",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.757,
+   "agreement_best": 0.7573,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "primock57__day4_consultation06",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8629,
+   "agreement_best": 0.8632,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "primock57__day4_consultation07",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8365,
+   "agreement_best": 0.837,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "primock57__day4_consultation08",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.7967,
+   "agreement_best": 0.7969,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "primock57__day4_consultation09",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8032,
+   "agreement_best": 0.8032,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day4_consultation10",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8182,
+   "agreement_best": 0.8182,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day5_consultation01",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.7861,
+   "agreement_best": 0.7863,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day5_consultation02",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7847,
+   "agreement_best": 0.7848,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day5_consultation03",
+   "best_lag_s": 0.2,
+   "agreement_at_0": 0.8023,
+   "agreement_best": 0.8025,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "primock57__day5_consultation04",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.7739,
+   "agreement_best": 0.7741,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "primock57__day5_consultation05",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8143,
+   "agreement_best": 0.8149,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "primock57__day5_consultation06",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8194,
+   "agreement_best": 0.82,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "primock57__day5_consultation07",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8111,
+   "agreement_best": 0.8113,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "primock57__day5_consultation08",
+   "best_lag_s": 0.2,
+   "agreement_at_0": 0.8023,
+   "agreement_best": 0.8025,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "primock57__day5_consultation09",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7615,
+   "agreement_best": 0.7622,
+   "gain": 0.0007
+  },
+  {
+   "session_id": "primock57__day5_consultation10",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.798,
+   "agreement_best": 0.798,
+   "gain": 0.0
+  },
+  {
+   "session_id": "primock57__day5_consultation11",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8511,
+   "agreement_best": 0.8512,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "primock57__day5_consultation12",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.7693,
+   "agreement_best": 0.7695,
+   "gain": 0.0001
+  }
+ ]
+}

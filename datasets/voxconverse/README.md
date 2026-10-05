@@ -82,8 +82,23 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 232 | 2.47 | 0.62 | 1.85 | 1.26 | 0.53 | 0.73 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 12 of 37 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (20.7 of 60.6 s). Examples: `voxconverse__kzmyi` 0.3-3.8 s: "That is very disturbing for people who are standing up here."; `voxconverse__gcvrb` 9.3-12.1 s: "I can be blamed, just you"; `voxconverse__gcvrb` 13.5-15.8 s: "So I do it like you"
 <!-- /auto:diagnosis -->
+
+**Reading the VoxConverse numbers.** 8.4% DER at collar 0 on the test set is close to published numbers for this
+model, but the model was trained on these files. Of the 37 longest audible "false alarms", Whisper finds
+intelligible speech in 12 (20.7 of 60.6 s). These are mostly short unlabelled stretches at the start of clips, e.g.
+`xggbk` 5.6-7.0 s *"Question number one, Mr Speaker."* and `kzmyi` 0.3-3.8 s. The rest is laughter, applause and
+music, where Whisper only hallucinates ("on and on and on"). So VoxConverse has a small amount of unlabelled speech,
+consistent with its semi-automatic origin. The energy-VAD outliers (`pqmho`, `tucrg`) are music and background
+sound, not missing speakers. Speaker counting is the weak point (53% exact on test, with up to 21 speakers).
+
 
 ## Quality rating
 

@@ -91,7 +91,9 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 
-**Whisper audit of the longest audible false alarms (default):** 38 of 40 regions (>= 1 s) contain >= 3 intelligible words, i.e. speech the reference does not label (92.2 of 94.7 s). Examples: `callhome_eng__eng_013` 44.9-50.3 s: "They said he doesn't want to start working because you didn't tell him exactly e"; `callhome_eng__eng_073` 603.6-607.2 s: "See, I should have planned to arrive on the same day that you arrived."; `callhome_eng__eng_047` 202.2-205.7 s: "and the barges go so slowly that like you can get off at a bridge"
+**Whisper audit of the longest audible false alarms (default):** 38 of 40 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (92.2 of 94.7 s). Examples: `callhome_eng__eng_013` 44.9-50.3 s: "They said he doesn't want to start working because you didn't tell him exactly e"; `callhome_eng__eng_073` 603.6-607.2 s: "See, I should have planned to arrive on the same day that you arrived."; `callhome_eng__eng_047` 202.2-205.7 s: "and the barges go so slowly that like you can get off at a bridge"
+
+**Time-offset check (default):** 0 of 140 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
 <!-- /auto:diagnosis -->
 
 **Missing turns in the TalkBank / HF version (annotation error, verified).** The model's longest audible "false

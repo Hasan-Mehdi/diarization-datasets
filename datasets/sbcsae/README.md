@@ -45,13 +45,22 @@ coded. The reference here has one segment per IU that contains at least one lexi
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| all | 60 | 23.31 | 21.36 | 0.916 | 0.071 | 0.0031 | 1/4/16 | 0.34/1.512/11.508 | 0.0054 | 1.62 | 13.49 |
+| ALL | 60 | 23.31 | 21.36 | 0.916 | 0.071 | 0.0031 | 1/4/16 | 0.34/1.512/11.508 | 0.0054 | 1.62 | 13.49 |
+
+Computed by `python -m diards stats sbcsae` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.sbcsae.md`](../../results/stats/stats.sbcsae.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `default`: 60 sessions, **0 errors**, 26 warnings (normalized files); 51 sessions had problems in the ORIGINAL labels that normalization fixed.
+- original-label issues: same_speaker_overlap = 918, duplicate_segment = 4
+- checks that fired (sessions): `info:silence_over_30s` 6, `info:speaker_under_1s` 7, `warning:fewer_than_two_speakers` 1, `warning:possible_unannotated_speech` 4, `warning:segments_over_60s` 21
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.4% of reference speech; reference speech without energy = 20.2%. Most-flagged sessions: `sbcsae__SBC024` (0.11), `sbcsae__SBC055` (0.09), `sbcsae__SBC038` (0.07), `sbcsae__SBC045` (0.06), `sbcsae__SBC058` (0.04)
+- full report: [`results/validation/validation.sbcsae.default.md`](../../results/validation/validation.sbcsae.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

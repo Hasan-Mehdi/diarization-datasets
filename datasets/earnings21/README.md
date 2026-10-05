@@ -64,7 +64,11 @@ View `default`: 44 sessions, **0 errors**, 8 warnings (normalized files); 0 sess
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (eval10, other) | 44 | 39.26 | primary | **19.54** | 3.56 | 3.99 | 11.99 | 48.01 | 15.90 | 20% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/earnings21.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?

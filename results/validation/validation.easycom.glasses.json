@@ -1,0 +1,314 @@
+{
+ "summary": {
+  "dataset": "easycom",
+  "view": "glasses",
+  "sessions": 12,
+  "errors": 0,
+  "warnings": 0,
+  "issue_counts": {
+   "info:segments_under_50ms": 1
+  },
+  "raw_label_issue_totals": {},
+  "sessions_with_raw_label_issues": 0,
+  "vad": {
+   "ref_speech_h": 4.11,
+   "vad_not_in_ref_frac": 0.0,
+   "ref_not_in_vad_frac": 0.5366,
+   "worst_sessions": [
+    [
+     "easycom__Session_3",
+     0.0005
+    ],
+    [
+     "easycom__Session_1",
+     0.0
+    ],
+    [
+     "easycom__Session_10",
+     0.0
+    ],
+    [
+     "easycom__Session_11",
+     0.0
+    ],
+    [
+     "easycom__Session_12",
+     0.0
+    ],
+    [
+     "easycom__Session_2",
+     0.0
+    ],
+    [
+     "easycom__Session_4",
+     0.0
+    ],
+    [
+     "easycom__Session_5",
+     0.0
+    ],
+    [
+     "easycom__Session_6",
+     0.0
+    ],
+    [
+     "easycom__Session_7",
+     0.0
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "easycom__Session_1",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -54.4,
+     "threshold_db": -45.4,
+     "p99_db": -36.2,
+     "vad_speech_s": 338.0,
+     "ref_speech_s": 1084.1,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 595.4,
+     "ref_not_in_vad_frac": 0.5493,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_10",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -48.2,
+     "threshold_db": -39.2,
+     "p99_db": -28.7,
+     "vad_speech_s": 426.8,
+     "ref_speech_s": 1060.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 448.0,
+     "ref_not_in_vad_frac": 0.4226,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_11",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -48.5,
+     "threshold_db": -39.5,
+     "p99_db": -33.0,
+     "vad_speech_s": 178.3,
+     "ref_speech_s": 1036.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 758.3,
+     "ref_not_in_vad_frac": 0.7317,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_12",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -53.8,
+     "threshold_db": -44.8,
+     "p99_db": -33.7,
+     "vad_speech_s": 728.2,
+     "ref_speech_s": 1528.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 495.3,
+     "ref_not_in_vad_frac": 0.324,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_2",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -54.2,
+     "threshold_db": -45.2,
+     "p99_db": -34.9,
+     "vad_speech_s": 414.9,
+     "ref_speech_s": 1200.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 579.1,
+     "ref_not_in_vad_frac": 0.4825,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -53.8,
+     "threshold_db": -44.8,
+     "p99_db": -31.5,
+     "vad_speech_s": 546.4,
+     "ref_speech_s": 1277.3,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0005,
+     "ref_not_in_vad_s": 503.5,
+     "ref_not_in_vad_frac": 0.3942,
+     "longest_vad_not_in_ref": [
+      [
+       525.23,
+       525.9
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_4",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -48.4,
+     "threshold_db": -39.4,
+     "p99_db": -30.2,
+     "vad_speech_s": 334.8,
+     "ref_speech_s": 1455.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 925.7,
+     "ref_not_in_vad_frac": 0.6363,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_5",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -48.3,
+     "threshold_db": -39.3,
+     "p99_db": -31.4,
+     "vad_speech_s": 392.8,
+     "ref_speech_s": 1262.6,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 690.3,
+     "ref_not_in_vad_frac": 0.5467,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_6",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -48.2,
+     "threshold_db": -39.2,
+     "p99_db": -27.5,
+     "vad_speech_s": 580.6,
+     "ref_speech_s": 1463.9,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 673.4,
+     "ref_not_in_vad_frac": 0.46,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_7",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -48.0,
+     "threshold_db": -39.0,
+     "p99_db": -29.7,
+     "vad_speech_s": 408.0,
+     "ref_speech_s": 1150.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 569.3,
+     "ref_not_in_vad_frac": 0.4948,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -48.0,
+     "threshold_db": -39.0,
+     "p99_db": -32.6,
+     "vad_speech_s": 221.7,
+     "ref_speech_s": 1158.8,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 776.8,
+     "ref_not_in_vad_frac": 0.6703,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "easycom__Session_9",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -48.2,
+     "threshold_db": -39.2,
+     "p99_db": -34.1,
+     "vad_speech_s": 123.2,
+     "ref_speech_s": 1117.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 923.9,
+     "ref_not_in_vad_frac": 0.8268,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  }
+ ]
+}

@@ -23,7 +23,20 @@ import soundfile as sf  # noqa: E402
 from diards.core import NormalizedDataset  # noqa: E402
 
 HALLUCINATIONS = {"thank you", "thanks for watching", "you", "bye", "thank you very much", "subtitles by",
-                  "please subscribe", "music", "applause", "laughter"}
+                  "please subscribe", "music", "applause", "laughter", "on and on and on", "see you next week"}
+
+
+def is_speech(text: str) -> bool:
+    """>= 3 words, not a known hallucination, and not repetitive (Whisper loops on music/laughter/noise)."""
+    w = words(text)
+    if len(w) < 3:
+        return False
+    joined = " ".join(w)
+    if any(h in joined for h in HALLUCINATIONS if len(h.split()) >= 3) or joined in HALLUCINATIONS:
+        return False
+    if len(set(w)) / len(w) < 0.6:
+        return False
+    return True
 
 
 def words(text: str) -> list[str]:
@@ -37,7 +50,16 @@ def main():
     ap.add_argument("--view")
     ap.add_argument("--max-regions", type=int, default=40)
     ap.add_argument("--min-dur", type=float, default=1.0)
+    ap.add_argument("--rescore", action="store_true", help="recompute the speech flags of an existing audit JSON")
     a = ap.parse_args()
+    if a.rescore:
+        view = a.view or NormalizedDataset(a.dataset).default_view
+        p = Path("results/diagnosis") / f"fa_audit.{a.dataset}.{view}.json"
+        out = json.loads(p.read_text(encoding="utf-8"))
+        for r in out["regions"]:
+            r["speech"] = is_speech(r["whisper"])
+        _finish(out, p)
+        return
     ds = NormalizedDataset(a.dataset)
     view = a.view or ds.default_view
     diag = json.loads((Path("results/diagnosis") / f"diagnosis.{a.dataset}.{view}.json").read_text(encoding="utf-8"))
@@ -62,17 +84,21 @@ def main():
             text = asr({"raw": x[int(st * sr): int(en * sr)], "sampling_rate": sr},
                        generate_kwargs={"language": "en", "task": "transcribe"})["text"].strip()
             w = words(text)
-            speech = len(w) >= 3 and " ".join(w) not in HALLUCINATIONS
+            speech = is_speech(text)
             out["regions"].append({"session_id": sid, "start": st, "end": en, "dur": round(dur, 2),
                                    "whisper": text, "words": len(w), "speech": speech})
+    _finish(out, Path("results/diagnosis") / f"fa_audit.{a.dataset}.{view}.json")
+
+
+def _finish(out: dict, p: Path) -> None:
     n_speech = sum(r["speech"] for r in out["regions"])
     out["regions_with_speech"] = n_speech
+    out["regions_checked"] = len(out["regions"])
     out["seconds_checked"] = round(sum(r["dur"] for r in out["regions"]), 1)
     out["seconds_with_speech"] = round(sum(r["dur"] for r in out["regions"] if r["speech"]), 1)
-    p = Path("results/diagnosis") / f"fa_audit.{a.dataset}.{view}.json"
     p.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8", newline="\n")
-    print(f"{a.dataset}/{view}: {n_speech}/{len(regions)} long audible false-alarm regions contain >= 3 words "
-          f"({out['seconds_with_speech']} of {out['seconds_checked']} s)")
+    print(f"{out['dataset']}/{out['view']}: {n_speech}/{len(out['regions'])} long audible false-alarm regions contain "
+          f"intelligible speech ({out['seconds_with_speech']} of {out['seconds_checked']} s)")
 
 
 if __name__ == "__main__":

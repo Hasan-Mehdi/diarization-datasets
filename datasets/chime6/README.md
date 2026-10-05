@@ -51,13 +51,22 @@ Track 2 reference and is the primary reference here. The human one is in `rttm_a
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| dev | 2 | 4.46 | 3.39 | 0.764 | 0.286 | 0.0521 | 4/4/4 | 0.17/0.95/4.702 | 0.0619 | 1.42 | 33.66 |
+| eval | 2 | 5.21 | 3.46 | 0.667 | 0.226 | 0.0447 | 4/4/4 | 0.18/0.92/3.83 | 0.058 | 2.11 | 30.95 |
+| ALL | 4 | 9.67 | 6.85 | 0.712 | 0.255 | 0.0484 | 4/4/4 | 0.18/0.93/4.25 | 0.0599 | 1.76 | 32.2 |
+
+Computed by `python -m diards stats chime6` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.chime6.md`](../../results/stats/stats.chime6.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `ihm-mix`: 4 sessions, **0 errors**, 2 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
+- checks that fired (sessions): `info:segments_under_50ms` 4, `info:silence_over_30s` 2, `warning:possible_unannotated_speech` 2
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 4.2% of reference speech; reference speech without energy = 8.7%. Most-flagged sessions: `chime6__S21` (0.08), `chime6__S01` (0.06), `chime6__S02` (0.02), `chime6__S09` (0.01)
+- full report: [`results/validation/validation.chime6.ihm-mix.md`](../../results/validation/validation.chime6.ihm-mix.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

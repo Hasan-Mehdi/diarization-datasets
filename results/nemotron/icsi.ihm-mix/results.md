@@ -1,15 +1,15 @@
 # Nemotron 3 Diarization on icsi (view: ihm-mix)
 
 - model: `nvidia/Nemotron-3-Diarization` (revision f667ed73aee57d40cc39428eb768b4fd87a0a29e); transformers (offline mode), chunk 340 / right ctx 40 / fifo 40 / update 300 / spk cache 264, threshold 0.5
-- sessions: 3 (2.77 h); speaker-count accuracy 100.0%, MAE 0.00; RTFx 833.6
+- sessions: 3 (2.77 h); speaker-count accuracy 100.0%, MAE 0.00; RTFx None
 - scoring: pyannote.metrics, overlap included, UEM applied; collar = half-width in seconds
 
-| reference | collar | DER % | FA % | Miss % | Conf % | JER % | ref speech h |
+| reference | collar | DER % | FA % | Miss % | Conf % | JER % | scored ref speaker-time h |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | primary | 0.0 | 15.86 | 12.22 | 2.89 | 0.76 | 16.36 | 2.55 |
 | primary | 0.25 | 5.31 | 3.72 | 1.41 | 0.19 | 7.28 | 1.75 |
-| words | 0.0 | 44.46 | 43.40 | 0.62 | 0.44 | 35.46 | 1.95 |
-| words | 0.25 | 28.20 | 28.09 | 0.05 | 0.06 | 29.62 | 0.95 |
+| words_gap0.2 | 0.0 | 39.44 | 38.39 | 0.64 | 0.41 | 33.15 | 2.02 |
+| words_gap0.2 | 0.25 | 22.96 | 22.84 | 0.06 | 0.05 | 26.11 | 1.22 |
 
 Per session (primary reference, collar 0):
 

@@ -50,7 +50,14 @@ splits are the usual test material.
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| few.train | 744 | 23.75 | 22.03 | 0.928 | 0.1 | 0.0027 | 2/2/4 | 0.411/1.574/11.333 | 0.0002 | 1.248 | 11.85 |
+| few.val | 114 | 3.02 | 2.75 | 0.912 | 0.109 | 0.0046 | 2/2/4 | 0.408/1.418/9.824 | 0.0 | 1.334 | 14.37 |
+| many.val | 36 | 1.14 | 0.99 | 0.873 | 0.111 | 0.0135 | 3/5/9 | 0.375/1.176/12.373 | 0.0 | 2.111 | 17.02 |
+| ALL | 894 | 27.91 | 25.78 | 0.924 | 0.101 | 0.0033 | 2/2/9 | 0.408/1.524/11.142 | 0.0002 | 1.293 | 12.34 |
+
+Computed by `python -m diards stats msdwild_en` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.msdwild_en.md`](../../results/stats/stats.msdwild_en.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
@@ -62,7 +69,11 @@ _Validation not run yet._
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (few.val, many.val) | 150 | 4.16 | primary | **17.79** | 3.87 | 9.55 | 4.37 | 32.71 | 10.67 | 76% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/msdwild_en.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?

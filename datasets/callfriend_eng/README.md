@@ -73,7 +73,15 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 40 | 16.0 | 11.65 | 4.36 | 5.04 | 3.36 | 1.67 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 39 of 40 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (91.8 of 93.7 s). Examples: `callfriend_eng__eng-n_026` 264.6-268.8 s: "You know when Reagan says something stupid, people turn it to disapprove, and wh"; `callfriend_eng__eng-s_001` 45.1-48.4 s: "He's a very talented accomplice."; `callfriend_eng__eng-s_001` 19.4-22.6 s: "I mean, you know, for just a casual outing with your children."
+
+**Time-offset check (default):** 1 of 40 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.175 s; shifted: `callfriend_eng__eng-n_000` (+4.30 s).
 <!-- /auto:diagnosis -->
 
 **Why the DER is so high (30.8% at collar 0, 23.2% at 0.25 s).** Mostly the reference: 16% of reference speech is
@@ -83,7 +91,11 @@ pauses and gaps as speech. Two more problems:
 - `eng-s_007` (two male speakers, 30 min) has 34% speaker confusion. In every 5-minute window both reference
   speakers map to both model speakers in similar proportions. Either the two voices are too similar on the phone
   line for the model, or the reference speaker codes are inconsistent; this was not resolved by listening.
-Use CallFriend at collar >= 0.25 s, and prefer CallHome English or Map Task for two-speaker evaluation.
+- **Missing turns:** 39 of the 40 longest audible "false alarms" contain intelligible speech per Whisper, and the
+  time-offset check rules out a shifted reference (median best lag 0.18 s; only the truncated `eng-n_000` is
+  shifted). So, like CallHome, some turns were simply not transcribed or lost in the conversion.
+Use CallFriend at collar >= 0.25 s, check the flagged files, and prefer Map Task (or CallHome with the flagged calls
+removed) for two-speaker evaluation.
 
 
 ## Quality rating

@@ -1,0 +1,180 @@
+{
+ "summary": {
+  "dataset": "icsi",
+  "hyp_view": "ihm-mix",
+  "vad_view": "ihm-mix",
+  "sessions": 3,
+  "ref_speech_h": 2.25,
+  "miss_pct": 1.16,
+  "miss_in_silence_pct": 0.59,
+  "miss_with_energy_pct": 0.57,
+  "fa_pct": 7.37,
+  "fa_with_energy_pct": 2.4,
+  "fa_in_silence_pct": 4.97,
+  "note": "speech-detection errors only (speaker-agnostic union of segments), % of reference speech time"
+ },
+ "sessions": [
+  {
+   "session_id": "icsi__Bmr013",
+   "ref": 2281.93,
+   "miss": 22.88,
+   "fa": 160.34,
+   "miss_silent": 8.13,
+   "fa_energy": 68.05,
+   "miss_energy": 14.75,
+   "fa_silent": 92.29,
+   "examples_miss_silent": [
+    [
+     655.38,
+     655.86
+    ],
+    [
+     2673.04,
+     2673.36
+    ],
+    [
+     2752.3,
+     2752.6
+    ],
+    [
+     639.65,
+     639.94
+    ],
+    [
+     414.91,
+     415.19
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     556.31,
+     558.04
+    ],
+    [
+     2610.02,
+     2611.66
+    ],
+    [
+     1443.65,
+     1445.12
+    ],
+    [
+     2611.9,
+     2612.78
+    ],
+    [
+     1638.12,
+     1638.99
+    ]
+   ]
+  },
+  {
+   "session_id": "icsi__Bmr018",
+   "ref": 2963.49,
+   "miss": 12.32,
+   "fa": 253.72,
+   "miss_silent": 8.08,
+   "fa_energy": 62.54,
+   "miss_energy": 4.24,
+   "fa_silent": 191.18,
+   "examples_miss_silent": [
+    [
+     2823.41,
+     2824.13
+    ],
+    [
+     227.2,
+     227.63
+    ],
+    [
+     1499.22,
+     1499.63
+    ],
+    [
+     2192.61,
+     2192.96
+    ],
+    [
+     2774.03,
+     2774.37
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     2349.98,
+     2351.56
+    ],
+    [
+     66.79,
+     67.63
+    ],
+    [
+     1141.64,
+     1142.43
+    ],
+    [
+     3420.25,
+     3420.85
+    ],
+    [
+     2708.54,
+     2709.12
+    ]
+   ]
+  },
+  {
+   "session_id": "icsi__Bro021",
+   "ref": 2868.52,
+   "miss": 59.1,
+   "fa": 183.97,
+   "miss_silent": 31.95,
+   "fa_energy": 64.27,
+   "miss_energy": 27.16,
+   "fa_silent": 119.7,
+   "examples_miss_silent": [
+    [
+     1852.05,
+     1852.79
+    ],
+    [
+     3021.88,
+     3022.59
+    ],
+    [
+     2545.0,
+     2545.68
+    ],
+    [
+     2389.6,
+     2390.26
+    ],
+    [
+     545.75,
+     546.39
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     26.22,
+     27.45
+    ],
+    [
+     71.26,
+     72.1
+    ],
+    [
+     2908.93,
+     2909.76
+    ],
+    [
+     2499.59,
+     2500.21
+    ],
+    [
+     1441.89,
+     1442.5
+    ]
+   ]
+  }
+ ]
+}

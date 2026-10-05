@@ -1,0 +1,4193 @@
+{
+ "summary": {
+  "dataset": "sbcsae",
+  "view": "default",
+  "sessions": 60,
+  "errors": 0,
+  "warnings": 26,
+  "issue_counts": {
+   "info:silence_over_30s": 6,
+   "info:speaker_under_1s": 7,
+   "warning:fewer_than_two_speakers": 1,
+   "warning:possible_unannotated_speech": 4,
+   "warning:segments_over_60s": 21
+  },
+  "raw_label_issue_totals": {
+   "same_speaker_overlap": 918,
+   "duplicate_segment": 4
+  },
+  "sessions_with_raw_label_issues": 51,
+  "vad": {
+   "ref_speech_h": 21.36,
+   "vad_not_in_ref_frac": 0.0141,
+   "ref_not_in_vad_frac": 0.2015,
+   "worst_sessions": [
+    [
+     "sbcsae__SBC024",
+     0.1112
+    ],
+    [
+     "sbcsae__SBC055",
+     0.0944
+    ],
+    [
+     "sbcsae__SBC038",
+     0.0657
+    ],
+    [
+     "sbcsae__SBC045",
+     0.0624
+    ],
+    [
+     "sbcsae__SBC058",
+     0.043
+    ],
+    [
+     "sbcsae__SBC018",
+     0.0342
+    ],
+    [
+     "sbcsae__SBC037",
+     0.0337
+    ],
+    [
+     "sbcsae__SBC054",
+     0.0328
+    ],
+    [
+     "sbcsae__SBC022",
+     0.0284
+    ],
+    [
+     "sbcsae__SBC050",
+     0.0274
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "sbcsae__SBC001",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "6 segment(s) longer than 60 s (merged turns?)",
+     "longest": 133.7
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -37.9,
+     "threshold_db": -28.9,
+     "p99_db": -9.8,
+     "vad_speech_s": 974.0,
+     "ref_speech_s": 1507.2,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0006,
+     "ref_not_in_vad_s": 297.3,
+     "ref_not_in_vad_frac": 0.1973,
+     "longest_vad_not_in_ref": [
+      [
+       1104.55,
+       1105.38
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       166.7,
+       167.65,
+       "SBC001_LYNN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC002",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -45.3,
+     "threshold_db": -35.5,
+     "p99_db": -12.7,
+     "vad_speech_s": 1007.9,
+     "ref_speech_s": 1325.7,
+     "vad_not_in_ref_s": 26.5,
+     "vad_not_in_ref_frac_of_ref": 0.02,
+     "ref_not_in_vad_s": 201.5,
+     "ref_not_in_vad_frac": 0.152,
+     "longest_vad_not_in_ref": [
+      [
+       1345.34,
+       1349.83
+      ],
+      [
+       1175.34,
+       1177.89
+      ],
+      [
+       1236.51,
+       1238.79
+      ],
+      [
+       165.26,
+       166.96
+      ],
+      [
+       1091.17,
+       1092.73
+      ],
+      [
+       145.61,
+       147.13
+      ],
+      [
+       1351.03,
+       1352.47
+      ],
+      [
+       139.31,
+       140.61
+      ],
+      [
+       901.07,
+       902.24
+      ],
+      [
+       1399.37,
+       1400.51
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 11,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       275.65,
+       276.5,
+       "SBC002_JAMI"
+      ],
+      [
+       328.25,
+       329.57,
+       "SBC002_JAMI"
+      ],
+      [
+       333.81,
+       334.41,
+       "SBC002_JAMI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC003",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -36.8,
+     "threshold_db": -27.8,
+     "p99_db": -15.2,
+     "vad_speech_s": 719.7,
+     "ref_speech_s": 1514.6,
+     "vad_not_in_ref_s": 6.2,
+     "vad_not_in_ref_frac_of_ref": 0.0041,
+     "ref_not_in_vad_s": 516.7,
+     "ref_not_in_vad_frac": 0.3412,
+     "longest_vad_not_in_ref": [
+      [
+       24.64,
+       26.02
+      ],
+      [
+       1192.01,
+       1193.37
+      ],
+      [
+       1482.27,
+       1483.58
+      ],
+      [
+       1472.27,
+       1473.19
+      ],
+      [
+       1253.16,
+       1253.79
+      ],
+      [
+       1508.66,
+       1509.25
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 5,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       53.92,
+       55.83,
+       "SBC003_MARI"
+      ],
+      [
+       83.39,
+       83.81,
+       "SBC003_MARI"
+      ],
+      [
+       505.0,
+       506.5,
+       "SBC003_MARI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC004",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "SBC004_KATE"
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 7,
+    "vad": {
+     "floor_db": -38.7,
+     "threshold_db": -29.7,
+     "p99_db": -10.6,
+     "vad_speech_s": 885.8,
+     "ref_speech_s": 1115.0,
+     "vad_not_in_ref_s": 10.3,
+     "vad_not_in_ref_frac_of_ref": 0.0093,
+     "ref_not_in_vad_s": 103.7,
+     "ref_not_in_vad_frac": 0.093,
+     "longest_vad_not_in_ref": [
+      [
+       283.77,
+       286.07
+      ],
+      [
+       273.41,
+       274.93
+      ],
+      [
+       1159.29,
+       1160.73
+      ],
+      [
+       395.55,
+       396.45
+      ],
+      [
+       102.5,
+       103.32
+      ],
+      [
+       661.03,
+       661.84
+      ],
+      [
+       174.81,
+       175.61
+      ],
+      [
+       632.3,
+       632.97
+      ],
+      [
+       880.62,
+       881.17
+      ],
+      [
+       3.12,
+       3.65
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1007.23,
+       1008.96,
+       "SBC004_SHA"
+      ],
+      [
+       20.27,
+       22.3,
+       "SBC004_KATH"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC005",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 70.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -37.8,
+     "threshold_db": -28.8,
+     "p99_db": -16.0,
+     "vad_speech_s": 479.0,
+     "ref_speech_s": 1136.5,
+     "vad_not_in_ref_s": 22.3,
+     "vad_not_in_ref_frac_of_ref": 0.0196,
+     "ref_not_in_vad_s": 518.7,
+     "ref_not_in_vad_frac": 0.4564,
+     "longest_vad_not_in_ref": [
+      [
+       1155.5,
+       1157.99
+      ],
+      [
+       1125.51,
+       1127.49
+      ],
+      [
+       873.06,
+       874.99
+      ],
+      [
+       937.09,
+       938.97
+      ],
+      [
+       886.9,
+       888.46
+      ],
+      [
+       967.77,
+       969.29
+      ],
+      [
+       1152.1,
+       1153.55
+      ],
+      [
+       1149.05,
+       1150.34
+      ],
+      [
+       677.93,
+       679.16
+      ],
+      [
+       364.14,
+       365.36
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       811.19,
+       812.4,
+       "SBC005_PAME"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC006",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 82.4
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -37.9,
+     "threshold_db": -28.9,
+     "p99_db": -12.0,
+     "vad_speech_s": 971.6,
+     "ref_speech_s": 1547.5,
+     "vad_not_in_ref_s": 21.8,
+     "vad_not_in_ref_frac_of_ref": 0.0141,
+     "ref_not_in_vad_s": 330.9,
+     "ref_not_in_vad_frac": 0.2138,
+     "longest_vad_not_in_ref": [
+      [
+       1202.46,
+       1205.95
+      ],
+      [
+       181.87,
+       185.3
+      ],
+      [
+       143.23,
+       146.1
+      ],
+      [
+       561.88,
+       564.28
+      ],
+      [
+       487.72,
+       488.99
+      ],
+      [
+       479.21,
+       480.34
+      ],
+      [
+       186.08,
+       187.2
+      ],
+      [
+       1164.66,
+       1165.7
+      ],
+      [
+       1206.37,
+       1207.27
+      ],
+      [
+       1212.09,
+       1212.95
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       167.7,
+       168.6,
+       "SBC006_ALIN"
+      ],
+      [
+       994.47,
+       996.92,
+       "SBC006_ALIN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC007",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -51.0,
+     "threshold_db": -42.0,
+     "p99_db": -28.1,
+     "vad_speech_s": 634.4,
+     "ref_speech_s": 1322.8,
+     "vad_not_in_ref_s": 1.4,
+     "vad_not_in_ref_frac_of_ref": 0.0011,
+     "ref_not_in_vad_s": 452.2,
+     "ref_not_in_vad_frac": 0.3418,
+     "longest_vad_not_in_ref": [
+      [
+       1236.44,
+       1237.36
+      ],
+      [
+       1011.73,
+       1012.23
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 9,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       12.64,
+       14.45,
+       "SBC007_MARY"
+      ],
+      [
+       269.35,
+       269.85,
+       "SBC007_MARY"
+      ],
+      [
+       269.75,
+       273.95,
+       "SBC007_MARY"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC008",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -42.6,
+     "threshold_db": -33.6,
+     "p99_db": -29.7,
+     "vad_speech_s": 100.2,
+     "ref_speech_s": 1462.9,
+     "vad_not_in_ref_s": 1.3,
+     "vad_not_in_ref_frac_of_ref": 0.0009,
+     "ref_not_in_vad_s": 1287.0,
+     "ref_not_in_vad_frac": 0.8797,
+     "longest_vad_not_in_ref": [
+      [
+       98.04,
+       98.76
+      ],
+      [
+       95.0,
+       95.55
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       508.07,
+       508.32,
+       "SBC008_RICK"
+      ],
+      [
+       727.41,
+       727.76,
+       "SBC008_RICK"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC009",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -53.9,
+     "threshold_db": -44.9,
+     "p99_db": -33.9,
+     "vad_speech_s": 304.3,
+     "ref_speech_s": 1358.9,
+     "vad_not_in_ref_s": 9.2,
+     "vad_not_in_ref_frac_of_ref": 0.0068,
+     "ref_not_in_vad_s": 918.3,
+     "ref_not_in_vad_frac": 0.6758,
+     "longest_vad_not_in_ref": [
+      [
+       494.73,
+       496.15
+      ],
+      [
+       213.15,
+       214.34
+      ],
+      [
+       220.52,
+       221.68
+      ],
+      [
+       133.4,
+       134.51
+      ],
+      [
+       352.32,
+       353.33
+      ],
+      [
+       1281.2,
+       1282.2
+      ],
+      [
+       381.5,
+       382.47
+      ],
+      [
+       975.74,
+       976.48
+      ],
+      [
+       230.88,
+       231.52
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC010",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -40.1,
+     "threshold_db": -31.1,
+     "p99_db": -15.8,
+     "vad_speech_s": 589.1,
+     "ref_speech_s": 926.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 164.0,
+     "ref_not_in_vad_frac": 0.177,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 5,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       373.53,
+       373.88,
+       "SBC010_PHIL"
+      ],
+      [
+       489.23,
+       490.03,
+       "SBC010_PHIL"
+      ],
+      [
+       264.83,
+       266.3,
+       "SBC010_BRAD"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC011",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -52.1,
+     "threshold_db": -43.1,
+     "p99_db": -22.9,
+     "vad_speech_s": 834.3,
+     "ref_speech_s": 1163.2,
+     "vad_not_in_ref_s": 13.1,
+     "vad_not_in_ref_frac_of_ref": 0.0112,
+     "ref_not_in_vad_s": 172.8,
+     "ref_not_in_vad_frac": 0.1486,
+     "longest_vad_not_in_ref": [
+      [
+       873.25,
+       875.7
+      ],
+      [
+       851.03,
+       852.37
+      ],
+      [
+       790.04,
+       791.22
+      ],
+      [
+       147.21,
+       148.37
+      ],
+      [
+       165.15,
+       166.26
+      ],
+      [
+       786.08,
+       787.11
+      ],
+      [
+       806.87,
+       807.69
+      ],
+      [
+       1229.69,
+       1230.49
+      ],
+      [
+       902.43,
+       903.16
+      ],
+      [
+       907.7,
+       908.39
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 4,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       767.9,
+       769.91,
+       "SBC011_DORI"
+      ],
+      [
+       1069.83,
+       1071.74,
+       "SBC011_DORI"
+      ],
+      [
+       1132.0,
+       1132.94,
+       "SBC011_DORI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC012",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "4 segment(s) longer than 60 s (merged turns?)",
+     "longest": 420.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -52.0,
+     "threshold_db": -40.5,
+     "p99_db": -13.9,
+     "vad_speech_s": 894.7,
+     "ref_speech_s": 1528.6,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 364.0,
+     "ref_not_in_vad_frac": 0.2381,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "duplicate_segment": 1,
+    "same_speaker_overlap": 2,
+    "examples": {
+     "duplicate_segment": [
+      [
+       807.02,
+       807.92,
+       "SBC012_FRAN"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       1504.59,
+       1504.96,
+       "SBC012_MONT"
+      ],
+      [
+       1379.98,
+       1381.19,
+       "SBC012_RAMO"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC013",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -42.1,
+     "threshold_db": -33.1,
+     "p99_db": -13.6,
+     "vad_speech_s": 893.1,
+     "ref_speech_s": 1526.8,
+     "vad_not_in_ref_s": 12.7,
+     "vad_not_in_ref_frac_of_ref": 0.0083,
+     "ref_not_in_vad_s": 428.4,
+     "ref_not_in_vad_frac": 0.2806,
+     "longest_vad_not_in_ref": [
+      [
+       1148.11,
+       1150.35
+      ],
+      [
+       621.1,
+       622.85
+      ],
+      [
+       1155.13,
+       1156.4
+      ],
+      [
+       690.44,
+       691.64
+      ],
+      [
+       333.91,
+       334.86
+      ],
+      [
+       496.93,
+       497.84
+      ],
+      [
+       323.45,
+       324.16
+      ],
+      [
+       1242.27,
+       1242.96
+      ],
+      [
+       1629.02,
+       1629.68
+      ],
+      [
+       1002.9,
+       1003.55
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 6,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       416.36,
+       416.64,
+       "SBC013_KEVI"
+      ],
+      [
+       1437.3,
+       1438.45,
+       "SBC013_KEVI"
+      ],
+      [
+       1441.5,
+       1442.75,
+       "SBC013_KEVI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC014",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "4 segment(s) longer than 60 s (merged turns?)",
+     "longest": 195.6
+    }
+   ],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -54.9,
+     "threshold_db": -45.2,
+     "p99_db": -22.5,
+     "vad_speech_s": 1270.6,
+     "ref_speech_s": 1684.6,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 163.9,
+     "ref_not_in_vad_frac": 0.0973,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 4,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       366.76,
+       367.58,
+       "SBC014_FRED"
+      ],
+      [
+       371.09,
+       372.82,
+       "SBC014_JIM"
+      ],
+      [
+       775.85,
+       776.59,
+       "SBC014_JIM"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC015",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -54.5,
+     "threshold_db": -43.1,
+     "p99_db": -16.6,
+     "vad_speech_s": 1336.7,
+     "ref_speech_s": 1467.4,
+     "vad_not_in_ref_s": 25.4,
+     "vad_not_in_ref_frac_of_ref": 0.0173,
+     "ref_not_in_vad_s": 50.5,
+     "ref_not_in_vad_frac": 0.0344,
+     "longest_vad_not_in_ref": [
+      [
+       1545.87,
+       1552.58
+      ],
+      [
+       1559.91,
+       1566.35
+      ],
+      [
+       1538.88,
+       1541.26
+      ],
+      [
+       1541.82,
+       1544.06
+      ],
+      [
+       0.22,
+       2.07
+      ],
+      [
+       1553.91,
+       1555.65
+      ],
+      [
+       1556.4,
+       1557.63
+      ],
+      [
+       1558.67,
+       1559.51
+      ],
+      [
+       408.16,
+       408.91
+      ],
+      [
+       1552.91,
+       1553.52
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "duplicate_segment": 1,
+    "same_speaker_overlap": 144,
+    "examples": {
+     "duplicate_segment": [
+      [
+       243.055,
+       244.08,
+       "SBC015_KEN"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       419.265,
+       421.015,
+       "SBC015_JOAN"
+      ],
+      [
+       486.3,
+       486.605,
+       "SBC015_JOAN"
+      ],
+      [
+       543.8,
+       544.865,
+       "SBC015_JOAN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC016",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -52.7,
+     "threshold_db": -43.7,
+     "p99_db": -24.5,
+     "vad_speech_s": 1094.7,
+     "ref_speech_s": 1224.1,
+     "vad_not_in_ref_s": 4.8,
+     "vad_not_in_ref_frac_of_ref": 0.0039,
+     "ref_not_in_vad_s": 35.2,
+     "ref_not_in_vad_frac": 0.0288,
+     "longest_vad_not_in_ref": [
+      [
+       1329.54,
+       1331.22
+      ],
+      [
+       1138.86,
+       1140.39
+      ],
+      [
+       339.23,
+       340.18
+      ],
+      [
+       878.81,
+       879.46
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 154,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       28.663,
+       29.571,
+       "SBC016_TAMM"
+      ],
+      [
+       92.604,
+       92.925,
+       "SBC016_TAMM"
+      ],
+      [
+       149.687,
+       150.245,
+       "SBC016_TAMM"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC017",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 61.5
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -45.0,
+     "threshold_db": -36.0,
+     "p99_db": -16.5,
+     "vad_speech_s": 968.0,
+     "ref_speech_s": 1192.5,
+     "vad_not_in_ref_s": 3.9,
+     "vad_not_in_ref_frac_of_ref": 0.0033,
+     "ref_not_in_vad_s": 83.5,
+     "ref_not_in_vad_frac": 0.07,
+     "longest_vad_not_in_ref": [
+      [
+       4.07,
+       6.4
+      ],
+      [
+       1.84,
+       2.71
+      ],
+      [
+       7.93,
+       8.61
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 27,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       9.38,
+       10.236,
+       "SBC017_MICH"
+      ],
+      [
+       94.955,
+       97.66,
+       "SBC017_MICH"
+      ],
+      [
+       138.91,
+       139.76,
+       "SBC017_MICH"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC018",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -53.7,
+     "threshold_db": -44.7,
+     "p99_db": -30.7,
+     "vad_speech_s": 296.4,
+     "ref_speech_s": 487.3,
+     "vad_not_in_ref_s": 16.7,
+     "vad_not_in_ref_frac_of_ref": 0.0342,
+     "ref_not_in_vad_s": 142.4,
+     "ref_not_in_vad_frac": 0.2922,
+     "longest_vad_not_in_ref": [
+      [
+       413.86,
+       416.81
+      ],
+      [
+       417.16,
+       418.89
+      ],
+      [
+       251.36,
+       252.63
+      ],
+      [
+       296.35,
+       297.54
+      ],
+      [
+       607.76,
+       608.95
+      ],
+      [
+       310.01,
+       311.07
+      ],
+      [
+       552.68,
+       553.54
+      ],
+      [
+       93.9,
+       94.74
+      ],
+      [
+       289.56,
+       290.36
+      ],
+      [
+       353.69,
+       354.35
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 28,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1.54,
+       3.0,
+       "SBC018_MARC"
+      ],
+      [
+       129.91,
+       130.325,
+       "SBC018_MARC"
+      ],
+      [
+       147.582,
+       148.043,
+       "SBC018_MARC"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC019",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -50.1,
+     "threshold_db": -40.0,
+     "p99_db": -16.5,
+     "vad_speech_s": 856.4,
+     "ref_speech_s": 1175.6,
+     "vad_not_in_ref_s": 16.6,
+     "vad_not_in_ref_frac_of_ref": 0.0141,
+     "ref_not_in_vad_s": 189.8,
+     "ref_not_in_vad_frac": 0.1614,
+     "longest_vad_not_in_ref": [
+      [
+       637.3,
+       639.75
+      ],
+      [
+       249.78,
+       252.22
+      ],
+      [
+       962.82,
+       964.1
+      ],
+      [
+       1011.33,
+       1012.57
+      ],
+      [
+       616.73,
+       617.75
+      ],
+      [
+       1296.15,
+       1297.14
+      ],
+      [
+       633.62,
+       634.6
+      ],
+      [
+       568.69,
+       569.65
+      ],
+      [
+       739.28,
+       740.14
+      ],
+      [
+       770.38,
+       771.24
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 95,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       74.711,
+       75.829,
+       "SBC019_FRAN"
+      ],
+      [
+       159.042,
+       159.555,
+       "SBC019_FRAN"
+      ],
+      [
+       220.627,
+       222.784,
+       "SBC019_FRAN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC020",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "SBC020_AUD"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "5 segment(s) longer than 60 s (merged turns?)",
+     "longest": 222.6
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -59.1,
+     "threshold_db": -49.0,
+     "p99_db": -25.7,
+     "vad_speech_s": 1171.8,
+     "ref_speech_s": 1424.6,
+     "vad_not_in_ref_s": 13.5,
+     "vad_not_in_ref_frac_of_ref": 0.0095,
+     "ref_not_in_vad_s": 98.6,
+     "ref_not_in_vad_frac": 0.0692,
+     "longest_vad_not_in_ref": [
+      [
+       1499.79,
+       1507.82
+      ],
+      [
+       1508.42,
+       1512.03
+      ],
+      [
+       931.87,
+       932.85
+      ],
+      [
+       878.99,
+       879.88
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       440.19,
+       446.2,
+       "SBC020_JEFF"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC021",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "5 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "SBC021_AUD3",
+      "SBC021_AUD4",
+      "SBC021_AUD5",
+      "SBC021_AUD6",
+      "SBC021_AUD8"
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -51.8,
+     "threshold_db": -42.8,
+     "p99_db": -30.0,
+     "vad_speech_s": 653.8,
+     "ref_speech_s": 1508.3,
+     "vad_not_in_ref_s": 16.2,
+     "vad_not_in_ref_frac_of_ref": 0.0108,
+     "ref_not_in_vad_s": 609.0,
+     "ref_not_in_vad_frac": 0.4038,
+     "longest_vad_not_in_ref": [
+      [
+       0.26,
+       7.96
+      ],
+      [
+       19.1,
+       22.48
+      ],
+      [
+       134.89,
+       137.18
+      ],
+      [
+       413.89,
+       415.22
+      ],
+      [
+       94.69,
+       95.47
+      ],
+      [
+       8.3,
+       9.04
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 59,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       33.503,
+       35.026,
+       "SBC021_WALT"
+      ],
+      [
+       78.882,
+       80.123,
+       "SBC021_WALT"
+      ],
+      [
+       80.116,
+       80.662,
+       "SBC021_WALT"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC022",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -50.0,
+     "threshold_db": -41.0,
+     "p99_db": -26.8,
+     "vad_speech_s": 464.9,
+     "ref_speech_s": 582.1,
+     "vad_not_in_ref_s": 16.5,
+     "vad_not_in_ref_frac_of_ref": 0.0284,
+     "ref_not_in_vad_s": 60.9,
+     "ref_not_in_vad_frac": 0.1047,
+     "longest_vad_not_in_ref": [
+      [
+       779.84,
+       783.75
+      ],
+      [
+       337.86,
+       341.65
+      ],
+      [
+       790.51,
+       793.48
+      ],
+      [
+       795.03,
+       796.11
+      ],
+      [
+       812.19,
+       813.19
+      ],
+      [
+       787.09,
+       788.06
+      ],
+      [
+       146.14,
+       147.04
+      ],
+      [
+       367.35,
+       368.1
+      ],
+      [
+       798.86,
+       799.49
+      ],
+      [
+       460.52,
+       461.06
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 17,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       50.794,
+       52.072,
+       "SBC022_RAND"
+      ],
+      [
+       236.033,
+       236.471,
+       "SBC022_RAND"
+      ],
+      [
+       329.799,
+       330.558,
+       "SBC022_RAND"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC023",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "3 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "SBC023_NANC",
+      "SBC023_HARR",
+      "SBC023_ALIC"
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 16,
+    "vad": {
+     "floor_db": -55.6,
+     "threshold_db": -46.6,
+     "p99_db": -36.5,
+     "vad_speech_s": 410.4,
+     "ref_speech_s": 1415.7,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0005,
+     "ref_not_in_vad_s": 772.7,
+     "ref_not_in_vad_frac": 0.5458,
+     "longest_vad_not_in_ref": [
+      [
+       983.19,
+       983.9
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 160,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       13.462,
+       14.938,
+       "SBC023_EVEL"
+      ],
+      [
+       112.379,
+       113.515,
+       "SBC023_EVEL"
+      ],
+      [
+       121.36,
+       122.341,
+       "SBC023_EVEL"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC024",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       417.0,
+       451.2
+      ],
+      [
+       908.0,
+       957.0
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 76 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 11.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -64.1,
+     "threshold_db": -53.6,
+     "p99_db": -28.9,
+     "vad_speech_s": 678.8,
+     "ref_speech_s": 683.1,
+     "vad_not_in_ref_s": 76.0,
+     "vad_not_in_ref_frac_of_ref": 0.1112,
+     "ref_not_in_vad_s": 51.8,
+     "ref_not_in_vad_frac": 0.0758,
+     "longest_vad_not_in_ref": [
+      [
+       815.36,
+       829.3
+      ],
+      [
+       1129.47,
+       1143.33
+      ],
+      [
+       1069.76,
+       1071.97
+      ],
+      [
+       1055.61,
+       1057.8
+      ],
+      [
+       307.31,
+       309.25
+      ],
+      [
+       26.63,
+       28.5
+      ],
+      [
+       111.5,
+       113.25
+      ],
+      [
+       1147.75,
+       1149.44
+      ],
+      [
+       743.65,
+       745.2
+      ],
+      [
+       444.48,
+       446.01
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 20,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       49.887,
+       50.599,
+       "SBC024_JENN"
+      ],
+      [
+       115.7,
+       116.359,
+       "SBC024_JENN"
+      ],
+      [
+       197.057,
+       197.334,
+       "SBC024_JENN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC025",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "fewer_than_two_speakers",
+     "message": "1 speaker(s)"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "7 segment(s) longer than 60 s (merged turns?)",
+     "longest": 137.3
+    }
+   ],
+   "metrics": {
+    "num_speakers": 1,
+    "vad": {
+     "floor_db": -63.7,
+     "threshold_db": -51.0,
+     "p99_db": -21.4,
+     "vad_speech_s": 1082.0,
+     "ref_speech_s": 1320.0,
+     "vad_not_in_ref_s": 5.4,
+     "vad_not_in_ref_frac_of_ref": 0.0041,
+     "ref_not_in_vad_s": 81.5,
+     "ref_not_in_vad_frac": 0.0617,
+     "longest_vad_not_in_ref": [
+      [
+       2.48,
+       5.82
+      ],
+      [
+       0.53,
+       1.94
+      ],
+      [
+       1334.22,
+       1334.88
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "duplicate_segment": 1,
+    "same_speaker_overlap": 11,
+    "examples": {
+     "duplicate_segment": [
+      [
+       457.856,
+       459.818,
+       "SBC025_FOST"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       11.175,
+       12.25,
+       "SBC025_FOST"
+      ],
+      [
+       17.715,
+       19.685,
+       "SBC025_FOST"
+      ],
+      [
+       19.665,
+       22.155,
+       "SBC025_FOST"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC026",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "SBC026_AUD"
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -54.9,
+     "threshold_db": -45.9,
+     "p99_db": -25.5,
+     "vad_speech_s": 976.3,
+     "ref_speech_s": 1382.9,
+     "vad_not_in_ref_s": 7.3,
+     "vad_not_in_ref_frac_of_ref": 0.0053,
+     "ref_not_in_vad_s": 190.5,
+     "ref_not_in_vad_frac": 0.1378,
+     "longest_vad_not_in_ref": [
+      [
+       1179.53,
+       1182.98
+      ],
+      [
+       1600.73,
+       1601.77
+      ],
+      [
+       439.26,
+       440.08
+      ],
+      [
+       1548.96,
+       1549.71
+      ],
+      [
+       1094.91,
+       1095.64
+      ],
+      [
+       1602.16,
+       1602.72
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 24,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       26.988,
+       27.786,
+       "SBC026_PATT"
+      ],
+      [
+       114.413,
+       116.07,
+       "SBC026_PATT"
+      ],
+      [
+       409.61,
+       411.056,
+       "SBC026_PATT"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC027",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -61.9,
+     "threshold_db": -48.8,
+     "p99_db": -18.3,
+     "vad_speech_s": 772.3,
+     "ref_speech_s": 912.7,
+     "vad_not_in_ref_s": 4.2,
+     "vad_not_in_ref_frac_of_ref": 0.0046,
+     "ref_not_in_vad_s": 52.4,
+     "ref_not_in_vad_frac": 0.0574,
+     "longest_vad_not_in_ref": [
+      [
+       801.91,
+       803.73
+      ],
+      [
+       804.07,
+       805.1
+      ],
+      [
+       531.37,
+       532.18
+      ],
+      [
+       892.94,
+       893.44
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 13,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       64.12,
+       66.06,
+       "SBC027_PHIL"
+      ],
+      [
+       76.8,
+       77.3,
+       "SBC027_PHIL"
+      ],
+      [
+       83.2,
+       83.89,
+       "SBC027_PHIL"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC028",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -50.1,
+     "threshold_db": -41.1,
+     "p99_db": -23.1,
+     "vad_speech_s": 977.0,
+     "ref_speech_s": 1378.0,
+     "vad_not_in_ref_s": 34.2,
+     "vad_not_in_ref_frac_of_ref": 0.0248,
+     "ref_not_in_vad_s": 211.5,
+     "ref_not_in_vad_frac": 0.1534,
+     "longest_vad_not_in_ref": [
+      [
+       1377.53,
+       1381.73
+      ],
+      [
+       1373.81,
+       1376.03
+      ],
+      [
+       1302.5,
+       1304.47
+      ],
+      [
+       235.16,
+       236.78
+      ],
+      [
+       786.53,
+       788.11
+      ],
+      [
+       1308.91,
+       1310.44
+      ],
+      [
+       601.13,
+       602.63
+      ],
+      [
+       937.84,
+       939.33
+      ],
+      [
+       580.41,
+       581.74
+      ],
+      [
+       1515.41,
+       1516.61
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 7,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       115.63,
+       117.685,
+       "SBC028_JILL"
+      ],
+      [
+       128.465,
+       129.54,
+       "SBC028_JILL"
+      ],
+      [
+       202.26,
+       204.0,
+       "SBC028_JILL"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC029",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       1576.4,
+       1612.4
+      ]
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -60.8,
+     "threshold_db": -50.9,
+     "p99_db": -27.7,
+     "vad_speech_s": 1043.2,
+     "ref_speech_s": 1240.0,
+     "vad_not_in_ref_s": 24.3,
+     "vad_not_in_ref_frac_of_ref": 0.0196,
+     "ref_not_in_vad_s": 79.3,
+     "ref_not_in_vad_frac": 0.0639,
+     "longest_vad_not_in_ref": [
+      [
+       397.02,
+       399.57
+      ],
+      [
+       385.34,
+       387.49
+      ],
+      [
+       14.55,
+       15.84
+      ],
+      [
+       22.53,
+       23.74
+      ],
+      [
+       26.07,
+       27.27
+      ],
+      [
+       17.68,
+       18.82
+      ],
+      [
+       101.75,
+       102.87
+      ],
+      [
+       1357.81,
+       1358.9
+      ],
+      [
+       1598.13,
+       1599.19
+      ],
+      [
+       20.86,
+       21.91
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1265.32,
+       1266.35,
+       "SBC029_SETH"
+      ],
+      [
+       44.99,
+       49.25,
+       "SBC029_LARR"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC030",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -60.9,
+     "threshold_db": -51.9,
+     "p99_db": -32.2,
+     "vad_speech_s": 896.6,
+     "ref_speech_s": 1200.7,
+     "vad_not_in_ref_s": 4.4,
+     "vad_not_in_ref_frac_of_ref": 0.0037,
+     "ref_not_in_vad_s": 106.7,
+     "ref_not_in_vad_frac": 0.0889,
+     "longest_vad_not_in_ref": [
+      [
+       822.57,
+       824.05
+      ],
+      [
+       1552.42,
+       1553.59
+      ],
+      [
+       1556.78,
+       1557.82
+      ],
+      [
+       783.16,
+       783.89
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 7,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       41.007,
+       44.349,
+       "SBC030_DANN"
+      ],
+      [
+       95.813,
+       96.779,
+       "SBC030_DANN"
+      ],
+      [
+       202.71,
+       205.55,
+       "SBC030_DANN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC031",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -44.3,
+     "threshold_db": -35.3,
+     "p99_db": -18.2,
+     "vad_speech_s": 771.3,
+     "ref_speech_s": 1368.1,
+     "vad_not_in_ref_s": 8.3,
+     "vad_not_in_ref_frac_of_ref": 0.0061,
+     "ref_not_in_vad_s": 374.8,
+     "ref_not_in_vad_frac": 0.274,
+     "longest_vad_not_in_ref": [
+      [
+       311.14,
+       312.77
+      ],
+      [
+       1476.92,
+       1478.4
+      ],
+      [
+       132.44,
+       133.45
+      ],
+      [
+       1018.47,
+       1019.47
+      ],
+      [
+       28.71,
+       29.58
+      ],
+      [
+       1399.82,
+       1400.56
+      ],
+      [
+       1097.5,
+       1098.08
+      ],
+      [
+       1297.94,
+       1298.45
+      ],
+      [
+       1397.01,
+       1397.51
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 3,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1241.028,
+       1241.924,
+       "SBC031_SHER"
+      ],
+      [
+       1244.974,
+       1245.66,
+       "SBC031_SHER"
+      ],
+      [
+       590.608,
+       591.762,
+       "SBC031_BETH"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC032",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 5,
+    "vad": {
+     "floor_db": -54.4,
+     "threshold_db": -42.1,
+     "p99_db": -13.5,
+     "vad_speech_s": 1358.8,
+     "ref_speech_s": 1638.5,
+     "vad_not_in_ref_s": 2.0,
+     "vad_not_in_ref_frac_of_ref": 0.0012,
+     "ref_not_in_vad_s": 103.1,
+     "ref_not_in_vad_frac": 0.0629,
+     "longest_vad_not_in_ref": [
+      [
+       457.4,
+       458.21
+      ],
+      [
+       880.65,
+       881.33
+      ],
+      [
+       976.39,
+       976.91
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 6,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       19.197,
+       20.447,
+       "SBC032_TUCK"
+      ],
+      [
+       73.887,
+       75.597,
+       "SBC032_TOM3"
+      ],
+      [
+       333.54,
+       334.41,
+       "SBC032_TOM1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC033",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -44.4,
+     "threshold_db": -35.4,
+     "p99_db": -14.9,
+     "vad_speech_s": 463.4,
+     "ref_speech_s": 616.1,
+     "vad_not_in_ref_s": 8.8,
+     "vad_not_in_ref_frac_of_ref": 0.0143,
+     "ref_not_in_vad_s": 86.3,
+     "ref_not_in_vad_frac": 0.1402,
+     "longest_vad_not_in_ref": [
+      [
+       48.19,
+       50.5
+      ],
+      [
+       70.28,
+       72.59
+      ],
+      [
+       77.61,
+       79.65
+      ],
+      [
+       75.26,
+       76.04
+      ],
+      [
+       80.72,
+       81.49
+      ],
+      [
+       54.54,
+       55.12
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC034",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 82.6
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       331.6,
+       413.6
+      ]
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -44.5,
+     "threshold_db": -35.5,
+     "p99_db": -26.1,
+     "vad_speech_s": 277.9,
+     "ref_speech_s": 1239.2,
+     "vad_not_in_ref_s": 5.9,
+     "vad_not_in_ref_frac_of_ref": 0.0048,
+     "ref_not_in_vad_s": 822.6,
+     "ref_not_in_vad_frac": 0.6638,
+     "longest_vad_not_in_ref": [
+      [
+       44.93,
+       46.57
+      ],
+      [
+       1457.84,
+       1459.04
+      ],
+      [
+       1215.58,
+       1216.58
+      ],
+      [
+       1004.93,
+       1005.85
+      ],
+      [
+       12.26,
+       12.91
+      ],
+      [
+       1147.15,
+       1147.67
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC035",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -44.8,
+     "threshold_db": -35.8,
+     "p99_db": -14.6,
+     "vad_speech_s": 940.7,
+     "ref_speech_s": 1148.6,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0006,
+     "ref_not_in_vad_s": 86.6,
+     "ref_not_in_vad_frac": 0.0754,
+     "longest_vad_not_in_ref": [
+      [
+       513.84,
+       514.52
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 6,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       557.802,
+       558.788,
+       "SBC035_PATT"
+      ],
+      [
+       1024.744,
+       1025.889,
+       "SBC035_PATT"
+      ],
+      [
+       1053.817,
+       1054.251,
+       "SBC035_PATT"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC036",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -62.2,
+     "threshold_db": -48.9,
+     "p99_db": -18.0,
+     "vad_speech_s": 1236.0,
+     "ref_speech_s": 1518.4,
+     "vad_not_in_ref_s": 21.6,
+     "vad_not_in_ref_frac_of_ref": 0.0143,
+     "ref_not_in_vad_s": 152.0,
+     "ref_not_in_vad_frac": 0.1001,
+     "longest_vad_not_in_ref": [
+      [
+       1003.42,
+       1005.05
+      ],
+      [
+       576.92,
+       578.48
+      ],
+      [
+       1324.13,
+       1325.6
+      ],
+      [
+       1489.22,
+       1490.46
+      ],
+      [
+       1347.19,
+       1348.42
+      ],
+      [
+       996.54,
+       997.67
+      ],
+      [
+       1484.83,
+       1485.96
+      ],
+      [
+       1546.05,
+       1547.16
+      ],
+      [
+       1314.41,
+       1315.45
+      ],
+      [
+       117.84,
+       118.88
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "duplicate_segment": 1,
+    "same_speaker_overlap": 17,
+    "examples": {
+     "duplicate_segment": [
+      [
+       1558.463,
+       1558.906,
+       "SBC036_MARI"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       195.69,
+       196.096,
+       "SBC036_KEVI"
+      ],
+      [
+       793.386,
+       794.884,
+       "SBC036_KEVI"
+      ],
+      [
+       1316.154,
+       1316.89,
+       "SBC036_KEVI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC037",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -50.1,
+     "threshold_db": -39.9,
+     "p99_db": -16.0,
+     "vad_speech_s": 970.1,
+     "ref_speech_s": 1402.4,
+     "vad_not_in_ref_s": 47.3,
+     "vad_not_in_ref_frac_of_ref": 0.0337,
+     "ref_not_in_vad_s": 292.0,
+     "ref_not_in_vad_frac": 0.2082,
+     "longest_vad_not_in_ref": [
+      [
+       1017.92,
+       1023.5
+      ],
+      [
+       903.21,
+       905.35
+      ],
+      [
+       1140.4,
+       1142.53
+      ],
+      [
+       962.27,
+       964.3
+      ],
+      [
+       1284.6,
+       1286.53
+      ],
+      [
+       989.55,
+       991.26
+      ],
+      [
+       1500.04,
+       1501.73
+      ],
+      [
+       723.28,
+       724.96
+      ],
+      [
+       42.53,
+       44.08
+      ],
+      [
+       784.69,
+       786.18
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 10,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       66.06,
+       67.706,
+       "SBC037_DOLO"
+      ],
+      [
+       173.62,
+       174.647,
+       "SBC037_DOLO"
+      ],
+      [
+       546.746,
+       549.389,
+       "SBC037_DOLO"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC038",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 463.3
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       4.1,
+       94.8
+      ],
+      [
+       937.2,
+       1036.2
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 71 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 6.6% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -34.6,
+     "threshold_db": -25.6,
+     "p99_db": -5.8,
+     "vad_speech_s": 865.9,
+     "ref_speech_s": 1079.4,
+     "vad_not_in_ref_s": 71.0,
+     "vad_not_in_ref_frac_of_ref": 0.0657,
+     "ref_not_in_vad_s": 137.1,
+     "ref_not_in_vad_frac": 0.127,
+     "longest_vad_not_in_ref": [
+      [
+       909.96,
+       934.76
+      ],
+      [
+       758.87,
+       781.48
+      ],
+      [
+       962.78,
+       966.21
+      ],
+      [
+       751.57,
+       753.87
+      ],
+      [
+       937.49,
+       939.33
+      ],
+      [
+       959.52,
+       961.36
+      ],
+      [
+       1010.7,
+       1012.26
+      ],
+      [
+       1013.07,
+       1014.62
+      ],
+      [
+       820.27,
+       821.6
+      ],
+      [
+       803.13,
+       804.23
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1263.148,
+       1263.768,
+       "SBC038_BEN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC039",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 88.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -53.0,
+     "threshold_db": -44.0,
+     "p99_db": -30.7,
+     "vad_speech_s": 894.0,
+     "ref_speech_s": 1510.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 285.5,
+     "ref_not_in_vad_frac": 0.189,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 3,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       716.905,
+       717.766,
+       "SBC039_KIRS"
+      ],
+      [
+       957.555,
+       958.685,
+       "SBC039_KIRS"
+      ],
+      [
+       1404.25,
+       1405.172,
+       "SBC039_LORI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC040",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "5 segment(s) longer than 60 s (merged turns?)",
+     "longest": 214.3
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -52.6,
+     "threshold_db": -42.4,
+     "p99_db": -18.6,
+     "vad_speech_s": 1103.7,
+     "ref_speech_s": 1229.7,
+     "vad_not_in_ref_s": 32.3,
+     "vad_not_in_ref_frac_of_ref": 0.0262,
+     "ref_not_in_vad_s": 62.9,
+     "ref_not_in_vad_frac": 0.0511,
+     "longest_vad_not_in_ref": [
+      [
+       479.58,
+       485.4
+      ],
+      [
+       758.83,
+       764.16
+      ],
+      [
+       223.45,
+       228.18
+      ],
+      [
+       1051.22,
+       1055.93
+      ],
+      [
+       1349.46,
+       1354.13
+      ],
+      [
+       1329.74,
+       1333.76
+      ],
+      [
+       781.99,
+       783.44
+      ],
+      [
+       280.62,
+       281.42
+      ],
+      [
+       775.94,
+       776.66
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC041",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -58.6,
+     "threshold_db": -47.9,
+     "p99_db": -22.9,
+     "vad_speech_s": 971.9,
+     "ref_speech_s": 1213.2,
+     "vad_not_in_ref_s": 2.1,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 99.4,
+     "ref_not_in_vad_frac": 0.0819,
+     "longest_vad_not_in_ref": [
+      [
+       12.73,
+       13.6
+      ],
+      [
+       478.55,
+       479.27
+      ],
+      [
+       947.4,
+       947.91
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC042",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -53.3,
+     "threshold_db": -40.5,
+     "p99_db": -10.8,
+     "vad_speech_s": 517.5,
+     "ref_speech_s": 1057.1,
+     "vad_not_in_ref_s": 28.4,
+     "vad_not_in_ref_frac_of_ref": 0.0269,
+     "ref_not_in_vad_s": 448.3,
+     "ref_not_in_vad_frac": 0.4241,
+     "longest_vad_not_in_ref": [
+      [
+       249.67,
+       254.98
+      ],
+      [
+       33.99,
+       38.0
+      ],
+      [
+       13.47,
+       16.97
+      ],
+      [
+       282.36,
+       284.84
+      ],
+      [
+       614.43,
+       616.38
+      ],
+      [
+       1156.09,
+       1157.68
+      ],
+      [
+       579.68,
+       581.09
+      ],
+      [
+       21.91,
+       22.94
+      ],
+      [
+       18.85,
+       19.79
+      ],
+      [
+       411.47,
+       412.3
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC043",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "2 segment(s) longer than 60 s (merged turns?)",
+     "longest": 65.6
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -55.7,
+     "threshold_db": -46.7,
+     "p99_db": -26.9,
+     "vad_speech_s": 1181.4,
+     "ref_speech_s": 1475.5,
+     "vad_not_in_ref_s": 3.2,
+     "vad_not_in_ref_frac_of_ref": 0.0022,
+     "ref_not_in_vad_s": 126.9,
+     "ref_not_in_vad_frac": 0.086,
+     "longest_vad_not_in_ref": [
+      [
+       805.23,
+       807.66
+      ],
+      [
+       311.26,
+       312.07
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1499.104,
+       1499.47,
+       "SBC043_ANNE"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC044",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "4 segment(s) longer than 60 s (merged turns?)",
+     "longest": 97.1
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -54.7,
+     "threshold_db": -45.7,
+     "p99_db": -25.6,
+     "vad_speech_s": 1375.7,
+     "ref_speech_s": 1713.3,
+     "vad_not_in_ref_s": 12.1,
+     "vad_not_in_ref_frac_of_ref": 0.007,
+     "ref_not_in_vad_s": 127.6,
+     "ref_not_in_vad_frac": 0.0745,
+     "longest_vad_not_in_ref": [
+      [
+       1157.18,
+       1159.44
+      ],
+      [
+       580.43,
+       581.62
+      ],
+      [
+       623.3,
+       624.49
+      ],
+      [
+       810.77,
+       811.91
+      ],
+      [
+       1171.83,
+       1172.93
+      ],
+      [
+       568.55,
+       569.6
+      ],
+      [
+       882.81,
+       883.77
+      ],
+      [
+       818.54,
+       819.34
+      ],
+      [
+       438.2,
+       438.92
+      ],
+      [
+       619.93,
+       620.5
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       418.345,
+       419.52,
+       "SBC044_LAJU"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC045",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 66.9
+    },
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "2 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       1202.9,
+       1235.6
+      ],
+      [
+       1422.2,
+       1461.7
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 89 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 6.2% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -50.0,
+     "threshold_db": -41.0,
+     "p99_db": -20.8,
+     "vad_speech_s": 1283.6,
+     "ref_speech_s": 1426.3,
+     "vad_not_in_ref_s": 88.9,
+     "vad_not_in_ref_frac_of_ref": 0.0624,
+     "ref_not_in_vad_s": 115.4,
+     "ref_not_in_vad_frac": 0.0809,
+     "longest_vad_not_in_ref": [
+      [
+       1024.74,
+       1034.86
+      ],
+      [
+       996.95,
+       1006.13
+      ],
+      [
+       933.23,
+       941.37
+      ],
+      [
+       912.57,
+       919.38
+      ],
+      [
+       904.93,
+       911.63
+      ],
+      [
+       952.94,
+       957.92
+      ],
+      [
+       1014.79,
+       1018.42
+      ],
+      [
+       892.14,
+       895.1
+      ],
+      [
+       1337.69,
+       1340.53
+      ],
+      [
+       1356.52,
+       1359.21
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC046",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 61.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -37.6,
+     "threshold_db": -28.6,
+     "p99_db": -16.7,
+     "vad_speech_s": 465.9,
+     "ref_speech_s": 883.3,
+     "vad_not_in_ref_s": 1.4,
+     "vad_not_in_ref_frac_of_ref": 0.0016,
+     "ref_not_in_vad_s": 260.1,
+     "ref_not_in_vad_frac": 0.2945,
+     "longest_vad_not_in_ref": [
+      [
+       844.07,
+       845.45
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 6,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       229.655,
+       230.293,
+       "SBC046_REED"
+      ],
+      [
+       492.884,
+       494.075,
+       "SBC046_REED"
+      ],
+      [
+       87.965,
+       89.289,
+       "SBC046_DARR"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC047",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 101.4
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -51.8,
+     "threshold_db": -42.4,
+     "p99_db": -20.4,
+     "vad_speech_s": 957.6,
+     "ref_speech_s": 1188.8,
+     "vad_not_in_ref_s": 2.2,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 120.9,
+     "ref_not_in_vad_frac": 0.1017,
+     "longest_vad_not_in_ref": [
+      [
+       423.63,
+       425.0
+      ],
+      [
+       1087.91,
+       1088.74
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC048",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -42.1,
+     "threshold_db": -33.1,
+     "p99_db": -14.3,
+     "vad_speech_s": 675.6,
+     "ref_speech_s": 974.6,
+     "vad_not_in_ref_s": 19.1,
+     "vad_not_in_ref_frac_of_ref": 0.0196,
+     "ref_not_in_vad_s": 196.2,
+     "ref_not_in_vad_frac": 0.2013,
+     "longest_vad_not_in_ref": [
+      [
+       215.54,
+       217.51
+      ],
+      [
+       637.99,
+       639.75
+      ],
+      [
+       679.69,
+       681.34
+      ],
+      [
+       919.91,
+       921.5
+      ],
+      [
+       832.58,
+       834.01
+      ],
+      [
+       571.14,
+       572.35
+      ],
+      [
+       225.45,
+       226.59
+      ],
+      [
+       961.3,
+       962.29
+      ],
+      [
+       934.46,
+       935.39
+      ],
+      [
+       207.37,
+       208.19
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 8,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       483.377,
+       484.743,
+       "SBC048_LEA"
+      ],
+      [
+       413.512,
+       414.49,
+       "SBC048_JUDY"
+      ],
+      [
+       414.459,
+       414.737,
+       "SBC048_JUDY"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC049",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -51.5,
+     "threshold_db": -42.5,
+     "p99_db": -22.2,
+     "vad_speech_s": 776.2,
+     "ref_speech_s": 1104.5,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0008,
+     "ref_not_in_vad_s": 199.8,
+     "ref_not_in_vad_frac": 0.1809,
+     "longest_vad_not_in_ref": [
+      [
+       37.77,
+       38.61
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       263.044,
+       264.612,
+       "SBC049_DAN"
+      ],
+      [
+       826.22,
+       826.661,
+       "SBC049_JOHN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC050",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       145.4,
+       177.4
+      ]
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -51.7,
+     "threshold_db": -42.7,
+     "p99_db": -22.8,
+     "vad_speech_s": 611.3,
+     "ref_speech_s": 902.7,
+     "vad_not_in_ref_s": 24.8,
+     "vad_not_in_ref_frac_of_ref": 0.0274,
+     "ref_not_in_vad_s": 177.1,
+     "ref_not_in_vad_frac": 0.1962,
+     "longest_vad_not_in_ref": [
+      [
+       157.01,
+       161.64
+      ],
+      [
+       149.15,
+       152.1
+      ],
+      [
+       31.47,
+       33.55
+      ],
+      [
+       166.99,
+       168.82
+      ],
+      [
+       175.69,
+       177.04
+      ],
+      [
+       200.05,
+       201.38
+      ],
+      [
+       895.46,
+       896.78
+      ],
+      [
+       318.44,
+       319.56
+      ],
+      [
+       169.25,
+       170.36
+      ],
+      [
+       29.94,
+       30.91
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 3,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       458.408,
+       460.07,
+       "SBC050_DANA"
+      ],
+      [
+       769.609,
+       769.997,
+       "SBC050_NANC"
+      ],
+      [
+       880.627,
+       880.953,
+       "SBC050_ARIA"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC051",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -50.8,
+     "threshold_db": -41.1,
+     "p99_db": -18.5,
+     "vad_speech_s": 1124.3,
+     "ref_speech_s": 1504.0,
+     "vad_not_in_ref_s": 8.4,
+     "vad_not_in_ref_frac_of_ref": 0.0056,
+     "ref_not_in_vad_s": 181.8,
+     "ref_not_in_vad_frac": 0.1209,
+     "longest_vad_not_in_ref": [
+      [
+       1404.24,
+       1405.82
+      ],
+      [
+       168.09,
+       169.34
+      ],
+      [
+       454.86,
+       456.12
+      ],
+      [
+       1011.74,
+       1012.95
+      ],
+      [
+       164.35,
+       165.22
+      ],
+      [
+       1390.21,
+       1390.83
+      ],
+      [
+       242.8,
+       243.37
+      ],
+      [
+       763.04,
+       763.58
+      ],
+      [
+       1211.85,
+       1212.38
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 5,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       215.991,
+       217.565,
+       "SBC051_FRAN"
+      ],
+      [
+       340.569,
+       340.996,
+       "SBC051_FRAN"
+      ],
+      [
+       141.12,
+       141.522,
+       "SBC051_SEAN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC052",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -65.0,
+     "threshold_db": -52.4,
+     "p99_db": -23.1,
+     "vad_speech_s": 1272.5,
+     "ref_speech_s": 1519.6,
+     "vad_not_in_ref_s": 7.2,
+     "vad_not_in_ref_frac_of_ref": 0.0048,
+     "ref_not_in_vad_s": 84.0,
+     "ref_not_in_vad_frac": 0.0553,
+     "longest_vad_not_in_ref": [
+      [
+       602.82,
+       603.89
+      ],
+      [
+       210.81,
+       211.55
+      ],
+      [
+       559.91,
+       560.65
+      ],
+      [
+       517.77,
+       518.49
+      ],
+      [
+       29.04,
+       29.75
+      ],
+      [
+       1551.57,
+       1552.28
+      ],
+      [
+       595.55,
+       596.24
+      ],
+      [
+       455.7,
+       456.39
+      ],
+      [
+       1217.53,
+       1218.21
+      ],
+      [
+       909.08,
+       909.58
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 4,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       895.791,
+       897.145,
+       "SBC052_DARL"
+      ],
+      [
+       1283.06,
+       1283.889,
+       "SBC052_DARL"
+      ],
+      [
+       1166.637,
+       1167.174,
+       "SBC052_CIND"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC053",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "SBC053_RADI"
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 9,
+    "vad": {
+     "floor_db": -51.2,
+     "threshold_db": -42.2,
+     "p99_db": -26.9,
+     "vad_speech_s": 755.7,
+     "ref_speech_s": 1228.8,
+     "vad_not_in_ref_s": 3.9,
+     "vad_not_in_ref_frac_of_ref": 0.0031,
+     "ref_not_in_vad_s": 265.2,
+     "ref_not_in_vad_frac": 0.2158,
+     "longest_vad_not_in_ref": [
+      [
+       29.52,
+       30.95
+      ],
+      [
+       305.76,
+       306.68
+      ],
+      [
+       25.86,
+       26.66
+      ],
+      [
+       1258.65,
+       1259.37
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "sbcsae__SBC054",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "2 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "SBC054_AUD2",
+      "SBC054_AUD3"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "5 segment(s) longer than 60 s (merged turns?)",
+     "longest": 108.7
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -52.7,
+     "threshold_db": -41.9,
+     "p99_db": -16.8,
+     "vad_speech_s": 897.6,
+     "ref_speech_s": 1092.8,
+     "vad_not_in_ref_s": 35.9,
+     "vad_not_in_ref_frac_of_ref": 0.0328,
+     "ref_not_in_vad_s": 96.8,
+     "ref_not_in_vad_frac": 0.0886,
+     "longest_vad_not_in_ref": [
+      [
+       1094.48,
+       1102.18
+      ],
+      [
+       496.44,
+       503.96
+      ],
+      [
+       847.06,
+       854.49
+      ],
+      [
+       1153.61,
+       1159.61
+      ],
+      [
+       541.16,
+       543.57
+      ],
+      [
+       1053.72,
+       1055.03
+      ],
+      [
+       1080.66,
+       1081.71
+      ],
+      [
+       1055.41,
+       1056.2
+      ],
+      [
+       1070.5,
+       1071.12
+      ],
+      [
+       57.6,
+       58.15
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       634.867,
+       636.693,
+       "SBC054_CYNT"
+      ],
+      [
+       1082.926,
+       1084.972,
+       "SBC054_CYNT"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC055",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "8 segment(s) longer than 60 s (merged turns?)",
+     "longest": 199.2
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 138 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 9.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -54.6,
+     "threshold_db": -44.9,
+     "p99_db": -22.2,
+     "vad_speech_s": 1274.6,
+     "ref_speech_s": 1466.6,
+     "vad_not_in_ref_s": 138.5,
+     "vad_not_in_ref_frac_of_ref": 0.0944,
+     "ref_not_in_vad_s": 139.5,
+     "ref_not_in_vad_frac": 0.0951,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       20.83
+      ],
+      [
+       891.9,
+       905.2
+      ],
+      [
+       1046.53,
+       1057.94
+      ],
+      [
+       820.55,
+       830.56
+      ],
+      [
+       646.44,
+       653.51
+      ],
+      [
+       361.69,
+       367.83
+      ],
+      [
+       1003.15,
+       1009.16
+      ],
+      [
+       304.61,
+       310.41
+      ],
+      [
+       296.76,
+       302.53
+      ],
+      [
+       437.92,
+       443.61
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1107.696,
+       1108.682,
+       "SBC055_WOOD"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC056",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -52.7,
+     "threshold_db": -42.1,
+     "p99_db": -17.6,
+     "vad_speech_s": 1416.1,
+     "ref_speech_s": 1780.9,
+     "vad_not_in_ref_s": 12.2,
+     "vad_not_in_ref_frac_of_ref": 0.0068,
+     "ref_not_in_vad_s": 162.2,
+     "ref_not_in_vad_frac": 0.0911,
+     "longest_vad_not_in_ref": [
+      [
+       1053.97,
+       1055.39
+      ],
+      [
+       224.9,
+       225.94
+      ],
+      [
+       760.52,
+       761.51
+      ],
+      [
+       356.38,
+       357.35
+      ],
+      [
+       222.24,
+       223.05
+      ],
+      [
+       423.94,
+       424.7
+      ],
+      [
+       970.24,
+       970.99
+      ],
+      [
+       993.51,
+       994.23
+      ],
+      [
+       1417.02,
+       1417.74
+      ],
+      [
+       1042.97,
+       1043.67
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 6,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       179.153,
+       180.306,
+       "SBC056_GARY"
+      ],
+      [
+       1708.123,
+       1708.828,
+       "SBC056_GARY"
+      ],
+      [
+       477.274,
+       477.58,
+       "SBC056_JULI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC057",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 68.7
+    }
+   ],
+   "metrics": {
+    "num_speakers": 6,
+    "vad": {
+     "floor_db": -61.5,
+     "threshold_db": -49.3,
+     "p99_db": -20.9,
+     "vad_speech_s": 1033.5,
+     "ref_speech_s": 1445.4,
+     "vad_not_in_ref_s": 32.3,
+     "vad_not_in_ref_frac_of_ref": 0.0223,
+     "ref_not_in_vad_s": 236.0,
+     "ref_not_in_vad_frac": 0.1633,
+     "longest_vad_not_in_ref": [
+      [
+       1277.64,
+       1280.57
+      ],
+      [
+       743.16,
+       745.42
+      ],
+      [
+       803.87,
+       805.55
+      ],
+      [
+       872.8,
+       874.41
+      ],
+      [
+       294.97,
+       296.46
+      ],
+      [
+       469.31,
+       470.73
+      ],
+      [
+       1078.75,
+       1080.09
+      ],
+      [
+       1152.87,
+       1154.08
+      ],
+      [
+       1013.83,
+       1014.91
+      ],
+      [
+       1242.28,
+       1243.32
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       273.599,
+       273.948,
+       "SBC057_BILL"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC058",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -43.9,
+     "threshold_db": -34.9,
+     "p99_db": -21.6,
+     "vad_speech_s": 597.6,
+     "ref_speech_s": 1391.3,
+     "vad_not_in_ref_s": 59.9,
+     "vad_not_in_ref_frac_of_ref": 0.043,
+     "ref_not_in_vad_s": 643.3,
+     "ref_not_in_vad_frac": 0.4624,
+     "longest_vad_not_in_ref": [
+      [
+       745.95,
+       767.09
+      ],
+      [
+       418.51,
+       433.26
+      ],
+      [
+       503.73,
+       506.92
+      ],
+      [
+       441.87,
+       444.55
+      ],
+      [
+       500.33,
+       502.88
+      ],
+      [
+       438.89,
+       440.99
+      ],
+      [
+       1214.88,
+       1216.6
+      ],
+      [
+       516.75,
+       518.21
+      ],
+      [
+       509.56,
+       510.87
+      ],
+      [
+       1209.6,
+       1210.78
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       353.005,
+       354.355,
+       "SBC058_SHER"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC059",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -49.1,
+     "threshold_db": -40.1,
+     "p99_db": -21.5,
+     "vad_speech_s": 1163.8,
+     "ref_speech_s": 1589.9,
+     "vad_not_in_ref_s": 9.1,
+     "vad_not_in_ref_frac_of_ref": 0.0057,
+     "ref_not_in_vad_s": 219.3,
+     "ref_not_in_vad_frac": 0.1379,
+     "longest_vad_not_in_ref": [
+      [
+       384.08,
+       385.82
+      ],
+      [
+       1380.89,
+       1382.03
+      ],
+      [
+       603.08,
+       604.04
+      ],
+      [
+       1667.02,
+       1667.97
+      ],
+      [
+       71.29,
+       72.17
+      ],
+      [
+       91.92,
+       92.71
+      ],
+      [
+       251.52,
+       252.29
+      ],
+      [
+       140.59,
+       141.36
+      ],
+      [
+       1582.61,
+       1583.19
+      ],
+      [
+       1388.17,
+       1388.68
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 3,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       1395.989,
+       1396.555,
+       "SBC059_CAM"
+      ],
+      [
+       1447.455,
+       1448.659,
+       "SBC059_CAM"
+      ],
+      [
+       343.586,
+       344.151,
+       "SBC059_JO"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "sbcsae__SBC060",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "6 segment(s) longer than 60 s (merged turns?)",
+     "longest": 105.2
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -46.0,
+     "threshold_db": -37.0,
+     "p99_db": -16.1,
+     "vad_speech_s": 706.1,
+     "ref_speech_s": 1475.4,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0007,
+     "ref_not_in_vad_s": 456.3,
+     "ref_not_in_vad_frac": 0.3093,
+     "longest_vad_not_in_ref": [
+      [
+       967.71,
+       968.69
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 5,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       634.113,
+       636.172,
+       "SBC060_ALAN"
+      ],
+      [
+       779.482,
+       779.798,
+       "SBC060_ALAN"
+      ],
+      [
+       898.171,
+       898.972,
+       "SBC060_ALAN"
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}

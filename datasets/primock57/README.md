@@ -55,7 +55,10 @@ Computed by `python -m diards stats primock57` from the normalized primary refer
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `mix`: 57 sessions, **0 errors**, 19 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
+- checks that fired (sessions): `warning:segments_over_60s` 19
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.3% of reference speech; reference speech without energy = 1.2%. Most-flagged sessions: `primock57__day4_consultation08` (0.01), `primock57__day4_consultation10` (0.01), `primock57__day1_consultation02` (0.01), `primock57__day4_consultation09` (0.01), `primock57__day1_consultation09` (0.01)
+- full report: [`results/validation/validation.primock57.mix.md`](../../results/validation/validation.primock57.mix.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
@@ -77,6 +80,8 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 | mix | mix | 57 | 20.03 | 8.61 | 11.42 | 0.07 | 0.04 | 0.03 |
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Time-offset check (mix):** 0 of 57 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.05 s.
 <!-- /auto:diagnosis -->
 
 Against the official TextGrids almost all error is "missed speech", and 80% of it falls where the labelled

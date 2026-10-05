@@ -1,0 +1,55 @@
+{
+ "dataset": "notsofar1",
+ "view": "sc",
+ "regions_checked": 5,
+ "regions": [
+  {
+   "session_id": "notsofar1__MTG_32051",
+   "start": 203.2,
+   "end": 205.36,
+   "dur": 2.16,
+   "whisper": "with a canapé tray",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "notsofar1__MTG_32091",
+   "start": 12.62,
+   "end": 14.13,
+   "dur": 1.51,
+   "whisper": "We've had company stores.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "notsofar1__MTG_32049",
+   "start": 89.39,
+   "end": 90.76,
+   "dur": 1.37,
+   "whisper": "but is there anything that is like,",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "notsofar1__MTG_32082",
+   "start": 102.35,
+   "end": 103.64,
+   "dur": 1.29,
+   "whisper": "No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no,",
+   "words": 222,
+   "speech": false
+  },
+  {
+   "session_id": "notsofar1__MTG_32026",
+   "start": 40.96,
+   "end": 42.21,
+   "dur": 1.25,
+   "whisper": "Has anyone given you any feedback?",
+   "words": 6,
+   "speech": true
+  }
+ ],
+ "regions_with_speech": 4,
+ "seconds_checked": 7.6,
+ "seconds_with_speech": 6.3
+}

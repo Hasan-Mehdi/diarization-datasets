@@ -45,14 +45,27 @@ is split into 1-minute files named by their start time in the session. The recip
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| all | 12 | 5.3 | 4.11 | 0.775 | 0.17 | 0.0205 | 4/4/6 | 0.4/1.55/8.0 | 0.0027 | 2.6 | 15.78 |
+| ALL | 12 | 5.3 | 4.11 | 0.775 | 0.17 | 0.0205 | 4/4/6 | 0.4/1.55/8.0 | 0.0027 | 2.6 | 15.78 |
+
+Computed by `python -m diards stats easycom` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.easycom.md`](../../results/stats/stats.easycom.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `glasses`: 12 sessions, **0 errors**, 0 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
+- checks that fired (sessions): `info:segments_under_50ms` 1
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.0% of reference speech; reference speech without energy = 53.7%. Most-flagged sessions: `easycom__Session_3` (0.00), `easycom__Session_1` (0.00), `easycom__Session_10` (0.00), `easycom__Session_11` (0.00), `easycom__Session_12` (0.00)
+- full report: [`results/validation/validation.easycom.glasses.md`](../../results/validation/validation.easycom.glasses.md)
 <!-- /auto:validation -->
+
+The energy-VAD cross-check is **not informative for EasyCom**: restaurant babble is played from loudspeakers
+throughout, so the noise floor of the glasses audio is high and a simple energy detector misses about half of the
+labelled speech. That is a limitation of the check, not of the labels. Use the Nemotron diagnosis below instead.
+
 
 ## Nemotron 3 Diarization
 

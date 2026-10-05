@@ -45,13 +45,22 @@ same id across their four dialogues.
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| all | 128 | 14.31 | 9.27 | 0.648 | 0.051 | 0.0 | 2/2/2 | 0.224/0.837/2.935 | 0.0312 | 1.147 | 21.81 |
+| ALL | 128 | 14.31 | 9.27 | 0.648 | 0.051 | 0.0 | 2/2/2 | 0.224/0.837/2.935 | 0.0312 | 1.147 | 21.81 |
+
+Computed by `python -m diards stats maptask` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.maptask.md`](../../results/stats/stats.maptask.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `default`: 128 sessions, **0 errors**, 12 warnings (normalized files); 1 sessions had problems in the ORIGINAL labels that normalization fixed.
+- original-label issues: beyond_audio_end = 453, seconds_beyond_audio_end = 442.01
+- checks that fired (sessions): `info:segments_under_50ms` 5, `info:silence_over_30s` 2, `warning:possible_unannotated_speech` 11, `warning:words_outside_reference` 1
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.8% of reference speech; reference speech without energy = 0.3%. Most-flagged sessions: `maptask__q3nc3` (0.14), `maptask__q3ec5` (0.13), `maptask__q3nc2` (0.13), `maptask__q3nc7` (0.07), `maptask__q3ec3` (0.07)
+- full report: [`results/validation/validation.maptask.default.md`](../../results/validation/validation.maptask.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

@@ -90,10 +90,26 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 <!-- auto:diagnosis -->
 | hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
+| ihm-mix | ihm-mix | 129 | 5.44 | 1.66 | 3.78 | 0.29 | 0.08 | 0.21 |
 | sc | ihm-mix | 129 | 6.19 | 1.82 | 4.37 | 0.29 | 0.07 | 0.22 |
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (ihm-mix):** 5 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (7.6 of 7.6 s). Examples: `notsofar1__MTG_32051` 203.2-205.4 s: "with a canapé tray."; `notsofar1__MTG_32091` 12.6-14.1 s: "We've had company stores."; `notsofar1__MTG_32049` 89.4-90.8 s: "but is there anything that is like,"
+
+**Time-offset check (ihm-mix):** 0 of 129 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
+
+**Whisper audit of the longest audible false alarms (sc):** 4 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (6.3 of 7.6 s). Examples: `notsofar1__MTG_32051` 203.2-205.4 s: "with a canapé tray"; `notsofar1__MTG_32091` 12.6-14.1 s: "We've had company stores."; `notsofar1__MTG_32049` 89.4-90.8 s: "but is there anything that is like,"
 <!-- /auto:diagnosis -->
+
+**Reading the NOTSOFAR-1 numbers.** Against the official utterance segments, Nemotron's error is dominated by missed
+speech (15.9% on the far-field `sc` view, 12.6% on the close-talk mix). Against word-based segments
+(`words_gap0.2`) DER drops by 3-4 points, and against the MFA reference (80-meeting subset) to 11.3% (`sc`) and 9.6%
+(`ihm-mix`). So a sizeable part of the "miss" is pause time inside utterances: a reference convention, not model
+error. The validator found the labels otherwise very clean: no label errors, and only 0.04% of energy-speech on the
+close-talk mix falls outside the reference. The far-field view adds ~4 points over the close-talk mix and lowers
+speaker-count accuracy (77% vs 95%): a real acoustic difficulty, i.e. model error.
+
 
 ## Quality rating
 

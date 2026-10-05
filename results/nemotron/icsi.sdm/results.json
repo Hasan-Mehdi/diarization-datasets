@@ -1,0 +1,200 @@
+{
+ "dataset": "icsi",
+ "view": "sdm",
+ "model": "nvidia/Nemotron-3-Diarization",
+ "model_revision": "f667ed73aee57d40cc39428eb768b4fd87a0a29e",
+ "inference": {
+  "implementation": "transformers (offline mode)",
+  "chunk_length": 340,
+  "chunk_right_context": 40,
+  "fifo_length": 40,
+  "speaker_cache_update_period": 300,
+  "speaker_cache_length": 264,
+  "dtype": "float32",
+  "threshold": 0.5,
+  "postprocessing": "none (threshold only)"
+ },
+ "scoring": {
+  "tool": "pyannote.metrics",
+  "collars_half_width_s": [
+   0.0,
+   0.25
+  ],
+  "overlap": "included",
+  "uem": "per-session UEM from the normalized dataset"
+ },
+ "sessions": 3,
+ "hours": 2.77,
+ "speaker_count_accuracy": 1.0,
+ "speaker_count_mae": 0.0,
+ "rtfx_overall": 935.3,
+ "summary": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.1585,
+   "fa": 0.1108,
+   "miss": 0.0377,
+   "conf": 0.01,
+   "jer": 0.161,
+   "ref_speech_h": 2.5464
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.0539,
+   "fa": 0.0317,
+   "miss": 0.0181,
+   "conf": 0.004,
+   "jer": 0.066,
+   "ref_speech_h": 1.7502
+  },
+  "words_gap0.2@0.0": {
+   "collar": 0.0,
+   "der": 0.3823,
+   "fa": 0.3635,
+   "miss": 0.0114,
+   "conf": 0.0074,
+   "jer": 0.3367,
+   "ref_speech_h": 2.0209
+  },
+  "words_gap0.2@0.25": {
+   "collar": 0.25,
+   "der": 0.224,
+   "fa": 0.2198,
+   "miss": 0.0019,
+   "conf": 0.0024,
+   "jer": 0.2655,
+   "ref_speech_h": 1.2195
+  }
+ },
+ "per_session": [
+  {
+   "session_id": "icsi__Bmr013",
+   "split": "test",
+   "duration": 2907.44,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.0789,
+   "rtfx": null,
+   "primary@0.0": {
+    "der": 0.143,
+    "fa": 0.1045,
+    "miss": 0.0313,
+    "conf": 0.0072,
+    "jer": 0.1355,
+    "ref_speech_s": 2477.546
+   },
+   "primary@0.25": {
+    "der": 0.0377,
+    "fa": 0.0231,
+    "miss": 0.0119,
+    "conf": 0.0027,
+    "jer": 0.0376,
+    "ref_speech_s": 1571.406
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.3073,
+    "fa": 0.2846,
+    "miss": 0.0154,
+    "conf": 0.0073,
+    "jer": 0.3131,
+    "ref_speech_s": 2094.797
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.2097,
+    "fa": 0.2031,
+    "miss": 0.0042,
+    "conf": 0.0024,
+    "jer": 0.2789,
+    "ref_speech_s": 1269.442
+   }
+  },
+  {
+   "session_id": "icsi__Bmr018",
+   "split": "test",
+   "duration": 3421.896,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.1678,
+   "rtfx": null,
+   "primary@0.0": {
+    "der": 0.1803,
+    "fa": 0.1368,
+    "miss": 0.0304,
+    "conf": 0.0131,
+    "jer": 0.2108,
+    "ref_speech_s": 3609.49
+   },
+   "primary@0.25": {
+    "der": 0.0661,
+    "fa": 0.0462,
+    "miss": 0.0146,
+    "conf": 0.0053,
+    "jer": 0.106,
+    "ref_speech_s": 2380.264
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.3982,
+    "fa": 0.3805,
+    "miss": 0.0083,
+    "conf": 0.0094,
+    "jer": 0.3618,
+    "ref_speech_s": 2910.16
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.228,
+    "fa": 0.2236,
+    "miss": 0.0007,
+    "conf": 0.0037,
+    "jer": 0.2803,
+    "ref_speech_s": 1714.746
+   }
+  },
+  {
+   "session_id": "icsi__Bro021",
+   "split": "test",
+   "duration": 3628.635,
+   "ref_speakers": 7,
+   "hyp_speakers": 7,
+   "overlap_ratio": 0.0713,
+   "rtfx": 935.3,
+   "primary@0.0": {
+    "der": 0.1455,
+    "fa": 0.0854,
+    "miss": 0.0514,
+    "conf": 0.0087,
+    "jer": 0.1368,
+    "ref_speech_s": 3079.955
+   },
+   "primary@0.25": {
+    "der": 0.0523,
+    "fa": 0.0229,
+    "miss": 0.0258,
+    "conf": 0.0037,
+    "jer": 0.0545,
+    "ref_speech_s": 2349.036
+   },
+   "words_gap0.2@0.0": {
+    "der": 0.431,
+    "fa": 0.4144,
+    "miss": 0.0117,
+    "conf": 0.0049,
+    "jer": 0.3353,
+    "ref_speech_s": 2270.315
+   },
+   "words_gap0.2@0.25": {
+    "der": 0.2321,
+    "fa": 0.2301,
+    "miss": 0.0014,
+    "conf": 0.0006,
+    "jer": 0.2373,
+    "ref_speech_s": 1406.071
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5080"
+ },
+ "command": "python -m diards evaluate icsi --view sdm --split test --out results/nemotron/icsi.sdm"
+}

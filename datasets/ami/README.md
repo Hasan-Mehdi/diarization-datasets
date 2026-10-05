@@ -92,6 +92,10 @@ View `ihm-mix`: 170 sessions, **0 errors**, 263 warnings (normalized files); 0 s
 <!-- auto:nemotron -->
 | view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| ihm-mix (test) | 16 | 9.06 | primary | **9.22** | 3.66 | 4.68 | 0.88 | 12.89 | 3.56 | 88% |
+| ihm-mix (test) | 16 | 9.06 | only_words | **25.96** | 1.17 | 24.05 | 0.74 | 28.24 | 24.07 | 88% |
+| ihm-mix (test) | 16 | 9.06 | segments | **31.13** | 0.25 | 30.49 | 0.39 | 34.16 | 25.74 | 88% |
+| ihm-mix (test) | 16 | 9.06 | word_and_vocalsounds | **27.74** | 1.01 | 26.07 | 0.67 | 30.70 | 24.82 | 88% |
 | sdm (test) | 16 | 9.06 | primary | **11.35** | 4.12 | 5.86 | 1.38 | 15.03 | 4.73 | 88% |
 | sdm (test) | 16 | 9.06 | only_words | **27.45** | 1.47 | 24.91 | 1.07 | 29.52 | 25.13 | 88% |
 | sdm (test) | 16 | 9.06 | segments | **32.52** | 0.50 | 31.25 | 0.77 | 35.38 | 26.98 | 88% |

@@ -1,0 +1,299 @@
+{
+ "dataset": "callfriend_eng",
+ "view": "default",
+ "sessions": 40,
+ "median_abs_best_lag_s": 0.175,
+ "sessions_shifted": 1,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [
+  {
+   "session_id": "callfriend_eng__eng-n_000",
+   "best_lag_s": 4.3,
+   "agreement_at_0": 0.7131,
+   "agreement_best": 0.9722,
+   "gain": 0.2591
+  }
+ ],
+ "all": [
+  {
+   "session_id": "callfriend_eng__eng-n_000",
+   "best_lag_s": 4.3,
+   "agreement_at_0": 0.7131,
+   "agreement_best": 0.9722,
+   "gain": 0.2591
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_001",
+   "best_lag_s": 2.85,
+   "agreement_at_0": 0.7166,
+   "agreement_best": 0.7242,
+   "gain": 0.0076
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_002",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7253,
+   "agreement_best": 0.7253,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_003",
+   "best_lag_s": 1.8,
+   "agreement_at_0": 0.7051,
+   "agreement_best": 0.7085,
+   "gain": 0.0034
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_004",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8016,
+   "agreement_best": 0.8359,
+   "gain": 0.0344
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_005",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.866,
+   "agreement_best": 0.9024,
+   "gain": 0.0365
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_006",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8509,
+   "agreement_best": 0.8938,
+   "gain": 0.0429
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_007",
+   "best_lag_s": -4.65,
+   "agreement_at_0": 0.8942,
+   "agreement_best": 0.8963,
+   "gain": 0.002
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_008",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8318,
+   "agreement_best": 0.8893,
+   "gain": 0.0575
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_009",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8634,
+   "agreement_best": 0.8956,
+   "gain": 0.0322
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_010",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8946,
+   "agreement_best": 0.9257,
+   "gain": 0.0311
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_011",
+   "best_lag_s": 1.9,
+   "agreement_at_0": 0.9198,
+   "agreement_best": 0.9235,
+   "gain": 0.0037
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_012",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8344,
+   "agreement_best": 0.8963,
+   "gain": 0.0618
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_013",
+   "best_lag_s": -2.4,
+   "agreement_at_0": 0.7129,
+   "agreement_best": 0.7138,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_014",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8236,
+   "agreement_best": 0.8628,
+   "gain": 0.0392
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_015",
+   "best_lag_s": 5.0,
+   "agreement_at_0": 0.8985,
+   "agreement_best": 0.911,
+   "gain": 0.0124
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_016",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7232,
+   "agreement_best": 0.7358,
+   "gain": 0.0126
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_017",
+   "best_lag_s": -4.35,
+   "agreement_at_0": 0.8324,
+   "agreement_best": 0.8344,
+   "gain": 0.0019
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_018",
+   "best_lag_s": 4.75,
+   "agreement_at_0": 0.6339,
+   "agreement_best": 0.6486,
+   "gain": 0.0146
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_019",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7896,
+   "agreement_best": 0.8148,
+   "gain": 0.0253
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_020",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8561,
+   "agreement_best": 0.8717,
+   "gain": 0.0156
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_021",
+   "best_lag_s": 4.5,
+   "agreement_at_0": 0.7865,
+   "agreement_best": 0.7935,
+   "gain": 0.0071
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_022",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7978,
+   "agreement_best": 0.8599,
+   "gain": 0.0621
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_023",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.865,
+   "agreement_best": 0.8917,
+   "gain": 0.0267
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_024",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.83,
+   "agreement_best": 0.8869,
+   "gain": 0.0569
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_025",
+   "best_lag_s": -5.0,
+   "agreement_at_0": 0.8196,
+   "agreement_best": 0.837,
+   "gain": 0.0174
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_026",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8701,
+   "agreement_best": 0.8994,
+   "gain": 0.0293
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_027",
+   "best_lag_s": -2.65,
+   "agreement_at_0": 0.8063,
+   "agreement_best": 0.8168,
+   "gain": 0.0104
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_028",
+   "best_lag_s": -3.15,
+   "agreement_at_0": 0.8813,
+   "agreement_best": 0.8831,
+   "gain": 0.0018
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_029",
+   "best_lag_s": 3.3,
+   "agreement_at_0": 0.7241,
+   "agreement_best": 0.7333,
+   "gain": 0.0092
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_030",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8638,
+   "agreement_best": 0.8935,
+   "gain": 0.0297
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_000",
+   "best_lag_s": -4.25,
+   "agreement_at_0": 0.7202,
+   "agreement_best": 0.7216,
+   "gain": 0.0014
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_001",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.7716,
+   "agreement_best": 0.7991,
+   "gain": 0.0275
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_002",
+   "best_lag_s": 0.2,
+   "agreement_at_0": 0.8769,
+   "agreement_best": 0.884,
+   "gain": 0.0071
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_003",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.6064,
+   "agreement_best": 0.6085,
+   "gain": 0.0021
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_004",
+   "best_lag_s": 0.2,
+   "agreement_at_0": 0.6833,
+   "agreement_best": 0.6966,
+   "gain": 0.0132
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_005",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.6958,
+   "agreement_best": 0.6993,
+   "gain": 0.0035
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_006",
+   "best_lag_s": 0.25,
+   "agreement_at_0": 0.8016,
+   "agreement_best": 0.8135,
+   "gain": 0.0119
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_007",
+   "best_lag_s": -1.25,
+   "agreement_at_0": 0.8438,
+   "agreement_best": 0.8452,
+   "gain": 0.0014
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_008",
+   "best_lag_s": 2.0,
+   "agreement_at_0": 0.5815,
+   "agreement_best": 0.599,
+   "gain": 0.0174
+  }
+ ]
+}

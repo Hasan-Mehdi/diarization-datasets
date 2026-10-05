@@ -42,13 +42,21 @@ silences of each LibriSpeech utterance, so segments are slightly longer than the
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| dev | 6 | 1.01 | 0.94 | 0.94 | 0.103 | 0.0002 | 8/8/8 | 1.913/5.505/16.077 | 0.0 | 25.95 | 7.65 |
+| eval | 54 | 9.09 | 8.49 | 0.935 | 0.103 | 0.0015 | 8/8/8 | 1.919/5.88/19.25 | 0.0 | 30.394 | 7.16 |
+| ALL | 60 | 10.1 | 9.43 | 0.935 | 0.103 | 0.0013 | 8/8/8 | 1.911/5.85/19.18 | 0.0 | 29.942 | 7.21 |
+
+Computed by `python -m diards stats libricss` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.libricss.md`](../../results/stats/stats.libricss.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `clean-mix`: 60 sessions, **0 errors**, 0 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.2% of reference speech; reference speech without energy = 1.5%. Most-flagged sessions: `libricss__0L_session8` (0.00), `libricss__0L_session2` (0.00), `libricss__0L_session5` (0.00), `libricss__0L_session3` (0.00), `libricss__0L_session4` (0.00)
+- full report: [`results/validation/validation.libricss.clean-mix.md`](../../results/validation/validation.libricss.clean-mix.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

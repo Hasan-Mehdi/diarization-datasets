@@ -1,0 +1,370 @@
+{
+ "dataset": "callfriend_eng",
+ "view": "default",
+ "regions_checked": 40,
+ "regions": [
+  {
+   "session_id": "callfriend_eng__eng-n_026",
+   "start": 264.64,
+   "end": 268.83,
+   "dur": 4.19,
+   "whisper": "You know when Reagan says something stupid, people turn it to disapprove, and when he says something good,",
+   "words": 18,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_001",
+   "start": 45.08,
+   "end": 48.35,
+   "dur": 3.27,
+   "whisper": "He's a very talented accomplice.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_001",
+   "start": 19.45,
+   "end": 22.62,
+   "dur": 3.17,
+   "whisper": "I mean, you know, for just a casual outing with your children.",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_004",
+   "start": 535.09,
+   "end": 538.13,
+   "dur": 3.04,
+   "whisper": "So I was offered a chance to go to a nearby town with",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_023",
+   "start": 1514.48,
+   "end": 1517.44,
+   "dur": 2.96,
+   "whisper": "one thing is we wait on like really rich people all the time.",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_004",
+   "start": 1134.05,
+   "end": 1137.01,
+   "dur": 2.96,
+   "whisper": "well bright and sunshiny and you know doing a little kid thing and",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_001",
+   "start": 48.87,
+   "end": 51.71,
+   "dur": 2.84,
+   "whisper": "Hollywood director, and he was married to Penny Marshall.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_002",
+   "start": 268.75,
+   "end": 271.33,
+   "dur": 2.58,
+   "whisper": "Well, two months. I mean, I don't think...",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_004",
+   "start": 1593.83,
+   "end": 1596.34,
+   "dur": 2.51,
+   "whisper": "pointing me at ACOA meetings.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_019",
+   "start": 1130.96,
+   "end": 1133.45,
+   "dur": 2.49,
+   "whisper": "I've actually, it's kind of a neat thing.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_005",
+   "start": 809.44,
+   "end": 811.9,
+   "dur": 2.46,
+   "whisper": "constantly talks about how she won't be around in",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_014",
+   "start": 451.44,
+   "end": 453.89,
+   "dur": 2.45,
+   "whisper": "either he tells you to go back and learn it again or",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_014",
+   "start": 382.21,
+   "end": 384.65,
+   "dur": 2.44,
+   "whisper": "I mean, we can get it done before the insurance companies.",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_009",
+   "start": 45.57,
+   "end": 48.01,
+   "dur": 2.44,
+   "whisper": "parents later, she really shouldn't have done this, but it's really nice to",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_019",
+   "start": 141.51,
+   "end": 143.92,
+   "dur": 2.41,
+   "whisper": "wrote down what I wanted and all this other kind of stuff.",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_020",
+   "start": 886.45,
+   "end": 888.81,
+   "dur": 2.36,
+   "whisper": "And he's like, yeah, that's not even, like,",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_002",
+   "start": 273.02,
+   "end": 275.37,
+   "dur": 2.35,
+   "whisper": "Yeah, we're in the middle of finals week.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_004",
+   "start": 685.0,
+   "end": 687.32,
+   "dur": 2.32,
+   "whisper": "And he took me over there and says, look, sis,",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_020",
+   "start": 1052.4,
+   "end": 1054.71,
+   "dur": 2.31,
+   "whisper": "I don't fucking know what the deal is at all.",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_020",
+   "start": 776.22,
+   "end": 778.5,
+   "dur": 2.28,
+   "whisper": "I don't even know. Like, we just had all this good talk.",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_030",
+   "start": 1640.93,
+   "end": 1643.18,
+   "dur": 2.25,
+   "whisper": "Well, I don't know if I like him that much.",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_026",
+   "start": 302.99,
+   "end": 305.14,
+   "dur": 2.15,
+   "whisper": "telephone company says oh well we have to buy all this",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_018",
+   "start": 20.3,
+   "end": 22.42,
+   "dur": 2.12,
+   "whisper": "And he's like, can you call back?",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_008",
+   "start": 248.86,
+   "end": 250.92,
+   "dur": 2.06,
+   "whisper": "because that will get you booted out of my life.",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_020",
+   "start": 688.46,
+   "end": 690.52,
+   "dur": 2.06,
+   "whisper": "he looks a lot like Phil, like, bada bing, bada,",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_007",
+   "start": 70.51,
+   "end": 72.56,
+   "dur": 2.05,
+   "whisper": "Maybe I didn't tell you that. Yeah, Opal Moore.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_001",
+   "start": 42.74,
+   "end": 44.77,
+   "dur": 2.03,
+   "whisper": "See, I'm not real familiar with their video,",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_026",
+   "start": 1583.56,
+   "end": 1585.59,
+   "dur": 2.03,
+   "whisper": "and redesign their shoe",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_004",
+   "start": 852.11,
+   "end": 854.14,
+   "dur": 2.03,
+   "whisper": "including American provincial cooking, which is",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_002",
+   "start": 214.84,
+   "end": 216.85,
+   "dur": 2.01,
+   "whisper": "Oh, yeah, that was long.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_004",
+   "start": 862.15,
+   "end": 864.12,
+   "dur": 1.97,
+   "whisper": "He won't know that",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_024",
+   "start": 355.32,
+   "end": 357.29,
+   "dur": 1.97,
+   "whisper": "I can remember the property behind it.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_004",
+   "start": 1130.91,
+   "end": 1132.88,
+   "dur": 1.97,
+   "whisper": "You see little kids growing up and you think,",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_023",
+   "start": 111.7,
+   "end": 113.64,
+   "dur": 1.94,
+   "whisper": "The next day she had to work and go to school",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_012",
+   "start": 513.48,
+   "end": 515.41,
+   "dur": 1.93,
+   "whisper": "You might not recognize them in their new uniforms.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_002",
+   "start": 169.32,
+   "end": 171.22,
+   "dur": 1.9,
+   "whisper": "Yeah, then la, la, la, la.",
+   "words": 6,
+   "speech": false
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_020",
+   "start": 658.15,
+   "end": 660.04,
+   "dur": 1.89,
+   "whisper": "I go home and call up 10 of my friends and tell them",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_005",
+   "start": 1211.23,
+   "end": 1213.12,
+   "dur": 1.89,
+   "whisper": "now he will die in some bizarre accident",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_012",
+   "start": 821.28,
+   "end": 823.13,
+   "dur": 1.85,
+   "whisper": "I can't think of a third thing at the moment.",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_006",
+   "start": 1535.89,
+   "end": 1537.7,
+   "dur": 1.81,
+   "whisper": "Okay, they're not going to get big publicity from that.",
+   "words": 10,
+   "speech": true
+  }
+ ],
+ "regions_with_speech": 39,
+ "seconds_checked": 93.7,
+ "seconds_with_speech": 91.8
+}

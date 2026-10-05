@@ -1,0 +1,991 @@
+{
+ "dataset": "callhome_eng",
+ "view": "default",
+ "sessions": 140,
+ "median_abs_best_lag_s": 0.0,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "callhome_eng__eng_000",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9456,
+   "agreement_best": 0.9456,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_001",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9344,
+   "agreement_best": 0.9344,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_002",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.939,
+   "agreement_best": 0.939,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_003",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9092,
+   "agreement_best": 0.9092,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_004",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9625,
+   "agreement_best": 0.9625,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_005",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9086,
+   "agreement_best": 0.9086,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_006",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8774,
+   "agreement_best": 0.8774,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_007",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9311,
+   "agreement_best": 0.9311,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_008",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9625,
+   "agreement_best": 0.9625,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_009",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9535,
+   "agreement_best": 0.9535,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_010",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.955,
+   "agreement_best": 0.955,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_011",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8901,
+   "agreement_best": 0.8901,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_012",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8661,
+   "agreement_best": 0.8661,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_013",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9225,
+   "agreement_best": 0.9225,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_014",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9427,
+   "agreement_best": 0.9427,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_015",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9583,
+   "agreement_best": 0.9583,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_016",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9225,
+   "agreement_best": 0.9225,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_017",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9593,
+   "agreement_best": 0.9593,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_018",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9173,
+   "agreement_best": 0.9173,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_019",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9338,
+   "agreement_best": 0.9338,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_020",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.916,
+   "agreement_best": 0.916,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_021",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9602,
+   "agreement_best": 0.9602,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_022",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9559,
+   "agreement_best": 0.9559,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_023",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9461,
+   "agreement_best": 0.9461,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_024",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.942,
+   "agreement_best": 0.942,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_025",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8832,
+   "agreement_best": 0.8832,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_026",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9146,
+   "agreement_best": 0.9146,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_027",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8903,
+   "agreement_best": 0.8903,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_028",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9581,
+   "agreement_best": 0.9581,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_029",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9238,
+   "agreement_best": 0.9238,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_030",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9549,
+   "agreement_best": 0.9549,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_031",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9495,
+   "agreement_best": 0.9495,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_032",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9404,
+   "agreement_best": 0.9404,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_033",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8977,
+   "agreement_best": 0.8977,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_034",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9717,
+   "agreement_best": 0.9717,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_035",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9753,
+   "agreement_best": 0.9753,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_036",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9331,
+   "agreement_best": 0.9331,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_037",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7263,
+   "agreement_best": 0.7263,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_038",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.962,
+   "agreement_best": 0.962,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_039",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9534,
+   "agreement_best": 0.9534,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_040",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9014,
+   "agreement_best": 0.9014,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_041",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9273,
+   "agreement_best": 0.9273,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_042",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9179,
+   "agreement_best": 0.9179,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_043",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9575,
+   "agreement_best": 0.9575,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_044",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9355,
+   "agreement_best": 0.9355,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_045",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9605,
+   "agreement_best": 0.9605,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_046",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9317,
+   "agreement_best": 0.9317,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_047",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9028,
+   "agreement_best": 0.9028,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_048",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9395,
+   "agreement_best": 0.9395,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_049",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9516,
+   "agreement_best": 0.9516,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_050",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9418,
+   "agreement_best": 0.9418,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_051",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8967,
+   "agreement_best": 0.8967,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_052",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9546,
+   "agreement_best": 0.9546,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_053",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9016,
+   "agreement_best": 0.9016,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_054",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9173,
+   "agreement_best": 0.9173,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_055",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9552,
+   "agreement_best": 0.9552,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_056",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9421,
+   "agreement_best": 0.9421,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_057",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9097,
+   "agreement_best": 0.9097,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_058",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9281,
+   "agreement_best": 0.9281,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_059",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9582,
+   "agreement_best": 0.9582,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_060",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9229,
+   "agreement_best": 0.9229,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_061",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9544,
+   "agreement_best": 0.9544,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_062",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9558,
+   "agreement_best": 0.9558,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_063",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9236,
+   "agreement_best": 0.9236,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_064",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9484,
+   "agreement_best": 0.9484,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_065",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9614,
+   "agreement_best": 0.9614,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_066",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9427,
+   "agreement_best": 0.9427,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_067",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9229,
+   "agreement_best": 0.9229,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_068",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9038,
+   "agreement_best": 0.9038,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_069",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9374,
+   "agreement_best": 0.9374,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_070",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9538,
+   "agreement_best": 0.9538,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_071",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9423,
+   "agreement_best": 0.9423,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_072",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8642,
+   "agreement_best": 0.8642,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_073",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9239,
+   "agreement_best": 0.9239,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_074",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9542,
+   "agreement_best": 0.9542,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_075",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9472,
+   "agreement_best": 0.9472,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_076",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9671,
+   "agreement_best": 0.9671,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_077",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9221,
+   "agreement_best": 0.9221,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_078",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9362,
+   "agreement_best": 0.9362,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_079",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9562,
+   "agreement_best": 0.9562,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_080",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9604,
+   "agreement_best": 0.9614,
+   "gain": 0.001
+  },
+  {
+   "session_id": "callhome_eng__eng_081",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9454,
+   "agreement_best": 0.9454,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_082",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8248,
+   "agreement_best": 0.8248,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_083",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9182,
+   "agreement_best": 0.9182,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_084",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9386,
+   "agreement_best": 0.9386,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_085",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9582,
+   "agreement_best": 0.9582,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_086",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9754,
+   "agreement_best": 0.9754,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_087",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9348,
+   "agreement_best": 0.9348,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_088",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9318,
+   "agreement_best": 0.9318,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_089",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9112,
+   "agreement_best": 0.9112,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_090",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9428,
+   "agreement_best": 0.9428,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_091",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9248,
+   "agreement_best": 0.9248,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_092",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9215,
+   "agreement_best": 0.9215,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_093",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9639,
+   "agreement_best": 0.9639,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_094",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9294,
+   "agreement_best": 0.9294,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_095",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9564,
+   "agreement_best": 0.9564,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_096",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9471,
+   "agreement_best": 0.9471,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_097",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9462,
+   "agreement_best": 0.9462,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_098",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9746,
+   "agreement_best": 0.9746,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_099",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9066,
+   "agreement_best": 0.9066,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_100",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9174,
+   "agreement_best": 0.9174,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_101",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9334,
+   "agreement_best": 0.9334,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_102",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9432,
+   "agreement_best": 0.9432,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_103",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9584,
+   "agreement_best": 0.9584,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_104",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9718,
+   "agreement_best": 0.9718,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_105",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.953,
+   "agreement_best": 0.953,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_106",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9422,
+   "agreement_best": 0.9422,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_107",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9351,
+   "agreement_best": 0.9351,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_108",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.931,
+   "agreement_best": 0.931,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_109",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9107,
+   "agreement_best": 0.9107,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_110",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8545,
+   "agreement_best": 0.8545,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_111",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9701,
+   "agreement_best": 0.9701,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_112",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9069,
+   "agreement_best": 0.9069,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_113",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9258,
+   "agreement_best": 0.9258,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_114",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9455,
+   "agreement_best": 0.9455,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_115",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9534,
+   "agreement_best": 0.9534,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_116",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9434,
+   "agreement_best": 0.9434,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_117",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9592,
+   "agreement_best": 0.9592,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_118",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9227,
+   "agreement_best": 0.9227,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_119",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9348,
+   "agreement_best": 0.9348,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_120",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9523,
+   "agreement_best": 0.9523,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_121",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9086,
+   "agreement_best": 0.9086,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_122",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9769,
+   "agreement_best": 0.9769,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_123",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9114,
+   "agreement_best": 0.9114,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_124",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8682,
+   "agreement_best": 0.8682,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_125",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8772,
+   "agreement_best": 0.8772,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_126",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9131,
+   "agreement_best": 0.9131,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_127",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9522,
+   "agreement_best": 0.9522,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_128",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9678,
+   "agreement_best": 0.9678,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_129",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9641,
+   "agreement_best": 0.9641,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_130",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9521,
+   "agreement_best": 0.9521,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_131",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9339,
+   "agreement_best": 0.9339,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_132",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9331,
+   "agreement_best": 0.9331,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_133",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9376,
+   "agreement_best": 0.9376,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_134",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9423,
+   "agreement_best": 0.9423,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_135",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8997,
+   "agreement_best": 0.8997,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_136",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9741,
+   "agreement_best": 0.9741,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_137",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.968,
+   "agreement_best": 0.968,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_138",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9248,
+   "agreement_best": 0.9248,
+   "gain": 0.0
+  },
+  {
+   "session_id": "callhome_eng__eng_139",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9451,
+   "agreement_best": 0.9451,
+   "gain": 0.0
+  }
+ ]
+}

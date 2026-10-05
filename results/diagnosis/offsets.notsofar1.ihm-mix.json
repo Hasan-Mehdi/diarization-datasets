@@ -1,0 +1,914 @@
+{
+ "dataset": "notsofar1",
+ "view": "ihm-mix",
+ "sessions": 129,
+ "median_abs_best_lag_s": 0.0,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "notsofar1__MTG_32000",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9601,
+   "agreement_best": 0.9601,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32003",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9467,
+   "agreement_best": 0.9467,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32004",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9567,
+   "agreement_best": 0.9567,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32005",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9505,
+   "agreement_best": 0.9505,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32006",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9516,
+   "agreement_best": 0.9516,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32007",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9571,
+   "agreement_best": 0.9571,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32008",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9576,
+   "agreement_best": 0.9576,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32009",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.95,
+   "agreement_best": 0.9506,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "notsofar1__MTG_32020",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9458,
+   "agreement_best": 0.946,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "notsofar1__MTG_32021",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9591,
+   "agreement_best": 0.9591,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32022",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9421,
+   "agreement_best": 0.9421,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32023",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9568,
+   "agreement_best": 0.9568,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32024",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9606,
+   "agreement_best": 0.9606,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32025",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9469,
+   "agreement_best": 0.9469,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32026",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9454,
+   "agreement_best": 0.9454,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32027",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9427,
+   "agreement_best": 0.9427,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32029",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9446,
+   "agreement_best": 0.9446,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32030",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.958,
+   "agreement_best": 0.958,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32040",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9603,
+   "agreement_best": 0.9612,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "notsofar1__MTG_32041",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9563,
+   "agreement_best": 0.9566,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "notsofar1__MTG_32042",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9717,
+   "agreement_best": 0.9753,
+   "gain": 0.0036
+  },
+  {
+   "session_id": "notsofar1__MTG_32045",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9548,
+   "agreement_best": 0.9556,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "notsofar1__MTG_32046",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9554,
+   "agreement_best": 0.9637,
+   "gain": 0.0083
+  },
+  {
+   "session_id": "notsofar1__MTG_32047",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9632,
+   "agreement_best": 0.9684,
+   "gain": 0.0052
+  },
+  {
+   "session_id": "notsofar1__MTG_32048",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9608,
+   "agreement_best": 0.9608,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32049",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9075,
+   "agreement_best": 0.9103,
+   "gain": 0.0028
+  },
+  {
+   "session_id": "notsofar1__MTG_32050",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9588,
+   "agreement_best": 0.9591,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "notsofar1__MTG_32051",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9655,
+   "agreement_best": 0.9668,
+   "gain": 0.0014
+  },
+  {
+   "session_id": "notsofar1__MTG_32052",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9587,
+   "agreement_best": 0.959,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "notsofar1__MTG_32053",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9545,
+   "agreement_best": 0.9578,
+   "gain": 0.0033
+  },
+  {
+   "session_id": "notsofar1__MTG_32054",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9659,
+   "agreement_best": 0.9667,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "notsofar1__MTG_32055",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9573,
+   "agreement_best": 0.9592,
+   "gain": 0.0019
+  },
+  {
+   "session_id": "notsofar1__MTG_32060",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9574,
+   "agreement_best": 0.9593,
+   "gain": 0.0019
+  },
+  {
+   "session_id": "notsofar1__MTG_32061",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9478,
+   "agreement_best": 0.9478,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32062",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9275,
+   "agreement_best": 0.9278,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "notsofar1__MTG_32063",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9695,
+   "agreement_best": 0.9725,
+   "gain": 0.003
+  },
+  {
+   "session_id": "notsofar1__MTG_32064",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9625,
+   "agreement_best": 0.965,
+   "gain": 0.0025
+  },
+  {
+   "session_id": "notsofar1__MTG_32065",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9564,
+   "agreement_best": 0.9564,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32066",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9587,
+   "agreement_best": 0.9587,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32067",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9565,
+   "agreement_best": 0.9565,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32068",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9725,
+   "agreement_best": 0.9744,
+   "gain": 0.002
+  },
+  {
+   "session_id": "notsofar1__MTG_32069",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.953,
+   "agreement_best": 0.9616,
+   "gain": 0.0086
+  },
+  {
+   "session_id": "notsofar1__MTG_32070",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9615,
+   "agreement_best": 0.9621,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "notsofar1__MTG_32071",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9677,
+   "agreement_best": 0.9688,
+   "gain": 0.0011
+  },
+  {
+   "session_id": "notsofar1__MTG_32072",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.975,
+   "agreement_best": 0.9774,
+   "gain": 0.0025
+  },
+  {
+   "session_id": "notsofar1__MTG_32073",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9601,
+   "agreement_best": 0.9632,
+   "gain": 0.0031
+  },
+  {
+   "session_id": "notsofar1__MTG_32074",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9653,
+   "agreement_best": 0.9653,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32075",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9576,
+   "agreement_best": 0.9576,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32080",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9202,
+   "agreement_best": 0.9216,
+   "gain": 0.0014
+  },
+  {
+   "session_id": "notsofar1__MTG_32081",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9364,
+   "agreement_best": 0.9364,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32082",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9405,
+   "agreement_best": 0.9417,
+   "gain": 0.0011
+  },
+  {
+   "session_id": "notsofar1__MTG_32084",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9075,
+   "agreement_best": 0.9077,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "notsofar1__MTG_32085",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9327,
+   "agreement_best": 0.9327,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32086",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9342,
+   "agreement_best": 0.9353,
+   "gain": 0.0011
+  },
+  {
+   "session_id": "notsofar1__MTG_32087",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9496,
+   "agreement_best": 0.9496,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32088",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9491,
+   "agreement_best": 0.9499,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "notsofar1__MTG_32089",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9335,
+   "agreement_best": 0.9361,
+   "gain": 0.0025
+  },
+  {
+   "session_id": "notsofar1__MTG_32090",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9652,
+   "agreement_best": 0.9675,
+   "gain": 0.0022
+  },
+  {
+   "session_id": "notsofar1__MTG_32091",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9255,
+   "agreement_best": 0.9255,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32092",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9146,
+   "agreement_best": 0.9163,
+   "gain": 0.0017
+  },
+  {
+   "session_id": "notsofar1__MTG_32093",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9749,
+   "agreement_best": 0.9749,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32094",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9563,
+   "agreement_best": 0.9584,
+   "gain": 0.0021
+  },
+  {
+   "session_id": "notsofar1__MTG_32095",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9771,
+   "agreement_best": 0.9782,
+   "gain": 0.0011
+  },
+  {
+   "session_id": "notsofar1__MTG_32100",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.918,
+   "agreement_best": 0.918,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32101",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9118,
+   "agreement_best": 0.912,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "notsofar1__MTG_32102",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9368,
+   "agreement_best": 0.9368,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32103",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9438,
+   "agreement_best": 0.9438,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32104",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9488,
+   "agreement_best": 0.9488,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32105",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8441,
+   "agreement_best": 0.8451,
+   "gain": 0.001
+  },
+  {
+   "session_id": "notsofar1__MTG_32106",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9466,
+   "agreement_best": 0.9466,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32107",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9611,
+   "agreement_best": 0.9611,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32108",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9472,
+   "agreement_best": 0.9479,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "notsofar1__MTG_32109",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9109,
+   "agreement_best": 0.9109,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32110",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9675,
+   "agreement_best": 0.9675,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32175",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9502,
+   "agreement_best": 0.9519,
+   "gain": 0.0017
+  },
+  {
+   "session_id": "notsofar1__MTG_32178",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9009,
+   "agreement_best": 0.9053,
+   "gain": 0.0045
+  },
+  {
+   "session_id": "notsofar1__MTG_32179",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9369,
+   "agreement_best": 0.9377,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "notsofar1__MTG_32180",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9604,
+   "agreement_best": 0.9604,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32181",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9179,
+   "agreement_best": 0.9179,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32182",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.959,
+   "agreement_best": 0.9615,
+   "gain": 0.0025
+  },
+  {
+   "session_id": "notsofar1__MTG_32183",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9548,
+   "agreement_best": 0.9553,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "notsofar1__MTG_32184",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9619,
+   "agreement_best": 0.9625,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "notsofar1__MTG_32185",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9415,
+   "agreement_best": 0.9415,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32186",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9508,
+   "agreement_best": 0.9508,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32188",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9819,
+   "agreement_best": 0.9821,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "notsofar1__MTG_32189",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9701,
+   "agreement_best": 0.9701,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32190",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9206,
+   "agreement_best": 0.9206,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32191",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9507,
+   "agreement_best": 0.9507,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32250",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9459,
+   "agreement_best": 0.9459,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32251",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9533,
+   "agreement_best": 0.9533,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32252",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9527,
+   "agreement_best": 0.9527,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32254",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9517,
+   "agreement_best": 0.9517,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32255",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9494,
+   "agreement_best": 0.9494,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32256",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9397,
+   "agreement_best": 0.9408,
+   "gain": 0.0011
+  },
+  {
+   "session_id": "notsofar1__MTG_32257",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9826,
+   "agreement_best": 0.9826,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32260",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9474,
+   "agreement_best": 0.9474,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32261",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9474,
+   "agreement_best": 0.9474,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32263",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9438,
+   "agreement_best": 0.9438,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32264",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9608,
+   "agreement_best": 0.9608,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32265",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9425,
+   "agreement_best": 0.9425,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32266",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9383,
+   "agreement_best": 0.9383,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32310",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9473,
+   "agreement_best": 0.9481,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "notsofar1__MTG_32311",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9268,
+   "agreement_best": 0.9268,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32312",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9335,
+   "agreement_best": 0.9335,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32313",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9331,
+   "agreement_best": 0.9331,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32314",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9524,
+   "agreement_best": 0.9524,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32315",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9768,
+   "agreement_best": 0.9768,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32316",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9331,
+   "agreement_best": 0.9331,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32317",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9332,
+   "agreement_best": 0.9332,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32319",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9264,
+   "agreement_best": 0.9264,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32320",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.945,
+   "agreement_best": 0.945,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32321",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9458,
+   "agreement_best": 0.9458,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32322",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9556,
+   "agreement_best": 0.9556,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32323",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9527,
+   "agreement_best": 0.9527,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32325",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9437,
+   "agreement_best": 0.9437,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32331",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9258,
+   "agreement_best": 0.9258,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32332",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9299,
+   "agreement_best": 0.9299,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32333",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9304,
+   "agreement_best": 0.9304,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32334",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9274,
+   "agreement_best": 0.9274,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32335",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9259,
+   "agreement_best": 0.9259,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32336",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.936,
+   "agreement_best": 0.936,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32337",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9396,
+   "agreement_best": 0.9396,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32338",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9309,
+   "agreement_best": 0.9309,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32339",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9402,
+   "agreement_best": 0.9402,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32341",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9458,
+   "agreement_best": 0.9458,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32342",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9513,
+   "agreement_best": 0.9513,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32344",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9259,
+   "agreement_best": 0.9259,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32345",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.924,
+   "agreement_best": 0.924,
+   "gain": 0.0
+  },
+  {
+   "session_id": "notsofar1__MTG_32346",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9718,
+   "agreement_best": 0.9718,
+   "gain": 0.0
+  }
+ ]
+}

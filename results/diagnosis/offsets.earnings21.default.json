@@ -1,0 +1,319 @@
+{
+ "dataset": "earnings21",
+ "view": "default",
+ "sessions": 44,
+ "median_abs_best_lag_s": 0.05,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "earnings21__4320211",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9533,
+   "agreement_best": 0.9558,
+   "gain": 0.0025
+  },
+  {
+   "session_id": "earnings21__4341191",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.948,
+   "agreement_best": 0.9609,
+   "gain": 0.0128
+  },
+  {
+   "session_id": "earnings21__4346818",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9418,
+   "agreement_best": 0.9418,
+   "gain": 0.0
+  },
+  {
+   "session_id": "earnings21__4359971",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9686,
+   "agreement_best": 0.9724,
+   "gain": 0.0038
+  },
+  {
+   "session_id": "earnings21__4365024",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9672,
+   "agreement_best": 0.9701,
+   "gain": 0.0029
+  },
+  {
+   "session_id": "earnings21__4366522",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.938,
+   "agreement_best": 0.9398,
+   "gain": 0.0018
+  },
+  {
+   "session_id": "earnings21__4366893",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9027,
+   "agreement_best": 0.9058,
+   "gain": 0.0031
+  },
+  {
+   "session_id": "earnings21__4367535",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9185,
+   "agreement_best": 0.9238,
+   "gain": 0.0053
+  },
+  {
+   "session_id": "earnings21__4383161",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9183,
+   "agreement_best": 0.9208,
+   "gain": 0.0025
+  },
+  {
+   "session_id": "earnings21__4384964",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.809,
+   "agreement_best": 0.8094,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "earnings21__4387332",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9322,
+   "agreement_best": 0.94,
+   "gain": 0.0078
+  },
+  {
+   "session_id": "earnings21__4330115",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9577,
+   "agreement_best": 0.9635,
+   "gain": 0.0058
+  },
+  {
+   "session_id": "earnings21__4344338",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9497,
+   "agreement_best": 0.9536,
+   "gain": 0.0039
+  },
+  {
+   "session_id": "earnings21__4344866",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9628,
+   "agreement_best": 0.963,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "earnings21__4346923",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8803,
+   "agreement_best": 0.8836,
+   "gain": 0.0033
+  },
+  {
+   "session_id": "earnings21__4359732",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.94,
+   "agreement_best": 0.9445,
+   "gain": 0.0045
+  },
+  {
+   "session_id": "earnings21__4360366",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9239,
+   "agreement_best": 0.9294,
+   "gain": 0.0055
+  },
+  {
+   "session_id": "earnings21__4360674",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.976,
+   "agreement_best": 0.9775,
+   "gain": 0.0014
+  },
+  {
+   "session_id": "earnings21__4360717",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.957,
+   "agreement_best": 0.961,
+   "gain": 0.0039
+  },
+  {
+   "session_id": "earnings21__4361631",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9687,
+   "agreement_best": 0.9699,
+   "gain": 0.0011
+  },
+  {
+   "session_id": "earnings21__4363614",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9534,
+   "agreement_best": 0.9534,
+   "gain": 0.0
+  },
+  {
+   "session_id": "earnings21__4364366",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9303,
+   "agreement_best": 0.9311,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "earnings21__4365948",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9565,
+   "agreement_best": 0.9621,
+   "gain": 0.0056
+  },
+  {
+   "session_id": "earnings21__4366302",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9428,
+   "agreement_best": 0.9482,
+   "gain": 0.0055
+  },
+  {
+   "session_id": "earnings21__4366429",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9695,
+   "agreement_best": 0.9735,
+   "gain": 0.004
+  },
+  {
+   "session_id": "earnings21__4367318",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9621,
+   "agreement_best": 0.9674,
+   "gain": 0.0053
+  },
+  {
+   "session_id": "earnings21__4368670",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9132,
+   "agreement_best": 0.9178,
+   "gain": 0.0046
+  },
+  {
+   "session_id": "earnings21__4374910",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.958,
+   "agreement_best": 0.9641,
+   "gain": 0.0062
+  },
+  {
+   "session_id": "earnings21__4375653",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.933,
+   "agreement_best": 0.9355,
+   "gain": 0.0025
+  },
+  {
+   "session_id": "earnings21__4382825",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9433,
+   "agreement_best": 0.9474,
+   "gain": 0.0042
+  },
+  {
+   "session_id": "earnings21__4384198",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9622,
+   "agreement_best": 0.9668,
+   "gain": 0.0046
+  },
+  {
+   "session_id": "earnings21__4384683",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9682,
+   "agreement_best": 0.9731,
+   "gain": 0.0049
+  },
+  {
+   "session_id": "earnings21__4384744",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9426,
+   "agreement_best": 0.9453,
+   "gain": 0.0027
+  },
+  {
+   "session_id": "earnings21__4385072",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9634,
+   "agreement_best": 0.9702,
+   "gain": 0.0068
+  },
+  {
+   "session_id": "earnings21__4385388",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.957,
+   "agreement_best": 0.9612,
+   "gain": 0.0042
+  },
+  {
+   "session_id": "earnings21__4385939",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9528,
+   "agreement_best": 0.956,
+   "gain": 0.0032
+  },
+  {
+   "session_id": "earnings21__4386541",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9771,
+   "agreement_best": 0.9816,
+   "gain": 0.0046
+  },
+  {
+   "session_id": "earnings21__4387383",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8332,
+   "agreement_best": 0.8354,
+   "gain": 0.0022
+  },
+  {
+   "session_id": "earnings21__4387865",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9738,
+   "agreement_best": 0.9738,
+   "gain": 0.0
+  },
+  {
+   "session_id": "earnings21__4389907",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8739,
+   "agreement_best": 0.8801,
+   "gain": 0.0062
+  },
+  {
+   "session_id": "earnings21__4392809",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9699,
+   "agreement_best": 0.9776,
+   "gain": 0.0076
+  },
+  {
+   "session_id": "earnings21__4394084",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9331,
+   "agreement_best": 0.9359,
+   "gain": 0.0028
+  },
+  {
+   "session_id": "earnings21__4397800",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9548,
+   "agreement_best": 0.9548,
+   "gain": 0.0
+  },
+  {
+   "session_id": "earnings21__4397829",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9051,
+   "agreement_best": 0.9051,
+   "gain": 0.0
+  }
+ ]
+}

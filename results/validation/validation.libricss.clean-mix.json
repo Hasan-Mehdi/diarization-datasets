@@ -1,0 +1,1561 @@
+{
+ "summary": {
+  "dataset": "libricss",
+  "view": "clean-mix",
+  "sessions": 60,
+  "errors": 0,
+  "warnings": 0,
+  "issue_counts": {},
+  "raw_label_issue_totals": {},
+  "sessions_with_raw_label_issues": 0,
+  "vad": {
+   "ref_speech_h": 9.43,
+   "vad_not_in_ref_frac": 0.0018,
+   "ref_not_in_vad_frac": 0.0146,
+   "worst_sessions": [
+    [
+     "libricss__0L_session8",
+     0.0026
+    ],
+    [
+     "libricss__0L_session2",
+     0.0025
+    ],
+    [
+     "libricss__0L_session5",
+     0.0025
+    ],
+    [
+     "libricss__0L_session3",
+     0.0024
+    ],
+    [
+     "libricss__0L_session4",
+     0.0024
+    ],
+    [
+     "libricss__0L_session6",
+     0.0024
+    ],
+    [
+     "libricss__0L_session0",
+     0.0023
+    ],
+    [
+     "libricss__0L_session1",
+     0.0023
+    ],
+    [
+     "libricss__0L_session7",
+     0.0023
+    ],
+    [
+     "libricss__0L_session9",
+     0.0023
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "libricss__0L_session0",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.2,
+     "threshold_db": -39.5,
+     "p99_db": -14.4,
+     "vad_speech_s": 393.1,
+     "ref_speech_s": 442.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0023,
+     "ref_not_in_vad_s": 7.8,
+     "ref_not_in_vad_frac": 0.0177,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session0",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.2,
+     "threshold_db": -40.2,
+     "p99_db": -14.7,
+     "vad_speech_s": 555.0,
+     "ref_speech_s": 587.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 5.5,
+     "ref_not_in_vad_frac": 0.0093,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session0",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.1,
+     "threshold_db": -39.2,
+     "p99_db": -13.8,
+     "vad_speech_s": 539.6,
+     "ref_speech_s": 587.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 7.5,
+     "ref_not_in_vad_frac": 0.0127,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session0",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -54.1,
+     "threshold_db": -42.5,
+     "p99_db": -15.4,
+     "vad_speech_s": 539.4,
+     "ref_speech_s": 591.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 7.6,
+     "ref_not_in_vad_frac": 0.0128,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session0",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.7,
+     "threshold_db": -41.3,
+     "p99_db": -14.7,
+     "vad_speech_s": 539.7,
+     "ref_speech_s": 594.1,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 8.3,
+     "ref_not_in_vad_frac": 0.014,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session0",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -48.8,
+     "threshold_db": -38.6,
+     "p99_db": -14.8,
+     "vad_speech_s": 547.9,
+     "ref_speech_s": 595.2,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 7.4,
+     "ref_not_in_vad_frac": 0.0124,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session1",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.6,
+     "threshold_db": -41.0,
+     "p99_db": -13.9,
+     "vad_speech_s": 387.7,
+     "ref_speech_s": 439.1,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0023,
+     "ref_not_in_vad_s": 5.3,
+     "ref_not_in_vad_frac": 0.012,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session2",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -56.8,
+     "threshold_db": -44.2,
+     "p99_db": -14.9,
+     "vad_speech_s": 374.3,
+     "ref_speech_s": 420.2,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0025,
+     "ref_not_in_vad_s": 7.6,
+     "ref_not_in_vad_frac": 0.0182,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.1,
+     "threshold_db": -39.7,
+     "p99_db": -12.9,
+     "vad_speech_s": 383.6,
+     "ref_speech_s": 425.7,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0024,
+     "ref_not_in_vad_s": 4.6,
+     "ref_not_in_vad_frac": 0.0107,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session4",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -57.1,
+     "threshold_db": -44.3,
+     "p99_db": -14.6,
+     "vad_speech_s": 385.1,
+     "ref_speech_s": 433.2,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0024,
+     "ref_not_in_vad_s": 4.8,
+     "ref_not_in_vad_frac": 0.0111,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session5",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.7,
+     "threshold_db": -41.4,
+     "p99_db": -12.7,
+     "vad_speech_s": 366.4,
+     "ref_speech_s": 415.0,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0025,
+     "ref_not_in_vad_s": 7.4,
+     "ref_not_in_vad_frac": 0.0177,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session6",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.9,
+     "threshold_db": -40.5,
+     "p99_db": -13.7,
+     "vad_speech_s": 384.9,
+     "ref_speech_s": 433.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0024,
+     "ref_not_in_vad_s": 7.3,
+     "ref_not_in_vad_frac": 0.017,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session7",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -48.7,
+     "threshold_db": -38.4,
+     "p99_db": -14.4,
+     "vad_speech_s": 412.4,
+     "ref_speech_s": 449.7,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0023,
+     "ref_not_in_vad_s": 3.0,
+     "ref_not_in_vad_frac": 0.0066,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.1,
+     "threshold_db": -40.3,
+     "p99_db": -14.9,
+     "vad_speech_s": 360.5,
+     "ref_speech_s": 401.6,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0026,
+     "ref_not_in_vad_s": 4.7,
+     "ref_not_in_vad_frac": 0.0116,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0L_session9",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.1,
+     "threshold_db": -40.8,
+     "p99_db": -14.5,
+     "vad_speech_s": 389.7,
+     "ref_speech_s": 448.7,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0023,
+     "ref_not_in_vad_s": 10.6,
+     "ref_not_in_vad_frac": 0.0236,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session1",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.8,
+     "threshold_db": -42.2,
+     "p99_db": -15.1,
+     "vad_speech_s": 541.5,
+     "ref_speech_s": 594.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 9.4,
+     "ref_not_in_vad_frac": 0.0157,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session2",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -56.0,
+     "threshold_db": -43.7,
+     "p99_db": -15.0,
+     "vad_speech_s": 546.8,
+     "ref_speech_s": 596.1,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.0099,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.1,
+     "threshold_db": -39.5,
+     "p99_db": -14.8,
+     "vad_speech_s": 533.0,
+     "ref_speech_s": 588.7,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 10.2,
+     "ref_not_in_vad_frac": 0.0173,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session4",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.9,
+     "threshold_db": -41.5,
+     "p99_db": -15.1,
+     "vad_speech_s": 522.1,
+     "ref_speech_s": 586.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 12.1,
+     "ref_not_in_vad_frac": 0.0206,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session5",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -56.4,
+     "threshold_db": -43.8,
+     "p99_db": -14.5,
+     "vad_speech_s": 551.9,
+     "ref_speech_s": 591.6,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 5.1,
+     "ref_not_in_vad_frac": 0.0086,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session6",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -57.2,
+     "threshold_db": -44.5,
+     "p99_db": -14.8,
+     "vad_speech_s": 548.3,
+     "ref_speech_s": 589.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.01,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session7",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.5,
+     "threshold_db": -41.2,
+     "p99_db": -14.8,
+     "vad_speech_s": 542.0,
+     "ref_speech_s": 591.5,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 7.1,
+     "ref_not_in_vad_frac": 0.012,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -54.3,
+     "threshold_db": -42.5,
+     "p99_db": -15.0,
+     "vad_speech_s": 530.2,
+     "ref_speech_s": 590.0,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 11.6,
+     "ref_not_in_vad_frac": 0.0197,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__0S_session9",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.6,
+     "threshold_db": -41.9,
+     "p99_db": -14.5,
+     "vad_speech_s": 549.7,
+     "ref_speech_s": 586.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 2.9,
+     "ref_not_in_vad_frac": 0.0049,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session1",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.0,
+     "threshold_db": -40.9,
+     "p99_db": -14.9,
+     "vad_speech_s": 512.5,
+     "ref_speech_s": 582.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 12.6,
+     "ref_not_in_vad_frac": 0.0217,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session2",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.4,
+     "threshold_db": -40.5,
+     "p99_db": -15.0,
+     "vad_speech_s": 531.1,
+     "ref_speech_s": 590.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 11.7,
+     "ref_not_in_vad_frac": 0.0199,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.9,
+     "threshold_db": -39.2,
+     "p99_db": -14.3,
+     "vad_speech_s": 530.4,
+     "ref_speech_s": 588.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 9.1,
+     "ref_not_in_vad_frac": 0.0154,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session4",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.9,
+     "threshold_db": -41.3,
+     "p99_db": -14.2,
+     "vad_speech_s": 528.0,
+     "ref_speech_s": 597.6,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 15.9,
+     "ref_not_in_vad_frac": 0.0266,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session5",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -54.6,
+     "threshold_db": -42.4,
+     "p99_db": -14.1,
+     "vad_speech_s": 547.0,
+     "ref_speech_s": 596.1,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 7.3,
+     "ref_not_in_vad_frac": 0.0123,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session6",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.2,
+     "threshold_db": -41.0,
+     "p99_db": -14.9,
+     "vad_speech_s": 550.8,
+     "ref_speech_s": 595.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 4.4,
+     "ref_not_in_vad_frac": 0.0074,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session7",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.1,
+     "threshold_db": -39.7,
+     "p99_db": -15.4,
+     "vad_speech_s": 537.5,
+     "ref_speech_s": 590.6,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.0099,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.4,
+     "threshold_db": -39.7,
+     "p99_db": -14.8,
+     "vad_speech_s": 536.0,
+     "ref_speech_s": 585.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 9.5,
+     "ref_not_in_vad_frac": 0.0163,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV10_session9",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.1,
+     "threshold_db": -38.5,
+     "p99_db": -13.7,
+     "vad_speech_s": 533.6,
+     "ref_speech_s": 591.6,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 8.2,
+     "ref_not_in_vad_frac": 0.0139,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session1",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.5,
+     "threshold_db": -38.9,
+     "p99_db": -14.2,
+     "vad_speech_s": 531.2,
+     "ref_speech_s": 587.1,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 9.2,
+     "ref_not_in_vad_frac": 0.0157,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session2",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -55.0,
+     "threshold_db": -42.9,
+     "p99_db": -14.7,
+     "vad_speech_s": 535.0,
+     "ref_speech_s": 590.5,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 7.7,
+     "ref_not_in_vad_frac": 0.0131,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.1,
+     "threshold_db": -39.9,
+     "p99_db": -13.8,
+     "vad_speech_s": 535.0,
+     "ref_speech_s": 586.7,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.01,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session4",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.0,
+     "threshold_db": -38.8,
+     "p99_db": -14.8,
+     "vad_speech_s": 546.0,
+     "ref_speech_s": 593.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 5.9,
+     "ref_not_in_vad_frac": 0.01,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session5",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.4,
+     "threshold_db": -40.4,
+     "p99_db": -14.6,
+     "vad_speech_s": 535.8,
+     "ref_speech_s": 591.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 8.4,
+     "ref_not_in_vad_frac": 0.0142,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session6",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.0,
+     "threshold_db": -39.5,
+     "p99_db": -15.0,
+     "vad_speech_s": 528.7,
+     "ref_speech_s": 585.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 7.1,
+     "ref_not_in_vad_frac": 0.012,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session7",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.3,
+     "threshold_db": -40.1,
+     "p99_db": -14.1,
+     "vad_speech_s": 540.3,
+     "ref_speech_s": 592.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 11.1,
+     "ref_not_in_vad_frac": 0.0187,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.2,
+     "threshold_db": -40.4,
+     "p99_db": -15.3,
+     "vad_speech_s": 536.4,
+     "ref_speech_s": 599.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 13.0,
+     "ref_not_in_vad_frac": 0.0216,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV20_session9",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.3,
+     "threshold_db": -41.7,
+     "p99_db": -14.7,
+     "vad_speech_s": 550.5,
+     "ref_speech_s": 598.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 5.1,
+     "ref_not_in_vad_frac": 0.0084,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session1",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -54.4,
+     "threshold_db": -42.2,
+     "p99_db": -13.7,
+     "vad_speech_s": 544.6,
+     "ref_speech_s": 592.1,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 6.9,
+     "ref_not_in_vad_frac": 0.0117,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session2",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.3,
+     "threshold_db": -40.3,
+     "p99_db": -14.7,
+     "vad_speech_s": 548.4,
+     "ref_speech_s": 610.4,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 9.1,
+     "ref_not_in_vad_frac": 0.0149,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -48.1,
+     "threshold_db": -38.1,
+     "p99_db": -14.6,
+     "vad_speech_s": 544.2,
+     "ref_speech_s": 590.0,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 5.0,
+     "ref_not_in_vad_frac": 0.0085,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session4",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.4,
+     "threshold_db": -39.2,
+     "p99_db": -15.6,
+     "vad_speech_s": 546.3,
+     "ref_speech_s": 594.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 6.9,
+     "ref_not_in_vad_frac": 0.0116,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session5",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.9,
+     "threshold_db": -40.2,
+     "p99_db": -15.1,
+     "vad_speech_s": 530.5,
+     "ref_speech_s": 597.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 14.3,
+     "ref_not_in_vad_frac": 0.024,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session6",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -50.3,
+     "threshold_db": -39.2,
+     "p99_db": -13.4,
+     "vad_speech_s": 541.6,
+     "ref_speech_s": 591.2,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 8.1,
+     "ref_not_in_vad_frac": 0.0136,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session7",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.1,
+     "threshold_db": -40.0,
+     "p99_db": -14.0,
+     "vad_speech_s": 530.6,
+     "ref_speech_s": 585.8,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
+     "ref_not_in_vad_s": 11.8,
+     "ref_not_in_vad_frac": 0.0202,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.3,
+     "threshold_db": -40.1,
+     "p99_db": -14.1,
+     "vad_speech_s": 549.8,
+     "ref_speech_s": 608.5,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 8.4,
+     "ref_not_in_vad_frac": 0.0138,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV30_session9",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -51.5,
+     "threshold_db": -40.5,
+     "p99_db": -15.0,
+     "vad_speech_s": 534.5,
+     "ref_speech_s": 591.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 10.6,
+     "ref_not_in_vad_frac": 0.0179,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session1",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -54.1,
+     "threshold_db": -42.1,
+     "p99_db": -14.1,
+     "vad_speech_s": 549.5,
+     "ref_speech_s": 593.9,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 6.9,
+     "ref_not_in_vad_frac": 0.0116,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session2",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.6,
+     "threshold_db": -39.0,
+     "p99_db": -14.3,
+     "vad_speech_s": 538.1,
+     "ref_speech_s": 594.5,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 11.5,
+     "ref_not_in_vad_frac": 0.0193,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session3",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.4,
+     "threshold_db": -39.0,
+     "p99_db": -14.6,
+     "vad_speech_s": 534.7,
+     "ref_speech_s": 593.4,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 10.6,
+     "ref_not_in_vad_frac": 0.0179,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session4",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.3,
+     "threshold_db": -42.0,
+     "p99_db": -15.6,
+     "vad_speech_s": 529.5,
+     "ref_speech_s": 595.0,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 14.8,
+     "ref_not_in_vad_frac": 0.0248,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session5",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -48.1,
+     "threshold_db": -37.8,
+     "p99_db": -13.8,
+     "vad_speech_s": 541.2,
+     "ref_speech_s": 598.7,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 7.7,
+     "ref_not_in_vad_frac": 0.0128,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session6",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -53.0,
+     "threshold_db": -41.4,
+     "p99_db": -14.6,
+     "vad_speech_s": 530.1,
+     "ref_speech_s": 596.2,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 16.2,
+     "ref_not_in_vad_frac": 0.0272,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session7",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -49.2,
+     "threshold_db": -38.6,
+     "p99_db": -13.8,
+     "vad_speech_s": 547.2,
+     "ref_speech_s": 593.6,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 4.3,
+     "ref_not_in_vad_frac": 0.0073,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session8",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -52.7,
+     "threshold_db": -41.3,
+     "p99_db": -14.9,
+     "vad_speech_s": 550.6,
+     "ref_speech_s": 597.7,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 7.4,
+     "ref_not_in_vad_frac": 0.0124,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "libricss__OV40_session9",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 8,
+    "vad": {
+     "floor_db": -48.9,
+     "threshold_db": -38.5,
+     "p99_db": -14.4,
+     "vad_speech_s": 540.1,
+     "ref_speech_s": 593.3,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
+     "ref_not_in_vad_s": 8.6,
+     "ref_not_in_vad_frac": 0.0145,
+     "longest_vad_not_in_ref": [
+      [
+       0.0,
+       1.03
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  }
+ ]
+}

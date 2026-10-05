@@ -1,0 +1,427 @@
+{
+ "summary": {
+  "dataset": "scotus",
+  "view": "default",
+  "sessions": 12,
+  "errors": 0,
+  "warnings": 12,
+  "issue_counts": {
+   "info:segments_under_50ms": 6,
+   "info:speaker_under_1s": 1,
+   "warning:segments_over_60s": 12
+  },
+  "raw_label_issue_totals": {},
+  "sessions_with_raw_label_issues": 0,
+  "vad": {
+   "ref_speech_h": 20.49,
+   "vad_not_in_ref_frac": 0.0,
+   "ref_not_in_vad_frac": 0.0294,
+   "worst_sessions": [
+    [
+     "scotus__2022_20-1199_25450",
+     0.0
+    ],
+    [
+     "scotus__2022_21-1168_25458",
+     0.0
+    ],
+    [
+     "scotus__2022_21-376_25455",
+     0.0
+    ],
+    [
+     "scotus__2022_21-432_25444",
+     0.0
+    ],
+    [
+     "scotus__2022_21-442_25445",
+     0.0
+    ],
+    [
+     "scotus__2022_21-454_25446",
+     0.0
+    ],
+    [
+     "scotus__2022_21-468_25447",
+     0.0
+    ],
+    [
+     "scotus__2022_21-476_25462",
+     0.0
+    ],
+    [
+     "scotus__2022_21-846_25453",
+     0.0
+    ],
+    [
+     "scotus__2022_21-869_25448",
+     0.0
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "scotus__2022_20-1199_25450",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "21 segment(s) longer than 60 s (merged turns?)",
+     "longest": 284.7
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -41.3,
+     "threshold_db": -31.6,
+     "p99_db": -9.1,
+     "vad_speech_s": 5973.2,
+     "ref_speech_s": 6914.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 257.8,
+     "ref_not_in_vad_frac": 0.0373,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-1168_25458",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "19 segment(s) longer than 60 s (merged turns?)",
+     "longest": 234.9
+    }
+   ],
+   "metrics": {
+    "num_speakers": 12,
+    "vad": {
+     "floor_db": -42.9,
+     "threshold_db": -33.2,
+     "p99_db": -10.6,
+     "vad_speech_s": 5724.7,
+     "ref_speech_s": 6490.9,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 176.4,
+     "ref_not_in_vad_frac": 0.0272,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-376_25455",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "40 segment(s) longer than 60 s (merged turns?)",
+     "longest": 313.2
+    }
+   ],
+   "metrics": {
+    "num_speakers": 13,
+    "vad": {
+     "floor_db": -44.2,
+     "threshold_db": -34.4,
+     "p99_db": -11.6,
+     "vad_speech_s": 10163.1,
+     "ref_speech_s": 11538.1,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 331.1,
+     "ref_not_in_vad_frac": 0.0287,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-432_25444",
+   "issues": [
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "amy_coney_barrett"
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "16 segment(s) longer than 60 s (merged turns?)",
+     "longest": 185.4
+    }
+   ],
+   "metrics": {
+    "num_speakers": 10,
+    "vad": {
+     "floor_db": -43.4,
+     "threshold_db": -34.1,
+     "p99_db": -12.3,
+     "vad_speech_s": 2502.0,
+     "ref_speech_s": 2850.3,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 90.5,
+     "ref_not_in_vad_frac": 0.0317,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-442_25445",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "11 segment(s) longer than 60 s (merged turns?)",
+     "longest": 133.5
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -43.0,
+     "threshold_db": -33.6,
+     "p99_db": -11.5,
+     "vad_speech_s": 3190.7,
+     "ref_speech_s": 3590.1,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 108.1,
+     "ref_not_in_vad_frac": 0.0301,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-454_25446",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "12 segment(s) longer than 60 s (merged turns?)",
+     "longest": 133.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -42.3,
+     "threshold_db": -33.0,
+     "p99_db": -11.4,
+     "vad_speech_s": 5694.5,
+     "ref_speech_s": 6482.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 199.6,
+     "ref_not_in_vad_frac": 0.0308,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-468_25447",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "17 segment(s) longer than 60 s (merged turns?)",
+     "longest": 147.0
+    }
+   ],
+   "metrics": {
+    "num_speakers": 13,
+    "vad": {
+     "floor_db": -43.8,
+     "threshold_db": -34.1,
+     "p99_db": -11.4,
+     "vad_speech_s": 6943.1,
+     "ref_speech_s": 7924.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 206.9,
+     "ref_not_in_vad_frac": 0.0261,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-476_25462",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "19 segment(s) longer than 60 s (merged turns?)",
+     "longest": 303.9
+    }
+   ],
+   "metrics": {
+    "num_speakers": 12,
+    "vad": {
+     "floor_db": -42.2,
+     "threshold_db": -32.5,
+     "p99_db": -9.8,
+     "vad_speech_s": 7437.1,
+     "ref_speech_s": 8515.1,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 305.3,
+     "ref_not_in_vad_frac": 0.0358,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-846_25453",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "3 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "12 segment(s) longer than 60 s (merged turns?)",
+     "longest": 199.5
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -41.1,
+     "threshold_db": -31.6,
+     "p99_db": -9.5,
+     "vad_speech_s": 3266.4,
+     "ref_speech_s": 3716.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 132.1,
+     "ref_not_in_vad_frac": 0.0356,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-869_25448",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "2 segment(s) shorter than 50 ms"
+    },
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "16 segment(s) longer than 60 s (merged turns?)",
+     "longest": 313.3
+    }
+   ],
+   "metrics": {
+    "num_speakers": 12,
+    "vad": {
+     "floor_db": -43.0,
+     "threshold_db": -33.5,
+     "p99_db": -11.3,
+     "vad_speech_s": 5430.2,
+     "ref_speech_s": 6146.8,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 159.4,
+     "ref_not_in_vad_frac": 0.0259,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_21-86_25451",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "26 segment(s) longer than 60 s (merged turns?)",
+     "longest": 302.1
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -39.7,
+     "threshold_db": -30.6,
+     "p99_db": -9.6,
+     "vad_speech_s": 4927.0,
+     "ref_speech_s": 5491.9,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 129.4,
+     "ref_not_in_vad_frac": 0.0236,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "scotus__2022_22O145_25368",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "19 segment(s) longer than 60 s (merged turns?)",
+     "longest": 302.8
+    }
+   ],
+   "metrics": {
+    "num_speakers": 11,
+    "vad": {
+     "floor_db": -40.8,
+     "threshold_db": -31.7,
+     "p99_db": -10.7,
+     "vad_speech_s": 3741.5,
+     "ref_speech_s": 4117.9,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 72.5,
+     "ref_not_in_vad_frac": 0.0176,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  }
+ ]
+}

@@ -10,5 +10,6 @@ for tag in $TAGS; do
   echo "=== $name / $view"
   $PY -m diards.diagnose "$name" --view "$view" --out results/diagnosis > /dev/null || { echo "FAILED diagnose $tag"; continue; }
   $PY scripts/audit_false_alarms.py "$name" --view "$view" 2>/dev/null | tail -1 || echo "FAILED audit $tag"
+  $PY scripts/check_offsets.py "$name" --view "$view" 2>/dev/null | tail -1 || echo "FAILED offsets $tag"
 done
 echo ALLDONE

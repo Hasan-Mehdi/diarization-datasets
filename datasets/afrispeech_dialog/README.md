@@ -56,7 +56,11 @@ Computed by `python -m diards stats afrispeech_dialog` from the normalized prima
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `default`: 46 sessions, **0 errors**, 35 warnings (normalized files); 21 sessions had problems in the ORIGINAL labels that normalization fixed.
+- original-label issues: zero_duration = 63, same_speaker_overlap = 5, negative_duration = 16, negative_start = 1
+- checks that fired (sessions): `info:segments_under_50ms` 20, `info:silence_over_30s` 5, `warning:possible_unannotated_speech` 7, `warning:segments_over_60s` 28
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 2.8% of reference speech; reference speech without energy = 4.7%. Most-flagged sessions: `afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99` (0.26), `afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b` (0.22), `afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce` (0.12), `afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d` (0.11), `afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3` (0.09)
+- full report: [`results/validation/validation.afrispeech_dialog.default.md`](../../results/validation/validation.afrispeech_dialog.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

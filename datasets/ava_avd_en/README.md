@@ -62,13 +62,21 @@ Computed by `python -m diards stats ava_avd_en` from the normalized primary refe
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `default`: 96 sessions, **0 errors**, 94 warnings (normalized files); 4 sessions had problems in the ORIGINAL labels that normalization fixed.
+- original-label issues: same_speaker_overlap = 2, beyond_audio_end = 1, seconds_beyond_audio_end = 0.37, negative_start = 1
+- checks that fired (sessions): `info:silence_over_30s` 40, `info:speaker_under_1s` 43, `warning:possible_unannotated_speech` 94
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 55.7% of reference speech; reference speech without energy = 2.7%. Most-flagged sessions: `ava_avd_en__fD6VkIRlIRI_c_01` (3.63), `ava_avd_en__9mLYmkonWZQ_c_01` (3.60), `ava_avd_en__fD6VkIRlIRI_c_02` (3.24), `ava_avd_en__x-6CtPWVi6E_c_03` (2.87), `ava_avd_en__N0Dt9i9IUNg_c_02` (2.52)
+- full report: [`results/validation/validation.ava_avd_en.default.md`](../../results/validation/validation.ava_avd_en.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (test, val) | 29 | 2.42 | primary | **49.79** | 11.78 | 23.30 | 14.70 | 67.44 | 33.98 | 21% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/ava_avd_en.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?

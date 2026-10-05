@@ -161,9 +161,18 @@ def block_diagnosis(name):
             ex = [r for r in a["regions"] if r["speech"]][:3]
             out.append("")
             out.append(f"**Whisper audit of the longest audible false alarms ({view}):** {a['regions_with_speech']} of "
-                       f"{a['regions_checked']} regions (>= 1 s) contain >= 3 intelligible words, i.e. speech the reference "
-                       f"does not label ({a['seconds_with_speech']} of {a['seconds_checked']} s)."
+                       f"{a['regions_checked']} regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; "
+                       f"Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label "
+                       f"({a['seconds_with_speech']} of {a['seconds_checked']} s)."
                        + (" Examples: " + "; ".join(f"`{r['session_id']}` {r['start']:.1f}-{r['end']:.1f} s: " + chr(34) + r['whisper'][:80] + chr(34) for r in ex) if ex else ""))
+        op = REPO / "results" / "diagnosis" / f"offsets.{name}.{view}.json"
+        if op.exists():
+            o = json.loads(op.read_text(encoding="utf-8"))
+            worst = ", ".join(f"`{r['session_id']}` ({r['best_lag_s']:+.2f} s)" for r in o["shifted"][:3])
+            out.append("")
+            out.append(f"**Time-offset check ({view}):** {o['sessions_shifted']} of {o['sessions']} sessions look shifted "
+                       f"against the audio ({o['criterion']}); median best lag {o['median_abs_best_lag_s']} s"
+                       + (f"; shifted: {worst}" if worst else "") + ".")
     return "\n".join(out)
 
 
@@ -211,6 +220,9 @@ CATALOG = [
 ]
 
 
+MIRRORS = {'notsofar1': 'HF microsoft/NOTSOFAR; Azure blob', 'ami': 'Edinburgh mirror; HF diarizers-community/ami, edinburghcstr/ami', 'chime6': 'OpenSLR SLR150 (+ELDA, CN mirrors); HF argmaxinc/chime-6', 'maptask': 'Edinburgh; LDC93S12 (paid)', 'voxconverse': 'Oxford VGG; HF diarizers-community/voxconverse', 'icsi': 'Edinburgh; HF argmaxinc/icsi-meetings', 'dipco': 'Zenodo 8122551; HF huckiyang/DiPCo', 'easycom': 'GitHub LFS + release archive', 'msdwild_en': 'Google Drive (+Baidu/Quark)', 'earnings21': 'GitHub revdotcom/speech-datasets; HF argmaxinc/earnings21', 'ava_avd_en': 'GitHub + Google Drive + CVDF S3; HF argmaxinc/ava-avd', 'sbcsae': 'OpenSLR SLR155 (+ELDA); UCSB; TalkBank; LDC (paid)', 'callhome_eng': 'HF talkbank/callhome (gated); TalkBank (login)', 'callfriend_eng': 'HF talkbank/callfriend; TalkBank', 'scotus': 'Oyez API; vcon-dev pack', 'afrispeech_dialog': 'HF intronhealth/afrispeech-dialog', 'primock57': 'GitHub (LFS)', 'libricss': 'Google Drive'}
+
+
 def _stats(name):
     p = REPO / "results" / "stats" / f"stats.{name}.json"
     return json.loads(p.read_text(encoding="utf-8"))["summary"]["ALL"] if p.exists() else None
@@ -232,8 +244,8 @@ def _best_nemotron(name):
 
 
 def block_catalog():
-    lines = ["| # | dataset | domain | hours | recs | spk min/med/max | overlap | reference | GT | licence | access | size | known issue |",
-             "|---:|---|---|---:|---:|---|---:|---|---|---|---|---|---|"]
+    lines = ["| # | dataset | domain | hours | recs | spk min/med/max | overlap | reference | GT | licence | access | size | mirrors | known issue |",
+             "|---:|---|---|---:|---:|---|---:|---|---|---|---|---|---|---|"]
     for i, (name, size, gran, issue) in enumerate(CATALOG, 1):
         m = get_recipe(name).META
         st = _stats(name)
@@ -242,7 +254,7 @@ def block_catalog():
         spk = f"{st['speakers_min']}/{st['speakers_median']:g}/{st['speakers_max']}" if st else "-"
         ovl = f"{100 * st['overlap_ratio']:.1f}%" if st and st["overlap_ratio"] is not None else "-"
         lines.append(f"| {i} | [{name}](datasets/{name}/README.md) | {m.domain} | {hours} | {recs} | {spk} | {ovl} | {gran} | "
-                     f"**{m.gt_rating}** | {m.license} | {m.access} | {size} | {issue} |")
+                     f"**{m.gt_rating}** | {m.license} | {m.access} | {size} | {MIRRORS.get(name, '')} | {issue} |")
     return "\n".join(lines)
 
 

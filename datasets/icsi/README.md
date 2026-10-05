@@ -79,7 +79,9 @@ View `ihm-mix`: 75 sessions, **0 errors**, 16 warnings (normalized files); 74 se
 | view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
 | ihm-mix (test) | 3 | 2.77 | primary | **15.86** | 12.22 | 2.89 | 0.76 | 16.36 | 5.31 | 100% |
-| ihm-mix (test) | 3 | 2.77 | words | **44.46** | 43.40 | 0.62 | 0.44 | 35.46 | 28.20 | 100% |
+| ihm-mix (test) | 3 | 2.77 | words_gap0.2 | **39.44** | 38.39 | 0.64 | 0.41 | 33.15 | 22.96 | 100% |
+| sdm (test) | 3 | 2.77 | primary | **15.85** | 11.08 | 3.77 | 1.00 | 16.10 | 5.39 | 100% |
+| sdm (test) | 3 | 2.77 | words_gap0.2 | **38.23** | 36.35 | 1.14 | 0.74 | 33.67 | 22.40 | 100% |
 
 Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/icsi.*/results.md`.
 
@@ -89,13 +91,21 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| ihm-mix | ihm-mix | 3 | 1.16 | 0.59 | 0.57 | 7.37 | 2.4 | 4.97 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (ihm-mix):** 0 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 7.7 s).
 <!-- /auto:diagnosis -->
 
 **Reading the ICSI numbers.** Against the transcriber segments, Nemotron's errors are mostly *false alarm* (~12% at
-collar 0, ~4% at 0.25 s): it detects speech the segments do not cover. These are mainly backchannels, laughter and
-short interjections that ICSI transcribed inside other material or not at all, plus segment edges. Because ICSI
-is in the model's training data, treat these scores as a sanity check, not a benchmark.
+collar 0, ~4% at 0.25 s): it marks speech just outside the segments. The false alarms are short. Only 5 audible
+false-alarm regions are longer than 1 s, and Whisper finds no intelligible words in any of them, so they are segment
+edges and vocal sounds (laughter, breaths), not missing speakers. The word-timing reference (`words_gap0.2`) is
+**not usable**: with 9-13% of words untimed it covers 21% less speech and turns into 38% false alarm. ICSI is in
+the model's training data, so treat these scores as a sanity check, not a benchmark.
 
 
 ## Quality rating

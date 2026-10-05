@@ -44,13 +44,21 @@ are contiguous: each turn ends where the next begins, so pauses belong to the tu
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| term2022 | 12 | 20.5 | 20.49 | 1.0 | 0.0 | 0.0 | 10/11/13 | 0.287/6.135/58.521 | 0.0324 | 8.91 | 3.89 |
+| ALL | 12 | 20.5 | 20.49 | 1.0 | 0.0 | 0.0 | 10/11/13 | 0.287/6.135/58.521 | 0.0324 | 8.91 | 3.89 |
+
+Computed by `python -m diards stats scotus` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.scotus.md`](../../results/stats/stats.scotus.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `default`: 12 sessions, **0 errors**, 12 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
+- checks that fired (sessions): `info:segments_under_50ms` 6, `info:speaker_under_1s` 1, `warning:segments_over_60s` 12
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.0% of reference speech; reference speech without energy = 2.9%. Most-flagged sessions: `scotus__2022_20-1199_25450` (0.00), `scotus__2022_21-1168_25458` (0.00), `scotus__2022_21-376_25455` (0.00), `scotus__2022_21-432_25444` (0.00), `scotus__2022_21-442_25445` (0.00)
+- full report: [`results/validation/validation.scotus.default.md`](../../results/validation/validation.scotus.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

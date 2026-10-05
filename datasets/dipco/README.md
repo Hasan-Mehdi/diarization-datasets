@@ -47,13 +47,23 @@ This shows how much of the labelled time is silent.
 ## Verified statistics
 
 <!-- auto:stats -->
-_Statistics not computed yet._
+| split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
+| dev | 5 | 2.73 | 2.52 | 0.921 | 0.279 | 0.0431 | 4/4/4 | 0.69/1.73/11.358 | 0.0 | 2.895 | 18.0 |
+| eval | 5 | 2.6 | 2.36 | 0.906 | 0.275 | 0.0612 | 4/4/4 | 0.65/1.48/12.992 | 0.0006 | 3.56 | 17.41 |
+| ALL | 10 | 5.33 | 4.87 | 0.914 | 0.277 | 0.0518 | 4/4/4 | 0.67/1.61/12.156 | 0.0003 | 3.18 | 17.71 |
+
+Computed by `python -m diards stats dipco` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.dipco.md`](../../results/stats/stats.dipco.md).
 <!-- /auto:stats -->
 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `ihm-mix`: 10 sessions, **0 errors**, 4 warnings (normalized files); 10 sessions had problems in the ORIGINAL labels that normalization fixed.
+- original-label issues: same_speaker_overlap = 165
+- checks that fired (sessions): `info:segments_under_50ms` 1, `info:silence_over_30s` 1, `warning:segments_over_60s` 4
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.2% of reference speech; reference speech without energy = 3.7%. Most-flagged sessions: `dipco__S04` (0.03), `dipco__S05` (0.02), `dipco__S02` (0.01), `dipco__S08` (0.01), `dipco__S01` (0.01)
+- full report: [`results/validation/validation.dipco.ihm-mix.md`](../../results/validation/validation.dipco.ihm-mix.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
