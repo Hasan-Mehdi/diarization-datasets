@@ -75,6 +75,18 @@ _Not evaluated yet._
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the AfriSpeech-Dialog numbers: the reference is the main problem.** DER is 26.7% at collar 0 and still
+24.5% at 0.25 s. Three independent checks point at the timestamps:
+- **Pauses labelled as speech:** 11.6 of the 15.1 points of missed speech fall where the audio is silent (turn times
+  are hand-typed around whole turns). In `304d6402...` the two speakers' turns cover 208 s of a 210 s file.
+- **Missing speech:** 35 of the 40 longest audible false alarms contain intelligible speech per Whisper (turns
+  without times, or times that end early).
+- **Systematic shift:** the time-offset check finds the reference about **0.45 s early** (median best lag over
+  46 files; 6 files individually clearly shifted, by 0.3-0.6 s). That is consistent with times typed by hand while
+  listening.
+The model's speaker counting is fine (93% exact). Do not use these timestamps for DER without re-alignment.
+
+
 ## Quality rating
 
 **D+.** Valuable domain (medical consultations, African accents), but timestamps at ~1 s precision, missing

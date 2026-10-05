@@ -1,0 +1,217 @@
+{
+ "dataset": "maptask",
+ "view": "default",
+ "regions_checked": 23,
+ "regions": [
+  {
+   "session_id": "maptask__q4nc4",
+   "start": 464.39,
+   "end": 466.63,
+   "dur": 2.24,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q7nc2",
+   "start": 195.25,
+   "end": 197.06,
+   "dur": 1.81,
+   "whisper": "Ha, ha, ha, ha.",
+   "words": 4,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc5",
+   "start": 2.66,
+   "end": 4.29,
+   "dur": 1.63,
+   "whisper": "Really?",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q2ec6",
+   "start": 249.27,
+   "end": 250.87,
+   "dur": 1.6,
+   "whisper": "Oh, my God.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "maptask__q7nc2",
+   "start": 191.9,
+   "end": 193.41,
+   "dur": 1.51,
+   "whisper": "Ha, ha, ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc3",
+   "start": 204.03,
+   "end": 205.48,
+   "dur": 1.45,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q3ec2",
+   "start": 98.49,
+   "end": 99.83,
+   "dur": 1.34,
+   "whisper": "The thing's not even pointing at me.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "maptask__q4nc6",
+   "start": 408.43,
+   "end": 409.77,
+   "dur": 1.34,
+   "whisper": "Ha, ha, ha, ha.",
+   "words": 4,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc3",
+   "start": 201.05,
+   "end": 202.37,
+   "dur": 1.32,
+   "whisper": "Come on.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc5",
+   "start": 21.74,
+   "end": 23.05,
+   "dur": 1.31,
+   "whisper": "Ha, ha, ha, ha, ha.",
+   "words": 5,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q2ec4",
+   "start": 189.09,
+   "end": 190.4,
+   "dur": 1.31,
+   "whisper": "Hahaha.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q2ec4",
+   "start": 148.39,
+   "end": 149.69,
+   "dur": 1.3,
+   "whisper": "Right.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc4",
+   "start": 590.02,
+   "end": 591.25,
+   "dur": 1.23,
+   "whisper": "No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no,",
+   "words": 222,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc4",
+   "start": 180.41,
+   "end": 181.62,
+   "dur": 1.21,
+   "whisper": "to do it",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "maptask__q3ec2",
+   "start": 85.09,
+   "end": 86.27,
+   "dur": 1.18,
+   "whisper": "It won't go any further, right?",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "maptask__q2ec4",
+   "start": 404.46,
+   "end": 405.62,
+   "dur": 1.16,
+   "whisper": "Ha, ha, ha, ha.",
+   "words": 4,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc4",
+   "start": 85.93,
+   "end": 87.06,
+   "dur": 1.13,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc2",
+   "start": 141.23,
+   "end": 142.32,
+   "dur": 1.09,
+   "whisper": "Ha ha ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc2",
+   "start": 293.1,
+   "end": 294.19,
+   "dur": 1.09,
+   "whisper": "Ha ha ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q5nc4",
+   "start": 176.13,
+   "end": 177.21,
+   "dur": 1.08,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc2",
+   "start": 302.35,
+   "end": 303.38,
+   "dur": 1.03,
+   "whisper": "Ha, ha, ha, ha.",
+   "words": 4,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q6nc4",
+   "start": 68.84,
+   "end": 69.86,
+   "dur": 1.02,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "maptask__q4nc4",
+   "start": 242.11,
+   "end": 243.12,
+   "dur": 1.01,
+   "whisper": "We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back.",
+   "words": 296,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 4,
+ "seconds_checked": 30.4,
+ "seconds_with_speech": 5.3
+}

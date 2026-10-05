@@ -1,0 +1,159 @@
+{
+ "dataset": "chime6",
+ "view": "ihm-mix",
+ "model": "nvidia/Nemotron-3-Diarization",
+ "model_revision": "f667ed73aee57d40cc39428eb768b4fd87a0a29e",
+ "inference": {
+  "implementation": "transformers (offline mode)",
+  "chunk_length": 340,
+  "chunk_right_context": 40,
+  "fifo_length": 40,
+  "speaker_cache_update_period": 300,
+  "speaker_cache_length": 264,
+  "dtype": "float32",
+  "threshold": 0.5,
+  "postprocessing": "none (threshold only)"
+ },
+ "scoring": {
+  "tool": "pyannote.metrics",
+  "collars_half_width_s": [
+   0.0,
+   0.25
+  ],
+  "overlap": "included",
+  "uem": "per-session UEM from the normalized dataset"
+ },
+ "sessions": 2,
+ "hours": 5.21,
+ "speaker_count_accuracy": 0.5,
+ "speaker_count_mae": 0.5,
+ "rtfx_overall": 835.1,
+ "summary": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.3276,
+   "fa": 0.1012,
+   "miss": 0.166,
+   "conf": 0.0605,
+   "jer": 0.3378,
+   "ref_speech_h": 4.4252
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.2249,
+   "fa": 0.0541,
+   "miss": 0.1136,
+   "conf": 0.0572,
+   "jer": 0.2587,
+   "ref_speech_h": 2.0967
+  },
+  "annotation@0.0": {
+   "collar": 0.0,
+   "der": 0.3781,
+   "fa": 0.019,
+   "miss": 0.3165,
+   "conf": 0.0425,
+   "jer": 0.4011,
+   "ref_speech_h": 5.8911
+  },
+  "annotation@0.25": {
+   "collar": 0.25,
+   "der": 0.2904,
+   "fa": 0.011,
+   "miss": 0.2339,
+   "conf": 0.0454,
+   "jer": 0.3211,
+   "ref_speech_h": 3.1947
+  }
+ },
+ "per_session": [
+  {
+   "session_id": "chime6__S01",
+   "split": "eval",
+   "duration": 9543.86,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.254,
+   "rtfx": 805.6,
+   "primary@0.0": {
+    "der": 0.3352,
+    "fa": 0.1152,
+    "miss": 0.187,
+    "conf": 0.0329,
+    "jer": 0.334,
+    "ref_speech_s": 8543.6
+   },
+   "primary@0.25": {
+    "der": 0.2272,
+    "fa": 0.0661,
+    "miss": 0.1427,
+    "conf": 0.0184,
+    "jer": 0.2458,
+    "ref_speech_s": 3883.36
+   },
+   "annotation@0.0": {
+    "der": 0.3726,
+    "fa": 0.0246,
+    "miss": 0.3275,
+    "conf": 0.0206,
+    "jer": 0.3877,
+    "ref_speech_s": 11374.45
+   },
+   "annotation@0.25": {
+    "der": 0.2805,
+    "fa": 0.0113,
+    "miss": 0.2567,
+    "conf": 0.0125,
+    "jer": 0.3018,
+    "ref_speech_s": 5925.52
+   }
+  },
+  {
+   "session_id": "chime6__S21",
+   "split": "eval",
+   "duration": 9200.04,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1956,
+   "rtfx": 868.1,
+   "primary@0.0": {
+    "der": 0.3189,
+    "fa": 0.085,
+    "miss": 0.1415,
+    "conf": 0.0924,
+    "jer": 0.3416,
+    "ref_speech_s": 7387.15
+   },
+   "primary@0.25": {
+    "der": 0.2225,
+    "fa": 0.0414,
+    "miss": 0.0827,
+    "conf": 0.0983,
+    "jer": 0.2717,
+    "ref_speech_s": 3664.62
+   },
+   "annotation@0.0": {
+    "der": 0.3844,
+    "fa": 0.0126,
+    "miss": 0.3039,
+    "conf": 0.0679,
+    "jer": 0.4146,
+    "ref_speech_s": 9833.37
+   },
+   "annotation@0.25": {
+    "der": 0.3009,
+    "fa": 0.0108,
+    "miss": 0.2097,
+    "conf": 0.0804,
+    "jer": 0.3403,
+    "ref_speech_s": 5575.41
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5080"
+ },
+ "command": "python -m diards evaluate chime6 --view ihm-mix --out results/nemotron/chime6.ihm-mix --split eval"
+}

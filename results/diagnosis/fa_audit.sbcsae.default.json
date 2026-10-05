@@ -1,0 +1,370 @@
+{
+ "dataset": "sbcsae",
+ "view": "default",
+ "regions_checked": 40,
+ "regions": [
+  {
+   "session_id": "sbcsae__SBC021",
+   "start": 2.03,
+   "end": 7.7,
+   "dur": 5.67,
+   "whisper": "The Great I Am!",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC015",
+   "start": 1545.87,
+   "end": 1550.75,
+   "dur": 4.88,
+   "whisper": "I thought it wasn't going to eat it. And I was really worried. You know, they disengaged their jaws in order",
+   "words": 21,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC002",
+   "start": 1345.67,
+   "end": 1349.66,
+   "dur": 3.99,
+   "whisper": "Ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha",
+   "words": 444,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC045",
+   "start": 904.68,
+   "end": 907.93,
+   "dur": 3.25,
+   "whisper": "one person that I've known for a long time.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC045",
+   "start": 1031.09,
+   "end": 1034.26,
+   "dur": 3.17,
+   "whisper": "When we return for final...",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC020",
+   "start": 1509.12,
+   "end": 1511.98,
+   "dur": 2.86,
+   "whisper": "We're going to get him unwired now.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC019",
+   "start": 637.33,
+   "end": 639.99,
+   "dur": 2.66,
+   "whisper": "I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know",
+   "words": 311,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC045",
+   "start": 908.57,
+   "end": 911.17,
+   "dur": 2.6,
+   "whisper": "I don't think it's possible to understand why.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC025",
+   "start": 2.49,
+   "end": 5.01,
+   "dur": 2.52,
+   "whisper": "They can't base it on the Vulgata. So this is what he did.",
+   "words": 13,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC015",
+   "start": 1538.88,
+   "end": 1541.23,
+   "dur": 2.35,
+   "whisper": "You know what's really interesting is that the snake",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC015",
+   "start": 1564.06,
+   "end": 1566.35,
+   "dur": 2.29,
+   "whisper": "twice the size of their heads.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC015",
+   "start": 1541.82,
+   "end": 1544.04,
+   "dur": 2.22,
+   "whisper": "One time it got it the wrong way.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC045",
+   "start": 960.94,
+   "end": 963.13,
+   "dur": 2.19,
+   "whisper": "I mean, it's not certain, but how long ago?",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC018",
+   "start": 111.63,
+   "end": 113.8,
+   "dur": 2.17,
+   "whisper": "We'll call you back to get you the wire on this.",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC028",
+   "start": 1373.79,
+   "end": 1375.95,
+   "dur": 2.16,
+   "whisper": "Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come.",
+   "words": 222,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC045",
+   "start": 1002.95,
+   "end": 1005.09,
+   "dur": 2.14,
+   "whisper": "List collected, twenty-one hundred dollars.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC002",
+   "start": 1236.65,
+   "end": 1238.76,
+   "dur": 2.11,
+   "whisper": "Ha ha ha ha ha ha!",
+   "words": 6,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC005",
+   "start": 872.91,
+   "end": 874.98,
+   "dur": 2.07,
+   "whisper": "Ha, ha, ha, ha, ha, ha.",
+   "words": 6,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC005",
+   "start": 937.08,
+   "end": 939.07,
+   "dur": 1.99,
+   "whisper": "Oh, I'm sorry.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC016",
+   "start": 1138.61,
+   "end": 1140.52,
+   "dur": 1.91,
+   "whisper": "What I think I'll do is",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC034",
+   "start": 44.93,
+   "end": 46.82,
+   "dur": 1.89,
+   "whisper": "Ahhhhhhh!",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC028",
+   "start": 600.99,
+   "end": 602.88,
+   "dur": 1.89,
+   "whisper": "Ha, ha, ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC028",
+   "start": 1308.83,
+   "end": 1310.69,
+   "dur": 1.86,
+   "whisper": "Ha, ha, ha, ha, ha, ha.",
+   "words": 6,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC002",
+   "start": 145.61,
+   "end": 147.38,
+   "dur": 1.77,
+   "whisper": "Oh, my God.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC015",
+   "start": 0.23,
+   "end": 1.99,
+   "dur": 1.76,
+   "whisper": "He is a real cheap guy.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC006",
+   "start": 487.47,
+   "end": 489.23,
+   "dur": 1.76,
+   "whisper": "Ha ha ha ha ha ha ha!",
+   "words": 7,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC028",
+   "start": 786.5,
+   "end": 788.25,
+   "dur": 1.75,
+   "whisper": "Ha, ha, ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC036",
+   "start": 1488.97,
+   "end": 1490.71,
+   "dur": 1.74,
+   "whisper": "Ha, ha, ha, ha, ha. Ha, ha, ha, ha, ha.",
+   "words": 10,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC028",
+   "start": 1377.28,
+   "end": 1378.98,
+   "dur": 1.7,
+   "whisper": "LAUGHTER",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC009",
+   "start": 494.73,
+   "end": 496.4,
+   "dur": 1.67,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC005",
+   "start": 967.7,
+   "end": 969.32,
+   "dur": 1.62,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC009",
+   "start": 133.15,
+   "end": 134.76,
+   "dur": 1.61,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC008",
+   "start": 97.79,
+   "end": 99.34,
+   "dur": 1.55,
+   "whisper": "Ha ha ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC003",
+   "start": 1191.81,
+   "end": 1193.36,
+   "dur": 1.55,
+   "whisper": "Ha ha ha!",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC019",
+   "start": 616.48,
+   "end": 618.0,
+   "dur": 1.52,
+   "whisper": "I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know what you're talking about. I don't know",
+   "words": 311,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC005",
+   "start": 886.91,
+   "end": 888.41,
+   "dur": 1.5,
+   "whisper": "Ha, ha, ha, ha, ha, ha.",
+   "words": 6,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC018",
+   "start": 417.89,
+   "end": 419.38,
+   "dur": 1.49,
+   "whisper": "I don't know.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "sbcsae__SBC020",
+   "start": 931.62,
+   "end": 933.1,
+   "dur": 1.48,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC027",
+   "start": 802.23,
+   "end": 803.7,
+   "dur": 1.47,
+   "whisper": "HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA HA",
+   "words": 261,
+   "speech": false
+  },
+  {
+   "session_id": "sbcsae__SBC005",
+   "start": 525.86,
+   "end": 527.33,
+   "dur": 1.47,
+   "whisper": "Yes.",
+   "words": 1,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 18,
+ "seconds_checked": 88.2,
+ "seconds_with_speech": 47.2
+}

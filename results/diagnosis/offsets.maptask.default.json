@@ -1,0 +1,907 @@
+{
+ "dataset": "maptask",
+ "view": "default",
+ "sessions": 128,
+ "median_abs_best_lag_s": 0.0,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "maptask__q1ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9638,
+   "agreement_best": 0.9638,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9445,
+   "agreement_best": 0.9445,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9575,
+   "agreement_best": 0.9575,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9543,
+   "agreement_best": 0.9543,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9563,
+   "agreement_best": 0.9563,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.945,
+   "agreement_best": 0.945,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9606,
+   "agreement_best": 0.9606,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9522,
+   "agreement_best": 0.9522,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.958,
+   "agreement_best": 0.958,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9578,
+   "agreement_best": 0.9578,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9535,
+   "agreement_best": 0.9535,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9622,
+   "agreement_best": 0.9622,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9457,
+   "agreement_best": 0.9457,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9356,
+   "agreement_best": 0.9356,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9552,
+   "agreement_best": 0.9552,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q1nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9528,
+   "agreement_best": 0.9528,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9672,
+   "agreement_best": 0.9672,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9583,
+   "agreement_best": 0.9583,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9705,
+   "agreement_best": 0.9705,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9471,
+   "agreement_best": 0.9471,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9683,
+   "agreement_best": 0.9683,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9609,
+   "agreement_best": 0.9609,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9722,
+   "agreement_best": 0.9722,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9542,
+   "agreement_best": 0.9542,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9555,
+   "agreement_best": 0.9555,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9664,
+   "agreement_best": 0.9664,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9591,
+   "agreement_best": 0.9591,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9607,
+   "agreement_best": 0.9607,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.958,
+   "agreement_best": 0.958,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9522,
+   "agreement_best": 0.9522,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9535,
+   "agreement_best": 0.9535,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q2nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9556,
+   "agreement_best": 0.9556,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9511,
+   "agreement_best": 0.9511,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9491,
+   "agreement_best": 0.9491,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9515,
+   "agreement_best": 0.9515,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9574,
+   "agreement_best": 0.9574,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9336,
+   "agreement_best": 0.9336,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9651,
+   "agreement_best": 0.9651,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9533,
+   "agreement_best": 0.9533,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9716,
+   "agreement_best": 0.9716,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9412,
+   "agreement_best": 0.9412,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9436,
+   "agreement_best": 0.9436,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9207,
+   "agreement_best": 0.9207,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9547,
+   "agreement_best": 0.9547,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9398,
+   "agreement_best": 0.9398,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9467,
+   "agreement_best": 0.9467,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9454,
+   "agreement_best": 0.9454,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q3nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9547,
+   "agreement_best": 0.9547,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9522,
+   "agreement_best": 0.9522,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9676,
+   "agreement_best": 0.9676,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9574,
+   "agreement_best": 0.9574,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.963,
+   "agreement_best": 0.963,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9589,
+   "agreement_best": 0.9589,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.967,
+   "agreement_best": 0.967,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9619,
+   "agreement_best": 0.9619,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9575,
+   "agreement_best": 0.9575,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9612,
+   "agreement_best": 0.9612,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9546,
+   "agreement_best": 0.9546,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9585,
+   "agreement_best": 0.9585,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9521,
+   "agreement_best": 0.9521,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9433,
+   "agreement_best": 0.9433,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9652,
+   "agreement_best": 0.9652,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9584,
+   "agreement_best": 0.9584,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q4nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9515,
+   "agreement_best": 0.9515,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9628,
+   "agreement_best": 0.9628,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.968,
+   "agreement_best": 0.968,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9705,
+   "agreement_best": 0.9705,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9615,
+   "agreement_best": 0.9615,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9701,
+   "agreement_best": 0.9701,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9692,
+   "agreement_best": 0.9692,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.951,
+   "agreement_best": 0.951,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.961,
+   "agreement_best": 0.961,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9558,
+   "agreement_best": 0.9558,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9556,
+   "agreement_best": 0.9556,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9563,
+   "agreement_best": 0.9563,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.946,
+   "agreement_best": 0.946,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9441,
+   "agreement_best": 0.9441,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9719,
+   "agreement_best": 0.9719,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9545,
+   "agreement_best": 0.9545,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q5nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9661,
+   "agreement_best": 0.9661,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9616,
+   "agreement_best": 0.9616,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.962,
+   "agreement_best": 0.962,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9514,
+   "agreement_best": 0.9514,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9537,
+   "agreement_best": 0.9537,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9653,
+   "agreement_best": 0.9653,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9487,
+   "agreement_best": 0.9487,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9486,
+   "agreement_best": 0.9486,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9559,
+   "agreement_best": 0.9559,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9667,
+   "agreement_best": 0.9667,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9575,
+   "agreement_best": 0.9575,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9677,
+   "agreement_best": 0.9677,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9604,
+   "agreement_best": 0.9604,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9655,
+   "agreement_best": 0.9655,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9679,
+   "agreement_best": 0.9679,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9589,
+   "agreement_best": 0.9589,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q6nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9547,
+   "agreement_best": 0.9547,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.955,
+   "agreement_best": 0.955,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9641,
+   "agreement_best": 0.9641,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9668,
+   "agreement_best": 0.9668,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9539,
+   "agreement_best": 0.9539,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9557,
+   "agreement_best": 0.9557,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9586,
+   "agreement_best": 0.9586,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9549,
+   "agreement_best": 0.9549,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9688,
+   "agreement_best": 0.9688,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9622,
+   "agreement_best": 0.9622,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9588,
+   "agreement_best": 0.9588,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9467,
+   "agreement_best": 0.9467,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9651,
+   "agreement_best": 0.9651,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9635,
+   "agreement_best": 0.9635,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9779,
+   "agreement_best": 0.9779,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9734,
+   "agreement_best": 0.9734,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q7nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9551,
+   "agreement_best": 0.9551,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9488,
+   "agreement_best": 0.9488,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9559,
+   "agreement_best": 0.9559,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9622,
+   "agreement_best": 0.9622,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9288,
+   "agreement_best": 0.9288,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9443,
+   "agreement_best": 0.9443,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9614,
+   "agreement_best": 0.9614,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9658,
+   "agreement_best": 0.9658,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8ec8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9642,
+   "agreement_best": 0.9642,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.967,
+   "agreement_best": 0.967,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9632,
+   "agreement_best": 0.9632,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.957,
+   "agreement_best": 0.957,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9405,
+   "agreement_best": 0.9405,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9591,
+   "agreement_best": 0.9591,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.953,
+   "agreement_best": 0.953,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.954,
+   "agreement_best": 0.954,
+   "gain": 0.0
+  },
+  {
+   "session_id": "maptask__q8nc8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9647,
+   "agreement_best": 0.9647,
+   "gain": 0.0
+  }
+ ]
+}

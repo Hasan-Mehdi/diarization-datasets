@@ -1,0 +1,95 @@
+{
+ "dataset": "scotus",
+ "view": "default",
+ "sessions": 12,
+ "median_abs_best_lag_s": 1.05,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "scotus__2022_20-1199_25450",
+   "best_lag_s": 1.35,
+   "agreement_at_0": 0.8823,
+   "agreement_best": 0.8825,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "scotus__2022_21-1168_25458",
+   "best_lag_s": 0.95,
+   "agreement_at_0": 0.8291,
+   "agreement_best": 0.8292,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "scotus__2022_21-376_25455",
+   "best_lag_s": 1.0,
+   "agreement_at_0": 0.87,
+   "agreement_best": 0.87,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "scotus__2022_21-432_25444",
+   "best_lag_s": 4.85,
+   "agreement_at_0": 0.9222,
+   "agreement_best": 0.9228,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "scotus__2022_21-442_25445",
+   "best_lag_s": -3.4,
+   "agreement_at_0": 0.8595,
+   "agreement_best": 0.8601,
+   "gain": 0.0007
+  },
+  {
+   "session_id": "scotus__2022_21-454_25446",
+   "best_lag_s": 1.0,
+   "agreement_at_0": 0.8832,
+   "agreement_best": 0.8833,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "scotus__2022_21-468_25447",
+   "best_lag_s": 1.05,
+   "agreement_at_0": 0.9154,
+   "agreement_best": 0.9155,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "scotus__2022_21-476_25462",
+   "best_lag_s": -1.5,
+   "agreement_at_0": 0.908,
+   "agreement_best": 0.9081,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "scotus__2022_21-846_25453",
+   "best_lag_s": -2.9,
+   "agreement_at_0": 0.7975,
+   "agreement_best": 0.7981,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "scotus__2022_21-869_25448",
+   "best_lag_s": 1.05,
+   "agreement_at_0": 0.9187,
+   "agreement_best": 0.9189,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "scotus__2022_21-86_25451",
+   "best_lag_s": 1.05,
+   "agreement_at_0": 0.9149,
+   "agreement_best": 0.9151,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "scotus__2022_22O145_25368",
+   "best_lag_s": 1.0,
+   "agreement_at_0": 0.9593,
+   "agreement_best": 0.9595,
+   "gain": 0.0002
+  }
+ ]
+}

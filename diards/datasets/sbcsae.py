@@ -8,7 +8,9 @@ Reference: one segment per IU line, speaker = the CHAT participant code. Exclude
 tier and any other non-human tier, and IUs without any lexical word (only breaths ``&=in``, laughter, pauses,
 vocal noises). IU bullets in SBCSAE tile the timeline (an IU starts where the previous one ended), so pauses
 before an IU are counted inside it: boundaries are loose by construction (see the dataset card).
-Audio: the WAV files (22.05 kHz stereo) downmixed to mono 16 kHz. Split: ``all``. UEM: whole recording.
+Audio: the WAV files (22.05 kHz stereo) downmixed to mono 16 kHz. Split: ``all``.
+UEM: from the first to the last transcribed intonation unit: several recordings have untranscribed speech at
+the start or end (276 s in total, e.g. the last 28 s of SBC015), which would otherwise count as false alarms.
 License: CC BY-ND 3.0 US -> derived RTTMs must not be redistributed; they are only written to your data root.
 """
 from __future__ import annotations
@@ -46,7 +48,8 @@ META = DatasetMeta(
     gt_rating_reason=("Careful human transcription of every participant with overlap marked and IU-level timing, "
                       "but IU bullets tile the timeline (pauses inside units) and recordings vary widely in quality."),
     choices=["Segments: one per intonation unit with lexical content; ENV and non-word IUs dropped.",
-             "Speaker ids: <recording>_<CHAT code>.", "Split: all.", "UEM: whole recording.",
+             "Speaker ids: <recording>_<CHAT code>.", "Split: all.",
+             "UEM: first to last transcribed IU (untranscribed heads/tails excluded).",
              "RTTMs are NOT redistributable (CC BY-ND); stats only are published."],
     domain="everyday conversation (mixed situations)",
 )
@@ -108,6 +111,7 @@ def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
             convert(wav, w.audio_path(sid))
         segs = [Segment(a, e, f"{rec}_{spk}") for a, e, spk, text in parse_cha(cha)
                 if spk not in NON_HUMAN and e > a and has_words(text)]
-        w.add_session(rec, "all", segs)
+        lo, hi = min(g.start for g in segs), max(g.end for g in segs)
+        w.add_session(rec, "all", segs, uem=[(lo, hi)])
         print(f"  [sbcsae] {rec} ok ({len(segs)} IUs)", flush=True)
     w.finalize([{"url": MIRRORS[0]}])

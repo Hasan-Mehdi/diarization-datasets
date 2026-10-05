@@ -27,24 +27,24 @@
  "hours": 23.31,
  "speaker_count_accuracy": 0.4333,
  "speaker_count_mae": 1.2,
- "rtfx_overall": 928.9,
+ "rtfx_overall": null,
  "summary": {
   "primary@0.0": {
    "collar": 0.0,
-   "der": 0.2745,
-   "fa": 0.0262,
+   "der": 0.2738,
+   "fa": 0.0256,
    "miss": 0.2252,
    "conf": 0.023,
-   "jer": 0.488,
+   "jer": 0.4868,
    "ref_speech_h": 22.9474
   },
   "primary@0.25": {
    "collar": 0.25,
-   "der": 0.2431,
-   "fa": 0.0148,
+   "der": 0.2423,
+   "fa": 0.014,
    "miss": 0.2093,
    "conf": 0.0189,
-   "jer": 0.4306,
+   "jer": 0.4286,
    "ref_speech_h": 17.9252
   }
  },
@@ -56,21 +56,21 @@
    "ref_speakers": 3,
    "hyp_speakers": 3,
    "overlap_ratio": 0.0266,
-   "rtfx": 760.6,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.2571,
-    "fa": 0.0043,
+    "der": 0.2569,
+    "fa": 0.0041,
     "miss": 0.2434,
     "conf": 0.0095,
-    "jer": 0.3483,
+    "jer": 0.3479,
     "ref_speech_s": 1547.34
    },
    "primary@0.25": {
-    "der": 0.2405,
-    "fa": 0.0002,
+    "der": 0.2404,
+    "fa": 0.0001,
     "miss": 0.2347,
     "conf": 0.0056,
-    "jer": 0.3263,
+    "jer": 0.3262,
     "ref_speech_s": 1399.74
    }
   },
@@ -81,7 +81,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.1091,
-   "rtfx": 731.7,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2946,
     "fa": 0.0513,
@@ -106,10 +106,10 @@
    "ref_speakers": 3,
    "hyp_speakers": 4,
    "overlap_ratio": 0.079,
-   "rtfx": 973.3,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.3814,
-    "fa": 0.0306,
+    "der": 0.3813,
+    "fa": 0.0305,
     "miss": 0.3037,
     "conf": 0.0471,
     "jer": 0.3799,
@@ -131,7 +131,7 @@
    "ref_speakers": 7,
    "hyp_speakers": 4,
    "overlap_ratio": 0.113,
-   "rtfx": 1080.7,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2009,
     "fa": 0.0207,
@@ -156,7 +156,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0459,
-   "rtfx": 1134.7,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.3778,
     "fa": 0.0329,
@@ -181,9 +181,9 @@
    "ref_speakers": 2,
    "hyp_speakers": 4,
    "overlap_ratio": 0.0334,
-   "rtfx": 1155.1,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.191,
+    "der": 0.1909,
     "fa": 0.0215,
     "miss": 0.1486,
     "conf": 0.0208,
@@ -206,7 +206,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0079,
-   "rtfx": 1178.2,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.388,
     "fa": 0.0097,
@@ -231,7 +231,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.0651,
-   "rtfx": 1178.9,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2285,
     "fa": 0.0218,
@@ -256,7 +256,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0168,
-   "rtfx": 1131.4,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.6024,
     "fa": 0.0185,
@@ -281,10 +281,10 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.1005,
-   "rtfx": 1122.1,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.1732,
-    "fa": 0.0397,
+    "fa": 0.0396,
     "miss": 0.1214,
     "conf": 0.0121,
     "jer": 0.1945,
@@ -306,10 +306,10 @@
    "ref_speakers": 3,
    "hyp_speakers": 3,
    "overlap_ratio": 0.0422,
-   "rtfx": 1154.4,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.3349,
-    "fa": 0.021,
+    "fa": 0.0209,
     "miss": 0.3109,
     "conf": 0.003,
     "jer": 0.3164,
@@ -331,10 +331,10 @@
    "ref_speakers": 10,
    "hyp_speakers": 8,
    "overlap_ratio": 0.0181,
-   "rtfx": 1171.0,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.4527,
-    "fa": 0.0038,
+    "fa": 0.0037,
     "miss": 0.2019,
     "conf": 0.2471,
     "jer": 0.5925,
@@ -356,7 +356,7 @@
    "ref_speakers": 5,
    "hyp_speakers": 5,
    "overlap_ratio": 0.2369,
-   "rtfx": 1175.5,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2933,
     "fa": 0.0437,
@@ -381,7 +381,7 @@
    "ref_speakers": 5,
    "hyp_speakers": 5,
    "overlap_ratio": 0.0355,
-   "rtfx": 678.8,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.1754,
     "fa": 0.0116,
@@ -406,21 +406,21 @@
    "ref_speakers": 3,
    "hyp_speakers": 3,
    "overlap_ratio": 0.1926,
-   "rtfx": 457.8,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.147,
-    "fa": 0.0279,
+    "der": 0.1346,
+    "fa": 0.0155,
     "miss": 0.1138,
     "conf": 0.0053,
-    "jer": 0.1825,
+    "jer": 0.175,
     "ref_speech_s": 1766.442
    },
    "primary@0.25": {
-    "der": 0.0964,
-    "fa": 0.0203,
+    "der": 0.0784,
+    "fa": 0.0023,
     "miss": 0.0729,
     "conf": 0.0032,
-    "jer": 0.1246,
+    "jer": 0.1137,
     "ref_speech_s": 1195.769
    }
   },
@@ -431,21 +431,21 @@
    "ref_speakers": 4,
    "hyp_speakers": 3,
    "overlap_ratio": 0.1711,
-   "rtfx": 680.5,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.1658,
-    "fa": 0.036,
+    "der": 0.165,
+    "fa": 0.0353,
     "miss": 0.1221,
     "conf": 0.0077,
-    "jer": 0.5881,
+    "jer": 0.5878,
     "ref_speech_s": 1435.372
    },
    "primary@0.25": {
-    "der": 0.0738,
-    "fa": 0.0078,
+    "der": 0.0724,
+    "fa": 0.0064,
     "miss": 0.062,
     "conf": 0.004,
-    "jer": 0.5419,
+    "jer": 0.5415,
     "ref_speech_s": 750.407
    }
   },
@@ -456,21 +456,21 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0736,
-   "rtfx": 1173.5,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.172,
-    "fa": 0.012,
+    "der": 0.1682,
+    "fa": 0.0082,
     "miss": 0.1531,
     "conf": 0.0069,
-    "jer": 0.1875,
+    "jer": 0.185,
     "ref_speech_s": 1280.216
    },
    "primary@0.25": {
-    "der": 0.15,
-    "fa": 0.005,
+    "der": 0.1456,
+    "fa": 0.0006,
     "miss": 0.1411,
     "conf": 0.0039,
-    "jer": 0.1652,
+    "jer": 0.1622,
     "ref_speech_s": 1043.246
    }
   },
@@ -481,7 +481,7 @@
    "ref_speakers": 5,
    "hyp_speakers": 4,
    "overlap_ratio": 0.0832,
-   "rtfx": 1204.5,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.287,
     "fa": 0.0476,
@@ -506,21 +506,21 @@
    "ref_speakers": 5,
    "hyp_speakers": 7,
    "overlap_ratio": 0.1312,
-   "rtfx": 1165.4,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.3178,
-    "fa": 0.0304,
+    "der": 0.317,
+    "fa": 0.0297,
     "miss": 0.2741,
     "conf": 0.0133,
-    "jer": 0.3485,
+    "jer": 0.3478,
     "ref_speech_s": 1337.748
    },
    "primary@0.25": {
-    "der": 0.2813,
-    "fa": 0.0201,
+    "der": 0.2801,
+    "fa": 0.019,
     "miss": 0.2538,
     "conf": 0.0074,
-    "jer": 0.3017,
+    "jer": 0.3003,
     "ref_speech_s": 902.903
    }
   },
@@ -531,21 +531,21 @@
    "ref_speakers": 3,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0018,
-   "rtfx": 689.1,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.083,
-    "fa": 0.0074,
+    "der": 0.0801,
+    "fa": 0.0044,
     "miss": 0.0756,
     "conf": 0.0,
-    "jer": 0.5306,
+    "jer": 0.4453,
     "ref_speech_s": 1427.138
    },
    "primary@0.25": {
-    "der": 0.0626,
-    "fa": 0.0045,
+    "der": 0.0595,
+    "fa": 0.0014,
     "miss": 0.0582,
     "conf": 0.0,
-    "jer": 0.3364,
+    "jer": 0.1226,
     "ref_speech_s": 1366.488
    }
   },
@@ -556,18 +556,18 @@
    "ref_speakers": 10,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0142,
-   "rtfx": 1183.1,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.1932,
-    "fa": 0.0161,
+    "der": 0.1888,
+    "fa": 0.0118,
     "miss": 0.161,
     "conf": 0.0161,
     "jer": 0.9155,
     "ref_speech_s": 1530.691
    },
    "primary@0.25": {
-    "der": 0.1529,
-    "fa": 0.007,
+    "der": 0.148,
+    "fa": 0.002,
     "miss": 0.131,
     "conf": 0.015,
     "jer": 0.827,
@@ -581,17 +581,17 @@
    "ref_speakers": 3,
    "hyp_speakers": 4,
    "overlap_ratio": 0.0403,
-   "rtfx": 1148.9,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.2768,
-    "fa": 0.2421,
+    "der": 0.2761,
+    "fa": 0.2414,
     "miss": 0.0227,
     "conf": 0.0119,
-    "jer": 0.4103,
+    "jer": 0.41,
     "ref_speech_s": 605.54
    },
    "primary@0.25": {
-    "der": 0.0967,
+    "der": 0.0966,
     "fa": 0.0692,
     "miss": 0.0186,
     "conf": 0.0089,
@@ -606,7 +606,7 @@
    "ref_speakers": 16,
    "hyp_speakers": 8,
    "overlap_ratio": 0.1897,
-   "rtfx": 1192.9,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.3843,
     "fa": 0.0261,
@@ -631,21 +631,21 @@
    "ref_speakers": 3,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0712,
-   "rtfx": 1185.2,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.2072,
-    "fa": 0.0351,
+    "der": 0.2061,
+    "fa": 0.034,
     "miss": 0.1642,
     "conf": 0.0079,
-    "jer": 0.4656,
+    "jer": 0.4652,
     "ref_speech_s": 731.743
    },
    "primary@0.25": {
-    "der": 0.1298,
-    "fa": 0.0162,
+    "der": 0.128,
+    "fa": 0.0144,
     "miss": 0.1047,
     "conf": 0.0089,
-    "jer": 0.4168,
+    "jer": 0.4161,
     "ref_speech_s": 426.915
    }
   },
@@ -656,21 +656,21 @@
    "ref_speakers": 1,
    "hyp_speakers": 1,
    "overlap_ratio": 0.0,
-   "rtfx": 1163.5,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.1091,
-    "fa": 0.0059,
+    "der": 0.1048,
+    "fa": 0.0017,
     "miss": 0.1032,
     "conf": 0.0,
-    "jer": 0.1085,
+    "jer": 0.1047,
     "ref_speech_s": 1319.965
    },
    "primary@0.25": {
-    "der": 0.1052,
-    "fa": 0.0041,
+    "der": 0.1011,
+    "fa": 0.0,
     "miss": 0.1011,
     "conf": 0.0,
-    "jer": 0.1048,
+    "jer": 0.1011,
     "ref_speech_s": 1300.965
    }
   },
@@ -681,13 +681,13 @@
    "ref_speakers": 10,
    "hyp_speakers": 7,
    "overlap_ratio": 0.0175,
-   "rtfx": 866.6,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.1266,
     "fa": 0.0078,
     "miss": 0.1178,
     "conf": 0.001,
-    "jer": 0.3891,
+    "jer": 0.389,
     "ref_speech_s": 1407.012
    },
    "primary@0.25": {
@@ -695,7 +695,7 @@
     "fa": 0.0008,
     "miss": 0.0738,
     "conf": 0.0004,
-    "jer": 0.3539,
+    "jer": 0.3538,
     "ref_speech_s": 1185.692
    }
   },
@@ -706,21 +706,21 @@
    "ref_speakers": 5,
    "hyp_speakers": 1,
    "overlap_ratio": 0.0102,
-   "rtfx": 1140.3,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.1485,
-    "fa": 0.0131,
+    "der": 0.1484,
+    "fa": 0.013,
     "miss": 0.1352,
     "conf": 0.0002,
     "jer": 0.8224,
     "ref_speech_s": 922.18
    },
    "primary@0.25": {
-    "der": 0.0983,
+    "der": 0.0982,
     "fa": 0.006,
     "miss": 0.0923,
     "conf": 0.0,
-    "jer": 0.816,
+    "jer": 0.8159,
     "ref_speech_s": 810.06
    }
   },
@@ -731,21 +731,21 @@
    "ref_speakers": 2,
    "hyp_speakers": 3,
    "overlap_ratio": 0.0534,
-   "rtfx": 1154.2,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.2615,
-    "fa": 0.0929,
+    "der": 0.2606,
+    "fa": 0.092,
     "miss": 0.1581,
     "conf": 0.0105,
-    "jer": 0.2422,
+    "jer": 0.2416,
     "ref_speech_s": 1451.63
    },
    "primary@0.25": {
-    "der": 0.1984,
-    "fa": 0.0718,
+    "der": 0.1972,
+    "fa": 0.0705,
     "miss": 0.1193,
     "conf": 0.0073,
-    "jer": 0.1868,
+    "jer": 0.1859,
     "ref_speech_s": 1051.37
    }
   },
@@ -756,7 +756,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 4,
    "overlap_ratio": 0.0823,
-   "rtfx": 1134.8,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2144,
     "fa": 0.0446,
@@ -781,7 +781,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 1,
    "overlap_ratio": 0.0,
-   "rtfx": 1171.1,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.1413,
     "fa": 0.0191,
@@ -806,7 +806,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.1401,
-   "rtfx": 1157.4,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.327,
     "fa": 0.0076,
@@ -831,7 +831,7 @@
    "ref_speakers": 5,
    "hyp_speakers": 4,
    "overlap_ratio": 0.1534,
-   "rtfx": 1151.9,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2532,
     "fa": 0.0093,
@@ -856,7 +856,7 @@
    "ref_speakers": 8,
    "hyp_speakers": 7,
    "overlap_ratio": 0.2526,
-   "rtfx": 1183.0,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.4034,
     "fa": 0.0149,
@@ -881,21 +881,21 @@
    "ref_speakers": 2,
    "hyp_speakers": 3,
    "overlap_ratio": 0.0159,
-   "rtfx": 737.6,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.5011,
-    "fa": 0.0128,
+    "der": 0.5003,
+    "fa": 0.012,
     "miss": 0.477,
     "conf": 0.0113,
-    "jer": 0.4981,
+    "jer": 0.4973,
     "ref_speech_s": 1258.998
    },
    "primary@0.25": {
-    "der": 0.5151,
-    "fa": 0.005,
+    "der": 0.5142,
+    "fa": 0.0041,
     "miss": 0.5064,
     "conf": 0.0037,
-    "jer": 0.5135,
+    "jer": 0.5125,
     "ref_speech_s": 1090.124
    }
   },
@@ -906,7 +906,7 @@
    "ref_speakers": 8,
    "hyp_speakers": 6,
    "overlap_ratio": 0.2675,
-   "rtfx": 709.0,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2416,
     "fa": 0.0181,
@@ -931,7 +931,7 @@
    "ref_speakers": 3,
    "hyp_speakers": 4,
    "overlap_ratio": 0.1211,
-   "rtfx": 720.3,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2696,
     "fa": 0.0663,
@@ -956,7 +956,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 5,
    "overlap_ratio": 0.0329,
-   "rtfx": 654.7,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.505,
     "fa": 0.0202,
@@ -981,13 +981,13 @@
    "ref_speakers": 3,
    "hyp_speakers": 7,
    "overlap_ratio": 0.0163,
-   "rtfx": 636.9,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.1717,
+    "der": 0.1716,
     "fa": 0.009,
     "miss": 0.1428,
     "conf": 0.0198,
-    "jer": 0.6203,
+    "jer": 0.6202,
     "ref_speech_s": 1097.045
    },
    "primary@0.25": {
@@ -1006,7 +1006,7 @@
    "ref_speakers": 6,
    "hyp_speakers": 7,
    "overlap_ratio": 0.0703,
-   "rtfx": 641.3,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2025,
     "fa": 0.0108,
@@ -1031,7 +1031,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0003,
-   "rtfx": 777.3,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.0783,
     "fa": 0.0008,
@@ -1056,7 +1056,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0771,
-   "rtfx": 1143.7,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2187,
     "fa": 0.0097,
@@ -1081,7 +1081,7 @@
    "ref_speakers": 6,
    "hyp_speakers": 6,
    "overlap_ratio": 0.0555,
-   "rtfx": 756.2,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.6915,
     "fa": 0.0021,
@@ -1106,7 +1106,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0517,
-   "rtfx": 1098.6,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2017,
     "fa": 0.0237,
@@ -1131,21 +1131,21 @@
    "ref_speakers": 2,
    "hyp_speakers": 3,
    "overlap_ratio": 0.0219,
-   "rtfx": 802.7,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.163,
-    "fa": 0.0117,
+    "der": 0.1622,
+    "fa": 0.0109,
     "miss": 0.1478,
     "conf": 0.0035,
-    "jer": 0.2034,
+    "jer": 0.2019,
     "ref_speech_s": 1750.854
    },
    "primary@0.25": {
-    "der": 0.1383,
-    "fa": 0.0066,
+    "der": 0.1374,
+    "fa": 0.0057,
     "miss": 0.1303,
     "conf": 0.0014,
-    "jer": 0.1667,
+    "jer": 0.1645,
     "ref_speech_s": 1578.351
    }
   },
@@ -1156,18 +1156,18 @@
    "ref_speakers": 2,
    "hyp_speakers": 6,
    "overlap_ratio": 0.0148,
-   "rtfx": 668.2,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.5005,
-    "fa": 0.2391,
+    "der": 0.4998,
+    "fa": 0.2385,
     "miss": 0.2305,
     "conf": 0.0309,
     "jer": 0.276,
     "ref_speech_s": 1447.342
    },
    "primary@0.25": {
-    "der": 0.4973,
-    "fa": 0.2497,
+    "der": 0.4966,
+    "fa": 0.249,
     "miss": 0.2187,
     "conf": 0.0289,
     "jer": 0.2543,
@@ -1181,7 +1181,7 @@
    "ref_speakers": 3,
    "hyp_speakers": 3,
    "overlap_ratio": 0.04,
-   "rtfx": 726.1,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.1958,
     "fa": 0.0332,
@@ -1206,7 +1206,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0571,
-   "rtfx": 714.9,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2137,
     "fa": 0.0071,
@@ -1231,7 +1231,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.106,
-   "rtfx": 736.1,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.4483,
     "fa": 0.0263,
@@ -1256,7 +1256,7 @@
    "ref_speakers": 10,
    "hyp_speakers": 8,
    "overlap_ratio": 0.1423,
-   "rtfx": 1193.2,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2683,
     "fa": 0.0123,
@@ -1281,7 +1281,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.1115,
-   "rtfx": 1216.9,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.3807,
     "fa": 0.0128,
@@ -1306,7 +1306,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.1241,
-   "rtfx": 1190.2,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2469,
     "fa": 0.0307,
@@ -1331,7 +1331,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 3,
    "overlap_ratio": 0.07,
-   "rtfx": 1164.2,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2553,
     "fa": 0.0124,
@@ -1356,7 +1356,7 @@
    "ref_speakers": 9,
    "hyp_speakers": 7,
    "overlap_ratio": 0.0272,
-   "rtfx": 1191.2,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.3859,
     "fa": 0.012,
@@ -1381,7 +1381,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 1,
    "overlap_ratio": 0.0009,
-   "rtfx": 1208.2,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.1411,
     "fa": 0.0068,
@@ -1406,7 +1406,7 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.0022,
-   "rtfx": 1151.8,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.1749,
     "fa": 0.0041,
@@ -1431,7 +1431,7 @@
    "ref_speakers": 6,
    "hyp_speakers": 5,
    "overlap_ratio": 0.0808,
-   "rtfx": 1128.0,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2307,
     "fa": 0.0089,
@@ -1456,7 +1456,7 @@
    "ref_speakers": 6,
    "hyp_speakers": 3,
    "overlap_ratio": 0.0134,
-   "rtfx": 950.6,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.4325,
     "fa": 0.0077,
@@ -1481,7 +1481,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 2,
    "overlap_ratio": 0.0387,
-   "rtfx": 965.5,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.3726,
     "fa": 0.0171,
@@ -1506,10 +1506,10 @@
    "ref_speakers": 4,
    "hyp_speakers": 4,
    "overlap_ratio": 0.1588,
-   "rtfx": 959.5,
+   "rtfx": null,
    "primary@0.0": {
-    "der": 0.235,
-    "fa": 0.0303,
+    "der": 0.2349,
+    "fa": 0.0302,
     "miss": 0.1973,
     "conf": 0.0074,
     "jer": 0.2418,
@@ -1531,7 +1531,7 @@
    "ref_speakers": 2,
    "hyp_speakers": 3,
    "overlap_ratio": 0.0198,
-   "rtfx": 977.4,
+   "rtfx": null,
    "primary@0.0": {
     "der": 0.2835,
     "fa": 0.0158,
@@ -1555,5 +1555,5 @@
   "platform": "Windows-11-10.0.26200-SP0",
   "gpu": "NVIDIA GeForce RTX 5080"
  },
- "command": "python -m diards evaluate sbcsae --view default --out results/nemotron/sbcsae.default"
+ "command": "python -m diards evaluate sbcsae --out results/nemotron/sbcsae.default"
 }

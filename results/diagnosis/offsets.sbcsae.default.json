@@ -1,0 +1,431 @@
+{
+ "dataset": "sbcsae",
+ "view": "default",
+ "sessions": 60,
+ "median_abs_best_lag_s": 0.05,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "sbcsae__SBC001",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.7629,
+   "agreement_best": 0.7631,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "sbcsae__SBC002",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7571,
+   "agreement_best": 0.7571,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC003",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7021,
+   "agreement_best": 0.7021,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC004",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8534,
+   "agreement_best": 0.8534,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC005",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.6634,
+   "agreement_best": 0.6637,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "sbcsae__SBC006",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8542,
+   "agreement_best": 0.8554,
+   "gain": 0.0012
+  },
+  {
+   "session_id": "sbcsae__SBC007",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.6408,
+   "agreement_best": 0.6415,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "sbcsae__SBC008",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8071,
+   "agreement_best": 0.8072,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "sbcsae__SBC009",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.4554,
+   "agreement_best": 0.4554,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC010",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8975,
+   "agreement_best": 0.8975,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC011",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.7,
+   "agreement_best": 0.7008,
+   "gain": 0.0008
+  },
+  {
+   "session_id": "sbcsae__SBC012",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8041,
+   "agreement_best": 0.8041,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC013",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8188,
+   "agreement_best": 0.8188,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC014",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8454,
+   "agreement_best": 0.8457,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "sbcsae__SBC015",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9181,
+   "agreement_best": 0.9181,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC016",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.922,
+   "agreement_best": 0.922,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC017",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8547,
+   "agreement_best": 0.8547,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC018",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.841,
+   "agreement_best": 0.841,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC019",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7571,
+   "agreement_best": 0.7571,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC020",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9229,
+   "agreement_best": 0.9229,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC021",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8525,
+   "agreement_best": 0.8541,
+   "gain": 0.0016
+  },
+  {
+   "session_id": "sbcsae__SBC022",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.8659,
+   "agreement_best": 0.8678,
+   "gain": 0.0019
+  },
+  {
+   "session_id": "sbcsae__SBC023",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8471,
+   "agreement_best": 0.8471,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC024",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9233,
+   "agreement_best": 0.9233,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC025",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.892,
+   "agreement_best": 0.8922,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "sbcsae__SBC026",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8962,
+   "agreement_best": 0.8962,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC027",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8727,
+   "agreement_best": 0.875,
+   "gain": 0.0023
+  },
+  {
+   "session_id": "sbcsae__SBC028",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8252,
+   "agreement_best": 0.8252,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC029",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8702,
+   "agreement_best": 0.8702,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC030",
+   "best_lag_s": 0.15,
+   "agreement_at_0": 0.8913,
+   "agreement_best": 0.906,
+   "gain": 0.0147
+  },
+  {
+   "session_id": "sbcsae__SBC031",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.7541,
+   "agreement_best": 0.7555,
+   "gain": 0.0014
+  },
+  {
+   "session_id": "sbcsae__SBC032",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8031,
+   "agreement_best": 0.8031,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC033",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8284,
+   "agreement_best": 0.829,
+   "gain": 0.0006
+  },
+  {
+   "session_id": "sbcsae__SBC034",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.5907,
+   "agreement_best": 0.5909,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "sbcsae__SBC035",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8663,
+   "agreement_best": 0.8663,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC036",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8044,
+   "agreement_best": 0.8044,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC037",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.5751,
+   "agreement_best": 0.5752,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "sbcsae__SBC038",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8945,
+   "agreement_best": 0.8949,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "sbcsae__SBC039",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8639,
+   "agreement_best": 0.8641,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "sbcsae__SBC040",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9311,
+   "agreement_best": 0.9314,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "sbcsae__SBC041",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8125,
+   "agreement_best": 0.8126,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "sbcsae__SBC042",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.4354,
+   "agreement_best": 0.4355,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "sbcsae__SBC043",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8277,
+   "agreement_best": 0.8277,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC044",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8538,
+   "agreement_best": 0.8541,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "sbcsae__SBC045",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.653,
+   "agreement_best": 0.6531,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "sbcsae__SBC046",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8391,
+   "agreement_best": 0.8391,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC047",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7975,
+   "agreement_best": 0.7975,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC048",
+   "best_lag_s": 0.1,
+   "agreement_at_0": 0.6377,
+   "agreement_best": 0.6399,
+   "gain": 0.0023
+  },
+  {
+   "session_id": "sbcsae__SBC049",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8092,
+   "agreement_best": 0.8101,
+   "gain": 0.001
+  },
+  {
+   "session_id": "sbcsae__SBC050",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.6856,
+   "agreement_best": 0.6856,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC051",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8206,
+   "agreement_best": 0.8209,
+   "gain": 0.0003
+  },
+  {
+   "session_id": "sbcsae__SBC052",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.7809,
+   "agreement_best": 0.7809,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC053",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.7538,
+   "agreement_best": 0.7539,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "sbcsae__SBC054",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8683,
+   "agreement_best": 0.8692,
+   "gain": 0.0009
+  },
+  {
+   "session_id": "sbcsae__SBC055",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8507,
+   "agreement_best": 0.8507,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC056",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8034,
+   "agreement_best": 0.8034,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC057",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.6285,
+   "agreement_best": 0.629,
+   "gain": 0.0005
+  },
+  {
+   "session_id": "sbcsae__SBC058",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.6763,
+   "agreement_best": 0.6763,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC059",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8183,
+   "agreement_best": 0.8183,
+   "gain": 0.0
+  },
+  {
+   "session_id": "sbcsae__SBC060",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.7321,
+   "agreement_best": 0.7324,
+   "gain": 0.0003
+  }
+ ]
+}

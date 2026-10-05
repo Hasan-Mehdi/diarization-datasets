@@ -73,6 +73,19 @@ _Not evaluated yet._
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the SCOTUS numbers.** DER is 31.7% at collar 0 and barely lower at 0.25 s (30.3%), because the errors are
+not boundary effects:
+- **Speaker confusion 19.4%** comes from the model limit: each argument has 11-13 speakers (nine justices plus
+  advocates) and Nemotron outputs at most 8, so several justices are merged on every recording (speaker-count
+  accuracy 0%).
+- **Missed speech 11.2%**: about half (5.8 points) falls in silence, where Oyez's tiled turns label pauses as speech
+  (reference convention). The other half is audible speech the model drops.
+- **No false alarm at all** (0.0%): the tiled reference labels everything as speech, so the model cannot be
+  "wrong" there. Interruptions and cross-talk are not represented as overlap, so this reference cannot test
+  overlap handling either.
+Use it for long-form, many-speaker speaker tracking with a generous collar, not as an overlap-aware benchmark.
+
+
 ## Quality rating
 
 **C.** Human transcripts with reliable global speaker ids in a valuable domain, but coarse, tiled turn timing and no

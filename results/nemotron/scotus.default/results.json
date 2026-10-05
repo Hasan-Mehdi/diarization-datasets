@@ -1,0 +1,359 @@
+{
+ "dataset": "scotus",
+ "view": "default",
+ "model": "nvidia/Nemotron-3-Diarization",
+ "model_revision": "f667ed73aee57d40cc39428eb768b4fd87a0a29e",
+ "inference": {
+  "implementation": "transformers (offline mode)",
+  "chunk_length": 340,
+  "chunk_right_context": 40,
+  "fifo_length": 40,
+  "speaker_cache_update_period": 300,
+  "speaker_cache_length": 264,
+  "dtype": "float32",
+  "threshold": 0.5,
+  "postprocessing": "none (threshold only)"
+ },
+ "scoring": {
+  "tool": "pyannote.metrics",
+  "collars_half_width_s": [
+   0.0,
+   0.25
+  ],
+  "overlap": "included",
+  "uem": "per-session UEM from the normalized dataset"
+ },
+ "sessions": 12,
+ "hours": 20.5,
+ "speaker_count_accuracy": 0.0,
+ "speaker_count_mae": 3.5,
+ "rtfx_overall": 818.5,
+ "summary": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.3166,
+   "fa": 0.011,
+   "miss": 0.1116,
+   "conf": 0.194,
+   "jer": 0.4768,
+   "ref_speech_h": 20.4941
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.3025,
+   "fa": 0.005,
+   "miss": 0.1039,
+   "conf": 0.1935,
+   "jer": 0.4617,
+   "ref_speech_h": 19.8592
+  }
+ },
+ "per_session": [
+  {
+   "session_id": "scotus__2022_20-1199_25450",
+   "split": "term2022",
+   "duration": 6915.48,
+   "ref_speakers": 11,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": null,
+   "primary@0.0": {
+    "der": 0.3266,
+    "fa": 0.0138,
+    "miss": 0.1174,
+    "conf": 0.1954,
+    "jer": 0.4655,
+    "ref_speech_s": 6913.975
+   },
+   "primary@0.25": {
+    "der": 0.3136,
+    "fa": 0.0072,
+    "miss": 0.1104,
+    "conf": 0.196,
+    "jer": 0.4558,
+    "ref_speech_s": 6713.73
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-1168_25458",
+   "split": "term2022",
+   "duration": 6493.944,
+   "ref_speakers": 12,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": null,
+   "primary@0.0": {
+    "der": 0.3441,
+    "fa": 0.0126,
+    "miss": 0.1711,
+    "conf": 0.1604,
+    "jer": 0.5212,
+    "ref_speech_s": 6490.935
+   },
+   "primary@0.25": {
+    "der": 0.3275,
+    "fa": 0.0056,
+    "miss": 0.1635,
+    "conf": 0.1584,
+    "jer": 0.5112,
+    "ref_speech_s": 6249.025
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-376_25455",
+   "split": "term2022",
+   "duration": 11540.064,
+   "ref_speakers": 13,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 652.2,
+   "primary@0.0": {
+    "der": 0.509,
+    "fa": 0.0138,
+    "miss": 0.13,
+    "conf": 0.3652,
+    "jer": 0.6058,
+    "ref_speech_s": 11538.125
+   },
+   "primary@0.25": {
+    "der": 0.4976,
+    "fa": 0.0068,
+    "miss": 0.1238,
+    "conf": 0.3669,
+    "jer": 0.5965,
+    "ref_speech_s": 11130.88
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-432_25444",
+   "split": "term2022",
+   "duration": 2851.872,
+   "ref_speakers": 10,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 907.4,
+   "primary@0.0": {
+    "der": 0.1044,
+    "fa": 0.0046,
+    "miss": 0.0775,
+    "conf": 0.0223,
+    "jer": 0.3211,
+    "ref_speech_s": 2850.325
+   },
+   "primary@0.25": {
+    "der": 0.0946,
+    "fa": 0.0022,
+    "miss": 0.0713,
+    "conf": 0.0211,
+    "jer": 0.2322,
+    "ref_speech_s": 2803.435
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-442_25445",
+   "split": "term2022",
+   "duration": 3592.128,
+   "ref_speakers": 11,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 946.1,
+   "primary@0.0": {
+    "der": 0.3178,
+    "fa": 0.0094,
+    "miss": 0.1406,
+    "conf": 0.1677,
+    "jer": 0.5044,
+    "ref_speech_s": 3590.11
+   },
+   "primary@0.25": {
+    "der": 0.3059,
+    "fa": 0.0064,
+    "miss": 0.1318,
+    "conf": 0.1677,
+    "jer": 0.4916,
+    "ref_speech_s": 3498.73
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-454_25446",
+   "split": "term2022",
+   "duration": 6485.064,
+   "ref_speakers": 11,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 945.3,
+   "primary@0.0": {
+    "der": 0.2258,
+    "fa": 0.006,
+    "miss": 0.1166,
+    "conf": 0.1032,
+    "jer": 0.4132,
+    "ref_speech_s": 6482.525
+   },
+   "primary@0.25": {
+    "der": 0.2076,
+    "fa": 0.002,
+    "miss": 0.1041,
+    "conf": 0.1015,
+    "jer": 0.3984,
+    "ref_speech_s": 6247.67
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-468_25447",
+   "split": "term2022",
+   "duration": 7928.232,
+   "ref_speakers": 13,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 760.2,
+   "primary@0.0": {
+    "der": 0.3911,
+    "fa": 0.0158,
+    "miss": 0.0843,
+    "conf": 0.2911,
+    "jer": 0.5248,
+    "ref_speech_s": 7924.7
+   },
+   "primary@0.25": {
+    "der": 0.376,
+    "fa": 0.0063,
+    "miss": 0.077,
+    "conf": 0.2927,
+    "jer": 0.5118,
+    "ref_speech_s": 7650.63
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-476_25462",
+   "split": "term2022",
+   "duration": 8517.12,
+   "ref_speakers": 12,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 853.0,
+   "primary@0.0": {
+    "der": 0.3799,
+    "fa": 0.0137,
+    "miss": 0.0918,
+    "conf": 0.2744,
+    "jer": 0.5428,
+    "ref_speech_s": 8515.055
+   },
+   "primary@0.25": {
+    "der": 0.3652,
+    "fa": 0.0067,
+    "miss": 0.0816,
+    "conf": 0.2769,
+    "jer": 0.5354,
+    "ref_speech_s": 8214.395
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-846_25453",
+   "split": "term2022",
+   "duration": 3717.816,
+   "ref_speakers": 11,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 935.1,
+   "primary@0.0": {
+    "der": 0.3028,
+    "fa": 0.0087,
+    "miss": 0.2026,
+    "conf": 0.0916,
+    "jer": 0.4834,
+    "ref_speech_s": 3716.36
+   },
+   "primary@0.25": {
+    "der": 0.292,
+    "fa": 0.0036,
+    "miss": 0.1987,
+    "conf": 0.0897,
+    "jer": 0.4741,
+    "ref_speech_s": 3613.105
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-869_25448",
+   "split": "term2022",
+   "duration": 6149.04,
+   "ref_speakers": 12,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 865.1,
+   "primary@0.0": {
+    "der": 0.2244,
+    "fa": 0.0109,
+    "miss": 0.0811,
+    "conf": 0.1324,
+    "jer": 0.4948,
+    "ref_speech_s": 6146.79
+   },
+   "primary@0.25": {
+    "der": 0.2089,
+    "fa": 0.0045,
+    "miss": 0.074,
+    "conf": 0.1304,
+    "jer": 0.4825,
+    "ref_speech_s": 5963.465
+   }
+  },
+  {
+   "session_id": "scotus__2022_21-86_25451",
+   "split": "term2022",
+   "duration": 5493.266,
+   "ref_speakers": 11,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 901.5,
+   "primary@0.0": {
+    "der": 0.1731,
+    "fa": 0.0045,
+    "miss": 0.0848,
+    "conf": 0.0838,
+    "jer": 0.4129,
+    "ref_speech_s": 5491.91
+   },
+   "primary@0.25": {
+    "der": 0.1624,
+    "fa": 0.0017,
+    "miss": 0.0787,
+    "conf": 0.0821,
+    "jer": 0.4024,
+    "ref_speech_s": 5373.985
+   }
+  },
+  {
+   "session_id": "scotus__2022_22O145_25368",
+   "split": "term2022",
+   "duration": 4119.624,
+   "ref_speakers": 11,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 877.0,
+   "primary@0.0": {
+    "der": 0.0742,
+    "fa": 0.0046,
+    "miss": 0.0406,
+    "conf": 0.0289,
+    "jer": 0.3739,
+    "ref_speech_s": 4117.855
+   },
+   "primary@0.25": {
+    "der": 0.0618,
+    "fa": 0.0018,
+    "miss": 0.0333,
+    "conf": 0.0268,
+    "jer": 0.3594,
+    "ref_speech_s": 4034.085
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5080"
+ },
+ "command": "python -m diards evaluate scotus --out results/nemotron/scotus.default"
+}

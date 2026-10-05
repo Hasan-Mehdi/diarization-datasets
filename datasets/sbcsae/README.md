@@ -75,6 +75,16 @@ _Not evaluated yet._
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the SBCSAE numbers: mostly reference convention.** DER is 27.4% at collar 0 and still 24.2% at 0.25 s,
+almost all *missed speech* (22.5%). 13.7 points of it fall where the audio is silent: the intonation-unit bullets
+tile the timeline, so pauses, including long ones marked `(...)` in the transcript, are labelled as speech. The
+reference is not shifted (offset check: 0 of 60). Some genuinely unlabelled speech exists too: 18 of the 40 longest
+audible false alarms contain words. These are untranscribed edges of recordings (276 s in total across 60
+recordings, e.g. the last 28 s of SBC015; now excluded by the UEM) and background media in SBC045 ("When we return
+for final..."). JER is high (49%) because many recordings have several minor speakers (up to 16) who say little. For
+a diarization benchmark, re-time SBCSAE (forced alignment of the IU text) or use a generous collar.
+
+
 ## Quality rating
 
 **B-.** Expert human transcription of every participant in truly natural talk, with overlap marked. Minus: IU-level
