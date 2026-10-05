@@ -4,10 +4,11 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 16:49 EDT (from the system clock)_
+_Last updated: 2026-10-05 18:07 EDT (from the system clock)_
 
 - **State:** all items of the original brief are done and pushed. **Waiting for the parallel Silero VAD study** (INBOX
-  16:49) to post its verdict, then integrating what it recommends; DONE marker after that.
+  16:49) to post its verdict, then integrating what it recommends; DONE marker after that. As of this update the VAD
+  study is still computing VADs (AMI/ICSI) before its audits; I check the INBOX every ~10 minutes.
 - **Delivered:** 18 free English datasets downloaded, normalized (one layout, NeMo/pyannote/Lhotse exports), validated
   (label sanity + energy VAD), profiled, evaluated with Nemotron 3 Diarization (25 dataset/view runs, collar 0 and
   0.25 s, every reference variant), and diagnosed (energy split, Whisper audit of false alarms, time-offset check).
