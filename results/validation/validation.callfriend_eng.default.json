@@ -1,0 +1,2384 @@
+{
+ "summary": {
+  "dataset": "callfriend_eng",
+  "view": "default",
+  "sessions": 40,
+  "errors": 1,
+  "warnings": 4,
+  "issue_counts": {
+   "error:normalized_placeholder_speaker_label": 1,
+   "info:segments_under_50ms": 2,
+   "info:silence_over_30s": 1,
+   "info:speaker_under_1s": 1,
+   "warning:possible_unannotated_speech": 3,
+   "warning:segments_over_60s": 1
+  },
+  "raw_label_issue_totals": {
+   "same_speaker_overlap": 3074,
+   "beyond_audio_end": 5,
+   "seconds_beyond_audio_end": 0.344,
+   "placeholder_speaker_label": 1
+  },
+  "sessions_with_raw_label_issues": 32,
+  "vad": {
+   "ref_speech_h": 9.38,
+   "vad_not_in_ref_frac": 0.0172,
+   "ref_not_in_vad_frac": 0.0497,
+   "worst_sessions": [
+    [
+     "callfriend_eng__eng-n_002",
+     0.1787
+    ],
+    [
+     "callfriend_eng__eng-s_001",
+     0.144
+    ],
+    [
+     "callfriend_eng__eng-n_027",
+     0.0507
+    ],
+    [
+     "callfriend_eng__eng-n_004",
+     0.0406
+    ],
+    [
+     "callfriend_eng__eng-n_028",
+     0.0323
+    ],
+    [
+     "callfriend_eng__eng-n_021",
+     0.0225
+    ],
+    [
+     "callfriend_eng__eng-s_008",
+     0.0221
+    ],
+    [
+     "callfriend_eng__eng-n_018",
+     0.0183
+    ],
+    [
+     "callfriend_eng__eng-n_025",
+     0.0179
+    ],
+    [
+     "callfriend_eng__eng-n_026",
+     0.0156
+    ]
+   ]
+  }
+ },
+ "sessions": [
+  {
+   "session_id": "callfriend_eng__eng-n_000",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -62.6,
+     "threshold_db": -48.8,
+     "p99_db": -16.5,
+     "vad_speech_s": 4.3,
+     "ref_speech_s": 6.0,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 0.3,
+     "ref_not_in_vad_frac": 0.0531,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_001",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -67.1,
+     "threshold_db": -53.2,
+     "p99_db": -20.6,
+     "vad_speech_s": 238.5,
+     "ref_speech_s": 296.7,
+     "vad_not_in_ref_s": 2.3,
+     "vad_not_in_ref_frac_of_ref": 0.0078,
+     "ref_not_in_vad_s": 24.1,
+     "ref_not_in_vad_frac": 0.0813,
+     "longest_vad_not_in_ref": [
+      [
+       277.52,
+       279.02
+      ],
+      [
+       86.48,
+       87.28
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_002",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 170 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 17.9% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -67.6,
+     "threshold_db": -53.7,
+     "p99_db": -21.2,
+     "vad_speech_s": 1040.1,
+     "ref_speech_s": 953.7,
+     "vad_not_in_ref_s": 170.4,
+     "vad_not_in_ref_frac_of_ref": 0.1787,
+     "ref_not_in_vad_s": 23.3,
+     "ref_not_in_vad_frac": 0.0245,
+     "longest_vad_not_in_ref": [
+      [
+       288.19,
+       305.63
+      ],
+      [
+       494.96,
+       505.49
+      ],
+      [
+       598.44,
+       606.41
+      ],
+      [
+       202.87,
+       209.15
+      ],
+      [
+       515.93,
+       520.94
+      ],
+      [
+       272.87,
+       277.76
+      ],
+      [
+       421.35,
+       425.77
+      ],
+      [
+       46.05,
+       50.16
+      ],
+      [
+       236.7,
+       240.8
+      ],
+      [
+       171.75,
+       175.84
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 9,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       25.712,
+       30.912,
+       "eng-n_002_B"
+      ],
+      [
+       123.833,
+       126.857,
+       "eng-n_002_B"
+      ],
+      [
+       701.39,
+       702.654,
+       "eng-n_002_B"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_003",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -71.6,
+     "threshold_db": -57.0,
+     "p99_db": -23.0,
+     "vad_speech_s": 385.3,
+     "ref_speech_s": 487.6,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0015,
+     "ref_not_in_vad_s": 40.5,
+     "ref_not_in_vad_frac": 0.0831,
+     "longest_vad_not_in_ref": [
+      [
+       18.72,
+       19.43
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       381.361,
+       389.278,
+       "eng-n_003_F1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_004",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -59.9,
+     "threshold_db": -49.1,
+     "p99_db": -23.8,
+     "vad_speech_s": 1479.8,
+     "ref_speech_s": 1499.6,
+     "vad_not_in_ref_s": 60.9,
+     "vad_not_in_ref_frac_of_ref": 0.0406,
+     "ref_not_in_vad_s": 63.7,
+     "ref_not_in_vad_frac": 0.0424,
+     "longest_vad_not_in_ref": [
+      [
+       1131.16,
+       1136.76
+      ],
+      [
+       852.01,
+       856.75
+      ],
+      [
+       534.68,
+       539.09
+      ],
+      [
+       1592.5,
+       1596.65
+      ],
+      [
+       1679.1,
+       1683.03
+      ],
+      [
+       862.79,
+       866.48
+      ],
+      [
+       949.26,
+       952.61
+      ],
+      [
+       745.8,
+       748.89
+      ],
+      [
+       833.07,
+       835.28
+      ],
+      [
+       1066.03,
+       1068.08
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "beyond_audio_end": 1,
+    "same_speaker_overlap": 187,
+    "seconds_beyond_audio_end": 0.072,
+    "examples": {
+     "beyond_audio_end": [
+      [
+       1798.04,
+       1799.648,
+       "eng-n_004_MOM"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       19.269,
+       19.669,
+       "eng-n_004_J"
+      ],
+      [
+       23.232,
+       26.41,
+       "eng-n_004_J"
+      ],
+      [
+       58.812,
+       63.024,
+       "eng-n_004_J"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_005",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -65.0,
+     "threshold_db": -51.7,
+     "p99_db": -20.8,
+     "vad_speech_s": 1549.9,
+     "ref_speech_s": 1600.3,
+     "vad_not_in_ref_s": 22.6,
+     "vad_not_in_ref_frac_of_ref": 0.0141,
+     "ref_not_in_vad_s": 26.2,
+     "ref_not_in_vad_frac": 0.0163,
+     "longest_vad_not_in_ref": [
+      [
+       809.44,
+       813.25
+      ],
+      [
+       477.03,
+       480.15
+      ],
+      [
+       1080.12,
+       1082.95
+      ],
+      [
+       1211.07,
+       1212.87
+      ],
+      [
+       325.9,
+       327.54
+      ],
+      [
+       1324.07,
+       1325.52
+      ],
+      [
+       1018.3,
+       1019.75
+      ],
+      [
+       1525.52,
+       1526.88
+      ],
+      [
+       1228.65,
+       1229.76
+      ],
+      [
+       914.78,
+       915.62
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "beyond_audio_end": 1,
+    "same_speaker_overlap": 105,
+    "seconds_beyond_audio_end": 0.072,
+    "examples": {
+     "beyond_audio_end": [
+      [
+       1795.623,
+       1797.696,
+       "eng-n_005_F2"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       5.792,
+       6.528,
+       "eng-n_005_F1"
+      ],
+      [
+       6.272,
+       7.2,
+       "eng-n_005_F1"
+      ],
+      [
+       37.568,
+       39.52,
+       "eng-n_005_F1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_006",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "1 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -63.5,
+     "threshold_db": -50.7,
+     "p99_db": -20.8,
+     "vad_speech_s": 1505.4,
+     "ref_speech_s": 1551.2,
+     "vad_not_in_ref_s": 10.5,
+     "vad_not_in_ref_frac_of_ref": 0.0068,
+     "ref_not_in_vad_s": 36.9,
+     "ref_not_in_vad_frac": 0.0238,
+     "longest_vad_not_in_ref": [
+      [
+       1631.23,
+       1632.71
+      ],
+      [
+       1536.14,
+       1537.45
+      ],
+      [
+       1351.11,
+       1352.27
+      ],
+      [
+       1347.74,
+       1348.88
+      ],
+      [
+       1679.44,
+       1680.53
+      ],
+      [
+       1783.12,
+       1784.14
+      ],
+      [
+       1316.02,
+       1316.78
+      ],
+      [
+       511.08,
+       511.84
+      ],
+      [
+       389.9,
+       390.59
+      ],
+      [
+       24.03,
+       24.59
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 137,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       4.464,
+       5.256,
+       "eng-n_006_F1"
+      ],
+      [
+       9.991,
+       11.343,
+       "eng-n_006_F1"
+      ],
+      [
+       12.967,
+       13.199,
+       "eng-n_006_F1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_007",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -59.3,
+     "threshold_db": -46.2,
+     "p99_db": -15.5,
+     "vad_speech_s": 267.2,
+     "ref_speech_s": 301.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 7.9,
+     "ref_not_in_vad_frac": 0.0261,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_008",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -65.9,
+     "threshold_db": -52.1,
+     "p99_db": -20.1,
+     "vad_speech_s": 130.7,
+     "ref_speech_s": 129.6,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 3.6,
+     "ref_not_in_vad_frac": 0.0277,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 9,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       142.587,
+       144.163,
+       "eng-n_008_M1"
+      ],
+      [
+       157.265,
+       159.233,
+       "eng-n_008_M1"
+      ],
+      [
+       1.309,
+       2.723,
+       "eng-n_008_M2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_009",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -60.8,
+     "threshold_db": -49.4,
+     "p99_db": -22.8,
+     "vad_speech_s": 450.2,
+     "ref_speech_s": 464.0,
+     "vad_not_in_ref_s": 5.4,
+     "vad_not_in_ref_frac_of_ref": 0.0117,
+     "ref_not_in_vad_s": 9.1,
+     "ref_not_in_vad_frac": 0.0197,
+     "longest_vad_not_in_ref": [
+      [
+       45.82,
+       47.76
+      ],
+      [
+       253.94,
+       255.5
+      ],
+      [
+       117.33,
+       118.32
+      ],
+      [
+       317.6,
+       318.56
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 57,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       2.96,
+       4.864,
+       "eng-n_009_F2"
+      ],
+      [
+       11.029,
+       13.101,
+       "eng-n_009_F2"
+      ],
+      [
+       27.499,
+       33.203,
+       "eng-n_009_F2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_010",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -55.8,
+     "threshold_db": -44.0,
+     "p99_db": -16.4,
+     "vad_speech_s": 1324.7,
+     "ref_speech_s": 1358.8,
+     "vad_not_in_ref_s": 3.0,
+     "vad_not_in_ref_frac_of_ref": 0.0022,
+     "ref_not_in_vad_s": 21.8,
+     "ref_not_in_vad_frac": 0.016,
+     "longest_vad_not_in_ref": [
+      [
+       695.74,
+       696.75
+      ],
+      [
+       1183.78,
+       1184.52
+      ],
+      [
+       20.22,
+       20.82
+      ],
+      [
+       1175.76,
+       1176.35
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 189,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       10.945,
+       11.961,
+       "eng-n_010_F1"
+      ],
+      [
+       19.466,
+       19.97,
+       "eng-n_010_F1"
+      ],
+      [
+       22.987,
+       23.987,
+       "eng-n_010_F1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_011",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -58.9,
+     "threshold_db": -47.1,
+     "p99_db": -19.5,
+     "vad_speech_s": 256.8,
+     "ref_speech_s": 285.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 5.6,
+     "ref_not_in_vad_frac": 0.0195,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_012",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -65.6,
+     "threshold_db": -52.7,
+     "p99_db": -22.6,
+     "vad_speech_s": 1298.7,
+     "ref_speech_s": 1394.7,
+     "vad_not_in_ref_s": 5.9,
+     "vad_not_in_ref_frac_of_ref": 0.0042,
+     "ref_not_in_vad_s": 49.9,
+     "ref_not_in_vad_frac": 0.0358,
+     "longest_vad_not_in_ref": [
+      [
+       513.43,
+       515.43
+      ],
+      [
+       821.53,
+       823.15
+      ],
+      [
+       1362.44,
+       1364.0
+      ],
+      [
+       1061.21,
+       1061.94
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 95,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       6.378,
+       7.906,
+       "eng-n_012_F1"
+      ],
+      [
+       8.93,
+       10.226,
+       "eng-n_012_F1"
+      ],
+      [
+       24.063,
+       25.991,
+       "eng-n_012_F1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_013",
+   "issues": [
+    {
+     "level": "error",
+     "code": "normalized_placeholder_speaker_label",
+     "message": "1 in normalized RTTM"
+    },
+    {
+     "level": "info",
+     "code": "speaker_under_1s",
+     "message": "1 speaker(s) with < 1 s of speech",
+     "speakers": [
+      "eng-n_013_XXX"
+     ]
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -69.8,
+     "threshold_db": -55.7,
+     "p99_db": -22.8,
+     "vad_speech_s": 238.4,
+     "ref_speech_s": 309.7,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 34.1,
+     "ref_not_in_vad_frac": 0.1102,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "placeholder_speaker_label": 1,
+    "examples": {
+     "placeholder_speaker_label": [
+      "eng-n_013_XXX"
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_014",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -63.9,
+     "threshold_db": -52.1,
+     "p99_db": -24.5,
+     "vad_speech_s": 810.4,
+     "ref_speech_s": 864.2,
+     "vad_not_in_ref_s": 12.6,
+     "vad_not_in_ref_frac_of_ref": 0.0146,
+     "ref_not_in_vad_s": 46.2,
+     "ref_not_in_vad_frac": 0.0535,
+     "longest_vad_not_in_ref": [
+      [
+       206.86,
+       209.35
+      ],
+      [
+       382.46,
+       384.67
+      ],
+      [
+       451.54,
+       453.73
+      ],
+      [
+       219.97,
+       221.35
+      ],
+      [
+       392.27,
+       393.47
+      ],
+      [
+       512.08,
+       512.96
+      ],
+      [
+       355.87,
+       356.74
+      ],
+      [
+       675.88,
+       676.74
+      ],
+      [
+       8.17,
+       8.67
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 105,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       3.99,
+       5.134,
+       "eng-n_014_F2"
+      ],
+      [
+       9.557,
+       11.221,
+       "eng-n_014_F2"
+      ],
+      [
+       22.256,
+       24.232,
+       "eng-n_014_F2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_015",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -59.3,
+     "threshold_db": -48.5,
+     "p99_db": -23.5,
+     "vad_speech_s": 173.4,
+     "ref_speech_s": 186.2,
+     "vad_not_in_ref_s": 2.2,
+     "vad_not_in_ref_frac_of_ref": 0.0118,
+     "ref_not_in_vad_s": 2.2,
+     "ref_not_in_vad_frac": 0.0121,
+     "longest_vad_not_in_ref": [
+      [
+       183.25,
+       184.85
+      ],
+      [
+       185.17,
+       185.77
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_016",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "segments_over_60s",
+     "message": "1 segment(s) longer than 60 s (merged turns?)",
+     "longest": 67.3
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -66.1,
+     "threshold_db": -51.5,
+     "p99_db": -17.2,
+     "vad_speech_s": 368.7,
+     "ref_speech_s": 447.5,
+     "vad_not_in_ref_s": 1.6,
+     "vad_not_in_ref_frac_of_ref": 0.0037,
+     "ref_not_in_vad_s": 50.7,
+     "ref_not_in_vad_frac": 0.1133,
+     "longest_vad_not_in_ref": [
+      [
+       338.85,
+       339.98
+      ],
+      [
+       21.22,
+       21.73
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 16,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       2.368,
+       3.696,
+       "eng-n_016_SON"
+      ],
+      [
+       12.812,
+       14.956,
+       "eng-n_016_SON"
+      ],
+      [
+       25.809,
+       26.353,
+       "eng-n_016_SON"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_017",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -64.7,
+     "threshold_db": -52.2,
+     "p99_db": -23.2,
+     "vad_speech_s": 259.2,
+     "ref_speech_s": 299.5,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 16.0,
+     "ref_not_in_vad_frac": 0.0534,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       197.481,
+       198.214,
+       "eng-n_017_S1"
+      ],
+      [
+       266.595,
+       269.71,
+       "eng-n_017_S1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_018",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -62.6,
+     "threshold_db": -52.3,
+     "p99_db": -28.1,
+     "vad_speech_s": 196.2,
+     "ref_speech_s": 299.5,
+     "vad_not_in_ref_s": 5.5,
+     "vad_not_in_ref_frac_of_ref": 0.0183,
+     "ref_not_in_vad_s": 57.4,
+     "ref_not_in_vad_frac": 0.1917,
+     "longest_vad_not_in_ref": [
+      [
+       20.55,
+       22.83
+      ],
+      [
+       23.35,
+       25.13
+      ],
+      [
+       25.52,
+       26.95
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       274.9,
+       281.5,
+       "eng-n_018_M1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_019",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -64.3,
+     "threshold_db": -51.3,
+     "p99_db": -21.0,
+     "vad_speech_s": 1404.1,
+     "ref_speech_s": 1596.3,
+     "vad_not_in_ref_s": 20.6,
+     "vad_not_in_ref_frac_of_ref": 0.0129,
+     "ref_not_in_vad_s": 79.3,
+     "ref_not_in_vad_frac": 0.0496,
+     "longest_vad_not_in_ref": [
+      [
+       140.14,
+       143.67
+      ],
+      [
+       1682.26,
+       1685.47
+      ],
+      [
+       1130.96,
+       1133.48
+      ],
+      [
+       1744.78,
+       1746.76
+      ],
+      [
+       1749.85,
+       1751.57
+      ],
+      [
+       1002.36,
+       1003.66
+      ],
+      [
+       999.04,
+       1000.26
+      ],
+      [
+       1600.37,
+       1601.45
+      ],
+      [
+       932.29,
+       933.03
+      ],
+      [
+       1030.27,
+       1031.0
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 240,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       22.113,
+       22.665,
+       "eng-n_019_M1"
+      ],
+      [
+       32.872,
+       34.792,
+       "eng-n_019_M1"
+      ],
+      [
+       46.872,
+       47.536,
+       "eng-n_019_M1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_020",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -60.5,
+     "threshold_db": -48.0,
+     "p99_db": -18.7,
+     "vad_speech_s": 1565.5,
+     "ref_speech_s": 1657.1,
+     "vad_not_in_ref_s": 23.1,
+     "vad_not_in_ref_frac_of_ref": 0.0139,
+     "ref_not_in_vad_s": 31.4,
+     "ref_not_in_vad_frac": 0.0189,
+     "longest_vad_not_in_ref": [
+      [
+       776.22,
+       779.04
+      ],
+      [
+       886.54,
+       888.56
+      ],
+      [
+       688.3,
+       690.27
+      ],
+      [
+       746.68,
+       748.55
+      ],
+      [
+       1052.65,
+       1054.46
+      ],
+      [
+       1326.74,
+       1328.36
+      ],
+      [
+       256.31,
+       257.85
+      ],
+      [
+       658.4,
+       659.79
+      ],
+      [
+       16.52,
+       17.66
+      ],
+      [
+       826.17,
+       827.31
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 276,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       22.042,
+       23.074,
+       "eng-n_020_L"
+      ],
+      [
+       38.074,
+       39.49,
+       "eng-n_020_L"
+      ],
+      [
+       39.462,
+       41.51,
+       "eng-n_020_L"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_021",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -65.4,
+     "threshold_db": -51.9,
+     "p99_db": -20.5,
+     "vad_speech_s": 264.1,
+     "ref_speech_s": 293.2,
+     "vad_not_in_ref_s": 6.6,
+     "vad_not_in_ref_frac_of_ref": 0.0225,
+     "ref_not_in_vad_s": 16.6,
+     "ref_not_in_vad_frac": 0.0568,
+     "longest_vad_not_in_ref": [
+      [
+       93.52,
+       100.12
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_022",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -71.1,
+     "threshold_db": -56.4,
+     "p99_db": -22.3,
+     "vad_speech_s": 452.4,
+     "ref_speech_s": 468.7,
+     "vad_not_in_ref_s": 2.2,
+     "vad_not_in_ref_frac_of_ref": 0.0047,
+     "ref_not_in_vad_s": 10.5,
+     "ref_not_in_vad_frac": 0.0224,
+     "longest_vad_not_in_ref": [
+      [
+       578.89,
+       580.12
+      ],
+      [
+       219.42,
+       220.39
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 46,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       12.894,
+       13.758,
+       "eng-n_022_M1"
+      ],
+      [
+       15.675,
+       17.619,
+       "eng-n_022_M1"
+      ],
+      [
+       17.587,
+       19.091,
+       "eng-n_022_M1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_023",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -63.2,
+     "threshold_db": -50.7,
+     "p99_db": -21.5,
+     "vad_speech_s": 1447.2,
+     "ref_speech_s": 1589.6,
+     "vad_not_in_ref_s": 15.1,
+     "vad_not_in_ref_frac_of_ref": 0.0095,
+     "ref_not_in_vad_s": 57.2,
+     "ref_not_in_vad_frac": 0.036,
+     "longest_vad_not_in_ref": [
+      [
+       1514.73,
+       1517.19
+      ],
+      [
+       1265.9,
+       1267.98
+      ],
+      [
+       111.74,
+       113.39
+      ],
+      [
+       966.43,
+       967.88
+      ],
+      [
+       1636.6,
+       1637.86
+      ],
+      [
+       1289.62,
+       1290.81
+      ],
+      [
+       1287.01,
+       1288.07
+      ],
+      [
+       1471.73,
+       1472.7
+      ],
+      [
+       804.53,
+       805.48
+      ],
+      [
+       1273.35,
+       1274.17
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 239,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       19.715,
+       20.555,
+       "eng-n_023_DEB"
+      ],
+      [
+       26.162,
+       28.402,
+       "eng-n_023_DEB"
+      ],
+      [
+       32.904,
+       34.76,
+       "eng-n_023_DEB"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_024",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -64.7,
+     "threshold_db": -51.2,
+     "p99_db": -19.5,
+     "vad_speech_s": 1342.0,
+     "ref_speech_s": 1443.1,
+     "vad_not_in_ref_s": 6.2,
+     "vad_not_in_ref_frac_of_ref": 0.0043,
+     "ref_not_in_vad_s": 56.5,
+     "ref_not_in_vad_frac": 0.0391,
+     "longest_vad_not_in_ref": [
+      [
+       355.57,
+       358.79
+      ],
+      [
+       144.76,
+       145.84
+      ],
+      [
+       308.23,
+       309.25
+      ],
+      [
+       96.7,
+       97.56
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 116,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       180.307,
+       180.953,
+       "eng-n_024_M1"
+      ],
+      [
+       226.144,
+       226.584,
+       "eng-n_024_M1"
+      ],
+      [
+       268.52,
+       270.544,
+       "eng-n_024_M1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_025",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -65.3,
+     "threshold_db": -52.0,
+     "p99_db": -21.0,
+     "vad_speech_s": 281.9,
+     "ref_speech_s": 318.5,
+     "vad_not_in_ref_s": 5.7,
+     "vad_not_in_ref_frac_of_ref": 0.0179,
+     "ref_not_in_vad_s": 14.0,
+     "ref_not_in_vad_frac": 0.044,
+     "longest_vad_not_in_ref": [
+      [
+       28.98,
+       30.99
+      ],
+      [
+       45.22,
+       46.91
+      ],
+      [
+       184.08,
+       185.46
+      ],
+      [
+       100.51,
+       101.13
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_026",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -61.7,
+     "threshold_db": -49.1,
+     "p99_db": -19.8,
+     "vad_speech_s": 1587.1,
+     "ref_speech_s": 1625.6,
+     "vad_not_in_ref_s": 25.4,
+     "vad_not_in_ref_frac_of_ref": 0.0156,
+     "ref_not_in_vad_s": 26.8,
+     "ref_not_in_vad_frac": 0.0165,
+     "longest_vad_not_in_ref": [
+      [
+       264.89,
+       268.58
+      ],
+      [
+       302.84,
+       306.34
+      ],
+      [
+       1146.77,
+       1150.0
+      ],
+      [
+       1583.29,
+       1585.6
+      ],
+      [
+       666.28,
+       668.15
+      ],
+      [
+       1151.83,
+       1153.35
+      ],
+      [
+       1332.85,
+       1334.31
+      ],
+      [
+       668.47,
+       669.85
+      ],
+      [
+       1114.93,
+       1116.2
+      ],
+      [
+       369.96,
+       371.21
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 132,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       4.448,
+       6.656,
+       "eng-n_026_M2"
+      ],
+      [
+       79.683,
+       81.155,
+       "eng-n_026_M2"
+      ],
+      [
+       85.699,
+       86.691,
+       "eng-n_026_M2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_027",
+   "issues": [
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 15 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.1% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -60.1,
+     "threshold_db": -48.9,
+     "p99_db": -23.0,
+     "vad_speech_s": 282.3,
+     "ref_speech_s": 304.9,
+     "vad_not_in_ref_s": 15.5,
+     "vad_not_in_ref_frac_of_ref": 0.0507,
+     "ref_not_in_vad_s": 12.5,
+     "ref_not_in_vad_frac": 0.0409,
+     "longest_vad_not_in_ref": [
+      [
+       265.52,
+       269.45
+      ],
+      [
+       214.6,
+       217.46
+      ],
+      [
+       161.98,
+       164.14
+      ],
+      [
+       261.32,
+       263.38
+      ],
+      [
+       207.22,
+       209.04
+      ],
+      [
+       126.64,
+       127.93
+      ],
+      [
+       155.85,
+       156.65
+      ],
+      [
+       318.26,
+       318.8
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       177.554,
+       180.666,
+       "eng-n_027_MAN"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_028",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -50.6,
+     "threshold_db": -39.6,
+     "p99_db": -13.8,
+     "vad_speech_s": 216.0,
+     "ref_speech_s": 224.3,
+     "vad_not_in_ref_s": 7.2,
+     "vad_not_in_ref_frac_of_ref": 0.0323,
+     "ref_not_in_vad_s": 3.9,
+     "ref_not_in_vad_frac": 0.0174,
+     "longest_vad_not_in_ref": [
+      [
+       205.32,
+       208.82
+      ],
+      [
+       144.82,
+       147.36
+      ],
+      [
+       203.02,
+       204.22
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 3,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       22.634,
+       25.906,
+       "eng-n_028_F1"
+      ],
+      [
+       61.501,
+       64.125,
+       "eng-n_028_F2"
+      ],
+      [
+       227.908,
+       233.692,
+       "eng-n_028_F2"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_029",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -66.1,
+     "threshold_db": -52.8,
+     "p99_db": -21.6,
+     "vad_speech_s": 139.6,
+     "ref_speech_s": 167.3,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 9.3,
+     "ref_not_in_vad_frac": 0.0554,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 2,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       3.728,
+       8.192,
+       "eng-n_029_CLD"
+      ],
+      [
+       157.356,
+       158.648,
+       "eng-n_029_CLR"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-n_030",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -65.8,
+     "threshold_db": -51.6,
+     "p99_db": -18.4,
+     "vad_speech_s": 1587.6,
+     "ref_speech_s": 1620.6,
+     "vad_not_in_ref_s": 20.8,
+     "vad_not_in_ref_frac_of_ref": 0.0129,
+     "ref_not_in_vad_s": 23.7,
+     "ref_not_in_vad_frac": 0.0146,
+     "longest_vad_not_in_ref": [
+      [
+       120.83,
+       123.38
+      ],
+      [
+       1640.99,
+       1642.93
+      ],
+      [
+       272.51,
+       274.41
+      ],
+      [
+       878.39,
+       880.28
+      ],
+      [
+       111.38,
+       113.16
+      ],
+      [
+       1260.41,
+       1262.13
+      ],
+      [
+       1403.84,
+       1405.02
+      ],
+      [
+       207.02,
+       208.18
+      ],
+      [
+       802.12,
+       803.07
+      ],
+      [
+       1609.77,
+       1610.63
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "beyond_audio_end": 1,
+    "same_speaker_overlap": 210,
+    "seconds_beyond_audio_end": 0.072,
+    "examples": {
+     "beyond_audio_end": [
+      [
+       1799.752,
+       1799.952,
+       "eng-n_030_LI"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       44.606,
+       46.39,
+       "eng-n_030_LI"
+      ],
+      [
+       55.812,
+       58.66,
+       "eng-n_030_LI"
+      ],
+      [
+       71.299,
+       72.931,
+       "eng-n_030_LI"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_000",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -59.9,
+     "threshold_db": -46.7,
+     "p99_db": -15.8,
+     "vad_speech_s": 259.5,
+     "ref_speech_s": 337.4,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
+     "ref_not_in_vad_s": 33.5,
+     "ref_not_in_vad_frac": 0.0992,
+     "longest_vad_not_in_ref": []
+    }
+   },
+   "raw_label_issues": {}
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_001",
+   "issues": [
+    {
+     "level": "info",
+     "code": "silence_over_30s",
+     "message": "1 stretch(es) > 30 s with no reference speech",
+     "regions": [
+      [
+       18.8,
+       60.7
+      ]
+     ]
+    },
+    {
+     "level": "warning",
+     "code": "possible_unannotated_speech",
+     "message": "energy VAD finds 64 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 14.4% of reference speech"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -62.8,
+     "threshold_db": -49.8,
+     "p99_db": -19.6,
+     "vad_speech_s": 512.5,
+     "ref_speech_s": 444.0,
+     "vad_not_in_ref_s": 63.9,
+     "vad_not_in_ref_frac_of_ref": 0.144,
+     "ref_not_in_vad_s": 5.8,
+     "ref_not_in_vad_frac": 0.0131,
+     "longest_vad_not_in_ref": [
+      [
+       19.08,
+       28.02
+      ],
+      [
+       41.16,
+       48.55
+      ],
+      [
+       53.93,
+       60.44
+      ],
+      [
+       31.58,
+       36.31
+      ],
+      [
+       48.86,
+       53.19
+      ],
+      [
+       71.0,
+       74.12
+      ],
+      [
+       78.9,
+       81.89
+      ],
+      [
+       164.05,
+       166.88
+      ],
+      [
+       98.87,
+       101.23
+      ],
+      [
+       101.67,
+       103.92
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 6,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       157.424,
+       158.464,
+       "eng-s_001_F2"
+      ],
+      [
+       304.822,
+       310.562,
+       "eng-s_001_F2"
+      ],
+      [
+       230.646,
+       236.55,
+       "eng-s_001_F1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_002",
+   "issues": [
+    {
+     "level": "info",
+     "code": "segments_under_50ms",
+     "message": "3 segment(s) shorter than 50 ms"
+    }
+   ],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -60.8,
+     "threshold_db": -49.1,
+     "p99_db": -21.6,
+     "vad_speech_s": 1469.8,
+     "ref_speech_s": 1570.2,
+     "vad_not_in_ref_s": 8.9,
+     "vad_not_in_ref_frac_of_ref": 0.0057,
+     "ref_not_in_vad_s": 31.5,
+     "ref_not_in_vad_frac": 0.0201,
+     "longest_vad_not_in_ref": [
+      [
+       26.31,
+       29.15
+      ],
+      [
+       704.41,
+       706.26
+      ],
+      [
+       1604.41,
+       1605.98
+      ],
+      [
+       1372.91,
+       1374.11
+      ],
+      [
+       727.45,
+       728.35
+      ],
+      [
+       763.92,
+       764.45
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 251,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       14.162,
+       14.962,
+       "eng-s_002_STF"
+      ],
+      [
+       40.81,
+       41.31,
+       "eng-s_002_STF"
+      ],
+      [
+       69.363,
+       69.651,
+       "eng-s_002_STF"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_003",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 4,
+    "vad": {
+     "floor_db": -67.0,
+     "threshold_db": -53.7,
+     "p99_db": -22.8,
+     "vad_speech_s": 655.7,
+     "ref_speech_s": 997.8,
+     "vad_not_in_ref_s": 3.5,
+     "vad_not_in_ref_frac_of_ref": 0.0035,
+     "ref_not_in_vad_s": 201.9,
+     "ref_not_in_vad_frac": 0.2023,
+     "longest_vad_not_in_ref": [
+      [
+       561.15,
+       563.17
+      ],
+      [
+       563.73,
+       564.6
+      ],
+      [
+       950.72,
+       951.29
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 57,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       9.948,
+       12.637,
+       "eng-s_003_JAS"
+      ],
+      [
+       12.605,
+       14.509,
+       "eng-s_003_JAS"
+      ],
+      [
+       20.983,
+       24.167,
+       "eng-s_003_JAS"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_004",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -63.8,
+     "threshold_db": -50.9,
+     "p99_db": -20.7,
+     "vad_speech_s": 1277.9,
+     "ref_speech_s": 1720.1,
+     "vad_not_in_ref_s": 7.9,
+     "vad_not_in_ref_frac_of_ref": 0.0046,
+     "ref_not_in_vad_s": 233.0,
+     "ref_not_in_vad_frac": 0.1354,
+     "longest_vad_not_in_ref": [
+      [
+       684.64,
+       687.36
+      ],
+      [
+       862.25,
+       863.87
+      ],
+      [
+       1390.09,
+       1391.18
+      ],
+      [
+       60.52,
+       61.53
+      ],
+      [
+       702.03,
+       702.96
+      ],
+      [
+       1299.04,
+       1299.62
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "beyond_audio_end": 1,
+    "same_speaker_overlap": 202,
+    "seconds_beyond_audio_end": 0.072,
+    "examples": {
+     "beyond_audio_end": [
+      [
+       1796.208,
+       1798.896,
+       "eng-s_004_M1"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       31.481,
+       35.961,
+       "eng-s_004_M1"
+      ],
+      [
+       83.758,
+       85.598,
+       "eng-s_004_M1"
+      ],
+      [
+       94.161,
+       98.017,
+       "eng-s_004_M1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_005",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 3,
+    "vad": {
+     "floor_db": -63.1,
+     "threshold_db": -51.2,
+     "p99_db": -23.5,
+     "vad_speech_s": 707.1,
+     "ref_speech_s": 900.2,
+     "vad_not_in_ref_s": 5.5,
+     "vad_not_in_ref_frac_of_ref": 0.0061,
+     "ref_not_in_vad_s": 68.0,
+     "ref_not_in_vad_frac": 0.0756,
+     "longest_vad_not_in_ref": [
+      [
+       420.65,
+       422.7
+      ],
+      [
+       881.86,
+       883.86
+      ],
+      [
+       884.23,
+       885.13
+      ],
+      [
+       798.3,
+       798.86
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 20,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       29.181,
+       31.213,
+       "eng-s_005_MK1"
+      ],
+      [
+       55.234,
+       60.114,
+       "eng-s_005_MK1"
+      ],
+      [
+       102.168,
+       105.512,
+       "eng-s_005_MK1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_006",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -57.3,
+     "threshold_db": -46.0,
+     "p99_db": -19.6,
+     "vad_speech_s": 1431.5,
+     "ref_speech_s": 1741.0,
+     "vad_not_in_ref_s": 16.5,
+     "vad_not_in_ref_frac_of_ref": 0.0095,
+     "ref_not_in_vad_s": 132.4,
+     "ref_not_in_vad_frac": 0.0761,
+     "longest_vad_not_in_ref": [
+      [
+       139.96,
+       145.62
+      ],
+      [
+       1202.26,
+       1206.45
+      ],
+      [
+       41.35,
+       44.62
+      ],
+      [
+       1504.85,
+       1506.29
+      ],
+      [
+       99.17,
+       99.97
+      ],
+      [
+       4.58,
+       5.17
+      ],
+      [
+       1464.46,
+       1464.97
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 158,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       5.775,
+       7.119,
+       "eng-s_006_M1"
+      ],
+      [
+       8.255,
+       12.175,
+       "eng-s_006_M1"
+      ],
+      [
+       17.108,
+       19.14,
+       "eng-s_006_M1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_007",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -65.7,
+     "threshold_db": -51.9,
+     "p99_db": -19.6,
+     "vad_speech_s": 1580.7,
+     "ref_speech_s": 1722.2,
+     "vad_not_in_ref_s": 16.5,
+     "vad_not_in_ref_frac_of_ref": 0.0096,
+     "ref_not_in_vad_s": 51.7,
+     "ref_not_in_vad_frac": 0.03,
+     "longest_vad_not_in_ref": [
+      [
+       333.72,
+       335.87
+      ],
+      [
+       67.86,
+       69.76
+      ],
+      [
+       70.48,
+       72.31
+      ],
+      [
+       331.76,
+       333.22
+      ],
+      [
+       254.27,
+       255.4
+      ],
+      [
+       1394.03,
+       1395.05
+      ],
+      [
+       401.42,
+       402.41
+      ],
+      [
+       365.82,
+       366.76
+      ],
+      [
+       1434.01,
+       1434.88
+      ],
+      [
+       218.9,
+       219.69
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "beyond_audio_end": 1,
+    "same_speaker_overlap": 201,
+    "seconds_beyond_audio_end": 0.056,
+    "examples": {
+     "beyond_audio_end": [
+      [
+       1797.168,
+       1797.584,
+       "eng-s_007_M1"
+      ]
+     ],
+     "same_speaker_overlap": [
+      [
+       12.613,
+       14.053,
+       "eng-s_007_M1"
+      ],
+      [
+       102.945,
+       106.785,
+       "eng-s_007_M1"
+      ],
+      [
+       164.037,
+       166.373,
+       "eng-s_007_M1"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "session_id": "callfriend_eng__eng-s_008",
+   "issues": [],
+   "metrics": {
+    "num_speakers": 2,
+    "vad": {
+     "floor_db": -59.5,
+     "threshold_db": -46.9,
+     "p99_db": -17.4,
+     "vad_speech_s": 206.4,
+     "ref_speech_s": 290.2,
+     "vad_not_in_ref_s": 6.4,
+     "vad_not_in_ref_frac_of_ref": 0.0221,
+     "ref_not_in_vad_s": 59.2,
+     "ref_not_in_vad_frac": 0.2041,
+     "longest_vad_not_in_ref": [
+      [
+       248.62,
+       252.13
+      ],
+      [
+       151.42,
+       154.31
+      ]
+     ]
+    }
+   },
+   "raw_label_issues": {
+    "same_speaker_overlap": 1,
+    "examples": {
+     "same_speaker_overlap": [
+      [
+       80.1,
+       84.934,
+       "eng-s_008_S1"
+      ]
+     ]
+    }
+   }
+  }
+ ]
+}
