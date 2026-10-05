@@ -101,7 +101,7 @@ def export_pyannote(ds: NormalizedDataset, out: Path, view=None) -> None:
         proto: dict = {"scope": "database"}
         for subset, items in subsets.items():
             names = {ext: f"{pname}.{subset}.{ext}" for ext in ("lst", "rttm", "uem")}
-            (out / names["lst"]).write_text("".join(f"{s.session_id}\n" for s in items), encoding="utf-8")
+            (out / names["lst"]).write_text("".join(f"{s.session_id}\n" for s in items), encoding="utf-8", newline="\n")
             with open(out / names["rttm"], "w", encoding="utf-8", newline="\n") as fh:
                 for s in items:
                     fh.write(s.rttm_path.read_text(encoding="utf-8"))
@@ -111,7 +111,7 @@ def export_pyannote(ds: NormalizedDataset, out: Path, view=None) -> None:
             proto[subset] = {"uri": names["lst"], "annotation": names["rttm"], "annotated": names["uem"]}
         protocols[pname] = {"SpeakerDiarization": {"default": proto}}
     doc = {"Databases": databases, "Protocols": protocols}
-    (out / "database.yml").write_text(yaml.safe_dump(doc, sort_keys=False), encoding="utf-8")
+    (out / "database.yml").write_text(yaml.safe_dump(doc, sort_keys=False), encoding="utf-8", newline="\n")
 
 
 # ----------------------------------------------------------------------------- Lhotse

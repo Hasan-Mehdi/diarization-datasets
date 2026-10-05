@@ -347,4 +347,4 @@ class DatasetWriter:
             "sources": sources if sources is not None else old.get("sources", []),
             **m.extra,
         }
-        meta_path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        meta_path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")

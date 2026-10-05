@@ -88,7 +88,7 @@ def diagnose(name: str, view: str | None = None, vad_view: str | None = None, ro
     if out:
         out = Path(out)
         out.mkdir(parents=True, exist_ok=True)
-        (out / f"diagnosis.{name}.{view}.json").write_text(json.dumps(result, indent=1), encoding="utf-8")
+        (out / f"diagnosis.{name}.{view}.json").write_text(json.dumps(result, indent=1), encoding="utf-8", newline="\n")
     print(json.dumps(summary))
     return result
 

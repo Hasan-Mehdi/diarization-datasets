@@ -41,7 +41,11 @@ def main():
     for item in args.sessions.split(","):
         name, view, sid = item.split(":")
         s = next(x for x in NormalizedDataset(name).sessions(view=view) if x.session_id == sid)
-        segs = model.diarize(audio=[str(s.audio_path)], batch_size=1)[0]
+        import soundfile as sf
+
+        x, sr = sf.read(str(s.audio_path), dtype="float32")
+        # numpy input avoids NeMo's temporary manifest file, which Windows refuses to delete while it is open
+        segs = model.diarize(audio=[x], batch_size=1, sample_rate=sr)[0]
         hyp = []
         for seg in segs:
             if isinstance(seg, str):
@@ -49,7 +53,7 @@ def main():
             else:
                 a, b, spk = seg
             hyp.append(Segment(float(a), float(b), str(spk)))
-        write_rttm(out / f"{sid}.nemo.rttm", sid, hyp)
+        write_rttm(work_root() / "nemo_crosscheck" / f"{sid}.nemo.rttm", sid, hyp)
         hf = read_rttm_single(work_root() / "nemotron" / f"{name}.{view}" / "hyp" / f"{sid}.rttm")
         r = {"session": sid, "view": view,
              "nemo_vs_ref": Scorer(0.0)(sid, s.segments, hyp, s.uem)["der"],

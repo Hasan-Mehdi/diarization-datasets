@@ -1,0 +1,30 @@
+[
+ {
+  "session": "primock57__day1_consultation01",
+  "view": "mix",
+  "nemo_vs_ref": 0.2699,
+  "hf_vs_ref": 0.2699,
+  "nemo_vs_hf": 0.0006
+ },
+ {
+  "session": "notsofar1__MTG_32000",
+  "view": "sc",
+  "nemo_vs_ref": 0.1415,
+  "hf_vs_ref": 0.1422,
+  "nemo_vs_hf": 0.0026
+ },
+ {
+  "session": "notsofar1__MTG_32003",
+  "view": "sc",
+  "nemo_vs_ref": 0.1572,
+  "hf_vs_ref": 0.1593,
+  "nemo_vs_hf": 0.0121
+ },
+ {
+  "session": "voxconverse__aepyx",
+  "view": "default",
+  "nemo_vs_ref": 0.0452,
+  "hf_vs_ref": 0.0452,
+  "nemo_vs_hf": 0.003
+ }
+]

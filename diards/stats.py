@@ -84,8 +84,8 @@ def dataset_stats(name: str, root=None, view: str | None = None, out=None, echo:
         out = Path(out)
         out.mkdir(parents=True, exist_ok=True)
         tag = f"{name}"
-        (out / f"stats.{tag}.json").write_text(json.dumps(result, indent=1), encoding="utf-8")
-        (out / f"stats.{tag}.md").write_text(to_markdown(result), encoding="utf-8")
+        (out / f"stats.{tag}.json").write_text(json.dumps(result, indent=1), encoding="utf-8", newline="\n")
+        (out / f"stats.{tag}.md").write_text(to_markdown(result), encoding="utf-8", newline="\n")
     if echo:
         print(to_markdown(result))
     return result

@@ -171,7 +171,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     act = {x["consultation"]: x.pop("_activity") for x in rows}
     summary = summarize(rows)
-    (out / "primock57_audit.json").write_text(json.dumps({"summary": summary, "consultations": rows}, indent=1), encoding="utf-8")
+    (out / "primock57_audit.json").write_text(json.dumps({"summary": summary, "consultations": rows}, indent=1), encoding="utf-8", newline="\n")
     # channel-activity RTTMs (derived; PriMock57 is CC BY 4.0 so these can be shared)
     rdir = out / "channel_activity_rttm"
     rdir.mkdir(exist_ok=True)

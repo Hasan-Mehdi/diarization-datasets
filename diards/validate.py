@@ -251,8 +251,8 @@ def validate_dataset(name: str, root=None, view: str | None = None, vad: bool = 
         out = Path(out)
         out.mkdir(parents=True, exist_ok=True)
         tag = f"{name}.{summary['view']}"
-        (out / f"validation.{tag}.json").write_text(json.dumps(report, indent=1, default=float), encoding="utf-8")
-        (out / f"validation.{tag}.md").write_text(_md(report), encoding="utf-8")
+        (out / f"validation.{tag}.json").write_text(json.dumps(report, indent=1, default=float), encoding="utf-8", newline="\n")
+        (out / f"validation.{tag}.md").write_text(_md(report), encoding="utf-8", newline="\n")
     if echo:
         print(_md(report, max_sessions=15))
     return report

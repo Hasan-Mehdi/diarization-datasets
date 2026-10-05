@@ -188,8 +188,8 @@ def evaluate_dataset(name: str, root=None, view=None, splits=None, limit=None, m
                         "gpu": _gpu_name()},
         "command": "python -m diards " + " ".join(sys.argv[1:]) if sys.argv and sys.argv[0].endswith("__main__.py") else None,
     }
-    (out / "results.json").write_text(json.dumps(result, indent=1), encoding="utf-8")
-    (out / "results.md").write_text(results_markdown(result), encoding="utf-8")
+    (out / "results.json").write_text(json.dumps(result, indent=1), encoding="utf-8", newline="\n")
+    (out / "results.md").write_text(results_markdown(result), encoding="utf-8", newline="\n")
     print(results_markdown(result))
     return result
 
