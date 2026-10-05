@@ -4,19 +4,23 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 13:38 EDT (from the system clock)_
+_Last updated: 2026-10-05 15:42 EDT (from the system clock)_
 
-- **Now doing:** dataset recipes (running in background: AMI train split, NOTSOFAR-1, ICSI, AVA-AVD English LID,
-  Map Task, CallHome English; downloading: CHiME-6 eval, DiPCo, SBCSAE, MSDWild). Next code: PriMock57, LibriCSS,
-  SBCSAE, DiPCo recipes; NeMo / pyannote / Lhotse exports and tests.
-- **Done so far:** env + model (Nemotron 3 Diarization via Transformers on the RTX 5080); `diards` package with
-  normalized layout, loader, validator (incl. energy VAD), stats, DER/JER scorer, Nemotron harness.
-  Verified recipes: AMI, VoxConverse, CallFriend English, Earnings-21, AfriSpeech-Dialog (stats + validation on disk).
+- **Now doing:** CHiME-6 and MSDWild (English LID) preparation in the background; writing DiPCo, SBCSAE and
+  LibriCSS recipes; then validation + statistics + Nemotron runs for every prepared dataset.
+- **Done so far:** env + model (Nemotron 3 Diarization via Transformers on the RTX 5080); `diards` package
+  (normalized layout, loader, validator with energy VAD, stats, DER/JER scorer, Nemotron harness,
+  NeMo/pyannote/Lhotse exports, 17 passing tests). Prepared: AMI (all 171 meetings, 2 views), VoxConverse (448),
+  CallHome English (140), CallFriend English (40), NOTSOFAR-1 eval+dev, ICSI (75), Earnings-21 (44), AVA-AVD English
+  subset (96 of 351 clips), Map Task (128), AfriSpeech-Dialog (46 timestamped), PriMock57 (57).
+  **PriMock57 analysis done: [PRIMOCK57.md](PRIMOCK57.md)** (Nemotron DER 24.2% vs official TextGrids, 10.4% vs
+  per-channel measured speech activity; the official timings are padded utterances).
 - **Findings so far:** AMI forced-aligned vs manual-derived references change Nemotron DER from ~9% to ~18% (2 meetings);
   VoxConverse has 37/448 single-speaker files; CallFriend (TalkBank) turn bullets have 3,074 same-speaker overlaps;
   AfriSpeech-Dialog times are hand-typed with ~1 s effective precision; AVA-AVD has VAD-marked speech without
   speaker labels; CHiME-6's first (enrolment) minute is unannotated (CHiME-7 UEM fixes it).
-- **Needs Hasan:** nothing right now (CallHome access confirmed working, thanks).
+- **Needs Hasan:** nothing.
+- Note: no work happened 13:51-15:41 (usage limit; the launcher retried every 30 min).
 
 ## Environment decisions
 
@@ -64,6 +68,10 @@ Times before 13:27 are approximate (reconstructed from commit times).
 
 - 2026-10-05 13:38: INBOX 13:36 (CallHome access works) read and acknowledged; callhome_eng prepare started.
 - 2026-10-05 13:38: recipes added: NOTSOFAR-1, Earnings-21, ICSI, CHiME-6, AVA-AVD (English LID), MSDWild (English LID), Map Task, AfriSpeech-Dialog.
+
+- 13:51: PriMock57 audit committed (PRIMOCK57.md).
+- 13:51-15:41: paused by usage limit.
+- 2026-10-05 15:42: resumed; all downloads (CHiME-6, DiPCo, SBCSAE, MSDWild) had completed; CHiME-6 + MSDWild prepare started.
 
 ## Skipped / blocked (with reasons)
 
