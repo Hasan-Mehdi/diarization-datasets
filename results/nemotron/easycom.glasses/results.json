@@ -1,0 +1,359 @@
+{
+ "dataset": "easycom",
+ "view": "glasses",
+ "model": "nvidia/Nemotron-3-Diarization",
+ "model_revision": "f667ed73aee57d40cc39428eb768b4fd87a0a29e",
+ "inference": {
+  "implementation": "transformers (offline mode)",
+  "chunk_length": 340,
+  "chunk_right_context": 40,
+  "fifo_length": 40,
+  "speaker_cache_update_period": 300,
+  "speaker_cache_length": 264,
+  "dtype": "float32",
+  "threshold": 0.5,
+  "postprocessing": "none (threshold only)"
+ },
+ "scoring": {
+  "tool": "pyannote.metrics",
+  "collars_half_width_s": [
+   0.0,
+   0.25
+  ],
+  "overlap": "included",
+  "uem": "per-session UEM from the normalized dataset"
+ },
+ "sessions": 12,
+ "hours": 5.3,
+ "speaker_count_accuracy": 0.25,
+ "speaker_count_mae": 0.8333,
+ "rtfx_overall": 1126.4,
+ "summary": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.3038,
+   "fa": 0.041,
+   "miss": 0.1961,
+   "conf": 0.0667,
+   "jer": 0.3375,
+   "ref_speech_h": 4.8967
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.2168,
+   "fa": 0.0057,
+   "miss": 0.1459,
+   "conf": 0.0652,
+   "jer": 0.2607,
+   "ref_speech_h": 3.2753
+  }
+ },
+ "per_session": [
+  {
+   "session_id": "easycom__Session_1",
+   "split": "all",
+   "duration": 1388.4,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1577,
+   "rtfx": 888.2,
+   "primary@0.0": {
+    "der": 0.2479,
+    "fa": 0.0494,
+    "miss": 0.164,
+    "conf": 0.0345,
+    "jer": 0.2939,
+    "ref_speech_s": 1275.0
+   },
+   "primary@0.25": {
+    "der": 0.1586,
+    "fa": 0.0077,
+    "miss": 0.1169,
+    "conf": 0.034,
+    "jer": 0.2173,
+    "ref_speech_s": 847.8
+   }
+  },
+  {
+   "session_id": "easycom__Session_10",
+   "split": "all",
+   "duration": 1439.95,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1528,
+   "rtfx": 1108.1,
+   "primary@0.0": {
+    "der": 0.2406,
+    "fa": 0.0429,
+    "miss": 0.1529,
+    "conf": 0.0449,
+    "jer": 0.2837,
+    "ref_speech_s": 1244.65
+   },
+   "primary@0.25": {
+    "der": 0.1652,
+    "fa": 0.0033,
+    "miss": 0.1164,
+    "conf": 0.0455,
+    "jer": 0.2219,
+    "ref_speech_s": 864.4
+   }
+  },
+  {
+   "session_id": "easycom__Session_11",
+   "split": "all",
+   "duration": 1367.45,
+   "ref_speakers": 5,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.2156,
+   "rtfx": 1199.9,
+   "primary@0.0": {
+    "der": 0.3524,
+    "fa": 0.0477,
+    "miss": 0.2677,
+    "conf": 0.0369,
+    "jer": 0.353,
+    "ref_speech_s": 1298.2
+   },
+   "primary@0.25": {
+    "der": 0.2222,
+    "fa": 0.0067,
+    "miss": 0.1914,
+    "conf": 0.0241,
+    "jer": 0.2333,
+    "ref_speech_s": 779.65
+   }
+  },
+  {
+   "session_id": "easycom__Session_12",
+   "split": "all",
+   "duration": 1778.85,
+   "ref_speakers": 4,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.3039,
+   "rtfx": 1094.3,
+   "primary@0.0": {
+    "der": 0.2792,
+    "fa": 0.0282,
+    "miss": 0.2217,
+    "conf": 0.0293,
+    "jer": 0.2991,
+    "ref_speech_s": 2089.3
+   },
+   "primary@0.25": {
+    "der": 0.1994,
+    "fa": 0.0074,
+    "miss": 0.1709,
+    "conf": 0.021,
+    "jer": 0.2267,
+    "ref_speech_s": 1324.0
+   }
+  },
+  {
+   "session_id": "easycom__Session_2",
+   "split": "all",
+   "duration": 1541.35,
+   "ref_speakers": 5,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1852,
+   "rtfx": 1198.4,
+   "primary@0.0": {
+    "der": 0.2681,
+    "fa": 0.0318,
+    "miss": 0.2255,
+    "conf": 0.0108,
+    "jer": 0.2613,
+    "ref_speech_s": 1450.85
+   },
+   "primary@0.25": {
+    "der": 0.1788,
+    "fa": 0.0087,
+    "miss": 0.1654,
+    "conf": 0.0047,
+    "jer": 0.1745,
+    "ref_speech_s": 936.65
+   }
+  },
+  {
+   "session_id": "easycom__Session_3",
+   "split": "all",
+   "duration": 1680.0,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1676,
+   "rtfx": 1203.5,
+   "primary@0.0": {
+    "der": 0.3308,
+    "fa": 0.0398,
+    "miss": 0.1584,
+    "conf": 0.1326,
+    "jer": 0.2891,
+    "ref_speech_s": 1512.15
+   },
+   "primary@0.25": {
+    "der": 0.2511,
+    "fa": 0.0078,
+    "miss": 0.1146,
+    "conf": 0.1287,
+    "jer": 0.2136,
+    "ref_speech_s": 1041.05
+   }
+  },
+  {
+   "session_id": "easycom__Session_4",
+   "split": "all",
+   "duration": 1731.6,
+   "ref_speakers": 6,
+   "hyp_speakers": 6,
+   "overlap_ratio": 0.2123,
+   "rtfx": 1109.1,
+   "primary@0.0": {
+    "der": 0.3524,
+    "fa": 0.0428,
+    "miss": 0.2348,
+    "conf": 0.0748,
+    "jer": 0.4015,
+    "ref_speech_s": 1805.85
+   },
+   "primary@0.25": {
+    "der": 0.2601,
+    "fa": 0.0092,
+    "miss": 0.1811,
+    "conf": 0.0698,
+    "jer": 0.312,
+    "ref_speech_s": 1095.2
+   }
+  },
+  {
+   "session_id": "easycom__Session_5",
+   "split": "all",
+   "duration": 1711.7,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1182,
+   "rtfx": 1211.9,
+   "primary@0.0": {
+    "der": 0.2851,
+    "fa": 0.0299,
+    "miss": 0.1937,
+    "conf": 0.0615,
+    "jer": 0.3765,
+    "ref_speech_s": 1418.2
+   },
+   "primary@0.25": {
+    "der": 0.2154,
+    "fa": 0.003,
+    "miss": 0.1445,
+    "conf": 0.0679,
+    "jer": 0.328,
+    "ref_speech_s": 1023.05
+   }
+  },
+  {
+   "session_id": "easycom__Session_6",
+   "split": "all",
+   "duration": 1763.85,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1678,
+   "rtfx": 1125.7,
+   "primary@0.0": {
+    "der": 0.3495,
+    "fa": 0.0503,
+    "miss": 0.1237,
+    "conf": 0.1755,
+    "jer": 0.4867,
+    "ref_speech_s": 1727.95
+   },
+   "primary@0.25": {
+    "der": 0.2711,
+    "fa": 0.0023,
+    "miss": 0.0827,
+    "conf": 0.1861,
+    "jer": 0.4518,
+    "ref_speech_s": 1171.85
+   }
+  },
+  {
+   "session_id": "easycom__Session_7",
+   "split": "all",
+   "duration": 1454.1,
+   "ref_speakers": 4,
+   "hyp_speakers": 4,
+   "overlap_ratio": 0.1049,
+   "rtfx": 1153.8,
+   "primary@0.0": {
+    "der": 0.2664,
+    "fa": 0.0637,
+    "miss": 0.1484,
+    "conf": 0.0543,
+    "jer": 0.3172,
+    "ref_speech_s": 1278.9
+   },
+   "primary@0.25": {
+    "der": 0.1701,
+    "fa": 0.0059,
+    "miss": 0.118,
+    "conf": 0.0461,
+    "jer": 0.2343,
+    "ref_speech_s": 901.6
+   }
+  },
+  {
+   "session_id": "easycom__Session_8",
+   "split": "all",
+   "duration": 1528.55,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.1256,
+   "rtfx": 1100.6,
+   "primary@0.0": {
+    "der": 0.252,
+    "fa": 0.0356,
+    "miss": 0.1972,
+    "conf": 0.0191,
+    "jer": 0.2422,
+    "ref_speech_s": 1312.8
+   },
+   "primary@0.25": {
+    "der": 0.1594,
+    "fa": 0.0044,
+    "miss": 0.1434,
+    "conf": 0.0115,
+    "jer": 0.1587,
+    "ref_speech_s": 913.5
+   }
+  },
+  {
+   "session_id": "easycom__Session_9",
+   "split": "all",
+   "duration": 1705.6,
+   "ref_speakers": 4,
+   "hyp_speakers": 5,
+   "overlap_ratio": 0.0842,
+   "rtfx": 1176.6,
+   "primary@0.0": {
+    "der": 0.4062,
+    "fa": 0.0366,
+    "miss": 0.2624,
+    "conf": 0.1072,
+    "jer": 0.4295,
+    "ref_speech_s": 1214.45
+   },
+   "primary@0.25": {
+    "der": 0.3262,
+    "fa": 0.0008,
+    "miss": 0.2136,
+    "conf": 0.1118,
+    "jer": 0.3593,
+    "ref_speech_s": 892.3
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5080"
+ },
+ "command": "python -m diards evaluate easycom --view glasses --out results/nemotron/easycom.glasses"
+}

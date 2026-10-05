@@ -165,6 +165,8 @@ pyannote.metrics DER/JER, overlap included, UEM applied, collar = half-width (0 
 | [icsi](datasets/icsi/README.md) | ihm-mix (test) | 3 | 2.77 | 15.86 | 5.31 | words_gap0.2 39.4 | 100% | NO (in training data) |
 | [icsi](datasets/icsi/README.md) | sdm (test) | 3 | 2.77 | 15.85 | 5.39 | words_gap0.2 38.2 | 100% | NO (in training data) |
 | [dipco](datasets/dipco/README.md) | farfield (eval) | 5 | 2.6 | 36.16 | 28.07 | closetalk_activity 40.3 | 40% | yes |
+| [dipco](datasets/dipco/README.md) | ihm-mix (eval) | 5 | 2.6 | 27.31 | 19.43 | closetalk_activity 31.5 | 100% | yes |
+| [easycom](datasets/easycom/README.md) | glasses (all) | 12 | 5.3 | 30.38 | 21.68 |  | 25% | yes |
 | [msdwild_en](datasets/msdwild_en/README.md) | default (few.val,many.val) | 150 | 4.16 | 17.79 | 10.67 |  | 76% | yes |
 | [ava_avd_en](datasets/ava_avd_en/README.md) | default (test,val) | 29 | 2.42 | 49.79 | 33.98 |  | 21% | yes |
 | [earnings21](datasets/earnings21/README.md) | default (eval10,other) | 44 | 39.26 | 19.54 | 15.90 |  | 20% | yes |
@@ -174,6 +176,8 @@ pyannote.metrics DER/JER, overlap included, UEM applied, collar = half-width (0 
 | [callfriend_eng](datasets/callfriend_eng/README.md) | default (data) | 40 | 10.44 | 30.80 | 23.24 |  | 75% | yes |
 | [afrispeech_dialog](datasets/afrispeech_dialog/README.md) | default (general,medical) | 46 | 6.63 | 26.69 | 24.51 |  | 93% | yes |
 | [primock57](datasets/primock57/README.md) | mix (all) | 57 | 8.64 | 24.15 | 15.99 | channel_activity 10.4 | 84% | yes |
+| [libricss](datasets/libricss/README.md) | clean-mix (eval) | 54 | 9.08 | 5.09 | 4.44 |  | 100% | yes |
+| [libricss](datasets/libricss/README.md) | sdm (eval) | 54 | 9.09 | 14.30 | 13.02 |  | 69% | yes |
 <!-- /auto:nemotron_summary -->
 
 ### What the benchmark shows
@@ -197,8 +201,11 @@ pyannote.metrics DER/JER, overlap included, UEM applied, collar = half-width (0 
      item.
 3. **Real model limits.** Nemotron 3 Diarization outputs at most 8 speakers. On Earnings-21 (31 of 44 calls have
    more than 8), SCOTUS (11-13 speakers) and AVA-AVD most error is speaker confusion and wrong speaker counts.
-   Heavy overlap in far-field homes (CHiME-6) and movie soundtracks (AVA-AVD) remain hard. Speech detection itself
-   is strong almost everywhere.
+   Even with exact labels (LibriCSS) it merges voices in the room recordings when 8 read-speech speakers take
+   isolated turns separated by long silences (0L sessions: 20.8% DER vs 10-15% with overlap). On the clean digital
+   mix of the same sessions it gets 5.1% and every speaker count right. Heavy real overlap (CHiME-6, DiPCo: ~26% of
+   speech) and noisy egocentric or movie audio (EasyCom, AVA-AVD) cause genuine misses, and the model tends to add
+   a 5th speaker in dinner-party and restaurant recordings. Speech detection itself is strong almost everywhere.
 4. **Training-data overlap.** The model was trained on ICSI, VoxConverse (dev and test), AMI/NOTSOFAR train+dev,
    DiPCo dev and CALLHOME part 1. Treat ICSI and VoxConverse scores as non-held-out.
 5. **The harness is faithful.** It reproduces the model card on AMI test close-talk (9.22% vs 9.25% DER), and the

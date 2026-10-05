@@ -73,6 +73,8 @@ View `ihm-mix`: 10 sessions, **0 errors**, 4 warnings (normalized files); 10 ses
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
 | farfield (eval) | 5 | 2.6 | primary | **36.16** | 3.61 | 30.49 | 2.06 | 39.06 | 28.07 | 40% |
 | farfield (eval) | 5 | 2.6 | closetalk_activity | **40.32** | 11.99 | 25.28 | 3.05 | 39.01 | 18.31 | 40% |
+| ihm-mix (eval) | 5 | 2.6 | primary | **27.31** | 1.47 | 25.08 | 0.76 | 29.70 | 19.43 | 100% |
+| ihm-mix (eval) | 5 | 2.6 | closetalk_activity | **31.50** | 10.55 | 19.97 | 0.98 | 31.41 | 17.23 | 100% |
 
 Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/dipco.*/results.md`.
 
@@ -85,12 +87,17 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 | hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | farfield | ihm-mix | 5 | 17.89 | 5.55 | 12.34 | 0.93 | 0.51 | 0.42 |
+| ihm-mix | ihm-mix | 5 | 12.34 | 6.34 | 6.0 | 0.61 | 0.37 | 0.24 |
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 
 **Whisper audit of the longest audible false alarms (farfield):** 3 of 10 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (6.4 of 16.1 s). Examples: `dipco__S01` 1349.8-1352.3 s: "It's actually quite different."; `dipco__S03` 718.7-721.2 s: "It's also good to know that that's not what you will be"; `dipco__S03` 715.7-717.0 s: "Definitely good to go out on a hike."
 
 **Time-offset check (farfield):** 0 of 5 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.25 s.
+
+**Whisper audit of the longest audible false alarms (ihm-mix):** 3 of 3 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (5.7 of 5.7 s). Examples: `dipco__S03` 718.6-721.2 s: "It's also good to know that that's not what you will be remembering."; `dipco__S01` 1349.9-1351.6 s: "Especially for San Francisco."; `dipco__S03` 715.7-717.0 s: "Definitely good to go out on a high note."
+
+**Time-offset check (ihm-mix):** 0 of 5 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.1 s.
 <!-- /auto:diagnosis -->
 **Reading the DiPCo numbers: padding plus a lot of real overlap.** DER on the eval sessions is 36.2% far-field and
 27.3% on the close-talk mix at collar 0 (28.1% / 19.4% at 0.25 s), almost all missed speech. Two causes:

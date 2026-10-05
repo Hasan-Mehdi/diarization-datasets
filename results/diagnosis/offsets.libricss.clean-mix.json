@@ -1,0 +1,389 @@
+{
+ "dataset": "libricss",
+ "view": "clean-mix",
+ "sessions": 54,
+ "median_abs_best_lag_s": 0.0,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "libricss__0L_session1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9741,
+   "agreement_best": 0.9741,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9558,
+   "agreement_best": 0.9558,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9774,
+   "agreement_best": 0.9774,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9745,
+   "agreement_best": 0.9745,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9682,
+   "agreement_best": 0.9682,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9656,
+   "agreement_best": 0.9656,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9804,
+   "agreement_best": 0.9804,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9837,
+   "agreement_best": 0.9837,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0L_session9",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9645,
+   "agreement_best": 0.9645,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9626,
+   "agreement_best": 0.9626,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9705,
+   "agreement_best": 0.9705,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9691,
+   "agreement_best": 0.9691,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9478,
+   "agreement_best": 0.9478,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9538,
+   "agreement_best": 0.9538,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.97,
+   "agreement_best": 0.97,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.96,
+   "agreement_best": 0.96,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9435,
+   "agreement_best": 0.9435,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__0S_session9",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9702,
+   "agreement_best": 0.9702,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9567,
+   "agreement_best": 0.9567,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9557,
+   "agreement_best": 0.9557,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9627,
+   "agreement_best": 0.9627,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9275,
+   "agreement_best": 0.9275,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9656,
+   "agreement_best": 0.9656,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9459,
+   "agreement_best": 0.9459,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9678,
+   "agreement_best": 0.9678,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9629,
+   "agreement_best": 0.9629,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV10_session9",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9566,
+   "agreement_best": 0.9566,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.96,
+   "agreement_best": 0.96,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9687,
+   "agreement_best": 0.9687,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9783,
+   "agreement_best": 0.9783,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9729,
+   "agreement_best": 0.9729,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9696,
+   "agreement_best": 0.9696,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9578,
+   "agreement_best": 0.9578,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9607,
+   "agreement_best": 0.9607,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9486,
+   "agreement_best": 0.9486,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV20_session9",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9723,
+   "agreement_best": 0.9723,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9666,
+   "agreement_best": 0.9666,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9632,
+   "agreement_best": 0.9632,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9584,
+   "agreement_best": 0.9584,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9618,
+   "agreement_best": 0.9618,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9502,
+   "agreement_best": 0.9502,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9643,
+   "agreement_best": 0.9643,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9424,
+   "agreement_best": 0.9424,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9666,
+   "agreement_best": 0.9666,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV30_session9",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9577,
+   "agreement_best": 0.9577,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9609,
+   "agreement_best": 0.9609,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session2",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9574,
+   "agreement_best": 0.9574,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.95,
+   "agreement_best": 0.95,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session4",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9479,
+   "agreement_best": 0.9479,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session5",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9645,
+   "agreement_best": 0.9645,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session6",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9384,
+   "agreement_best": 0.9384,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session7",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9716,
+   "agreement_best": 0.9716,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9702,
+   "agreement_best": 0.9702,
+   "gain": 0.0
+  },
+  {
+   "session_id": "libricss__OV40_session9",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9723,
+   "agreement_best": 0.9723,
+   "gain": 0.0
+  }
+ ]
+}

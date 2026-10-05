@@ -4,22 +4,22 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 16:47 EDT (from the system clock)_
+_Last updated: 2026-10-05 16:49 EDT (from the system clock)_
 
-- **Now doing:** the last evaluation (EasyCom), then final card regeneration, DONE marker.
-- **Done:** all 18 datasets prepared, validated and profiled; Nemotron evaluated on 15 of them so far; diagnosis
-  tools (energy split, Whisper audit of false alarms, time-offset check) run on most; NeMo cross-check; PRIMOCK57.md.
-- **Headline results (Nemotron 3 Diarization, collar 0 / 0.25 s, primary reference):**
-  Map Task 7.9 / 1.9; VoxConverse test 8.4 / 5.7 (in training data); AMI test close-talk 9.2 / 3.6 (model card: 9.25);
-  AMI SDM 11.3 / 4.7; CallHome Eng 11.7 / 7.2; NOTSOFAR far-field 18.4 / 6.9; MSDWild-en 17.8 / 10.7;
-  Earnings-21 19.5 / 15.9 (8-speaker model limit); PriMock57 24.2 / 16.0 (10.4 / 4.1 vs channel activity);
-  AfriSpeech 26.7 / 24.5; SBCSAE 27.4 / 24.2; CallFriend 30.8 / 23.2; SCOTUS 31.7 / 30.3; CHiME-6 far-field eval
-  37.6 / 25.6; AVA-AVD-en 49.8 / 34.0.
-- **Reference problems found by the checks:** CallHome + CallFriend (TalkBank): missing turns (38/40 and 39/40 long
-  false alarms are real speech); AfriSpeech: hand-typed times ~0.45 s early + missing turns; SBCSAE, SCOTUS,
-  PriMock57, DiPCo, CallFriend: pauses labelled as speech; AMI MFA reference: whole utterances dropped in EN2002
-  test meetings; ICSI: one segment ends 35 min after the audio; earlier AVA-AVD claim corrected (labels fine).
-- **Needs Hasan (optional):** free sign-ups for Ego4D, MMCSG, CHiME-9 ECHI, Fearless Steps, MLC-SLM (docs/OTHER_DATASETS.md A).
+- **State:** all items of the original brief are done and pushed. **Waiting for the parallel Silero VAD study** (INBOX
+  16:49) to post its verdict, then integrating what it recommends; DONE marker after that.
+- **Delivered:** 18 free English datasets downloaded, normalized (one layout, NeMo/pyannote/Lhotse exports), validated
+  (label sanity + energy VAD), profiled, evaluated with Nemotron 3 Diarization (25 dataset/view runs, collar 0 and
+  0.25 s, every reference variant), and diagnosed (energy split, Whisper audit of false alarms, time-offset check).
+  Cards for every dataset, README catalog/recommendations/findings, PRIMOCK57.md, appendix of 20+ excluded datasets.
+- **Headline results (Nemotron 3 Diarization, collar 0 / 0.25 s, primary reference):** Map Task 7.9 / 1.9;
+  VoxConverse test 8.4 / 5.7 (in training data); AMI test close-talk 9.2 / 3.6 (model card 9.25); AMI SDM 11.3 / 4.7;
+  CallHome Eng 11.7 / 7.2; LibriCSS room 14.3 / 13.0 (clean mix 5.1); NOTSOFAR far-field 18.4 / 6.9;
+  MSDWild-en 17.8 / 10.7; Earnings-21 19.5 / 15.9; PriMock57 24.2 / 16.0 (10.4 / 4.1 vs channel activity);
+  AfriSpeech 26.7 / 24.5; SBCSAE 27.4 / 24.2; DiPCo close-talk 27.3 / 19.4; EasyCom 30.4 / 21.7;
+  CallFriend 30.8 / 23.2; SCOTUS 31.7 / 30.3; CHiME-6 far-field 37.6 / 25.6; AVA-AVD-en 49.8 / 34.0.
+- **Needs Hasan (optional):** free sign-ups I could not do unattended: Ego4D, MMCSG, CHiME-9 ECHI, Fearless Steps,
+  MLC-SLM (steps in docs/OTHER_DATASETS.md section A). After signing up, add a recipe following diards/datasets/*.py.
 
 ## Environment decisions
 
@@ -48,10 +48,10 @@ _Last updated: 2026-10-05 16:47 EDT (from the system clock)_
 | Validation (incl. energy VAD) + statistics, all datasets | done |
 | Exports (NeMo / pyannote / Lhotse) + tests (19 passing) | done |
 | PriMock57 ground-truth analysis (PRIMOCK57.md) | done |
-| Nemotron evaluation on every dataset | done except DiPCo / LibriCSS / EasyCom (running) |
-| Diagnosis (energy split, Whisper false-alarm audit, time-offset check) | done for all evaluated except the three above |
+| Nemotron evaluation on every dataset | done (25 dataset/view runs) |
+| Diagnosis (energy split, Whisper false-alarm audit, time-offset check) | done for every evaluated dataset/view |
 | Dataset cards (18) | done, auto blocks filled by `scripts/make_cards.py` |
-| README catalog + recommendations + findings | done (final numbers pending for the three above) |
+| README catalog + recommendations + findings | done |
 
 ## Log
 
@@ -84,6 +84,14 @@ Times before 13:27 are approximate (reconstructed from commit times).
 
 - 2026-10-05 16:47: CHiME-6 dev/eval, DiPCo, LibriCSS evaluated and diagnosed; ratings finalized; dataset.json refreshed; README TL;DR + recommendations + findings written; 0 broken links.
 
+- 2026-10-05 16:49: EasyCom + LibriCSS evaluated and diagnosed; all cards and tables regenerated.
+
+- 2026-10-05 16:49: INBOX 16:49 (parallel Silero VAD study in worktree `diarization-datasets-vad`, branch `vad-study`) read and
+  acknowledged. I will not touch that worktree/branch or duplicate its audit, and will integrate its recommendations when
+  it reports. Shared env: torch 2.11.0+cu128, torchaudio 2.11.0+cu128, numpy 2.5.3 unchanged since setup; packages I
+  added to it: transformers (git), accelerate, pyannote.metrics/core/database, lhotse 1.33.0, gdown, pytest,
+  soundfile, soxr, librosa, datasets (no torch/numpy changes). NeMo lives in a separate env (`envs/nemo`).
+
 ## Skipped / blocked (with reasons)
 
 - **Free datasets needing a manual sign-up** (cannot be completed unattended; documented with steps in
@@ -101,4 +109,6 @@ Times before 13:27 are approximate (reconstructed from commit times).
 
 ## Open items
 
-- None that can be done unattended, once the last three evaluations are folded in.
+- None that can be done unattended. Possible future work: sample-verify Seamless Interaction (automatic labels), add
+  recipes for the sign-up datasets once Hasan registers, re-align SBCSAE/AfriSpeech/SCOTUS transcripts with a
+  forced aligner to produce tight references.

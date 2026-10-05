@@ -62,13 +62,31 @@ View `clean-mix`: 60 sessions, **0 errors**, 0 warnings (normalized files); 0 se
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| clean-mix (eval) | 54 | 9.08 | primary | **5.09** | 0.14 | 4.51 | 0.44 | 5.83 | 4.44 | 100% |
+| sdm (eval) | 54 | 9.09 | primary | **14.30** | 0.58 | 8.21 | 5.52 | 20.33 | 13.02 | 69% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/libricss.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| clean-mix | clean-mix | 54 | 3.98 | 0.27 | 3.71 | 0.09 | 0.07 | 0.03 |
+| sdm | clean-mix | 54 | 7.38 | 0.26 | 7.11 | 0.32 | 0.18 | 0.14 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (clean-mix):** 0 of 0 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 0 s).
+
+**Time-offset check (clean-mix):** 0 of 54 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
+
+**Whisper audit of the longest audible false alarms (sdm):** 0 of 0 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 0 s).
+
+**Time-offset check (sdm):** 0 of 54 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.05 s.
 <!-- /auto:diagnosis -->
 
 **Reading the LibriCSS numbers: exact labels, so the errors are the model's.** On the 54 eval sessions (room
@@ -78,7 +96,10 @@ audible unlabelled speech. The interesting pattern is by condition: the **no-ove
 the worst (20.8%)**, versus 10-15% for the overlapped ones. In 0L the model reports only 6-7 of the 8 speakers and
 merges voices (10-20% confusion per session). Eight read-speech voices taking isolated turns, separated by long
 pauses, stress the arrival-order speaker cache more than overlap does. Overall the model finds exactly 8 speakers in
-68% of sessions. Synthetic, so do not read this as real-meeting performance.
+68% of sessions on the room recording. On the **clean digital mixture** of the same sessions DER is only 5.1% with
+the correct speaker count in every session, so the merging is caused by the far-field room playback (reverberation
+and loudspeaker colouring make voices harder to tell apart), not by the conversation structure alone. Synthetic, so
+do not read this as real-meeting performance.
 
 
 ## Quality rating

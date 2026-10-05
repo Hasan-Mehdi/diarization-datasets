@@ -1,0 +1,95 @@
+{
+ "dataset": "easycom",
+ "view": "glasses",
+ "sessions": 12,
+ "median_abs_best_lag_s": 0.05,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "easycom__Session_1",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8997,
+   "agreement_best": 0.8997,
+   "gain": 0.0
+  },
+  {
+   "session_id": "easycom__Session_10",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.9126,
+   "agreement_best": 0.9127,
+   "gain": 0.0001
+  },
+  {
+   "session_id": "easycom__Session_11",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.8567,
+   "agreement_best": 0.8583,
+   "gain": 0.0016
+  },
+  {
+   "session_id": "easycom__Session_12",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9004,
+   "agreement_best": 0.9004,
+   "gain": 0.0
+  },
+  {
+   "session_id": "easycom__Session_2",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.8751,
+   "agreement_best": 0.8785,
+   "gain": 0.0034
+  },
+  {
+   "session_id": "easycom__Session_3",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9116,
+   "agreement_best": 0.9116,
+   "gain": 0.0
+  },
+  {
+   "session_id": "easycom__Session_4",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8551,
+   "agreement_best": 0.8569,
+   "gain": 0.0018
+  },
+  {
+   "session_id": "easycom__Session_5",
+   "best_lag_s": 0.05,
+   "agreement_at_0": 0.8893,
+   "agreement_best": 0.8895,
+   "gain": 0.0002
+  },
+  {
+   "session_id": "easycom__Session_6",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.927,
+   "agreement_best": 0.9274,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "easycom__Session_7",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.8732,
+   "agreement_best": 0.8736,
+   "gain": 0.0004
+  },
+  {
+   "session_id": "easycom__Session_8",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8756,
+   "agreement_best": 0.8756,
+   "gain": 0.0
+  },
+  {
+   "session_id": "easycom__Session_9",
+   "best_lag_s": -0.05,
+   "agreement_at_0": 0.8391,
+   "agreement_best": 0.8398,
+   "gain": 0.0007
+  }
+ ]
+}
