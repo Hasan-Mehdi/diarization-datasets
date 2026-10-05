@@ -71,6 +71,16 @@ _Not evaluated yet._
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the LibriCSS numbers: exact labels, so the errors are the model's.** On the 54 eval sessions (room
+recording, channel 0) DER is 14.3% at collar 0 and 13.0% at 0.25 s. The collar barely helps because the boundaries are
+exact. The diagnosis confirms clean labels: no time shifts, essentially no missed speech in silence (0.3 points), no
+audible unlabelled speech. The interesting pattern is by condition: the **no-overlap, long-silence sessions (0L) are
+the worst (20.8%)**, versus 10-15% for the overlapped ones. In 0L the model reports only 6-7 of the 8 speakers and
+merges voices (10-20% confusion per session). Eight read-speech voices taking isolated turns, separated by long
+pauses, stress the arrival-order speaker cache more than overlap does. Overall the model finds exactly 8 speakers in
+68% of sessions. Synthetic, so do not read this as real-meeting performance.
+
+
 ## Quality rating
 
 **S (synthetic).** Exact by construction, but not natural conversation; rated separately from real data.

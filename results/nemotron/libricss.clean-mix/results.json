@@ -1,0 +1,1409 @@
+{
+ "dataset": "libricss",
+ "view": "clean-mix",
+ "model": "nvidia/Nemotron-3-Diarization",
+ "model_revision": "f667ed73aee57d40cc39428eb768b4fd87a0a29e",
+ "inference": {
+  "implementation": "transformers (offline mode)",
+  "chunk_length": 340,
+  "chunk_right_context": 40,
+  "fifo_length": 40,
+  "speaker_cache_update_period": 300,
+  "speaker_cache_length": 264,
+  "dtype": "float32",
+  "threshold": 0.5,
+  "postprocessing": "none (threshold only)"
+ },
+ "scoring": {
+  "tool": "pyannote.metrics",
+  "collars_half_width_s": [
+   0.0,
+   0.25
+  ],
+  "overlap": "included",
+  "uem": "per-session UEM from the normalized dataset"
+ },
+ "sessions": 54,
+ "hours": 9.08,
+ "speaker_count_accuracy": 1.0,
+ "speaker_count_mae": 0.0,
+ "rtfx_overall": 1136.0,
+ "summary": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.0509,
+   "fa": 0.0014,
+   "miss": 0.0451,
+   "conf": 0.0044,
+   "jer": 0.0583,
+   "ref_speech_h": 9.3749
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.0444,
+   "fa": 0.0,
+   "miss": 0.0403,
+   "conf": 0.0041,
+   "jer": 0.051,
+   "ref_speech_h": 8.2254
+  }
+ },
+ "per_session": [
+  {
+   "session_id": "libricss__0L_session1",
+   "split": "eval",
+   "duration": 601.952,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 706.9,
+   "primary@0.0": {
+    "der": 0.0689,
+    "fa": 0.0002,
+    "miss": 0.0353,
+    "conf": 0.0334,
+    "jer": 0.13,
+    "ref_speech_s": 439.08
+   },
+   "primary@0.25": {
+    "der": 0.0616,
+    "fa": 0.0,
+    "miss": 0.0291,
+    "conf": 0.0325,
+    "jer": 0.1239,
+    "ref_speech_s": 411.08
+   }
+  },
+  {
+   "session_id": "libricss__0L_session2",
+   "split": "eval",
+   "duration": 603.357,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1197.3,
+   "primary@0.0": {
+    "der": 0.0634,
+    "fa": 0.0001,
+    "miss": 0.0633,
+    "conf": 0.0,
+    "jer": 0.0638,
+    "ref_speech_s": 420.17
+   },
+   "primary@0.25": {
+    "der": 0.0602,
+    "fa": 0.0,
+    "miss": 0.0602,
+    "conf": 0.0,
+    "jer": 0.0603,
+    "ref_speech_s": 388.67
+   }
+  },
+  {
+   "session_id": "libricss__0L_session3",
+   "split": "eval",
+   "duration": 605.947,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1205.1,
+   "primary@0.0": {
+    "der": 0.0314,
+    "fa": 0.0003,
+    "miss": 0.0311,
+    "conf": 0.0,
+    "jer": 0.0318,
+    "ref_speech_s": 425.66
+   },
+   "primary@0.25": {
+    "der": 0.0249,
+    "fa": 0.0,
+    "miss": 0.0249,
+    "conf": 0.0,
+    "jer": 0.0251,
+    "ref_speech_s": 394.66
+   }
+  },
+  {
+   "session_id": "libricss__0L_session4",
+   "split": "eval",
+   "duration": 616.456,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1190.3,
+   "primary@0.0": {
+    "der": 0.0985,
+    "fa": 0.0002,
+    "miss": 0.0366,
+    "conf": 0.0618,
+    "jer": 0.1459,
+    "ref_speech_s": 433.24
+   },
+   "primary@0.25": {
+    "der": 0.0952,
+    "fa": 0.0,
+    "miss": 0.0308,
+    "conf": 0.0645,
+    "jer": 0.1451,
+    "ref_speech_s": 401.74
+   }
+  },
+  {
+   "session_id": "libricss__0L_session5",
+   "split": "eval",
+   "duration": 612.689,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1209.9,
+   "primary@0.0": {
+    "der": 0.049,
+    "fa": 0.0002,
+    "miss": 0.0458,
+    "conf": 0.003,
+    "jer": 0.0542,
+    "ref_speech_s": 414.97
+   },
+   "primary@0.25": {
+    "der": 0.0406,
+    "fa": 0.0,
+    "miss": 0.0381,
+    "conf": 0.0024,
+    "jer": 0.0454,
+    "ref_speech_s": 380.97
+   }
+  },
+  {
+   "session_id": "libricss__0L_session6",
+   "split": "eval",
+   "duration": 607.842,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1235.7,
+   "primary@0.0": {
+    "der": 0.0506,
+    "fa": 0.0004,
+    "miss": 0.0477,
+    "conf": 0.0025,
+    "jer": 0.0517,
+    "ref_speech_s": 433.33
+   },
+   "primary@0.25": {
+    "der": 0.0435,
+    "fa": 0.0,
+    "miss": 0.0419,
+    "conf": 0.0016,
+    "jer": 0.0434,
+    "ref_speech_s": 403.33
+   }
+  },
+  {
+   "session_id": "libricss__0L_session7",
+   "split": "eval",
+   "duration": 600.968,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1219.4,
+   "primary@0.0": {
+    "der": 0.0267,
+    "fa": 0.0003,
+    "miss": 0.0257,
+    "conf": 0.0007,
+    "jer": 0.0305,
+    "ref_speech_s": 449.74
+   },
+   "primary@0.25": {
+    "der": 0.0207,
+    "fa": 0.0,
+    "miss": 0.0204,
+    "conf": 0.0003,
+    "jer": 0.0233,
+    "ref_speech_s": 423.74
+   }
+  },
+  {
+   "session_id": "libricss__0L_session8",
+   "split": "eval",
+   "duration": 602.297,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1161.1,
+   "primary@0.0": {
+    "der": 0.0625,
+    "fa": 0.0003,
+    "miss": 0.024,
+    "conf": 0.0382,
+    "jer": 0.0886,
+    "ref_speech_s": 401.64
+   },
+   "primary@0.25": {
+    "der": 0.0542,
+    "fa": 0.0,
+    "miss": 0.0148,
+    "conf": 0.0394,
+    "jer": 0.0806,
+    "ref_speech_s": 367.14
+   }
+  },
+  {
+   "session_id": "libricss__0L_session9",
+   "split": "eval",
+   "duration": 605.708,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1218.1,
+   "primary@0.0": {
+    "der": 0.0479,
+    "fa": 0.0001,
+    "miss": 0.0478,
+    "conf": 0.0,
+    "jer": 0.0444,
+    "ref_speech_s": 448.66
+   },
+   "primary@0.25": {
+    "der": 0.0429,
+    "fa": 0.0,
+    "miss": 0.0429,
+    "conf": 0.0,
+    "jer": 0.0381,
+    "ref_speech_s": 421.66
+   }
+  },
+  {
+   "session_id": "libricss__0S_session1",
+   "split": "eval",
+   "duration": 608.313,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1106.7,
+   "primary@0.0": {
+    "der": 0.0382,
+    "fa": 0.0009,
+    "miss": 0.0373,
+    "conf": 0.0001,
+    "jer": 0.0397,
+    "ref_speech_s": 594.88
+   },
+   "primary@0.25": {
+    "der": 0.0326,
+    "fa": 0.0,
+    "miss": 0.0324,
+    "conf": 0.0001,
+    "jer": 0.034,
+    "ref_speech_s": 552.88
+   }
+  },
+  {
+   "session_id": "libricss__0S_session2",
+   "split": "eval",
+   "duration": 607.554,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1101.0,
+   "primary@0.0": {
+    "der": 0.0299,
+    "fa": 0.0011,
+    "miss": 0.0288,
+    "conf": 0.0,
+    "jer": 0.029,
+    "ref_speech_s": 596.08
+   },
+   "primary@0.25": {
+    "der": 0.0246,
+    "fa": 0.0,
+    "miss": 0.0246,
+    "conf": 0.0,
+    "jer": 0.023,
+    "ref_speech_s": 562.08
+   }
+  },
+  {
+   "session_id": "libricss__0S_session3",
+   "split": "eval",
+   "duration": 603.219,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1182.8,
+   "primary@0.0": {
+    "der": 0.0346,
+    "fa": 0.0013,
+    "miss": 0.03,
+    "conf": 0.0033,
+    "jer": 0.0363,
+    "ref_speech_s": 588.66
+   },
+   "primary@0.25": {
+    "der": 0.0257,
+    "fa": 0.0,
+    "miss": 0.0227,
+    "conf": 0.0031,
+    "jer": 0.0263,
+    "ref_speech_s": 543.66
+   }
+  },
+  {
+   "session_id": "libricss__0S_session4",
+   "split": "eval",
+   "duration": 600.118,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1037.4,
+   "primary@0.0": {
+    "der": 0.0534,
+    "fa": 0.0014,
+    "miss": 0.052,
+    "conf": 0.0,
+    "jer": 0.0522,
+    "ref_speech_s": 586.8
+   },
+   "primary@0.25": {
+    "der": 0.0468,
+    "fa": 0.0,
+    "miss": 0.0468,
+    "conf": 0.0,
+    "jer": 0.0445,
+    "ref_speech_s": 545.8
+   }
+  },
+  {
+   "session_id": "libricss__0S_session5",
+   "split": "eval",
+   "duration": 603.777,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1087.1,
+   "primary@0.0": {
+    "der": 0.0477,
+    "fa": 0.0008,
+    "miss": 0.0468,
+    "conf": 0.0,
+    "jer": 0.0499,
+    "ref_speech_s": 591.61
+   },
+   "primary@0.25": {
+    "der": 0.0412,
+    "fa": 0.0,
+    "miss": 0.0412,
+    "conf": 0.0,
+    "jer": 0.0437,
+    "ref_speech_s": 553.11
+   }
+  },
+  {
+   "session_id": "libricss__0S_session6",
+   "split": "eval",
+   "duration": 604.082,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1193.5,
+   "primary@0.0": {
+    "der": 0.0308,
+    "fa": 0.0023,
+    "miss": 0.0285,
+    "conf": 0.0,
+    "jer": 0.0294,
+    "ref_speech_s": 589.77
+   },
+   "primary@0.25": {
+    "der": 0.0222,
+    "fa": 0.0,
+    "miss": 0.0222,
+    "conf": 0.0,
+    "jer": 0.021,
+    "ref_speech_s": 544.27
+   }
+  },
+  {
+   "session_id": "libricss__0S_session7",
+   "split": "eval",
+   "duration": 602.98,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1052.3,
+   "primary@0.0": {
+    "der": 0.041,
+    "fa": 0.0012,
+    "miss": 0.0397,
+    "conf": 0.0001,
+    "jer": 0.0535,
+    "ref_speech_s": 591.48
+   },
+   "primary@0.25": {
+    "der": 0.0345,
+    "fa": 0.0,
+    "miss": 0.0345,
+    "conf": 0.0,
+    "jer": 0.0474,
+    "ref_speech_s": 556.98
+   }
+  },
+  {
+   "session_id": "libricss__0S_session8",
+   "split": "eval",
+   "duration": 602.513,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1199.3,
+   "primary@0.0": {
+    "der": 0.0567,
+    "fa": 0.0018,
+    "miss": 0.0549,
+    "conf": 0.0,
+    "jer": 0.0466,
+    "ref_speech_s": 590.04
+   },
+   "primary@0.25": {
+    "der": 0.0518,
+    "fa": 0.0,
+    "miss": 0.0518,
+    "conf": 0.0,
+    "jer": 0.0388,
+    "ref_speech_s": 550.54
+   }
+  },
+  {
+   "session_id": "libricss__0S_session9",
+   "split": "eval",
+   "duration": 600.07,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0,
+   "rtfx": 1082.9,
+   "primary@0.0": {
+    "der": 0.0305,
+    "fa": 0.0023,
+    "miss": 0.0282,
+    "conf": 0.0,
+    "jer": 0.0296,
+    "ref_speech_s": 586.83
+   },
+   "primary@0.25": {
+    "der": 0.0215,
+    "fa": 0.0,
+    "miss": 0.0215,
+    "conf": 0.0,
+    "jer": 0.0186,
+    "ref_speech_s": 544.83
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session1",
+   "split": "eval",
+   "duration": 600.021,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0537,
+   "rtfx": 1084.9,
+   "primary@0.0": {
+    "der": 0.0497,
+    "fa": 0.0011,
+    "miss": 0.0486,
+    "conf": 0.0,
+    "jer": 0.0432,
+    "ref_speech_s": 614.08
+   },
+   "primary@0.25": {
+    "der": 0.0464,
+    "fa": 0.0,
+    "miss": 0.0464,
+    "conf": 0.0,
+    "jer": 0.0375,
+    "ref_speech_s": 552.823
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session2",
+   "split": "eval",
+   "duration": 606.559,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0528,
+   "rtfx": 1234.2,
+   "primary@0.0": {
+    "der": 0.0473,
+    "fa": 0.0016,
+    "miss": 0.0457,
+    "conf": 0.0,
+    "jer": 0.044,
+    "ref_speech_s": 622.01
+   },
+   "primary@0.25": {
+    "der": 0.0437,
+    "fa": 0.0,
+    "miss": 0.0437,
+    "conf": 0.0,
+    "jer": 0.0384,
+    "ref_speech_s": 549.508
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session3",
+   "split": "eval",
+   "duration": 601.041,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0533,
+   "rtfx": 1214.4,
+   "primary@0.0": {
+    "der": 0.0399,
+    "fa": 0.0008,
+    "miss": 0.0391,
+    "conf": 0.0,
+    "jer": 0.0361,
+    "ref_speech_s": 620.27
+   },
+   "primary@0.25": {
+    "der": 0.036,
+    "fa": 0.0,
+    "miss": 0.036,
+    "conf": 0.0,
+    "jer": 0.0307,
+    "ref_speech_s": 543.974
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session4",
+   "split": "eval",
+   "duration": 611.408,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0525,
+   "rtfx": 1234.5,
+   "primary@0.0": {
+    "der": 0.0787,
+    "fa": 0.0024,
+    "miss": 0.0763,
+    "conf": 0.0001,
+    "jer": 0.0729,
+    "ref_speech_s": 628.92
+   },
+   "primary@0.25": {
+    "der": 0.0744,
+    "fa": 0.0,
+    "miss": 0.0744,
+    "conf": 0.0,
+    "jer": 0.0663,
+    "ref_speech_s": 561.42
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session5",
+   "split": "eval",
+   "duration": 609.825,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.052,
+   "rtfx": 1001.1,
+   "primary@0.0": {
+    "der": 0.0396,
+    "fa": 0.0017,
+    "miss": 0.0378,
+    "conf": 0.0,
+    "jer": 0.0428,
+    "ref_speech_s": 627.08
+   },
+   "primary@0.25": {
+    "der": 0.0324,
+    "fa": 0.0,
+    "miss": 0.0324,
+    "conf": 0.0,
+    "jer": 0.0359,
+    "ref_speech_s": 547.332
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session6",
+   "split": "eval",
+   "duration": 612.258,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0522,
+   "rtfx": 1077.2,
+   "primary@0.0": {
+    "der": 0.0729,
+    "fa": 0.001,
+    "miss": 0.0583,
+    "conf": 0.0135,
+    "jer": 0.1009,
+    "ref_speech_s": 626.98
+   },
+   "primary@0.25": {
+    "der": 0.0699,
+    "fa": 0.0,
+    "miss": 0.057,
+    "conf": 0.0129,
+    "jer": 0.1017,
+    "ref_speech_s": 547.946
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session7",
+   "split": "eval",
+   "duration": 607.82,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0532,
+   "rtfx": 1082.4,
+   "primary@0.0": {
+    "der": 0.0359,
+    "fa": 0.0013,
+    "miss": 0.0346,
+    "conf": 0.0,
+    "jer": 0.0418,
+    "ref_speech_s": 622.02
+   },
+   "primary@0.25": {
+    "der": 0.0294,
+    "fa": 0.0,
+    "miss": 0.0294,
+    "conf": 0.0,
+    "jer": 0.0353,
+    "ref_speech_s": 551.66
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session8",
+   "split": "eval",
+   "duration": 601.13,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0527,
+   "rtfx": 1206.8,
+   "primary@0.0": {
+    "der": 0.0422,
+    "fa": 0.0013,
+    "miss": 0.0408,
+    "conf": 0.0,
+    "jer": 0.0442,
+    "ref_speech_s": 616.77
+   },
+   "primary@0.25": {
+    "der": 0.0366,
+    "fa": 0.0,
+    "miss": 0.0366,
+    "conf": 0.0,
+    "jer": 0.0378,
+    "ref_speech_s": 540.966
+   }
+  },
+  {
+   "session_id": "libricss__OV10_session9",
+   "split": "eval",
+   "duration": 605.934,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.0528,
+   "rtfx": 1161.9,
+   "primary@0.0": {
+    "der": 0.0499,
+    "fa": 0.0009,
+    "miss": 0.046,
+    "conf": 0.0029,
+    "jer": 0.0503,
+    "ref_speech_s": 622.84
+   },
+   "primary@0.25": {
+    "der": 0.0429,
+    "fa": 0.0,
+    "miss": 0.042,
+    "conf": 0.0009,
+    "jer": 0.0398,
+    "ref_speech_s": 560.296
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session1",
+   "split": "eval",
+   "duration": 600.609,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1144,
+   "rtfx": 932.0,
+   "primary@0.0": {
+    "der": 0.0561,
+    "fa": 0.0014,
+    "miss": 0.0454,
+    "conf": 0.0093,
+    "jer": 0.0796,
+    "ref_speech_s": 654.3
+   },
+   "primary@0.25": {
+    "der": 0.0465,
+    "fa": 0.0,
+    "miss": 0.0393,
+    "conf": 0.0072,
+    "jer": 0.0667,
+    "ref_speech_s": 547.986
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session2",
+   "split": "eval",
+   "duration": 601.534,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.118,
+   "rtfx": 1047.1,
+   "primary@0.0": {
+    "der": 0.0397,
+    "fa": 0.0013,
+    "miss": 0.0385,
+    "conf": 0.0,
+    "jer": 0.0435,
+    "ref_speech_s": 660.37
+   },
+   "primary@0.25": {
+    "der": 0.0339,
+    "fa": 0.0,
+    "miss": 0.0339,
+    "conf": 0.0,
+    "jer": 0.0379,
+    "ref_speech_s": 574.813
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session3",
+   "split": "eval",
+   "duration": 600.862,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1113,
+   "rtfx": 1213.8,
+   "primary@0.0": {
+    "der": 0.0367,
+    "fa": 0.0012,
+    "miss": 0.0294,
+    "conf": 0.0061,
+    "jer": 0.044,
+    "ref_speech_s": 652.0
+   },
+   "primary@0.25": {
+    "der": 0.0288,
+    "fa": 0.0,
+    "miss": 0.0233,
+    "conf": 0.0054,
+    "jer": 0.0354,
+    "ref_speech_s": 548.765
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session4",
+   "split": "eval",
+   "duration": 604.586,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1109,
+   "rtfx": 1182.1,
+   "primary@0.0": {
+    "der": 0.0314,
+    "fa": 0.0012,
+    "miss": 0.0302,
+    "conf": 0.0,
+    "jer": 0.0307,
+    "ref_speech_s": 659.1
+   },
+   "primary@0.25": {
+    "der": 0.025,
+    "fa": 0.0,
+    "miss": 0.025,
+    "conf": 0.0,
+    "jer": 0.0235,
+    "ref_speech_s": 575.834
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session5",
+   "split": "eval",
+   "duration": 600.991,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1089,
+   "rtfx": 1202.0,
+   "primary@0.0": {
+    "der": 0.0348,
+    "fa": 0.0014,
+    "miss": 0.0334,
+    "conf": 0.0,
+    "jer": 0.0305,
+    "ref_speech_s": 656.27
+   },
+   "primary@0.25": {
+    "der": 0.0298,
+    "fa": 0.0,
+    "miss": 0.0298,
+    "conf": 0.0,
+    "jer": 0.0222,
+    "ref_speech_s": 566.974
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session6",
+   "split": "eval",
+   "duration": 600.122,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1114,
+   "rtfx": 1207.7,
+   "primary@0.0": {
+    "der": 0.0583,
+    "fa": 0.0024,
+    "miss": 0.0445,
+    "conf": 0.0114,
+    "jer": 0.0929,
+    "ref_speech_s": 651.15
+   },
+   "primary@0.25": {
+    "der": 0.0521,
+    "fa": 0.0,
+    "miss": 0.0421,
+    "conf": 0.01,
+    "jer": 0.0858,
+    "ref_speech_s": 545.672
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session7",
+   "split": "eval",
+   "duration": 605.148,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1117,
+   "rtfx": 1178.1,
+   "primary@0.0": {
+    "der": 0.0488,
+    "fa": 0.0012,
+    "miss": 0.0457,
+    "conf": 0.0019,
+    "jer": 0.05,
+    "ref_speech_s": 658.6
+   },
+   "primary@0.25": {
+    "der": 0.0421,
+    "fa": 0.0,
+    "miss": 0.0404,
+    "conf": 0.0017,
+    "jer": 0.043,
+    "ref_speech_s": 556.977
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session8",
+   "split": "eval",
+   "duration": 609.494,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1098,
+   "rtfx": 1014.1,
+   "primary@0.0": {
+    "der": 0.0573,
+    "fa": 0.0011,
+    "miss": 0.0562,
+    "conf": 0.0,
+    "jer": 0.0575,
+    "ref_speech_s": 665.59
+   },
+   "primary@0.25": {
+    "der": 0.0539,
+    "fa": 0.0,
+    "miss": 0.0539,
+    "conf": 0.0,
+    "jer": 0.0545,
+    "ref_speech_s": 593.772
+   }
+  },
+  {
+   "session_id": "libricss__OV20_session9",
+   "split": "eval",
+   "duration": 609.059,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1157,
+   "rtfx": 1133.7,
+   "primary@0.0": {
+    "der": 0.0341,
+    "fa": 0.0013,
+    "miss": 0.0312,
+    "conf": 0.0015,
+    "jer": 0.0391,
+    "ref_speech_s": 667.53
+   },
+   "primary@0.25": {
+    "der": 0.0273,
+    "fa": 0.0,
+    "miss": 0.0259,
+    "conf": 0.0014,
+    "jer": 0.0287,
+    "ref_speech_s": 585.51
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session1",
+   "split": "eval",
+   "duration": 602.51,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1783,
+   "rtfx": 1232.0,
+   "primary@0.0": {
+    "der": 0.048,
+    "fa": 0.002,
+    "miss": 0.0414,
+    "conf": 0.0046,
+    "jer": 0.0589,
+    "ref_speech_s": 698.719
+   },
+   "primary@0.25": {
+    "der": 0.0393,
+    "fa": 0.0001,
+    "miss": 0.0359,
+    "conf": 0.0032,
+    "jer": 0.046,
+    "ref_speech_s": 576.304
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session2",
+   "split": "eval",
+   "duration": 618.736,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1713,
+   "rtfx": 1183.1,
+   "primary@0.0": {
+    "der": 0.0489,
+    "fa": 0.002,
+    "miss": 0.0436,
+    "conf": 0.0033,
+    "jer": 0.0524,
+    "ref_speech_s": 718.92
+   },
+   "primary@0.25": {
+    "der": 0.043,
+    "fa": 0.0,
+    "miss": 0.0412,
+    "conf": 0.0018,
+    "jer": 0.0414,
+    "ref_speech_s": 612.325
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session3",
+   "split": "eval",
+   "duration": 602.56,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1773,
+   "rtfx": 989.1,
+   "primary@0.0": {
+    "der": 0.0564,
+    "fa": 0.0014,
+    "miss": 0.0535,
+    "conf": 0.0015,
+    "jer": 0.071,
+    "ref_speech_s": 694.94
+   },
+   "primary@0.25": {
+    "der": 0.0468,
+    "fa": 0.0,
+    "miss": 0.0459,
+    "conf": 0.0009,
+    "jer": 0.0601,
+    "ref_speech_s": 576.258
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session4",
+   "split": "eval",
+   "duration": 606.654,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1744,
+   "rtfx": 1234.3,
+   "primary@0.0": {
+    "der": 0.0671,
+    "fa": 0.0023,
+    "miss": 0.0496,
+    "conf": 0.0152,
+    "jer": 0.0839,
+    "ref_speech_s": 698.77
+   },
+   "primary@0.25": {
+    "der": 0.0575,
+    "fa": 0.0,
+    "miss": 0.0454,
+    "conf": 0.0121,
+    "jer": 0.0698,
+    "ref_speech_s": 573.32
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session5",
+   "split": "eval",
+   "duration": 606.809,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.173,
+   "rtfx": 1064.3,
+   "primary@0.0": {
+    "der": 0.0696,
+    "fa": 0.0008,
+    "miss": 0.0652,
+    "conf": 0.0037,
+    "jer": 0.0844,
+    "ref_speech_s": 702.5
+   },
+   "primary@0.25": {
+    "der": 0.064,
+    "fa": 0.0,
+    "miss": 0.0606,
+    "conf": 0.0034,
+    "jer": 0.0802,
+    "ref_speech_s": 607.689
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session6",
+   "split": "eval",
+   "duration": 607.041,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1763,
+   "rtfx": 1235.7,
+   "primary@0.0": {
+    "der": 0.0438,
+    "fa": 0.0017,
+    "miss": 0.042,
+    "conf": 0.0,
+    "jer": 0.0418,
+    "ref_speech_s": 696.31
+   },
+   "primary@0.25": {
+    "der": 0.0394,
+    "fa": 0.0,
+    "miss": 0.0394,
+    "conf": 0.0,
+    "jer": 0.0363,
+    "ref_speech_s": 569.986
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session7",
+   "split": "eval",
+   "duration": 600.192,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1779,
+   "rtfx": 1141.3,
+   "primary@0.0": {
+    "der": 0.1064,
+    "fa": 0.001,
+    "miss": 0.0692,
+    "conf": 0.0362,
+    "jer": 0.2082,
+    "ref_speech_s": 689.97
+   },
+   "primary@0.25": {
+    "der": 0.0963,
+    "fa": 0.0,
+    "miss": 0.0634,
+    "conf": 0.033,
+    "jer": 0.205,
+    "ref_speech_s": 581.208
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session8",
+   "split": "eval",
+   "duration": 618.639,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1738,
+   "rtfx": 1096.1,
+   "primary@0.0": {
+    "der": 0.0457,
+    "fa": 0.0017,
+    "miss": 0.044,
+    "conf": 0.0001,
+    "jer": 0.0435,
+    "ref_speech_s": 715.12
+   },
+   "primary@0.25": {
+    "der": 0.0405,
+    "fa": 0.0,
+    "miss": 0.0405,
+    "conf": 0.0,
+    "jer": 0.0381,
+    "ref_speech_s": 612.734
+   }
+  },
+  {
+   "session_id": "libricss__OV30_session9",
+   "split": "eval",
+   "duration": 600.792,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.1753,
+   "rtfx": 1228.2,
+   "primary@0.0": {
+    "der": 0.0511,
+    "fa": 0.0023,
+    "miss": 0.047,
+    "conf": 0.0019,
+    "jer": 0.0483,
+    "ref_speech_s": 695.59
+   },
+   "primary@0.25": {
+    "der": 0.0475,
+    "fa": 0.0011,
+    "miss": 0.0448,
+    "conf": 0.0017,
+    "jer": 0.0433,
+    "ref_speech_s": 594.473
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session1",
+   "split": "eval",
+   "duration": 603.573,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.2456,
+   "rtfx": 1237.6,
+   "primary@0.0": {
+    "der": 0.0556,
+    "fa": 0.0024,
+    "miss": 0.0532,
+    "conf": 0.0,
+    "jer": 0.054,
+    "ref_speech_s": 742.82
+   },
+   "primary@0.25": {
+    "der": 0.0441,
+    "fa": 0.0,
+    "miss": 0.0441,
+    "conf": 0.0,
+    "jer": 0.0423,
+    "ref_speech_s": 591.107
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session2",
+   "split": "eval",
+   "duration": 604.941,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.2579,
+   "rtfx": 1227.0,
+   "primary@0.0": {
+    "der": 0.058,
+    "fa": 0.0009,
+    "miss": 0.0571,
+    "conf": 0.0,
+    "jer": 0.0492,
+    "ref_speech_s": 749.67
+   },
+   "primary@0.25": {
+    "der": 0.0526,
+    "fa": 0.0,
+    "miss": 0.0526,
+    "conf": 0.0,
+    "jer": 0.0407,
+    "ref_speech_s": 649.458
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session3",
+   "split": "eval",
+   "duration": 602.625,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.2479,
+   "rtfx": 1237.2,
+   "primary@0.0": {
+    "der": 0.0571,
+    "fa": 0.0017,
+    "miss": 0.0553,
+    "conf": 0.0,
+    "jer": 0.0538,
+    "ref_speech_s": 746.03
+   },
+   "primary@0.25": {
+    "der": 0.0504,
+    "fa": 0.0,
+    "miss": 0.0504,
+    "conf": 0.0,
+    "jer": 0.046,
+    "ref_speech_s": 643.267
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session4",
+   "split": "eval",
+   "duration": 602.11,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.2404,
+   "rtfx": 1167.4,
+   "primary@0.0": {
+    "der": 0.0658,
+    "fa": 0.0013,
+    "miss": 0.0645,
+    "conf": 0.0,
+    "jer": 0.0629,
+    "ref_speech_s": 741.19
+   },
+   "primary@0.25": {
+    "der": 0.0621,
+    "fa": 0.0,
+    "miss": 0.0621,
+    "conf": 0.0,
+    "jer": 0.0574,
+    "ref_speech_s": 644.319
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session5",
+   "split": "eval",
+   "duration": 604.938,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.263,
+   "rtfx": 1173.7,
+   "primary@0.0": {
+    "der": 0.0608,
+    "fa": 0.0013,
+    "miss": 0.049,
+    "conf": 0.0105,
+    "jer": 0.0793,
+    "ref_speech_s": 761.2
+   },
+   "primary@0.25": {
+    "der": 0.0522,
+    "fa": 0.0,
+    "miss": 0.0428,
+    "conf": 0.0094,
+    "jer": 0.0683,
+    "ref_speech_s": 635.794
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session6",
+   "split": "eval",
+   "duration": 604.226,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.2446,
+   "rtfx": 1189.3,
+   "primary@0.0": {
+    "der": 0.0752,
+    "fa": 0.0017,
+    "miss": 0.0701,
+    "conf": 0.0035,
+    "jer": 0.075,
+    "ref_speech_s": 748.89
+   },
+   "primary@0.25": {
+    "der": 0.0689,
+    "fa": 0.0,
+    "miss": 0.066,
+    "conf": 0.0029,
+    "jer": 0.067,
+    "ref_speech_s": 648.605
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session7",
+   "split": "eval",
+   "duration": 601.488,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.253,
+   "rtfx": 1233.0,
+   "primary@0.0": {
+    "der": 0.0465,
+    "fa": 0.0019,
+    "miss": 0.0428,
+    "conf": 0.0018,
+    "jer": 0.0617,
+    "ref_speech_s": 745.24
+   },
+   "primary@0.25": {
+    "der": 0.035,
+    "fa": 0.0,
+    "miss": 0.0339,
+    "conf": 0.0011,
+    "jer": 0.0493,
+    "ref_speech_s": 621.16
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session8",
+   "split": "eval",
+   "duration": 604.807,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.2526,
+   "rtfx": 1024.1,
+   "primary@0.0": {
+    "der": 0.0389,
+    "fa": 0.0013,
+    "miss": 0.0375,
+    "conf": 0.0001,
+    "jer": 0.0398,
+    "ref_speech_s": 750.47
+   },
+   "primary@0.25": {
+    "der": 0.0337,
+    "fa": 0.0,
+    "miss": 0.0337,
+    "conf": 0.0,
+    "jer": 0.034,
+    "ref_speech_s": 631.032
+   }
+  },
+  {
+   "session_id": "libricss__OV40_session9",
+   "split": "eval",
+   "duration": 602.351,
+   "ref_speakers": 8,
+   "hyp_speakers": 8,
+   "overlap_ratio": 0.2459,
+   "rtfx": 1226.9,
+   "primary@0.0": {
+    "der": 0.0352,
+    "fa": 0.0014,
+    "miss": 0.0338,
+    "conf": 0.0,
+    "jer": 0.0308,
+    "ref_speech_s": 744.79
+   },
+   "primary@0.25": {
+    "der": 0.0302,
+    "fa": 0.0,
+    "miss": 0.0302,
+    "conf": 0.0,
+    "jer": 0.0252,
+    "ref_speech_s": 643.122
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.12.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "gpu": "NVIDIA GeForce RTX 5080"
+ },
+ "command": "python -m diards evaluate libricss --view clean-mix --out results/nemotron/libricss.clean-mix --split eval"
+}

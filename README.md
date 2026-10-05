@@ -15,6 +15,13 @@ quality of each one's ground truth **measured, not just cited**. It includes:
 * An appendix of everything considered and excluded (paid/LDC, sign-up only, weak or automatic labels, non-English,
   synthetic): [docs/OTHER_DATASETS.md](docs/OTHER_DATASETS.md).
 
+**TL;DR: best free English test sets with trustworthy labels.**
+Two speakers: **HCRC Map Task**. Meetings: **NOTSOFAR-1 eval** and **AMI test (forced-aligned reference)**. Hard
+far-field: **CHiME-6 eval** (official alignment RTTM). In-the-wild: **MSDWild (English subset)**, plus
+**VoxConverse** if your model was not trained on it. Many speakers: **Earnings-21**. Doctor-patient:
+**PriMock57 with this repo's channel-activity reference**, not its TextGrids. Score CallHome/CallFriend (TalkBank)
+and AfriSpeech-Dialog only with care: we verified missing turns, and for AfriSpeech, shifted hand-typed times.
+
 Progress log: [PROGRESS.md](PROGRESS.md).
 
 ## Quick start
