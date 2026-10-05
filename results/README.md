@@ -46,3 +46,13 @@ and are not committed (they are derived from audio with assorted licences).
 
 Note on "scored ref speaker-time h" in the tables: pyannote's DER denominator counts overlapped speech once per
 active speaker, so it can exceed the audio duration of heavily overlapped data.
+
+## Practical notes
+
+- **Memory for long recordings.** The Transformers offline mode computes the spectrogram of the whole recording
+  at once: a 100-minute recording needs about 2.4 GB of RAM for the STFT alone (one SCOTUS run failed with
+  `not enough memory` while other jobs were running and succeeded on a rerun). The GPU part is chunked and small.
+- **Speed.** ~800-1,100x real time on an RTX 5080 (fp32, batch 1); DER scoring with pyannote.metrics on long, heavily
+  overlapped sessions (CHiME-6) takes longer than inference.
+- **Caching.** Hypotheses are cached per session; re-running `diards evaluate` only re-scores (e.g. after adding an
+  alternative reference). Delete `$DIARDS_BASE/work/nemotron/<dataset>.<view>/hyp` to recompute.
