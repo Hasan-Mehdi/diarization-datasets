@@ -41,8 +41,8 @@ movie `1j20qq1JyX4` is code-switched Yoruba/English and is excluded.
 
 ## Known issues and errata
 
-- The `.lab` speech-activity files mark speech that has **no speaker label** in the RTTM (e.g. 900.06-902.88 s in
-  `0f39OWEqJ24_c_01`). The amount per clip inside the UEM is stored as `extra.lab_speech_without_speaker_s`.
+- The `.lab` speech-activity files are exactly the union of the RTTM segments (checked on all 351 clips: 0 s of
+  lab-only speech), so they add no information. Note that the RTTM lines are not sorted by time.
 - Movie audio: music, effects, dubbing, whispering; the reference covers dialogue only.
 - Scoring region = first to last labelled segment (official), not the whole 5-minute window.
 
@@ -85,10 +85,20 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the AVA-AVD numbers: mostly model error on hard audio.** DER is 49.8% at collar 0 (34.0% at 0.25 s) on the
+29 English test/val clips, in line with public results for this model on AVA-AVD (~45%). The diagnosis points at
+the model rather than the labels: 14 of the 20 points of missed speech are *audible* (dialogue under music and
+effects, whispering, distant speakers), most false alarms fall in quiet stretches, only 2 of the 5 long audible
+false alarms contain words, and no clip is time-shifted. Speaker confusion is high (14.7%) and the model finds the
+right number of speakers in only 21% of clips (up to 24 labelled speakers per clip, while the model outputs at most
+8). Use it as a stress test, not as a typical-conditions benchmark.
+
+
 ## Quality rating
 
 **B-.** Human identity labels on hard, in-the-wild movie audio with many speakers. Minus: unlabelled speech regions
-(the lab/RTTM mismatch), LID-derived English subset, video-centric annotation origin.
+(see the diagnosis: most errors are model errors on hard movie audio), LID-derived English subset, video-centric
+annotation origin.
 
 ## Download and prepare
 

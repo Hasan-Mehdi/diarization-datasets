@@ -1,0 +1,6415 @@
+{
+ "summary": {
+  "dataset": "msdwild_en",
+  "hyp_view": "default",
+  "vad_view": "default",
+  "sessions": 150,
+  "ref_speech_h": 3.75,
+  "miss_pct": 5.52,
+  "miss_in_silence_pct": 2.21,
+  "miss_with_energy_pct": 3.31,
+  "fa_pct": 2.69,
+  "fa_with_energy_pct": 1.18,
+  "fa_in_silence_pct": 1.51,
+  "note": "speech-detection errors only (speaker-agnostic union of segments), % of reference speech time"
+ },
+ "sessions": [
+  {
+   "session_id": "msdwild_en__00029",
+   "ref": 366.69,
+   "miss": 1.42,
+   "fa": 7.18,
+   "miss_silent": 0.52,
+   "fa_energy": 1.3,
+   "miss_energy": 0.9,
+   "fa_silent": 5.88,
+   "examples_miss_silent": [
+    [
+     374.62,
+     374.82
+    ],
+    [
+     81.71,
+     81.86
+    ],
+    [
+     66.0,
+     66.06
+    ],
+    [
+     153.39,
+     153.44
+    ],
+    [
+     109.47,
+     109.51
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     70.04,
+     70.36
+    ],
+    [
+     182.88,
+     183.03
+    ],
+    [
+     121.86,
+     121.97
+    ],
+    [
+     134.13,
+     134.23
+    ],
+    [
+     127.23,
+     127.32
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00036",
+   "ref": 67.08,
+   "miss": 2.25,
+   "fa": 1.16,
+   "miss_silent": 0.38,
+   "fa_energy": 0.52,
+   "miss_energy": 1.88,
+   "fa_silent": 0.64,
+   "examples_miss_silent": [
+    [
+     34.22,
+     34.41
+    ],
+    [
+     16.24,
+     16.34
+    ],
+    [
+     3.24,
+     3.31
+    ],
+    [
+     11.02,
+     11.03
+    ],
+    [
+     22.7,
+     22.71
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     6.93,
+     7.05
+    ],
+    [
+     10.64,
+     10.72
+    ],
+    [
+     9.33,
+     9.4
+    ],
+    [
+     65.21,
+     65.28
+    ],
+    [
+     61.92,
+     61.97
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00066",
+   "ref": 21.1,
+   "miss": 0.69,
+   "fa": 3.11,
+   "miss_silent": 0.1,
+   "fa_energy": 0.37,
+   "miss_energy": 0.59,
+   "fa_silent": 2.74,
+   "examples_miss_silent": [
+    [
+     24.05,
+     24.15
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     1.28,
+     1.38
+    ],
+    [
+     15.4,
+     15.44
+    ],
+    [
+     4.49,
+     4.53
+    ],
+    [
+     24.34,
+     24.38
+    ],
+    [
+     20.32,
+     20.35
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00104",
+   "ref": 105.08,
+   "miss": 0.51,
+   "fa": 2.55,
+   "miss_silent": 0.33,
+   "fa_energy": 0.53,
+   "miss_energy": 0.17,
+   "fa_silent": 2.03,
+   "examples_miss_silent": [
+    [
+     81.47,
+     81.69
+    ],
+    [
+     107.8,
+     107.87
+    ],
+    [
+     67.34,
+     67.38
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.0,
+     0.24
+    ],
+    [
+     33.4,
+     33.54
+    ],
+    [
+     22.49,
+     22.52
+    ],
+    [
+     106.06,
+     106.09
+    ],
+    [
+     91.59,
+     91.61
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00142",
+   "ref": 55.05,
+   "miss": 0.97,
+   "fa": 0.63,
+   "miss_silent": 0.42,
+   "fa_energy": 0.2,
+   "miss_energy": 0.55,
+   "fa_silent": 0.43,
+   "examples_miss_silent": [
+    [
+     18.12,
+     18.43
+    ],
+    [
+     27.1,
+     27.16
+    ],
+    [
+     0.17,
+     0.22
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     27.36,
+     27.51
+    ],
+    [
+     14.91,
+     14.93
+    ],
+    [
+     46.69,
+     46.71
+    ],
+    [
+     56.48,
+     56.49
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00225",
+   "ref": 20.54,
+   "miss": 3.68,
+   "fa": 0.76,
+   "miss_silent": 1.49,
+   "fa_energy": 0.27,
+   "miss_energy": 2.2,
+   "fa_silent": 0.49,
+   "examples_miss_silent": [
+    [
+     8.04,
+     8.32
+    ],
+    [
+     17.48,
+     17.69
+    ],
+    [
+     15.93,
+     16.13
+    ],
+    [
+     8.86,
+     9.04
+    ],
+    [
+     22.06,
+     22.2
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     24.45,
+     24.57
+    ],
+    [
+     25.66,
+     25.78
+    ],
+    [
+     15.47,
+     15.5
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00239",
+   "ref": 19.47,
+   "miss": 0.13,
+   "fa": 0.73,
+   "miss_silent": 0,
+   "fa_energy": 0.14,
+   "miss_energy": 0.13,
+   "fa_silent": 0.58,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     20.1,
+     20.18
+    ],
+    [
+     3.17,
+     3.22
+    ],
+    [
+     8.47,
+     8.49
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00240",
+   "ref": 16.79,
+   "miss": 0.22,
+   "fa": 3.71,
+   "miss_silent": 0.07,
+   "fa_energy": 1.87,
+   "miss_energy": 0.15,
+   "fa_silent": 1.84,
+   "examples_miss_silent": [
+    [
+     8.5,
+     8.54
+    ],
+    [
+     23.16,
+     23.18
+    ],
+    [
+     7.95,
+     7.96
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.65,
+     1.48
+    ],
+    [
+     2.7,
+     3.23
+    ],
+    [
+     3.5,
+     3.86
+    ],
+    [
+     2.34,
+     2.41
+    ],
+    [
+     16.75,
+     16.78
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00246",
+   "ref": 24.61,
+   "miss": 1.12,
+   "fa": 0,
+   "miss_silent": 0.19,
+   "fa_energy": 0,
+   "miss_energy": 0.93,
+   "fa_silent": 0,
+   "examples_miss_silent": [
+    [
+     24.07,
+     24.14
+    ],
+    [
+     5.84,
+     5.9
+    ],
+    [
+     0.28,
+     0.34
+    ]
+   ],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__00354",
+   "ref": 47.44,
+   "miss": 0.94,
+   "fa": 1.63,
+   "miss_silent": 0.4,
+   "fa_energy": 0.52,
+   "miss_energy": 0.54,
+   "fa_silent": 1.11,
+   "examples_miss_silent": [
+    [
+     3.32,
+     3.46
+    ],
+    [
+     9.34,
+     9.45
+    ],
+    [
+     24.49,
+     24.57
+    ],
+    [
+     20.12,
+     20.17
+    ],
+    [
+     2.99,
+     3.01
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     35.49,
+     35.63
+    ],
+    [
+     28.73,
+     28.82
+    ],
+    [
+     11.53,
+     11.6
+    ],
+    [
+     35.84,
+     35.91
+    ],
+    [
+     50.49,
+     50.55
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00387",
+   "ref": 20.45,
+   "miss": 1.62,
+   "fa": 0.09,
+   "miss_silent": 0.09,
+   "fa_energy": 0.02,
+   "miss_energy": 1.54,
+   "fa_silent": 0.07,
+   "examples_miss_silent": [
+    [
+     8.82,
+     8.87
+    ],
+    [
+     3.0,
+     3.04
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     20.01,
+     20.03
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00474",
+   "ref": 96.44,
+   "miss": 4.7,
+   "fa": 1.43,
+   "miss_silent": 1.21,
+   "fa_energy": 0.26,
+   "miss_energy": 3.49,
+   "fa_silent": 1.18,
+   "examples_miss_silent": [
+    [
+     86.71,
+     86.99
+    ],
+    [
+     95.25,
+     95.44
+    ],
+    [
+     100.58,
+     100.72
+    ],
+    [
+     44.04,
+     44.17
+    ],
+    [
+     29.38,
+     29.48
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.11,
+     11.24
+    ],
+    [
+     24.82,
+     24.89
+    ],
+    [
+     0.52,
+     0.56
+    ],
+    [
+     77.72,
+     77.73
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00583",
+   "ref": 45.56,
+   "miss": 0.42,
+   "fa": 2.32,
+   "miss_silent": 0.26,
+   "fa_energy": 1.0,
+   "miss_energy": 0.16,
+   "fa_silent": 1.33,
+   "examples_miss_silent": [
+    [
+     5.47,
+     5.66
+    ],
+    [
+     40.55,
+     40.62
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     47.28,
+     47.67
+    ],
+    [
+     33.47,
+     33.66
+    ],
+    [
+     18.7,
+     18.84
+    ],
+    [
+     27.28,
+     27.39
+    ],
+    [
+     17.85,
+     17.93
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00585",
+   "ref": 147.4,
+   "miss": 9.11,
+   "fa": 4.26,
+   "miss_silent": 3.92,
+   "fa_energy": 2.29,
+   "miss_energy": 5.19,
+   "fa_silent": 1.98,
+   "examples_miss_silent": [
+    [
+     172.79,
+     173.04
+    ],
+    [
+     123.05,
+     123.3
+    ],
+    [
+     158.32,
+     158.55
+    ],
+    [
+     96.4,
+     96.62
+    ],
+    [
+     83.3,
+     83.5
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     83.82,
+     84.33
+    ],
+    [
+     42.58,
+     42.88
+    ],
+    [
+     76.19,
+     76.48
+    ],
+    [
+     109.02,
+     109.28
+    ],
+    [
+     96.99,
+     97.25
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00603",
+   "ref": 49.35,
+   "miss": 1.67,
+   "fa": 2.83,
+   "miss_silent": 0.25,
+   "fa_energy": 1.24,
+   "miss_energy": 1.42,
+   "fa_silent": 1.59,
+   "examples_miss_silent": [
+    [
+     27.88,
+     28.0
+    ],
+    [
+     23.76,
+     23.84
+    ],
+    [
+     11.06,
+     11.11
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     4.04,
+     4.41
+    ],
+    [
+     64.71,
+     64.91
+    ],
+    [
+     50.64,
+     50.79
+    ],
+    [
+     62.01,
+     62.16
+    ],
+    [
+     45.04,
+     45.16
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00700",
+   "ref": 39.18,
+   "miss": 2.28,
+   "fa": 2.06,
+   "miss_silent": 0.69,
+   "fa_energy": 0.4,
+   "miss_energy": 1.58,
+   "fa_silent": 1.66,
+   "examples_miss_silent": [
+    [
+     22.92,
+     23.15
+    ],
+    [
+     45.66,
+     45.8
+    ],
+    [
+     7.45,
+     7.54
+    ],
+    [
+     30.84,
+     30.93
+    ],
+    [
+     46.12,
+     46.17
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     20.52,
+     20.63
+    ],
+    [
+     29.45,
+     29.56
+    ],
+    [
+     14.41,
+     14.5
+    ],
+    [
+     27.24,
+     27.26
+    ],
+    [
+     41.31,
+     41.33
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00740",
+   "ref": 23.34,
+   "miss": 2.85,
+   "fa": 1.61,
+   "miss_silent": 1.62,
+   "fa_energy": 0.73,
+   "miss_energy": 1.23,
+   "fa_silent": 0.88,
+   "examples_miss_silent": [
+    [
+     41.15,
+     41.34
+    ],
+    [
+     13.21,
+     13.38
+    ],
+    [
+     3.39,
+     3.53
+    ],
+    [
+     42.95,
+     43.08
+    ],
+    [
+     11.62,
+     11.73
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     16.49,
+     16.59
+    ],
+    [
+     25.66,
+     25.76
+    ],
+    [
+     17.08,
+     17.17
+    ],
+    [
+     35.7,
+     35.76
+    ],
+    [
+     27.0,
+     27.06
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00743",
+   "ref": 41.04,
+   "miss": 8.03,
+   "fa": 1.16,
+   "miss_silent": 0.97,
+   "fa_energy": 0.26,
+   "miss_energy": 7.06,
+   "fa_silent": 0.9,
+   "examples_miss_silent": [
+    [
+     19.1,
+     19.29
+    ],
+    [
+     46.17,
+     46.35
+    ],
+    [
+     20.95,
+     21.09
+    ],
+    [
+     41.48,
+     41.59
+    ],
+    [
+     36.14,
+     36.24
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.5,
+     11.63
+    ],
+    [
+     31.47,
+     31.58
+    ],
+    [
+     15.22,
+     15.24
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00762",
+   "ref": 23.31,
+   "miss": 1.02,
+   "fa": 1.66,
+   "miss_silent": 0.19,
+   "fa_energy": 0.5,
+   "miss_energy": 0.83,
+   "fa_silent": 1.15,
+   "examples_miss_silent": [
+    [
+     10.68,
+     10.78
+    ],
+    [
+     11.55,
+     11.64
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     5.23,
+     5.43
+    ],
+    [
+     18.77,
+     18.88
+    ],
+    [
+     23.64,
+     23.71
+    ],
+    [
+     6.48,
+     6.54
+    ],
+    [
+     11.39,
+     11.44
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00778",
+   "ref": 22.49,
+   "miss": 0.7,
+   "fa": 2.0,
+   "miss_silent": 0.48,
+   "fa_energy": 0.76,
+   "miss_energy": 0.23,
+   "fa_silent": 1.24,
+   "examples_miss_silent": [
+    [
+     18.75,
+     18.95
+    ],
+    [
+     16.12,
+     16.21
+    ],
+    [
+     29.78,
+     29.84
+    ],
+    [
+     9.02,
+     9.07
+    ],
+    [
+     5.65,
+     5.69
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     2.58,
+     2.74
+    ],
+    [
+     4.8,
+     4.94
+    ],
+    [
+     26.89,
+     27.03
+    ],
+    [
+     13.62,
+     13.75
+    ],
+    [
+     23.21,
+     23.31
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00785",
+   "ref": 22.25,
+   "miss": 1.12,
+   "fa": 0.62,
+   "miss_silent": 0.03,
+   "fa_energy": 0.08,
+   "miss_energy": 1.09,
+   "fa_silent": 0.54,
+   "examples_miss_silent": [
+    [
+     5.88,
+     5.9
+    ],
+    [
+     1.04,
+     1.05
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     13.93,
+     13.99
+    ],
+    [
+     9.32,
+     9.34
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00844",
+   "ref": 25.3,
+   "miss": 0.61,
+   "fa": 3.31,
+   "miss_silent": 0,
+   "fa_energy": 2.16,
+   "miss_energy": 0.61,
+   "fa_silent": 1.15,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     8.47,
+     8.98
+    ],
+    [
+     15.04,
+     15.52
+    ],
+    [
+     27.59,
+     27.82
+    ],
+    [
+     27.17,
+     27.36
+    ],
+    [
+     12.81,
+     12.98
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00882",
+   "ref": 16.58,
+   "miss": 0.75,
+   "fa": 0.99,
+   "miss_silent": 0.08,
+   "fa_energy": 0.65,
+   "miss_energy": 0.67,
+   "fa_silent": 0.34,
+   "examples_miss_silent": [
+    [
+     27.36,
+     27.41
+    ],
+    [
+     15.18,
+     15.21
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.0,
+     0.39
+    ],
+    [
+     4.83,
+     5.03
+    ],
+    [
+     3.25,
+     3.31
+    ],
+    [
+     9.93,
+     9.93
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00897",
+   "ref": 157.84,
+   "miss": 0.96,
+   "fa": 2.64,
+   "miss_silent": 0.06,
+   "fa_energy": 0.56,
+   "miss_energy": 0.9,
+   "fa_silent": 2.09,
+   "examples_miss_silent": [
+    [
+     112.1,
+     112.16
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     141.27,
+     141.57
+    ],
+    [
+     101.53,
+     101.65
+    ],
+    [
+     1.13,
+     1.18
+    ],
+    [
+     13.91,
+     13.94
+    ],
+    [
+     71.45,
+     71.47
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00902",
+   "ref": 21.39,
+   "miss": 1.26,
+   "fa": 0.69,
+   "miss_silent": 0.37,
+   "fa_energy": 0.01,
+   "miss_energy": 0.89,
+   "fa_silent": 0.68,
+   "examples_miss_silent": [
+    [
+     18.71,
+     19.06
+    ],
+    [
+     12.34,
+     12.35
+    ],
+    [
+     9.67,
+     9.68
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.15,
+     11.16
+    ],
+    [
+     12.45,
+     12.45
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00948",
+   "ref": 22.37,
+   "miss": 0.48,
+   "fa": 0.94,
+   "miss_silent": 0.04,
+   "fa_energy": 0.05,
+   "miss_energy": 0.44,
+   "fa_silent": 0.89,
+   "examples_miss_silent": [
+    [
+     11.24,
+     11.28
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     23.47,
+     23.52
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00949",
+   "ref": 26.31,
+   "miss": 0.97,
+   "fa": 0.77,
+   "miss_silent": 0.49,
+   "fa_energy": 0.35,
+   "miss_energy": 0.48,
+   "fa_silent": 0.42,
+   "examples_miss_silent": [
+    [
+     20.09,
+     20.25
+    ],
+    [
+     8.99,
+     9.11
+    ],
+    [
+     11.85,
+     11.96
+    ],
+    [
+     7.3,
+     7.4
+    ],
+    [
+     7.53,
+     7.54
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     19.52,
+     19.69
+    ],
+    [
+     6.8,
+     6.88
+    ],
+    [
+     19.91,
+     19.98
+    ],
+    [
+     6.91,
+     6.94
+    ],
+    [
+     10.29,
+     10.29
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00972",
+   "ref": 17.43,
+   "miss": 1.47,
+   "fa": 0.85,
+   "miss_silent": 0.23,
+   "fa_energy": 0.03,
+   "miss_energy": 1.24,
+   "fa_silent": 0.83,
+   "examples_miss_silent": [
+    [
+     21.25,
+     21.43
+    ],
+    [
+     20.8,
+     20.85
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.84,
+     11.86
+    ],
+    [
+     1.78,
+     1.79
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00982",
+   "ref": 86.3,
+   "miss": 0.13,
+   "fa": 4.17,
+   "miss_silent": 0,
+   "fa_energy": 0.39,
+   "miss_energy": 0.13,
+   "fa_silent": 3.78,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     25.78,
+     25.9
+    ],
+    [
+     57.12,
+     57.19
+    ],
+    [
+     62.86,
+     62.91
+    ],
+    [
+     26.11,
+     26.15
+    ],
+    [
+     81.25,
+     81.28
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00996",
+   "ref": 33.11,
+   "miss": 2.55,
+   "fa": 1.15,
+   "miss_silent": 0.21,
+   "fa_energy": 0.2,
+   "miss_energy": 2.34,
+   "fa_silent": 0.95,
+   "examples_miss_silent": [
+    [
+     15.28,
+     15.4
+    ],
+    [
+     7.36,
+     7.41
+    ],
+    [
+     6.22,
+     6.26
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     27.54,
+     27.62
+    ],
+    [
+     32.3,
+     32.37
+    ],
+    [
+     18.82,
+     18.88
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01031",
+   "ref": 24.34,
+   "miss": 0.46,
+   "fa": 0.93,
+   "miss_silent": 0.02,
+   "fa_energy": 0.4,
+   "miss_energy": 0.45,
+   "fa_silent": 0.53,
+   "examples_miss_silent": [
+    [
+     16.76,
+     16.78
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     25.6,
+     25.82
+    ],
+    [
+     8.54,
+     8.72
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01086",
+   "ref": 56.38,
+   "miss": 2.22,
+   "fa": 1.62,
+   "miss_silent": 1.19,
+   "fa_energy": 0.25,
+   "miss_energy": 1.03,
+   "fa_silent": 1.37,
+   "examples_miss_silent": [
+    [
+     14.25,
+     14.57
+    ],
+    [
+     10.72,
+     10.91
+    ],
+    [
+     9.59,
+     9.75
+    ],
+    [
+     0.34,
+     0.49
+    ],
+    [
+     63.0,
+     63.11
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     29.54,
+     29.63
+    ],
+    [
+     52.06,
+     52.13
+    ],
+    [
+     49.65,
+     49.69
+    ],
+    [
+     37.95,
+     37.98
+    ],
+    [
+     22.06,
+     22.08
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01124",
+   "ref": 77.2,
+   "miss": 2.67,
+   "fa": 5.01,
+   "miss_silent": 0.65,
+   "fa_energy": 1.02,
+   "miss_energy": 2.02,
+   "fa_silent": 3.99,
+   "examples_miss_silent": [
+    [
+     82.19,
+     82.32
+    ],
+    [
+     47.84,
+     47.96
+    ],
+    [
+     44.35,
+     44.47
+    ],
+    [
+     33.4,
+     33.49
+    ],
+    [
+     70.46,
+     70.55
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     7.32,
+     7.65
+    ],
+    [
+     31.97,
+     32.09
+    ],
+    [
+     82.42,
+     82.51
+    ],
+    [
+     7.84,
+     7.92
+    ],
+    [
+     66.7,
+     66.76
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01136",
+   "ref": 59.05,
+   "miss": 2.85,
+   "fa": 0.76,
+   "miss_silent": 1.26,
+   "fa_energy": 0.39,
+   "miss_energy": 1.58,
+   "fa_silent": 0.37,
+   "examples_miss_silent": [
+    [
+     26.15,
+     26.52
+    ],
+    [
+     20.77,
+     21.06
+    ],
+    [
+     37.28,
+     37.45
+    ],
+    [
+     11.64,
+     11.81
+    ],
+    [
+     16.74,
+     16.86
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     39.11,
+     39.23
+    ],
+    [
+     42.16,
+     42.23
+    ],
+    [
+     54.37,
+     54.43
+    ],
+    [
+     41.48,
+     41.52
+    ],
+    [
+     30.87,
+     30.91
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01167",
+   "ref": 14.54,
+   "miss": 1.18,
+   "fa": 0.42,
+   "miss_silent": 0.14,
+   "fa_energy": 0.24,
+   "miss_energy": 1.04,
+   "fa_silent": 0.18,
+   "examples_miss_silent": [
+    [
+     15.16,
+     15.25
+    ],
+    [
+     14.8,
+     14.86
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     1.78,
+     1.85
+    ],
+    [
+     6.15,
+     6.21
+    ],
+    [
+     14.49,
+     14.53
+    ],
+    [
+     22.34,
+     22.37
+    ],
+    [
+     10.95,
+     10.97
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01172",
+   "ref": 37.22,
+   "miss": 0.13,
+   "fa": 0.95,
+   "miss_silent": 0,
+   "fa_energy": 0.22,
+   "miss_energy": 0.13,
+   "fa_silent": 0.74,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     22.76,
+     22.92
+    ],
+    [
+     40.69,
+     40.72
+    ],
+    [
+     35.36,
+     35.38
+    ],
+    [
+     27.25,
+     27.25
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01180",
+   "ref": 75.36,
+   "miss": 0.97,
+   "fa": 1.11,
+   "miss_silent": 0.66,
+   "fa_energy": 0.34,
+   "miss_energy": 0.31,
+   "fa_silent": 0.77,
+   "examples_miss_silent": [
+    [
+     54.34,
+     54.83
+    ],
+    [
+     76.25,
+     76.33
+    ],
+    [
+     76.09,
+     76.17
+    ],
+    [
+     43.0,
+     43.0
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     59.75,
+     60.05
+    ],
+    [
+     41.99,
+     42.03
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01182",
+   "ref": 80.53,
+   "miss": 3.08,
+   "fa": 2.7,
+   "miss_silent": 1.42,
+   "fa_energy": 0.2,
+   "miss_energy": 1.66,
+   "fa_silent": 2.51,
+   "examples_miss_silent": [
+    [
+     19.38,
+     19.54
+    ],
+    [
+     26.73,
+     26.87
+    ],
+    [
+     94.63,
+     94.77
+    ],
+    [
+     35.15,
+     35.28
+    ],
+    [
+     48.6,
+     48.71
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     67.35,
+     67.39
+    ],
+    [
+     74.63,
+     74.67
+    ],
+    [
+     33.04,
+     33.08
+    ],
+    [
+     92.62,
+     92.65
+    ],
+    [
+     80.08,
+     80.1
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01195",
+   "ref": 18.75,
+   "miss": 1.23,
+   "fa": 0.09,
+   "miss_silent": 0.73,
+   "fa_energy": 0,
+   "miss_energy": 0.5,
+   "fa_silent": 0.09,
+   "examples_miss_silent": [
+    [
+     17.11,
+     17.39
+    ],
+    [
+     16.78,
+     17.01
+    ],
+    [
+     12.18,
+     12.26
+    ],
+    [
+     17.46,
+     17.54
+    ],
+    [
+     9.34,
+     9.4
+    ]
+   ],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__01197",
+   "ref": 34.82,
+   "miss": 0.26,
+   "fa": 0.52,
+   "miss_silent": 0.02,
+   "fa_energy": 0.22,
+   "miss_energy": 0.24,
+   "fa_silent": 0.3,
+   "examples_miss_silent": [
+    [
+     6.52,
+     6.54
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     12.84,
+     12.93
+    ],
+    [
+     32.5,
+     32.57
+    ],
+    [
+     0.0,
+     0.04
+    ],
+    [
+     29.6,
+     29.62
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01198",
+   "ref": 16.88,
+   "miss": 1.1,
+   "fa": 2.16,
+   "miss_silent": 0.57,
+   "fa_energy": 0.78,
+   "miss_energy": 0.53,
+   "fa_silent": 1.38,
+   "examples_miss_silent": [
+    [
+     3.96,
+     4.29
+    ],
+    [
+     17.5,
+     17.7
+    ],
+    [
+     15.13,
+     15.17
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     10.11,
+     10.48
+    ],
+    [
+     19.4,
+     19.69
+    ],
+    [
+     7.83,
+     7.95
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01211",
+   "ref": 150.45,
+   "miss": 7.72,
+   "fa": 3.45,
+   "miss_silent": 2.38,
+   "fa_energy": 2.8,
+   "miss_energy": 5.34,
+   "fa_silent": 0.65,
+   "examples_miss_silent": [
+    [
+     50.38,
+     50.68
+    ],
+    [
+     129.09,
+     129.31
+    ],
+    [
+     94.8,
+     94.99
+    ],
+    [
+     18.25,
+     18.42
+    ],
+    [
+     56.47,
+     56.64
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     161.43,
+     162.78
+    ],
+    [
+     62.91,
+     63.26
+    ],
+    [
+     33.67,
+     33.87
+    ],
+    [
+     63.54,
+     63.69
+    ],
+    [
+     12.85,
+     12.96
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01229",
+   "ref": 16.88,
+   "miss": 1.54,
+   "fa": 1.41,
+   "miss_silent": 0.16,
+   "fa_energy": 0.39,
+   "miss_energy": 1.38,
+   "fa_silent": 1.02,
+   "examples_miss_silent": [
+    [
+     17.64,
+     17.75
+    ],
+    [
+     16.05,
+     16.1
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     7.58,
+     7.79
+    ],
+    [
+     16.6,
+     16.69
+    ],
+    [
+     8.12,
+     8.15
+    ],
+    [
+     12.54,
+     12.57
+    ],
+    [
+     0.0,
+     0.02
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01240",
+   "ref": 23.49,
+   "miss": 0.26,
+   "fa": 1.13,
+   "miss_silent": 0,
+   "fa_energy": 0.05,
+   "miss_energy": 0.26,
+   "fa_silent": 1.07,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     5.34,
+     5.37
+    ],
+    [
+     24.15,
+     24.17
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01273",
+   "ref": 48.61,
+   "miss": 0.08,
+   "fa": 0.05,
+   "miss_silent": 0,
+   "fa_energy": 0,
+   "miss_energy": 0.08,
+   "fa_silent": 0.05,
+   "examples_miss_silent": [],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__01274",
+   "ref": 21.49,
+   "miss": 0.94,
+   "fa": 0.93,
+   "miss_silent": 0.03,
+   "fa_energy": 0.47,
+   "miss_energy": 0.91,
+   "fa_silent": 0.46,
+   "examples_miss_silent": [
+    [
+     13.17,
+     13.2
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.59,
+     12.02
+    ],
+    [
+     14.73,
+     14.77
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01324",
+   "ref": 52.55,
+   "miss": 1.85,
+   "fa": 6.56,
+   "miss_silent": 0.22,
+   "fa_energy": 5.23,
+   "miss_energy": 1.63,
+   "fa_silent": 1.33,
+   "examples_miss_silent": [
+    [
+     43.45,
+     43.52
+    ],
+    [
+     52.29,
+     52.35
+    ],
+    [
+     40.93,
+     40.97
+    ],
+    [
+     36.39,
+     36.43
+    ],
+    [
+     67.63,
+     67.64
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     53.58,
+     55.86
+    ],
+    [
+     66.16,
+     67.19
+    ],
+    [
+     63.17,
+     63.48
+    ],
+    [
+     56.01,
+     56.32
+    ],
+    [
+     65.09,
+     65.29
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01325",
+   "ref": 75.56,
+   "miss": 0.01,
+   "fa": 0.98,
+   "miss_silent": 0,
+   "fa_energy": 0.64,
+   "miss_energy": 0.01,
+   "fa_silent": 0.34,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     75.08,
+     75.52
+    ],
+    [
+     46.19,
+     46.31
+    ],
+    [
+     0.0,
+     0.08
+    ],
+    [
+     52.18,
+     52.19
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01342",
+   "ref": 63.61,
+   "miss": 9.73,
+   "fa": 0.96,
+   "miss_silent": 3.84,
+   "fa_energy": 0.84,
+   "miss_energy": 5.9,
+   "fa_silent": 0.12,
+   "examples_miss_silent": [
+    [
+     68.06,
+     69.17
+    ],
+    [
+     20.39,
+     20.78
+    ],
+    [
+     80.5,
+     80.83
+    ],
+    [
+     57.56,
+     57.82
+    ],
+    [
+     41.25,
+     41.5
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     10.47,
+     10.76
+    ],
+    [
+     56.52,
+     56.65
+    ],
+    [
+     54.28,
+     54.38
+    ],
+    [
+     21.93,
+     22.0
+    ],
+    [
+     39.79,
+     39.86
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01378",
+   "ref": 57.48,
+   "miss": 1.94,
+   "fa": 1.17,
+   "miss_silent": 1.36,
+   "fa_energy": 0.62,
+   "miss_energy": 0.58,
+   "fa_silent": 0.56,
+   "examples_miss_silent": [
+    [
+     5.34,
+     5.67
+    ],
+    [
+     15.24,
+     15.47
+    ],
+    [
+     23.44,
+     23.67
+    ],
+    [
+     1.37,
+     1.57
+    ],
+    [
+     59.62,
+     59.77
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     28.3,
+     28.64
+    ],
+    [
+     45.37,
+     45.62
+    ],
+    [
+     18.89,
+     18.91
+    ],
+    [
+     46.03,
+     46.03
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01380",
+   "ref": 28.94,
+   "miss": 0.05,
+   "fa": 0.34,
+   "miss_silent": 0,
+   "fa_energy": 0.24,
+   "miss_energy": 0.05,
+   "fa_silent": 0.09,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     2.8,
+     2.99
+    ],
+    [
+     29.21,
+     29.26
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01407",
+   "ref": 157.33,
+   "miss": 9.76,
+   "fa": 3.74,
+   "miss_silent": 2.43,
+   "fa_energy": 2.09,
+   "miss_energy": 7.33,
+   "fa_silent": 1.64,
+   "examples_miss_silent": [
+    [
+     149.84,
+     150.43
+    ],
+    [
+     164.72,
+     165.07
+    ],
+    [
+     147.34,
+     147.54
+    ],
+    [
+     169.07,
+     169.27
+    ],
+    [
+     0.0,
+     0.16
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     128.97,
+     129.36
+    ],
+    [
+     137.34,
+     137.69
+    ],
+    [
+     45.86,
+     46.16
+    ],
+    [
+     45.68,
+     45.84
+    ],
+    [
+     108.06,
+     108.22
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01487",
+   "ref": 173.15,
+   "miss": 0.69,
+   "fa": 0.61,
+   "miss_silent": 0.16,
+   "fa_energy": 0.3,
+   "miss_energy": 0.53,
+   "fa_silent": 0.32,
+   "examples_miss_silent": [
+    [
+     33.61,
+     33.73
+    ],
+    [
+     130.09,
+     130.13
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     65.93,
+     66.11
+    ],
+    [
+     104.76,
+     104.82
+    ],
+    [
+     131.31,
+     131.37
+    ],
+    [
+     139.38,
+     139.38
+    ],
+    [
+     94.48,
+     94.48
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01500",
+   "ref": 27.3,
+   "miss": 0.05,
+   "fa": 0,
+   "miss_silent": 0.05,
+   "fa_energy": 0,
+   "miss_energy": 0.0,
+   "fa_silent": 0,
+   "examples_miss_silent": [
+    [
+     27.24,
+     27.3
+    ]
+   ],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__01511",
+   "ref": 19.77,
+   "miss": 0.09,
+   "fa": 0.88,
+   "miss_silent": 0,
+   "fa_energy": 0.11,
+   "miss_energy": 0.09,
+   "fa_silent": 0.77,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     17.64,
+     17.69
+    ],
+    [
+     9.68,
+     9.72
+    ],
+    [
+     0.55,
+     0.57
+    ],
+    [
+     3.02,
+     3.03
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01540",
+   "ref": 503.01,
+   "miss": 13.02,
+   "fa": 5.47,
+   "miss_silent": 6.24,
+   "fa_energy": 1.42,
+   "miss_energy": 6.78,
+   "fa_silent": 4.06,
+   "examples_miss_silent": [
+    [
+     267.33,
+     267.81
+    ],
+    [
+     298.05,
+     298.45
+    ],
+    [
+     196.59,
+     196.96
+    ],
+    [
+     415.55,
+     415.92
+    ],
+    [
+     155.14,
+     155.49
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     240.48,
+     240.66
+    ],
+    [
+     427.54,
+     427.71
+    ],
+    [
+     484.49,
+     484.62
+    ],
+    [
+     147.95,
+     148.07
+    ],
+    [
+     187.73,
+     187.83
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01548",
+   "ref": 96.91,
+   "miss": 9.23,
+   "fa": 1.61,
+   "miss_silent": 1.5,
+   "fa_energy": 0.63,
+   "miss_energy": 7.73,
+   "fa_silent": 0.98,
+   "examples_miss_silent": [
+    [
+     91.17,
+     91.56
+    ],
+    [
+     104.03,
+     104.34
+    ],
+    [
+     75.8,
+     76.05
+    ],
+    [
+     98.85,
+     98.97
+    ],
+    [
+     84.8,
+     84.89
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     29.15,
+     29.4
+    ],
+    [
+     22.33,
+     22.44
+    ],
+    [
+     12.41,
+     12.46
+    ],
+    [
+     97.66,
+     97.71
+    ],
+    [
+     102.46,
+     102.5
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01549",
+   "ref": 30.47,
+   "miss": 0.63,
+   "fa": 1.29,
+   "miss_silent": 0.47,
+   "fa_energy": 0.08,
+   "miss_energy": 0.16,
+   "fa_silent": 1.21,
+   "examples_miss_silent": [
+    [
+     31.02,
+     31.49
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     4.74,
+     4.77
+    ],
+    [
+     4.49,
+     4.51
+    ],
+    [
+     15.64,
+     15.66
+    ],
+    [
+     7.63,
+     7.64
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01599",
+   "ref": 32.25,
+   "miss": 1.03,
+   "fa": 0.59,
+   "miss_silent": 0.68,
+   "fa_energy": 0.03,
+   "miss_energy": 0.35,
+   "fa_silent": 0.56,
+   "examples_miss_silent": [
+    [
+     12.02,
+     12.44
+    ],
+    [
+     29.6,
+     29.76
+    ],
+    [
+     0.0,
+     0.1
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     32.97,
+     32.99
+    ],
+    [
+     14.08,
+     14.08
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01657",
+   "ref": 96.31,
+   "miss": 0.43,
+   "fa": 3.28,
+   "miss_silent": 0.06,
+   "fa_energy": 0.74,
+   "miss_energy": 0.37,
+   "fa_silent": 2.54,
+   "examples_miss_silent": [
+    [
+     51.47,
+     51.53
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     10.65,
+     10.8
+    ],
+    [
+     82.31,
+     82.39
+    ],
+    [
+     35.66,
+     35.73
+    ],
+    [
+     51.26,
+     51.32
+    ],
+    [
+     5.0,
+     5.06
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01661",
+   "ref": 36.32,
+   "miss": 2.82,
+   "fa": 0.34,
+   "miss_silent": 1.06,
+   "fa_energy": 0.24,
+   "miss_energy": 1.76,
+   "fa_silent": 0.1,
+   "examples_miss_silent": [
+    [
+     2.96,
+     3.27
+    ],
+    [
+     23.62,
+     23.81
+    ],
+    [
+     24.85,
+     25.02
+    ],
+    [
+     26.93,
+     27.05
+    ],
+    [
+     26.55,
+     26.64
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     36.06,
+     36.19
+    ],
+    [
+     0.91,
+     1.02
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01664",
+   "ref": 19.33,
+   "miss": 1.22,
+   "fa": 0,
+   "miss_silent": 0.53,
+   "fa_energy": 0,
+   "miss_energy": 0.7,
+   "fa_silent": 0,
+   "examples_miss_silent": [
+    [
+     6.78,
+     6.96
+    ],
+    [
+     11.47,
+     11.62
+    ],
+    [
+     14.15,
+     14.25
+    ],
+    [
+     0.13,
+     0.19
+    ],
+    [
+     14.62,
+     14.66
+    ]
+   ],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__01674",
+   "ref": 28.06,
+   "miss": 2.4,
+   "fa": 0.05,
+   "miss_silent": 0.14,
+   "fa_energy": 0.02,
+   "miss_energy": 2.26,
+   "fa_silent": 0.03,
+   "examples_miss_silent": [
+    [
+     13.38,
+     13.43
+    ],
+    [
+     10.0,
+     10.04
+    ],
+    [
+     20.45,
+     20.47
+    ],
+    [
+     25.63,
+     25.65
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.0,
+     0.02
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01688",
+   "ref": 28.59,
+   "miss": 0.17,
+   "fa": 2.42,
+   "miss_silent": 0,
+   "fa_energy": 0.36,
+   "miss_energy": 0.17,
+   "fa_silent": 2.06,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     30.52,
+     30.61
+    ],
+    [
+     1.12,
+     1.2
+    ],
+    [
+     7.81,
+     7.85
+    ],
+    [
+     17.46,
+     17.5
+    ],
+    [
+     2.53,
+     2.56
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01725",
+   "ref": 54.18,
+   "miss": 0.02,
+   "fa": 0.28,
+   "miss_silent": 0,
+   "fa_energy": 0.1,
+   "miss_energy": 0.02,
+   "fa_silent": 0.18,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     2.03,
+     2.06
+    ],
+    [
+     54.6,
+     54.63
+    ],
+    [
+     1.65,
+     1.68
+    ],
+    [
+     50.52,
+     50.52
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01726",
+   "ref": 38.0,
+   "miss": 0.39,
+   "fa": 0.47,
+   "miss_silent": 0.03,
+   "fa_energy": 0.13,
+   "miss_energy": 0.36,
+   "fa_silent": 0.34,
+   "examples_miss_silent": [
+    [
+     38.44,
+     38.47
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     23.69,
+     23.8
+    ],
+    [
+     9.98,
+     10.0
+    ],
+    [
+     26.0,
+     26.0
+    ],
+    [
+     14.97,
+     14.97
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01875",
+   "ref": 35.94,
+   "miss": 0.42,
+   "fa": 1.3,
+   "miss_silent": 0.05,
+   "fa_energy": 0.22,
+   "miss_energy": 0.38,
+   "fa_silent": 1.08,
+   "examples_miss_silent": [
+    [
+     43.27,
+     43.32
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     36.85,
+     37.03
+    ],
+    [
+     19.04,
+     19.06
+    ],
+    [
+     5.49,
+     5.5
+    ],
+    [
+     0.65,
+     0.66
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01909",
+   "ref": 43.32,
+   "miss": 2.42,
+   "fa": 0.66,
+   "miss_silent": 0.74,
+   "fa_energy": 0.23,
+   "miss_energy": 1.68,
+   "fa_silent": 0.43,
+   "examples_miss_silent": [
+    [
+     19.84,
+     20.04
+    ],
+    [
+     1.1,
+     1.25
+    ],
+    [
+     28.38,
+     28.48
+    ],
+    [
+     46.53,
+     46.63
+    ],
+    [
+     0.03,
+     0.12
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     29.97,
+     30.07
+    ],
+    [
+     13.96,
+     14.01
+    ],
+    [
+     25.09,
+     25.12
+    ],
+    [
+     41.56,
+     41.59
+    ],
+    [
+     15.65,
+     15.68
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02005",
+   "ref": 102.24,
+   "miss": 0.8,
+   "fa": 0.5,
+   "miss_silent": 0.27,
+   "fa_energy": 0.08,
+   "miss_energy": 0.53,
+   "fa_silent": 0.42,
+   "examples_miss_silent": [
+    [
+     80.29,
+     80.38
+    ],
+    [
+     93.11,
+     93.16
+    ],
+    [
+     76.33,
+     76.38
+    ],
+    [
+     90.79,
+     90.82
+    ],
+    [
+     25.01,
+     25.03
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     91.33,
+     91.39
+    ],
+    [
+     90.11,
+     90.12
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02019",
+   "ref": 20.47,
+   "miss": 0,
+   "fa": 0.2,
+   "miss_silent": 0,
+   "fa_energy": 0.03,
+   "miss_energy": 0,
+   "fa_silent": 0.17,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     8.73,
+     8.76
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02021",
+   "ref": 94.73,
+   "miss": 0.91,
+   "fa": 0.9,
+   "miss_silent": 0.08,
+   "fa_energy": 0.21,
+   "miss_energy": 0.83,
+   "fa_silent": 0.69,
+   "examples_miss_silent": [
+    [
+     56.85,
+     56.93
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     97.04,
+     97.11
+    ],
+    [
+     6.3,
+     6.37
+    ],
+    [
+     0.44,
+     0.46
+    ],
+    [
+     39.69,
+     39.71
+    ],
+    [
+     3.41,
+     3.43
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02036",
+   "ref": 49.68,
+   "miss": 0.62,
+   "fa": 4.68,
+   "miss_silent": 0.04,
+   "fa_energy": 1.25,
+   "miss_energy": 0.58,
+   "fa_silent": 3.43,
+   "examples_miss_silent": [
+    [
+     35.63,
+     35.65
+    ],
+    [
+     22.25,
+     22.26
+    ],
+    [
+     51.26,
+     51.27
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     10.41,
+     10.71
+    ],
+    [
+     29.97,
+     30.11
+    ],
+    [
+     43.32,
+     43.41
+    ],
+    [
+     3.19,
+     3.28
+    ],
+    [
+     2.89,
+     2.98
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02047",
+   "ref": 86.83,
+   "miss": 2.55,
+   "fa": 2.32,
+   "miss_silent": 0.72,
+   "fa_energy": 1.73,
+   "miss_energy": 1.83,
+   "fa_silent": 0.59,
+   "examples_miss_silent": [
+    [
+     7.12,
+     7.27
+    ],
+    [
+     68.63,
+     68.76
+    ],
+    [
+     48.26,
+     48.39
+    ],
+    [
+     28.6,
+     28.67
+    ],
+    [
+     11.47,
+     11.54
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     52.81,
+     53.29
+    ],
+    [
+     88.22,
+     88.58
+    ],
+    [
+     84.86,
+     85.12
+    ],
+    [
+     81.6,
+     81.72
+    ],
+    [
+     95.99,
+     96.11
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02049",
+   "ref": 128.37,
+   "miss": 0.8,
+   "fa": 0.75,
+   "miss_silent": 0.12,
+   "fa_energy": 0.28,
+   "miss_energy": 0.68,
+   "fa_silent": 0.47,
+   "examples_miss_silent": [
+    [
+     102.86,
+     102.93
+    ],
+    [
+     112.5,
+     112.54
+    ],
+    [
+     112.93,
+     112.94
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     87.55,
+     87.69
+    ],
+    [
+     58.06,
+     58.19
+    ],
+    [
+     130.02,
+     130.03
+    ],
+    [
+     0.17,
+     0.17
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02053",
+   "ref": 36.33,
+   "miss": 1.46,
+   "fa": 3.58,
+   "miss_silent": 0.39,
+   "fa_energy": 2.03,
+   "miss_energy": 1.07,
+   "fa_silent": 1.55,
+   "examples_miss_silent": [
+    [
+     22.01,
+     22.22
+    ],
+    [
+     40.83,
+     40.89
+    ],
+    [
+     37.14,
+     37.19
+    ],
+    [
+     41.5,
+     41.55
+    ],
+    [
+     18.76,
+     18.78
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     9.52,
+     10.0
+    ],
+    [
+     1.15,
+     1.43
+    ],
+    [
+     13.22,
+     13.41
+    ],
+    [
+     16.16,
+     16.32
+    ],
+    [
+     38.76,
+     38.91
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02062",
+   "ref": 246.9,
+   "miss": 11.97,
+   "fa": 5.85,
+   "miss_silent": 5.68,
+   "fa_energy": 2.28,
+   "miss_energy": 6.29,
+   "fa_silent": 3.56,
+   "examples_miss_silent": [
+    [
+     249.51,
+     249.87
+    ],
+    [
+     95.3,
+     95.61
+    ],
+    [
+     266.56,
+     266.83
+    ],
+    [
+     91.67,
+     91.92
+    ],
+    [
+     179.75,
+     179.99
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     199.31,
+     199.62
+    ],
+    [
+     204.52,
+     204.65
+    ],
+    [
+     250.45,
+     250.58
+    ],
+    [
+     118.38,
+     118.51
+    ],
+    [
+     133.0,
+     133.13
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02093",
+   "ref": 42.88,
+   "miss": 0.78,
+   "fa": 2.91,
+   "miss_silent": 0.13,
+   "fa_energy": 0.66,
+   "miss_energy": 0.65,
+   "fa_silent": 2.25,
+   "examples_miss_silent": [
+    [
+     49.32,
+     49.42
+    ],
+    [
+     16.78,
+     16.8
+    ],
+    [
+     16.09,
+     16.11
+    ],
+    [
+     15.17,
+     15.17
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.28,
+     11.4
+    ],
+    [
+     20.65,
+     20.77
+    ],
+    [
+     19.42,
+     19.52
+    ],
+    [
+     1.19,
+     1.25
+    ],
+    [
+     22.72,
+     22.78
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02138",
+   "ref": 960.69,
+   "miss": 28.48,
+   "fa": 14.15,
+   "miss_silent": 9.52,
+   "fa_energy": 9.12,
+   "miss_energy": 18.95,
+   "fa_silent": 5.03,
+   "examples_miss_silent": [
+    [
+     361.05,
+     361.5
+    ],
+    [
+     628.46,
+     628.87
+    ],
+    [
+     348.39,
+     348.66
+    ],
+    [
+     356.96,
+     357.2
+    ],
+    [
+     187.88,
+     188.1
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     575.6,
+     576.4
+    ],
+    [
+     529.15,
+     529.8
+    ],
+    [
+     166.29,
+     166.85
+    ],
+    [
+     530.11,
+     530.64
+    ],
+    [
+     837.67,
+     838.14
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02160",
+   "ref": 154.25,
+   "miss": 0.4,
+   "fa": 1.78,
+   "miss_silent": 0.2,
+   "fa_energy": 0.68,
+   "miss_energy": 0.2,
+   "fa_silent": 1.11,
+   "examples_miss_silent": [
+    [
+     0.0,
+     0.2
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     112.13,
+     112.38
+    ],
+    [
+     113.13,
+     113.31
+    ],
+    [
+     9.56,
+     9.61
+    ],
+    [
+     12.45,
+     12.49
+    ],
+    [
+     91.6,
+     91.63
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02218",
+   "ref": 18.09,
+   "miss": 1.57,
+   "fa": 1.06,
+   "miss_silent": 0.75,
+   "fa_energy": 0.63,
+   "miss_energy": 0.82,
+   "fa_silent": 0.43,
+   "examples_miss_silent": [
+    [
+     6.38,
+     6.66
+    ],
+    [
+     19.28,
+     19.45
+    ],
+    [
+     14.99,
+     15.15
+    ],
+    [
+     20.9,
+     21.02
+    ],
+    [
+     2.29,
+     2.31
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     18.52,
+     18.78
+    ],
+    [
+     16.04,
+     16.25
+    ],
+    [
+     1.8,
+     1.96
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02227",
+   "ref": 70.27,
+   "miss": 0.04,
+   "fa": 0.1,
+   "miss_silent": 0,
+   "fa_energy": 0,
+   "miss_energy": 0.04,
+   "fa_silent": 0.1,
+   "examples_miss_silent": [],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__02241",
+   "ref": 59.27,
+   "miss": 1.53,
+   "fa": 2.68,
+   "miss_silent": 0.74,
+   "fa_energy": 1.73,
+   "miss_energy": 0.78,
+   "fa_silent": 0.95,
+   "examples_miss_silent": [
+    [
+     52.76,
+     53.05
+    ],
+    [
+     50.47,
+     50.64
+    ],
+    [
+     40.7,
+     40.79
+    ],
+    [
+     43.23,
+     43.3
+    ],
+    [
+     56.7,
+     56.75
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     61.79,
+     63.34
+    ],
+    [
+     57.91,
+     58.02
+    ],
+    [
+     45.65,
+     45.71
+    ],
+    [
+     29.8,
+     29.81
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02265",
+   "ref": 63.1,
+   "miss": 2.1,
+   "fa": 0.61,
+   "miss_silent": 0.76,
+   "fa_energy": 0.1,
+   "miss_energy": 1.34,
+   "fa_silent": 0.51,
+   "examples_miss_silent": [
+    [
+     37.68,
+     38.04
+    ],
+    [
+     63.37,
+     63.72
+    ],
+    [
+     30.93,
+     30.98
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     45.65,
+     45.69
+    ],
+    [
+     40.83,
+     40.86
+    ],
+    [
+     13.54,
+     13.56
+    ],
+    [
+     55.45,
+     55.46
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02314",
+   "ref": 86.49,
+   "miss": 1.95,
+   "fa": 0.0,
+   "miss_silent": 1.95,
+   "fa_energy": 0,
+   "miss_energy": 0.0,
+   "fa_silent": 0.0,
+   "examples_miss_silent": [
+    [
+     39.3,
+     40.36
+    ],
+    [
+     79.02,
+     79.64
+    ],
+    [
+     70.15,
+     70.42
+    ]
+   ],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__02340",
+   "ref": 53.63,
+   "miss": 0.13,
+   "fa": 0.81,
+   "miss_silent": 0.08,
+   "fa_energy": 0.61,
+   "miss_energy": 0.05,
+   "fa_silent": 0.2,
+   "examples_miss_silent": [
+    [
+     14.7,
+     14.76
+    ],
+    [
+     32.08,
+     32.1
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.0,
+     0.4
+    ],
+    [
+     12.65,
+     12.78
+    ],
+    [
+     40.14,
+     40.21
+    ],
+    [
+     0.6,
+     0.61
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02359",
+   "ref": 36.15,
+   "miss": 1.78,
+   "fa": 0.32,
+   "miss_silent": 0.39,
+   "fa_energy": 0.27,
+   "miss_energy": 1.39,
+   "fa_silent": 0.05,
+   "examples_miss_silent": [
+    [
+     5.01,
+     5.2
+    ],
+    [
+     10.46,
+     10.59
+    ],
+    [
+     16.37,
+     16.44
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     25.26,
+     25.45
+    ],
+    [
+     35.52,
+     35.6
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02364",
+   "ref": 87.71,
+   "miss": 0.77,
+   "fa": 2.04,
+   "miss_silent": 0.08,
+   "fa_energy": 1.13,
+   "miss_energy": 0.69,
+   "fa_silent": 0.91,
+   "examples_miss_silent": [
+    [
+     77.15,
+     77.2
+    ],
+    [
+     90.2,
+     90.23
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     6.55,
+     7.15
+    ],
+    [
+     5.26,
+     5.5
+    ],
+    [
+     77.69,
+     77.82
+    ],
+    [
+     0.0,
+     0.06
+    ],
+    [
+     29.65,
+     29.69
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02405",
+   "ref": 33.69,
+   "miss": 1.63,
+   "fa": 1.45,
+   "miss_silent": 0.61,
+   "fa_energy": 0.7,
+   "miss_energy": 1.02,
+   "fa_silent": 0.75,
+   "examples_miss_silent": [
+    [
+     3.4,
+     3.59
+    ],
+    [
+     21.83,
+     21.99
+    ],
+    [
+     45.14,
+     45.24
+    ],
+    [
+     45.61,
+     45.69
+    ],
+    [
+     28.19,
+     28.24
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     34.39,
+     34.54
+    ],
+    [
+     32.5,
+     32.65
+    ],
+    [
+     5.12,
+     5.24
+    ],
+    [
+     6.25,
+     6.34
+    ],
+    [
+     7.32,
+     7.38
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02433",
+   "ref": 58.79,
+   "miss": 1.9,
+   "fa": 2.86,
+   "miss_silent": 0.21,
+   "fa_energy": 1.8,
+   "miss_energy": 1.69,
+   "fa_silent": 1.06,
+   "examples_miss_silent": [
+    [
+     48.32,
+     48.4
+    ],
+    [
+     3.91,
+     3.97
+    ],
+    [
+     4.71,
+     4.76
+    ],
+    [
+     6.52,
+     6.54
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     26.43,
+     26.9
+    ],
+    [
+     33.99,
+     34.32
+    ],
+    [
+     28.68,
+     28.88
+    ],
+    [
+     40.06,
+     40.25
+    ],
+    [
+     16.65,
+     16.8
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02451",
+   "ref": 28.45,
+   "miss": 1.16,
+   "fa": 1.2,
+   "miss_silent": 0.51,
+   "fa_energy": 0.73,
+   "miss_energy": 0.65,
+   "fa_silent": 0.47,
+   "examples_miss_silent": [
+    [
+     16.74,
+     17.03
+    ],
+    [
+     32.09,
+     32.22
+    ],
+    [
+     27.27,
+     27.32
+    ],
+    [
+     7.68,
+     7.73
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.0,
+     0.27
+    ],
+    [
+     6.51,
+     6.66
+    ],
+    [
+     9.66,
+     9.78
+    ],
+    [
+     2.36,
+     2.46
+    ],
+    [
+     27.63,
+     27.72
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02508",
+   "ref": 403.5,
+   "miss": 39.08,
+   "fa": 16.58,
+   "miss_silent": 10.59,
+   "fa_energy": 6.84,
+   "miss_energy": 28.49,
+   "fa_silent": 9.74,
+   "examples_miss_silent": [
+    [
+     179.49,
+     180.19
+    ],
+    [
+     58.39,
+     58.83
+    ],
+    [
+     505.12,
+     505.54
+    ],
+    [
+     563.6,
+     563.95
+    ],
+    [
+     361.65,
+     361.99
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     161.38,
+     161.75
+    ],
+    [
+     465.36,
+     465.67
+    ],
+    [
+     333.54,
+     333.82
+    ],
+    [
+     336.38,
+     336.62
+    ],
+    [
+     120.0,
+     120.24
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02606",
+   "ref": 53.19,
+   "miss": 0.05,
+   "fa": 4.47,
+   "miss_silent": 0.03,
+   "fa_energy": 0.21,
+   "miss_energy": 0.02,
+   "fa_silent": 4.27,
+   "examples_miss_silent": [
+    [
+     52.56,
+     52.58
+    ],
+    [
+     8.4,
+     8.41
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     26.43,
+     26.56
+    ],
+    [
+     47.03,
+     47.07
+    ],
+    [
+     48.7,
+     48.72
+    ],
+    [
+     22.62,
+     22.63
+    ],
+    [
+     53.27,
+     53.28
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02621",
+   "ref": 127.92,
+   "miss": 5.9,
+   "fa": 5.58,
+   "miss_silent": 2.22,
+   "fa_energy": 1.74,
+   "miss_energy": 3.68,
+   "fa_silent": 3.83,
+   "examples_miss_silent": [
+    [
+     69.55,
+     69.73
+    ],
+    [
+     144.35,
+     144.53
+    ],
+    [
+     45.8,
+     45.97
+    ],
+    [
+     76.9,
+     77.07
+    ],
+    [
+     18.16,
+     18.3
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     49.75,
+     50.18
+    ],
+    [
+     60.89,
+     61.1
+    ],
+    [
+     4.19,
+     4.31
+    ],
+    [
+     51.84,
+     51.92
+    ],
+    [
+     78.25,
+     78.33
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02662",
+   "ref": 70.91,
+   "miss": 4.11,
+   "fa": 7.04,
+   "miss_silent": 1.52,
+   "fa_energy": 2.43,
+   "miss_energy": 2.6,
+   "fa_silent": 4.61,
+   "examples_miss_silent": [
+    [
+     89.21,
+     89.39
+    ],
+    [
+     39.8,
+     39.98
+    ],
+    [
+     69.56,
+     69.71
+    ],
+    [
+     26.5,
+     26.65
+    ],
+    [
+     78.27,
+     78.4
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     41.69,
+     42.06
+    ],
+    [
+     76.82,
+     77.08
+    ],
+    [
+     31.82,
+     32.05
+    ],
+    [
+     51.72,
+     51.93
+    ],
+    [
+     30.43,
+     30.62
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02678",
+   "ref": 728.45,
+   "miss": 49.76,
+   "fa": 2.01,
+   "miss_silent": 28.92,
+   "fa_energy": 1.67,
+   "miss_energy": 20.84,
+   "fa_silent": 0.34,
+   "examples_miss_silent": [
+    [
+     38.23,
+     39.01
+    ],
+    [
+     506.63,
+     507.22
+    ],
+    [
+     529.98,
+     530.54
+    ],
+    [
+     719.99,
+     720.5
+    ],
+    [
+     541.88,
+     542.35
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     727.64,
+     728.4
+    ],
+    [
+     203.63,
+     204.19
+    ],
+    [
+     63.66,
+     63.84
+    ],
+    [
+     1.58,
+     1.72
+    ],
+    [
+     632.65,
+     632.67
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02680",
+   "ref": 87.02,
+   "miss": 1.1,
+   "fa": 0.1,
+   "miss_silent": 0.23,
+   "fa_energy": 0.03,
+   "miss_energy": 0.87,
+   "fa_silent": 0.06,
+   "examples_miss_silent": [
+    [
+     0.16,
+     0.39
+    ],
+    [
+     11.08,
+     11.08
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     87.32,
+     87.35
+    ],
+    [
+     36.45,
+     36.45
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02683",
+   "ref": 23.0,
+   "miss": 1.69,
+   "fa": 0.56,
+   "miss_silent": 0,
+   "fa_energy": 0.08,
+   "miss_energy": 1.69,
+   "fa_silent": 0.48,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     22.25,
+     22.32
+    ],
+    [
+     2.26,
+     2.27
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02722",
+   "ref": 1025.08,
+   "miss": 13.99,
+   "fa": 46.99,
+   "miss_silent": 3.34,
+   "fa_energy": 16.02,
+   "miss_energy": 10.65,
+   "fa_silent": 30.97,
+   "examples_miss_silent": [
+    [
+     63.18,
+     63.89
+    ],
+    [
+     453.88,
+     454.11
+    ],
+    [
+     185.1,
+     185.29
+    ],
+    [
+     309.42,
+     309.59
+    ],
+    [
+     666.71,
+     666.87
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     1068.74,
+     1069.28
+    ],
+    [
+     1076.93,
+     1077.39
+    ],
+    [
+     1078.3,
+     1078.74
+    ],
+    [
+     1000.38,
+     1000.79
+    ],
+    [
+     994.73,
+     995.14
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02743",
+   "ref": 39.62,
+   "miss": 0.38,
+   "fa": 0.47,
+   "miss_silent": 0.02,
+   "fa_energy": 0.02,
+   "miss_energy": 0.36,
+   "fa_silent": 0.45,
+   "examples_miss_silent": [
+    [
+     40.29,
+     40.31
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     39.54,
+     39.55
+    ],
+    [
+     31.54,
+     31.55
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02751",
+   "ref": 37.06,
+   "miss": 0.79,
+   "fa": 0.1,
+   "miss_silent": 0.16,
+   "fa_energy": 0.04,
+   "miss_energy": 0.63,
+   "fa_silent": 0.07,
+   "examples_miss_silent": [
+    [
+     0.0,
+     0.13
+    ],
+    [
+     28.86,
+     28.89
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     36.6,
+     36.63
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02759",
+   "ref": 96.17,
+   "miss": 0.26,
+   "fa": 1.53,
+   "miss_silent": 0.1,
+   "fa_energy": 0.02,
+   "miss_energy": 0.16,
+   "fa_silent": 1.51,
+   "examples_miss_silent": [
+    [
+     83.85,
+     83.91
+    ],
+    [
+     1.48,
+     1.5
+    ],
+    [
+     83.36,
+     83.38
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     58.54,
+     58.56
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02766",
+   "ref": 27.52,
+   "miss": 0.57,
+   "fa": 0.04,
+   "miss_silent": 0.17,
+   "fa_energy": 0,
+   "miss_energy": 0.4,
+   "fa_silent": 0.04,
+   "examples_miss_silent": [
+    [
+     25.89,
+     26.06
+    ]
+   ],
+   "examples_fa_energy": []
+  },
+  {
+   "session_id": "msdwild_en__02817",
+   "ref": 23.98,
+   "miss": 0.08,
+   "fa": 0.07,
+   "miss_silent": 0.08,
+   "fa_energy": 0.03,
+   "miss_energy": 0.0,
+   "fa_silent": 0.04,
+   "examples_miss_silent": [
+    [
+     15.91,
+     15.99
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.0,
+     0.02
+    ],
+    [
+     16.5,
+     16.5
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02830",
+   "ref": 73.83,
+   "miss": 0.19,
+   "fa": 3.77,
+   "miss_silent": 0.01,
+   "fa_energy": 0.84,
+   "miss_energy": 0.18,
+   "fa_silent": 2.93,
+   "examples_miss_silent": [
+    [
+     0.02,
+     0.03
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     76.22,
+     76.86
+    ],
+    [
+     65.97,
+     66.02
+    ],
+    [
+     68.71,
+     68.76
+    ],
+    [
+     43.09,
+     43.13
+    ],
+    [
+     69.13,
+     69.15
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02832",
+   "ref": 60.35,
+   "miss": 0.6,
+   "fa": 0.83,
+   "miss_silent": 0.09,
+   "fa_energy": 0.24,
+   "miss_energy": 0.51,
+   "fa_silent": 0.58,
+   "examples_miss_silent": [
+    [
+     53.28,
+     53.36
+    ],
+    [
+     45.51,
+     45.52
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     60.15,
+     60.23
+    ],
+    [
+     42.94,
+     43.01
+    ],
+    [
+     50.64,
+     50.67
+    ],
+    [
+     2.57,
+     2.6
+    ],
+    [
+     3.89,
+     3.91
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02864",
+   "ref": 58.84,
+   "miss": 3.06,
+   "fa": 2.47,
+   "miss_silent": 1.36,
+   "fa_energy": 1.27,
+   "miss_energy": 1.7,
+   "fa_silent": 1.2,
+   "examples_miss_silent": [
+    [
+     56.77,
+     57.04
+    ],
+    [
+     54.4,
+     54.63
+    ],
+    [
+     56.37,
+     56.58
+    ],
+    [
+     57.48,
+     57.65
+    ],
+    [
+     64.38,
+     64.5
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     5.95,
+     6.22
+    ],
+    [
+     33.49,
+     33.65
+    ],
+    [
+     57.2,
+     57.32
+    ],
+    [
+     6.36,
+     6.47
+    ],
+    [
+     11.21,
+     11.32
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02905",
+   "ref": 17.85,
+   "miss": 0.48,
+   "fa": 0.68,
+   "miss_silent": 0.0,
+   "fa_energy": 0.4,
+   "miss_energy": 0.48,
+   "fa_silent": 0.28,
+   "examples_miss_silent": [
+    [
+     2.41,
+     2.41
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     8.49,
+     8.79
+    ],
+    [
+     9.79,
+     9.83
+    ],
+    [
+     0.17,
+     0.2
+    ],
+    [
+     18.8,
+     18.82
+    ],
+    [
+     1.27,
+     1.28
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02934",
+   "ref": 33.4,
+   "miss": 1.38,
+   "fa": 3.97,
+   "miss_silent": 1.0,
+   "fa_energy": 2.76,
+   "miss_energy": 0.38,
+   "fa_silent": 1.21,
+   "examples_miss_silent": [
+    [
+     38.74,
+     39.01
+    ],
+    [
+     8.56,
+     8.77
+    ],
+    [
+     16.05,
+     16.25
+    ],
+    [
+     11.76,
+     11.88
+    ],
+    [
+     15.7,
+     15.81
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     35.69,
+     36.57
+    ],
+    [
+     3.11,
+     3.58
+    ],
+    [
+     36.92,
+     37.34
+    ],
+    [
+     2.11,
+     2.42
+    ],
+    [
+     11.08,
+     11.34
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02942",
+   "ref": 38.44,
+   "miss": 2.58,
+   "fa": 0.18,
+   "miss_silent": 1.15,
+   "fa_energy": 0.01,
+   "miss_energy": 1.43,
+   "fa_silent": 0.17,
+   "examples_miss_silent": [
+    [
+     28.64,
+     28.95
+    ],
+    [
+     35.32,
+     35.58
+    ],
+    [
+     13.13,
+     13.35
+    ],
+    [
+     26.71,
+     26.86
+    ],
+    [
+     14.15,
+     14.28
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     18.28,
+     18.28
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02967",
+   "ref": 51.2,
+   "miss": 1.97,
+   "fa": 2.13,
+   "miss_silent": 0.79,
+   "fa_energy": 0.98,
+   "miss_energy": 1.18,
+   "fa_silent": 1.16,
+   "examples_miss_silent": [
+    [
+     25.3,
+     25.49
+    ],
+    [
+     32.31,
+     32.45
+    ],
+    [
+     32.97,
+     33.09
+    ],
+    [
+     51.67,
+     51.78
+    ],
+    [
+     43.47,
+     43.57
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     33.83,
+     34.14
+    ],
+    [
+     35.76,
+     35.98
+    ],
+    [
+     18.88,
+     19.03
+    ],
+    [
+     39.3,
+     39.43
+    ],
+    [
+     49.76,
+     49.84
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02976",
+   "ref": 71.04,
+   "miss": 0.85,
+   "fa": 6.94,
+   "miss_silent": 0.31,
+   "fa_energy": 2.56,
+   "miss_energy": 0.54,
+   "fa_silent": 4.38,
+   "examples_miss_silent": [
+    [
+     82.26,
+     82.45
+    ],
+    [
+     61.6,
+     61.66
+    ],
+    [
+     44.94,
+     44.97
+    ],
+    [
+     48.38,
+     48.4
+    ],
+    [
+     47.5,
+     47.51
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     68.28,
+     68.71
+    ],
+    [
+     73.25,
+     73.51
+    ],
+    [
+     64.48,
+     64.69
+    ],
+    [
+     81.13,
+     81.32
+    ],
+    [
+     9.6,
+     9.78
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02994",
+   "ref": 46.93,
+   "miss": 0.95,
+   "fa": 1.24,
+   "miss_silent": 0.27,
+   "fa_energy": 0.44,
+   "miss_energy": 0.68,
+   "fa_silent": 0.8,
+   "examples_miss_silent": [
+    [
+     49.32,
+     49.46
+    ],
+    [
+     42.91,
+     43.04
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     46.91,
+     47.11
+    ],
+    [
+     48.17,
+     48.28
+    ],
+    [
+     0.0,
+     0.06
+    ],
+    [
+     20.46,
+     20.49
+    ],
+    [
+     39.28,
+     39.3
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__03014",
+   "ref": 19.0,
+   "miss": 0.46,
+   "fa": 0.5,
+   "miss_silent": 0.13,
+   "fa_energy": 0.22,
+   "miss_energy": 0.33,
+   "fa_silent": 0.28,
+   "examples_miss_silent": [
+    [
+     13.03,
+     13.12
+    ],
+    [
+     15.13,
+     15.17
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     16.83,
+     16.91
+    ],
+    [
+     8.96,
+     9.03
+    ],
+    [
+     16.78,
+     16.82
+    ],
+    [
+     14.4,
+     14.42
+    ],
+    [
+     20.07,
+     20.08
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__03135",
+   "ref": 47.15,
+   "miss": 0.66,
+   "fa": 0.94,
+   "miss_silent": 0.32,
+   "fa_energy": 0.4,
+   "miss_energy": 0.34,
+   "fa_silent": 0.54,
+   "examples_miss_silent": [
+    [
+     22.74,
+     22.82
+    ],
+    [
+     8.56,
+     8.63
+    ],
+    [
+     49.11,
+     49.18
+    ],
+    [
+     5.18,
+     5.23
+    ],
+    [
+     8.84,
+     8.88
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     40.57,
+     40.88
+    ],
+    [
+     4.74,
+     4.82
+    ],
+    [
+     23.04,
+     23.05
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00128",
+   "ref": 26.91,
+   "miss": 1.07,
+   "fa": 1.78,
+   "miss_silent": 0.19,
+   "fa_energy": 1.02,
+   "miss_energy": 0.88,
+   "fa_silent": 0.76,
+   "examples_miss_silent": [
+    [
+     0.03,
+     0.09
+    ],
+    [
+     13.61,
+     13.64
+    ],
+    [
+     3.52,
+     3.55
+    ],
+    [
+     16.71,
+     16.74
+    ],
+    [
+     32.16,
+     32.18
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     30.75,
+     30.96
+    ],
+    [
+     2.08,
+     2.2
+    ],
+    [
+     29.37,
+     29.46
+    ],
+    [
+     15.17,
+     15.26
+    ],
+    [
+     0.87,
+     0.95
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00206",
+   "ref": 1059.97,
+   "miss": 107.81,
+   "fa": 20.08,
+   "miss_silent": 64.96,
+   "fa_energy": 14.82,
+   "miss_energy": 42.84,
+   "fa_silent": 5.26,
+   "examples_miss_silent": [
+    [
+     307.46,
+     308.12
+    ],
+    [
+     380.34,
+     380.99
+    ],
+    [
+     506.75,
+     507.37
+    ],
+    [
+     1053.09,
+     1053.7
+    ],
+    [
+     421.18,
+     421.78
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     1084.21,
+     1087.86
+    ],
+    [
+     610.56,
+     612.69
+    ],
+    [
+     613.41,
+     614.28
+    ],
+    [
+     1004.08,
+     1004.81
+    ],
+    [
+     971.61,
+     972.3
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00443",
+   "ref": 27.62,
+   "miss": 1.38,
+   "fa": 3.57,
+   "miss_silent": 0.55,
+   "fa_energy": 1.29,
+   "miss_energy": 0.83,
+   "fa_silent": 2.29,
+   "examples_miss_silent": [
+    [
+     28.82,
+     29.0
+    ],
+    [
+     0.6,
+     0.73
+    ],
+    [
+     18.72,
+     18.84
+    ],
+    [
+     11.13,
+     11.19
+    ],
+    [
+     29.55,
+     29.58
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     22.95,
+     23.34
+    ],
+    [
+     24.34,
+     24.6
+    ],
+    [
+     27.15,
+     27.37
+    ],
+    [
+     33.05,
+     33.15
+    ],
+    [
+     14.95,
+     15.04
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00600",
+   "ref": 27.11,
+   "miss": 2.97,
+   "fa": 0.63,
+   "miss_silent": 1.29,
+   "fa_energy": 0.13,
+   "miss_energy": 1.68,
+   "fa_silent": 0.49,
+   "examples_miss_silent": [
+    [
+     13.54,
+     13.75
+    ],
+    [
+     3.04,
+     3.22
+    ],
+    [
+     4.93,
+     5.09
+    ],
+    [
+     15.47,
+     15.62
+    ],
+    [
+     18.84,
+     18.97
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.0,
+     11.1
+    ],
+    [
+     1.39,
+     1.43
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00692",
+   "ref": 20.23,
+   "miss": 2.5,
+   "fa": 0.9,
+   "miss_silent": 0.68,
+   "fa_energy": 0.51,
+   "miss_energy": 1.82,
+   "fa_silent": 0.39,
+   "examples_miss_silent": [
+    [
+     20.6,
+     20.82
+    ],
+    [
+     22.05,
+     22.21
+    ],
+    [
+     0.0,
+     0.16
+    ],
+    [
+     19.99,
+     20.06
+    ],
+    [
+     15.61,
+     15.68
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     18.9,
+     19.13
+    ],
+    [
+     21.57,
+     21.71
+    ],
+    [
+     11.45,
+     11.54
+    ],
+    [
+     4.13,
+     4.18
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00721",
+   "ref": 110.3,
+   "miss": 5.8,
+   "fa": 2.17,
+   "miss_silent": 2.49,
+   "fa_energy": 0.77,
+   "miss_energy": 3.31,
+   "fa_silent": 1.4,
+   "examples_miss_silent": [
+    [
+     10.88,
+     11.36
+    ],
+    [
+     13.83,
+     14.1
+    ],
+    [
+     13.26,
+     13.51
+    ],
+    [
+     27.61,
+     27.85
+    ],
+    [
+     19.06,
+     19.27
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     46.57,
+     46.71
+    ],
+    [
+     20.05,
+     20.18
+    ],
+    [
+     24.32,
+     24.41
+    ],
+    [
+     72.39,
+     72.48
+    ],
+    [
+     100.73,
+     100.81
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00746",
+   "ref": 21.36,
+   "miss": 1.46,
+   "fa": 1.1,
+   "miss_silent": 0.42,
+   "fa_energy": 0.41,
+   "miss_energy": 1.04,
+   "fa_silent": 0.69,
+   "examples_miss_silent": [
+    [
+     21.25,
+     21.55
+    ],
+    [
+     25.66,
+     25.74
+    ],
+    [
+     19.24,
+     19.28
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     20.98,
+     21.12
+    ],
+    [
+     20.12,
+     20.19
+    ],
+    [
+     1.46,
+     1.52
+    ],
+    [
+     22.35,
+     22.41
+    ],
+    [
+     13.21,
+     13.26
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00760",
+   "ref": 31.75,
+   "miss": 3.11,
+   "fa": 2.29,
+   "miss_silent": 1.38,
+   "fa_energy": 1.51,
+   "miss_energy": 1.73,
+   "fa_silent": 0.79,
+   "examples_miss_silent": [
+    [
+     28.33,
+     28.61
+    ],
+    [
+     27.73,
+     28.01
+    ],
+    [
+     36.29,
+     36.56
+    ],
+    [
+     0.02,
+     0.22
+    ],
+    [
+     21.69,
+     21.82
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     9.71,
+     10.19
+    ],
+    [
+     22.12,
+     22.42
+    ],
+    [
+     2.16,
+     2.42
+    ],
+    [
+     25.91,
+     26.0
+    ],
+    [
+     18.28,
+     18.36
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00776",
+   "ref": 32.53,
+   "miss": 2.44,
+   "fa": 0.88,
+   "miss_silent": 1.48,
+   "fa_energy": 0.34,
+   "miss_energy": 0.96,
+   "fa_silent": 0.54,
+   "examples_miss_silent": [
+    [
+     2.71,
+     3.05
+    ],
+    [
+     6.4,
+     6.71
+    ],
+    [
+     4.84,
+     5.05
+    ],
+    [
+     33.1,
+     33.24
+    ],
+    [
+     24.59,
+     24.73
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     12.44,
+     12.58
+    ],
+    [
+     7.33,
+     7.42
+    ],
+    [
+     19.61,
+     19.67
+    ],
+    [
+     18.88,
+     18.9
+    ],
+    [
+     7.15,
+     7.16
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00777",
+   "ref": 21.98,
+   "miss": 1.3,
+   "fa": 0.85,
+   "miss_silent": 0.71,
+   "fa_energy": 0.53,
+   "miss_energy": 0.59,
+   "fa_silent": 0.32,
+   "examples_miss_silent": [
+    [
+     1.94,
+     2.16
+    ],
+    [
+     0.82,
+     1.02
+    ],
+    [
+     6.0,
+     6.17
+    ],
+    [
+     10.94,
+     11.06
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.17,
+     11.29
+    ],
+    [
+     3.72,
+     3.84
+    ],
+    [
+     3.37,
+     3.48
+    ],
+    [
+     10.03,
+     10.12
+    ],
+    [
+     22.99,
+     23.05
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00906",
+   "ref": 18.66,
+   "miss": 8.24,
+   "fa": 0.48,
+   "miss_silent": 0.42,
+   "fa_energy": 0.01,
+   "miss_energy": 7.82,
+   "fa_silent": 0.47,
+   "examples_miss_silent": [
+    [
+     2.57,
+     2.76
+    ],
+    [
+     16.86,
+     16.98
+    ],
+    [
+     22.94,
+     22.98
+    ],
+    [
+     4.8,
+     4.83
+    ],
+    [
+     0.0,
+     0.03
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     13.4,
+     13.41
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00913",
+   "ref": 21.9,
+   "miss": 0.44,
+   "fa": 0.34,
+   "miss_silent": 0,
+   "fa_energy": 0.04,
+   "miss_energy": 0.44,
+   "fa_silent": 0.3,
+   "examples_miss_silent": [],
+   "examples_fa_energy": [
+    [
+     19.17,
+     19.2
+    ],
+    [
+     6.16,
+     6.17
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__00938",
+   "ref": 86.76,
+   "miss": 15.44,
+   "fa": 2.62,
+   "miss_silent": 3.65,
+   "fa_energy": 1.52,
+   "miss_energy": 11.79,
+   "fa_silent": 1.1,
+   "examples_miss_silent": [
+    [
+     52.59,
+     52.97
+    ],
+    [
+     3.16,
+     3.52
+    ],
+    [
+     24.25,
+     24.58
+    ],
+    [
+     17.59,
+     17.89
+    ],
+    [
+     11.33,
+     11.62
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     31.05,
+     31.6
+    ],
+    [
+     13.02,
+     13.55
+    ],
+    [
+     61.91,
+     62.0
+    ],
+    [
+     31.76,
+     31.83
+    ],
+    [
+     35.93,
+     36.0
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01008",
+   "ref": 19.62,
+   "miss": 0.42,
+   "fa": 0.63,
+   "miss_silent": 0.08,
+   "fa_energy": 0.38,
+   "miss_energy": 0.35,
+   "fa_silent": 0.25,
+   "examples_miss_silent": [
+    [
+     12.69,
+     12.75
+    ],
+    [
+     6.33,
+     6.35
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     7.46,
+     7.76
+    ],
+    [
+     0.0,
+     0.04
+    ],
+    [
+     11.4,
+     11.43
+    ],
+    [
+     22.77,
+     22.78
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01039",
+   "ref": 35.55,
+   "miss": 6.15,
+   "fa": 0.03,
+   "miss_silent": 0.58,
+   "fa_energy": 0.03,
+   "miss_energy": 5.57,
+   "fa_silent": 0.01,
+   "examples_miss_silent": [
+    [
+     32.48,
+     32.75
+    ],
+    [
+     15.72,
+     15.81
+    ],
+    [
+     32.38,
+     32.46
+    ],
+    [
+     10.11,
+     10.15
+    ],
+    [
+     24.41,
+     24.44
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     13.64,
+     13.66
+    ],
+    [
+     25.03,
+     25.04
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01097",
+   "ref": 31.58,
+   "miss": 4.81,
+   "fa": 3.45,
+   "miss_silent": 1.62,
+   "fa_energy": 2.44,
+   "miss_energy": 3.2,
+   "fa_silent": 1.01,
+   "examples_miss_silent": [
+    [
+     26.08,
+     26.58
+    ],
+    [
+     29.29,
+     29.64
+    ],
+    [
+     2.59,
+     2.8
+    ],
+    [
+     18.42,
+     18.62
+    ],
+    [
+     3.04,
+     3.13
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     1.3,
+     2.0
+    ],
+    [
+     33.36,
+     34.0
+    ],
+    [
+     34.67,
+     35.12
+    ],
+    [
+     6.58,
+     6.75
+    ],
+    [
+     15.12,
+     15.26
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01104",
+   "ref": 78.49,
+   "miss": 6.28,
+   "fa": 2.33,
+   "miss_silent": 0.99,
+   "fa_energy": 1.22,
+   "miss_energy": 5.29,
+   "fa_silent": 1.11,
+   "examples_miss_silent": [
+    [
+     63.15,
+     63.49
+    ],
+    [
+     13.72,
+     13.88
+    ],
+    [
+     79.79,
+     79.92
+    ],
+    [
+     15.6,
+     15.69
+    ],
+    [
+     54.46,
+     54.54
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     28.19,
+     28.37
+    ],
+    [
+     64.0,
+     64.18
+    ],
+    [
+     9.12,
+     9.25
+    ],
+    [
+     34.14,
+     34.25
+    ],
+    [
+     76.03,
+     76.14
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01151",
+   "ref": 1084.06,
+   "miss": 164.11,
+   "fa": 8.14,
+   "miss_silent": 69.51,
+   "fa_energy": 4.93,
+   "miss_energy": 94.59,
+   "fa_silent": 3.21,
+   "examples_miss_silent": [
+    [
+     519.64,
+     520.61
+    ],
+    [
+     6.93,
+     7.66
+    ],
+    [
+     479.8,
+     480.46
+    ],
+    [
+     920.74,
+     921.39
+    ],
+    [
+     393.21,
+     393.85
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     236.98,
+     237.93
+    ],
+    [
+     841.78,
+     842.35
+    ],
+    [
+     1045.91,
+     1046.32
+    ],
+    [
+     1149.78,
+     1150.1
+    ],
+    [
+     846.52,
+     846.82
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01242",
+   "ref": 88.09,
+   "miss": 6.03,
+   "fa": 2.8,
+   "miss_silent": 2.38,
+   "fa_energy": 2.16,
+   "miss_energy": 3.65,
+   "fa_silent": 0.63,
+   "examples_miss_silent": [
+    [
+     54.02,
+     54.29
+    ],
+    [
+     75.62,
+     75.87
+    ],
+    [
+     71.68,
+     71.88
+    ],
+    [
+     62.36,
+     62.56
+    ],
+    [
+     78.68,
+     78.85
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     59.76,
+     60.61
+    ],
+    [
+     51.68,
+     51.85
+    ],
+    [
+     9.61,
+     9.76
+    ],
+    [
+     12.21,
+     12.32
+    ],
+    [
+     63.44,
+     63.54
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01247",
+   "ref": 23.8,
+   "miss": 0.55,
+   "fa": 0.21,
+   "miss_silent": 0.1,
+   "fa_energy": 0.1,
+   "miss_energy": 0.44,
+   "fa_silent": 0.11,
+   "examples_miss_silent": [
+    [
+     2.56,
+     2.62
+    ],
+    [
+     24.13,
+     24.17
+    ],
+    [
+     4.61,
+     4.62
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     11.17,
+     11.24
+    ],
+    [
+     2.92,
+     2.94
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01491",
+   "ref": 37.53,
+   "miss": 0.15,
+   "fa": 1.42,
+   "miss_silent": 0.12,
+   "fa_energy": 0.27,
+   "miss_energy": 0.03,
+   "fa_silent": 1.14,
+   "examples_miss_silent": [
+    [
+     20.55,
+     20.61
+    ],
+    [
+     17.41,
+     17.47
+    ],
+    [
+     18.41,
+     18.41
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     40.92,
+     41.17
+    ],
+    [
+     25.74,
+     25.77
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01554",
+   "ref": 18.81,
+   "miss": 2.64,
+   "fa": 0.44,
+   "miss_silent": 0.72,
+   "fa_energy": 0.26,
+   "miss_energy": 1.92,
+   "fa_silent": 0.18,
+   "examples_miss_silent": [
+    [
+     20.17,
+     20.71
+    ],
+    [
+     19.71,
+     19.89
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     10.86,
+     10.98
+    ],
+    [
+     10.67,
+     10.74
+    ],
+    [
+     11.72,
+     11.78
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01596",
+   "ref": 46.03,
+   "miss": 5.59,
+   "fa": 0.52,
+   "miss_silent": 3.78,
+   "fa_energy": 0.42,
+   "miss_energy": 1.81,
+   "fa_silent": 0.1,
+   "examples_miss_silent": [
+    [
+     40.1,
+     41.03
+    ],
+    [
+     15.4,
+     15.82
+    ],
+    [
+     23.9,
+     24.31
+    ],
+    [
+     26.79,
+     27.1
+    ],
+    [
+     11.28,
+     11.57
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     54.34,
+     54.47
+    ],
+    [
+     7.74,
+     7.86
+    ],
+    [
+     47.5,
+     47.56
+    ],
+    [
+     10.63,
+     10.68
+    ],
+    [
+     5.5,
+     5.53
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__01662",
+   "ref": 49.05,
+   "miss": 6.41,
+   "fa": 1.55,
+   "miss_silent": 2.63,
+   "fa_energy": 0.63,
+   "miss_energy": 3.79,
+   "fa_silent": 0.93,
+   "examples_miss_silent": [
+    [
+     19.66,
+     20.09
+    ],
+    [
+     34.2,
+     34.53
+    ],
+    [
+     27.35,
+     27.62
+    ],
+    [
+     26.12,
+     26.33
+    ],
+    [
+     6.09,
+     6.28
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     4.0,
+     4.21
+    ],
+    [
+     21.33,
+     21.52
+    ],
+    [
+     3.8,
+     3.94
+    ],
+    [
+     37.96,
+     38.03
+    ],
+    [
+     31.6,
+     31.62
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02130",
+   "ref": 33.14,
+   "miss": 1.09,
+   "fa": 2.26,
+   "miss_silent": 0.41,
+   "fa_energy": 1.36,
+   "miss_energy": 0.67,
+   "fa_silent": 0.89,
+   "examples_miss_silent": [
+    [
+     5.88,
+     6.11
+    ],
+    [
+     18.04,
+     18.21
+    ],
+    [
+     11.71,
+     11.73
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     10.25,
+     10.64
+    ],
+    [
+     4.44,
+     4.69
+    ],
+    [
+     9.73,
+     9.9
+    ],
+    [
+     33.67,
+     33.82
+    ],
+    [
+     24.19,
+     24.28
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02311",
+   "ref": 35.0,
+   "miss": 5.67,
+   "fa": 3.4,
+   "miss_silent": 2.22,
+   "fa_energy": 2.82,
+   "miss_energy": 3.45,
+   "fa_silent": 0.57,
+   "examples_miss_silent": [
+    [
+     30.37,
+     31.5
+    ],
+    [
+     29.56,
+     29.83
+    ],
+    [
+     15.64,
+     15.78
+    ],
+    [
+     37.24,
+     37.37
+    ],
+    [
+     36.1,
+     36.22
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     1.46,
+     2.72
+    ],
+    [
+     10.07,
+     10.75
+    ],
+    [
+     9.45,
+     9.84
+    ],
+    [
+     51.27,
+     51.45
+    ],
+    [
+     4.59,
+     4.74
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02339",
+   "ref": 23.67,
+   "miss": 0.64,
+   "fa": 3.57,
+   "miss_silent": 0.15,
+   "fa_energy": 1.88,
+   "miss_energy": 0.49,
+   "fa_silent": 1.68,
+   "examples_miss_silent": [
+    [
+     8.88,
+     8.98
+    ],
+    [
+     7.26,
+     7.29
+    ],
+    [
+     26.93,
+     26.95
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.08,
+     0.63
+    ],
+    [
+     24.56,
+     24.9
+    ],
+    [
+     18.79,
+     18.95
+    ],
+    [
+     20.99,
+     21.09
+    ],
+    [
+     10.74,
+     10.84
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02646",
+   "ref": 52.06,
+   "miss": 5.4,
+   "fa": 3.79,
+   "miss_silent": 2.9,
+   "fa_energy": 2.33,
+   "miss_energy": 2.51,
+   "fa_silent": 1.46,
+   "examples_miss_silent": [
+    [
+     5.99,
+     6.34
+    ],
+    [
+     20.3,
+     20.61
+    ],
+    [
+     52.89,
+     53.18
+    ],
+    [
+     59.9,
+     60.15
+    ],
+    [
+     14.98,
+     15.2
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     63.32,
+     64.87
+    ],
+    [
+     68.28,
+     68.48
+    ],
+    [
+     54.12,
+     54.24
+    ],
+    [
+     54.89,
+     54.98
+    ],
+    [
+     33.64,
+     33.72
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02709",
+   "ref": 20.63,
+   "miss": 2.4,
+   "fa": 0.38,
+   "miss_silent": 0.42,
+   "fa_energy": 0.32,
+   "miss_energy": 1.98,
+   "fa_silent": 0.06,
+   "examples_miss_silent": [
+    [
+     13.66,
+     13.79
+    ],
+    [
+     16.79,
+     16.88
+    ],
+    [
+     18.28,
+     18.37
+    ],
+    [
+     22.3,
+     22.36
+    ],
+    [
+     20.52,
+     20.57
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     5.71,
+     5.88
+    ],
+    [
+     14.65,
+     14.74
+    ],
+    [
+     11.99,
+     12.02
+    ],
+    [
+     14.41,
+     14.44
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02712",
+   "ref": 19.15,
+   "miss": 0.47,
+   "fa": 0.9,
+   "miss_silent": 0.06,
+   "fa_energy": 0.78,
+   "miss_energy": 0.41,
+   "fa_silent": 0.12,
+   "examples_miss_silent": [
+    [
+     16.7,
+     16.76
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     15.26,
+     15.68
+    ],
+    [
+     9.12,
+     9.44
+    ],
+    [
+     16.22,
+     16.25
+    ],
+    [
+     0.12,
+     0.13
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02808",
+   "ref": 102.52,
+   "miss": 5.9,
+   "fa": 1.1,
+   "miss_silent": 0.7,
+   "fa_energy": 0.81,
+   "miss_energy": 5.21,
+   "fa_silent": 0.3,
+   "examples_miss_silent": [
+    [
+     40.93,
+     41.1
+    ],
+    [
+     21.05,
+     21.17
+    ],
+    [
+     100.19,
+     100.29
+    ],
+    [
+     44.16,
+     44.24
+    ],
+    [
+     33.64,
+     33.72
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     0.95,
+     1.3
+    ],
+    [
+     37.41,
+     37.52
+    ],
+    [
+     77.32,
+     77.4
+    ],
+    [
+     67.48,
+     67.54
+    ],
+    [
+     74.84,
+     74.88
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02825",
+   "ref": 74.91,
+   "miss": 3.76,
+   "fa": 3.63,
+   "miss_silent": 2.95,
+   "fa_energy": 1.16,
+   "miss_energy": 0.81,
+   "fa_silent": 2.47,
+   "examples_miss_silent": [
+    [
+     49.76,
+     50.26
+    ],
+    [
+     66.87,
+     67.29
+    ],
+    [
+     89.59,
+     90.01
+    ],
+    [
+     27.34,
+     27.74
+    ],
+    [
+     44.65,
+     45.01
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     47.25,
+     47.51
+    ],
+    [
+     87.31,
+     87.43
+    ],
+    [
+     73.09,
+     73.2
+    ],
+    [
+     72.81,
+     72.91
+    ],
+    [
+     55.65,
+     55.74
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02895",
+   "ref": 18.94,
+   "miss": 7.39,
+   "fa": 0.62,
+   "miss_silent": 0.86,
+   "fa_energy": 0.14,
+   "miss_energy": 6.53,
+   "fa_silent": 0.48,
+   "examples_miss_silent": [
+    [
+     17.65,
+     17.88
+    ],
+    [
+     21.46,
+     21.67
+    ],
+    [
+     16.02,
+     16.2
+    ],
+    [
+     15.05,
+     15.18
+    ],
+    [
+     14.4,
+     14.48
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     10.59,
+     10.68
+    ],
+    [
+     19.0,
+     19.04
+    ],
+    [
+     13.3,
+     13.31
+    ],
+    [
+     0.35,
+     0.36
+    ],
+    [
+     17.4,
+     17.4
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02904",
+   "ref": 96.07,
+   "miss": 16.89,
+   "fa": 5.6,
+   "miss_silent": 4.9,
+   "fa_energy": 4.34,
+   "miss_energy": 11.99,
+   "fa_silent": 1.25,
+   "examples_miss_silent": [
+    [
+     82.25,
+     82.75
+    ],
+    [
+     104.2,
+     104.55
+    ],
+    [
+     60.9,
+     61.16
+    ],
+    [
+     111.77,
+     111.99
+    ],
+    [
+     62.34,
+     62.56
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     27.17,
+     28.5
+    ],
+    [
+     96.57,
+     97.57
+    ],
+    [
+     108.97,
+     109.72
+    ],
+    [
+     22.77,
+     23.24
+    ],
+    [
+     29.44,
+     29.89
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__02913",
+   "ref": 27.54,
+   "miss": 1.74,
+   "fa": 3.81,
+   "miss_silent": 1.27,
+   "fa_energy": 1.98,
+   "miss_energy": 0.47,
+   "fa_silent": 1.84,
+   "examples_miss_silent": [
+    [
+     0.06,
+     0.86
+    ],
+    [
+     10.66,
+     10.79
+    ],
+    [
+     23.71,
+     23.82
+    ],
+    [
+     5.95,
+     6.06
+    ],
+    [
+     21.85,
+     21.89
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     23.93,
+     24.32
+    ],
+    [
+     28.68,
+     29.02
+    ],
+    [
+     24.51,
+     24.66
+    ],
+    [
+     24.98,
+     25.13
+    ],
+    [
+     4.75,
+     4.9
+    ]
+   ]
+  },
+  {
+   "session_id": "msdwild_en__03141",
+   "ref": 54.61,
+   "miss": 2.73,
+   "fa": 1.58,
+   "miss_silent": 0.51,
+   "fa_energy": 0.75,
+   "miss_energy": 2.22,
+   "fa_silent": 0.83,
+   "examples_miss_silent": [
+    [
+     51.21,
+     51.4
+    ],
+    [
+     59.45,
+     59.55
+    ],
+    [
+     53.1,
+     53.18
+    ],
+    [
+     58.73,
+     58.78
+    ],
+    [
+     56.18,
+     56.23
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     22.69,
+     22.82
+    ],
+    [
+     34.09,
+     34.22
+    ],
+    [
+     58.02,
+     58.15
+    ],
+    [
+     53.47,
+     53.59
+    ],
+    [
+     31.23,
+     31.28
+    ]
+   ]
+  }
+ ]
+}

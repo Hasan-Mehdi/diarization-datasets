@@ -1,0 +1,370 @@
+{
+ "dataset": "earnings21",
+ "view": "default",
+ "regions_checked": 40,
+ "regions": [
+  {
+   "session_id": "earnings21__4368670",
+   "start": 1008.95,
+   "end": 1012.15,
+   "dur": 3.2,
+   "whisper": "this was due to timing effects from hatching activities",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4394084",
+   "start": 1706.7,
+   "end": 1709.69,
+   "dur": 2.99,
+   "whisper": "He missed your dad. He was always fun. He's a good guy.",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4346923",
+   "start": 1647.68,
+   "end": 1650.62,
+   "dur": 2.94,
+   "whisper": "I didn't hear the second part of the question.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4384964",
+   "start": 1649.75,
+   "end": 1652.51,
+   "dur": 2.76,
+   "whisper": "There are other elements at work here on the offshore wind",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4384964",
+   "start": 2522.17,
+   "end": 2524.88,
+   "dur": 2.71,
+   "whisper": "consider what our capital forecasts are and what",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4360366",
+   "start": 1135.41,
+   "end": 1137.99,
+   "dur": 2.58,
+   "whisper": "reflected in the private equity and hedge fund results",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4375653",
+   "start": 1779.83,
+   "end": 1782.4,
+   "dur": 2.57,
+   "whisper": "develop the applications in our sequencers and consumables.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4384964",
+   "start": 1904.21,
+   "end": 1906.75,
+   "dur": 2.54,
+   "whisper": "that work best for customers. We've also engaged",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4368670",
+   "start": 2201.79,
+   "end": 2204.28,
+   "dur": 2.49,
+   "whisper": "What's to the table? I mean, the market growth is there.",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4346923",
+   "start": 3438.51,
+   "end": 3440.99,
+   "dur": 2.48,
+   "whisper": "value proposition for the research",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4346923",
+   "start": 4078.6,
+   "end": 4081.01,
+   "dur": 2.41,
+   "whisper": "in the population regions is always more",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4375653",
+   "start": 1454.66,
+   "end": 1456.99,
+   "dur": 2.33,
+   "whisper": "By 2014, when we delivered the industry",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4374910",
+   "start": 1837.24,
+   "end": 1839.57,
+   "dur": 2.33,
+   "whisper": "our joint customer base, and that's what we've done.",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4346923",
+   "start": 1489.82,
+   "end": 1492.07,
+   "dur": 2.25,
+   "whisper": "and the impact of COVID-19",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4346923",
+   "start": 4095.98,
+   "end": 4098.2,
+   "dur": 2.22,
+   "whisper": "as we go because the local and state government",
+   "words": 9,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4360366",
+   "start": 1001.98,
+   "end": 1004.19,
+   "dur": 2.21,
+   "whisper": "first and second quarters are still sitting",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4368670",
+   "start": 803.11,
+   "end": 805.28,
+   "dur": 2.17,
+   "whisper": "to medium double-digit million euros.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4384964",
+   "start": 3883.86,
+   "end": 3885.98,
+   "dur": 2.12,
+   "whisper": "growing that business in a way that provides",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4384964",
+   "start": 3090.21,
+   "end": 3092.32,
+   "dur": 2.11,
+   "whisper": "uh... contract for for more of that but",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4394084",
+   "start": 1689.3,
+   "end": 1691.38,
+   "dur": 2.08,
+   "whisper": "And yet we continue to look at it.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4374910",
+   "start": 499.05,
+   "end": 501.06,
+   "dur": 2.01,
+   "whisper": "continued to gain share during this crisis.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4394084",
+   "start": 1652.05,
+   "end": 1653.98,
+   "dur": 1.93,
+   "whisper": "We have no interest in doing that anymore.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4375653",
+   "start": 2675.42,
+   "end": 2677.34,
+   "dur": 1.92,
+   "whisper": "how that's slowly been building.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4360366",
+   "start": 3033.76,
+   "end": 3035.68,
+   "dur": 1.92,
+   "whisper": "are the two drivers with comp",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4341191",
+   "start": 25.36,
+   "end": 27.26,
+   "dur": 1.9,
+   "whisper": "your communications. You may begin, sir.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4368670",
+   "start": 3310.9,
+   "end": 3312.69,
+   "dur": 1.79,
+   "whisper": "That was in the old days",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4375653",
+   "start": 1941.45,
+   "end": 1943.16,
+   "dur": 1.71,
+   "whisper": "business, but we do know it takes investment",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4394084",
+   "start": 1629.58,
+   "end": 1631.2,
+   "dur": 1.62,
+   "whisper": "But it's a reasonable question.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4375653",
+   "start": 3369.44,
+   "end": 3371.03,
+   "dur": 1.59,
+   "whisper": "A significant single winner will never",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4368670",
+   "start": 2037.34,
+   "end": 2038.88,
+   "dur": 1.54,
+   "whisper": "potentially need half of it.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4397829",
+   "start": 3840.83,
+   "end": 3842.33,
+   "dur": 1.5,
+   "whisper": "an update on a",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4384683",
+   "start": 210.52,
+   "end": 211.95,
+   "dur": 1.43,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "earnings21__4374910",
+   "start": 669.44,
+   "end": 670.86,
+   "dur": 1.42,
+   "whisper": "that they took. Right.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4374910",
+   "start": 1387.93,
+   "end": 1389.26,
+   "dur": 1.33,
+   "whisper": "That's the industry rate.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4360366",
+   "start": 1370.28,
+   "end": 1371.61,
+   "dur": 1.33,
+   "whisper": "on an earned basis.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4360366",
+   "start": 1205.79,
+   "end": 1207.11,
+   "dur": 1.32,
+   "whisper": "than two billion dollars",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "earnings21__4341191",
+   "start": 4518.83,
+   "end": 4520.01,
+   "dur": 1.18,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "earnings21__4366302",
+   "start": 3116.18,
+   "end": 3117.33,
+   "dur": 1.15,
+   "whisper": "Uh...",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "earnings21__4394084",
+   "start": 1696.75,
+   "end": 1697.88,
+   "dur": 1.13,
+   "whisper": "Taxation policy.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "earnings21__4360717",
+   "start": 2353.89,
+   "end": 2354.9,
+   "dur": 1.01,
+   "whisper": "Yeah, yeah, yeah.",
+   "words": 3,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 35,
+ "seconds_checked": 80.2,
+ "seconds_with_speech": 74.3
+}

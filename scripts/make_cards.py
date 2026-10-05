@@ -209,7 +209,7 @@ CATALOG = [
     ("easycom", "~22 GB (glasses audio + labels, per-file LFS)", "human VAD per utterance (50 ms frames)", "loudspeaker noise; missing (redacted) minutes"),
     ("msdwild_en", "8.1 GB (all clips)", "human diarization turns", "research-only licence; English by LID; short clips"),
     ("earnings21", "~1.5 GB", "RTTM from human transcripts (timing method undocumented)", "almost no overlap/backchannels"),
-    ("ava_avd_en", "~5 GB (minutes 15-30 of 117 movies via HTTP range)", "human identity turns", "speech in .lab files without speaker label; English by LID"),
+    ("ava_avd_en", "~5 GB (minutes 15-30 of 117 movies via HTTP range)", "human identity turns", "music/effects-heavy audio, many speakers; English by LID"),
     ("sbcsae", "6.2 GB", "intonation units (ms bullets), tiled", "pauses inside units; CC BY-ND (no derived RTTMs shared)"),
     ("callhome_eng", "2.3 GB (HF parquet)", "turn bullets (LDC transcripts via TalkBank)", "loose turns, backchannels incomplete"),
     ("callfriend_eng", "1.2 GB (HF parquet)", "turn bullets (TalkBank)", "tiled bullets, 3,074 same-speaker overlaps"),

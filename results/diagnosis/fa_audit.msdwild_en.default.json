@@ -1,0 +1,100 @@
+{
+ "dataset": "msdwild_en",
+ "view": "default",
+ "regions_checked": 10,
+ "regions": [
+  {
+   "session_id": "msdwild_en__00206",
+   "start": 1084.21,
+   "end": 1087.86,
+   "dur": 3.65,
+   "whisper": "Ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha, ha.",
+   "words": 12,
+   "speech": false
+  },
+  {
+   "session_id": "msdwild_en__01324",
+   "start": 53.58,
+   "end": 55.86,
+   "dur": 2.28,
+   "whisper": "Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha. Ha, ha, ha, ha. Ha, ha, ha. Ha, ha, ha. Ha, ha, ha. Ha, ha, ha. Ha, ha, ha. Ha, ha, ha. Ha, ha. Ha, ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha. Ha, ha.",
+   "words": 222,
+   "speech": false
+  },
+  {
+   "session_id": "msdwild_en__00206",
+   "start": 610.56,
+   "end": 612.69,
+   "dur": 2.13,
+   "whisper": "Ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha",
+   "words": 444,
+   "speech": false
+  },
+  {
+   "session_id": "msdwild_en__02646",
+   "start": 63.32,
+   "end": 64.87,
+   "dur": 1.55,
+   "whisper": "Oh my god.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "msdwild_en__02241",
+   "start": 61.79,
+   "end": 63.34,
+   "dur": 1.55,
+   "whisper": "I love cashews.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "msdwild_en__01211",
+   "start": 161.43,
+   "end": 162.78,
+   "dur": 1.35,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "msdwild_en__02904",
+   "start": 27.17,
+   "end": 28.5,
+   "dur": 1.33,
+   "whisper": "Ha ha ha ha ha ha ha!",
+   "words": 7,
+   "speech": false
+  },
+  {
+   "session_id": "msdwild_en__02311",
+   "start": 1.46,
+   "end": 2.72,
+   "dur": 1.26,
+   "whisper": "Ha ha ha ha ha!",
+   "words": 5,
+   "speech": false
+  },
+  {
+   "session_id": "msdwild_en__01324",
+   "start": 66.16,
+   "end": 67.19,
+   "dur": 1.03,
+   "whisper": "Ha ha ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "msdwild_en__02904",
+   "start": 96.57,
+   "end": 97.57,
+   "dur": 1.0,
+   "whisper": "Okay.",
+   "words": 1,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 2,
+ "seconds_checked": 17.1,
+ "seconds_with_speech": 3.1
+}

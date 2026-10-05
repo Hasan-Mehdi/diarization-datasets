@@ -1,0 +1,55 @@
+{
+ "dataset": "ava_avd_en",
+ "view": "default",
+ "regions_checked": 5,
+ "regions": [
+  {
+   "session_id": "ava_avd_en__HKjR70GCRPE_c_02",
+   "start": 44.52,
+   "end": 48.59,
+   "dur": 4.07,
+   "whisper": "Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't! Don't!",
+   "words": 148,
+   "speech": false
+  },
+  {
+   "session_id": "ava_avd_en__fD6VkIRlIRI_c_03",
+   "start": 248.57,
+   "end": 251.19,
+   "dur": 2.62,
+   "whisper": "Come on! Let's go!",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "ava_avd_en__o4xQ-BEa3Ss_c_02",
+   "start": 242.61,
+   "end": 244.33,
+   "dur": 1.72,
+   "whisper": "Hey, Marie, bring it on.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "ava_avd_en__BCiuXAuCKAU_c_02",
+   "start": 160.6,
+   "end": 161.71,
+   "dur": 1.11,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "ava_avd_en__fD6VkIRlIRI_c_03",
+   "start": 75.34,
+   "end": 76.36,
+   "dur": 1.02,
+   "whisper": "Come on.",
+   "words": 2,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 2,
+ "seconds_checked": 10.5,
+ "seconds_with_speech": 4.3
+}

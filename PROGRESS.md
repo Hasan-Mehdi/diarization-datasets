@@ -77,6 +77,8 @@ Times before 13:27 are approximate (reconstructed from commit times).
 
 - 16:20: reproduction check: AMI test ihm-mix vs forced-aligned reference = 9.22% DER here vs 9.25% on the Nemotron model card (AMI Test MHM, 30.4 s config). AMI SDM: 11.35% here (OpenBench reports 0.11).
 
+- CORRECTION: an earlier note said AVA-AVD's `.lab` files mark speech without speaker labels. Wrong: I misread an unsorted RTTM. Checked on all 351 clips, the labs equal the union of the RTTM segments. Card, recipe and catalog fixed.
+
 ## Skipped / blocked (with reasons)
 
 - (resolved 13:38) CallHome English: HF access works for Hasan's account; being prepared now.

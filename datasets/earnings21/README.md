@@ -77,6 +77,15 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the Earnings-21 numbers: this is mostly a model limit.** DER is 19.5% at collar 0, and **12 points of it
+are speaker confusion**. Only 20% of calls get the right speaker count (mean absolute error 3.5 speakers). Earnings
+calls in this set have 2-20 labelled speakers (median 10; 31 of 44 calls have more than 8), and Nemotron 3
+Diarization outputs **at most 8**: it
+returned 8 speakers on 28 of the 44 calls. Analysts who ask one question each get merged into existing speakers.
+Speech detection is fine (FA 3.6%, miss 4.0%). Earnings-21 is therefore a good test of *many-speaker* long-form
+diarization, which is exactly where 4- and 8-speaker end-to-end models fall short; it is not evidence of bad labels.
+
+
 ## Quality rating
 
 **B-.** Careful human transcripts and speaker labels on long real calls with many speakers (up to ~14). The

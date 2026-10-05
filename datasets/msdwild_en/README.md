@@ -82,6 +82,14 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 _Not run yet._
 <!-- /auto:diagnosis -->
 
+**Reading the MSDWild numbers.** DER is 17.8% at collar 0 on the 150 English validation clips (few.val + many.val).
+Speech detection on its own is good (speaker-agnostic miss 5.5%, FA 2.7%). The rest comes from overlapped speech
+(10% of speech) and speaker confusion (4.4%) in short, lively clips with up to 9 speakers, which is real model
+difficulty. The labels look sound: only 2 of the 10 long audible false alarms contain words. The offset check
+flags 5 of 150 clips, but with tiny gains (2-3 points) at multi-second lags; with clips of a few tens of seconds
+these are most likely chance alignments of turn patterns, not real shifts.
+
+
 ## Quality rating
 
 **B.** Human, diarization-oriented labels with natural overlap in casual, noisy, real-life conversation. Minus:

@@ -9,8 +9,9 @@ Audio: only minutes 15-30 of each movie are fetched (ffmpeg seeks inside the CVD
 Splits: official train / val / test lists.
 UEM: official AVA-AVD protocol - from the first to the last reference segment of the clip (the official scripts
 crop each clip's audio to that extent).
-Extra: the corpus also ships speech-activity ``.lab`` files; speech marked there but not covered by any speaker
-segment is recorded per clip as ``extra.lab_speech_without_speaker_s`` (unlabelled speech).
+Extra: the corpus also ships speech-activity ``.lab`` files. Speech marked there but not covered by any speaker
+segment is recorded per clip as ``extra.lab_speech_without_speaker_s``; it is 0 for every clip (the labs are the
+union of the RTTM segments).
 """
 from __future__ import annotations
 
@@ -47,8 +48,8 @@ META = DatasetMeta(
     default_view="default",
     views={"default": "Movie soundtrack, mono 16 kHz"},
     gt_rating="B-",
-    gt_rating_reason=("Human-labelled identities including off-screen speakers, but labels were built on top of "
-                      "visual active-speaker tracks; some speech marked in the VAD labels has no speaker label."),
+    gt_rating_reason=("Human-labelled identities including off-screen speakers on hard movie audio; built on top of "
+                      "visual active-speaker tracks; scoring region cropped to the labelled extent."),
     choices=["English subset by Whisper large-v3 LID (P(en) >= 0.7 over up to 3 x 30 s windows on reference speech).",
              "Speaker ids: <clip>_<spkNN>.", "UEM: first to last reference segment (official AVA-AVD cropping).",
              "Times shifted so that 0 = start of the 5-minute clip window (900 + 300*(k-1) s into the movie)."],
