@@ -108,7 +108,7 @@ several corpora it changes DER by a factor of two (see the Nemotron section).
 1. **NOTSOFAR-1 eval, `sc` view**: commercial single-channel devices in 30 rooms, the realistic product setting.
 2. **AMI test, `sdm`**: the classic far-field benchmark (MFA reference).
 3. **CHiME-6 eval, `farfield`**: real dinner parties in homes, ~25% overlap, ~32 speaker changes per minute. The
-   hardest free English test. Official forced-aligned reference plus the CHiME-7 UEM.
+   hardest free English conversational test. Official forced-aligned reference plus the CHiME-7 UEM.
 4. DiPCo eval: small and permissive, but its 10-15 s segments overstate speech (use collar 0.25 s).
 
 **Phone / two-speaker**
@@ -116,7 +116,8 @@ several corpora it changes DER by a factor of two (see the Nemotron section).
    Studio audio and task dialogue, so it is easier than real calls.
 2. **CallHome English (TalkBank)**: the classic phone domain. Usable at collar 0.25 s, but some calls have
    unlabelled turns (verified with Whisper), so check `results/diagnosis` and drop the flagged calls.
-3. CallFriend English: ungated, but loose tiled bullets (high DER that is mostly reference error).
+3. CallFriend English: ungated, but loose tiled bullets and verified missing turns (high DER that is mostly
+   reference error).
 4. With a sign-up: MLC-SLM English (~500 h of natural two-speaker mobile conversations).
 
 **Far-field / egocentric / hearing-aid style**
@@ -134,8 +135,8 @@ Ego4D AVD.
 **Medical-like conversations**
 1. **PriMock57 with this repo's channel-activity reference** (`rttm_alt/channel_activity`): the best free English
    doctor-patient audio. The official TextGrids are not diarization-grade ([PRIMOCK57.md](PRIMOCK57.md)).
-2. AfriSpeech-Dialog (African-accented consultations): hand-typed ~1 s timestamps, so only for coarse checks or
-   after re-alignment.
+2. AfriSpeech-Dialog (African-accented consultations): hand-typed timestamps with ~1 s precision that run ~0.45 s
+   early, so only for coarse checks or after re-alignment.
 3. Map Task as a clean two-party proxy for consultation-style turn-taking.
 
 **Training rather than benchmarking**: AMI/ICSI/NOTSOFAR/CHiME-6 train splits; Seamless Interaction (4,000 h of

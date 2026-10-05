@@ -4,10 +4,9 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 16:39 EDT (from the system clock)_
+_Last updated: 2026-10-05 16:47 EDT (from the system clock)_
 
-- **Now doing:** last Nemotron runs (CHiME-6 close-talk + dev, DiPCo, LibriCSS, EasyCom), then diagnosis of those,
-  final card numbers, ratings, README findings, DONE.
+- **Now doing:** the last evaluation (EasyCom), then final card regeneration, DONE marker.
 - **Done:** all 18 datasets prepared, validated and profiled; Nemotron evaluated on 15 of them so far; diagnosis
   tools (energy split, Whisper audit of false alarms, time-offset check) run on most; NeMo cross-check; PRIMOCK57.md.
 - **Headline results (Nemotron 3 Diarization, collar 0 / 0.25 s, primary reference):**
@@ -82,6 +81,8 @@ Times before 13:27 are approximate (reconstructed from commit times).
 - 16:20: reproduction check: AMI test ihm-mix vs forced-aligned reference = 9.22% DER here vs 9.25% on the Nemotron model card (AMI Test MHM, 30.4 s config). AMI SDM: 11.35% here (OpenBench reports 0.11).
 
 - CORRECTION: an earlier note said AVA-AVD's `.lab` files mark speech without speaker labels. Wrong: I misread an unsorted RTTM. Checked on all 351 clips, the labs equal the union of the RTTM segments. Card, recipe and catalog fixed.
+
+- 2026-10-05 16:47: CHiME-6 dev/eval, DiPCo, LibriCSS evaluated and diagnosed; ratings finalized; dataset.json refreshed; README TL;DR + recommendations + findings written; 0 broken links.
 
 ## Skipped / blocked (with reasons)
 
