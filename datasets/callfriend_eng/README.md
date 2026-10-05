@@ -100,8 +100,8 @@ removed) for two-speaker evaluation.
 
 ## Quality rating
 
-**C.** Human turn-level transcription of natural phone calls, but tiled bullets and many same-speaker overlaps
-make boundaries loose. Useful as an ungated, free stand-in for CallHome at collar 0.25 s.
+**C-.** Human turn-level transcription of natural phone calls, but tiled bullets, many same-speaker overlaps,
+verified missing turns and a truncated item. Usable only as a rough, ungated stand-in at collar >= 0.25 s.
 
 ## Download and prepare
 

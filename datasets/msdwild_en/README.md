@@ -63,7 +63,10 @@ Computed by `python -m diards stats msdwild_en` from the normalized primary refe
 ## Ground-truth validation
 
 <!-- auto:validation -->
-_Validation not run yet._
+View `default`: 894 sessions, **0 errors**, 48 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
+- checks that fired (sessions): `info:speaker_under_1s` 39, `warning:possible_unannotated_speech` 45, `warning:segments_over_60s` 3
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.5% of reference speech; reference speech without energy = 4.7%. Most-flagged sessions: `msdwild_en__00740` (0.39), `msdwild_en__01631` (0.34), `msdwild_en__02080` (0.31), `msdwild_en__00880` (0.30), `msdwild_en__02311` (0.29)
+- full report: [`results/validation/validation.msdwild_en.default.md`](../../results/validation/validation.msdwild_en.default.md)
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
@@ -79,7 +82,15 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 150 | 5.52 | 2.21 | 3.31 | 2.69 | 1.18 | 1.51 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 2 of 10 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (3.1 of 17.1 s). Examples: `msdwild_en__02646` 63.3-64.9 s: "Oh my god."; `msdwild_en__02241` 61.8-63.3 s: "I love cashews."
+
+**Time-offset check (default):** 5 of 150 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.05 s; shifted: `msdwild_en__00239` (-3.75 s), `msdwild_en__01240` (-3.00 s), `msdwild_en__00785` (+2.20 s).
 <!-- /auto:diagnosis -->
 
 **Reading the MSDWild numbers.** DER is 17.8% at collar 0 on the 150 English validation clips (few.val + many.val).

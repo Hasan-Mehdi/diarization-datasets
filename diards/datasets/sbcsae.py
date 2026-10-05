@@ -44,9 +44,10 @@ META = DatasetMeta(
     reference="Linguist transcription, intonation units time-stamped (ms bullets), overlap bracketed.",
     default_view="default",
     views={"default": "Original recording (22.05 kHz stereo) downmixed to mono 16 kHz"},
-    gt_rating="B-",
-    gt_rating_reason=("Careful human transcription of every participant with overlap marked and IU-level timing, "
-                      "but IU bullets tile the timeline (pauses inside units) and recordings vary widely in quality."),
+    gt_rating="C+",
+    gt_rating_reason=("Careful human transcription of every participant with overlap marked, but IU bullets tile "
+                      "the timeline: pauses are labelled as speech (13.7% of reference speech is silent per our check), "
+                      "plus untranscribed edges and background media."),
     choices=["Segments: one per intonation unit with lexical content; ENV and non-word IUs dropped.",
              "Speaker ids: <recording>_<CHAT code>.", "Split: all.",
              "UEM: first to last transcribed IU (untranscribed heads/tails excluded).",

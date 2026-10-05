@@ -108,8 +108,9 @@ of the data is usable. Drop or re-check the flagged calls (see `results/diagnosi
 
 ## Quality rating
 
-**C+.** Human transcripts of natural telephone conversation (a classic benchmark domain), but turn-level bullets
-with loose boundaries and spotty backchannel coverage. Fine at collar 0.25 s, weak at collar 0.
+**C.** Human transcripts of natural telephone conversation (a classic benchmark domain), but turn-level bullets
+with loose boundaries, and verified **missing turns** in at least 12 calls. Fine at collar 0.25 s once the flagged
+calls are dropped; weak at collar 0.
 
 ## Download and prepare
 

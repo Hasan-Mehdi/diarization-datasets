@@ -66,13 +66,25 @@ View `default`: 128 sessions, **0 errors**, 12 warnings (normalized files); 1 se
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (all) | 128 | 14.31 | primary | **7.94** | 4.55 | 3.32 | 0.07 | 9.01 | 1.88 | 95% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/maptask.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 128 | 2.78 | 0.56 | 2.22 | 3.82 | 1.51 | 2.31 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 4 of 23 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (5.3 of 30.4 s). Examples: `maptask__q2ec6` 249.3-250.9 s: "Oh, my God."; `maptask__q3ec2` 98.5-99.8 s: "The thing's not even pointing at me."; `maptask__q4nc4` 180.4-181.6 s: "to do it"
+
+**Time-offset check (default):** 0 of 128 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
 <!-- /auto:diagnosis -->
 
 **Reading the Map Task numbers: the cleanest result in the benchmark.** DER is 7.9% at collar 0 and 1.9% at
@@ -86,8 +98,9 @@ free.
 
 ## Quality rating
 
-**A-.** Separate close-talk channels plus word-level timing gives diarization-grade references with natural
-overlap and backchannels. Minus: narrow task domain, studio audio, license ambiguity (use non-commercially).
+**A.** Separate close-talk channels plus word-level timing gives diarization-grade references with natural overlap
+and backchannels, and every check agrees (no time shifts, almost no labelled silence, 1.9% DER at collar 0.25 s).
+Caveats that are not about the labels: narrow task domain, studio audio, licence ambiguity (use non-commercially).
 
 ## Download and prepare
 

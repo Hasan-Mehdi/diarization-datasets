@@ -36,9 +36,10 @@ META = DatasetMeta(
     reference="Word-level timed units per speaker (silence and noise also time-marked).",
     default_view="default",
     views={"default": "Official stereo mix of the two close-talk channels, downmixed to mono 16 kHz"},
-    gt_rating="A-",
+    gt_rating="A",
     gt_rating_reason=("Each speaker on a separate close-talk channel with word-level timings, silences explicitly "
-                      "marked, overlap naturally represented; task-oriented (not free) conversation, studio audio."),
+                      "marked, overlap naturally represented; verified: 0.6% of reference speech in silence, no time "
+                      "shifts, Nemotron DER 1.9% at collar 0.25 s. Task dialogue, studio audio."),
     choices=["Pause rule: same-speaker words < 0.2 s apart merged.", "Speaker ids: global participant ids.",
              "UEM: whole recording.", "Single split 'all'."],
     domain="two-person task dialogue (close-talk)",

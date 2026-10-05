@@ -47,7 +47,7 @@ META = DatasetMeta(
     reference="Human audio-visual diarization labels on top of AVA-ActiveSpeaker.",
     default_view="default",
     views={"default": "Movie soundtrack, mono 16 kHz"},
-    gt_rating="B-",
+    gt_rating="B",
     gt_rating_reason=("Human-labelled identities including off-screen speakers on hard movie audio; built on top of "
                       "visual active-speaker tracks; scoring region cropped to the labelled extent."),
     choices=["English subset by Whisper large-v3 LID (P(en) >= 0.7 over up to 3 x 30 s windows on reference speech).",

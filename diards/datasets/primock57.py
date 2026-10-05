@@ -45,7 +45,7 @@ META = DatasetMeta(
     reference="Utterance-level TextGrid transcripts per channel (made for ASR evaluation).",
     default_view="mix",
     views={"mix": "Doctor + patient channels summed (as scripts/mix_audio.sh)"},
-    gt_rating="D",
+    gt_rating="D (official) / B (channel-activity RTTM)",
     gt_rating_reason="Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems.",
     choices=["Speaker ids: <consultation>_doctor / _patient.", "UEM: whole recording.",
              "Alternative reference rttm_alt/channel_activity from calibrated per-channel activity (diagnostic)."],

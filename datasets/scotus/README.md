@@ -64,13 +64,25 @@ View `default`: 12 sessions, **0 errors**, 12 warnings (normalized files); 0 ses
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (term2022) | 12 | 20.5 | primary | **31.66** | 1.10 | 11.16 | 19.40 | 47.68 | 30.25 | 0% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/scotus.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 12 | 11.16 | 5.83 | 5.33 | 0.0 | 0.0 | 0.0 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 0 of 0 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 0 s).
+
+**Time-offset check (default):** 0 of 12 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 1.05 s.
 <!-- /auto:diagnosis -->
 
 **Reading the SCOTUS numbers.** DER is 31.7% at collar 0 and barely lower at 0.25 s (30.3%), because the errors are

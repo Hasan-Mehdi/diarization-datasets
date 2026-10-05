@@ -74,7 +74,15 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 44 | 3.97 | 0.56 | 3.41 | 3.35 | 0.86 | 2.49 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 35 of 40 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (74.3 of 80.2 s). Examples: `earnings21__4368670` 1009.0-1012.1 s: "this was due to timing effects from hatching activities"; `earnings21__4394084` 1706.7-1709.7 s: "He missed your dad. He was always fun. He's a good guy."; `earnings21__4346923` 1647.7-1650.6 s: "I didn't hear the second part of the question."
+
+**Time-offset check (default):** 0 of 44 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.05 s.
 <!-- /auto:diagnosis -->
 
 **Reading the Earnings-21 numbers: this is mostly a model limit.** DER is 19.5% at collar 0, and **12 points of it

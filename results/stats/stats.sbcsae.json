@@ -5,9 +5,9 @@
   "all": {
    "sessions": 60,
    "hours": 23.31,
-   "scored_hours": 23.31,
+   "scored_hours": 23.24,
    "speech_hours": 21.36,
-   "speech_ratio": 0.916,
+   "speech_ratio": 0.919,
    "overlap_ratio": 0.071,
    "overlap3plus_ratio": 0.0031,
    "speakers_min": 1,
@@ -35,19 +35,19 @@
    "silence_gap_s": {
     "p5": 0.0,
     "p25": 0.05,
-    "p50": 0.362,
-    "p75": 0.925,
-    "p95": 3.283
+    "p50": 0.354,
+    "p75": 0.902,
+    "p95": 3.12
    },
-   "speaker_changes_per_min": 13.49,
+   "speaker_changes_per_min": 13.54,
    "dominant_speaker_share_median": 0.549
   },
   "ALL": {
    "sessions": 60,
    "hours": 23.31,
-   "scored_hours": 23.31,
+   "scored_hours": 23.24,
    "speech_hours": 21.36,
-   "speech_ratio": 0.916,
+   "speech_ratio": 0.919,
    "overlap_ratio": 0.071,
    "overlap3plus_ratio": 0.0031,
    "speakers_min": 1,
@@ -75,17 +75,17 @@
    "silence_gap_s": {
     "p5": 0.0,
     "p25": 0.05,
-    "p50": 0.362,
-    "p75": 0.925,
-    "p95": 3.283
+    "p50": 0.354,
+    "p75": 0.902,
+    "p95": 3.12
    },
-   "speaker_changes_per_min": 13.49,
+   "speaker_changes_per_min": 13.54,
    "dominant_speaker_share_median": 0.549
   }
  },
  "sessions": [
   {
-   "scored_s": 1515.989,
+   "scored_s": 1515.32,
    "speech_s": 1507.22,
    "overlap_s": 40.12,
    "overlap3_s": 0,
@@ -98,7 +98,7 @@
    "duration": 1515.989
   },
   {
-   "scored_s": 1437.408,
+   "scored_s": 1437.34,
    "speech_s": 1325.74,
    "overlap_s": 144.63,
    "overlap3_s": 6.45,
@@ -111,7 +111,7 @@
    "duration": 1437.408
   },
   {
-   "scored_s": 1567.045,
+   "scored_s": 1564.51,
    "speech_s": 1514.65,
    "overlap_s": 119.73,
    "overlap3_s": 3.18,
@@ -124,7 +124,7 @@
    "duration": 1567.045
   },
   {
-   "scored_s": 1162.022,
+   "scored_s": 1159.04,
    "speech_s": 1115.0,
    "overlap_s": 126.04,
    "overlap3_s": 2.08,
@@ -137,7 +137,7 @@
    "duration": 1162.022
   },
   {
-   "scored_s": 1228.127,
+   "scored_s": 1223.04,
    "speech_s": 1136.5,
    "overlap_s": 52.18,
    "overlap3_s": 0,
@@ -150,7 +150,7 @@
    "duration": 1228.127
   },
   {
-   "scored_s": 1635.663,
+   "scored_s": 1634.64,
    "speech_s": 1547.51,
    "overlap_s": 51.68,
    "overlap3_s": 0,
@@ -163,7 +163,7 @@
    "duration": 1635.663
   },
   {
-   "scored_s": 1385.325,
+   "scored_s": 1379.79,
    "speech_s": 1322.85,
    "overlap_s": 10.42,
    "overlap3_s": 0,
@@ -176,7 +176,7 @@
    "duration": 1385.325
   },
   {
-   "scored_s": 1524.593,
+   "scored_s": 1511.79,
    "speech_s": 1462.93,
    "overlap_s": 95.19,
    "overlap3_s": 0.36,
@@ -189,7 +189,7 @@
    "duration": 1524.593
   },
   {
-   "scored_s": 1499.643,
+   "scored_s": 1495.05,
    "speech_s": 1358.87,
    "overlap_s": 22.84,
    "overlap3_s": 0,
@@ -202,7 +202,7 @@
    "duration": 1499.643
   },
   {
-   "scored_s": 940.745,
+   "scored_s": 940.54,
    "speech_s": 926.52,
    "overlap_s": 93.11,
    "overlap3_s": 0,
@@ -215,7 +215,7 @@
    "duration": 940.745
   },
   {
-   "scored_s": 1230.98,
+   "scored_s": 1229.44,
    "speech_s": 1163.21,
    "overlap_s": 49.03,
    "overlap3_s": 0.59,
@@ -228,7 +228,7 @@
    "duration": 1230.98
   },
   {
-   "scored_s": 1540.681,
+   "scored_s": 1538.26,
    "speech_s": 1528.62,
    "overlap_s": 27.62,
    "overlap3_s": 0.01,
@@ -241,7 +241,7 @@
    "duration": 1540.681
   },
   {
-   "scored_s": 1644.789,
+   "scored_s": 1644.78,
    "speech_s": 1526.79,
    "overlap_s": 361.73,
    "overlap3_s": 47.09,
@@ -254,7 +254,7 @@
    "duration": 1644.789
   },
   {
-   "scored_s": 1697.154,
+   "scored_s": 1696.68,
    "speech_s": 1684.64,
    "overlap_s": 59.79,
    "overlap3_s": 1.45,
@@ -267,7 +267,7 @@
    "duration": 1697.154
   },
   {
-   "scored_s": 1566.526,
+   "scored_s": 1535.74,
    "speech_s": 1467.395,
    "overlap_s": 282.664,
    "overlap3_s": 16.383,
@@ -280,7 +280,7 @@
    "duration": 1566.526
   },
   {
-   "scored_s": 1331.514,
+   "scored_s": 1328.135,
    "speech_s": 1224.121,
    "overlap_s": 209.461,
    "overlap3_s": 1.79,
@@ -293,7 +293,7 @@
    "duration": 1331.514
   },
   {
-   "scored_s": 1218.113,
+   "scored_s": 1207.935,
    "speech_s": 1192.481,
    "overlap_s": 87.735,
    "overlap3_s": 0,
@@ -306,7 +306,7 @@
    "duration": 1218.113
   },
   {
-   "scored_s": 711.568,
+   "scored_s": 710.63,
    "speech_s": 487.343,
    "overlap_s": 40.551,
    "overlap3_s": 0,
@@ -319,7 +319,7 @@
    "duration": 711.568
   },
   {
-   "scored_s": 1309.646,
+   "scored_s": 1306.275,
    "speech_s": 1175.604,
    "overlap_s": 154.237,
    "overlap3_s": 7.802,
@@ -332,7 +332,7 @@
    "duration": 1309.646
   },
   {
-   "scored_s": 1512.193,
+   "scored_s": 1498.385,
    "speech_s": 1424.628,
    "overlap_s": 2.51,
    "overlap3_s": 0,
@@ -345,7 +345,7 @@
    "duration": 1512.193
   },
   {
-   "scored_s": 1686.927,
+   "scored_s": 1672.635,
    "speech_s": 1508.261,
    "overlap_s": 21.385,
    "overlap3_s": 1.045,
@@ -358,7 +358,7 @@
    "duration": 1686.927
   },
   {
-   "scored_s": 835.098,
+   "scored_s": 830.36,
    "speech_s": 582.071,
    "overlap_s": 23.469,
    "overlap3_s": 0,
@@ -371,7 +371,7 @@
    "duration": 835.098
   },
   {
-   "scored_s": 1462.557,
+   "scored_s": 1460.924,
    "speech_s": 1415.734,
    "overlap_s": 268.621,
    "overlap3_s": 27.898,
@@ -384,7 +384,7 @@
    "duration": 1462.557
   },
   {
-   "scored_s": 1591.312,
+   "scored_s": 1581.094,
    "speech_s": 683.107,
    "overlap_s": 48.636,
    "overlap3_s": 0,
@@ -397,7 +397,7 @@
    "duration": 1591.312
   },
   {
-   "scored_s": 1335.292,
+   "scored_s": 1327.343,
    "speech_s": 1319.965,
    "overlap_s": 0,
    "overlap3_s": 0,
@@ -410,7 +410,7 @@
    "duration": 1335.292
   },
   {
-   "scored_s": 1604.267,
+   "scored_s": 1593.994,
    "speech_s": 1382.855,
    "overlap_s": 24.157,
    "overlap3_s": 0,
@@ -423,7 +423,7 @@
    "duration": 1604.267
   },
   {
-   "scored_s": 1000.705,
+   "scored_s": 996.89,
    "speech_s": 912.71,
    "overlap_s": 9.3,
    "overlap3_s": 0.17,
@@ -436,7 +436,7 @@
    "duration": 1000.705
   },
   {
-   "scored_s": 1517.264,
+   "scored_s": 1503.71,
    "speech_s": 1378.035,
    "overlap_s": 73.595,
    "overlap3_s": 0,
@@ -449,7 +449,7 @@
    "duration": 1517.264
   },
   {
-   "scored_s": 1619.821,
+   "scored_s": 1614.09,
    "speech_s": 1239.99,
    "overlap_s": 102.04,
    "overlap3_s": 0,
@@ -462,7 +462,7 @@
    "duration": 1619.821
   },
   {
-   "scored_s": 1559.085,
+   "scored_s": 1554.72,
    "speech_s": 1200.715,
    "overlap_s": 0.0,
    "overlap3_s": 0,
@@ -475,7 +475,7 @@
    "duration": 1559.085
   },
   {
-   "scored_s": 1478.514,
+   "scored_s": 1476.669,
    "speech_s": 1368.077,
    "overlap_s": 191.633,
    "overlap3_s": 7.207,
@@ -488,7 +488,7 @@
    "duration": 1478.514
   },
   {
-   "scored_s": 1667.015,
+   "scored_s": 1666.554,
    "speech_s": 1638.549,
    "overlap_s": 251.319,
    "overlap3_s": 26.531,
@@ -501,7 +501,7 @@
    "duration": 1667.015
   },
   {
-   "scored_s": 646.684,
+   "scored_s": 644.458,
    "speech_s": 616.053,
    "overlap_s": 155.64,
    "overlap3_s": 15.538,
@@ -514,7 +514,7 @@
    "duration": 646.684
   },
   {
-   "scored_s": 1480.445,
+   "scored_s": 1449.553,
    "speech_s": 1239.242,
    "overlap_s": 19.756,
    "overlap3_s": 0,
@@ -527,7 +527,7 @@
    "duration": 1480.445
   },
   {
-   "scored_s": 1170.467,
+   "scored_s": 1170.466,
    "speech_s": 1148.644,
    "overlap_s": 307.28,
    "overlap3_s": 14.675,
@@ -540,7 +540,7 @@
    "duration": 1170.467
   },
   {
-   "scored_s": 1610.922,
+   "scored_s": 1606.368,
    "speech_s": 1518.416,
    "overlap_s": 183.906,
    "overlap3_s": 6.925,
@@ -553,7 +553,7 @@
    "duration": 1610.922
   },
   {
-   "scored_s": 1589.918,
+   "scored_s": 1589.183,
    "speech_s": 1402.45,
    "overlap_s": 46.204,
    "overlap3_s": 0.668,
@@ -566,7 +566,7 @@
    "duration": 1589.918
   },
   {
-   "scored_s": 1455.974,
+   "scored_s": 1454.282,
    "speech_s": 1079.419,
    "overlap_s": 17.626,
    "overlap3_s": 0,
@@ -592,7 +592,7 @@
    "duration": 1532.778
   },
   {
-   "scored_s": 1354.297,
+   "scored_s": 1348.735,
    "speech_s": 1229.659,
    "overlap_s": 0.409,
    "overlap3_s": 0,
@@ -605,7 +605,7 @@
    "duration": 1354.297
   },
   {
-   "scored_s": 1233.6,
+   "scored_s": 1233.357,
    "speech_s": 1213.16,
    "overlap_s": 93.492,
    "overlap3_s": 0,
@@ -618,7 +618,7 @@
    "duration": 1233.6
   },
   {
-   "scored_s": 1157.69,
+   "scored_s": 1154.21,
    "speech_s": 1057.081,
    "overlap_s": 58.679,
    "overlap3_s": 1.193,
@@ -631,7 +631,7 @@
    "duration": 1157.69
   },
   {
-   "scored_s": 1501.866,
+   "scored_s": 1500.444,
    "speech_s": 1475.495,
    "overlap_s": 76.304,
    "overlap3_s": 0,
@@ -644,7 +644,7 @@
    "duration": 1501.866
   },
   {
-   "scored_s": 1747.454,
+   "scored_s": 1745.46,
    "speech_s": 1713.266,
    "overlap_s": 37.588,
    "overlap3_s": 0,
@@ -657,7 +657,7 @@
    "duration": 1747.454
   },
   {
-   "scored_s": 1814.754,
+   "scored_s": 1812.499,
    "speech_s": 1426.285,
    "overlap_s": 21.057,
    "overlap3_s": 0,
@@ -670,7 +670,7 @@
    "duration": 1814.754
   },
   {
-   "scored_s": 906.801,
+   "scored_s": 904.212,
    "speech_s": 883.304,
    "overlap_s": 35.365,
    "overlap3_s": 0,
@@ -683,7 +683,7 @@
    "duration": 906.801
   },
   {
-   "scored_s": 1213.004,
+   "scored_s": 1212.353,
    "speech_s": 1188.757,
    "overlap_s": 67.843,
    "overlap3_s": 0,
@@ -696,7 +696,7 @@
    "duration": 1213.004
   },
   {
-   "scored_s": 1085.128,
+   "scored_s": 1082.8,
    "speech_s": 974.604,
    "overlap_s": 103.33,
    "overlap3_s": 3.653,
@@ -709,7 +709,7 @@
    "duration": 1085.128
   },
   {
-   "scored_s": 1138.129,
+   "scored_s": 1137.615,
    "speech_s": 1104.457,
    "overlap_s": 157.137,
    "overlap3_s": 11.731,
@@ -735,7 +735,7 @@
    "duration": 992.794
   },
   {
-   "scored_s": 1549.12,
+   "scored_s": 1544.854,
    "speech_s": 1503.98,
    "overlap_s": 186.648,
    "overlap3_s": 6.432,
@@ -748,7 +748,7 @@
    "duration": 1549.12
   },
   {
-   "scored_s": 1553.698,
+   "scored_s": 1553.697,
    "speech_s": 1519.61,
    "overlap_s": 106.425,
    "overlap3_s": 1.002,
@@ -761,7 +761,7 @@
    "duration": 1553.698
   },
   {
-   "scored_s": 1259.474,
+   "scored_s": 1257.704,
    "speech_s": 1228.842,
    "overlap_s": 33.404,
    "overlap3_s": 0,
@@ -787,7 +787,7 @@
    "duration": 1162.471
   },
   {
-   "scored_s": 1642.442,
+   "scored_s": 1617.503,
    "speech_s": 1466.569,
    "overlap_s": 3.17,
    "overlap3_s": 0,
@@ -813,7 +813,7 @@
    "duration": 1831.237
   },
   {
-   "scored_s": 1572.044,
+   "scored_s": 1572.043,
    "speech_s": 1445.355,
    "overlap_s": 19.332,
    "overlap3_s": 0,
@@ -826,7 +826,7 @@
    "duration": 1572.044
   },
   {
-   "scored_s": 1547.385,
+   "scored_s": 1546.585,
    "speech_s": 1391.306,
    "overlap_s": 53.847,
    "overlap3_s": 0,
@@ -839,7 +839,7 @@
    "duration": 1547.385
   },
   {
-   "scored_s": 1674.542,
+   "scored_s": 1672.885,
    "speech_s": 1589.862,
    "overlap_s": 252.424,
    "overlap3_s": 8.365,
@@ -852,7 +852,7 @@
    "duration": 1674.542
   },
   {
-   "scored_s": 1489.862,
+   "scored_s": 1489.281,
    "speech_s": 1475.38,
    "overlap_s": 29.151,
    "overlap3_s": 0,

@@ -47,8 +47,8 @@ coded. The reference here has one segment per IU that contains at least one lexi
 <!-- auto:stats -->
 | split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
 |---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
-| all | 60 | 23.31 | 21.36 | 0.916 | 0.071 | 0.0031 | 1/4/16 | 0.34/1.512/11.508 | 0.0054 | 1.62 | 13.49 |
-| ALL | 60 | 23.31 | 21.36 | 0.916 | 0.071 | 0.0031 | 1/4/16 | 0.34/1.512/11.508 | 0.0054 | 1.62 | 13.49 |
+| all | 60 | 23.31 | 21.36 | 0.919 | 0.071 | 0.0031 | 1/4/16 | 0.34/1.512/11.508 | 0.0054 | 1.62 | 13.54 |
+| ALL | 60 | 23.31 | 21.36 | 0.919 | 0.071 | 0.0031 | 1/4/16 | 0.34/1.512/11.508 | 0.0054 | 1.62 | 13.54 |
 
 Computed by `python -m diards stats sbcsae` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.sbcsae.md`](../../results/stats/stats.sbcsae.md).
 <!-- /auto:stats -->
@@ -66,13 +66,25 @@ View `default`: 60 sessions, **0 errors**, 26 warnings (normalized files); 51 se
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (all) | 60 | 23.31 | primary | **27.38** | 2.56 | 22.52 | 2.30 | 48.68 | 24.23 | 43% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/sbcsae.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 60 | 21.2 | 13.67 | 7.53 | 1.57 | 0.82 | 0.74 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 18 of 40 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (47.2 of 88.2 s). Examples: `sbcsae__SBC021` 2.0-7.7 s: "The Great I Am!"; `sbcsae__SBC015` 1545.9-1550.8 s: "I thought it wasn't going to eat it. And I was really worried. You know, they di"; `sbcsae__SBC045` 904.7-907.9 s: "one person that I've known for a long time."
+
+**Time-offset check (default):** 0 of 60 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.05 s.
 <!-- /auto:diagnosis -->
 
 **Reading the SBCSAE numbers: mostly reference convention.** DER is 27.4% at collar 0 and still 24.2% at 0.25 s,
@@ -87,8 +99,9 @@ a diarization benchmark, re-time SBCSAE (forced alignment of the IU text) or use
 
 ## Quality rating
 
-**B-.** Expert human transcription of every participant in truly natural talk, with overlap marked. Minus: IU-level
-tiling (loose boundaries), variable audio, no-derivatives license.
+**C+.** Expert human transcription of every participant in truly natural talk, with overlap marked. But as a
+diarization reference the IU tiling labels pauses as speech (DER stays at 24% even at collar 0.25 s), plus
+untranscribed edges, variable audio and a no-derivatives licence.
 
 ## Download and prepare
 

@@ -66,13 +66,25 @@ View `default`: 46 sessions, **0 errors**, 35 warnings (normalized files); 21 se
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| default (general, medical) | 46 | 6.63 | primary | **26.69** | 6.44 | 15.15 | 5.10 | 32.18 | 24.51 | 93% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/afrispeech_dialog.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 46 | 15.11 | 11.56 | 3.55 | 4.44 | 3.17 | 1.27 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 35 of 40 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (69.6 of 76.4 s). Examples: `afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16` 471.8-475.2 s: "celebrating their birthday, they were not being reminded that this was the day t"; `afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99` 533.2-536.4 s: "Okay, I'm going to go through what..."; `afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce` 486.6-489.2 s: "worsening over time and change in Boer."
+
+**Time-offset check (default):** 6 of 46 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.45 s; shifted: `afrispeech_dialog__94009039-0507-492f-8b26-e53d20642089` (+0.40 s), `afrispeech_dialog__d2f0bed6-f3e1-48a8-9fb2-ceb137670bc4` (+0.45 s), `afrispeech_dialog__5b8a8e4c-7463-47c4-858f-5cd8dd278d42` (+0.60 s).
 <!-- /auto:diagnosis -->
 
 **Reading the AfriSpeech-Dialog numbers: the reference is the main problem.** DER is 26.7% at collar 0 and still
@@ -89,7 +101,7 @@ The model's speaker counting is fine (93% exact). Do not use these timestamps fo
 
 ## Quality rating
 
-**D+.** Valuable domain (medical consultations, African accents), but timestamps at ~1 s precision, missing
+**D.** Valuable domain (medical consultations, African accents), but timestamps at ~1 s precision, missing
 overlap/backchannels, and long merged turns make it unsuitable for precise DER. Use it for speaker-attributed ASR or
 coarse turn-level checks, or re-time it (e.g. forced alignment of the transcripts) before scoring diarization.
 

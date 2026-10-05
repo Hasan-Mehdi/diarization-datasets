@@ -72,7 +72,14 @@ View `ihm-mix`: 4 sessions, **0 errors**, 2 warnings (normalized files); 0 sessi
 ## Nemotron 3 Diarization
 
 <!-- auto:nemotron -->
-_Not evaluated yet._
+| view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| farfield (eval) | 2 | 5.21 | primary | **37.63** | 8.27 | 21.29 | 8.07 | 39.40 | 25.61 | 0% |
+| farfield (eval) | 2 | 5.21 | annotation | **43.62** | 1.49 | 36.15 | 5.98 | 46.85 | 34.28 | 0% |
+| ihm-mix (eval) | 2 | 5.21 | primary | **32.76** | 10.12 | 16.60 | 6.05 | 33.78 | 22.49 | 50% |
+| ihm-mix (eval) | 2 | 5.21 | annotation | **37.81** | 1.90 | 31.65 | 4.25 | 40.11 | 29.04 | 50% |
+
+Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/chime6.*/results.md`.
 <!-- /auto:nemotron -->
 
 ### Model error or reference error?

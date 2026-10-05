@@ -15,7 +15,7 @@ probabilities: [`metadata/ava_avd_lid.json`](../../metadata/ava_avd_lid.json).
 | Domain | movies (in-the-wild media) |
 | Views (normalized) | `default`: Movie soundtrack, mono 16 kHz |
 | Reference used as primary RTTM | Human audio-visual diarization labels on top of AVA-ActiveSpeaker. |
-| Ground-truth rating | **B-** - Human-labelled identities including off-screen speakers, but labels were built on top of visual active-speaker tracks; some speech marked in the VAD labels has no speaker label. |
+| Ground-truth rating | **B-** - Human-labelled identities including off-screen speakers on hard movie audio; built on top of visual active-speaker tracks; scoring region cropped to the labelled extent. |
 | Prepared splits (sessions) | test: 9, train: 67, val: 20 |
 <!-- /auto:meta -->
 
@@ -82,7 +82,15 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| default | default | 29 | 19.61 | 5.49 | 14.12 | 11.71 | 3.63 | 8.08 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (default):** 2 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (4.3 of 10.5 s). Examples: `ava_avd_en__fD6VkIRlIRI_c_03` 248.6-251.2 s: "Come on! Let's go!"; `ava_avd_en__o4xQ-BEa3Ss_c_02` 242.6-244.3 s: "Hey, Marie, bring it on."
+
+**Time-offset check (default):** 0 of 29 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.05 s.
 <!-- /auto:diagnosis -->
 
 **Reading the AVA-AVD numbers: mostly model error on hard audio.** DER is 49.8% at collar 0 (34.0% at 0.25 s) on the
@@ -96,7 +104,7 @@ right number of speakers in only 21% of clips (up to 24 labelled speakers per cl
 
 ## Quality rating
 
-**B-.** Human identity labels on hard, in-the-wild movie audio with many speakers. Minus: unlabelled speech regions
+**B.** Human identity labels on hard, in-the-wild movie audio with many speakers; the checks found no label problems. Minus: unlabelled speech regions
 (see the diagnosis: most errors are model errors on hard movie audio), LID-derived English subset, video-centric
 annotation origin.
 

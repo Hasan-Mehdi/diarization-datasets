@@ -198,22 +198,22 @@ def block_prepare(name):
 
 # Catalog order (ranked) and static facts that are not in the recipe metadata.
 CATALOG = [
-    # name, size of what you download, granularity of the reference, main known issue
+    # name, size of what you download, granularity of the reference, main known issue (ranked by GT rating)
+    ("maptask", "~2 GB", "word-level timed units, per close-talk channel", "task dialogue, studio audio; licence ambiguity (use NC)"),
     ("notsofar1", "~10 GB (eval+dev: close-talk + 1 far-field device)", "utterances + word times (human, close-talk)", "utterances keep short pauses; device differs per room"),
     ("ami", "~30 GB (all meetings, 2 views)", "forced-aligned words (MFA) from manual transcripts", "4 meetings with known timing failures (2 in test)"),
     ("chime6", "23 GB tarballs (dev+eval; only needed channels kept)", "forced-aligned utterances (official Track 2)", "enrolment minute unannotated (UEM fixes); very hard audio"),
-    ("maptask", "~2 GB", "word-level timed units, per close-talk channel", "task dialogue, studio audio; licence ambiguity (use NC)"),
     ("voxconverse", "7.3 GB (HF mirror)", "human-verified diarization turns", "in many models' training data; 37 single-speaker files"),
     ("icsi", "~15 GB (2 views)", "manual transcriber segments (+ word times)", "padded segments; 9-13% of words untimed; in Nemotron training data"),
     ("dipco", "13.4 GB tarball", "manual utterances up to 10-15 s", "pauses inside segments; only 10 sessions"),
     ("easycom", "~22 GB (glasses audio + labels, per-file LFS)", "human VAD per utterance (50 ms frames)", "loudspeaker noise; missing (redacted) minutes"),
     ("msdwild_en", "8.1 GB (all clips)", "human diarization turns", "research-only licence; English by LID; short clips"),
-    ("earnings21", "~1.5 GB", "RTTM from human transcripts (timing method undocumented)", "almost no overlap/backchannels"),
     ("ava_avd_en", "~5 GB (minutes 15-30 of 117 movies via HTTP range)", "human identity turns", "music/effects-heavy audio, many speakers; English by LID"),
+    ("earnings21", "~1.5 GB", "RTTM from human transcripts (timing method undocumented)", "almost no overlap/backchannels"),
     ("sbcsae", "6.2 GB", "intonation units (ms bullets), tiled", "pauses inside units; CC BY-ND (no derived RTTMs shared)"),
     ("callhome_eng", "2.3 GB (HF parquet)", "turn bullets (LDC transcripts via TalkBank)", "loose turns, backchannels incomplete"),
-    ("callfriend_eng", "1.2 GB (HF parquet)", "turn bullets (TalkBank)", "tiled bullets, 3,074 same-speaker overlaps"),
     ("scotus", "~0.7 GB (12-case sample)", "Oyez turn sync, tiled, no overlap", "interruptions never marked as overlap"),
+    ("callfriend_eng", "1.2 GB (HF parquet)", "turn bullets (TalkBank)", "tiled bullets, 3,074 same-speaker overlaps"),
     ("afrispeech_dialog", "~0.8 GB", "hand-typed turn times (~1 s precision)", "coarse times, no overlap, 3/49 untimed"),
     ("primock57", "~1 GB", "padded utterances per channel (+ our channel-activity RTTM)", "10-14% of labelled time is silence"),
     ("libricss", "6.4 GB", "exact playback times (synthetic)", "read speech replayed; not real conversation"),

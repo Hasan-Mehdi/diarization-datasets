@@ -42,9 +42,9 @@ META = DatasetMeta(
     reference="Hand-typed turn start/end times (MM:SS:cc), one speaker turn per entry.",
     default_view="default",
     views={"default": "Original recording, mono 16 kHz"},
-    gt_rating="D+",
-    gt_rating_reason=("Human transcripts, but timestamps are hand-typed with ~1 s effective precision, overlap and "
-                      "backchannels are not annotated, and only 30/49 conversations have timestamps."),
+    gt_rating="D",
+    gt_rating_reason=("Human transcripts, but timestamps are hand-typed with ~1 s effective precision and are "
+                      "~0.45 s early on median; overlap/backchannels absent; untimed speech; 3/49 files without times."),
     choices=["Only the 30 conversations with timestamps are included.", "Times parsed as MM:SS + cc/100.",
              "Speaker ids: <file>_<Speaker N>.", "Splits: medical / general."],
     domain="medical-like consultations + general conversation",

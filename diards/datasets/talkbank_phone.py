@@ -40,8 +40,9 @@ CALLHOME = DatasetMeta(
     reference="LDC transcripts re-formatted by TalkBank (CHAT), per-turn time bullets.",
     default_view="default",
     views={"default": "Telephone audio (both channels summed), 8 kHz source upsampled to 16 kHz"},
-    gt_rating="C+",
-    gt_rating_reason="Human transcription with turn-level bullets; see dataset card for measured boundary quality.",
+    gt_rating="C",
+    gt_rating_reason=("Human turn-level bullets of natural phone calls; verified missing turns in at least 12 calls "
+                      "(38 of the 40 longest audible false alarms contain speech)."),
     choices=COMMON_CHOICES,
     domain="telephone (2+ speakers)",
 )
@@ -59,8 +60,9 @@ CALLFRIEND = DatasetMeta(
     reference="TalkBank CHAT transcripts with per-turn time bullets.",
     default_view="default",
     views={"default": "Telephone audio (channels summed), 16 kHz"},
-    gt_rating="C",
-    gt_rating_reason="Human transcription with turn-level bullets; see dataset card for measured boundary quality.",
+    gt_rating="C-",
+    gt_rating_reason=("Tiled turn bullets with pauses labelled as speech, 3,074 same-speaker overlaps, verified "
+                      "missing turns (39 of 40 long audible false alarms contain speech), one truncated item."),
     choices=COMMON_CHOICES,
     domain="telephone (2+ speakers)",
 )
