@@ -1,0 +1,145 @@
+{
+ "dataset": "ami",
+ "view": "ihm-mix",
+ "regions_checked": 15,
+ "regions": [
+  {
+   "session_id": "ami__EN2002b",
+   "start": 280.26,
+   "end": 282.59,
+   "dur": 2.33,
+   "whisper": "When I go to bed at like 1, you're still online.",
+   "words": 10,
+   "speech": true
+  },
+  {
+   "session_id": "ami__IS1009c",
+   "start": 225.9,
+   "end": 228.04,
+   "dur": 2.14,
+   "whisper": "feature that it should have maybe a channel",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "ami__EN2002b",
+   "start": 49.26,
+   "end": 51.05,
+   "dur": 1.79,
+   "whisper": "Actually, I guess the first thing I just sort of did",
+   "words": 11,
+   "speech": true
+  },
+  {
+   "session_id": "ami__EN2002a",
+   "start": 528.01,
+   "end": 529.59,
+   "dur": 1.58,
+   "whisper": "I really don't see anything obvious.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "ami__EN2002b",
+   "start": 1710.24,
+   "end": 1711.63,
+   "dur": 1.39,
+   "whisper": "sending them to you, you send it on.",
+   "words": 8,
+   "speech": true
+  },
+  {
+   "session_id": "ami__TS3003c",
+   "start": 744.68,
+   "end": 746.04,
+   "dur": 1.36,
+   "whisper": "uh, most, uh,",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "ami__TS3003c",
+   "start": 7.53,
+   "end": 8.84,
+   "dur": 1.31,
+   "whisper": "He just receives a little beat.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "ami__EN2002a",
+   "start": 1466.16,
+   "end": 1467.44,
+   "dur": 1.28,
+   "whisper": "How many hours is this?",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "ami__IS1009c",
+   "start": 655.05,
+   "end": 656.29,
+   "dur": 1.24,
+   "whisper": "I did so well.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "ami__ES2004c",
+   "start": 2188.56,
+   "end": 2189.76,
+   "dur": 1.2,
+   "whisper": "remote control if it's lost.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "ami__IS1009d",
+   "start": 106.56,
+   "end": 107.73,
+   "dur": 1.17,
+   "whisper": "Um...",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "ami__TS3003b",
+   "start": 41.08,
+   "end": 42.23,
+   "dur": 1.15,
+   "whisper": "Okay, good afternoon.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "ami__EN2002b",
+   "start": 1161.84,
+   "end": 1162.92,
+   "dur": 1.08,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "ami__EN2002b",
+   "start": 57.31,
+   "end": 58.35,
+   "dur": 1.04,
+   "whisper": "version of what we have to do.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "ami__EN2002d",
+   "start": 841.66,
+   "end": 842.69,
+   "dur": 1.03,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 12,
+ "seconds_checked": 21.1,
+ "seconds_with_speech": 17.8
+}

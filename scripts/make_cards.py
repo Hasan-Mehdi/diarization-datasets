@@ -125,7 +125,9 @@ def block_nemotron(name):
             if c != "0.0":
                 continue
             v25 = r["summary"].get(f"{ref}@0.25", {})
-            out.append(f"| {tag} ({', '.join(splits)}) | {r['sessions']} | {r['hours']} | {ref} | **{100 * v['der']:.2f}** | "
+            rows_ref = [x for x in r["per_session"] if f"{ref}@0.0" in x]
+            n_ref, h_ref = len(rows_ref), round(sum(x["duration"] for x in rows_ref) / 3600, 2)
+            out.append(f"| {tag} ({', '.join(splits)}) | {n_ref} | {h_ref} | {ref} | **{100 * v['der']:.2f}** | "
                        f"{100 * v['fa']:.2f} | {100 * v['miss']:.2f} | {100 * v['conf']:.2f} | {100 * v['jer']:.2f} | "
                        f"{100 * v25.get('der', float('nan')):.2f} | {100 * r['speaker_count_accuracy']:.0f}% |")
     out.append("")

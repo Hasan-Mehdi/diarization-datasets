@@ -14,7 +14,7 @@ Same family and format as CallHome English, but **not gated** on Hugging Face.
 | Domain | telephone (2+ speakers) |
 | Views (normalized) | `default`: Telephone audio (channels summed), 16 kHz |
 | Reference used as primary RTTM | TalkBank CHAT transcripts with per-turn time bullets. |
-| Ground-truth rating | **C** - Human transcription with turn-level bullets; see dataset card for measured boundary quality. |
+| Ground-truth rating | **C-** - Tiled turn bullets with pauses labelled as speech, 3,074 same-speaker overlaps, verified missing turns (39 of 40 long audible false alarms contain speech), one truncated item. |
 | Prepared splits (sessions) | data: 40 |
 <!-- /auto:meta -->
 

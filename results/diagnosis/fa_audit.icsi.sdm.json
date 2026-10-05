@@ -1,0 +1,55 @@
+{
+ "dataset": "icsi",
+ "view": "sdm",
+ "regions_checked": 5,
+ "regions": [
+  {
+   "session_id": "icsi__Bmr013",
+   "start": 556.31,
+   "end": 558.05,
+   "dur": 1.74,
+   "whisper": "Yeah.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "icsi__Bmr013",
+   "start": 2610.02,
+   "end": 2611.71,
+   "dur": 1.69,
+   "whisper": "Ha, ha, ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "icsi__Bmr013",
+   "start": 1443.65,
+   "end": 1445.12,
+   "dur": 1.47,
+   "whisper": "Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.",
+   "words": 296,
+   "speech": false
+  },
+  {
+   "session_id": "icsi__Bmr018",
+   "start": 2350.1,
+   "end": 2351.56,
+   "dur": 1.46,
+   "whisper": "Ha, ha, ha.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "icsi__Bro021",
+   "start": 26.22,
+   "end": 27.45,
+   "dur": 1.23,
+   "whisper": "Thank you.",
+   "words": 2,
+   "speech": false
+  }
+ ],
+ "regions_with_speech": 0,
+ "seconds_checked": 7.6,
+ "seconds_with_speech": 0
+}

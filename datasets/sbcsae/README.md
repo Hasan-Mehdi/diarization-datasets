@@ -15,7 +15,7 @@ derived RTTMs may not be redistributed. This repo ships only the scripts and sta
 | Domain | everyday conversation (mixed situations) |
 | Views (normalized) | `default`: Original recording (22.05 kHz stereo) downmixed to mono 16 kHz |
 | Reference used as primary RTTM | Linguist transcription, intonation units time-stamped (ms bullets), overlap bracketed. |
-| Ground-truth rating | **B-** - Careful human transcription of every participant with overlap marked and IU-level timing, but IU bullets tile the timeline (pauses inside units) and recordings vary widely in quality. |
+| Ground-truth rating | **C+** - Careful human transcription of every participant with overlap marked, but IU bullets tile the timeline: pauses are labelled as speech (13.7% of reference speech is silent per our check), plus untranscribed edges and background media. |
 | Prepared splits (sessions) | all: 60 |
 <!-- /auto:meta -->
 
@@ -59,7 +59,7 @@ Computed by `python -m diards stats sbcsae` from the normalized primary referenc
 View `default`: 60 sessions, **0 errors**, 26 warnings (normalized files); 51 sessions had problems in the ORIGINAL labels that normalization fixed.
 - original-label issues: same_speaker_overlap = 918, duplicate_segment = 4
 - checks that fired (sessions): `info:silence_over_30s` 6, `info:speaker_under_1s` 7, `warning:fewer_than_two_speakers` 1, `warning:possible_unannotated_speech` 4, `warning:segments_over_60s` 21
-- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.4% of reference speech; reference speech without energy = 20.2%. Most-flagged sessions: `sbcsae__SBC024` (0.11), `sbcsae__SBC055` (0.09), `sbcsae__SBC038` (0.07), `sbcsae__SBC045` (0.06), `sbcsae__SBC058` (0.04)
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.3% of reference speech; reference speech without energy = 20.2%. Most-flagged sessions: `sbcsae__SBC024` (0.11), `sbcsae__SBC055` (0.08), `sbcsae__SBC038` (0.07), `sbcsae__SBC045` (0.06), `sbcsae__SBC058` (0.04)
 - full report: [`results/validation/validation.sbcsae.default.md`](../../results/validation/validation.sbcsae.default.md)
 <!-- /auto:validation -->
 

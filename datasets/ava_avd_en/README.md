@@ -15,7 +15,7 @@ probabilities: [`metadata/ava_avd_lid.json`](../../metadata/ava_avd_lid.json).
 | Domain | movies (in-the-wild media) |
 | Views (normalized) | `default`: Movie soundtrack, mono 16 kHz |
 | Reference used as primary RTTM | Human audio-visual diarization labels on top of AVA-ActiveSpeaker. |
-| Ground-truth rating | **B-** - Human-labelled identities including off-screen speakers on hard movie audio; built on top of visual active-speaker tracks; scoring region cropped to the labelled extent. |
+| Ground-truth rating | **B** - Human-labelled identities including off-screen speakers on hard movie audio; built on top of visual active-speaker tracks; scoring region cropped to the labelled extent. |
 | Prepared splits (sessions) | test: 9, train: 67, val: 20 |
 <!-- /auto:meta -->
 

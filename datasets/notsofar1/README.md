@@ -74,10 +74,10 @@ View `ihm-mix`: 165 sessions, **0 errors**, 0 warnings (normalized files); 0 ses
 | view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
 | ihm-mix (eval) | 129 | 13.34 | primary | **14.52** | 0.68 | 12.57 | 1.27 | 17.21 | 5.51 | 95% |
-| ihm-mix (eval) | 129 | 13.34 | fastmss_mfa | **9.63** | 4.37 | 3.68 | 1.58 | 12.58 | 2.56 | 95% |
+| ihm-mix (eval) | 80 | 8.33 | fastmss_mfa | **9.63** | 4.37 | 3.68 | 1.58 | 12.58 | 2.56 | 95% |
 | ihm-mix (eval) | 129 | 13.34 | words_gap0.2 | **11.16** | 1.37 | 8.40 | 1.39 | 14.01 | 4.65 | 95% |
 | sc (eval) | 129 | 13.34 | primary | **18.41** | 0.60 | 15.91 | 1.90 | 20.74 | 6.92 | 77% |
-| sc (eval) | 129 | 13.34 | fastmss_mfa | **11.32** | 2.62 | 6.07 | 2.63 | 14.30 | 3.64 | 77% |
+| sc (eval) | 80 | 8.33 | fastmss_mfa | **11.32** | 2.62 | 6.07 | 2.63 | 14.30 | 3.64 | 77% |
 | sc (eval) | 129 | 13.34 | words_gap0.2 | **14.98** | 1.14 | 11.77 | 2.07 | 17.55 | 6.01 | 77% |
 
 Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/notsofar1.*/results.md`.

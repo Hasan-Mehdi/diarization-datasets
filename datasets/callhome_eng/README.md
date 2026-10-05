@@ -17,7 +17,7 @@ Not to be confused with the "CALLHOME" diarization benchmark (NIST SRE 2000 Disk
 | Domain | telephone (2+ speakers) |
 | Views (normalized) | `default`: Telephone audio (both channels summed), 8 kHz source upsampled to 16 kHz |
 | Reference used as primary RTTM | LDC transcripts re-formatted by TalkBank (CHAT), per-turn time bullets. |
-| Ground-truth rating | **C+** - Human transcription with turn-level bullets; see dataset card for measured boundary quality. |
+| Ground-truth rating | **C** - Human turn-level bullets of natural phone calls; verified missing turns in at least 12 calls (38 of the 40 longest audible false alarms contain speech). |
 | Prepared splits (sessions) | data: 140 |
 <!-- /auto:meta -->
 

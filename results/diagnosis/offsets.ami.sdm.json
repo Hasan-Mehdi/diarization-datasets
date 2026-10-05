@@ -1,0 +1,123 @@
+{
+ "dataset": "ami",
+ "view": "sdm",
+ "sessions": 16,
+ "median_abs_best_lag_s": 0.0,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "ami__EN2002a",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9426,
+   "agreement_best": 0.9426,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__EN2002b",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9367,
+   "agreement_best": 0.9367,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__EN2002c",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9517,
+   "agreement_best": 0.9517,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__EN2002d",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9407,
+   "agreement_best": 0.9407,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__ES2004a",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9231,
+   "agreement_best": 0.9231,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__ES2004b",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9583,
+   "agreement_best": 0.9583,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__ES2004c",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9712,
+   "agreement_best": 0.9712,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__ES2004d",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9649,
+   "agreement_best": 0.9649,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__IS1009a",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9535,
+   "agreement_best": 0.9535,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__IS1009b",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9765,
+   "agreement_best": 0.9765,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__IS1009c",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9666,
+   "agreement_best": 0.9666,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__IS1009d",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9546,
+   "agreement_best": 0.9546,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__TS3003a",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9581,
+   "agreement_best": 0.9581,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__TS3003b",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9667,
+   "agreement_best": 0.9667,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__TS3003c",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9707,
+   "agreement_best": 0.9707,
+   "gain": 0.0
+  },
+  {
+   "session_id": "ami__TS3003d",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9629,
+   "agreement_best": 0.9629,
+   "gain": 0.0
+  }
+ ]
+}

@@ -15,7 +15,7 @@ free *medical-like* two-party English datasets with speaker turns. **The timesta
 | Domain | medical-like consultations + general conversation |
 | Views (normalized) | `default`: Original recording, mono 16 kHz |
 | Reference used as primary RTTM | Hand-typed turn start/end times (MM:SS:cc), one speaker turn per entry. |
-| Ground-truth rating | **D+** - Human transcripts, but timestamps are hand-typed with ~1 s effective precision, overlap and backchannels are not annotated, and only 30/49 conversations have timestamps. |
+| Ground-truth rating | **D** - Human transcripts, but timestamps are hand-typed with ~1 s effective precision and are ~0.45 s early on median; overlap/backchannels absent; untimed speech; 3/49 files without times. |
 | Prepared splits (sessions) | general: 29, medical: 17 |
 <!-- /auto:meta -->
 

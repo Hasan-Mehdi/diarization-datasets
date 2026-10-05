@@ -15,7 +15,7 @@ timings are padded and ASR-oriented, but the clean separate channels let us deri
 | Domain | medical consultations (remote, 2 speakers) |
 | Views (normalized) | `mix`: Doctor + patient channels summed (as scripts/mix_audio.sh) |
 | Reference used as primary RTTM | Utterance-level TextGrid transcripts per channel (made for ASR evaluation). |
-| Ground-truth rating | **D** - Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems. |
+| Ground-truth rating | **D (official) / B (channel-activity RTTM)** - Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems. |
 | Prepared splits (sessions) | all: 57 |
 <!-- /auto:meta -->
 

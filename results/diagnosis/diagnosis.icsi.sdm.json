@@ -1,0 +1,180 @@
+{
+ "summary": {
+  "dataset": "icsi",
+  "hyp_view": "sdm",
+  "vad_view": "ihm-mix",
+  "sessions": 3,
+  "ref_speech_h": 2.25,
+  "miss_pct": 1.86,
+  "miss_in_silence_pct": 0.79,
+  "miss_with_energy_pct": 1.07,
+  "fa_pct": 6.91,
+  "fa_with_energy_pct": 2.2,
+  "fa_in_silence_pct": 4.71,
+  "note": "speech-detection errors only (speaker-agnostic union of segments), % of reference speech time"
+ },
+ "sessions": [
+  {
+   "session_id": "icsi__Bmr013",
+   "ref": 2281.93,
+   "miss": 35.36,
+   "fa": 161.83,
+   "miss_silent": 13.37,
+   "fa_energy": 68.01,
+   "miss_energy": 21.99,
+   "fa_silent": 93.82,
+   "examples_miss_silent": [
+    [
+     2496.74,
+     2497.44
+    ],
+    [
+     655.36,
+     655.85
+    ],
+    [
+     1490.86,
+     1491.35
+    ],
+    [
+     133.49,
+     133.93
+    ],
+    [
+     2302.16,
+     2302.6
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     556.31,
+     558.05
+    ],
+    [
+     2610.02,
+     2611.71
+    ],
+    [
+     1443.65,
+     1445.12
+    ],
+    [
+     2611.9,
+     2612.78
+    ],
+    [
+     1638.12,
+     1638.99
+    ]
+   ]
+  },
+  {
+   "session_id": "icsi__Bmr018",
+   "ref": 2963.49,
+   "miss": 23.7,
+   "fa": 226.0,
+   "miss_silent": 12.4,
+   "fa_energy": 56.28,
+   "miss_energy": 11.3,
+   "fa_silent": 169.72,
+   "examples_miss_silent": [
+    [
+     2823.38,
+     2824.13
+    ],
+    [
+     227.16,
+     227.63
+    ],
+    [
+     1441.6,
+     1442.01
+    ],
+    [
+     3321.81,
+     3322.21
+    ],
+    [
+     144.95,
+     145.35
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     2350.1,
+     2351.56
+    ],
+    [
+     66.79,
+     67.63
+    ],
+    [
+     1141.64,
+     1142.43
+    ],
+    [
+     3420.25,
+     3420.85
+    ],
+    [
+     2708.54,
+     2709.12
+    ]
+   ]
+  },
+  {
+   "session_id": "icsi__Bro021",
+   "ref": 2868.52,
+   "miss": 91.66,
+   "fa": 172.73,
+   "miss_silent": 38.26,
+   "fa_energy": 53.87,
+   "miss_energy": 53.4,
+   "fa_silent": 118.87,
+   "examples_miss_silent": [
+    [
+     3021.94,
+     3023.06
+    ],
+    [
+     1811.54,
+     1812.46
+    ],
+    [
+     2268.36,
+     2269.21
+    ],
+    [
+     762.36,
+     763.1
+    ],
+    [
+     1677.52,
+     1678.17
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     26.22,
+     27.45
+    ],
+    [
+     71.26,
+     72.1
+    ],
+    [
+     2908.93,
+     2909.64
+    ],
+    [
+     437.79,
+     438.46
+    ],
+    [
+     2466.52,
+     2467.17
+    ]
+   ]
+  }
+ ]
+}

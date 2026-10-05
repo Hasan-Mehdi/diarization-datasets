@@ -109,7 +109,16 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| ihm-mix | ihm-mix | 16 | 2.49 | 0.3 | 2.19 | 2.59 | 1.46 | 1.12 |
+| sdm | ihm-mix | 16 | 3.41 | 0.37 | 3.04 | 2.99 | 1.5 | 1.49 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
+
+**Whisper audit of the longest audible false alarms (sdm):** 14 of 16 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (21.2 of 24.2 s). Examples: `ami__EN2002b` 279.8-282.6 s: "When I go to bed at like 1, you're still online."; `ami__IS1009c` 225.9-228.0 s: "interesting feature that it would have maybe"; `ami__EN2002b` 49.3-51.1 s: "which I guess first thing just sort of did it."
+
+**Time-offset check (sdm):** 0 of 16 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
 <!-- /auto:diagnosis -->
 
 **Reading the AMI numbers.** On the SDM test set Nemotron scores 11.3% DER against the MFA reference, close to
@@ -120,6 +129,12 @@ turns. This is a **reference-convention effect, not model error**, and it matche
 report. Note that Nemotron was trained on forced-aligned AMI labels, so it has learned the tight convention: a
 model trained on `only_words`-style labels would show the opposite pattern. Always state which AMI reference you
 score against.
+
+**Independent confirmation of the dropped MFA utterances.** Whisper finds intelligible speech in 14 of the 16
+longest audible "false alarms" on the SDM test set. Six of them are in EN2002a/b, e.g. EN2002b 49.3-51.1 s
+(*"which I guess first thing just sort of did it"*), which lies inside the 48.3-62.3 s stretch that the MFA reference
+lost. The total is small (about 21 s in 9 h), so the MFA reference is still the right primary reference, but these
+are reference errors, not model false alarms.
 
 
 ## Quality rating
