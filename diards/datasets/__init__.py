@@ -27,6 +27,7 @@ RECIPES = {
     "primock57": "primock57",
     "libricss": "libricss",
     "easycom": "easycom",
+    "scotus": "scotus",
 }
 
 

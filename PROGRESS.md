@@ -4,23 +4,19 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 15:42 EDT (from the system clock)_
+_Last updated: 2026-10-05 16:01 EDT (from the system clock)_
 
-- **Now doing:** CHiME-6 and MSDWild (English LID) preparation in the background; writing DiPCo, SBCSAE and
-  LibriCSS recipes; then validation + statistics + Nemotron runs for every prepared dataset.
-- **Done so far:** env + model (Nemotron 3 Diarization via Transformers on the RTX 5080); `diards` package
-  (normalized layout, loader, validator with energy VAD, stats, DER/JER scorer, Nemotron harness,
-  NeMo/pyannote/Lhotse exports, 17 passing tests). Prepared: AMI (all 171 meetings, 2 views), VoxConverse (448),
-  CallHome English (140), CallFriend English (40), NOTSOFAR-1 eval+dev, ICSI (75), Earnings-21 (44), AVA-AVD English
-  subset (96 of 351 clips), Map Task (128), AfriSpeech-Dialog (46 timestamped), PriMock57 (57).
-  **PriMock57 analysis done: [PRIMOCK57.md](PRIMOCK57.md)** (Nemotron DER 24.2% vs official TextGrids, 10.4% vs
-  per-channel measured speech activity; the official timings are padded utterances).
-- **Findings so far:** AMI forced-aligned vs manual-derived references change Nemotron DER from ~9% to ~18% (2 meetings);
-  VoxConverse has 37/448 single-speaker files; CallFriend (TalkBank) turn bullets have 3,074 same-speaker overlaps;
-  AfriSpeech-Dialog times are hand-typed with ~1 s effective precision; AVA-AVD has VAD-marked speech without
-  speaker labels; CHiME-6's first (enrolment) minute is unannotated (CHiME-7 UEM fixes it).
-- **Needs Hasan:** nothing.
-- Note: no work happened 13:51-15:41 (usage limit; the launcher retried every 30 min).
+- **Now doing:** batch Nemotron evaluation (`scripts/run_nemotron_all.sh`) and batch validation with energy VAD
+  (`scripts/validate_all.sh`) over all prepared datasets; CHiME-6 eval split and EasyCom still preparing.
+- **Done so far:** `diards` package (layout, loader, validator, stats, scorer, Nemotron harness, NeMo/pyannote/Lhotse
+  exports, tests). 19 recipes. Prepared and normalized: AMI, ICSI, NOTSOFAR-1, CHiME-6 (dev), DiPCo, LibriCSS,
+  VoxConverse, CallHome Eng, CallFriend Eng, Earnings-21, MSDWild-en (894 clips), AVA-AVD-en (96 clips), SBCSAE, Map Task,
+  AfriSpeech-Dialog, PriMock57, SCOTUS sample. Dataset cards drafted for all 18 (auto-filled numbers pending).
+  [PRIMOCK57.md](PRIMOCK57.md) done. Appendix of excluded / sign-up / paid datasets: [docs/OTHER_DATASETS.md](docs/OTHER_DATASETS.md).
+- **Next:** finish evaluations + validation, fill cards (`scripts/make_cards.py`), interpret surprising scores per
+  dataset, write README catalog + recommendations, final DONE.
+- **Needs Hasan (optional, for later):** free sign-ups I could not do unattended: Ego4D, MMCSG, CHiME-9 ECHI (DUA),
+  Fearless Steps, MLC-SLM (Nexdata). Details in docs/OTHER_DATASETS.md, section A.
 
 ## Environment decisions
 
@@ -72,6 +68,8 @@ Times before 13:27 are approximate (reconstructed from commit times).
 - 13:51: PriMock57 audit committed (PRIMOCK57.md).
 - 13:51-15:41: paused by usage limit.
 - 2026-10-05 15:42: resumed; all downloads (CHiME-6, DiPCo, SBCSAE, MSDWild) had completed; CHiME-6 + MSDWild prepare started.
+
+- 2026-10-05 16:01: added recipes DiPCo, SBCSAE, LibriCSS, EasyCom (LFS per-file), SCOTUS (Oyez API); cards for all datasets; docs/FORMAT.md, docs/OTHER_DATASETS.md.
 
 ## Skipped / blocked (with reasons)
 

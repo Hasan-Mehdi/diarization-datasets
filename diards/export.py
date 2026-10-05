@@ -14,7 +14,7 @@ Default output directory: ``<root>/<dataset>/exports/<format>/``.
             ``get_protocol("<dataset>_<view>.SpeakerDiarization.default")``.
 * Lhotse:   ``<dataset>_<view>_recordings_<split>.jsonl.gz`` and ``..._supervisions_<split>.jsonl.gz``
             (one supervision per RTTM speaker segment). A generic converter is used for every dataset, so no
-            corpus-specific Lhotse code is duplicated; see docs/EXPORTS.md for the native Lhotse recipes that exist
+            corpus-specific Lhotse code is duplicated; see docs/FORMAT.md for the native Lhotse recipes that exist
             for some of these corpora and how they differ.
 """
 from __future__ import annotations

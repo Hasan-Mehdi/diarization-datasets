@@ -28,4 +28,5 @@ want maptask && run maptask default ''
 want afrispeech_dialog && run afrispeech_dialog default ''
 want primock57 && run primock57 mix ''
 want easycom && run easycom glasses ''
+want scotus && run scotus default ''
 echo ALLDONE
