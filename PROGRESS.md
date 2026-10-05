@@ -41,16 +41,18 @@ _Last updated: 2026-10-05 16:39 EDT (from the system clock)_
 | Area | State |
 |---|---|
 | Repo skeleton + GitHub (private) | done |
-| Candidate research | first pass done (~35 corpora, `docs/research_notes.md`), continuing |
+| Candidate research | done: ~40 corpora checked (`docs/research_notes.md`, `docs/OTHER_DATASETS.md`) |
 | Conda env + PyTorch CUDA | done |
-| Nemotron install (Transformers) | done; NeMo install optional, not attempted yet |
-| Normalized layout + `diards` package (prepare/validate/stats/evaluate) | done (core), recipes in progress |
-| Recipes verified | ami (test/dev), voxconverse, callfriend_eng, earnings21, afrispeech_dialog; running: notsofar1, icsi, ava_avd_en, maptask, callhome_eng, chime6 (waiting for download) |
-| PriMock57 ground-truth analysis | not started |
-| Exports (NeMo / pyannote / Lhotse) + tests | not started |
-| Nemotron evaluation | harness done; 2-meeting AMI smoke test done |
-| Dataset cards | not started |
-| README catalog + recommendations | not started (final polish at the end, per Hasan) |
+| Nemotron (Transformers) + NeMo 3.1 cross-check | done (agree within ~1% DER) |
+| Normalized layout + `diards` package (prepare/validate/stats/export/evaluate/diagnose) | done |
+| Recipes (18 datasets, all prepared and normalized) | done |
+| Validation (incl. energy VAD) + statistics, all datasets | done |
+| Exports (NeMo / pyannote / Lhotse) + tests (19 passing) | done |
+| PriMock57 ground-truth analysis (PRIMOCK57.md) | done |
+| Nemotron evaluation on every dataset | done except DiPCo / LibriCSS / EasyCom (running) |
+| Diagnosis (energy split, Whisper false-alarm audit, time-offset check) | done for all evaluated except the three above |
+| Dataset cards (18) | done, auto blocks filled by `scripts/make_cards.py` |
+| README catalog + recommendations + findings | done (final numbers pending for the three above) |
 
 ## Log
 
@@ -83,8 +85,19 @@ Times before 13:27 are approximate (reconstructed from commit times).
 
 ## Skipped / blocked (with reasons)
 
-- (resolved 13:38) CallHome English: HF access works for Hasan's account; being prepared now.
+- **Free datasets needing a manual sign-up** (cannot be completed unattended; documented with steps in
+  `docs/OTHER_DATASETS.md`, section A): Ego4D AVD (license + emailed AWS keys), MMCSG (Meta registration),
+  CHiME-9 ECHI (HF gated, manual DUA; our token gets 403), Fearless Steps (NIST OpenSAT registration),
+  MLC-SLM English (Nexdata registration), CHiME-9 MCoRec (HF DUA), This American Life (Kaggle account + dead audio links).
+- **Paid / LDC-only**: listed in the README appendix, not downloaded (Fisher, Switchboard, CALLHOME SRE, DIHARD III,
+  Mixer 6, RT meetings, ISL, CHIL, MGB).
+- **Weak or automatic labels** (CANDOR, Seamless Interaction, M3SD, Buckeye, Fareez OSCE, Earnings-22): not prepared;
+  reasons in `docs/OTHER_DATASETS.md` section C. Seamless Interaction was not sample-verified (27 TB, labels automatic).
+- **CHiME-6 train (97 GB)** not downloaded; dev + eval are prepared and evaluated (recipe supports `--split train`).
+- **Native-Windows NeMo**: the PyPI 3.0.0 release cannot load Nemotron 3 Diarization; NeMo from git works with
+  `TORCHDYNAMO_DISABLE=1` and numpy inputs (documented in results/nemo_crosscheck). Evaluation uses Transformers.
+- (resolved 13:38) CallHome English HF access.
 
 ## Open items
 
-- Everything not marked done in the status table above.
+- None that can be done unattended, once the last three evaluations are folded in.

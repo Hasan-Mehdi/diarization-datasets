@@ -92,6 +92,17 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 <!-- /auto:diagnosis -->
 
+**Reading the CHiME-6 numbers: mostly genuine difficulty.** DER on the eval sessions is 37.6% far-field and 32.8% on
+the close-talk mix at collar 0 (25.6% / 22.5% at 0.25 s), against the official forced-alignment reference. Against
+the human utterance ("annotation") RTTM it is 6 points worse, all missed speech in pauses, so the alignment RTTM is
+the right reference. The speaker-agnostic diagnosis shows the model's errors are mostly real: of 9.2 points of missed
+speech (far-field), 7.2 are audible, i.e. overlapped speakers the model drops (25% of speech is overlapped; 32 speaker
+changes per minute). The model also splits the four participants into **five** speakers in both eval sessions (the
+fifth gets 4-10 min); speaker confusion is 8%. The labels themselves hold up: no time shifts, and only short phrases
+are unlabelled (9 of the 15 longest audible false alarms contain words, each about 2 s). The unannotated enrolment
+minute is excluded by the UEM, as in CHiME-7/8.
+
+
 ## Quality rating
 
 **A-.** Everyone was on a close-talk mic and transcribed manually, and the official reference is forced-aligned
