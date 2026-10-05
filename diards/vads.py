@@ -6,6 +6,10 @@ Detectors (all run on the normalized 16 kHz mono audio, on CPU):
   probabilities per 32 ms frame (512 samples) are cached; intervals come from the package's own post-processing
   (``get_speech_timestamps_from_probs``) with its documented defaults (:data:`SILERO_DEFAULTS`): threshold 0.5
   (exit threshold 0.35), min speech 250 ms, min silence 100 ms, 30 ms padding on each side.
+* ``silero_r30``: the same model with its recurrent state reset every 30 s (each window warmed up on the preceding
+  2 s). The stock streaming loop never resets the state, and on some long recordings with continuous speech the
+  state drifts into a regime where the model outputs ~0 for minutes over clearly audible speech (seen on CallHome
+  English, MSDWild); the reset removes that failure and otherwise changes < 1% of frames.
 * ``webrtc``: WebRTC VAD (``webrtcvad``), 30 ms frames, aggressiveness 0-3 (all four cached as a bit mask), then the
   same min-silence / min-speech / padding rules as Silero.
 * ``energy``: the repo's transparent energy VAD (:func:`diards.vad.energy_vad`, default settings, as used by
@@ -42,6 +46,9 @@ SILERO_DEFAULTS = dict(threshold=0.5, neg_threshold=None, min_speech_duration_ms
                        speech_pad_ms=30)
 WEBRTC_DEFAULTS = dict(mode=2, min_silence=0.1, min_speech=0.25, pad=0.03)
 
+RESET_EVERY = 30.0
+RESET_WARMUP = 2.0
+
 _SILERO = None
 
 
@@ -60,7 +67,7 @@ def frames_to_intervals(active: np.ndarray, hop: float, frame: float | None = No
     frame = hop if frame is None else frame
     d = np.diff(np.concatenate([[0], np.asarray(active, dtype=np.int8), [0]]))
     starts, ends = np.flatnonzero(d == 1), np.flatnonzero(d == -1)
-    return [(round(a * hop, 3), round((b - 1) * hop + frame, 3)) for a, b in zip(starts, ends)]
+    return [(round(float(a * hop), 3), round(float((b - 1) * hop + frame), 3)) for a, b in zip(starts, ends)]
 
 
 def postprocess(ivs, min_silence: float = 0.1, min_speech: float = 0.25, pad: float = 0.03,
@@ -92,8 +99,20 @@ def silero_model():
     return _SILERO
 
 
-def silero_probs(x: np.ndarray) -> np.ndarray:
-    """Per-32 ms-frame speech probabilities, exactly as ``silero_vad.get_speech_timestamps`` computes them."""
+def silero_probs(x: np.ndarray, reset_every: float | None = None, warmup: float = RESET_WARMUP) -> np.ndarray:
+    """Per-32 ms-frame speech probabilities, exactly as ``silero_vad.get_speech_timestamps`` computes them.
+
+    With ``reset_every`` the model state is reset every ``reset_every`` seconds; each window is processed from
+    ``warmup`` seconds earlier and the warm-up outputs are discarded."""
+    if reset_every:
+        n = (len(x) + 511) // 512
+        out = np.empty(n, np.float32)
+        step, w = int(round(reset_every * SR / 512)), int(round(warmup * SR / 512))
+        for f0 in range(0, n, step):
+            a = max(0, f0 - w)
+            p = silero_probs(x[a * 512:(f0 + step) * 512])
+            out[f0:f0 + step] = p[f0 - a:f0 - a + step][: len(out[f0:f0 + step])]
+        return out
     import torch
 
     model = silero_model()
@@ -149,7 +168,8 @@ def compute(x: np.ndarray) -> dict:
     from .vad import frame_energy_db, energy_vad
 
     t0 = time.time()
-    out = {"n_samples": np.int64(len(x)), "silero": silero_probs(x).astype(np.float16)}
+    out = {"n_samples": np.int64(len(x)), "silero": silero_probs(x).astype(np.float16),
+           "silero_r30": silero_probs(x, RESET_EVERY).astype(np.float16)}
     t1 = time.time()
     out["webrtc"] = webrtc_mask(x)
     out["energy_db"] = frame_energy_db(x).astype(np.float16)
@@ -181,8 +201,9 @@ class VadCache:
     def silero_probs(self) -> np.ndarray:
         return self.data["silero"].astype(np.float32)
 
-    def silero(self, **params) -> list[tuple[float, float]]:
-        return silero_intervals(self.silero_probs, int(self.data["n_samples"]), **params)
+    def silero(self, reset: bool = False, **params) -> list[tuple[float, float]]:
+        p = self.data["silero_r30" if reset else "silero"].astype(np.float32)
+        return silero_intervals(p, int(self.data["n_samples"]), **params)
 
     def webrtc(self, mode: int = 2, **params) -> list[tuple[float, float]]:
         return webrtc_intervals(self.data["webrtc"], mode, self.duration, **params)
@@ -191,10 +212,10 @@ class VadCache:
         return [(float(a), float(b)) for a, b in self.data["energy_ivs"]]
 
     def get(self, vad: str) -> list[tuple[float, float]]:
-        """``silero`` / ``silero@0.3`` (threshold) / ``webrtc`` / ``webrtc@3`` (mode) / ``energy``."""
+        """``silero`` / ``silero_r30`` / ``silero@0.3`` (threshold) / ``webrtc`` / ``webrtc@3`` (mode) / ``energy``."""
         name, _, arg = vad.partition("@")
-        if name == "silero":
-            return self.silero(**({"threshold": float(arg)} if arg else {}))
+        if name in ("silero", "silero_r30"):
+            return self.silero(reset=name == "silero_r30", **({"threshold": float(arg)} if arg else {}))
         if name == "webrtc":
             return self.webrtc(int(arg) if arg else WEBRTC_DEFAULTS["mode"])
         if name == "energy":
@@ -204,15 +225,32 @@ class VadCache:
 
 # ----------------------------------------------------------------------------- batch computation
 
+CACHE_KEYS = ("silero", "silero_r30", "webrtc", "energy_db", "energy_ivs", "n_samples")
+
+
+def _complete(path: Path) -> bool:
+    if not path.exists():
+        return False
+    with np.load(path) as z:
+        return all(k in z.files for k in CACHE_KEYS)
+
+
 def _work(job):
     audio_path, out_path, channel = job
     from .audio import load_mono16k
 
     out_path = Path(out_path)
-    if out_path.exists():
+    if _complete(out_path):
         return str(out_path), 0.0, 0.0
     x = load_mono16k(audio_path, channel)
-    res = compute(x)
+    if out_path.exists():  # older cache without the state-reset variant: add it
+        with np.load(out_path) as z:
+            res = {k: z[k] for k in z.files}
+        t0 = time.time()
+        res["silero_r30"] = silero_probs(x, RESET_EVERY).astype(np.float16)
+        res["seconds"] = np.array([time.time() - t0, 0.0], np.float32)
+    else:
+        res = compute(x)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     tmp = out_path.with_name(out_path.stem + ".tmp.npz")
     np.savez_compressed(tmp, **res)
@@ -238,7 +276,7 @@ def jobs_for(dataset: str, view: str | None = None, splits=None, root=None, chan
 def run_jobs(jobs, workers: int = 8, label: str = "") -> None:
     from concurrent.futures import ProcessPoolExecutor, as_completed
 
-    todo = [j for j in jobs if not Path(j[1]).exists()]
+    todo = [j for j in jobs if not _complete(Path(j[1]))]
     print(f"[vads] {label}: {len(jobs)} sessions, {len(todo)} to compute, {workers} workers", flush=True)
     if not todo:
         return

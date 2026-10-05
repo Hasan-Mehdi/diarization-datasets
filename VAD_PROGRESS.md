@@ -6,12 +6,19 @@ experiments, not opinion. Deliverable: [docs/silero_vad_study.md](docs/silero_va
 
 ## Current status
 
-_Last updated: 2026-10-05 16:53 EDT (system clock)_
+_Last updated: 2026-10-05 17:31 EDT (system clock)_
 
-- **Now doing:** computing Silero / WebRTC / energy VAD on every dataset (background, CPU, 8 workers);
-  writing the audit module.
-- **Next:** audit (coverage + boundaries) on all datasets, Whisper spot-checks of flagged regions, VAD-assisted
-  Nemotron scoring, data-prep checks, write-up.
+- **Now doing:** VAD cache pass over all datasets (background, CPU, 8 workers), now with both stock Silero and
+  Silero with a 30 s state reset (see finding below); the first ten datasets get the reset variant added after.
+- **Done:** `diards/vads.py` (detectors + cache), `diards/vad_audit.py` (coverage, boundary offsets, lag, evidence
+  for flagged regions), `diards/vad_assist.py` (VAD-assisted Nemotron variants scored with the repo's Scorer;
+  baseline re-scoring reproduces results/nemotron exactly), `scripts/vad_whisper_check.py`,
+  `scripts/vad_primock57_channels.py`, tests (13 passing).
+- **Finding so far:** stock Silero (streaming loop, state never reset) gets stuck on some long recordings: on
+  CallHome eng_125 its speech probability decays to 0.00 after ~50 s and stays there for most of the call while
+  Whisper transcribes fluent speech (speech fraction 6% stock vs 68% with a state reset every 30 s). Also seen on
+  eng_123 and MSDWild 02508. Resetting every 30 s (2 s warm-up) fixes it and changes < 1% of frames elsewhere.
+- **Next:** audit on all datasets, Whisper spot-checks, post-hoc and re-inference pipeline variants, write-up.
 
 ## Environment decisions
 
@@ -35,3 +42,14 @@ _Last updated: 2026-10-05 16:53 EDT (system clock)_
   gating experiments need no GPU.
 - 2026-10-05 16:50: installed silero-vad 6.2.3 (`--no-deps`); added `diards/vads.py` (Silero / WebRTC / energy
   backends + per-session cache) and `scripts/vad_compute_all.sh`; started the full computation in the background.
+- 2026-10-05 17:05: first audits (PriMock57, Map Task, CallHome, CallFriend, AfriSpeech, SCOTUS, SBCSAE) and a
+  Whisper check on CallHome: all 20 longest Silero "unannotated speech" regions are real speech (missing turns),
+  but 17/20 "reference speech Silero calls silence" regions are also real speech: Silero had failed there.
+- 2026-10-05 17:20: diagnosed the failure: Silero's recurrent state drifts to a dead regime on long continuous
+  speech (CallHome eng_125/eng_123/eng_134, MSDWild 02508, some SBCSAE); not level, band-limit or 8 kHz related
+  (fresh state on the same audio gives 71% speech). Added `silero_r30` (state reset every 30 s, 2 s warm-up) to
+  the cache and made it the default Silero variant for the audit and pipeline experiments; stock Silero is kept
+  for comparison. Earlier audit/Whisper outputs deleted and will be regenerated.
+- 2026-10-05 17:25: PriMock57 per channel (Silero on each isolated channel): TextGrid labels are 10.7% (doctor) /
+  14.4% (patient) Silero-silent in >= 0.3 s stretches (energy method: 9.5% / 13.7%); Nemotron DER vs a Silero
+  channel reference 9.8% (c=0) / 2.6% (c=0.25), vs energy channel activity 10.4% / 4.1%, vs TextGrids 24.2% / 16.0%.
