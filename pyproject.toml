@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diards"
+version = "0.1.0"
+description = "Free English speaker-diarization datasets in one verified, normalized layout (+ Nemotron 3 Diarization benchmark)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT (code only; every dataset keeps its own license)" }
+dependencies = ["numpy", "soundfile", "soxr", "pandas", "pyarrow", "requests", "huggingface_hub", "pyyaml",
+                "pyannote.core", "pyannote.metrics"]
+
+[project.optional-dependencies]
+all = ["gdown", "pyannote.database", "lhotse", "transformers", "accelerate", "pytest"]
+
+[project.scripts]
+diards = "diards.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["diards*"]

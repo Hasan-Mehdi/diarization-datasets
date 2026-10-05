@@ -1,0 +1,24 @@
+# Core (prepare / validate / stats / export)
+numpy>=1.26
+scipy>=1.11
+soundfile>=0.12
+soxr>=0.3
+pandas>=2.0
+pyarrow>=14
+requests>=2.31
+huggingface_hub>=0.24
+gdown>=5.2          # MSDWild wavs and AVA-AVD annotations live on Google Drive
+pyyaml>=6
+# scoring and exports
+pyannote.core>=5.0
+pyannote.metrics>=3.2
+pyannote.database>=5.1
+lhotse>=1.24
+# Nemotron 3 Diarization + Whisper LID (GPU recommended). Install torch for your CUDA first, e.g.
+#   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu128
+# Nemotron 3 Diarization needs a Transformers build that includes `nemotron3_diarization`
+# (released after 2026-09-23; until then: pip install git+https://github.com/huggingface/transformers)
+transformers>=5.0
+accelerate>=1.0
+# tests
+pytest>=8
