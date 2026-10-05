@@ -38,7 +38,7 @@ from .vads import ENERGY_HOP, SILERO_HOP, VadCache, cache_path, nemotron_interva
 
 AUDIT_VIEWS = {"ami": "ihm-mix", "icsi": "ihm-mix", "notsofar1": "ihm-mix", "chime6": "ihm-mix", "dipco": "ihm-mix",
                "libricss": "clean-mix", "easycom": "glasses", "primock57": "mix"}
-DEFAULT_VADS = ("silero_r30", "silero", "webrtc", "energy", "nemotron")
+DEFAULT_VADS = ("silero_r30", "silero", "webrtc", "energy", "pyannote", "nemotron")
 TOL = 0.25
 MIN_LEN = 0.5
 ISLAND_GAP = 0.3
@@ -151,6 +151,9 @@ def audit_session(s: Session, vads, view: str, refs: dict, hyp_path: Path | None
         if v == "nemotron":
             if hyp_path and hyp_path.exists():
                 detected[v] = intersect(nemotron_intervals(hyp_path), uem)
+        elif v == "pyannote":
+            if "pyannote_ivs" in cache.data:
+                detected[v] = intersect(merge_intervals(cache.get(v)), uem)
         else:
             detected[v] = intersect(merge_intervals(cache.get(v)), uem)
     e = cache.data["energy_db"].astype(np.float32)
@@ -171,7 +174,7 @@ def audit_session(s: Session, vads, view: str, refs: dict, hyp_path: Path | None
                        onsets=[round(x, 3) for x in b["onsets"]], offsets=[round(x, 3) for x in b["offsets"]])
             if ref_name == "primary":
                 rec["lag"] = best_lag(ref, ivs, s.duration)
-                if v != "nemotron":
+                if v not in ("nemotron", "pyannote"):
                     rstarts = [a for a, _ in ref]
                     rec["top_unref"] = [_evidence(a, b_, v, detected, starts, words, cache, floor, ref, rstarts)
                                         for a, b_ in sorted(m["_unref"], key=lambda t: t[0] - t[1])[:top]]

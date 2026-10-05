@@ -43,7 +43,7 @@ from .score import Scorer
 from .vads import VadCache, frames_to_intervals, study_root, to_raster
 
 RESULTS = Path(__file__).resolve().parents[1] / "results" / "nemotron"
-VADS = ("silero_r30", "silero", "webrtc", "energy")
+VADS = ("silero_r30", "silero", "webrtc", "energy", "pyannote")
 
 
 # ----------------------------------------------------------------------------- tags (= main agent's evaluations)
@@ -206,6 +206,7 @@ def posthoc(tag: str, root=None, vads=VADS) -> dict:
     hd = hyp_dir(tag)
     base = {s.session_id: read_rttm_single(hd / "hyp" / f"{s.session_id}.rttm") for s in sessions}
     caches = {s.session_id: VadCache.load(name, view, s.session_id) for s in sessions}
+    vads = [v for v in vads if v != "pyannote" or all("pyannote_ivs" in c.data for c in caches.values())]
     speech = {v: {sid: merge_intervals(c.get(v)) for sid, c in caches.items()} for v in vads}
     out = {"tag": tag, "sessions": len(sessions), "hours": round(sum(s.duration for s in sessions) / 3600, 2),
            "variants": {}}

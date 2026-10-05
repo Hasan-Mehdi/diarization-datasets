@@ -1,0 +1,255 @@
+{
+ "per_speaker_role": {
+  "doctor": {
+   "labelled_h": 4.817,
+   "energy_activity_h": 4.106,
+   "silero_h": 4.002,
+   "silero_nopad_h": 3.885,
+   "labelled_silero_silent_pct": 17.15,
+   "labelled_silero_silent_ge0.3s_pct": 10.73,
+   "labelled_energy_silent_ge0.3s_pct": 9.53,
+   "silero_unlabelled_min": 0.04,
+   "energy_unlabelled_min": 1.37,
+   "energy_not_silero_ge0.3s_min": 7.33,
+   "silero_not_energy_ge0.3s_min": 0.08
+  },
+  "patient": {
+   "labelled_h": 3.593,
+   "energy_activity_h": 2.852,
+   "silero_h": 2.783,
+   "silero_nopad_h": 2.676,
+   "labelled_silero_silent_pct": 22.76,
+   "labelled_silero_silent_ge0.3s_pct": 14.96,
+   "labelled_energy_silent_ge0.3s_pct": 13.73,
+   "silero_unlabelled_min": 0.1,
+   "energy_unlabelled_min": 1.03,
+   "energy_not_silero_ge0.3s_min": 5.37,
+   "silero_not_energy_ge0.3s_min": 0.02
+  }
+ },
+ "boundaries": {
+  "doctor:textgrid_vs_silero": {
+   "onset": {
+    "p10": 0.146,
+    "p25": 0.198,
+    "p50": 0.259,
+    "p75": 0.33,
+    "p90": 0.483,
+    "n": 2963
+   },
+   "offset": {
+    "p10": -0.011,
+    "p25": 0.047,
+    "p50": 0.106,
+    "p75": 0.17,
+    "p90": 0.252,
+    "n": 2963
+   }
+  },
+  "doctor:textgrid_vs_silero_nopad": {
+   "onset": {
+    "p10": 0.176,
+    "p25": 0.228,
+    "p50": 0.289,
+    "p75": 0.36,
+    "p90": 0.513,
+    "n": 2963
+   },
+   "offset": {
+    "p10": 0.018,
+    "p25": 0.077,
+    "p50": 0.136,
+    "p75": 0.2,
+    "p90": 0.282,
+    "n": 2963
+   }
+  },
+  "doctor:energy_vs_silero": {
+   "onset": {
+    "p10": -0.012,
+    "p25": -0.004,
+    "p50": 0.008,
+    "p75": 0.035,
+    "p90": 0.196,
+    "n": 5263
+   },
+   "offset": {
+    "p10": -0.138,
+    "p25": -0.116,
+    "p50": -0.096,
+    "p75": -0.07,
+    "p90": -0.01,
+    "n": 5263
+   }
+  },
+  "doctor:energy_vs_silero_nopad": {
+   "onset": {
+    "p10": 0.018,
+    "p25": 0.026,
+    "p50": 0.038,
+    "p75": 0.065,
+    "p90": 0.226,
+    "n": 5263
+   },
+   "offset": {
+    "p10": -0.108,
+    "p25": -0.086,
+    "p50": -0.066,
+    "p75": -0.04,
+    "p90": 0.02,
+    "n": 5263
+   }
+  },
+  "patient:textgrid_vs_silero": {
+   "onset": {
+    "p10": 0.155,
+    "p25": 0.196,
+    "p50": 0.254,
+    "p75": 0.317,
+    "p90": 0.41,
+    "n": 2857
+   },
+   "offset": {
+    "p10": 0.002,
+    "p25": 0.048,
+    "p50": 0.105,
+    "p75": 0.169,
+    "p90": 0.276,
+    "n": 2857
+   }
+  },
+  "patient:textgrid_vs_silero_nopad": {
+   "onset": {
+    "p10": 0.185,
+    "p25": 0.226,
+    "p50": 0.284,
+    "p75": 0.347,
+    "p90": 0.44,
+    "n": 2857
+   },
+   "offset": {
+    "p10": 0.032,
+    "p25": 0.078,
+    "p50": 0.135,
+    "p75": 0.199,
+    "p90": 0.306,
+    "n": 2857
+   }
+  },
+  "patient:energy_vs_silero": {
+   "onset": {
+    "p10": -0.01,
+    "p25": -0.002,
+    "p50": 0.008,
+    "p75": 0.024,
+    "p90": 0.106,
+    "n": 5062
+   },
+   "offset": {
+    "p10": -0.134,
+    "p25": -0.114,
+    "p50": -0.096,
+    "p75": -0.076,
+    "p90": -0.044,
+    "n": 5062
+   }
+  },
+  "patient:energy_vs_silero_nopad": {
+   "onset": {
+    "p10": 0.02,
+    "p25": 0.028,
+    "p50": 0.038,
+    "p75": 0.054,
+    "p90": 0.136,
+    "n": 5062
+   },
+   "offset": {
+    "p10": -0.104,
+    "p25": -0.084,
+    "p50": -0.066,
+    "p75": -0.046,
+    "p90": -0.014,
+    "n": 5062
+   }
+  }
+ },
+ "overlap_pct_of_speech": {
+  "textgrid": 6.26,
+  "energy": 3.69,
+  "silero_channel": 1.34
+ },
+ "nemotron_vs_references": {
+  "primary@0.0": {
+   "collar": 0.0,
+   "der": 0.2415,
+   "fa": 0.001,
+   "miss": 0.24,
+   "conf": 0.0005,
+   "jer": 0.2492,
+   "ref_speech_h": 8.4108
+  },
+  "primary@0.25": {
+   "collar": 0.25,
+   "der": 0.1599,
+   "fa": 0.0007,
+   "miss": 0.1588,
+   "conf": 0.0004,
+   "jer": 0.1597,
+   "ref_speech_h": 7.0058
+  },
+  "channel_activity@0.0": {
+   "collar": 0.0,
+   "der": 0.1038,
+   "fa": 0.0112,
+   "miss": 0.0915,
+   "conf": 0.0011,
+   "jer": 0.1055,
+   "ref_speech_h": 6.9581
+  },
+  "channel_activity@0.25": {
+   "collar": 0.25,
+   "der": 0.0408,
+   "fa": 0.0004,
+   "miss": 0.0401,
+   "conf": 0.0003,
+   "jer": 0.0378,
+   "ref_speech_h": 4.6841
+  },
+  "silero_channel@0.0": {
+   "collar": 0.0,
+   "der": 0.1002,
+   "fa": 0.0211,
+   "miss": 0.0779,
+   "conf": 0.0013,
+   "jer": 0.1023,
+   "ref_speech_h": 6.7851
+  },
+  "silero_channel@0.25": {
+   "collar": 0.25,
+   "der": 0.0274,
+   "fa": 0.0084,
+   "miss": 0.0187,
+   "conf": 0.0003,
+   "jer": 0.0276,
+   "ref_speech_h": 4.8854
+  },
+  "silero_channel_nopad@0.0": {
+   "collar": 0.0,
+   "der": 0.0997,
+   "fa": 0.0369,
+   "miss": 0.0614,
+   "conf": 0.0013,
+   "jer": 0.1007,
+   "ref_speech_h": 6.5606
+  },
+  "silero_channel_nopad@0.25": {
+   "collar": 0.25,
+   "der": 0.0278,
+   "fa": 0.009,
+   "miss": 0.0184,
+   "conf": 0.0003,
+   "jer": 0.0281,
+   "ref_speech_h": 4.7217
+  }
+ }
+}

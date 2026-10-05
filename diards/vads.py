@@ -15,6 +15,8 @@ Detectors (all run on the normalized 16 kHz mono audio, on CPU):
 * ``energy``: the repo's transparent energy VAD (:func:`diards.vad.energy_vad`, default settings, as used by
   ``diards validate --vad``); the 10 ms frame log-energies are cached too.
 * ``nemotron``: speaker-agnostic union of a cached Nemotron 3 Diarization hypothesis (``diards evaluate``).
+* ``pyannote``: pyannote segmentation-3.0 VAD pipeline, computed by ``scripts/vad_pyannote.py`` in a separate env
+  and cached as ``<session_id>.pyannote.npz`` next to the main cache file (evaluated subsets only).
 
 Cache: ``<study>/vad/<dataset>.<view>/<session_id>.npz`` with arrays ``silero`` (float16, 32 ms), ``webrtc`` (uint8
 bit mask, 30 ms; bit m = mode m), ``energy_db`` (float16, 30 ms frames every 10 ms), ``energy_ivs`` (float32 [n, 2]),
@@ -189,9 +191,17 @@ class VadCache:
 
     @classmethod
     def load(cls, dataset: str, view: str, session_id: str) -> "VadCache":
-        p = cache_path(dataset, view, session_id)
+        return cls.from_path(cache_path(dataset, view, session_id))
+
+    @classmethod
+    def from_path(cls, p: Path) -> "VadCache":
         with np.load(p) as z:
-            return cls(p, {k: z[k] for k in z.files})
+            data = {k: z[k] for k in z.files}
+        side = p.with_suffix(".pyannote.npz")
+        if side.exists():
+            with np.load(side) as z:
+                data["pyannote_ivs"] = z["ivs"]
+        return cls(p, data)
 
     @property
     def duration(self) -> float:
@@ -212,7 +222,8 @@ class VadCache:
         return [(float(a), float(b)) for a, b in self.data["energy_ivs"]]
 
     def get(self, vad: str) -> list[tuple[float, float]]:
-        """``silero`` / ``silero_r30`` / ``silero@0.3`` (threshold) / ``webrtc`` / ``webrtc@3`` (mode) / ``energy``."""
+        """``silero`` / ``silero_r30`` / ``silero@0.3`` (threshold) / ``webrtc`` / ``webrtc@3`` (mode) / ``energy`` /
+        ``pyannote``."""
         name, _, arg = vad.partition("@")
         if name in ("silero", "silero_r30"):
             return self.silero(reset=name == "silero_r30", **({"threshold": float(arg)} if arg else {}))
@@ -220,6 +231,10 @@ class VadCache:
             return self.webrtc(int(arg) if arg else WEBRTC_DEFAULTS["mode"])
         if name == "energy":
             return self.energy()
+        if name == "pyannote":
+            if "pyannote_ivs" not in self.data:
+                raise FileNotFoundError(self.path.with_suffix(".pyannote.npz"))
+            return [(float(a), float(b)) for a, b in self.data["pyannote_ivs"]]
         raise KeyError(vad)
 
 
