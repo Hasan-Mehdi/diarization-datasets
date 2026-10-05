@@ -43,6 +43,11 @@ silences are absorbed into turns.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **C.** Human turn-level transcription of natural phone calls, but tiled bullets and many same-speaker overlaps

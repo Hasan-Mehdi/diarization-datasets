@@ -46,6 +46,11 @@ same id across their four dialogues.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **A-.** Separate close-talk channels plus word-level timing gives diarization-grade references with natural

@@ -51,6 +51,11 @@ splits are the usual test material.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B.** Human, diarization-oriented labels with natural overlap in casual, noisy, real-life conversation. Minus:

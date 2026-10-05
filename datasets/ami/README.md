@@ -69,6 +69,11 @@ word boundaries and excluding inter-word silences.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **A-.** Close-talk transcription of every participant gives complete coverage with overlap and backchannels. The

@@ -50,6 +50,11 @@ movie `1j20qq1JyX4` is code-switched Yoruba/English and is excluded.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B-.** Human identity labels on hard, in-the-wild movie audio with many speakers. Minus: unlabelled speech regions

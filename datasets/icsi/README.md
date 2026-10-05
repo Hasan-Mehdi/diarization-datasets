@@ -48,6 +48,11 @@ words merged across pauses < 0.2 s.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B.** Natural meetings, complete headset transcription with overlap and backchannels, hand-placed boundaries.

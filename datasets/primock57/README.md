@@ -45,6 +45,11 @@ channel (the channels are isolated by ~50 dB). The same RTTMs are published unde
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 Against the official TextGrids almost all error is "missed speech", and 80% of it falls where the labelled
 speaker's own microphone is silent. Against the channel-activity reference the DER drops from 24.2% to 10.4%
 (collar 0). The model is fine here; the reference is the problem.

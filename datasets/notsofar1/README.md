@@ -52,6 +52,11 @@ timing.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **A-.** Real meetings, everyone close-talk transcribed with a documented multi-stage process, word timings and

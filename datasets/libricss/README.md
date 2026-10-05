@@ -43,6 +43,11 @@ silences of each LibriSpeech utterance, so segments are slightly longer than the
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **S (synthetic).** Exact by construction, but not natural conversation; rated separately from real data.

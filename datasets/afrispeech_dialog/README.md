@@ -45,6 +45,11 @@ as `MM:SS:cc` lines before and after `[Speaker N]: text`.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **D+.** Valuable domain (medical consultations, African accents), but timestamps at ~1 s precision, missing

@@ -48,6 +48,11 @@ This shows how much of the labelled time is silent.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B.** Complete close-talk transcription with overlap, permissive license. The 10-15 s segments overstate speech

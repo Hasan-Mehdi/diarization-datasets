@@ -46,6 +46,11 @@ coded. The reference here has one segment per IU that contains at least one lexi
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B-.** Expert human transcription of every participant in truly natural talk, with overlap marked. Minus: IU-level

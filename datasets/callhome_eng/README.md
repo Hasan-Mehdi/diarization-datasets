@@ -53,6 +53,11 @@ alignment.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **C+.** Human transcripts of natural telephone conversation (a classic benchmark domain), but turn-level bullets

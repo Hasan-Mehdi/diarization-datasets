@@ -52,6 +52,11 @@ Track 2 reference and is the primary reference here. The human one is in `rttm_a
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **A-.** Everyone was on a close-talk mic and transcribed manually, and the official reference is forced-aligned

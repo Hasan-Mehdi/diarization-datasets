@@ -46,6 +46,11 @@ is split into 1-minute files named by their start time in the session. The recip
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B.** Human per-participant voice activity in a hard, realistic egocentric setting with overlap. Minus:

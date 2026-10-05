@@ -45,6 +45,11 @@ are contiguous: each turn ends where the next begins, so pauses belong to the tu
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **C.** Human transcripts with reliable global speaker ids in a valuable domain, but coarse, tiled turn timing and no

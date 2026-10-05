@@ -44,6 +44,11 @@ speaker-labelling issue in file 4341191.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B-.** Careful human transcripts and speaker labels on long real calls with many speakers (up to ~14). The

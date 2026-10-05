@@ -49,6 +49,11 @@ fixed errors that were found in the test RTTMs.
 <!-- auto:nemotron -->
 <!-- /auto:nemotron -->
 
+### Model error or reference error?
+
+<!-- auto:diagnosis -->
+<!-- /auto:diagnosis -->
+
 ## Quality rating
 
 **B+.** Human-verified, diarization-oriented, with overlap, and corrected twice in public. Points off for the
