@@ -1,0 +1,494 @@
+{
+ "tag": "callfriend_eng.default",
+ "sessions": [
+  "callfriend_eng__eng-n_009",
+  "callfriend_eng__eng-n_015",
+  "callfriend_eng__eng-n_022",
+  "callfriend_eng__eng-s_003",
+  "callfriend_eng__eng-s_004"
+ ],
+ "hours": 1.149,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3737,
+     "fa": 0.0448,
+     "miss": 0.2943,
+     "conf": 0.0347,
+     "jer": 0.4492,
+     "ref_speech_h": 1.1148
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3293,
+     "fa": 0.014,
+     "miss": 0.2994,
+     "conf": 0.0159,
+     "jer": 0.3811,
+     "ref_speech_h": 0.8314
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callfriend_eng__eng-n_009",
+     "primary@0.0": {
+      "der": 0.2314,
+      "fa": 0.0758,
+      "miss": 0.1301,
+      "conf": 0.0256,
+      "jer": 0.2356,
+      "ref_speech_s": 505.121
+     },
+     "primary@0.25": {
+      "der": 0.1208,
+      "fa": 0.0251,
+      "miss": 0.0799,
+      "conf": 0.0158,
+      "jer": 0.1273,
+      "ref_speech_s": 345.022
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_015",
+     "primary@0.0": {
+      "der": 0.2742,
+      "fa": 0.1306,
+      "miss": 0.0874,
+      "conf": 0.0562,
+      "jer": 0.279,
+      "ref_speech_s": 186.171
+     },
+     "primary@0.25": {
+      "der": 0.1804,
+      "fa": 0.0956,
+      "miss": 0.0648,
+      "conf": 0.02,
+      "jer": 0.1782,
+      "ref_speech_s": 138.939
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_022",
+     "primary@0.0": {
+      "der": 0.326,
+      "fa": 0.0856,
+      "miss": 0.2267,
+      "conf": 0.0137,
+      "jer": 0.3264,
+      "ref_speech_s": 507.387
+     },
+     "primary@0.25": {
+      "der": 0.175,
+      "fa": 0.0093,
+      "miss": 0.1596,
+      "conf": 0.0061,
+      "jer": 0.1944,
+      "ref_speech_s": 277.051
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_003",
+     "primary@0.0": {
+      "der": 0.4927,
+      "fa": 0.0248,
+      "miss": 0.3995,
+      "conf": 0.0684,
+      "jer": 0.7433,
+      "ref_speech_s": 1038.037
+     },
+     "primary@0.25": {
+      "der": 0.4728,
+      "fa": 0.0082,
+      "miss": 0.426,
+      "conf": 0.0386,
+      "jer": 0.7302,
+      "ref_speech_s": 761.536
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_004",
+     "primary@0.0": {
+      "der": 0.3687,
+      "fa": 0.0269,
+      "miss": 0.3205,
+      "conf": 0.0213,
+      "jer": 0.3676,
+      "ref_speech_s": 1776.572
+     },
+     "primary@0.25": {
+      "der": 0.347,
+      "fa": 0.0076,
+      "miss": 0.3338,
+      "conf": 0.0055,
+      "jer": 0.3266,
+      "ref_speech_s": 1470.528
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3737,
+     "fa": 0.0448,
+     "miss": 0.2943,
+     "conf": 0.0347,
+     "jer": 0.4492,
+     "ref_speech_h": 1.1148
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3293,
+     "fa": 0.014,
+     "miss": 0.2994,
+     "conf": 0.0159,
+     "jer": 0.3811,
+     "ref_speech_h": 0.8314
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callfriend_eng__eng-n_009",
+     "primary@0.0": {
+      "der": 0.2314,
+      "fa": 0.0758,
+      "miss": 0.1301,
+      "conf": 0.0256,
+      "jer": 0.2356,
+      "ref_speech_s": 505.121
+     },
+     "primary@0.25": {
+      "der": 0.1208,
+      "fa": 0.0251,
+      "miss": 0.0799,
+      "conf": 0.0158,
+      "jer": 0.1273,
+      "ref_speech_s": 345.022
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_015",
+     "primary@0.0": {
+      "der": 0.2742,
+      "fa": 0.1306,
+      "miss": 0.0874,
+      "conf": 0.0562,
+      "jer": 0.279,
+      "ref_speech_s": 186.171
+     },
+     "primary@0.25": {
+      "der": 0.1804,
+      "fa": 0.0956,
+      "miss": 0.0648,
+      "conf": 0.02,
+      "jer": 0.1782,
+      "ref_speech_s": 138.939
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_022",
+     "primary@0.0": {
+      "der": 0.326,
+      "fa": 0.0856,
+      "miss": 0.2267,
+      "conf": 0.0137,
+      "jer": 0.3264,
+      "ref_speech_s": 507.387
+     },
+     "primary@0.25": {
+      "der": 0.175,
+      "fa": 0.0093,
+      "miss": 0.1596,
+      "conf": 0.0061,
+      "jer": 0.1944,
+      "ref_speech_s": 277.051
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_003",
+     "primary@0.0": {
+      "der": 0.4927,
+      "fa": 0.0248,
+      "miss": 0.3995,
+      "conf": 0.0684,
+      "jer": 0.7433,
+      "ref_speech_s": 1038.037
+     },
+     "primary@0.25": {
+      "der": 0.4728,
+      "fa": 0.0082,
+      "miss": 0.426,
+      "conf": 0.0386,
+      "jer": 0.7302,
+      "ref_speech_s": 761.536
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_004",
+     "primary@0.0": {
+      "der": 0.3687,
+      "fa": 0.0269,
+      "miss": 0.3205,
+      "conf": 0.0213,
+      "jer": 0.3676,
+      "ref_speech_s": 1776.572
+     },
+     "primary@0.25": {
+      "der": 0.347,
+      "fa": 0.0076,
+      "miss": 0.3338,
+      "conf": 0.0055,
+      "jer": 0.3266,
+      "ref_speech_s": 1470.528
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3783,
+     "fa": 0.045,
+     "miss": 0.299,
+     "conf": 0.0343,
+     "jer": 0.4506,
+     "ref_speech_h": 1.1148
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.335,
+     "fa": 0.014,
+     "miss": 0.3055,
+     "conf": 0.0155,
+     "jer": 0.3825,
+     "ref_speech_h": 0.8314
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callfriend_eng__eng-n_009",
+     "primary@0.0": {
+      "der": 0.2328,
+      "fa": 0.0763,
+      "miss": 0.1312,
+      "conf": 0.0253,
+      "jer": 0.2363,
+      "ref_speech_s": 505.121
+     },
+     "primary@0.25": {
+      "der": 0.1202,
+      "fa": 0.025,
+      "miss": 0.0794,
+      "conf": 0.0158,
+      "jer": 0.1262,
+      "ref_speech_s": 345.022
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_015",
+     "primary@0.0": {
+      "der": 0.2742,
+      "fa": 0.1306,
+      "miss": 0.0874,
+      "conf": 0.0562,
+      "jer": 0.279,
+      "ref_speech_s": 186.171
+     },
+     "primary@0.25": {
+      "der": 0.1804,
+      "fa": 0.0956,
+      "miss": 0.0648,
+      "conf": 0.02,
+      "jer": 0.1782,
+      "ref_speech_s": 138.939
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_022",
+     "primary@0.0": {
+      "der": 0.3272,
+      "fa": 0.0849,
+      "miss": 0.2287,
+      "conf": 0.0137,
+      "jer": 0.3274,
+      "ref_speech_s": 507.387
+     },
+     "primary@0.25": {
+      "der": 0.1764,
+      "fa": 0.0093,
+      "miss": 0.161,
+      "conf": 0.0061,
+      "jer": 0.1949,
+      "ref_speech_s": 277.051
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_003",
+     "primary@0.0": {
+      "der": 0.4949,
+      "fa": 0.0252,
+      "miss": 0.4011,
+      "conf": 0.0687,
+      "jer": 0.7443,
+      "ref_speech_s": 1038.037
+     },
+     "primary@0.25": {
+      "der": 0.4754,
+      "fa": 0.0086,
+      "miss": 0.428,
+      "conf": 0.0387,
+      "jer": 0.7315,
+      "ref_speech_s": 761.536
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_004",
+     "primary@0.0": {
+      "der": 0.3769,
+      "fa": 0.0272,
+      "miss": 0.3293,
+      "conf": 0.0204,
+      "jer": 0.3722,
+      "ref_speech_s": 1776.572
+     },
+     "primary@0.25": {
+      "der": 0.3572,
+      "fa": 0.0073,
+      "miss": 0.3451,
+      "conf": 0.0047,
+      "jer": 0.3329,
+      "ref_speech_s": 1470.528
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3833,
+     "fa": 0.0421,
+     "miss": 0.3086,
+     "conf": 0.0325,
+     "jer": 0.4501,
+     "ref_speech_h": 1.1148
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.344,
+     "fa": 0.014,
+     "miss": 0.3152,
+     "conf": 0.0148,
+     "jer": 0.3847,
+     "ref_speech_h": 0.8314
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callfriend_eng__eng-n_009",
+     "primary@0.0": {
+      "der": 0.2291,
+      "fa": 0.0737,
+      "miss": 0.1305,
+      "conf": 0.0249,
+      "jer": 0.2329,
+      "ref_speech_s": 505.121
+     },
+     "primary@0.25": {
+      "der": 0.1221,
+      "fa": 0.026,
+      "miss": 0.0803,
+      "conf": 0.0158,
+      "jer": 0.1278,
+      "ref_speech_s": 345.022
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_015",
+     "primary@0.0": {
+      "der": 0.2787,
+      "fa": 0.1335,
+      "miss": 0.0899,
+      "conf": 0.0553,
+      "jer": 0.2818,
+      "ref_speech_s": 186.171
+     },
+     "primary@0.25": {
+      "der": 0.1851,
+      "fa": 0.0976,
+      "miss": 0.0674,
+      "conf": 0.0201,
+      "jer": 0.1825,
+      "ref_speech_s": 138.939
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-n_022",
+     "primary@0.0": {
+      "der": 0.3152,
+      "fa": 0.0796,
+      "miss": 0.2223,
+      "conf": 0.0133,
+      "jer": 0.3169,
+      "ref_speech_s": 507.387
+     },
+     "primary@0.25": {
+      "der": 0.1729,
+      "fa": 0.01,
+      "miss": 0.1569,
+      "conf": 0.0061,
+      "jer": 0.191,
+      "ref_speech_s": 277.051
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_003",
+     "primary@0.0": {
+      "der": 0.4913,
+      "fa": 0.0215,
+      "miss": 0.4019,
+      "conf": 0.0679,
+      "jer": 0.7432,
+      "ref_speech_s": 1038.037
+     },
+     "primary@0.25": {
+      "der": 0.4736,
+      "fa": 0.009,
+      "miss": 0.4255,
+      "conf": 0.0391,
+      "jer": 0.7307,
+      "ref_speech_s": 761.536
+     }
+    },
+    {
+     "session_id": "callfriend_eng__eng-s_004",
+     "primary@0.0": {
+      "der": 0.3944,
+      "fa": 0.0249,
+      "miss": 0.3523,
+      "conf": 0.0172,
+      "jer": 0.383,
+      "ref_speech_s": 1776.572
+     },
+     "primary@0.25": {
+      "der": 0.3762,
+      "fa": 0.0067,
+      "miss": 0.3664,
+      "conf": 0.003,
+      "jer": 0.3452,
+      "ref_speech_s": 1470.528
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.149,
+  "trim": 1.012,
+  "zero": 1.149
+ }
+}

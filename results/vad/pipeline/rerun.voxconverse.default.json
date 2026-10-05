@@ -1,0 +1,571 @@
+{
+ "tag": "voxconverse.default",
+ "sessions": [
+  "voxconverse__diysk",
+  "voxconverse__ibrnm",
+  "voxconverse__jxydp",
+  "voxconverse__lilfy",
+  "voxconverse__uevxo",
+  "voxconverse__xqxkt"
+ ],
+ "hours": 1.134,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.0952,
+     "fa": 0.0116,
+     "miss": 0.04,
+     "conf": 0.0437,
+     "jer": 0.3503,
+     "ref_speech_h": 1.0707
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0624,
+     "fa": 0.0018,
+     "miss": 0.0213,
+     "conf": 0.0394,
+     "jer": 0.3244,
+     "ref_speech_h": 0.95
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "voxconverse__diysk",
+     "primary@0.0": {
+      "der": 0.1975,
+      "fa": 0.0289,
+      "miss": 0.1067,
+      "conf": 0.0619,
+      "jer": 0.6269,
+      "ref_speech_s": 1133.48
+     },
+     "primary@0.25": {
+      "der": 0.1308,
+      "fa": 0.0069,
+      "miss": 0.0716,
+      "conf": 0.0524,
+      "jer": 0.5801,
+      "ref_speech_s": 801.38
+     }
+    },
+    {
+     "session_id": "voxconverse__ibrnm",
+     "primary@0.0": {
+      "der": 0.0878,
+      "fa": 0.0035,
+      "miss": 0.0103,
+      "conf": 0.0739,
+      "jer": 0.4446,
+      "ref_speech_s": 1118.27
+     },
+     "primary@0.25": {
+      "der": 0.0775,
+      "fa": 0.0,
+      "miss": 0.0044,
+      "conf": 0.0731,
+      "jer": 0.4311,
+      "ref_speech_s": 1074.27
+     }
+    },
+    {
+     "session_id": "voxconverse__jxydp",
+     "primary@0.0": {
+      "der": 0.0002,
+      "fa": 0.0002,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0002,
+      "ref_speech_s": 85.932
+     },
+     "primary@0.25": {
+      "der": 0.0,
+      "fa": 0.0,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0,
+      "ref_speech_s": 85.432
+     }
+    },
+    {
+     "session_id": "voxconverse__lilfy",
+     "primary@0.0": {
+      "der": 0.0291,
+      "fa": 0.0222,
+      "miss": 0.007,
+      "conf": 0.0,
+      "jer": 0.0293,
+      "ref_speech_s": 173.26
+     },
+     "primary@0.25": {
+      "der": 0.0008,
+      "fa": 0.0008,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0002,
+      "ref_speech_s": 161.26
+     }
+    },
+    {
+     "session_id": "voxconverse__uevxo",
+     "primary@0.0": {
+      "der": 0.1071,
+      "fa": 0.0054,
+      "miss": 0.0346,
+      "conf": 0.0671,
+      "jer": 0.2327,
+      "ref_speech_s": 225.56
+     },
+     "primary@0.25": {
+      "der": 0.0967,
+      "fa": 0.0014,
+      "miss": 0.0294,
+      "conf": 0.0659,
+      "jer": 0.2208,
+      "ref_speech_s": 213.86
+     }
+    },
+    {
+     "session_id": "voxconverse__xqxkt",
+     "primary@0.0": {
+      "der": 0.0142,
+      "fa": 0.0025,
+      "miss": 0.0113,
+      "conf": 0.0004,
+      "jer": 0.0266,
+      "ref_speech_s": 1117.974
+     },
+     "primary@0.25": {
+      "der": 0.0043,
+      "fa": 0.0001,
+      "miss": 0.0042,
+      "conf": 0.0,
+      "jer": 0.0048,
+      "ref_speech_s": 1083.894
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.0952,
+     "fa": 0.0116,
+     "miss": 0.04,
+     "conf": 0.0437,
+     "jer": 0.3503,
+     "ref_speech_h": 1.0707
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0624,
+     "fa": 0.0018,
+     "miss": 0.0213,
+     "conf": 0.0394,
+     "jer": 0.3244,
+     "ref_speech_h": 0.95
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "voxconverse__diysk",
+     "primary@0.0": {
+      "der": 0.1975,
+      "fa": 0.0289,
+      "miss": 0.1067,
+      "conf": 0.0619,
+      "jer": 0.6269,
+      "ref_speech_s": 1133.48
+     },
+     "primary@0.25": {
+      "der": 0.1308,
+      "fa": 0.0069,
+      "miss": 0.0716,
+      "conf": 0.0524,
+      "jer": 0.5801,
+      "ref_speech_s": 801.38
+     }
+    },
+    {
+     "session_id": "voxconverse__ibrnm",
+     "primary@0.0": {
+      "der": 0.0878,
+      "fa": 0.0035,
+      "miss": 0.0103,
+      "conf": 0.0739,
+      "jer": 0.4446,
+      "ref_speech_s": 1118.27
+     },
+     "primary@0.25": {
+      "der": 0.0775,
+      "fa": 0.0,
+      "miss": 0.0044,
+      "conf": 0.0731,
+      "jer": 0.4311,
+      "ref_speech_s": 1074.27
+     }
+    },
+    {
+     "session_id": "voxconverse__jxydp",
+     "primary@0.0": {
+      "der": 0.0002,
+      "fa": 0.0002,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0002,
+      "ref_speech_s": 85.932
+     },
+     "primary@0.25": {
+      "der": 0.0,
+      "fa": 0.0,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0,
+      "ref_speech_s": 85.432
+     }
+    },
+    {
+     "session_id": "voxconverse__lilfy",
+     "primary@0.0": {
+      "der": 0.0291,
+      "fa": 0.0222,
+      "miss": 0.007,
+      "conf": 0.0,
+      "jer": 0.0293,
+      "ref_speech_s": 173.26
+     },
+     "primary@0.25": {
+      "der": 0.0008,
+      "fa": 0.0008,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0002,
+      "ref_speech_s": 161.26
+     }
+    },
+    {
+     "session_id": "voxconverse__uevxo",
+     "primary@0.0": {
+      "der": 0.1071,
+      "fa": 0.0054,
+      "miss": 0.0346,
+      "conf": 0.0671,
+      "jer": 0.2327,
+      "ref_speech_s": 225.56
+     },
+     "primary@0.25": {
+      "der": 0.0967,
+      "fa": 0.0014,
+      "miss": 0.0294,
+      "conf": 0.0659,
+      "jer": 0.2208,
+      "ref_speech_s": 213.86
+     }
+    },
+    {
+     "session_id": "voxconverse__xqxkt",
+     "primary@0.0": {
+      "der": 0.0142,
+      "fa": 0.0025,
+      "miss": 0.0113,
+      "conf": 0.0004,
+      "jer": 0.0266,
+      "ref_speech_s": 1117.974
+     },
+     "primary@0.25": {
+      "der": 0.0043,
+      "fa": 0.0001,
+      "miss": 0.0042,
+      "conf": 0.0,
+      "jer": 0.0048,
+      "ref_speech_s": 1083.894
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.0973,
+     "fa": 0.0118,
+     "miss": 0.0473,
+     "conf": 0.0381,
+     "jer": 0.3487,
+     "ref_speech_h": 1.0707
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0647,
+     "fa": 0.0018,
+     "miss": 0.0278,
+     "conf": 0.035,
+     "jer": 0.3244,
+     "ref_speech_h": 0.95
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "voxconverse__diysk",
+     "primary@0.0": {
+      "der": 0.1914,
+      "fa": 0.0267,
+      "miss": 0.1158,
+      "conf": 0.0489,
+      "jer": 0.6054,
+      "ref_speech_s": 1133.48
+     },
+     "primary@0.25": {
+      "der": 0.1263,
+      "fa": 0.006,
+      "miss": 0.0795,
+      "conf": 0.0407,
+      "jer": 0.5641,
+      "ref_speech_s": 801.38
+     }
+    },
+    {
+     "session_id": "voxconverse__ibrnm",
+     "primary@0.0": {
+      "der": 0.096,
+      "fa": 0.0036,
+      "miss": 0.0243,
+      "conf": 0.0681,
+      "jer": 0.4539,
+      "ref_speech_s": 1118.27
+     },
+     "primary@0.25": {
+      "der": 0.0855,
+      "fa": 0.0001,
+      "miss": 0.0174,
+      "conf": 0.068,
+      "jer": 0.4415,
+      "ref_speech_s": 1074.27
+     }
+    },
+    {
+     "session_id": "voxconverse__jxydp",
+     "primary@0.0": {
+      "der": 0.0002,
+      "fa": 0.0002,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0002,
+      "ref_speech_s": 85.932
+     },
+     "primary@0.25": {
+      "der": 0.0,
+      "fa": 0.0,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0,
+      "ref_speech_s": 85.432
+     }
+    },
+    {
+     "session_id": "voxconverse__lilfy",
+     "primary@0.0": {
+      "der": 0.0345,
+      "fa": 0.0281,
+      "miss": 0.0064,
+      "conf": 0.0,
+      "jer": 0.0351,
+      "ref_speech_s": 173.26
+     },
+     "primary@0.25": {
+      "der": 0.0012,
+      "fa": 0.0012,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0013,
+      "ref_speech_s": 161.26
+     }
+    },
+    {
+     "session_id": "voxconverse__uevxo",
+     "primary@0.0": {
+      "der": 0.1071,
+      "fa": 0.0054,
+      "miss": 0.0346,
+      "conf": 0.0671,
+      "jer": 0.2327,
+      "ref_speech_s": 225.56
+     },
+     "primary@0.25": {
+      "der": 0.0967,
+      "fa": 0.0014,
+      "miss": 0.0294,
+      "conf": 0.0659,
+      "jer": 0.2208,
+      "ref_speech_s": 213.86
+     }
+    },
+    {
+     "session_id": "voxconverse__xqxkt",
+     "primary@0.0": {
+      "der": 0.0184,
+      "fa": 0.0046,
+      "miss": 0.0136,
+      "conf": 0.0002,
+      "jer": 0.0416,
+      "ref_speech_s": 1117.974
+     },
+     "primary@0.25": {
+      "der": 0.0067,
+      "fa": 0.0008,
+      "miss": 0.0059,
+      "conf": 0.0,
+      "jer": 0.0203,
+      "ref_speech_s": 1083.894
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.0979,
+     "fa": 0.0123,
+     "miss": 0.0352,
+     "conf": 0.0504,
+     "jer": 0.3398,
+     "ref_speech_h": 1.0707
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0659,
+     "fa": 0.0018,
+     "miss": 0.0171,
+     "conf": 0.047,
+     "jer": 0.3134,
+     "ref_speech_h": 0.95
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "voxconverse__diysk",
+     "primary@0.0": {
+      "der": 0.1927,
+      "fa": 0.0311,
+      "miss": 0.0795,
+      "conf": 0.082,
+      "jer": 0.6113,
+      "ref_speech_s": 1133.48
+     },
+     "primary@0.25": {
+      "der": 0.1247,
+      "fa": 0.0061,
+      "miss": 0.0397,
+      "conf": 0.079,
+      "jer": 0.5614,
+      "ref_speech_s": 801.38
+     }
+    },
+    {
+     "session_id": "voxconverse__ibrnm",
+     "primary@0.0": {
+      "der": 0.0963,
+      "fa": 0.0034,
+      "miss": 0.0247,
+      "conf": 0.0682,
+      "jer": 0.4409,
+      "ref_speech_s": 1118.27
+     },
+     "primary@0.25": {
+      "der": 0.087,
+      "fa": 0.0003,
+      "miss": 0.018,
+      "conf": 0.0686,
+      "jer": 0.4305,
+      "ref_speech_s": 1074.27
+     }
+    },
+    {
+     "session_id": "voxconverse__jxydp",
+     "primary@0.0": {
+      "der": 0.0002,
+      "fa": 0.0002,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0002,
+      "ref_speech_s": 85.932
+     },
+     "primary@0.25": {
+      "der": 0.0,
+      "fa": 0.0,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0,
+      "ref_speech_s": 85.432
+     }
+    },
+    {
+     "session_id": "voxconverse__lilfy",
+     "primary@0.0": {
+      "der": 0.0289,
+      "fa": 0.022,
+      "miss": 0.0069,
+      "conf": 0.0,
+      "jer": 0.0286,
+      "ref_speech_s": 173.26
+     },
+     "primary@0.25": {
+      "der": 0.0008,
+      "fa": 0.0008,
+      "miss": 0.0,
+      "conf": 0.0,
+      "jer": 0.0002,
+      "ref_speech_s": 161.26
+     }
+    },
+    {
+     "session_id": "voxconverse__uevxo",
+     "primary@0.0": {
+      "der": 0.1226,
+      "fa": 0.0064,
+      "miss": 0.0076,
+      "conf": 0.1086,
+      "jer": 0.1954,
+      "ref_speech_s": 225.56
+     },
+     "primary@0.25": {
+      "der": 0.1142,
+      "fa": 0.0023,
+      "miss": 0.001,
+      "conf": 0.1109,
+      "jer": 0.1802,
+      "ref_speech_s": 213.86
+     }
+    },
+    {
+     "session_id": "voxconverse__xqxkt",
+     "primary@0.0": {
+      "der": 0.0165,
+      "fa": 0.0026,
+      "miss": 0.0134,
+      "conf": 0.0004,
+      "jer": 0.0409,
+      "ref_speech_s": 1117.974
+     },
+     "primary@0.25": {
+      "der": 0.0069,
+      "fa": 0.0003,
+      "miss": 0.0066,
+      "conf": 0.0,
+      "jer": 0.0206,
+      "ref_speech_s": 1083.894
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.134,
+  "trim": 1.107,
+  "zero": 1.134
+ }
+}

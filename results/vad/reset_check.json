@@ -1,0 +1,1110 @@
+{
+ "definition": "How often does Silero VAD go silent over clear speech? Stock streaming vs state-reset variants.\n\nSilero's per-frame output depends on its recurrent state. On some recordings (telephone speech in particular) the\nmodel is bistable: the same stretch of clear speech gets probabilities near 1 or near 0 depending on where the\nstream started. This script measures that failure on the sessions Nemotron was evaluated on, using two independent\nwitnesses: a 10 s window is a *clear-speech window* when Nemotron's speech covers >= 50% of it and WebRTC VAD\n(mode 3, the strictest) fires on >= 50% of its frames; Silero *drops out* on such a window when its maximum\nprobability in the window is < 0.2. Compared variants (all from the cache):\n\n* ``stock``: the streaming loop as ``silero_vad.get_speech_timestamps`` runs it (state never reset);\n* ``r30``: state reset every 30 s with a 2 s warm-up;\n* ``max``: frame-wise maximum of the two (two different state histories).\n\nIt also reports, for all cached sessions, how much speech each variant finds.",
+ "total_clear_windows": 75077,
+ "total_dropout_windows": {
+  "stock": 293,
+  "r30": 104,
+  "max": 52
+ },
+ "total_dropout_pct": {
+  "stock": 0.39,
+  "r30": 0.139,
+  "max": 0.069
+ },
+ "per_tag": {
+  "afrispeech_dialog.default": {
+   "sessions": 46,
+   "hours": 6.63,
+   "clear_windows": 2288,
+   "speech_h": {
+    "stock": 5.57,
+    "r30": 5.59,
+    "max": 5.6
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "ami.ihm-mix": {
+   "sessions": 16,
+   "hours": 9.06,
+   "clear_windows": 2472,
+   "speech_h": {
+    "stock": 6.38,
+    "r30": 6.4,
+    "max": 6.43
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "ami.sdm": {
+   "sessions": 16,
+   "hours": 9.06,
+   "clear_windows": 536,
+   "speech_h": {
+    "stock": 5.66,
+    "r30": 5.81,
+    "max": 5.86
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "ava_avd_en.default": {
+   "sessions": 29,
+   "hours": 2.42,
+   "clear_windows": 220,
+   "speech_h": {
+    "stock": 0.73,
+    "r30": 0.77,
+    "max": 0.79
+   },
+   "dropout_windows": {
+    "stock": 20,
+    "r30": 10,
+    "max": 9
+   },
+   "worst_sessions": {
+    "stock": [
+     [
+      "ava_avd_en__BCiuXAuCKAU_c_01",
+      5,
+      [
+       50,
+       100,
+       110,
+       120,
+       170
+      ]
+     ],
+     [
+      "ava_avd_en__kMy-6RtoOVU_c_01",
+      5,
+      [
+       170,
+       190,
+       200,
+       230,
+       250
+      ]
+     ],
+     [
+      "ava_avd_en__55Ihr6uVIDA_c_03",
+      3,
+      [
+       200,
+       220,
+       240
+      ]
+     ],
+     [
+      "ava_avd_en__oD_wxyTHJ2I_c_01",
+      2,
+      [
+       190,
+       200
+      ]
+     ],
+     [
+      "ava_avd_en__2XeFK-DTSZk_c_03",
+      1,
+      [
+       120
+      ]
+     ]
+    ],
+    "r30": [
+     [
+      "ava_avd_en__kMy-6RtoOVU_c_01",
+      4,
+      [
+       140,
+       170,
+       200,
+       230
+      ]
+     ],
+     [
+      "ava_avd_en__BCiuXAuCKAU_c_01",
+      2,
+      [
+       50,
+       170
+      ]
+     ],
+     [
+      "ava_avd_en__oD_wxyTHJ2I_c_01",
+      2,
+      [
+       190,
+       200
+      ]
+     ],
+     [
+      "ava_avd_en__55Ihr6uVIDA_c_03",
+      1,
+      [
+       200
+      ]
+     ],
+     [
+      "ava_avd_en__BCiuXAuCKAU_c_03",
+      1,
+      [
+       190
+      ]
+     ]
+    ],
+    "max": [
+     [
+      "ava_avd_en__kMy-6RtoOVU_c_01",
+      3,
+      [
+       170,
+       200,
+       230
+      ]
+     ],
+     [
+      "ava_avd_en__BCiuXAuCKAU_c_01",
+      2,
+      [
+       50,
+       170
+      ]
+     ],
+     [
+      "ava_avd_en__oD_wxyTHJ2I_c_01",
+      2,
+      [
+       190,
+       200
+      ]
+     ],
+     [
+      "ava_avd_en__55Ihr6uVIDA_c_03",
+      1,
+      [
+       200
+      ]
+     ],
+     [
+      "ava_avd_en__BCiuXAuCKAU_c_03",
+      1,
+      [
+       190
+      ]
+     ]
+    ]
+   },
+   "dropout_pct": {
+    "stock": 9.09,
+    "r30": 4.55,
+    "max": 4.09
+   }
+  },
+  "callfriend_eng.default": {
+   "sessions": 40,
+   "hours": 10.44,
+   "clear_windows": 3457,
+   "speech_h": {
+    "stock": 8.44,
+    "r30": 8.37,
+    "max": 8.47
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 2,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [
+     [
+      "callfriend_eng__eng-n_013",
+      1,
+      [
+       230
+      ]
+     ],
+     [
+      "callfriend_eng__eng-s_005",
+      1,
+      [
+       760
+      ]
+     ]
+    ],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.06,
+    "max": 0.0
+   }
+  },
+  "callhome_eng.default": {
+   "sessions": 140,
+   "hours": 20.3,
+   "clear_windows": 7067,
+   "speech_h": {
+    "stock": 17.0,
+    "r30": 17.0,
+    "max": 17.27
+   },
+   "dropout_windows": {
+    "stock": 74,
+    "r30": 8,
+    "max": 1
+   },
+   "worst_sessions": {
+    "stock": [
+     [
+      "callhome_eng__eng_125",
+      46,
+      [
+       60,
+       70,
+       80,
+       90,
+       100
+      ]
+     ],
+     [
+      "callhome_eng__eng_123",
+      25,
+      [
+       80,
+       110,
+       120,
+       130,
+       140
+      ]
+     ],
+     [
+      "callhome_eng__eng_134",
+      3,
+      [
+       70,
+       80,
+       90
+      ]
+     ]
+    ],
+    "r30": [
+     [
+      "callhome_eng__eng_072",
+      2,
+      [
+       130,
+       140
+      ]
+     ],
+     [
+      "callhome_eng__eng_089",
+      1,
+      [
+       250
+      ]
+     ],
+     [
+      "callhome_eng__eng_109",
+      1,
+      [
+       370
+      ]
+     ],
+     [
+      "callhome_eng__eng_110",
+      1,
+      [
+       150
+      ]
+     ],
+     [
+      "callhome_eng__eng_121",
+      1,
+      [
+       490
+      ]
+     ]
+    ],
+    "max": [
+     [
+      "callhome_eng__eng_125",
+      1,
+      [
+       710
+      ]
+     ]
+    ]
+   },
+   "dropout_pct": {
+    "stock": 1.05,
+    "r30": 0.11,
+    "max": 0.01
+   }
+  },
+  "chime6.farfield": {
+   "sessions": 2,
+   "hours": 5.21,
+   "clear_windows": 551,
+   "speech_h": {
+    "stock": 1.67,
+    "r30": 1.88,
+    "max": 2.09
+   },
+   "dropout_windows": {
+    "stock": 140,
+    "r30": 44,
+    "max": 24
+   },
+   "worst_sessions": {
+    "stock": [
+     [
+      "chime6__S01",
+      137,
+      [
+       130,
+       140,
+       160,
+       180,
+       200
+      ]
+     ],
+     [
+      "chime6__S21",
+      3,
+      [
+       2090,
+       8010,
+       8030
+      ]
+     ]
+    ],
+    "r30": [
+     [
+      "chime6__S01",
+      41,
+      [
+       160,
+       370,
+       470,
+       680,
+       860
+      ]
+     ],
+     [
+      "chime6__S21",
+      3,
+      [
+       2090,
+       8030,
+       9050
+      ]
+     ]
+    ],
+    "max": [
+     [
+      "chime6__S01",
+      22,
+      [
+       160,
+       370,
+       470,
+       680,
+       860
+      ]
+     ],
+     [
+      "chime6__S21",
+      2,
+      [
+       2090,
+       8030
+      ]
+     ]
+    ]
+   },
+   "dropout_pct": {
+    "stock": 25.41,
+    "r30": 7.99,
+    "max": 4.36
+   }
+  },
+  "chime6.farfield.dev": {
+   "sessions": 2,
+   "hours": 4.46,
+   "clear_windows": 505,
+   "speech_h": {
+    "stock": 2.74,
+    "r30": 2.61,
+    "max": 2.86
+   },
+   "dropout_windows": {
+    "stock": 8,
+    "r30": 8,
+    "max": 4
+   },
+   "worst_sessions": {
+    "stock": [
+     [
+      "chime6__S09",
+      8,
+      [
+       1290,
+       1430,
+       1500,
+       1790,
+       2580
+      ]
+     ]
+    ],
+    "r30": [
+     [
+      "chime6__S09",
+      8,
+      [
+       190,
+       200,
+       370,
+       1290,
+       1870
+      ]
+     ]
+    ],
+    "max": [
+     [
+      "chime6__S09",
+      4,
+      [
+       1290,
+       2580,
+       2940,
+       6290
+      ]
+     ]
+    ]
+   },
+   "dropout_pct": {
+    "stock": 1.58,
+    "r30": 1.58,
+    "max": 0.79
+   }
+  },
+  "chime6.ihm-mix": {
+   "sessions": 2,
+   "hours": 5.21,
+   "clear_windows": 655,
+   "speech_h": {
+    "stock": 3.44,
+    "r30": 3.41,
+    "max": 3.51
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 2,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [
+     [
+      "chime6__S01",
+      2,
+      [
+       8180,
+       8210
+      ]
+     ]
+    ],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.31,
+    "max": 0.0
+   }
+  },
+  "dipco.farfield": {
+   "sessions": 5,
+   "hours": 2.6,
+   "clear_windows": 5,
+   "speech_h": {
+    "stock": 0.84,
+    "r30": 1.13,
+    "max": 1.14
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "dipco.ihm-mix": {
+   "sessions": 5,
+   "hours": 2.6,
+   "clear_windows": 825,
+   "speech_h": {
+    "stock": 2.14,
+    "r30": 2.14,
+    "max": 2.15
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "earnings21.default": {
+   "sessions": 44,
+   "hours": 39.26,
+   "clear_windows": 13107,
+   "speech_h": {
+    "stock": 33.01,
+    "r30": 33.05,
+    "max": 33.11
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "easycom.glasses": {
+   "sessions": 12,
+   "hours": 5.3,
+   "clear_windows": 70,
+   "speech_h": {
+    "stock": 1.92,
+    "r30": 2.11,
+    "max": 2.19
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "icsi.ihm-mix": {
+   "sessions": 3,
+   "hours": 2.77,
+   "clear_windows": 824,
+   "speech_h": {
+    "stock": 2.26,
+    "r30": 2.25,
+    "max": 2.28
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "icsi.sdm": {
+   "sessions": 3,
+   "hours": 2.77,
+   "clear_windows": 11,
+   "speech_h": {
+    "stock": 1.75,
+    "r30": 1.85,
+    "max": 1.87
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "libricss.clean-mix": {
+   "sessions": 54,
+   "hours": 9.08,
+   "clear_windows": 3146,
+   "speech_h": {
+    "stock": 7.92,
+    "r30": 7.93,
+    "max": 7.93
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "libricss.sdm": {
+   "sessions": 54,
+   "hours": 9.09,
+   "clear_windows": 496,
+   "speech_h": {
+    "stock": 7.24,
+    "r30": 7.33,
+    "max": 7.35
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "maptask.default": {
+   "sessions": 128,
+   "hours": 14.31,
+   "clear_windows": 4234,
+   "speech_h": {
+    "stock": 10.31,
+    "r30": 10.29,
+    "max": 10.36
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "msdwild_en.default": {
+   "sessions": 150,
+   "hours": 4.16,
+   "clear_windows": 1346,
+   "speech_h": {
+    "stock": 3.65,
+    "r30": 3.66,
+    "max": 3.68
+   },
+   "dropout_windows": {
+    "stock": 25,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [
+     [
+      "msdwild_en__02508",
+      25,
+      [
+       200,
+       210,
+       230,
+       240,
+       250
+      ]
+     ]
+    ],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 1.86,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "notsofar1.ihm-mix": {
+   "sessions": 129,
+   "hours": 13.34,
+   "clear_windows": 4561,
+   "speech_h": {
+    "stock": 12.25,
+    "r30": 12.27,
+    "max": 12.28
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "primock57.mix": {
+   "sessions": 57,
+   "hours": 8.64,
+   "clear_windows": 2948,
+   "speech_h": {
+    "stock": 6.77,
+    "r30": 6.76,
+    "max": 6.78
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "sbcsae.default": {
+   "sessions": 60,
+   "hours": 23.31,
+   "clear_windows": 5278,
+   "speech_h": {
+    "stock": 16.69,
+    "r30": 16.56,
+    "max": 17.02
+   },
+   "dropout_windows": {
+    "stock": 15,
+    "r30": 20,
+    "max": 4
+   },
+   "worst_sessions": {
+    "stock": [
+     [
+      "sbcsae__SBC037",
+      9,
+      [
+       1300,
+       1310,
+       1350,
+       1370,
+       1380
+      ]
+     ],
+     [
+      "sbcsae__SBC033",
+      2,
+      [
+       30,
+       80
+      ]
+     ],
+     [
+      "sbcsae__SBC042",
+      2,
+      [
+       210,
+       220
+      ]
+     ],
+     [
+      "sbcsae__SBC018",
+      1,
+      [
+       680
+      ]
+     ],
+     [
+      "sbcsae__SBC035",
+      1,
+      [
+       20
+      ]
+     ]
+    ],
+    "r30": [
+     [
+      "sbcsae__SBC026",
+      5,
+      [
+       1270,
+       1280,
+       1460,
+       1480,
+       1520
+      ]
+     ],
+     [
+      "sbcsae__SBC033",
+      5,
+      [
+       190,
+       420,
+       430,
+       440,
+       470
+      ]
+     ],
+     [
+      "sbcsae__SBC037",
+      3,
+      [
+       320,
+       1040,
+       1100
+      ]
+     ],
+     [
+      "sbcsae__SBC018",
+      2,
+      [
+       260,
+       680
+      ]
+     ],
+     [
+      "sbcsae__SBC042",
+      2,
+      [
+       210,
+       220
+      ]
+     ]
+    ],
+    "max": [
+     [
+      "sbcsae__SBC042",
+      2,
+      [
+       210,
+       220
+      ]
+     ],
+     [
+      "sbcsae__SBC018",
+      1,
+      [
+       680
+      ]
+     ],
+     [
+      "sbcsae__SBC035",
+      1,
+      [
+       20
+      ]
+     ]
+    ]
+   },
+   "dropout_pct": {
+    "stock": 0.28,
+    "r30": 0.38,
+    "max": 0.08
+   }
+  },
+  "scotus.default": {
+   "sessions": 12,
+   "hours": 20.5,
+   "clear_windows": 5938,
+   "speech_h": {
+    "stock": 18.86,
+    "r30": 18.94,
+    "max": 18.96
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "voxconverse.default": {
+   "sessions": 232,
+   "hours": 43.54,
+   "clear_windows": 14537,
+   "speech_h": {
+    "stock": 38.42,
+    "r30": 38.28,
+    "max": 38.58
+   },
+   "dropout_windows": {
+    "stock": 11,
+    "r30": 10,
+    "max": 10
+   },
+   "worst_sessions": {
+    "stock": [
+     [
+      "voxconverse__vylyk",
+      10,
+      [
+       50,
+       60,
+       70,
+       80,
+       90
+      ]
+     ],
+     [
+      "voxconverse__gzhwb",
+      1,
+      [
+       960
+      ]
+     ]
+    ],
+    "r30": [
+     [
+      "voxconverse__vylyk",
+      10,
+      [
+       50,
+       60,
+       70,
+       80,
+       90
+      ]
+     ]
+    ],
+    "max": [
+     [
+      "voxconverse__vylyk",
+      10,
+      [
+       50,
+       60,
+       70,
+       80,
+       90
+      ]
+     ]
+    ]
+   },
+   "dropout_pct": {
+    "stock": 0.08,
+    "r30": 0.07,
+    "max": 0.07
+   }
+  }
+ }
+}

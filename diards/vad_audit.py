@@ -4,7 +4,7 @@ Per session, reference speech ``R`` is the union of the RTTM segments inside the
 detector's intervals inside the UEM. Reported (seconds, and % of reference speech):
 
 * ``fa`` = |V - R| and ``miss`` = |R - V|: frame-level disagreement at collar 0 (the VAD's speech-detection error
-  if the reference were right).
+  if the reference were right); ``fa_c25`` / ``miss_c25`` the same outside +/- 0.25 s of every reference boundary.
 * ``unref``: VAD speech farther than ``tol`` (0.25 s) from any reference speech, in chunks >= ``min_len`` (0.5 s).
   Candidates for unannotated speech (or VAD false alarms on noise, music, laughter).
 * ``unvoiced``: reference speech farther than ``tol`` from any VAD speech, in chunks >= ``min_len``. Candidates for
@@ -71,12 +71,16 @@ def coverage(ivs, a: float, b: float, starts=None) -> float:
     return cov / (b - a)
 
 
-def coverage_metrics(ref, vad, tol: float = TOL, min_len: float = MIN_LEN) -> dict:
+def coverage_metrics(ref, vad, tol: float = TOL, min_len: float = MIN_LEN, collar: float = 0.25) -> dict:
     """``ref`` and ``vad`` already restricted to the UEM, sorted and merged."""
     unref = long_chunks(subtract(vad, dilate(ref, tol)), min_len)
     unvoiced = long_chunks(subtract(ref, dilate(vad, tol)), min_len)
+    fa, miss = subtract(vad, ref), subtract(ref, vad)
+    zone = merge_intervals((t - collar, t + collar) for a, b in ref for t in (a, b))
     return {"ref_s": total_duration(ref), "vad_s": total_duration(vad),
-            "fa_s": total_duration(subtract(vad, ref)), "miss_s": total_duration(subtract(ref, vad)),
+            "fa_s": total_duration(fa), "miss_s": total_duration(miss),
+            "fa_c25_s": total_duration(subtract(fa, zone)), "miss_c25_s": total_duration(subtract(miss, zone)),
+            "ref_c25_s": total_duration(subtract(ref, zone)),
             "unref_s": total_duration(unref), "unvoiced_s": total_duration(unvoiced),
             "_unref": unref, "_unvoiced": unvoiced}
 
@@ -260,12 +264,14 @@ def summarize(rows) -> dict:
             for v, x in by_vad.items():
                 acc = out.setdefault(ref_name, {}).setdefault(v, {"sessions": 0, "ref_s": 0.0, "vad_s": 0.0, "fa_s": 0.0,
                                                                   "miss_s": 0.0, "unref_s": 0.0, "unvoiced_s": 0.0,
+                                                                  "fa_c25_s": 0.0, "miss_c25_s": 0.0, "ref_c25_s": 0.0,
                                                                   "islands": 0, "islands_without_vad": 0,
                                                                   "onsets": [], "offsets": [], "uem_s": 0.0,
                                                                   "lags": []})
                 acc["sessions"] += 1
                 acc["uem_s"] += r["uem_s"]
-                for k in ("ref_s", "vad_s", "fa_s", "miss_s", "unref_s", "unvoiced_s", "islands", "islands_without_vad"):
+                for k in ("ref_s", "vad_s", "fa_s", "miss_s", "unref_s", "unvoiced_s", "islands", "islands_without_vad",
+                          "fa_c25_s", "miss_c25_s", "ref_c25_s"):
                     acc[k] += x[k]
                 acc["onsets"] += x["onsets"]
                 acc["offsets"] += x["offsets"]
@@ -282,6 +288,8 @@ def summarize(rows) -> dict:
                 "sessions": a["sessions"], "ref_h": round(a["ref_s"] / 3600, 3), "vad_h": round(a["vad_s"] / 3600, 3),
                 "uem_h": round(a["uem_s"] / 3600, 3),
                 "fa_pct": round(100 * a["fa_s"] / ref, 2), "miss_pct": round(100 * a["miss_s"] / ref, 2),
+                "fa_c25_pct": round(100 * a["fa_c25_s"] / (a["ref_c25_s"] or 1.0), 2),
+                "miss_c25_pct": round(100 * a["miss_c25_s"] / (a["ref_c25_s"] or 1.0), 2),
                 "unref_pct": round(100 * a["unref_s"] / ref, 2), "unvoiced_pct": round(100 * a["unvoiced_s"] / ref, 2),
                 "islands": a["islands"],
                 "islands_without_vad_pct": round(100 * a["islands_without_vad"] / max(a["islands"], 1), 2),

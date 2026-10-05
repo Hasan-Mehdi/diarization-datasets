@@ -47,6 +47,9 @@ def test_coverage_metrics_flags_unannotated_and_padded_speech():
     assert m["fa_s"] == pytest.approx(2.0) and m["miss_s"] == pytest.approx(2.0)
     assert m["unref_s"] == pytest.approx(2.0)      # 6-8 is far from any reference speech
     assert m["unvoiced_s"] == pytest.approx(1.75)  # 2.25-4: reference speech far from VAD speech
+    # collar 0.25 s around reference boundaries
+    assert m["fa_c25_s"] == pytest.approx(2.0) and m["miss_c25_s"] == pytest.approx(1.75)
+    assert m["ref_c25_s"] == pytest.approx(5.0)
 
 
 def test_boundary_offsets_sign_convention():

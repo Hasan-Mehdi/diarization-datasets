@@ -1,0 +1,802 @@
+{
+ "tag": "callhome_eng.default",
+ "sessions": [
+  "callhome_eng__eng_000",
+  "callhome_eng__eng_003",
+  "callhome_eng__eng_021",
+  "callhome_eng__eng_022",
+  "callhome_eng__eng_023",
+  "callhome_eng__eng_027",
+  "callhome_eng__eng_093",
+  "callhome_eng__eng_110",
+  "callhome_eng__eng_130"
+ ],
+ "hours": 1.091,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1097,
+     "fa": 0.0359,
+     "miss": 0.0716,
+     "conf": 0.0022,
+     "jer": 0.1629,
+     "ref_speech_h": 1.0136
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0657,
+     "fa": 0.0088,
+     "miss": 0.0559,
+     "conf": 0.001,
+     "jer": 0.1172,
+     "ref_speech_h": 0.7167
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callhome_eng__eng_000",
+     "primary@0.0": {
+      "der": 0.1016,
+      "fa": 0.0558,
+      "miss": 0.0436,
+      "conf": 0.0022,
+      "jer": 0.1146,
+      "ref_speech_s": 260.05
+     },
+     "primary@0.25": {
+      "der": 0.0617,
+      "fa": 0.0254,
+      "miss": 0.0356,
+      "conf": 0.0006,
+      "jer": 0.0736,
+      "ref_speech_s": 192.46
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_003",
+     "primary@0.0": {
+      "der": 0.1862,
+      "fa": 0.0631,
+      "miss": 0.1097,
+      "conf": 0.0135,
+      "jer": 0.1869,
+      "ref_speech_s": 196.23
+     },
+     "primary@0.25": {
+      "der": 0.09,
+      "fa": 0.0389,
+      "miss": 0.0439,
+      "conf": 0.0073,
+      "jer": 0.0985,
+      "ref_speech_s": 111.94
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_021",
+     "primary@0.0": {
+      "der": 0.0873,
+      "fa": 0.0366,
+      "miss": 0.0493,
+      "conf": 0.0014,
+      "jer": 0.0863,
+      "ref_speech_s": 320.647
+     },
+     "primary@0.25": {
+      "der": 0.0498,
+      "fa": 0.007,
+      "miss": 0.0428,
+      "conf": 0.0,
+      "jer": 0.0502,
+      "ref_speech_s": 226.855
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_022",
+     "primary@0.0": {
+      "der": 0.0942,
+      "fa": 0.0337,
+      "miss": 0.0597,
+      "conf": 0.0008,
+      "jer": 0.0928,
+      "ref_speech_s": 629.359
+     },
+     "primary@0.25": {
+      "der": 0.0351,
+      "fa": 0.0002,
+      "miss": 0.0349,
+      "conf": 0.0,
+      "jer": 0.036,
+      "ref_speech_s": 412.648
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_023",
+     "primary@0.0": {
+      "der": 0.1016,
+      "fa": 0.0455,
+      "miss": 0.0539,
+      "conf": 0.0021,
+      "jer": 0.3982,
+      "ref_speech_s": 616.005
+     },
+     "primary@0.25": {
+      "der": 0.0622,
+      "fa": 0.0131,
+      "miss": 0.0485,
+      "conf": 0.0006,
+      "jer": 0.3745,
+      "ref_speech_s": 448.867
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_027",
+     "primary@0.0": {
+      "der": 0.1487,
+      "fa": 0.0361,
+      "miss": 0.1121,
+      "conf": 0.0005,
+      "jer": 0.1191,
+      "ref_speech_s": 493.859
+     },
+     "primary@0.25": {
+      "der": 0.1237,
+      "fa": 0.0081,
+      "miss": 0.1156,
+      "conf": 0.0,
+      "jer": 0.0832,
+      "ref_speech_s": 374.297
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_093",
+     "primary@0.0": {
+      "der": 0.0589,
+      "fa": 0.0206,
+      "miss": 0.0378,
+      "conf": 0.0005,
+      "jer": 0.0587,
+      "ref_speech_s": 540.125
+     },
+     "primary@0.25": {
+      "der": 0.0093,
+      "fa": 0.0006,
+      "miss": 0.0085,
+      "conf": 0.0002,
+      "jer": 0.0095,
+      "ref_speech_s": 380.175
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_110",
+     "primary@0.0": {
+      "der": 0.1864,
+      "fa": 0.0107,
+      "miss": 0.1736,
+      "conf": 0.0022,
+      "jer": 0.1991,
+      "ref_speech_s": 302.31
+     },
+     "primary@0.25": {
+      "der": 0.1561,
+      "fa": 0.0028,
+      "miss": 0.1527,
+      "conf": 0.0006,
+      "jer": 0.1497,
+      "ref_speech_s": 222.63
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_130",
+     "primary@0.0": {
+      "der": 0.0887,
+      "fa": 0.0382,
+      "miss": 0.0462,
+      "conf": 0.0044,
+      "jer": 0.093,
+      "ref_speech_s": 290.206
+     },
+     "primary@0.25": {
+      "der": 0.0437,
+      "fa": 0.0098,
+      "miss": 0.0285,
+      "conf": 0.0055,
+      "jer": 0.0506,
+      "ref_speech_s": 210.166
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1097,
+     "fa": 0.0359,
+     "miss": 0.0716,
+     "conf": 0.0022,
+     "jer": 0.1629,
+     "ref_speech_h": 1.0136
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0657,
+     "fa": 0.0088,
+     "miss": 0.0559,
+     "conf": 0.001,
+     "jer": 0.1172,
+     "ref_speech_h": 0.7167
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callhome_eng__eng_000",
+     "primary@0.0": {
+      "der": 0.1016,
+      "fa": 0.0558,
+      "miss": 0.0436,
+      "conf": 0.0022,
+      "jer": 0.1146,
+      "ref_speech_s": 260.05
+     },
+     "primary@0.25": {
+      "der": 0.0617,
+      "fa": 0.0254,
+      "miss": 0.0356,
+      "conf": 0.0006,
+      "jer": 0.0736,
+      "ref_speech_s": 192.46
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_003",
+     "primary@0.0": {
+      "der": 0.1862,
+      "fa": 0.0631,
+      "miss": 0.1097,
+      "conf": 0.0135,
+      "jer": 0.1869,
+      "ref_speech_s": 196.23
+     },
+     "primary@0.25": {
+      "der": 0.09,
+      "fa": 0.0389,
+      "miss": 0.0439,
+      "conf": 0.0073,
+      "jer": 0.0985,
+      "ref_speech_s": 111.94
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_021",
+     "primary@0.0": {
+      "der": 0.0873,
+      "fa": 0.0366,
+      "miss": 0.0493,
+      "conf": 0.0014,
+      "jer": 0.0863,
+      "ref_speech_s": 320.647
+     },
+     "primary@0.25": {
+      "der": 0.0498,
+      "fa": 0.007,
+      "miss": 0.0428,
+      "conf": 0.0,
+      "jer": 0.0502,
+      "ref_speech_s": 226.855
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_022",
+     "primary@0.0": {
+      "der": 0.0942,
+      "fa": 0.0337,
+      "miss": 0.0597,
+      "conf": 0.0008,
+      "jer": 0.0928,
+      "ref_speech_s": 629.359
+     },
+     "primary@0.25": {
+      "der": 0.0351,
+      "fa": 0.0002,
+      "miss": 0.0349,
+      "conf": 0.0,
+      "jer": 0.036,
+      "ref_speech_s": 412.648
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_023",
+     "primary@0.0": {
+      "der": 0.1016,
+      "fa": 0.0455,
+      "miss": 0.0539,
+      "conf": 0.0021,
+      "jer": 0.3982,
+      "ref_speech_s": 616.005
+     },
+     "primary@0.25": {
+      "der": 0.0622,
+      "fa": 0.0131,
+      "miss": 0.0485,
+      "conf": 0.0006,
+      "jer": 0.3745,
+      "ref_speech_s": 448.867
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_027",
+     "primary@0.0": {
+      "der": 0.1487,
+      "fa": 0.0361,
+      "miss": 0.1121,
+      "conf": 0.0005,
+      "jer": 0.1191,
+      "ref_speech_s": 493.859
+     },
+     "primary@0.25": {
+      "der": 0.1237,
+      "fa": 0.0081,
+      "miss": 0.1156,
+      "conf": 0.0,
+      "jer": 0.0832,
+      "ref_speech_s": 374.297
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_093",
+     "primary@0.0": {
+      "der": 0.0589,
+      "fa": 0.0206,
+      "miss": 0.0378,
+      "conf": 0.0005,
+      "jer": 0.0587,
+      "ref_speech_s": 540.125
+     },
+     "primary@0.25": {
+      "der": 0.0093,
+      "fa": 0.0006,
+      "miss": 0.0085,
+      "conf": 0.0002,
+      "jer": 0.0095,
+      "ref_speech_s": 380.175
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_110",
+     "primary@0.0": {
+      "der": 0.1864,
+      "fa": 0.0107,
+      "miss": 0.1736,
+      "conf": 0.0022,
+      "jer": 0.1991,
+      "ref_speech_s": 302.31
+     },
+     "primary@0.25": {
+      "der": 0.1561,
+      "fa": 0.0028,
+      "miss": 0.1527,
+      "conf": 0.0006,
+      "jer": 0.1497,
+      "ref_speech_s": 222.63
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_130",
+     "primary@0.0": {
+      "der": 0.0887,
+      "fa": 0.0382,
+      "miss": 0.0462,
+      "conf": 0.0044,
+      "jer": 0.093,
+      "ref_speech_s": 290.206
+     },
+     "primary@0.25": {
+      "der": 0.0437,
+      "fa": 0.0098,
+      "miss": 0.0285,
+      "conf": 0.0055,
+      "jer": 0.0506,
+      "ref_speech_s": 210.166
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1134,
+     "fa": 0.0328,
+     "miss": 0.0785,
+     "conf": 0.0021,
+     "jer": 0.1687,
+     "ref_speech_h": 1.0136
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0689,
+     "fa": 0.0059,
+     "miss": 0.062,
+     "conf": 0.001,
+     "jer": 0.1218,
+     "ref_speech_h": 0.7167
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callhome_eng__eng_000",
+     "primary@0.0": {
+      "der": 0.1019,
+      "fa": 0.0505,
+      "miss": 0.0495,
+      "conf": 0.0019,
+      "jer": 0.1138,
+      "ref_speech_s": 260.05
+     },
+     "primary@0.25": {
+      "der": 0.0607,
+      "fa": 0.018,
+      "miss": 0.0421,
+      "conf": 0.0007,
+      "jer": 0.0712,
+      "ref_speech_s": 192.46
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_003",
+     "primary@0.0": {
+      "der": 0.2143,
+      "fa": 0.0441,
+      "miss": 0.1552,
+      "conf": 0.015,
+      "jer": 0.2194,
+      "ref_speech_s": 196.23
+     },
+     "primary@0.25": {
+      "der": 0.1016,
+      "fa": 0.0136,
+      "miss": 0.0807,
+      "conf": 0.0073,
+      "jer": 0.1168,
+      "ref_speech_s": 111.94
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_021",
+     "primary@0.0": {
+      "der": 0.0854,
+      "fa": 0.0354,
+      "miss": 0.0487,
+      "conf": 0.0012,
+      "jer": 0.0841,
+      "ref_speech_s": 320.647
+     },
+     "primary@0.25": {
+      "der": 0.0446,
+      "fa": 0.0031,
+      "miss": 0.0415,
+      "conf": 0.0,
+      "jer": 0.0445,
+      "ref_speech_s": 226.855
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_022",
+     "primary@0.0": {
+      "der": 0.0922,
+      "fa": 0.0331,
+      "miss": 0.0581,
+      "conf": 0.0009,
+      "jer": 0.091,
+      "ref_speech_s": 629.359
+     },
+     "primary@0.25": {
+      "der": 0.0346,
+      "fa": 0.0008,
+      "miss": 0.0338,
+      "conf": 0.0,
+      "jer": 0.0355,
+      "ref_speech_s": 412.648
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_023",
+     "primary@0.0": {
+      "der": 0.1016,
+      "fa": 0.0455,
+      "miss": 0.0539,
+      "conf": 0.0021,
+      "jer": 0.3982,
+      "ref_speech_s": 616.005
+     },
+     "primary@0.25": {
+      "der": 0.0622,
+      "fa": 0.0131,
+      "miss": 0.0485,
+      "conf": 0.0006,
+      "jer": 0.3745,
+      "ref_speech_s": 448.867
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_027",
+     "primary@0.0": {
+      "der": 0.1486,
+      "fa": 0.0289,
+      "miss": 0.1192,
+      "conf": 0.0005,
+      "jer": 0.1206,
+      "ref_speech_s": 493.859
+     },
+     "primary@0.25": {
+      "der": 0.1244,
+      "fa": 0.0022,
+      "miss": 0.1222,
+      "conf": 0.0,
+      "jer": 0.0865,
+      "ref_speech_s": 374.297
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_093",
+     "primary@0.0": {
+      "der": 0.062,
+      "fa": 0.0176,
+      "miss": 0.0441,
+      "conf": 0.0003,
+      "jer": 0.0621,
+      "ref_speech_s": 540.125
+     },
+     "primary@0.25": {
+      "der": 0.0124,
+      "fa": 0.0008,
+      "miss": 0.0116,
+      "conf": 0.0001,
+      "jer": 0.0127,
+      "ref_speech_s": 380.175
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_110",
+     "primary@0.0": {
+      "der": 0.1999,
+      "fa": 0.0096,
+      "miss": 0.1894,
+      "conf": 0.0009,
+      "jer": 0.2082,
+      "ref_speech_s": 302.31
+     },
+     "primary@0.25": {
+      "der": 0.1709,
+      "fa": 0.0026,
+      "miss": 0.1682,
+      "conf": 0.0001,
+      "jer": 0.1595,
+      "ref_speech_s": 222.63
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_130",
+     "primary@0.0": {
+      "der": 0.103,
+      "fa": 0.038,
+      "miss": 0.0605,
+      "conf": 0.0045,
+      "jer": 0.1064,
+      "ref_speech_s": 290.206
+     },
+     "primary@0.25": {
+      "der": 0.0621,
+      "fa": 0.008,
+      "miss": 0.0485,
+      "conf": 0.0056,
+      "jer": 0.0689,
+      "ref_speech_s": 210.166
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1178,
+     "fa": 0.0345,
+     "miss": 0.0811,
+     "conf": 0.0022,
+     "jer": 0.1741,
+     "ref_speech_h": 1.0136
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0731,
+     "fa": 0.0062,
+     "miss": 0.0659,
+     "conf": 0.001,
+     "jer": 0.1282,
+     "ref_speech_h": 0.7167
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "callhome_eng__eng_000",
+     "primary@0.0": {
+      "der": 0.1024,
+      "fa": 0.0493,
+      "miss": 0.0514,
+      "conf": 0.0017,
+      "jer": 0.1131,
+      "ref_speech_s": 260.05
+     },
+     "primary@0.25": {
+      "der": 0.0581,
+      "fa": 0.0151,
+      "miss": 0.0425,
+      "conf": 0.0006,
+      "jer": 0.066,
+      "ref_speech_s": 192.46
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_003",
+     "primary@0.0": {
+      "der": 0.2329,
+      "fa": 0.0601,
+      "miss": 0.1602,
+      "conf": 0.0126,
+      "jer": 0.2321,
+      "ref_speech_s": 196.23
+     },
+     "primary@0.25": {
+      "der": 0.1162,
+      "fa": 0.0237,
+      "miss": 0.0852,
+      "conf": 0.0073,
+      "jer": 0.1311,
+      "ref_speech_s": 111.94
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_021",
+     "primary@0.0": {
+      "der": 0.0834,
+      "fa": 0.0271,
+      "miss": 0.055,
+      "conf": 0.0013,
+      "jer": 0.0838,
+      "ref_speech_s": 320.647
+     },
+     "primary@0.25": {
+      "der": 0.0518,
+      "fa": 0.0026,
+      "miss": 0.0492,
+      "conf": 0.0,
+      "jer": 0.0534,
+      "ref_speech_s": 226.855
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_022",
+     "primary@0.0": {
+      "der": 0.0951,
+      "fa": 0.0333,
+      "miss": 0.0609,
+      "conf": 0.0009,
+      "jer": 0.0939,
+      "ref_speech_s": 629.359
+     },
+     "primary@0.25": {
+      "der": 0.037,
+      "fa": 0.0015,
+      "miss": 0.0355,
+      "conf": 0.0,
+      "jer": 0.0378,
+      "ref_speech_s": 412.648
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_023",
+     "primary@0.0": {
+      "der": 0.1029,
+      "fa": 0.0465,
+      "miss": 0.0548,
+      "conf": 0.0016,
+      "jer": 0.3987,
+      "ref_speech_s": 616.005
+     },
+     "primary@0.25": {
+      "der": 0.063,
+      "fa": 0.0136,
+      "miss": 0.0493,
+      "conf": 0.0001,
+      "jer": 0.3748,
+      "ref_speech_s": 448.867
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_027",
+     "primary@0.0": {
+      "der": 0.1511,
+      "fa": 0.0333,
+      "miss": 0.1168,
+      "conf": 0.0011,
+      "jer": 0.1274,
+      "ref_speech_s": 493.859
+     },
+     "primary@0.25": {
+      "der": 0.1207,
+      "fa": 0.0004,
+      "miss": 0.1203,
+      "conf": 0.0,
+      "jer": 0.0836,
+      "ref_speech_s": 374.297
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_093",
+     "primary@0.0": {
+      "der": 0.0651,
+      "fa": 0.0206,
+      "miss": 0.0438,
+      "conf": 0.0007,
+      "jer": 0.0654,
+      "ref_speech_s": 540.125
+     },
+     "primary@0.25": {
+      "der": 0.0152,
+      "fa": 0.0003,
+      "miss": 0.0147,
+      "conf": 0.0002,
+      "jer": 0.0155,
+      "ref_speech_s": 380.175
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_110",
+     "primary@0.0": {
+      "der": 0.2069,
+      "fa": 0.0128,
+      "miss": 0.1913,
+      "conf": 0.0028,
+      "jer": 0.2123,
+      "ref_speech_s": 302.31
+     },
+     "primary@0.25": {
+      "der": 0.1745,
+      "fa": 0.0044,
+      "miss": 0.1685,
+      "conf": 0.0016,
+      "jer": 0.1643,
+      "ref_speech_s": 222.63
+     }
+    },
+    {
+     "session_id": "callhome_eng__eng_130",
+     "primary@0.0": {
+      "der": 0.1209,
+      "fa": 0.0397,
+      "miss": 0.0766,
+      "conf": 0.0046,
+      "jer": 0.1275,
+      "ref_speech_s": 290.206
+     },
+     "primary@0.25": {
+      "der": 0.0917,
+      "fa": 0.0086,
+      "miss": 0.0777,
+      "conf": 0.0054,
+      "jer": 0.1035,
+      "ref_speech_s": 210.166
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.091,
+  "trim": 1.038,
+  "zero": 1.091
+ }
+}

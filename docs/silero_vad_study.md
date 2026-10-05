@@ -73,3 +73,26 @@ number in `results/nemotron` exactly (checked).
   on unmodified audio reproduces the cached hypotheses exactly;
 * protocol variants (they change what is scored, so they are not improvements): UEM cut to the VAD speech span,
   or to VAD speech +/- 0.5 s.
+
+## A Silero failure mode found on the way: drop-outs from its recurrent state
+
+The first Whisper check on CallHome English showed that 17 of the 20 longest "reference speech that Silero calls
+silence" regions were fluent, loud speech that Nemotron, WebRTC, the energy VAD and pyannote all detected. The
+cause is Silero's recurrent state. `get_speech_timestamps` runs the model frame by frame and never resets the
+state; on some audio the model is **bistable**: the same stretch of clear speech gets probabilities near 1 or near
+0 depending on where the stream started, and the bad state can last for minutes. Per-minute speech fraction on
+CallHome `eng_125` (12.4 min):
+
+| detector | min 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Silero, stock streaming | 44 | 0 | 0 | 1 | 0 | 4 | 35 | 8 | 0 | 0 | 3 | 0 | 0 |
+| Silero, state reset every 30 s | 72 | 79 | 72 | 77 | 81 | 69 | 76 | 74 | 75 | 75 | 79 | 49 | 79 |
+| Nemotron 3 Diarization | 80 | 81 | 72 | 77 | 80 | 69 | 78 | 74 | 77 | 75 | 77 | 81 | 77 |
+| WebRTC (mode 2) | 84 | 87 | 78 | 86 | 86 | 76 | 83 | 80 | 82 | 82 | 85 | 87 | 85 |
+| reference | 89 | 90 | 82 | 84 | 88 | 70 | 81 | 88 | 88 | 92 | 90 | 94 | 95 |
+
+It is not the level, the telephone band or a decoding problem: a fresh model state started 1-10 s apart on
+the same audio gives either ~80% or ~0% speech for the same 20 s (CallHome `eng_110`, `eng_121`), and resetting
+every 30 s creates new drop-outs elsewhere. Measured on every evaluated subset (`scripts/vad_reset_check.py`):
+a 10 s window counts as clear speech when Nemotron covers >= 50% of it and WebRTC in its strictest mode fires on
+>= 50% of its frames; Silero *drops out* when its maximum probability in such a window is below 0.2.

@@ -8,10 +8,15 @@ Whisper large-v3 (English, fp16 on GPU), the longest flagged regions of each VAD
   the reference; no words = a VAD false alarm (noise, music, laughter, breathing) or unintelligible speech.
 * ``unvoiced``: the reference has speech where the VAD hears none. Words = the VAD missed speech; no words =
   padding / a pause inside a segment / non-speech labelled as speech.
-* ``control``: random >= 1 s stretches where both the reference and Silero (silero_x2) say non-speech, to measure how often
-  this Whisper check itself reports speech in silence.
+* ``control``: random >= 1 s stretches where both the reference and Silero (silero_x2) say non-speech, to measure
+  how often this Whisper check itself reports speech in silence.
 
-Usage: python scripts/vad_whisper_check.py <dataset> [--view V] [--vads silero,energy,webrtc] [--per-kind 20]
+Each transcript is also classified (:func:`classify`) as ``speech`` (the strict criterion above), ``short`` (one or
+two real words or a repeated filler: backchannels such as "yeah", "mm-hmm", "um"), ``laughter``, or ``none``
+(empty or a known Whisper hallucination such as "Thank you."). ``speech`` + ``short`` = verbal content.
+
+Usage: python scripts/vad_whisper_check.py <dataset> [--view V] [--vads silero_x2,energy,webrtc] [--per-kind 20]
+       python scripts/vad_whisper_check.py --rescore      (recompute classes and summaries of all outputs)
 Output: results/vad/whisper/whisper.<dataset>.<view>.json
 """
 from __future__ import annotations
@@ -28,13 +33,46 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import soundfile as sf  # noqa: E402
 
-from audit_false_alarms import is_speech, words  # noqa: E402
+from audit_false_alarms import HALLUCINATIONS, is_speech, words  # noqa: E402
 from diards.annotation import intersect, merge_intervals, subtract  # noqa: E402
 from diards.core import NormalizedDataset  # noqa: E402
 from diards.vad_audit import AUDIT_VIEWS, dilate  # noqa: E402
 from diards.vads import VadCache  # noqa: E402
 
 _ASR = None
+LAUGH = {"ha", "haha", "hahaha", "heh", "hehe", "laughter", "laughs", "laughing", "laugh"}
+NOISE = {"thank", "you", "thanks", "bye", "music", "applause", "shh", "shhh", "amen"}
+CREDITS = {"subtitles", "amara", "subscribe", "watching", "caption", "captions"}
+
+
+def classify(text: str) -> str:
+    w = words(text)
+    if not w:
+        return "none"
+    if all(x in LAUGH for x in w):
+        return "laughter"
+    joined = " ".join(w)
+    if joined in HALLUCINATIONS or all(x in NOISE for x in w) or CREDITS & set(w):
+        return "none"
+    if is_speech(text):
+        return "speech"
+    return "short"
+
+
+def summarize(regions) -> dict:
+    summ = {}
+    for r in regions:
+        r["class"] = classify(r["whisper"])
+        r["speech"] = is_speech(r["whisper"])
+        k = f"{r['kind']}:{r['vad']}" if r["kind"] != "control" else "control"
+        d = summ.setdefault(k, {"regions": 0, "with_speech": 0, "seconds": 0.0, "seconds_with_speech": 0.0,
+                                "classes": {"speech": 0, "short": 0, "laughter": 0, "none": 0}})
+        d["regions"] += 1
+        d["with_speech"] += int(r["speech"])
+        d["classes"][r["class"]] += 1
+        d["seconds"] = round(d["seconds"] + r["dur"], 2)
+        d["seconds_with_speech"] = round(d["seconds_with_speech"] + r["dur"] * r["speech"], 2)
+    return summ
 
 
 def asr():
@@ -73,7 +111,8 @@ def controls(ds_name, view, sessions, n, seed=0, min_len=1.0, max_len=5.0):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("dataset")
+    ap.add_argument("dataset", nargs="?")
+    ap.add_argument("--rescore", action="store_true")
     ap.add_argument("--view")
     ap.add_argument("--vads", default="silero_x2,energy,webrtc")
     ap.add_argument("--per-kind", type=int, default=20)
@@ -81,6 +120,13 @@ def main():
     ap.add_argument("--audit-dir", default=str(ROOT / "results" / "vad" / "audit"))
     ap.add_argument("--out", default=str(ROOT / "results" / "vad" / "whisper"))
     a = ap.parse_args()
+    if a.rescore:
+        for p in sorted(Path(a.out).glob("whisper.*.json")):
+            out = json.loads(p.read_text(encoding="utf-8"))
+            out["summary"] = summarize(out["regions"])
+            p.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8", newline="\n")
+            print(out["dataset"], json.dumps({k: v["classes"] for k, v in out["summary"].items()}))
+        return
     ds = NormalizedDataset(a.dataset)
     view = a.view or AUDIT_VIEWS.get(a.dataset, ds.default_view)
     audit = json.loads((Path(a.audit_dir) / f"audit.{a.dataset}.{view}.json").read_text(encoding="utf-8"))
@@ -106,15 +152,7 @@ def main():
         out["regions"].append({"kind": kind, "vad": vad, "session_id": sid, "start": st, "end": en,
                                "dur": round(en - st, 2), "whisper": text, "words": len(words(text)),
                                "speech": is_speech(text), "evidence": ev})
-    summ = {}
-    for r in out["regions"]:
-        k = f"{r['kind']}:{r['vad']}" if r["kind"] != "control" else "control"
-        d = summ.setdefault(k, {"regions": 0, "with_speech": 0, "seconds": 0.0, "seconds_with_speech": 0.0})
-        d["regions"] += 1
-        d["with_speech"] += int(r["speech"])
-        d["seconds"] = round(d["seconds"] + r["dur"], 2)
-        d["seconds_with_speech"] = round(d["seconds_with_speech"] + r["dur"] * r["speech"], 2)
-    out["summary"] = summ
+    out["summary"] = summ = summarize(out["regions"])
     p = Path(a.out)
     p.mkdir(parents=True, exist_ok=True)
     (p / f"whisper.{a.dataset}.{view}.json").write_text(json.dumps(out, indent=1, ensure_ascii=False),

@@ -156,9 +156,13 @@ def table_refs(A, N):
     return "\n".join(lines)
 
 
+FARFIELD_VIEWS = {"sdm", "sc", "farfield", "glasses"}
+CORR_DETECTORS = ("silero_x2", "silero", "pyannote", "webrtc", "energy")
+
+
 def correlation(N, root=None):
-    """Across every (evaluated tag, reference) pair: does Silero-vs-reference disagreement, computed on exactly the
-    sessions and audio Nemotron was scored on, predict Nemotron's miss / FA against that reference?"""
+    """Across every (evaluated tag, reference) pair: does a detector's disagreement with the reference, computed on
+    exactly the sessions and audio Nemotron was scored on, predict Nemotron's miss / FA against that reference?"""
     from diards.annotation import intersect, merge_intervals, subtract, total_duration
     from diards.vad_assist import tag_sessions
     from diards.vads import VadCache
@@ -171,45 +175,71 @@ def correlation(N, root=None):
             caches = {s.session_id: VadCache.load(name, view, s.session_id) for s in sessions}
         except FileNotFoundError:
             continue
+        dets = [d for d in CORR_DETECTORS if d != "pyannote" or all("pyannote_ivs" in c.data for c in caches.values())]
+        speech = {d: {sid: merge_intervals(c.get(d)) for sid, c in caches.items()} for d in dets}
         refs = ["primary"] + sorted({k for s in sessions for k in s.alt_rttm})
         for ref_name in refs:
             nem = res["summary"].get(f"{ref_name}@0.0")
             if not nem:
                 continue
-            ref_s = miss_s = fa_s = 0.0
+            acc = {d: [0.0, 0.0] for d in dets}
+            ref_s = 0.0
             for s in sessions:
                 if ref_name != "primary" and ref_name not in s.alt_rttm:
                     continue
                 segs = s.segments if ref_name == "primary" else s.alt_segments(ref_name)
                 uem = merge_intervals(s.uem)
                 ref = intersect(merge_intervals((g.start, g.end) for g in segs), uem)
-                vad = intersect(merge_intervals(caches[s.session_id].silero(variant="x2")), uem)
                 ref_s += total_duration(ref)
-                miss_s += total_duration(subtract(ref, vad))
-                fa_s += total_duration(subtract(vad, ref))
+                for d in dets:
+                    vad = intersect(speech[d][s.session_id], uem)
+                    acc[d][0] += total_duration(subtract(ref, vad))
+                    acc[d][1] += total_duration(subtract(vad, ref))
             if ref_s:
-                rows.append({"tag": tag, "reference": ref_name, "silero_miss_pct": round(100 * miss_s / ref_s, 2),
-                             "silero_fa_pct": round(100 * fa_s / ref_s, 2), "nemotron_miss_pct": round(100 * nem["miss"], 2),
-                             "nemotron_fa_pct": round(100 * nem["fa"], 2), "nemotron_der_pct": round(100 * nem["der"], 2)})
+                row = {"tag": tag, "reference": ref_name, "farfield": view in FARFIELD_VIEWS,
+                       "nemotron_miss_pct": round(100 * nem["miss"], 2), "nemotron_fa_pct": round(100 * nem["fa"], 2),
+                       "nemotron_der_pct": round(100 * nem["der"], 2)}
+                for d in dets:
+                    row[f"{d}_miss_pct"] = round(100 * acc[d][0] / ref_s, 2)
+                    row[f"{d}_fa_pct"] = round(100 * acc[d][1] / ref_s, 2)
+                rows.append(row)
     stats = {}
-    if len(rows) >= 3:
-        from scipy.stats import pearsonr, spearmanr
+    from scipy.stats import pearsonr, spearmanr
 
-        for a, b in (("silero_miss_pct", "nemotron_miss_pct"), ("silero_fa_pct", "nemotron_fa_pct"),
-                     ("silero_miss_pct", "nemotron_der_pct")):
-            x = np.array([r[a] for r in rows])
-            y = np.array([r[b] for r in rows])
-            stats[f"{a}~{b}"] = {"n": len(rows), "pearson": round(float(pearsonr(x, y)[0]), 3),
-                                 "spearman": round(float(spearmanr(x, y)[0]), 3)}
+    for subset, keep in (("all", lambda r: True), ("close_talk_and_single_channel", lambda r: not r["farfield"]),
+                         ("far_field", lambda r: r["farfield"])):
+        sub = [r for r in rows if keep(r)]
+        for d in CORR_DETECTORS:
+            for a, b in ((f"{d}_miss_pct", "nemotron_miss_pct"), (f"{d}_fa_pct", "nemotron_fa_pct")):
+                pts = [(r[a], r[b]) for r in sub if a in r]
+                if len(pts) < 5:
+                    continue
+                x, y = np.array(pts).T
+                stats.setdefault(subset, {})[f"{a}~{b}"] = {
+                    "n": len(pts), "pearson": round(float(pearsonr(x, y)[0]), 3),
+                    "spearman": round(float(spearmanr(x, y)[0]), 3)}
     return rows, stats
 
 
+def table_corr_stats(stats):
+    lines = ["| subset | detector | n | miss vs Nemotron miss: Pearson / Spearman | FA vs Nemotron FA: Pearson / Spearman |",
+             "|---|---|---:|---|---|"]
+    for subset, st in stats.items():
+        for d in CORR_DETECTORS:
+            m, fa = st.get(f"{d}_miss_pct~nemotron_miss_pct"), st.get(f"{d}_fa_pct~nemotron_fa_pct")
+            if m and fa:
+                lines.append(f"| {subset} | {LABEL[d]} | {m['n']} | {m['pearson']:.2f} / {m['spearman']:.2f} | "
+                             f"{fa['pearson']:.2f} / {fa['spearman']:.2f} |")
+    return "\n".join(lines)
+
+
 def table_corr(rows):
-    lines = ["| tag | reference | Silero miss % | Nemotron miss % | Silero FA % | Nemotron FA % | Nemotron DER % |",
-             "|---|---|---:|---:|---:|---:|---:|"]
-    for r in sorted(rows, key=lambda r: -r["silero_miss_pct"]):
-        lines.append(f"| {r['tag']} | {r['reference']} | {r['silero_miss_pct']:.1f} | {r['nemotron_miss_pct']:.1f} | "
-                     f"{r['silero_fa_pct']:.1f} | {r['nemotron_fa_pct']:.1f} | {r['nemotron_der_pct']:.1f} |")
+    lines = ["| tag | reference | Silero x2 miss % | pyannote miss % | Nemotron miss % | Silero x2 FA % | Nemotron FA % | "
+             "Nemotron DER % |", "|---|---|---:|---:|---:|---:|---:|---:|"]
+    for r in sorted(rows, key=lambda r: (r["farfield"], -r["silero_x2_miss_pct"])):
+        lines.append(f"| {r['tag']} | {r['reference']} | {r['silero_x2_miss_pct']:.1f} | "
+                     f"{f(r.get('pyannote_miss_pct'), 1)} | {r['nemotron_miss_pct']:.1f} | "
+                     f"{r['silero_x2_fa_pct']:.1f} | {r['nemotron_fa_pct']:.1f} | {r['nemotron_der_pct']:.1f} |")
     return "\n".join(lines)
 
 
@@ -337,7 +367,7 @@ def main():
              table_refs(A, N), "",
              "### VAD accuracy against the tightest references (frame level, collar 0)", "", table_calibration(A), "",
              "### Does Silero-vs-reference disagreement predict Nemotron's error? (every evaluated tag x reference)", "",
-             "```json", json.dumps(corr_stats, indent=1), "```", "", table_corr(corr_rows), ""]
+             table_corr_stats(corr_stats), "", table_corr(corr_rows), ""]
     if P:
         parts += ["## 3. VAD-assisted Nemotron (post-hoc on cached outputs): change in DER (points)", "",
                   "Primary reference, collar 0:", "", table_posthoc(P, "primary@0.0"), "",

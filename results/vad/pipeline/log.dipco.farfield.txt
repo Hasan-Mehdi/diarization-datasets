@@ -1,0 +1,2 @@
+  dipco.farfield               baseline               DER  36.16  FA  3.61  MISS 30.49  CONF  2.06  (63 s)
+  dipco.farfield               gate:silero_x2         DER  63.09  FA  2.33  MISS 59.61  CONF  1.15  (49 s)

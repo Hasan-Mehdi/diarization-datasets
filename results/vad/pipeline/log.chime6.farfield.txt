@@ -1,0 +1,1 @@
+  chime6.farfield              baseline               DER  37.63  FA  8.27  MISS 21.29  CONF  8.07  (391 s)
