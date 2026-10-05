@@ -1,6 +1,6 @@
 # EasyCom
 
-Meta Reality Labs' "Easy Communications" dataset: 12 sessions (~5.3 h of the "high quality" part) of 3-5 people
+Meta Reality Labs' "Easy Communications" dataset: 12 sessions (~5.3 h of the "high quality" part; 4-6 labelled speakers per session) of people
 talking around a table (introductions, ordering food, puzzles, games, reading) while restaurant noise plays from
 loudspeakers. One participant wears AR glasses with a 6-microphone array, and the others wear close-talk mics.
 Voice activity and transcripts are human-annotated per participant, including the glasses wearer. It is the free

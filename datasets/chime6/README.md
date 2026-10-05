@@ -85,7 +85,11 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 ### Model error or reference error?
 
 <!-- auto:diagnosis -->
-_Not run yet._
+| hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| farfield | ihm-mix | 3 | 9.22 | 2.03 | 7.19 | 5.62 | 3.45 | 2.17 |
+
+Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 <!-- /auto:diagnosis -->
 
 ## Quality rating

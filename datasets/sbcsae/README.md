@@ -1,6 +1,6 @@
 # Santa Barbara Corpus of Spoken American English (SBCSAE)
 
-60 recordings (~20 min each, ~20 h) of naturally occurring American English from across the US: face-to-face
+60 recordings (~23 min each, 23.3 h) of naturally occurring American English from across the US: face-to-face
 conversation, phone calls, classroom lectures, sermons, story-telling, business meetings. Carefully transcribed by
 linguists, with every intonation unit time-stamped and overlap marked. Free, but licensed **CC BY-ND 3.0**, so
 derived RTTMs may not be redistributed. This repo ships only the scripts and statistics.

@@ -261,16 +261,13 @@ def block_catalog():
 
 
 def block_nemotron_summary():
-    lines = ["| dataset | view (subset) | sessions | hours | DER % c=0 (primary ref) | DER % c=0.25 | best alternative ref (DER % c=0) | spk-count acc | held-out? |",
+    lines = ["| dataset | view (subset) | sessions | hours | DER % c=0 (primary ref) | DER % c=0.25 | other references (DER % c=0) | spk-count acc | held-out? |",
              "|---|---|---:|---:|---:|---:|---|---:|---|"]
     for name, *_ in CATALOG:
         for tag, r, p0, p25, alts in _best_nemotron(name):
             if not p0:
                 continue
-            alt = ""
-            if alts:
-                k, v = min(alts.items(), key=lambda kv: kv[1]["der"])
-                alt = f"{k}: {100 * v['der']:.2f}"
+            alt = "; ".join(f"{k} {100 * v['der']:.1f}" for k, v in sorted(alts.items(), key=lambda kv: kv[1]["der"]))
             held = "NO (in training data)" if name in ("icsi", "voxconverse") else ("unclear" if name == "callhome_eng" else "yes")
             splits = ",".join(sorted({x["split"] for x in r["per_session"]}))
             lines.append(f"| [{name}](datasets/{name}/README.md) | {tag} ({splits}) | {r['sessions']} | {r['hours']} | "

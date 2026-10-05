@@ -116,6 +116,10 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 
+**Whisper audit of the longest audible false alarms (ihm-mix):** 12 of 15 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (17.8 of 21.1 s). Examples: `ami__EN2002b` 280.3-282.6 s: "When I go to bed at like 1, you're still online."; `ami__IS1009c` 225.9-228.0 s: "feature that it should have maybe a channel"; `ami__EN2002b` 49.3-51.0 s: "Actually, I guess the first thing I just sort of did"
+
+**Time-offset check (ihm-mix):** 0 of 16 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
+
 **Whisper audit of the longest audible false alarms (sdm):** 14 of 16 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (21.2 of 24.2 s). Examples: `ami__EN2002b` 279.8-282.6 s: "When I go to bed at like 1, you're still online."; `ami__IS1009c` 225.9-228.0 s: "interesting feature that it would have maybe"; `ami__EN2002b` 49.3-51.1 s: "which I guess first thing just sort of did it."
 
 **Time-offset check (sdm):** 0 of 16 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.

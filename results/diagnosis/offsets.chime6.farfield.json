@@ -1,0 +1,32 @@
+{
+ "dataset": "chime6",
+ "view": "farfield",
+ "sessions": 3,
+ "median_abs_best_lag_s": 0.0,
+ "sessions_shifted": 0,
+ "criterion": "|best lag| >= 0.3 s and agreement gain >= 2 points",
+ "shifted": [],
+ "all": [
+  {
+   "session_id": "chime6__S02",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.9013,
+   "agreement_best": 0.9013,
+   "gain": 0.0
+  },
+  {
+   "session_id": "chime6__S01",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8895,
+   "agreement_best": 0.8895,
+   "gain": 0.0
+  },
+  {
+   "session_id": "chime6__S21",
+   "best_lag_s": -0.0,
+   "agreement_at_0": 0.8844,
+   "agreement_best": 0.8844,
+   "gain": 0.0
+  }
+ ]
+}

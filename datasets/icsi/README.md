@@ -94,10 +94,15 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 | hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | ihm-mix | ihm-mix | 3 | 1.16 | 0.59 | 0.57 | 7.37 | 2.4 | 4.97 |
+| sdm | ihm-mix | 3 | 1.86 | 0.79 | 1.07 | 6.91 | 2.2 | 4.71 |
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 
 **Whisper audit of the longest audible false alarms (ihm-mix):** 0 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 7.7 s).
+
+**Whisper audit of the longest audible false alarms (sdm):** 0 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 7.6 s).
+
+**Time-offset check (sdm):** 0 of 3 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
 <!-- /auto:diagnosis -->
 
 **Reading the ICSI numbers.** Against the transcriber segments, Nemotron's errors are mostly *false alarm* (~12% at

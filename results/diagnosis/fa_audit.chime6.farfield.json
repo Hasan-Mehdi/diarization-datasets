@@ -1,0 +1,145 @@
+{
+ "dataset": "chime6",
+ "view": "farfield",
+ "regions_checked": 15,
+ "regions": [
+  {
+   "session_id": "chime6__S01",
+   "start": 8599.06,
+   "end": 8601.75,
+   "dur": 2.69,
+   "whisper": "Na-na-na-na-na-na-na-na-na-na",
+   "words": 10,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 4547.19,
+   "end": 4549.61,
+   "dur": 2.42,
+   "whisper": "That didn't sound very genuine.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8596.35,
+   "end": 8598.71,
+   "dur": 2.36,
+   "whisper": "I don't know, I don't know, I don't know.",
+   "words": 9,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S02",
+   "start": 1593.0,
+   "end": 1595.2,
+   "dur": 2.2,
+   "whisper": "1.75 and 1.5x.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8706.94,
+   "end": 8708.71,
+   "dur": 1.77,
+   "whisper": "No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no,",
+   "words": 222,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S02",
+   "start": 1575.56,
+   "end": 1577.25,
+   "dur": 1.69,
+   "whisper": "put it on top or you can put it on this side",
+   "words": 12,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 9057.93,
+   "end": 9059.61,
+   "dur": 1.68,
+   "whisper": "the end. Oh, Basher and",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8623.02,
+   "end": 8624.67,
+   "dur": 1.65,
+   "whisper": "Ha, ha, ha, ha, ha, ha, ha.",
+   "words": 7,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S02",
+   "start": 1781.89,
+   "end": 1783.47,
+   "dur": 1.58,
+   "whisper": "I will get you.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8392.82,
+   "end": 8394.37,
+   "dur": 1.55,
+   "whisper": "No.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 3746.87,
+   "end": 3748.36,
+   "dur": 1.49,
+   "whisper": "was, oh, the bar's going?",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S02",
+   "start": 3034.58,
+   "end": 3036.07,
+   "dur": 1.49,
+   "whisper": "Oh, my gosh.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S02",
+   "start": 3740.91,
+   "end": 3742.31,
+   "dur": 1.4,
+   "whisper": "I can't walk around like that.",
+   "words": 6,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 3356.61,
+   "end": 3357.89,
+   "dur": 1.28,
+   "whisper": "Maybe I'll supply some stuff.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 8012.47,
+   "end": 8013.7,
+   "dur": 1.23,
+   "whisper": "I hate you.",
+   "words": 3,
+   "speech": true
+  }
+ ],
+ "regions_with_speech": 9,
+ "seconds_checked": 26.5,
+ "seconds_with_speech": 14.3
+}

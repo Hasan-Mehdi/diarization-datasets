@@ -2,7 +2,7 @@
 
 44 public earnings calls from 2020 (39 h, nine sectors), released by Rev.com for ASR benchmarking. Speakers are
 an operator, company executives and sell-side analysts on the phone. Rev added RTTMs in 2023, so it can serve as
-a long-form, many-speaker "business call" diarization test with almost no overlap.
+a long-form, many-speaker (up to 20) "business call" diarization test with almost no overlap.
 
 <!-- auto:meta -->
 | | |
@@ -96,7 +96,7 @@ diarization, which is exactly where 4- and 8-speaker end-to-end models fall shor
 
 ## Quality rating
 
-**B-.** Careful human transcripts and speaker labels on long real calls with many speakers (up to ~14). The
+**B-.** Careful human transcripts and speaker labels on long real calls with many speakers (2-20, median 10). The
 segment timing is of unknown provenance and overlap/backchannels are essentially absent, so it tests speaker
 counting and long-form tracking more than overlap handling.
 

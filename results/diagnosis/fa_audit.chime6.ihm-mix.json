@@ -1,0 +1,100 @@
+{
+ "dataset": "chime6",
+ "view": "ihm-mix",
+ "regions_checked": 10,
+ "regions": [
+  {
+   "session_id": "chime6__S01",
+   "start": 8599.05,
+   "end": 8601.76,
+   "dur": 2.71,
+   "whisper": "No, no, no, no, no, no, no, no, no.",
+   "words": 9,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8596.35,
+   "end": 8598.72,
+   "dur": 2.37,
+   "whisper": "Oh, yeah. Oh, oh, oh.",
+   "words": 5,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 4547.53,
+   "end": 4549.61,
+   "dur": 2.08,
+   "whisper": "sound very genuine, so...",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8797.85,
+   "end": 8799.9,
+   "dur": 2.05,
+   "whisper": "No, no, no, no, no, no, no, no, no, no.",
+   "words": 10,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8997.98,
+   "end": 8999.9,
+   "dur": 1.92,
+   "whisper": "Wah. Wah. Wah.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S01",
+   "start": 8706.94,
+   "end": 8708.71,
+   "dur": 1.77,
+   "whisper": "Bye. Bye. Bye.",
+   "words": 3,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 9057.93,
+   "end": 9059.61,
+   "dur": 1.68,
+   "whisper": "the end oh basher and",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 1421.19,
+   "end": 1422.74,
+   "dur": 1.55,
+   "whisper": "Shh, shh, shh, shh, shh, shh.",
+   "words": 6,
+   "speech": false
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 3746.87,
+   "end": 3748.36,
+   "dur": 1.49,
+   "whisper": "What was, oh, the bar going, or?",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "chime6__S21",
+   "start": 8012.41,
+   "end": 8013.76,
+   "dur": 1.35,
+   "whisper": "I hate you.",
+   "words": 3,
+   "speech": true
+  }
+ ],
+ "regions_with_speech": 4,
+ "seconds_checked": 19.0,
+ "seconds_with_speech": 6.6
+}

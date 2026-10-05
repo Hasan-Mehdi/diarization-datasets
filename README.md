@@ -120,7 +120,7 @@ Ego4D AVD.
 1. **VoxConverse v0.3** is still the standard, but it is in Nemotron's (and others') training data.
 2. **MSDWild (English subset)**: casual vlogs with lots of overlap; research-only licence.
 3. **AVA-AVD (English subset)**: movies, many speakers, off-screen speech.
-4. **Earnings-21**: long business calls with up to ~14 speakers and almost no overlap (tests speaker counting and
+4. **Earnings-21**: long business calls with up to 20 speakers and almost no overlap (tests speaker counting and
    long-form tracking).
 5. SCOTUS (Oyez) for the court domain: coarse turn timing, use a generous collar.
 
@@ -143,18 +143,18 @@ pyannote.metrics DER/JER, overlap included, UEM applied, collar = half-width (0 
 [results/README.md](results/README.md).
 
 <!-- auto:nemotron_summary -->
-| dataset | view (subset) | sessions | hours | DER % c=0 (primary ref) | DER % c=0.25 | best alternative ref (DER % c=0) | spk-count acc | held-out? |
+| dataset | view (subset) | sessions | hours | DER % c=0 (primary ref) | DER % c=0.25 | other references (DER % c=0) | spk-count acc | held-out? |
 |---|---|---:|---:|---:|---:|---|---:|---|
 | [maptask](datasets/maptask/README.md) | default (all) | 128 | 14.31 | 7.94 | 1.88 |  | 95% | yes |
-| [notsofar1](datasets/notsofar1/README.md) | ihm-mix (eval) | 129 | 13.34 | 14.52 | 5.51 | fastmss_mfa: 9.63 | 95% | yes |
-| [notsofar1](datasets/notsofar1/README.md) | sc (eval) | 129 | 13.34 | 18.41 | 6.92 | fastmss_mfa: 11.32 | 77% | yes |
-| [ami](datasets/ami/README.md) | ihm-mix (test) | 16 | 9.06 | 9.22 | 3.56 | only_words: 25.96 | 88% | yes |
-| [ami](datasets/ami/README.md) | sdm (test) | 16 | 9.06 | 11.35 | 4.73 | only_words: 27.45 | 88% | yes |
-| [chime6](datasets/chime6/README.md) | farfield (eval) | 2 | 5.21 | 37.63 | 25.61 | annotation: 43.62 | 0% | yes |
-| [chime6](datasets/chime6/README.md) | ihm-mix (eval) | 2 | 5.21 | 32.76 | 22.49 | annotation: 37.81 | 50% | yes |
+| [notsofar1](datasets/notsofar1/README.md) | ihm-mix (eval) | 129 | 13.34 | 14.52 | 5.51 | fastmss_mfa 9.6; words_gap0.2 11.2 | 95% | yes |
+| [notsofar1](datasets/notsofar1/README.md) | sc (eval) | 129 | 13.34 | 18.41 | 6.92 | fastmss_mfa 11.3; words_gap0.2 15.0 | 77% | yes |
+| [ami](datasets/ami/README.md) | ihm-mix (test) | 16 | 9.06 | 9.22 | 3.56 | only_words 26.0; word_and_vocalsounds 27.7; segments 31.1 | 88% | yes |
+| [ami](datasets/ami/README.md) | sdm (test) | 16 | 9.06 | 11.35 | 4.73 | only_words 27.5; word_and_vocalsounds 29.2; segments 32.5 | 88% | yes |
+| [chime6](datasets/chime6/README.md) | farfield (eval) | 2 | 5.21 | 37.63 | 25.61 | annotation 43.6 | 0% | yes |
+| [chime6](datasets/chime6/README.md) | ihm-mix (eval) | 2 | 5.21 | 32.76 | 22.49 | annotation 37.8 | 50% | yes |
 | [voxconverse](datasets/voxconverse/README.md) | default (test) | 232 | 43.54 | 8.39 | 5.74 |  | 53% | NO (in training data) |
-| [icsi](datasets/icsi/README.md) | ihm-mix (test) | 3 | 2.77 | 15.86 | 5.31 | words_gap0.2: 39.44 | 100% | NO (in training data) |
-| [icsi](datasets/icsi/README.md) | sdm (test) | 3 | 2.77 | 15.85 | 5.39 | words_gap0.2: 38.23 | 100% | NO (in training data) |
+| [icsi](datasets/icsi/README.md) | ihm-mix (test) | 3 | 2.77 | 15.86 | 5.31 | words_gap0.2 39.4 | 100% | NO (in training data) |
+| [icsi](datasets/icsi/README.md) | sdm (test) | 3 | 2.77 | 15.85 | 5.39 | words_gap0.2 38.2 | 100% | NO (in training data) |
 | [msdwild_en](datasets/msdwild_en/README.md) | default (few.val,many.val) | 150 | 4.16 | 17.79 | 10.67 |  | 76% | yes |
 | [ava_avd_en](datasets/ava_avd_en/README.md) | default (test,val) | 29 | 2.42 | 49.79 | 33.98 |  | 21% | yes |
 | [earnings21](datasets/earnings21/README.md) | default (eval10,other) | 44 | 39.26 | 19.54 | 15.90 |  | 20% | yes |
@@ -163,7 +163,7 @@ pyannote.metrics DER/JER, overlap included, UEM applied, collar = half-width (0 
 | [scotus](datasets/scotus/README.md) | default (term2022) | 12 | 20.5 | 31.66 | 30.25 |  | 0% | yes |
 | [callfriend_eng](datasets/callfriend_eng/README.md) | default (data) | 40 | 10.44 | 30.80 | 23.24 |  | 75% | yes |
 | [afrispeech_dialog](datasets/afrispeech_dialog/README.md) | default (general,medical) | 46 | 6.63 | 26.69 | 24.51 |  | 93% | yes |
-| [primock57](datasets/primock57/README.md) | mix (all) | 57 | 8.64 | 24.15 | 15.99 | channel_activity: 10.38 | 84% | yes |
+| [primock57](datasets/primock57/README.md) | mix (all) | 57 | 8.64 | 24.15 | 15.99 | channel_activity 10.4 | 84% | yes |
 <!-- /auto:nemotron_summary -->
 
 ### What the benchmark shows

@@ -1,0 +1,126 @@
+{
+ "summary": {
+  "dataset": "chime6",
+  "hyp_view": "ihm-mix",
+  "vad_view": "ihm-mix",
+  "sessions": 2,
+  "ref_speech_h": 3.46,
+  "miss_pct": 8.0,
+  "miss_in_silence_pct": 2.01,
+  "miss_with_energy_pct": 5.99,
+  "fa_pct": 6.39,
+  "fa_with_energy_pct": 4.44,
+  "fa_in_silence_pct": 1.95,
+  "note": "speech-detection errors only (speaker-agnostic union of segments), % of reference speech time"
+ },
+ "sessions": [
+  {
+   "session_id": "chime6__S01",
+   "ref": 6390.93,
+   "miss": 499.65,
+   "fa": 456.14,
+   "miss_silent": 127.58,
+   "fa_energy": 302.14,
+   "miss_energy": 372.07,
+   "fa_silent": 154.0,
+   "examples_miss_silent": [
+    [
+     6750.58,
+     6751.86
+    ],
+    [
+     7308.17,
+     7309.22
+    ],
+    [
+     4900.46,
+     4901.05
+    ],
+    [
+     7423.74,
+     7424.33
+    ],
+    [
+     2742.47,
+     2743.04
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     8599.05,
+     8601.76
+    ],
+    [
+     8596.35,
+     8598.72
+    ],
+    [
+     8797.85,
+     8799.9
+    ],
+    [
+     8997.98,
+     8999.9
+    ],
+    [
+     8706.94,
+     8708.71
+    ]
+   ]
+  },
+  {
+   "session_id": "chime6__S21",
+   "ref": 6075.13,
+   "miss": 497.29,
+   "fa": 340.41,
+   "miss_silent": 122.93,
+   "fa_energy": 251.7,
+   "miss_energy": 374.36,
+   "fa_silent": 88.71,
+   "examples_miss_silent": [
+    [
+     3494.95,
+     3496.65
+    ],
+    [
+     6511.59,
+     6513.08
+    ],
+    [
+     8705.05,
+     8706.0
+    ],
+    [
+     3507.74,
+     3508.67
+    ],
+    [
+     3506.05,
+     3506.95
+    ]
+   ],
+   "examples_fa_energy": [
+    [
+     4547.53,
+     4549.61
+    ],
+    [
+     9057.93,
+     9059.61
+    ],
+    [
+     1421.19,
+     1422.74
+    ],
+    [
+     3746.87,
+     3748.36
+    ],
+    [
+     8012.41,
+     8013.76
+    ]
+   ]
+  }
+ ]
+}
