@@ -1,0 +1,463 @@
+{
+ "tag": "dipco.farfield",
+ "sessions": [
+  "dipco__S03",
+  "dipco__S06"
+ ],
+ "hours": 1.111,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.359,
+     "fa": 0.0319,
+     "miss": 0.3059,
+     "conf": 0.0212,
+     "jer": 0.3861,
+     "ref_speech_h": 1.4809
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2773,
+     "fa": 0.0316,
+     "miss": 0.231,
+     "conf": 0.0146,
+     "jer": 0.3035,
+     "ref_speech_h": 0.923
+    },
+    "closetalk_activity@0.0": {
+     "collar": 0.0,
+     "der": 0.3907,
+     "fa": 0.1066,
+     "miss": 0.2546,
+     "conf": 0.0296,
+     "jer": 0.3696,
+     "ref_speech_h": 1.2619
+    },
+    "closetalk_activity@0.25": {
+     "collar": 0.25,
+     "der": 0.1849,
+     "fa": 0.0416,
+     "miss": 0.1266,
+     "conf": 0.0167,
+     "jer": 0.2058,
+     "ref_speech_h": 0.5781
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "dipco__S03",
+     "primary@0.0": {
+      "der": 0.3445,
+      "fa": 0.0324,
+      "miss": 0.2913,
+      "conf": 0.0208,
+      "jer": 0.3753,
+      "ref_speech_s": 3800.21
+     },
+     "primary@0.25": {
+      "der": 0.2694,
+      "fa": 0.0302,
+      "miss": 0.2263,
+      "conf": 0.013,
+      "jer": 0.309,
+      "ref_speech_s": 2308.94
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.4093,
+      "fa": 0.1152,
+      "miss": 0.2648,
+      "conf": 0.0293,
+      "jer": 0.4115,
+      "ref_speech_s": 3311.98
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.1844,
+      "fa": 0.0393,
+      "miss": 0.1301,
+      "conf": 0.015,
+      "jer": 0.2271,
+      "ref_speech_s": 1493.34
+     }
+    },
+    {
+     "session_id": "dipco__S06",
+     "primary@0.0": {
+      "der": 0.3951,
+      "fa": 0.0306,
+      "miss": 0.3423,
+      "conf": 0.0222,
+      "jer": 0.3968,
+      "ref_speech_s": 1531.0
+     },
+     "primary@0.25": {
+      "der": 0.2951,
+      "fa": 0.0349,
+      "miss": 0.2418,
+      "conf": 0.0184,
+      "jer": 0.298,
+      "ref_speech_s": 1013.79
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.3408,
+      "fa": 0.0834,
+      "miss": 0.2271,
+      "conf": 0.0302,
+      "jer": 0.3277,
+      "ref_speech_s": 1230.71
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.1863,
+      "fa": 0.0475,
+      "miss": 0.1178,
+      "conf": 0.021,
+      "jer": 0.1844,
+      "ref_speech_s": 587.94
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.359,
+     "fa": 0.0319,
+     "miss": 0.3059,
+     "conf": 0.0212,
+     "jer": 0.3861,
+     "ref_speech_h": 1.4809
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2773,
+     "fa": 0.0316,
+     "miss": 0.231,
+     "conf": 0.0146,
+     "jer": 0.3035,
+     "ref_speech_h": 0.923
+    },
+    "closetalk_activity@0.0": {
+     "collar": 0.0,
+     "der": 0.3907,
+     "fa": 0.1066,
+     "miss": 0.2546,
+     "conf": 0.0296,
+     "jer": 0.3696,
+     "ref_speech_h": 1.2619
+    },
+    "closetalk_activity@0.25": {
+     "collar": 0.25,
+     "der": 0.1849,
+     "fa": 0.0416,
+     "miss": 0.1266,
+     "conf": 0.0167,
+     "jer": 0.2058,
+     "ref_speech_h": 0.5781
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "dipco__S03",
+     "primary@0.0": {
+      "der": 0.3445,
+      "fa": 0.0324,
+      "miss": 0.2913,
+      "conf": 0.0208,
+      "jer": 0.3753,
+      "ref_speech_s": 3800.21
+     },
+     "primary@0.25": {
+      "der": 0.2694,
+      "fa": 0.0302,
+      "miss": 0.2263,
+      "conf": 0.013,
+      "jer": 0.309,
+      "ref_speech_s": 2308.94
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.4093,
+      "fa": 0.1152,
+      "miss": 0.2648,
+      "conf": 0.0293,
+      "jer": 0.4115,
+      "ref_speech_s": 3311.98
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.1844,
+      "fa": 0.0393,
+      "miss": 0.1301,
+      "conf": 0.015,
+      "jer": 0.2271,
+      "ref_speech_s": 1493.34
+     }
+    },
+    {
+     "session_id": "dipco__S06",
+     "primary@0.0": {
+      "der": 0.3951,
+      "fa": 0.0306,
+      "miss": 0.3423,
+      "conf": 0.0222,
+      "jer": 0.3968,
+      "ref_speech_s": 1531.0
+     },
+     "primary@0.25": {
+      "der": 0.2951,
+      "fa": 0.0349,
+      "miss": 0.2418,
+      "conf": 0.0184,
+      "jer": 0.298,
+      "ref_speech_s": 1013.79
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.3408,
+      "fa": 0.0834,
+      "miss": 0.2271,
+      "conf": 0.0302,
+      "jer": 0.3277,
+      "ref_speech_s": 1230.71
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.1863,
+      "fa": 0.0475,
+      "miss": 0.1178,
+      "conf": 0.021,
+      "jer": 0.1844,
+      "ref_speech_s": 587.94
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.5008,
+     "fa": 0.0254,
+     "miss": 0.4589,
+     "conf": 0.0165,
+     "jer": 0.5185,
+     "ref_speech_h": 1.4809
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.4362,
+     "fa": 0.0247,
+     "miss": 0.4,
+     "conf": 0.0116,
+     "jer": 0.4499,
+     "ref_speech_h": 0.923
+    },
+    "closetalk_activity@0.0": {
+     "collar": 0.0,
+     "der": 0.5067,
+     "fa": 0.0743,
+     "miss": 0.4095,
+     "conf": 0.0229,
+     "jer": 0.4872,
+     "ref_speech_h": 1.2619
+    },
+    "closetalk_activity@0.25": {
+     "collar": 0.25,
+     "der": 0.3447,
+     "fa": 0.0326,
+     "miss": 0.2966,
+     "conf": 0.0155,
+     "jer": 0.3467,
+     "ref_speech_h": 0.5781
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "dipco__S03",
+     "primary@0.0": {
+      "der": 0.484,
+      "fa": 0.029,
+      "miss": 0.4362,
+      "conf": 0.0187,
+      "jer": 0.5023,
+      "ref_speech_s": 3800.21
+     },
+     "primary@0.25": {
+      "der": 0.4258,
+      "fa": 0.0277,
+      "miss": 0.3854,
+      "conf": 0.0127,
+      "jer": 0.4522,
+      "ref_speech_s": 2308.94
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.5134,
+      "fa": 0.0843,
+      "miss": 0.4041,
+      "conf": 0.025,
+      "jer": 0.5088,
+      "ref_speech_s": 3311.98
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.3437,
+      "fa": 0.0353,
+      "miss": 0.2922,
+      "conf": 0.0162,
+      "jer": 0.372,
+      "ref_speech_s": 1493.34
+     }
+    },
+    {
+     "session_id": "dipco__S06",
+     "primary@0.0": {
+      "der": 0.5426,
+      "fa": 0.0164,
+      "miss": 0.5151,
+      "conf": 0.0112,
+      "jer": 0.5348,
+      "ref_speech_s": 1531.0
+     },
+     "primary@0.25": {
+      "der": 0.4599,
+      "fa": 0.0177,
+      "miss": 0.4331,
+      "conf": 0.009,
+      "jer": 0.4475,
+      "ref_speech_s": 1013.79
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.4888,
+      "fa": 0.0476,
+      "miss": 0.4239,
+      "conf": 0.0173,
+      "jer": 0.4656,
+      "ref_speech_s": 1230.71
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.3474,
+      "fa": 0.0259,
+      "miss": 0.3077,
+      "conf": 0.0137,
+      "jer": 0.3215,
+      "ref_speech_s": 587.94
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.5032,
+     "fa": 0.021,
+     "miss": 0.4668,
+     "conf": 0.0154,
+     "jer": 0.5249,
+     "ref_speech_h": 1.4809
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.4397,
+     "fa": 0.0197,
+     "miss": 0.4093,
+     "conf": 0.0107,
+     "jer": 0.4579,
+     "ref_speech_h": 0.923
+    },
+    "closetalk_activity@0.0": {
+     "collar": 0.0,
+     "der": 0.5114,
+     "fa": 0.0698,
+     "miss": 0.4193,
+     "conf": 0.0223,
+     "jer": 0.4967,
+     "ref_speech_h": 1.2619
+    },
+    "closetalk_activity@0.25": {
+     "collar": 0.25,
+     "der": 0.3498,
+     "fa": 0.0265,
+     "miss": 0.3093,
+     "conf": 0.014,
+     "jer": 0.358,
+     "ref_speech_h": 0.5781
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "dipco__S03",
+     "primary@0.0": {
+      "der": 0.4851,
+      "fa": 0.0254,
+      "miss": 0.4422,
+      "conf": 0.0176,
+      "jer": 0.5033,
+      "ref_speech_s": 3800.21
+     },
+     "primary@0.25": {
+      "der": 0.4271,
+      "fa": 0.0229,
+      "miss": 0.3929,
+      "conf": 0.0113,
+      "jer": 0.4524,
+      "ref_speech_s": 2308.94
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.5162,
+      "fa": 0.0805,
+      "miss": 0.4114,
+      "conf": 0.0243,
+      "jer": 0.5111,
+      "ref_speech_s": 3311.98
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.3449,
+      "fa": 0.0308,
+      "miss": 0.3,
+      "conf": 0.0141,
+      "jer": 0.3699,
+      "ref_speech_s": 1493.34
+     }
+    },
+    {
+     "session_id": "dipco__S06",
+     "primary@0.0": {
+      "der": 0.5481,
+      "fa": 0.0103,
+      "miss": 0.5279,
+      "conf": 0.0099,
+      "jer": 0.5465,
+      "ref_speech_s": 1531.0
+     },
+     "primary@0.25": {
+      "der": 0.4684,
+      "fa": 0.0125,
+      "miss": 0.4466,
+      "conf": 0.0093,
+      "jer": 0.4634,
+      "ref_speech_s": 1013.79
+     },
+     "closetalk_activity@0.0": {
+      "der": 0.4984,
+      "fa": 0.0409,
+      "miss": 0.4407,
+      "conf": 0.0168,
+      "jer": 0.4823,
+      "ref_speech_s": 1230.71
+     },
+     "closetalk_activity@0.25": {
+      "der": 0.3622,
+      "fa": 0.0156,
+      "miss": 0.3329,
+      "conf": 0.0138,
+      "jer": 0.3462,
+      "ref_speech_s": 587.94
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.111,
+  "trim": 0.763,
+  "zero": 1.111
+ }
+}

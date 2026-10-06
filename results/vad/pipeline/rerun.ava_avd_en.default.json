@@ -1,0 +1,1033 @@
+{
+ "tag": "ava_avd_en.default",
+ "sessions": [
+  "ava_avd_en__55Ihr6uVIDA_c_03",
+  "ava_avd_en__914yZXz-iRs_c_02",
+  "ava_avd_en__914yZXz-iRs_c_03",
+  "ava_avd_en__BCiuXAuCKAU_c_01",
+  "ava_avd_en__BCiuXAuCKAU_c_02",
+  "ava_avd_en__HKjR70GCRPE_c_01",
+  "ava_avd_en__HKjR70GCRPE_c_03",
+  "ava_avd_en__fD6VkIRlIRI_c_01",
+  "ava_avd_en__fD6VkIRlIRI_c_03",
+  "ava_avd_en__kMy-6RtoOVU_c_02",
+  "ava_avd_en__yMtGmGa8KZ0_c_01",
+  "ava_avd_en__yMtGmGa8KZ0_c_02"
+ ],
+ "hours": 1.0,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.5006,
+     "fa": 0.1268,
+     "miss": 0.2321,
+     "conf": 0.1416,
+     "jer": 0.6702,
+     "ref_speech_h": 0.4162
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3413,
+     "fa": 0.0297,
+     "miss": 0.1809,
+     "conf": 0.1308,
+     "jer": 0.5984,
+     "ref_speech_h": 0.2332
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ava_avd_en__55Ihr6uVIDA_c_03",
+     "primary@0.0": {
+      "der": 0.7899,
+      "fa": 0.1225,
+      "miss": 0.4028,
+      "conf": 0.2646,
+      "jer": 0.8095,
+      "ref_speech_s": 97.251
+     },
+     "primary@0.25": {
+      "der": 0.6807,
+      "fa": 0.0323,
+      "miss": 0.3818,
+      "conf": 0.2666,
+      "jer": 0.7931,
+      "ref_speech_s": 61.391
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_02",
+     "primary@0.0": {
+      "der": 0.7636,
+      "fa": 0.1618,
+      "miss": 0.2705,
+      "conf": 0.3312,
+      "jer": 0.7419,
+      "ref_speech_s": 132.643
+     },
+     "primary@0.25": {
+      "der": 0.5621,
+      "fa": 0.04,
+      "miss": 0.1242,
+      "conf": 0.3979,
+      "jer": 0.6967,
+      "ref_speech_s": 59.573
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_03",
+     "primary@0.0": {
+      "der": 0.6348,
+      "fa": 0.0709,
+      "miss": 0.4128,
+      "conf": 0.1511,
+      "jer": 0.6328,
+      "ref_speech_s": 169.381
+     },
+     "primary@0.25": {
+      "der": 0.5298,
+      "fa": 0.0028,
+      "miss": 0.3942,
+      "conf": 0.1327,
+      "jer": 0.5563,
+      "ref_speech_s": 98.258
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_01",
+     "primary@0.0": {
+      "der": 0.4838,
+      "fa": 0.0344,
+      "miss": 0.3618,
+      "conf": 0.0876,
+      "jer": 0.7243,
+      "ref_speech_s": 206.559
+     },
+     "primary@0.25": {
+      "der": 0.3904,
+      "fa": 0.0019,
+      "miss": 0.3331,
+      "conf": 0.0554,
+      "jer": 0.7061,
+      "ref_speech_s": 132.881
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_02",
+     "primary@0.0": {
+      "der": 0.5556,
+      "fa": 0.2025,
+      "miss": 0.1564,
+      "conf": 0.1967,
+      "jer": 0.8147,
+      "ref_speech_s": 154.103
+     },
+     "primary@0.25": {
+      "der": 0.3733,
+      "fa": 0.1041,
+      "miss": 0.1164,
+      "conf": 0.1529,
+      "jer": 0.7693,
+      "ref_speech_s": 76.971
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_01",
+     "primary@0.0": {
+      "der": 0.2941,
+      "fa": 0.1571,
+      "miss": 0.1225,
+      "conf": 0.0145,
+      "jer": 0.6182,
+      "ref_speech_s": 146.558
+     },
+     "primary@0.25": {
+      "der": 0.0963,
+      "fa": 0.0075,
+      "miss": 0.0814,
+      "conf": 0.0074,
+      "jer": 0.4618,
+      "ref_speech_s": 84.803
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_03",
+     "primary@0.0": {
+      "der": 0.367,
+      "fa": 0.1503,
+      "miss": 0.0968,
+      "conf": 0.1199,
+      "jer": 0.4801,
+      "ref_speech_s": 165.781
+     },
+     "primary@0.25": {
+      "der": 0.1619,
+      "fa": 0.0161,
+      "miss": 0.0322,
+      "conf": 0.1136,
+      "jer": 0.3621,
+      "ref_speech_s": 90.197
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_01",
+     "primary@0.0": {
+      "der": 0.4233,
+      "fa": 0.0253,
+      "miss": 0.2085,
+      "conf": 0.1895,
+      "jer": 0.6294,
+      "ref_speech_s": 48.015
+     },
+     "primary@0.25": {
+      "der": 0.3277,
+      "fa": 0.0,
+      "miss": 0.1218,
+      "conf": 0.2059,
+      "jer": 0.6033,
+      "ref_speech_s": 29.497
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_03",
+     "primary@0.0": {
+      "der": 0.5114,
+      "fa": 0.1403,
+      "miss": 0.1643,
+      "conf": 0.2067,
+      "jer": 0.7231,
+      "ref_speech_s": 112.653
+     },
+     "primary@0.25": {
+      "der": 0.3671,
+      "fa": 0.0851,
+      "miss": 0.0945,
+      "conf": 0.1874,
+      "jer": 0.6329,
+      "ref_speech_s": 72.872
+     }
+    },
+    {
+     "session_id": "ava_avd_en__kMy-6RtoOVU_c_02",
+     "primary@0.0": {
+      "der": 0.5216,
+      "fa": 0.23,
+      "miss": 0.1928,
+      "conf": 0.0988,
+      "jer": 0.5069,
+      "ref_speech_s": 121.573
+     },
+     "primary@0.25": {
+      "der": 0.2676,
+      "fa": 0.0543,
+      "miss": 0.1052,
+      "conf": 0.1081,
+      "jer": 0.3861,
+      "ref_speech_s": 56.456
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_01",
+     "primary@0.0": {
+      "der": 0.3486,
+      "fa": 0.1116,
+      "miss": 0.2237,
+      "conf": 0.0133,
+      "jer": 0.6305,
+      "ref_speech_s": 36.139
+     },
+     "primary@0.25": {
+      "der": 0.1488,
+      "fa": 0.0196,
+      "miss": 0.1282,
+      "conf": 0.001,
+      "jer": 0.4044,
+      "ref_speech_s": 19.824
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_02",
+     "primary@0.0": {
+      "der": 0.1945,
+      "fa": 0.0864,
+      "miss": 0.0926,
+      "conf": 0.0155,
+      "jer": 0.2283,
+      "ref_speech_s": 107.671
+     },
+     "primary@0.25": {
+      "der": 0.0245,
+      "fa": 0.0046,
+      "miss": 0.0053,
+      "conf": 0.0147,
+      "jer": 0.0432,
+      "ref_speech_s": 56.822
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.5006,
+     "fa": 0.1268,
+     "miss": 0.2321,
+     "conf": 0.1416,
+     "jer": 0.6702,
+     "ref_speech_h": 0.4162
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3413,
+     "fa": 0.0297,
+     "miss": 0.1809,
+     "conf": 0.1308,
+     "jer": 0.5984,
+     "ref_speech_h": 0.2332
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ava_avd_en__55Ihr6uVIDA_c_03",
+     "primary@0.0": {
+      "der": 0.7899,
+      "fa": 0.1225,
+      "miss": 0.4028,
+      "conf": 0.2646,
+      "jer": 0.8095,
+      "ref_speech_s": 97.251
+     },
+     "primary@0.25": {
+      "der": 0.6807,
+      "fa": 0.0323,
+      "miss": 0.3818,
+      "conf": 0.2666,
+      "jer": 0.7931,
+      "ref_speech_s": 61.391
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_02",
+     "primary@0.0": {
+      "der": 0.7636,
+      "fa": 0.1618,
+      "miss": 0.2705,
+      "conf": 0.3312,
+      "jer": 0.7419,
+      "ref_speech_s": 132.643
+     },
+     "primary@0.25": {
+      "der": 0.5621,
+      "fa": 0.04,
+      "miss": 0.1242,
+      "conf": 0.3979,
+      "jer": 0.6967,
+      "ref_speech_s": 59.573
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_03",
+     "primary@0.0": {
+      "der": 0.6348,
+      "fa": 0.0709,
+      "miss": 0.4128,
+      "conf": 0.1511,
+      "jer": 0.6328,
+      "ref_speech_s": 169.381
+     },
+     "primary@0.25": {
+      "der": 0.5298,
+      "fa": 0.0028,
+      "miss": 0.3942,
+      "conf": 0.1327,
+      "jer": 0.5563,
+      "ref_speech_s": 98.258
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_01",
+     "primary@0.0": {
+      "der": 0.4838,
+      "fa": 0.0344,
+      "miss": 0.3618,
+      "conf": 0.0876,
+      "jer": 0.7243,
+      "ref_speech_s": 206.559
+     },
+     "primary@0.25": {
+      "der": 0.3904,
+      "fa": 0.0019,
+      "miss": 0.3331,
+      "conf": 0.0554,
+      "jer": 0.7061,
+      "ref_speech_s": 132.881
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_02",
+     "primary@0.0": {
+      "der": 0.5556,
+      "fa": 0.2025,
+      "miss": 0.1564,
+      "conf": 0.1967,
+      "jer": 0.8147,
+      "ref_speech_s": 154.103
+     },
+     "primary@0.25": {
+      "der": 0.3733,
+      "fa": 0.1041,
+      "miss": 0.1164,
+      "conf": 0.1529,
+      "jer": 0.7693,
+      "ref_speech_s": 76.971
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_01",
+     "primary@0.0": {
+      "der": 0.2941,
+      "fa": 0.1571,
+      "miss": 0.1225,
+      "conf": 0.0145,
+      "jer": 0.6182,
+      "ref_speech_s": 146.558
+     },
+     "primary@0.25": {
+      "der": 0.0963,
+      "fa": 0.0075,
+      "miss": 0.0814,
+      "conf": 0.0074,
+      "jer": 0.4618,
+      "ref_speech_s": 84.803
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_03",
+     "primary@0.0": {
+      "der": 0.367,
+      "fa": 0.1503,
+      "miss": 0.0968,
+      "conf": 0.1199,
+      "jer": 0.4801,
+      "ref_speech_s": 165.781
+     },
+     "primary@0.25": {
+      "der": 0.1619,
+      "fa": 0.0161,
+      "miss": 0.0322,
+      "conf": 0.1136,
+      "jer": 0.3621,
+      "ref_speech_s": 90.197
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_01",
+     "primary@0.0": {
+      "der": 0.4233,
+      "fa": 0.0253,
+      "miss": 0.2085,
+      "conf": 0.1895,
+      "jer": 0.6294,
+      "ref_speech_s": 48.015
+     },
+     "primary@0.25": {
+      "der": 0.3277,
+      "fa": 0.0,
+      "miss": 0.1218,
+      "conf": 0.2059,
+      "jer": 0.6033,
+      "ref_speech_s": 29.497
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_03",
+     "primary@0.0": {
+      "der": 0.5114,
+      "fa": 0.1403,
+      "miss": 0.1643,
+      "conf": 0.2067,
+      "jer": 0.7231,
+      "ref_speech_s": 112.653
+     },
+     "primary@0.25": {
+      "der": 0.3671,
+      "fa": 0.0851,
+      "miss": 0.0945,
+      "conf": 0.1874,
+      "jer": 0.6329,
+      "ref_speech_s": 72.872
+     }
+    },
+    {
+     "session_id": "ava_avd_en__kMy-6RtoOVU_c_02",
+     "primary@0.0": {
+      "der": 0.5216,
+      "fa": 0.23,
+      "miss": 0.1928,
+      "conf": 0.0988,
+      "jer": 0.5069,
+      "ref_speech_s": 121.573
+     },
+     "primary@0.25": {
+      "der": 0.2676,
+      "fa": 0.0543,
+      "miss": 0.1052,
+      "conf": 0.1081,
+      "jer": 0.3861,
+      "ref_speech_s": 56.456
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_01",
+     "primary@0.0": {
+      "der": 0.3486,
+      "fa": 0.1116,
+      "miss": 0.2237,
+      "conf": 0.0133,
+      "jer": 0.6305,
+      "ref_speech_s": 36.139
+     },
+     "primary@0.25": {
+      "der": 0.1488,
+      "fa": 0.0196,
+      "miss": 0.1282,
+      "conf": 0.001,
+      "jer": 0.4044,
+      "ref_speech_s": 19.824
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_02",
+     "primary@0.0": {
+      "der": 0.1945,
+      "fa": 0.0864,
+      "miss": 0.0926,
+      "conf": 0.0155,
+      "jer": 0.2283,
+      "ref_speech_s": 107.671
+     },
+     "primary@0.25": {
+      "der": 0.0245,
+      "fa": 0.0046,
+      "miss": 0.0053,
+      "conf": 0.0147,
+      "jer": 0.0432,
+      "ref_speech_s": 56.822
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.5833,
+     "fa": 0.1118,
+     "miss": 0.3427,
+     "conf": 0.1289,
+     "jer": 0.6994,
+     "ref_speech_h": 0.4162
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.4576,
+     "fa": 0.0247,
+     "miss": 0.3168,
+     "conf": 0.1162,
+     "jer": 0.634,
+     "ref_speech_h": 0.2332
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ava_avd_en__55Ihr6uVIDA_c_03",
+     "primary@0.0": {
+      "der": 0.8384,
+      "fa": 0.0496,
+      "miss": 0.6675,
+      "conf": 0.1213,
+      "jer": 0.8188,
+      "ref_speech_s": 97.251
+     },
+     "primary@0.25": {
+      "der": 0.7603,
+      "fa": 0.0025,
+      "miss": 0.6525,
+      "conf": 0.1053,
+      "jer": 0.8298,
+      "ref_speech_s": 61.391
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_02",
+     "primary@0.0": {
+      "der": 0.8285,
+      "fa": 0.2146,
+      "miss": 0.3176,
+      "conf": 0.2963,
+      "jer": 0.7463,
+      "ref_speech_s": 132.643
+     },
+     "primary@0.25": {
+      "der": 0.634,
+      "fa": 0.0935,
+      "miss": 0.2226,
+      "conf": 0.318,
+      "jer": 0.7062,
+      "ref_speech_s": 59.573
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_03",
+     "primary@0.0": {
+      "der": 0.7547,
+      "fa": 0.126,
+      "miss": 0.5044,
+      "conf": 0.1243,
+      "jer": 0.6621,
+      "ref_speech_s": 169.381
+     },
+     "primary@0.25": {
+      "der": 0.6518,
+      "fa": 0.0275,
+      "miss": 0.5123,
+      "conf": 0.1121,
+      "jer": 0.5722,
+      "ref_speech_s": 98.258
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_01",
+     "primary@0.0": {
+      "der": 0.8524,
+      "fa": 0.009,
+      "miss": 0.7663,
+      "conf": 0.0771,
+      "jer": 0.8121,
+      "ref_speech_s": 206.559
+     },
+     "primary@0.25": {
+      "der": 0.898,
+      "fa": 0.0,
+      "miss": 0.844,
+      "conf": 0.054,
+      "jer": 0.7984,
+      "ref_speech_s": 132.881
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_02",
+     "primary@0.0": {
+      "der": 0.509,
+      "fa": 0.1574,
+      "miss": 0.2127,
+      "conf": 0.139,
+      "jer": 0.7953,
+      "ref_speech_s": 154.103
+     },
+     "primary@0.25": {
+      "der": 0.3416,
+      "fa": 0.0743,
+      "miss": 0.155,
+      "conf": 0.1122,
+      "jer": 0.7404,
+      "ref_speech_s": 76.971
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_01",
+     "primary@0.0": {
+      "der": 0.2812,
+      "fa": 0.1432,
+      "miss": 0.1352,
+      "conf": 0.0028,
+      "jer": 0.6082,
+      "ref_speech_s": 146.558
+     },
+     "primary@0.25": {
+      "der": 0.0902,
+      "fa": 0.0066,
+      "miss": 0.0836,
+      "conf": 0.0,
+      "jer": 0.4343,
+      "ref_speech_s": 84.803
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_03",
+     "primary@0.0": {
+      "der": 0.4953,
+      "fa": 0.1489,
+      "miss": 0.0931,
+      "conf": 0.2533,
+      "jer": 0.5614,
+      "ref_speech_s": 165.781
+     },
+     "primary@0.25": {
+      "der": 0.2582,
+      "fa": 0.0207,
+      "miss": 0.0302,
+      "conf": 0.2072,
+      "jer": 0.4462,
+      "ref_speech_s": 90.197
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_01",
+     "primary@0.0": {
+      "der": 0.4303,
+      "fa": 0.0204,
+      "miss": 0.1955,
+      "conf": 0.2144,
+      "jer": 0.6922,
+      "ref_speech_s": 48.015
+     },
+     "primary@0.25": {
+      "der": 0.3371,
+      "fa": 0.0002,
+      "miss": 0.0814,
+      "conf": 0.2555,
+      "jer": 0.6652,
+      "ref_speech_s": 29.497
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_03",
+     "primary@0.0": {
+      "der": 0.4394,
+      "fa": 0.042,
+      "miss": 0.3055,
+      "conf": 0.0919,
+      "jer": 0.7278,
+      "ref_speech_s": 112.653
+     },
+     "primary@0.25": {
+      "der": 0.3043,
+      "fa": 0.0207,
+      "miss": 0.183,
+      "conf": 0.1005,
+      "jer": 0.6558,
+      "ref_speech_s": 72.872
+     }
+    },
+    {
+     "session_id": "ava_avd_en__kMy-6RtoOVU_c_02",
+     "primary@0.0": {
+      "der": 0.5414,
+      "fa": 0.2001,
+      "miss": 0.2503,
+      "conf": 0.091,
+      "jer": 0.5398,
+      "ref_speech_s": 121.573
+     },
+     "primary@0.25": {
+      "der": 0.3052,
+      "fa": 0.0402,
+      "miss": 0.1661,
+      "conf": 0.0989,
+      "jer": 0.4244,
+      "ref_speech_s": 56.456
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_01",
+     "primary@0.0": {
+      "der": 0.5285,
+      "fa": 0.0656,
+      "miss": 0.2692,
+      "conf": 0.1936,
+      "jer": 0.714,
+      "ref_speech_s": 36.139
+     },
+     "primary@0.25": {
+      "der": 0.4059,
+      "fa": 0.0168,
+      "miss": 0.1329,
+      "conf": 0.2563,
+      "jer": 0.5668,
+      "ref_speech_s": 19.824
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_02",
+     "primary@0.0": {
+      "der": 0.2021,
+      "fa": 0.0804,
+      "miss": 0.099,
+      "conf": 0.0227,
+      "jer": 0.295,
+      "ref_speech_s": 107.671
+     },
+     "primary@0.25": {
+      "der": 0.0312,
+      "fa": 0.0008,
+      "miss": 0.0112,
+      "conf": 0.0192,
+      "jer": 0.1289,
+      "ref_speech_s": 56.822
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.5905,
+     "fa": 0.1015,
+     "miss": 0.3263,
+     "conf": 0.1627,
+     "jer": 0.7684,
+     "ref_speech_h": 0.4162
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.4784,
+     "fa": 0.0154,
+     "miss": 0.3045,
+     "conf": 0.1584,
+     "jer": 0.7182,
+     "ref_speech_h": 0.2332
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ava_avd_en__55Ihr6uVIDA_c_03",
+     "primary@0.0": {
+      "der": 0.846,
+      "fa": 0.0714,
+      "miss": 0.6557,
+      "conf": 0.1188,
+      "jer": 0.8585,
+      "ref_speech_s": 97.251
+     },
+     "primary@0.25": {
+      "der": 0.7681,
+      "fa": 0.0151,
+      "miss": 0.6453,
+      "conf": 0.1077,
+      "jer": 0.8274,
+      "ref_speech_s": 61.391
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_02",
+     "primary@0.0": {
+      "der": 0.7633,
+      "fa": 0.1279,
+      "miss": 0.3056,
+      "conf": 0.3297,
+      "jer": 0.7457,
+      "ref_speech_s": 132.643
+     },
+     "primary@0.25": {
+      "der": 0.579,
+      "fa": 0.0328,
+      "miss": 0.1409,
+      "conf": 0.4053,
+      "jer": 0.6971,
+      "ref_speech_s": 59.573
+     }
+    },
+    {
+     "session_id": "ava_avd_en__914yZXz-iRs_c_03",
+     "primary@0.0": {
+      "der": 0.6891,
+      "fa": 0.0444,
+      "miss": 0.4973,
+      "conf": 0.1474,
+      "jer": 0.6793,
+      "ref_speech_s": 169.381
+     },
+     "primary@0.25": {
+      "der": 0.6347,
+      "fa": 0.0012,
+      "miss": 0.4981,
+      "conf": 0.1354,
+      "jer": 0.6062,
+      "ref_speech_s": 98.258
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_01",
+     "primary@0.0": {
+      "der": 0.8642,
+      "fa": 0.0147,
+      "miss": 0.7676,
+      "conf": 0.0819,
+      "jer": 0.8226,
+      "ref_speech_s": 206.559
+     },
+     "primary@0.25": {
+      "der": 0.9082,
+      "fa": 0.0004,
+      "miss": 0.8535,
+      "conf": 0.0543,
+      "jer": 0.8087,
+      "ref_speech_s": 132.881
+     }
+    },
+    {
+     "session_id": "ava_avd_en__BCiuXAuCKAU_c_02",
+     "primary@0.0": {
+      "der": 0.472,
+      "fa": 0.1086,
+      "miss": 0.1802,
+      "conf": 0.1832,
+      "jer": 0.8121,
+      "ref_speech_s": 154.103
+     },
+     "primary@0.25": {
+      "der": 0.3151,
+      "fa": 0.0406,
+      "miss": 0.1266,
+      "conf": 0.148,
+      "jer": 0.7702,
+      "ref_speech_s": 76.971
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_01",
+     "primary@0.0": {
+      "der": 0.3147,
+      "fa": 0.1677,
+      "miss": 0.1057,
+      "conf": 0.0413,
+      "jer": 0.6434,
+      "ref_speech_s": 146.558
+     },
+     "primary@0.25": {
+      "der": 0.1054,
+      "fa": 0.0081,
+      "miss": 0.0613,
+      "conf": 0.036,
+      "jer": 0.4995,
+      "ref_speech_s": 84.803
+     }
+    },
+    {
+     "session_id": "ava_avd_en__HKjR70GCRPE_c_03",
+     "primary@0.0": {
+      "der": 0.2776,
+      "fa": 0.1535,
+      "miss": 0.0702,
+      "conf": 0.0539,
+      "jer": 0.5468,
+      "ref_speech_s": 165.781
+     },
+     "primary@0.25": {
+      "der": 0.0896,
+      "fa": 0.0096,
+      "miss": 0.0314,
+      "conf": 0.0487,
+      "jer": 0.463,
+      "ref_speech_s": 90.197
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_01",
+     "primary@0.0": {
+      "der": 0.7588,
+      "fa": 0.0985,
+      "miss": 0.1935,
+      "conf": 0.4668,
+      "jer": 0.9485,
+      "ref_speech_s": 48.015
+     },
+     "primary@0.25": {
+      "der": 0.6338,
+      "fa": 0.0124,
+      "miss": 0.1207,
+      "conf": 0.5007,
+      "jer": 0.9393,
+      "ref_speech_s": 29.497
+     }
+    },
+    {
+     "session_id": "ava_avd_en__fD6VkIRlIRI_c_03",
+     "primary@0.0": {
+      "der": 0.6768,
+      "fa": 0.0693,
+      "miss": 0.2842,
+      "conf": 0.3233,
+      "jer": 0.926,
+      "ref_speech_s": 112.653
+     },
+     "primary@0.25": {
+      "der": 0.5413,
+      "fa": 0.0377,
+      "miss": 0.1668,
+      "conf": 0.3369,
+      "jer": 0.9117,
+      "ref_speech_s": 72.872
+     }
+    },
+    {
+     "session_id": "ava_avd_en__kMy-6RtoOVU_c_02",
+     "primary@0.0": {
+      "der": 0.6245,
+      "fa": 0.212,
+      "miss": 0.2239,
+      "conf": 0.1887,
+      "jer": 0.5906,
+      "ref_speech_s": 121.573
+     },
+     "primary@0.25": {
+      "der": 0.3941,
+      "fa": 0.0367,
+      "miss": 0.1397,
+      "conf": 0.2177,
+      "jer": 0.5019,
+      "ref_speech_s": 56.456
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_01",
+     "primary@0.0": {
+      "der": 0.6889,
+      "fa": 0.073,
+      "miss": 0.1811,
+      "conf": 0.4348,
+      "jer": 0.9044,
+      "ref_speech_s": 36.139
+     },
+     "primary@0.25": {
+      "der": 0.5447,
+      "fa": 0.0015,
+      "miss": 0.094,
+      "conf": 0.4493,
+      "jer": 0.8455,
+      "ref_speech_s": 19.824
+     }
+    },
+    {
+     "session_id": "ava_avd_en__yMtGmGa8KZ0_c_02",
+     "primary@0.0": {
+      "der": 0.2562,
+      "fa": 0.0919,
+      "miss": 0.1093,
+      "conf": 0.055,
+      "jer": 0.5296,
+      "ref_speech_s": 107.671
+     },
+     "primary@0.25": {
+      "der": 0.0785,
+      "fa": 0.0007,
+      "miss": 0.036,
+      "conf": 0.0419,
+      "jer": 0.4328,
+      "ref_speech_s": 56.822
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.0,
+  "trim": 0.442,
+  "zero": 1.0
+ }
+}

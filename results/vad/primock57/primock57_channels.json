@@ -3,65 +3,65 @@
   "doctor": {
    "labelled_h": 4.817,
    "energy_activity_h": 4.106,
-   "silero_h": 4.002,
-   "silero_nopad_h": 3.885,
-   "labelled_silero_silent_pct": 17.15,
-   "labelled_silero_silent_ge0.3s_pct": 10.73,
+   "silero_h": 4.02,
+   "silero_nopad_h": 3.903,
+   "labelled_silero_silent_pct": 16.78,
+   "labelled_silero_silent_ge0.3s_pct": 10.29,
    "labelled_energy_silent_ge0.3s_pct": 9.53,
-   "silero_unlabelled_min": 0.04,
+   "silero_unlabelled_min": 0.05,
    "energy_unlabelled_min": 1.37,
-   "energy_not_silero_ge0.3s_min": 7.33,
+   "energy_not_silero_ge0.3s_min": 6.73,
    "silero_not_energy_ge0.3s_min": 0.08
   },
   "patient": {
    "labelled_h": 3.593,
    "energy_activity_h": 2.852,
-   "silero_h": 2.783,
-   "silero_nopad_h": 2.676,
-   "labelled_silero_silent_pct": 22.76,
-   "labelled_silero_silent_ge0.3s_pct": 14.96,
+   "silero_h": 2.806,
+   "silero_nopad_h": 2.698,
+   "labelled_silero_silent_pct": 22.15,
+   "labelled_silero_silent_ge0.3s_pct": 14.21,
    "labelled_energy_silent_ge0.3s_pct": 13.73,
    "silero_unlabelled_min": 0.1,
    "energy_unlabelled_min": 1.03,
-   "energy_not_silero_ge0.3s_min": 5.37,
+   "energy_not_silero_ge0.3s_min": 4.63,
    "silero_not_energy_ge0.3s_min": 0.02
   }
  },
  "boundaries": {
   "doctor:textgrid_vs_silero": {
    "onset": {
-    "p10": 0.146,
-    "p25": 0.198,
-    "p50": 0.259,
-    "p75": 0.33,
-    "p90": 0.483,
-    "n": 2963
+    "p10": 0.145,
+    "p25": 0.195,
+    "p50": 0.255,
+    "p75": 0.32,
+    "p90": 0.451,
+    "n": 2980
    },
    "offset": {
-    "p10": -0.011,
-    "p25": 0.047,
-    "p50": 0.106,
-    "p75": 0.17,
-    "p90": 0.252,
-    "n": 2963
+    "p10": -0.012,
+    "p25": 0.045,
+    "p50": 0.104,
+    "p75": 0.168,
+    "p90": 0.251,
+    "n": 2980
    }
   },
   "doctor:textgrid_vs_silero_nopad": {
    "onset": {
-    "p10": 0.176,
-    "p25": 0.228,
-    "p50": 0.289,
-    "p75": 0.36,
-    "p90": 0.513,
-    "n": 2963
+    "p10": 0.175,
+    "p25": 0.225,
+    "p50": 0.285,
+    "p75": 0.35,
+    "p90": 0.481,
+    "n": 2980
    },
    "offset": {
-    "p10": 0.018,
-    "p25": 0.077,
-    "p50": 0.136,
-    "p75": 0.2,
-    "p90": 0.282,
-    "n": 2963
+    "p10": 0.017,
+    "p25": 0.075,
+    "p50": 0.134,
+    "p75": 0.198,
+    "p90": 0.281,
+    "n": 2980
    }
   },
   "doctor:energy_vs_silero": {
@@ -69,17 +69,17 @@
     "p10": -0.012,
     "p25": -0.004,
     "p50": 0.008,
-    "p75": 0.035,
-    "p90": 0.196,
-    "n": 5263
+    "p75": 0.028,
+    "p90": 0.18,
+    "n": 5299
    },
    "offset": {
     "p10": -0.138,
     "p25": -0.116,
     "p50": -0.096,
     "p75": -0.07,
-    "p90": -0.01,
-    "n": 5263
+    "p90": -0.014,
+    "n": 5299
    }
   },
   "doctor:energy_vs_silero_nopad": {
@@ -87,53 +87,53 @@
     "p10": 0.018,
     "p25": 0.026,
     "p50": 0.038,
-    "p75": 0.065,
-    "p90": 0.226,
-    "n": 5263
+    "p75": 0.058,
+    "p90": 0.21,
+    "n": 5299
    },
    "offset": {
     "p10": -0.108,
     "p25": -0.086,
     "p50": -0.066,
     "p75": -0.04,
-    "p90": 0.02,
-    "n": 5263
+    "p90": 0.016,
+    "n": 5299
    }
   },
   "patient:textgrid_vs_silero": {
    "onset": {
-    "p10": 0.155,
-    "p25": 0.196,
-    "p50": 0.254,
-    "p75": 0.317,
-    "p90": 0.41,
-    "n": 2857
+    "p10": 0.154,
+    "p25": 0.195,
+    "p50": 0.251,
+    "p75": 0.31,
+    "p90": 0.394,
+    "n": 2891
    },
    "offset": {
-    "p10": 0.002,
-    "p25": 0.048,
-    "p50": 0.105,
-    "p75": 0.169,
-    "p90": 0.276,
-    "n": 2857
+    "p10": 0.0,
+    "p25": 0.046,
+    "p50": 0.101,
+    "p75": 0.165,
+    "p90": 0.269,
+    "n": 2891
    }
   },
   "patient:textgrid_vs_silero_nopad": {
    "onset": {
-    "p10": 0.185,
-    "p25": 0.226,
-    "p50": 0.284,
-    "p75": 0.347,
-    "p90": 0.44,
-    "n": 2857
+    "p10": 0.184,
+    "p25": 0.225,
+    "p50": 0.281,
+    "p75": 0.34,
+    "p90": 0.424,
+    "n": 2891
    },
    "offset": {
-    "p10": 0.032,
-    "p25": 0.078,
-    "p50": 0.135,
-    "p75": 0.199,
-    "p90": 0.306,
-    "n": 2857
+    "p10": 0.03,
+    "p25": 0.076,
+    "p50": 0.131,
+    "p75": 0.195,
+    "p90": 0.299,
+    "n": 2891
    }
   },
   "patient:energy_vs_silero": {
@@ -141,17 +141,17 @@
     "p10": -0.01,
     "p25": -0.002,
     "p50": 0.008,
-    "p75": 0.024,
-    "p90": 0.106,
-    "n": 5062
+    "p75": 0.022,
+    "p90": 0.09,
+    "n": 5117
    },
    "offset": {
-    "p10": -0.134,
-    "p25": -0.114,
-    "p50": -0.096,
-    "p75": -0.076,
-    "p90": -0.044,
-    "n": 5062
+    "p10": -0.136,
+    "p25": -0.116,
+    "p50": -0.098,
+    "p75": -0.078,
+    "p90": -0.05,
+    "n": 5117
    }
   },
   "patient:energy_vs_silero_nopad": {
@@ -159,24 +159,24 @@
     "p10": 0.02,
     "p25": 0.028,
     "p50": 0.038,
-    "p75": 0.054,
-    "p90": 0.136,
-    "n": 5062
+    "p75": 0.052,
+    "p90": 0.12,
+    "n": 5117
    },
    "offset": {
-    "p10": -0.104,
-    "p25": -0.084,
-    "p50": -0.066,
-    "p75": -0.046,
-    "p90": -0.014,
-    "n": 5062
+    "p10": -0.106,
+    "p25": -0.086,
+    "p50": -0.068,
+    "p75": -0.048,
+    "p90": -0.02,
+    "n": 5117
    }
   }
  },
  "overlap_pct_of_speech": {
   "textgrid": 6.26,
   "energy": 3.69,
-  "silero_channel": 1.34
+  "silero_channel": 1.45
  },
  "nemotron_vs_references": {
   "primary@0.0": {
@@ -217,39 +217,584 @@
   },
   "silero_channel@0.0": {
    "collar": 0.0,
-   "der": 0.1002,
-   "fa": 0.0211,
-   "miss": 0.0779,
-   "conf": 0.0013,
-   "jer": 0.1023,
-   "ref_speech_h": 6.7851
+   "der": 0.0985,
+   "fa": 0.0174,
+   "miss": 0.0799,
+   "conf": 0.0012,
+   "jer": 0.1008,
+   "ref_speech_h": 6.8261
   },
   "silero_channel@0.25": {
    "collar": 0.25,
-   "der": 0.0274,
-   "fa": 0.0084,
-   "miss": 0.0187,
+   "der": 0.0255,
+   "fa": 0.006,
+   "miss": 0.0192,
    "conf": 0.0003,
-   "jer": 0.0276,
-   "ref_speech_h": 4.8854
+   "jer": 0.0253,
+   "ref_speech_h": 4.9096
   },
   "silero_channel_nopad@0.0": {
    "collar": 0.0,
-   "der": 0.0997,
-   "fa": 0.0369,
-   "miss": 0.0614,
+   "der": 0.0974,
+   "fa": 0.0328,
+   "miss": 0.0633,
    "conf": 0.0013,
-   "jer": 0.1007,
-   "ref_speech_h": 6.5606
+   "jer": 0.0986,
+   "ref_speech_h": 6.6008
   },
   "silero_channel_nopad@0.25": {
    "collar": 0.25,
-   "der": 0.0278,
-   "fa": 0.009,
-   "miss": 0.0184,
+   "der": 0.0256,
+   "fa": 0.0064,
+   "miss": 0.019,
    "conf": 0.0003,
-   "jer": 0.0281,
-   "ref_speech_h": 4.7217
+   "jer": 0.0256,
+   "ref_speech_h": 4.7463
   }
+ },
+ "whisper_disagreements": {
+  "summary": {
+   "energy_not_silero": {
+    "regions": 30,
+    "with_speech": 2,
+    "seconds": 46.44,
+    "classes": {
+     "speech": 2,
+     "short": 6,
+     "laughter": 0,
+     "none": 22
+    }
+   },
+   "silero_not_energy": {
+    "regions": 17,
+    "with_speech": 1,
+    "seconds": 5.78,
+    "classes": {
+     "speech": 1,
+     "short": 11,
+     "laughter": 0,
+     "none": 5
+    }
+   }
+  },
+  "regions": [
+   {
+    "kind": "energy_not_silero",
+    "channel": "day1_consultation02_doctor",
+    "start": 339.45,
+    "end": 341.04,
+    "dur": 1.59,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day1_consultation05_doctor",
+    "start": 363.98,
+    "end": 365.28,
+    "dur": 1.3,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day1_consultation06_doctor",
+    "start": 0.05,
+    "end": 1.81,
+    "dur": 1.76,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day1_consultation06_doctor",
+    "start": 356.16,
+    "end": 357.64,
+    "dur": 1.48,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day1_consultation08_doctor",
+    "start": 301.45,
+    "end": 301.82,
+    "dur": 0.37,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day1_consultation09_doctor",
+    "start": 130.59,
+    "end": 131.91,
+    "dur": 1.32,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day1_consultation15_doctor",
+    "start": 0.89,
+    "end": 2.29,
+    "dur": 1.4,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day1_consultation15_doctor",
+    "start": 351.52,
+    "end": 353.14,
+    "dur": 1.62,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day2_consultation01_doctor",
+    "start": 114.78,
+    "end": 115.98,
+    "dur": 1.2,
+    "whisper": "No, okay.",
+    "words": 2,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation01_doctor",
+    "start": 261.9,
+    "end": 262.22,
+    "dur": 0.32,
+    "whisper": "Excerpt.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation03_doctor",
+    "start": 82.91,
+    "end": 83.26,
+    "dur": 0.35,
+    "whisper": "Okay.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation04_doctor",
+    "start": 217.81,
+    "end": 218.14,
+    "dur": 0.33,
+    "whisper": "that.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation04_doctor",
+    "start": 289.39,
+    "end": 289.72,
+    "dur": 0.33,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation04_doctor",
+    "start": 476.62,
+    "end": 476.96,
+    "dur": 0.34,
+    "whisper": "Okay.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day2_consultation04_patient",
+    "start": 309.88,
+    "end": 311.82,
+    "dur": 1.94,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation05_doctor",
+    "start": 557.29,
+    "end": 557.65,
+    "dur": 0.36,
+    "whisper": "that",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation05_doctor",
+    "start": 578.35,
+    "end": 578.65,
+    "dur": 0.3,
+    "whisper": "I don't know.",
+    "words": 3,
+    "speech": true,
+    "class": "speech"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day2_consultation05_patient",
+    "start": 4.74,
+    "end": 6.98,
+    "dur": 2.24,
+    "whisper": "All right.",
+    "words": 2,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day2_consultation05_patient",
+    "start": 71.68,
+    "end": 72.9,
+    "dur": 1.22,
+    "whisper": "I",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day2_consultation05_patient",
+    "start": 95.98,
+    "end": 97.36,
+    "dur": 1.38,
+    "whisper": "you",
+    "words": 1,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day2_consultation05_patient",
+    "start": 103.34,
+    "end": 105.04,
+    "dur": 1.7,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation06_doctor",
+    "start": 511.32,
+    "end": 511.68,
+    "dur": 0.36,
+    "whisper": "it.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation07_doctor",
+    "start": 245.75,
+    "end": 246.08,
+    "dur": 0.33,
+    "whisper": "Okay.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day2_consultation08_doctor",
+    "start": 150.35,
+    "end": 152.12,
+    "dur": 1.77,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day2_consultation10_doctor",
+    "start": 239.88,
+    "end": 240.19,
+    "dur": 0.31,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day3_consultation01_doctor",
+    "start": 316.85,
+    "end": 318.73,
+    "dur": 1.88,
+    "whisper": "bye",
+    "words": 1,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day3_consultation03_doctor",
+    "start": 136.19,
+    "end": 137.47,
+    "dur": 1.28,
+    "whisper": "Do you make your work?",
+    "words": 5,
+    "speech": true,
+    "class": "speech"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day3_consultation04_doctor",
+    "start": 13.25,
+    "end": 15.2,
+    "dur": 1.95,
+    "whisper": "Thank you very much.",
+    "words": 4,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day4_consultation01_doctor",
+    "start": 8.7,
+    "end": 10.47,
+    "dur": 1.77,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day4_consultation06_doctor",
+    "start": 313.54,
+    "end": 315.23,
+    "dur": 1.69,
+    "whisper": "Okay.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day4_consultation07_doctor",
+    "start": 422.01,
+    "end": 422.43,
+    "dur": 0.42,
+    "whisper": "And,",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day4_consultation07_doctor",
+    "start": 512.24,
+    "end": 512.57,
+    "dur": 0.33,
+    "whisper": "I mean,",
+    "words": 2,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day4_consultation08_doctor",
+    "start": 1.79,
+    "end": 3.36,
+    "dur": 1.57,
+    "whisper": "Hello?",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day4_consultation08_doctor",
+    "start": 17.18,
+    "end": 19.04,
+    "dur": 1.86,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day4_consultation08_doctor",
+    "start": 132.51,
+    "end": 133.73,
+    "dur": 1.22,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day4_consultation09_doctor",
+    "start": 34.28,
+    "end": 36.08,
+    "dur": 1.8,
+    "whisper": "Okay.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day4_consultation09_doctor",
+    "start": 361.65,
+    "end": 363.06,
+    "dur": 1.41,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day5_consultation01_doctor",
+    "start": 112.78,
+    "end": 114.02,
+    "dur": 1.24,
+    "whisper": "you",
+    "words": 1,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day5_consultation03_patient",
+    "start": 589.07,
+    "end": 589.39,
+    "dur": 0.32,
+    "whisper": "during",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day5_consultation04_doctor",
+    "start": 480.31,
+    "end": 480.64,
+    "dur": 0.33,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day5_consultation05_doctor",
+    "start": 9.69,
+    "end": 11.3,
+    "dur": 1.61,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day5_consultation08_doctor",
+    "start": 5.47,
+    "end": 6.95,
+    "dur": 1.48,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day5_consultation09_doctor",
+    "start": 0.0,
+    "end": 1.28,
+    "dur": 1.28,
+    "whisper": "in one place.",
+    "words": 3,
+    "speech": true,
+    "class": "speech"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day5_consultation09_patient",
+    "start": 507.44,
+    "end": 508.73,
+    "dur": 1.29,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "energy_not_silero",
+    "channel": "day5_consultation10_doctor",
+    "start": 23.51,
+    "end": 24.7,
+    "dur": 1.19,
+    "whisper": "you",
+    "words": 1,
+    "speech": false,
+    "class": "none"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day5_consultation10_patient",
+    "start": 9.21,
+    "end": 9.53,
+    "dur": 0.32,
+    "whisper": "Okay.",
+    "words": 1,
+    "speech": false,
+    "class": "short"
+   },
+   {
+    "kind": "silero_not_energy",
+    "channel": "day5_consultation10_patient",
+    "start": 10.33,
+    "end": 10.69,
+    "dur": 0.36,
+    "whisper": "Thank you.",
+    "words": 2,
+    "speech": false,
+    "class": "none"
+   }
+  ]
  }
 }

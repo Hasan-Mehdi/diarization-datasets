@@ -1,33 +1,47 @@
 {
  "whisper_totals": {
-  "unref:silero_x2": [
-   80,
-   121
-  ],
-  "unref:energy": [
-   75,
-   140
-  ],
-  "unref:webrtc": [
-   80,
-   140
-  ],
-  "unvoiced:silero_x2": [
-   59,
-   133
-  ],
-  "unvoiced:energy": [
-   68,
-   117
-  ],
-  "unvoiced:webrtc": [
-   20,
-   82
-  ],
-  "control:None": [
-   6,
-   140
-  ]
+  "unref:silero_x2": {
+   "speech": 166,
+   "verbal": 209,
+   "laughter": 24,
+   "regions": 244
+  },
+  "unref:energy": {
+   "speech": 119,
+   "verbal": 195,
+   "laughter": 5,
+   "regions": 286
+  },
+  "unref:webrtc": {
+   "speech": 129,
+   "verbal": 192,
+   "laughter": 5,
+   "regions": 283
+  },
+  "unvoiced:silero_x2": {
+   "speech": 146,
+   "verbal": 222,
+   "laughter": 2,
+   "regions": 312
+  },
+  "unvoiced:energy": {
+   "speech": 169,
+   "verbal": 200,
+   "laughter": 0,
+   "regions": 292
+  },
+  "unvoiced:webrtc": {
+   "speech": 85,
+   "verbal": 129,
+   "laughter": 0,
+   "regions": 222
+  },
+  "control:None": {
+   "speech": 14,
+   "verbal": 52,
+   "laughter": 1,
+   "regions": 320
+  }
  },
  "correlation": {
   "all": {

@@ -1,0 +1,1919 @@
+{
+ "tag": "notsofar1.ihm-mix",
+ "sessions": [
+  "notsofar1__MTG_32045",
+  "notsofar1__MTG_32062",
+  "notsofar1__MTG_32072",
+  "notsofar1__MTG_32109",
+  "notsofar1__MTG_32190",
+  "notsofar1__MTG_32251",
+  "notsofar1__MTG_32256",
+  "notsofar1__MTG_32331",
+  "notsofar1__MTG_32339",
+  "notsofar1__MTG_32342"
+ ],
+ "hours": 1.033,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.126,
+     "fa": 0.0062,
+     "miss": 0.1074,
+     "conf": 0.0124,
+     "jer": 0.179,
+     "ref_speech_h": 1.1644
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0494,
+     "fa": 0.0005,
+     "miss": 0.0418,
+     "conf": 0.0071,
+     "jer": 0.0998,
+     "ref_speech_h": 0.7148
+    },
+    "fastmss_mfa@0.0": {
+     "collar": 0.0,
+     "der": 0.116,
+     "fa": 0.0502,
+     "miss": 0.0392,
+     "conf": 0.0266,
+     "jer": 0.2119,
+     "ref_speech_h": 0.4243
+    },
+    "fastmss_mfa@0.25": {
+     "collar": 0.25,
+     "der": 0.0448,
+     "fa": 0.0007,
+     "miss": 0.0283,
+     "conf": 0.0158,
+     "jer": 0.1526,
+     "ref_speech_h": 0.268
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.0992,
+     "fa": 0.0108,
+     "miss": 0.0753,
+     "conf": 0.0131,
+     "jer": 0.1552,
+     "ref_speech_h": 1.1187
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.0456,
+     "fa": 0.0014,
+     "miss": 0.0368,
+     "conf": 0.0074,
+     "jer": 0.0989,
+     "ref_speech_h": 0.7247
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "notsofar1__MTG_32045",
+     "primary@0.0": {
+      "der": 0.1662,
+      "fa": 0.0079,
+      "miss": 0.1432,
+      "conf": 0.0151,
+      "jer": 0.1811,
+      "ref_speech_s": 485.658
+     },
+     "primary@0.25": {
+      "der": 0.0583,
+      "fa": 0.001,
+      "miss": 0.0527,
+      "conf": 0.0046,
+      "jer": 0.071,
+      "ref_speech_s": 229.861
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.116,
+      "fa": 0.0206,
+      "miss": 0.0779,
+      "conf": 0.0176,
+      "jer": 0.1381,
+      "ref_speech_s": 445.519
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0347,
+      "fa": 0.0042,
+      "miss": 0.0255,
+      "conf": 0.0051,
+      "jer": 0.0498,
+      "ref_speech_s": 233.18
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32062",
+     "primary@0.0": {
+      "der": 0.1215,
+      "fa": 0.0059,
+      "miss": 0.111,
+      "conf": 0.0046,
+      "jer": 0.136,
+      "ref_speech_s": 355.539
+     },
+     "primary@0.25": {
+      "der": 0.0467,
+      "fa": 0.0022,
+      "miss": 0.0443,
+      "conf": 0.0002,
+      "jer": 0.049,
+      "ref_speech_s": 232.539
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0765,
+      "fa": 0.014,
+      "miss": 0.0581,
+      "conf": 0.0044,
+      "jer": 0.0995,
+      "ref_speech_s": 332.86
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0232,
+      "fa": 0.0033,
+      "miss": 0.0199,
+      "conf": 0.0,
+      "jer": 0.0329,
+      "ref_speech_s": 221.49
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32072",
+     "primary@0.0": {
+      "der": 0.0756,
+      "fa": 0.0142,
+      "miss": 0.0529,
+      "conf": 0.0086,
+      "jer": 0.0897,
+      "ref_speech_s": 428.279
+     },
+     "primary@0.25": {
+      "der": 0.0168,
+      "fa": 0.0007,
+      "miss": 0.0152,
+      "conf": 0.001,
+      "jer": 0.0211,
+      "ref_speech_s": 252.369
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.0969,
+      "fa": 0.0783,
+      "miss": 0.0108,
+      "conf": 0.0078,
+      "jer": 0.1024,
+      "ref_speech_s": 385.67
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0045,
+      "fa": 0.0004,
+      "miss": 0.0029,
+      "conf": 0.0012,
+      "jer": 0.0076,
+      "ref_speech_s": 220.38
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0607,
+      "fa": 0.0208,
+      "miss": 0.0312,
+      "conf": 0.0087,
+      "jer": 0.0736,
+      "ref_speech_s": 416.01
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0142,
+      "fa": 0.0009,
+      "miss": 0.0124,
+      "conf": 0.0009,
+      "jer": 0.0165,
+      "ref_speech_s": 254.95
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32109",
+     "primary@0.0": {
+      "der": 0.1718,
+      "fa": 0.0056,
+      "miss": 0.1404,
+      "conf": 0.0257,
+      "jer": 0.3478,
+      "ref_speech_s": 512.41
+     },
+     "primary@0.25": {
+      "der": 0.0929,
+      "fa": 0.0013,
+      "miss": 0.0706,
+      "conf": 0.021,
+      "jer": 0.2681,
+      "ref_speech_s": 342.75
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.1283,
+      "fa": 0.0492,
+      "miss": 0.0479,
+      "conf": 0.0313,
+      "jer": 0.3134,
+      "ref_speech_s": 442.76
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0568,
+      "fa": 0.002,
+      "miss": 0.0301,
+      "conf": 0.0246,
+      "jer": 0.2526,
+      "ref_speech_s": 283.04
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1429,
+      "fa": 0.01,
+      "miss": 0.1055,
+      "conf": 0.0274,
+      "jer": 0.3251,
+      "ref_speech_s": 490.169
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0824,
+      "fa": 0.0027,
+      "miss": 0.0571,
+      "conf": 0.0227,
+      "jer": 0.2668,
+      "ref_speech_s": 336.063
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32190",
+     "primary@0.0": {
+      "der": 0.2004,
+      "fa": 0.0061,
+      "miss": 0.1404,
+      "conf": 0.054,
+      "jer": 0.2844,
+      "ref_speech_s": 446.948
+     },
+     "primary@0.25": {
+      "der": 0.1159,
+      "fa": 0.0,
+      "miss": 0.0759,
+      "conf": 0.04,
+      "jer": 0.217,
+      "ref_speech_s": 242.478
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.1784,
+      "fa": 0.043,
+      "miss": 0.0758,
+      "conf": 0.0596,
+      "jer": 0.2657,
+      "ref_speech_s": 400.02
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.1099,
+      "fa": 0.0,
+      "miss": 0.0743,
+      "conf": 0.0355,
+      "jer": 0.2068,
+      "ref_speech_s": 225.29
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1805,
+      "fa": 0.0101,
+      "miss": 0.1139,
+      "conf": 0.0564,
+      "jer": 0.2684,
+      "ref_speech_s": 431.72
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.1211,
+      "fa": 0.0,
+      "miss": 0.0795,
+      "conf": 0.0416,
+      "jer": 0.2199,
+      "ref_speech_s": 248.745
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32251",
+     "primary@0.0": {
+      "der": 0.1098,
+      "fa": 0.0045,
+      "miss": 0.1042,
+      "conf": 0.001,
+      "jer": 0.1113,
+      "ref_speech_s": 429.509
+     },
+     "primary@0.25": {
+      "der": 0.0317,
+      "fa": 0.0,
+      "miss": 0.0317,
+      "conf": 0.0,
+      "jer": 0.0383,
+      "ref_speech_s": 257.369
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0783,
+      "fa": 0.0043,
+      "miss": 0.073,
+      "conf": 0.0009,
+      "jer": 0.082,
+      "ref_speech_s": 415.208
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0291,
+      "fa": 0.0,
+      "miss": 0.0291,
+      "conf": 0.0,
+      "jer": 0.0379,
+      "ref_speech_s": 269.558
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32256",
+     "primary@0.0": {
+      "der": 0.0698,
+      "fa": 0.0058,
+      "miss": 0.0641,
+      "conf": 0.0,
+      "jer": 0.0719,
+      "ref_speech_s": 321.15
+     },
+     "primary@0.25": {
+      "der": 0.0237,
+      "fa": 0.0,
+      "miss": 0.0237,
+      "conf": 0.0,
+      "jer": 0.0231,
+      "ref_speech_s": 267.65
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.039,
+      "fa": 0.025,
+      "miss": 0.014,
+      "conf": 0.0,
+      "jer": 0.0357,
+      "ref_speech_s": 299.16
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0057,
+      "fa": 0.0,
+      "miss": 0.0057,
+      "conf": 0.0,
+      "jer": 0.0052,
+      "ref_speech_s": 235.92
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0616,
+      "fa": 0.0076,
+      "miss": 0.054,
+      "conf": 0.0,
+      "jer": 0.0625,
+      "ref_speech_s": 317.13
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0353,
+      "fa": 0.0,
+      "miss": 0.0353,
+      "conf": 0.0,
+      "jer": 0.0369,
+      "ref_speech_s": 270.48
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32331",
+     "primary@0.0": {
+      "der": 0.1082,
+      "fa": 0.0027,
+      "miss": 0.1055,
+      "conf": 0.0,
+      "jer": 0.1128,
+      "ref_speech_s": 360.819
+     },
+     "primary@0.25": {
+      "der": 0.0309,
+      "fa": 0.0,
+      "miss": 0.0309,
+      "conf": 0.0,
+      "jer": 0.0369,
+      "ref_speech_s": 248.899
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.088,
+      "fa": 0.0062,
+      "miss": 0.0817,
+      "conf": 0.0001,
+      "jer": 0.0916,
+      "ref_speech_s": 350.164
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.039,
+      "fa": 0.0011,
+      "miss": 0.0379,
+      "conf": 0.0,
+      "jer": 0.041,
+      "ref_speech_s": 256.269
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32339",
+     "primary@0.0": {
+      "der": 0.0947,
+      "fa": 0.0036,
+      "miss": 0.0909,
+      "conf": 0.0002,
+      "jer": 0.1014,
+      "ref_speech_s": 391.659
+     },
+     "primary@0.25": {
+      "der": 0.0339,
+      "fa": 0.0,
+      "miss": 0.0339,
+      "conf": 0.0,
+      "jer": 0.039,
+      "ref_speech_s": 261.338
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0702,
+      "fa": 0.0046,
+      "miss": 0.0652,
+      "conf": 0.0004,
+      "jer": 0.075,
+      "ref_speech_s": 380.498
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0257,
+      "fa": 0.0,
+      "miss": 0.0257,
+      "conf": 0.0,
+      "jer": 0.0298,
+      "ref_speech_s": 263.328
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32342",
+     "primary@0.0": {
+      "der": 0.1056,
+      "fa": 0.0049,
+      "miss": 0.0978,
+      "conf": 0.0029,
+      "jer": 0.1409,
+      "ref_speech_s": 459.889
+     },
+     "primary@0.25": {
+      "der": 0.0317,
+      "fa": 0.0,
+      "miss": 0.0316,
+      "conf": 0.0001,
+      "jer": 0.0243,
+      "ref_speech_s": 238.139
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0886,
+      "fa": 0.0083,
+      "miss": 0.0771,
+      "conf": 0.0032,
+      "jer": 0.1219,
+      "ref_speech_s": 447.969
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.04,
+      "fa": 0.0016,
+      "miss": 0.0383,
+      "conf": 0.0,
+      "jer": 0.0458,
+      "ref_speech_s": 254.941
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.126,
+     "fa": 0.0062,
+     "miss": 0.1074,
+     "conf": 0.0124,
+     "jer": 0.179,
+     "ref_speech_h": 1.1644
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0494,
+     "fa": 0.0005,
+     "miss": 0.0418,
+     "conf": 0.0071,
+     "jer": 0.0998,
+     "ref_speech_h": 0.7148
+    },
+    "fastmss_mfa@0.0": {
+     "collar": 0.0,
+     "der": 0.116,
+     "fa": 0.0502,
+     "miss": 0.0392,
+     "conf": 0.0266,
+     "jer": 0.2119,
+     "ref_speech_h": 0.4243
+    },
+    "fastmss_mfa@0.25": {
+     "collar": 0.25,
+     "der": 0.0448,
+     "fa": 0.0007,
+     "miss": 0.0283,
+     "conf": 0.0158,
+     "jer": 0.1526,
+     "ref_speech_h": 0.268
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.0992,
+     "fa": 0.0108,
+     "miss": 0.0753,
+     "conf": 0.0131,
+     "jer": 0.1552,
+     "ref_speech_h": 1.1187
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.0456,
+     "fa": 0.0014,
+     "miss": 0.0368,
+     "conf": 0.0074,
+     "jer": 0.0989,
+     "ref_speech_h": 0.7247
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "notsofar1__MTG_32045",
+     "primary@0.0": {
+      "der": 0.1662,
+      "fa": 0.0079,
+      "miss": 0.1432,
+      "conf": 0.0151,
+      "jer": 0.1811,
+      "ref_speech_s": 485.658
+     },
+     "primary@0.25": {
+      "der": 0.0583,
+      "fa": 0.001,
+      "miss": 0.0527,
+      "conf": 0.0046,
+      "jer": 0.071,
+      "ref_speech_s": 229.861
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.116,
+      "fa": 0.0206,
+      "miss": 0.0779,
+      "conf": 0.0176,
+      "jer": 0.1381,
+      "ref_speech_s": 445.519
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0347,
+      "fa": 0.0042,
+      "miss": 0.0255,
+      "conf": 0.0051,
+      "jer": 0.0498,
+      "ref_speech_s": 233.18
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32062",
+     "primary@0.0": {
+      "der": 0.1215,
+      "fa": 0.0059,
+      "miss": 0.111,
+      "conf": 0.0046,
+      "jer": 0.136,
+      "ref_speech_s": 355.539
+     },
+     "primary@0.25": {
+      "der": 0.0467,
+      "fa": 0.0022,
+      "miss": 0.0443,
+      "conf": 0.0002,
+      "jer": 0.049,
+      "ref_speech_s": 232.539
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0765,
+      "fa": 0.014,
+      "miss": 0.0581,
+      "conf": 0.0044,
+      "jer": 0.0995,
+      "ref_speech_s": 332.86
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0232,
+      "fa": 0.0033,
+      "miss": 0.0199,
+      "conf": 0.0,
+      "jer": 0.0329,
+      "ref_speech_s": 221.49
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32072",
+     "primary@0.0": {
+      "der": 0.0756,
+      "fa": 0.0142,
+      "miss": 0.0529,
+      "conf": 0.0086,
+      "jer": 0.0897,
+      "ref_speech_s": 428.279
+     },
+     "primary@0.25": {
+      "der": 0.0168,
+      "fa": 0.0007,
+      "miss": 0.0152,
+      "conf": 0.001,
+      "jer": 0.0211,
+      "ref_speech_s": 252.369
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.0969,
+      "fa": 0.0783,
+      "miss": 0.0108,
+      "conf": 0.0078,
+      "jer": 0.1024,
+      "ref_speech_s": 385.67
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0045,
+      "fa": 0.0004,
+      "miss": 0.0029,
+      "conf": 0.0012,
+      "jer": 0.0076,
+      "ref_speech_s": 220.38
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0607,
+      "fa": 0.0208,
+      "miss": 0.0312,
+      "conf": 0.0087,
+      "jer": 0.0736,
+      "ref_speech_s": 416.01
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0142,
+      "fa": 0.0009,
+      "miss": 0.0124,
+      "conf": 0.0009,
+      "jer": 0.0165,
+      "ref_speech_s": 254.95
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32109",
+     "primary@0.0": {
+      "der": 0.1718,
+      "fa": 0.0056,
+      "miss": 0.1404,
+      "conf": 0.0257,
+      "jer": 0.3478,
+      "ref_speech_s": 512.41
+     },
+     "primary@0.25": {
+      "der": 0.0929,
+      "fa": 0.0013,
+      "miss": 0.0706,
+      "conf": 0.021,
+      "jer": 0.2681,
+      "ref_speech_s": 342.75
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.1283,
+      "fa": 0.0492,
+      "miss": 0.0479,
+      "conf": 0.0313,
+      "jer": 0.3134,
+      "ref_speech_s": 442.76
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0568,
+      "fa": 0.002,
+      "miss": 0.0301,
+      "conf": 0.0246,
+      "jer": 0.2526,
+      "ref_speech_s": 283.04
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1429,
+      "fa": 0.01,
+      "miss": 0.1055,
+      "conf": 0.0274,
+      "jer": 0.3251,
+      "ref_speech_s": 490.169
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0824,
+      "fa": 0.0027,
+      "miss": 0.0571,
+      "conf": 0.0227,
+      "jer": 0.2668,
+      "ref_speech_s": 336.063
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32190",
+     "primary@0.0": {
+      "der": 0.2004,
+      "fa": 0.0061,
+      "miss": 0.1404,
+      "conf": 0.054,
+      "jer": 0.2844,
+      "ref_speech_s": 446.948
+     },
+     "primary@0.25": {
+      "der": 0.1159,
+      "fa": 0.0,
+      "miss": 0.0759,
+      "conf": 0.04,
+      "jer": 0.217,
+      "ref_speech_s": 242.478
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.1784,
+      "fa": 0.043,
+      "miss": 0.0758,
+      "conf": 0.0596,
+      "jer": 0.2657,
+      "ref_speech_s": 400.02
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.1099,
+      "fa": 0.0,
+      "miss": 0.0743,
+      "conf": 0.0355,
+      "jer": 0.2068,
+      "ref_speech_s": 225.29
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1805,
+      "fa": 0.0101,
+      "miss": 0.1139,
+      "conf": 0.0564,
+      "jer": 0.2684,
+      "ref_speech_s": 431.72
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.1211,
+      "fa": 0.0,
+      "miss": 0.0795,
+      "conf": 0.0416,
+      "jer": 0.2199,
+      "ref_speech_s": 248.745
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32251",
+     "primary@0.0": {
+      "der": 0.1098,
+      "fa": 0.0045,
+      "miss": 0.1042,
+      "conf": 0.001,
+      "jer": 0.1113,
+      "ref_speech_s": 429.509
+     },
+     "primary@0.25": {
+      "der": 0.0317,
+      "fa": 0.0,
+      "miss": 0.0317,
+      "conf": 0.0,
+      "jer": 0.0383,
+      "ref_speech_s": 257.369
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0783,
+      "fa": 0.0043,
+      "miss": 0.073,
+      "conf": 0.0009,
+      "jer": 0.082,
+      "ref_speech_s": 415.208
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0291,
+      "fa": 0.0,
+      "miss": 0.0291,
+      "conf": 0.0,
+      "jer": 0.0379,
+      "ref_speech_s": 269.558
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32256",
+     "primary@0.0": {
+      "der": 0.0698,
+      "fa": 0.0058,
+      "miss": 0.0641,
+      "conf": 0.0,
+      "jer": 0.0719,
+      "ref_speech_s": 321.15
+     },
+     "primary@0.25": {
+      "der": 0.0237,
+      "fa": 0.0,
+      "miss": 0.0237,
+      "conf": 0.0,
+      "jer": 0.0231,
+      "ref_speech_s": 267.65
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.039,
+      "fa": 0.025,
+      "miss": 0.014,
+      "conf": 0.0,
+      "jer": 0.0357,
+      "ref_speech_s": 299.16
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0057,
+      "fa": 0.0,
+      "miss": 0.0057,
+      "conf": 0.0,
+      "jer": 0.0052,
+      "ref_speech_s": 235.92
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0616,
+      "fa": 0.0076,
+      "miss": 0.054,
+      "conf": 0.0,
+      "jer": 0.0625,
+      "ref_speech_s": 317.13
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0353,
+      "fa": 0.0,
+      "miss": 0.0353,
+      "conf": 0.0,
+      "jer": 0.0369,
+      "ref_speech_s": 270.48
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32331",
+     "primary@0.0": {
+      "der": 0.1082,
+      "fa": 0.0027,
+      "miss": 0.1055,
+      "conf": 0.0,
+      "jer": 0.1128,
+      "ref_speech_s": 360.819
+     },
+     "primary@0.25": {
+      "der": 0.0309,
+      "fa": 0.0,
+      "miss": 0.0309,
+      "conf": 0.0,
+      "jer": 0.0369,
+      "ref_speech_s": 248.899
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.088,
+      "fa": 0.0062,
+      "miss": 0.0817,
+      "conf": 0.0001,
+      "jer": 0.0916,
+      "ref_speech_s": 350.164
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.039,
+      "fa": 0.0011,
+      "miss": 0.0379,
+      "conf": 0.0,
+      "jer": 0.041,
+      "ref_speech_s": 256.269
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32339",
+     "primary@0.0": {
+      "der": 0.0947,
+      "fa": 0.0036,
+      "miss": 0.0909,
+      "conf": 0.0002,
+      "jer": 0.1014,
+      "ref_speech_s": 391.659
+     },
+     "primary@0.25": {
+      "der": 0.0339,
+      "fa": 0.0,
+      "miss": 0.0339,
+      "conf": 0.0,
+      "jer": 0.039,
+      "ref_speech_s": 261.338
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0702,
+      "fa": 0.0046,
+      "miss": 0.0652,
+      "conf": 0.0004,
+      "jer": 0.075,
+      "ref_speech_s": 380.498
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0257,
+      "fa": 0.0,
+      "miss": 0.0257,
+      "conf": 0.0,
+      "jer": 0.0298,
+      "ref_speech_s": 263.328
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32342",
+     "primary@0.0": {
+      "der": 0.1056,
+      "fa": 0.0049,
+      "miss": 0.0978,
+      "conf": 0.0029,
+      "jer": 0.1409,
+      "ref_speech_s": 459.889
+     },
+     "primary@0.25": {
+      "der": 0.0317,
+      "fa": 0.0,
+      "miss": 0.0316,
+      "conf": 0.0001,
+      "jer": 0.0243,
+      "ref_speech_s": 238.139
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0886,
+      "fa": 0.0083,
+      "miss": 0.0771,
+      "conf": 0.0032,
+      "jer": 0.1219,
+      "ref_speech_s": 447.969
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.04,
+      "fa": 0.0016,
+      "miss": 0.0383,
+      "conf": 0.0,
+      "jer": 0.0458,
+      "ref_speech_s": 254.941
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1215,
+     "fa": 0.0062,
+     "miss": 0.1054,
+     "conf": 0.0099,
+     "jer": 0.153,
+     "ref_speech_h": 1.1644
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0454,
+     "fa": 0.0005,
+     "miss": 0.0401,
+     "conf": 0.0048,
+     "jer": 0.0701,
+     "ref_speech_h": 0.7148
+    },
+    "fastmss_mfa@0.0": {
+     "collar": 0.0,
+     "der": 0.0991,
+     "fa": 0.0485,
+     "miss": 0.0317,
+     "conf": 0.0189,
+     "jer": 0.1437,
+     "ref_speech_h": 0.4243
+    },
+    "fastmss_mfa@0.25": {
+     "collar": 0.25,
+     "der": 0.0296,
+     "fa": 0.0007,
+     "miss": 0.0191,
+     "conf": 0.0098,
+     "jer": 0.0726,
+     "ref_speech_h": 0.268
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.0947,
+     "fa": 0.0108,
+     "miss": 0.0733,
+     "conf": 0.0106,
+     "jer": 0.1291,
+     "ref_speech_h": 1.1187
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.0409,
+     "fa": 0.0014,
+     "miss": 0.0346,
+     "conf": 0.0049,
+     "jer": 0.0666,
+     "ref_speech_h": 0.7247
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "notsofar1__MTG_32045",
+     "primary@0.0": {
+      "der": 0.1764,
+      "fa": 0.0097,
+      "miss": 0.1499,
+      "conf": 0.0167,
+      "jer": 0.1999,
+      "ref_speech_s": 485.658
+     },
+     "primary@0.25": {
+      "der": 0.0638,
+      "fa": 0.0022,
+      "miss": 0.0558,
+      "conf": 0.0058,
+      "jer": 0.0893,
+      "ref_speech_s": 229.861
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1263,
+      "fa": 0.0221,
+      "miss": 0.0849,
+      "conf": 0.0193,
+      "jer": 0.1574,
+      "ref_speech_s": 445.519
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0414,
+      "fa": 0.0051,
+      "miss": 0.0301,
+      "conf": 0.0062,
+      "jer": 0.0665,
+      "ref_speech_s": 233.18
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32062",
+     "primary@0.0": {
+      "der": 0.1223,
+      "fa": 0.0071,
+      "miss": 0.1083,
+      "conf": 0.0069,
+      "jer": 0.1423,
+      "ref_speech_s": 355.539
+     },
+     "primary@0.25": {
+      "der": 0.0513,
+      "fa": 0.0016,
+      "miss": 0.0465,
+      "conf": 0.0032,
+      "jer": 0.0602,
+      "ref_speech_s": 232.539
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0791,
+      "fa": 0.016,
+      "miss": 0.056,
+      "conf": 0.007,
+      "jer": 0.1071,
+      "ref_speech_s": 332.86
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0288,
+      "fa": 0.003,
+      "miss": 0.0225,
+      "conf": 0.0033,
+      "jer": 0.0442,
+      "ref_speech_s": 221.49
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32072",
+     "primary@0.0": {
+      "der": 0.0765,
+      "fa": 0.0121,
+      "miss": 0.0611,
+      "conf": 0.0033,
+      "jer": 0.084,
+      "ref_speech_s": 428.279
+     },
+     "primary@0.25": {
+      "der": 0.0208,
+      "fa": 0.0,
+      "miss": 0.0208,
+      "conf": 0.0,
+      "jer": 0.0232,
+      "ref_speech_s": 252.369
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.0852,
+      "fa": 0.0691,
+      "miss": 0.013,
+      "conf": 0.003,
+      "jer": 0.0845,
+      "ref_speech_s": 385.67
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0039,
+      "fa": 0.0,
+      "miss": 0.0039,
+      "conf": 0.0,
+      "jer": 0.0041,
+      "ref_speech_s": 220.38
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0602,
+      "fa": 0.0182,
+      "miss": 0.0391,
+      "conf": 0.0029,
+      "jer": 0.0664,
+      "ref_speech_s": 416.01
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0175,
+      "fa": 0.0,
+      "miss": 0.0175,
+      "conf": 0.0,
+      "jer": 0.019,
+      "ref_speech_s": 254.95
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32109",
+     "primary@0.0": {
+      "der": 0.1422,
+      "fa": 0.0058,
+      "miss": 0.1275,
+      "conf": 0.0088,
+      "jer": 0.1996,
+      "ref_speech_s": 512.41
+     },
+     "primary@0.25": {
+      "der": 0.065,
+      "fa": 0.0013,
+      "miss": 0.0611,
+      "conf": 0.0026,
+      "jer": 0.0943,
+      "ref_speech_s": 342.75
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.1004,
+      "fa": 0.0529,
+      "miss": 0.0365,
+      "conf": 0.0111,
+      "jer": 0.155,
+      "ref_speech_s": 442.76
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0195,
+      "fa": 0.002,
+      "miss": 0.0165,
+      "conf": 0.0011,
+      "jer": 0.0513,
+      "ref_speech_s": 283.04
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1132,
+      "fa": 0.011,
+      "miss": 0.0928,
+      "conf": 0.0094,
+      "jer": 0.1736,
+      "ref_speech_s": 490.169
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0533,
+      "fa": 0.0027,
+      "miss": 0.0482,
+      "conf": 0.0024,
+      "jer": 0.0867,
+      "ref_speech_s": 336.063
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32190",
+     "primary@0.0": {
+      "der": 0.1784,
+      "fa": 0.0054,
+      "miss": 0.1222,
+      "conf": 0.0509,
+      "jer": 0.2514,
+      "ref_speech_s": 446.948
+     },
+     "primary@0.25": {
+      "der": 0.0963,
+      "fa": 0.0,
+      "miss": 0.0578,
+      "conf": 0.0385,
+      "jer": 0.1776,
+      "ref_speech_s": 242.478
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.1576,
+      "fa": 0.0437,
+      "miss": 0.0569,
+      "conf": 0.057,
+      "jer": 0.2329,
+      "ref_speech_s": 400.02
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0912,
+      "fa": 0.0,
+      "miss": 0.0503,
+      "conf": 0.0408,
+      "jer": 0.1757,
+      "ref_speech_s": 225.29
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1575,
+      "fa": 0.0091,
+      "miss": 0.0948,
+      "conf": 0.0536,
+      "jer": 0.2354,
+      "ref_speech_s": 431.72
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0935,
+      "fa": 0.0,
+      "miss": 0.0543,
+      "conf": 0.0392,
+      "jer": 0.1695,
+      "ref_speech_s": 248.745
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32251",
+     "primary@0.0": {
+      "der": 0.1142,
+      "fa": 0.0049,
+      "miss": 0.107,
+      "conf": 0.0022,
+      "jer": 0.1163,
+      "ref_speech_s": 429.509
+     },
+     "primary@0.25": {
+      "der": 0.0349,
+      "fa": 0.0,
+      "miss": 0.0345,
+      "conf": 0.0004,
+      "jer": 0.0432,
+      "ref_speech_s": 257.369
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0832,
+      "fa": 0.0048,
+      "miss": 0.076,
+      "conf": 0.0024,
+      "jer": 0.088,
+      "ref_speech_s": 415.208
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0312,
+      "fa": 0.0,
+      "miss": 0.031,
+      "conf": 0.0002,
+      "jer": 0.0416,
+      "ref_speech_s": 269.558
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32256",
+     "primary@0.0": {
+      "der": 0.068,
+      "fa": 0.0031,
+      "miss": 0.0649,
+      "conf": 0.0,
+      "jer": 0.0707,
+      "ref_speech_s": 321.15
+     },
+     "primary@0.25": {
+      "der": 0.0232,
+      "fa": 0.0003,
+      "miss": 0.0229,
+      "conf": 0.0,
+      "jer": 0.0227,
+      "ref_speech_s": 267.65
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.0368,
+      "fa": 0.022,
+      "miss": 0.0148,
+      "conf": 0.0,
+      "jer": 0.0347,
+      "ref_speech_s": 299.16
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.007,
+      "fa": 0.0003,
+      "miss": 0.0067,
+      "conf": 0.0,
+      "jer": 0.0066,
+      "ref_speech_s": 235.92
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.06,
+      "fa": 0.005,
+      "miss": 0.055,
+      "conf": 0.0,
+      "jer": 0.0621,
+      "ref_speech_s": 317.13
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.036,
+      "fa": 0.0003,
+      "miss": 0.0358,
+      "conf": 0.0,
+      "jer": 0.0378,
+      "ref_speech_s": 270.48
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32331",
+     "primary@0.0": {
+      "der": 0.1082,
+      "fa": 0.0023,
+      "miss": 0.1058,
+      "conf": 0.0,
+      "jer": 0.1127,
+      "ref_speech_s": 360.819
+     },
+     "primary@0.25": {
+      "der": 0.0308,
+      "fa": 0.0,
+      "miss": 0.0308,
+      "conf": 0.0,
+      "jer": 0.0367,
+      "ref_speech_s": 248.899
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0879,
+      "fa": 0.0058,
+      "miss": 0.082,
+      "conf": 0.0001,
+      "jer": 0.0914,
+      "ref_speech_s": 350.164
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0387,
+      "fa": 0.0011,
+      "miss": 0.0376,
+      "conf": 0.0,
+      "jer": 0.0406,
+      "ref_speech_s": 256.269
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32339",
+     "primary@0.0": {
+      "der": 0.0947,
+      "fa": 0.0038,
+      "miss": 0.0907,
+      "conf": 0.0002,
+      "jer": 0.1002,
+      "ref_speech_s": 391.659
+     },
+     "primary@0.25": {
+      "der": 0.0339,
+      "fa": 0.0,
+      "miss": 0.0339,
+      "conf": 0.0,
+      "jer": 0.0382,
+      "ref_speech_s": 261.338
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0703,
+      "fa": 0.005,
+      "miss": 0.065,
+      "conf": 0.0004,
+      "jer": 0.0737,
+      "ref_speech_s": 380.498
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0256,
+      "fa": 0.0,
+      "miss": 0.0255,
+      "conf": 0.0,
+      "jer": 0.0291,
+      "ref_speech_s": 263.328
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32342",
+     "primary@0.0": {
+      "der": 0.1044,
+      "fa": 0.0055,
+      "miss": 0.0958,
+      "conf": 0.0031,
+      "jer": 0.1375,
+      "ref_speech_s": 459.889
+     },
+     "primary@0.25": {
+      "der": 0.0324,
+      "fa": 0.0,
+      "miss": 0.0324,
+      "conf": 0.0,
+      "jer": 0.0242,
+      "ref_speech_s": 238.139
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0877,
+      "fa": 0.0092,
+      "miss": 0.0752,
+      "conf": 0.0033,
+      "jer": 0.1217,
+      "ref_speech_s": 447.969
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.04,
+      "fa": 0.0016,
+      "miss": 0.0384,
+      "conf": 0.0,
+      "jer": 0.047,
+      "ref_speech_s": 254.941
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1386,
+     "fa": 0.0047,
+     "miss": 0.1113,
+     "conf": 0.0225,
+     "jer": 0.181,
+     "ref_speech_h": 1.1644
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0584,
+     "fa": 0.0006,
+     "miss": 0.0387,
+     "conf": 0.019,
+     "jer": 0.1006,
+     "ref_speech_h": 0.7148
+    },
+    "fastmss_mfa@0.0": {
+     "collar": 0.0,
+     "der": 0.1124,
+     "fa": 0.0325,
+     "miss": 0.0282,
+     "conf": 0.0517,
+     "jer": 0.1924,
+     "ref_speech_h": 0.4243
+    },
+    "fastmss_mfa@0.25": {
+     "collar": 0.25,
+     "der": 0.0563,
+     "fa": 0.0011,
+     "miss": 0.0118,
+     "conf": 0.0435,
+     "jer": 0.1457,
+     "ref_speech_h": 0.268
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.1116,
+     "fa": 0.0089,
+     "miss": 0.0791,
+     "conf": 0.0236,
+     "jer": 0.1568,
+     "ref_speech_h": 1.1187
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.0555,
+     "fa": 0.0015,
+     "miss": 0.0345,
+     "conf": 0.0194,
+     "jer": 0.1003,
+     "ref_speech_h": 0.7247
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "notsofar1__MTG_32045",
+     "primary@0.0": {
+      "der": 0.1738,
+      "fa": 0.0056,
+      "miss": 0.1558,
+      "conf": 0.0123,
+      "jer": 0.1879,
+      "ref_speech_s": 485.658
+     },
+     "primary@0.25": {
+      "der": 0.0603,
+      "fa": 0.0008,
+      "miss": 0.0559,
+      "conf": 0.0037,
+      "jer": 0.0754,
+      "ref_speech_s": 229.861
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1261,
+      "fa": 0.0189,
+      "miss": 0.0925,
+      "conf": 0.0147,
+      "jer": 0.1461,
+      "ref_speech_s": 445.519
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0404,
+      "fa": 0.0039,
+      "miss": 0.033,
+      "conf": 0.0035,
+      "jer": 0.0572,
+      "ref_speech_s": 233.18
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32062",
+     "primary@0.0": {
+      "der": 0.1549,
+      "fa": 0.0029,
+      "miss": 0.1357,
+      "conf": 0.0163,
+      "jer": 0.1836,
+      "ref_speech_s": 355.539
+     },
+     "primary@0.25": {
+      "der": 0.0587,
+      "fa": 0.0015,
+      "miss": 0.0489,
+      "conf": 0.0083,
+      "jer": 0.0708,
+      "ref_speech_s": 232.539
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1059,
+      "fa": 0.0084,
+      "miss": 0.0821,
+      "conf": 0.0154,
+      "jer": 0.1368,
+      "ref_speech_s": 332.86
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0346,
+      "fa": 0.0019,
+      "miss": 0.0247,
+      "conf": 0.008,
+      "jer": 0.0504,
+      "ref_speech_s": 221.49
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32072",
+     "primary@0.0": {
+      "der": 0.0976,
+      "fa": 0.0091,
+      "miss": 0.0806,
+      "conf": 0.008,
+      "jer": 0.1097,
+      "ref_speech_s": 428.279
+     },
+     "primary@0.25": {
+      "der": 0.0294,
+      "fa": 0.0006,
+      "miss": 0.0278,
+      "conf": 0.001,
+      "jer": 0.0331,
+      "ref_speech_s": 252.369
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.0741,
+      "fa": 0.049,
+      "miss": 0.0178,
+      "conf": 0.0073,
+      "jer": 0.0831,
+      "ref_speech_s": 385.67
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0073,
+      "fa": 0.0005,
+      "miss": 0.0056,
+      "conf": 0.0012,
+      "jer": 0.0097,
+      "ref_speech_s": 220.38
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0803,
+      "fa": 0.0141,
+      "miss": 0.0581,
+      "conf": 0.0081,
+      "jer": 0.0913,
+      "ref_speech_s": 416.01
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0288,
+      "fa": 0.0011,
+      "miss": 0.0268,
+      "conf": 0.0009,
+      "jer": 0.0298,
+      "ref_speech_s": 254.95
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32109",
+     "primary@0.0": {
+      "der": 0.2156,
+      "fa": 0.0038,
+      "miss": 0.1478,
+      "conf": 0.064,
+      "jer": 0.2902,
+      "ref_speech_s": 512.41
+     },
+     "primary@0.25": {
+      "der": 0.1281,
+      "fa": 0.0019,
+      "miss": 0.0648,
+      "conf": 0.0615,
+      "jer": 0.213,
+      "ref_speech_s": 342.75
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.134,
+      "fa": 0.0261,
+      "miss": 0.0354,
+      "conf": 0.0725,
+      "jer": 0.2319,
+      "ref_speech_s": 442.76
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0788,
+      "fa": 0.0027,
+      "miss": 0.0106,
+      "conf": 0.0655,
+      "jer": 0.1851,
+      "ref_speech_s": 283.04
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1863,
+      "fa": 0.007,
+      "miss": 0.1121,
+      "conf": 0.0672,
+      "jer": 0.2678,
+      "ref_speech_s": 490.169
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.1171,
+      "fa": 0.0032,
+      "miss": 0.0504,
+      "conf": 0.0635,
+      "jer": 0.2108,
+      "ref_speech_s": 336.063
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32190",
+     "primary@0.0": {
+      "der": 0.203,
+      "fa": 0.005,
+      "miss": 0.1107,
+      "conf": 0.0873,
+      "jer": 0.3067,
+      "ref_speech_s": 446.948
+     },
+     "primary@0.25": {
+      "der": 0.1145,
+      "fa": 0.0004,
+      "miss": 0.0311,
+      "conf": 0.083,
+      "jer": 0.2419,
+      "ref_speech_s": 242.478
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.1735,
+      "fa": 0.0383,
+      "miss": 0.039,
+      "conf": 0.0961,
+      "jer": 0.2828,
+      "ref_speech_s": 400.02
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.1085,
+      "fa": 0.0008,
+      "miss": 0.0222,
+      "conf": 0.0854,
+      "jer": 0.2348,
+      "ref_speech_s": 225.29
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.1826,
+      "fa": 0.0088,
+      "miss": 0.0829,
+      "conf": 0.091,
+      "jer": 0.2905,
+      "ref_speech_s": 431.72
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.123,
+      "fa": 0.0005,
+      "miss": 0.035,
+      "conf": 0.0875,
+      "jer": 0.2476,
+      "ref_speech_s": 248.745
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32251",
+     "primary@0.0": {
+      "der": 0.1107,
+      "fa": 0.0046,
+      "miss": 0.105,
+      "conf": 0.001,
+      "jer": 0.1124,
+      "ref_speech_s": 429.509
+     },
+     "primary@0.25": {
+      "der": 0.0332,
+      "fa": 0.0,
+      "miss": 0.0332,
+      "conf": 0.0,
+      "jer": 0.04,
+      "ref_speech_s": 257.369
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0808,
+      "fa": 0.0052,
+      "miss": 0.0746,
+      "conf": 0.001,
+      "jer": 0.0842,
+      "ref_speech_s": 415.208
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0326,
+      "fa": 0.0012,
+      "miss": 0.0314,
+      "conf": 0.0,
+      "jer": 0.041,
+      "ref_speech_s": 269.558
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32256",
+     "primary@0.0": {
+      "der": 0.0914,
+      "fa": 0.0009,
+      "miss": 0.073,
+      "conf": 0.0175,
+      "jer": 0.1103,
+      "ref_speech_s": 321.15
+     },
+     "primary@0.25": {
+      "der": 0.0443,
+      "fa": 0.0,
+      "miss": 0.0266,
+      "conf": 0.0177,
+      "jer": 0.0635,
+      "ref_speech_s": 267.65
+     },
+     "fastmss_mfa@0.0": {
+      "der": 0.048,
+      "fa": 0.0127,
+      "miss": 0.0166,
+      "conf": 0.0187,
+      "jer": 0.0694,
+      "ref_speech_s": 299.16
+     },
+     "fastmss_mfa@0.25": {
+      "der": 0.0254,
+      "fa": 0.0,
+      "miss": 0.0089,
+      "conf": 0.0165,
+      "jer": 0.0451,
+      "ref_speech_s": 235.92
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0824,
+      "fa": 0.0022,
+      "miss": 0.0625,
+      "conf": 0.0178,
+      "jer": 0.1012,
+      "ref_speech_s": 317.13
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0572,
+      "fa": 0.0,
+      "miss": 0.0401,
+      "conf": 0.0171,
+      "jer": 0.0769,
+      "ref_speech_s": 270.48
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32331",
+     "primary@0.0": {
+      "der": 0.104,
+      "fa": 0.0043,
+      "miss": 0.0996,
+      "conf": 0.0001,
+      "jer": 0.1073,
+      "ref_speech_s": 360.819
+     },
+     "primary@0.25": {
+      "der": 0.029,
+      "fa": 0.0009,
+      "miss": 0.028,
+      "conf": 0.0,
+      "jer": 0.0335,
+      "ref_speech_s": 248.899
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0837,
+      "fa": 0.0077,
+      "miss": 0.0756,
+      "conf": 0.0004,
+      "jer": 0.0866,
+      "ref_speech_s": 350.164
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0367,
+      "fa": 0.0019,
+      "miss": 0.0348,
+      "conf": 0.0,
+      "jer": 0.0374,
+      "ref_speech_s": 256.269
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32339",
+     "primary@0.0": {
+      "der": 0.0918,
+      "fa": 0.0044,
+      "miss": 0.0872,
+      "conf": 0.0002,
+      "jer": 0.1003,
+      "ref_speech_s": 391.659
+     },
+     "primary@0.25": {
+      "der": 0.0319,
+      "fa": 0.0,
+      "miss": 0.0319,
+      "conf": 0.0,
+      "jer": 0.0385,
+      "ref_speech_s": 261.338
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.069,
+      "fa": 0.0063,
+      "miss": 0.0622,
+      "conf": 0.0006,
+      "jer": 0.0755,
+      "ref_speech_s": 380.498
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0244,
+      "fa": 0.0,
+      "miss": 0.0243,
+      "conf": 0.0,
+      "jer": 0.0302,
+      "ref_speech_s": 263.328
+     }
+    },
+    {
+     "session_id": "notsofar1__MTG_32342",
+     "primary@0.0": {
+      "der": 0.1045,
+      "fa": 0.0051,
+      "miss": 0.0967,
+      "conf": 0.0028,
+      "jer": 0.1378,
+      "ref_speech_s": 459.889
+     },
+     "primary@0.25": {
+      "der": 0.0319,
+      "fa": 0.0,
+      "miss": 0.0318,
+      "conf": 0.0001,
+      "jer": 0.0229,
+      "ref_speech_s": 238.139
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.0876,
+      "fa": 0.0085,
+      "miss": 0.076,
+      "conf": 0.0031,
+      "jer": 0.1191,
+      "ref_speech_s": 447.969
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.0402,
+      "fa": 0.0016,
+      "miss": 0.0385,
+      "conf": 0.0,
+      "jer": 0.0456,
+      "ref_speech_s": 254.941
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.033,
+  "trim": 1.003,
+  "zero": 1.033
+ }
+}

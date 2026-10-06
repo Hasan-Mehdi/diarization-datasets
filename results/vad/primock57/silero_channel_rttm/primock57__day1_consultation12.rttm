@@ -22,7 +22,7 @@ SPEAKER primock57__day1_consultation12 1 42.274 0.380 <NA> <NA> day1_consultatio
 SPEAKER primock57__day1_consultation12 1 42.786 2.972 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 45.858 4.092 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 49.954 0.444 <NA> <NA> day1_consultation12_doctor <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 50.562 0.700 <NA> <NA> day1_consultation12_patient <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 50.562 0.732 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 51.522 2.300 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 53.986 0.444 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 55.010 4.860 <NA> <NA> day1_consultation12_patient <NA> <NA>
@@ -32,7 +32,7 @@ SPEAKER primock57__day1_consultation12 1 63.010 0.668 <NA> <NA> day1_consultatio
 SPEAKER primock57__day1_consultation12 1 63.778 1.212 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 65.090 0.956 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 66.658 5.404 <NA> <NA> day1_consultation12_doctor <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 72.386 0.892 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 72.162 1.148 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 73.634 0.924 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 74.754 2.076 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 77.218 1.340 <NA> <NA> day1_consultation12_doctor <NA> <NA>
@@ -44,7 +44,7 @@ SPEAKER primock57__day1_consultation12 1 86.434 0.444 <NA> <NA> day1_consultatio
 SPEAKER primock57__day1_consultation12 1 89.538 1.852 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 91.458 1.724 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 93.858 1.756 <NA> <NA> day1_consultation12_patient <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 95.842 0.508 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 95.810 0.540 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 96.482 4.956 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 102.466 0.636 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 103.202 1.052 <NA> <NA> day1_consultation12_patient <NA> <NA>
@@ -58,15 +58,14 @@ SPEAKER primock57__day1_consultation12 1 118.818 1.564 <NA> <NA> day1_consultati
 SPEAKER primock57__day1_consultation12 1 120.482 0.572 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 122.082 7.292 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 129.890 3.740 <NA> <NA> day1_consultation12_patient <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 134.082 1.532 <NA> <NA> day1_consultation12_doctor <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 136.002 0.988 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 134.082 2.908 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 137.666 2.044 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 140.802 6.076 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 147.426 0.476 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 148.290 1.564 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 150.018 1.628 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 151.618 2.524 <NA> <NA> day1_consultation12_doctor <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 155.362 1.628 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 155.362 1.660 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 157.794 2.940 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 161.314 0.476 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 161.730 3.964 <NA> <NA> day1_consultation12_doctor <NA> <NA>
@@ -77,7 +76,7 @@ SPEAKER primock57__day1_consultation12 1 170.690 0.604 <NA> <NA> day1_consultati
 SPEAKER primock57__day1_consultation12 1 171.394 0.988 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 172.514 1.980 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 174.882 6.780 <NA> <NA> day1_consultation12_patient <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 181.794 0.444 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 181.794 0.476 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 182.530 1.596 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 182.562 0.380 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 184.162 1.340 <NA> <NA> day1_consultation12_doctor <NA> <NA>
@@ -121,7 +120,7 @@ SPEAKER primock57__day1_consultation12 1 264.834 1.724 <NA> <NA> day1_consultati
 SPEAKER primock57__day1_consultation12 1 267.490 1.244 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 268.962 2.780 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 272.194 2.076 <NA> <NA> day1_consultation12_patient <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 274.562 0.540 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 274.530 0.572 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 275.298 3.484 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 279.810 1.372 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 281.346 1.116 <NA> <NA> day1_consultation12_patient <NA> <NA>
@@ -137,11 +136,12 @@ SPEAKER primock57__day1_consultation12 1 296.866 1.436 <NA> <NA> day1_consultati
 SPEAKER primock57__day1_consultation12 1 298.850 1.596 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 300.610 3.516 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 304.706 2.716 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 307.650 0.412 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 308.226 0.572 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 308.994 0.828 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 310.562 1.596 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 312.898 1.628 <NA> <NA> day1_consultation12_doctor <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 314.754 2.780 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 314.754 2.812 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 317.762 0.636 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 318.978 0.508 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 319.906 1.948 <NA> <NA> day1_consultation12_doctor <NA> <NA>
@@ -149,9 +149,9 @@ SPEAKER primock57__day1_consultation12 1 322.658 0.380 <NA> <NA> day1_consultati
 SPEAKER primock57__day1_consultation12 1 323.234 1.244 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 325.218 1.372 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 326.658 2.780 <NA> <NA> day1_consultation12_doctor <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 330.530 0.476 <NA> <NA> day1_consultation12_patient <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 330.530 0.508 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 331.202 5.148 <NA> <NA> day1_consultation12_patient <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 336.834 2.140 <NA> <NA> day1_consultation12_doctor <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 336.834 2.172 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 337.058 0.348 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 339.490 1.244 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 340.930 2.364 <NA> <NA> day1_consultation12_doctor <NA> <NA>
@@ -161,7 +161,7 @@ SPEAKER primock57__day1_consultation12 1 351.106 0.348 <NA> <NA> day1_consultati
 SPEAKER primock57__day1_consultation12 1 351.650 3.484 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 355.362 4.732 <NA> <NA> day1_consultation12_doctor <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 360.226 1.692 <NA> <NA> day1_consultation12_doctor <NA> <NA>
-SPEAKER primock57__day1_consultation12 1 363.042 0.540 <NA> <NA> day1_consultation12_patient <NA> <NA>
+SPEAKER primock57__day1_consultation12 1 363.042 0.572 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 364.130 0.604 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 364.866 4.316 <NA> <NA> day1_consultation12_patient <NA> <NA>
 SPEAKER primock57__day1_consultation12 1 369.346 0.604 <NA> <NA> day1_consultation12_doctor <NA> <NA>

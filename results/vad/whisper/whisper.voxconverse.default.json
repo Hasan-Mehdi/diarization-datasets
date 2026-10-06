@@ -12,7 +12,8 @@
    "whisper": "you",
    "words": 1,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -36,7 +37,8 @@
     "webrtc_cov": 0.86,
     "silero_stock_mean_prob": 0.52,
     "silero_r30_mean_prob": 0.52
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -60,7 +62,8 @@
     "webrtc_cov": 0.97,
     "silero_stock_mean_prob": 0.06,
     "silero_r30_mean_prob": 0.04
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "control",
@@ -72,7 +75,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -96,7 +100,8 @@
     "energy_cov": 1.0,
     "silero_stock_mean_prob": 0.98,
     "silero_r30_mean_prob": 0.96
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -122,7 +127,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.97,
     "silero_r30_mean_prob": 0.91
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -148,7 +154,8 @@
     "nemotron_cov": 0.98,
     "silero_stock_mean_prob": 0.13,
     "silero_r30_mean_prob": 0.07
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -174,7 +181,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -200,7 +208,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -226,7 +235,8 @@
     "nemotron_cov": 0.99,
     "silero_stock_mean_prob": 0.92,
     "silero_r30_mean_prob": 0.91
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -252,7 +262,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.54,
     "silero_r30_mean_prob": 0.64
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -278,7 +289,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.91,
     "silero_r30_mean_prob": 0.99
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -304,7 +316,8 @@
     "nemotron_cov": 0.83,
     "silero_stock_mean_prob": 0.28,
     "silero_r30_mean_prob": 0.54
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -330,7 +343,8 @@
     "nemotron_cov": 0.83,
     "silero_stock_mean_prob": 0.87,
     "silero_r30_mean_prob": 0.87
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -354,7 +368,8 @@
     "energy_cov": 0.16,
     "silero_stock_mean_prob": 0.1,
     "silero_r30_mean_prob": 0.09
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "control",
@@ -366,7 +381,8 @@
    "whisper": ".",
    "words": 0,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -392,7 +408,8 @@
     "nemotron_cov": 0.01,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -418,7 +435,8 @@
     "nemotron_cov": 0.01,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "control",
@@ -430,7 +448,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -454,7 +473,8 @@
     "energy_cov": 1.0,
     "silero_stock_mean_prob": 0.21,
     "silero_r30_mean_prob": 0.21
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -478,7 +498,8 @@
     "energy_cov": 0.99,
     "silero_stock_mean_prob": 0.18,
     "silero_r30_mean_prob": 0.08
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -504,7 +525,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.03
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -530,7 +552,8 @@
     "nemotron_cov": 0.99,
     "silero_stock_mean_prob": 0.04,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -556,7 +579,8 @@
     "nemotron_cov": 0.99,
     "silero_stock_mean_prob": 0.18,
     "silero_r30_mean_prob": 0.19
-   }
+   },
+   "class": "laughter"
   },
   {
    "kind": "unref",
@@ -582,7 +606,8 @@
     "nemotron_cov": 0.19,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -608,7 +633,8 @@
     "nemotron_cov": 0.19,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -634,7 +660,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -660,7 +687,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "control",
@@ -672,7 +700,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "control",
@@ -684,7 +713,8 @@
    "whisper": "All right.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -710,7 +740,8 @@
     "nemotron_cov": 0.43,
     "silero_stock_mean_prob": 0.86,
     "silero_r30_mean_prob": 0.77
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -736,7 +767,8 @@
     "nemotron_cov": 0.93,
     "silero_stock_mean_prob": 0.06,
     "silero_r30_mean_prob": 0.12
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -762,7 +794,8 @@
     "nemotron_cov": 0.99,
     "silero_stock_mean_prob": 0.19,
     "silero_r30_mean_prob": 0.08
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "control",
@@ -774,7 +807,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -800,7 +834,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.1,
     "silero_r30_mean_prob": 0.11
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -826,7 +861,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.1,
     "silero_r30_mean_prob": 0.11
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -852,7 +888,8 @@
     "nemotron_cov": 0.99,
     "silero_stock_mean_prob": 0.2,
     "silero_r30_mean_prob": 0.2
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -878,7 +915,8 @@
     "nemotron_cov": 0.96,
     "silero_stock_mean_prob": 1.0,
     "silero_r30_mean_prob": 1.0
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -904,7 +942,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.83,
     "silero_r30_mean_prob": 0.67
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -930,7 +969,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -956,7 +996,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -980,7 +1021,8 @@
     "energy_cov": 1.0,
     "silero_stock_mean_prob": 0.96,
     "silero_r30_mean_prob": 0.96
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "control",
@@ -992,7 +1034,8 @@
    "whisper": "I'm sorry.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1018,7 +1061,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.85,
     "silero_r30_mean_prob": 0.84
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -1044,7 +1088,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.65,
     "silero_r30_mean_prob": 0.64
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1070,7 +1115,8 @@
     "nemotron_cov": 0.73,
     "silero_stock_mean_prob": 0.89,
     "silero_r30_mean_prob": 0.85
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "control",
@@ -1082,7 +1128,8 @@
    "whisper": "Alright, let's do this.",
    "words": 4,
    "speech": true,
-   "evidence": {}
+   "evidence": {},
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -1108,7 +1155,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.04,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "control",
@@ -1120,7 +1168,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "control",
@@ -1132,7 +1181,8 @@
    "whisper": "Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you.",
    "words": 296,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -1158,7 +1208,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "control",
@@ -1170,7 +1221,8 @@
    "whisper": "Oh, no.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -1196,7 +1248,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.91,
     "silero_r30_mean_prob": 0.83
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "control",
@@ -1208,7 +1261,8 @@
    "whisper": "I don't know.",
    "words": 3,
    "speech": true,
-   "evidence": {}
+   "evidence": {},
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -1234,7 +1288,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.94,
     "silero_r30_mean_prob": 0.9
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -1260,7 +1315,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -1286,7 +1342,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -1312,7 +1369,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -1338,7 +1396,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -1364,7 +1423,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.94,
     "silero_r30_mean_prob": 0.95
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -1390,7 +1450,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.84,
     "silero_r30_mean_prob": 0.88
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -1416,7 +1477,8 @@
     "nemotron_cov": 0.06,
     "silero_stock_mean_prob": 0.23,
     "silero_r30_mean_prob": 0.14
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1442,7 +1504,8 @@
     "nemotron_cov": 0.07,
     "silero_stock_mean_prob": 0.23,
     "silero_r30_mean_prob": 0.14
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1468,7 +1531,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1494,7 +1558,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -1520,7 +1585,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -1546,7 +1612,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.77,
     "silero_r30_mean_prob": 0.57
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -1572,7 +1639,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.76,
     "silero_r30_mean_prob": 0.72
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -1598,7 +1666,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.79,
     "silero_r30_mean_prob": 0.64
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -1622,7 +1691,8 @@
     "energy_cov": 0.33,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -1646,7 +1716,8 @@
     "webrtc_cov": 1.0,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -1670,7 +1741,8 @@
     "energy_cov": 0.95,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.03
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1696,7 +1768,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.09,
     "silero_r30_mean_prob": 0.27
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -1722,7 +1795,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.09,
     "silero_r30_mean_prob": 0.06
-   }
+   },
+   "class": "laughter"
   },
   {
    "kind": "unref",
@@ -1748,7 +1822,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.08,
     "silero_r30_mean_prob": 0.05
-   }
+   },
+   "class": "laughter"
   },
   {
    "kind": "unvoiced",
@@ -1772,7 +1847,8 @@
     "webrtc_cov": 1.0,
     "silero_stock_mean_prob": 1.0,
     "silero_r30_mean_prob": 1.0
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -1796,7 +1872,8 @@
     "webrtc_cov": 0.97,
     "silero_stock_mean_prob": 0.94,
     "silero_r30_mean_prob": 0.95
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -1820,7 +1897,8 @@
     "webrtc_cov": 0.98,
     "silero_stock_mean_prob": 0.88,
     "silero_r30_mean_prob": 0.92
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -1846,7 +1924,8 @@
     "nemotron_cov": 0.94,
     "silero_stock_mean_prob": 0.86,
     "silero_r30_mean_prob": 0.91
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -1872,7 +1951,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.96,
     "silero_r30_mean_prob": 0.94
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1898,7 +1978,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.5,
     "silero_r30_mean_prob": 0.44
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1924,7 +2005,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1950,7 +2032,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -1976,7 +2059,8 @@
     "nemotron_cov": 0.03,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -2000,7 +2084,8 @@
     "energy_cov": 0.83,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -2024,7 +2109,8 @@
     "webrtc_cov": 1.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -2048,7 +2134,8 @@
     "webrtc_cov": 1.0,
     "silero_stock_mean_prob": 0.46,
     "silero_r30_mean_prob": 0.9
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -2072,7 +2159,8 @@
     "webrtc_cov": 1.0,
     "silero_stock_mean_prob": 0.73,
     "silero_r30_mean_prob": 0.9
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -2096,7 +2184,8 @@
     "energy_cov": 0.73,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -2120,7 +2209,8 @@
     "webrtc_cov": 1.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -2146,7 +2236,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.04,
     "silero_r30_mean_prob": 0.04
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -2172,7 +2263,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.78,
     "silero_r30_mean_prob": 0.78
-   }
+   },
+   "class": "laughter"
   },
   {
    "kind": "unref",
@@ -2198,7 +2290,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.58,
     "silero_r30_mean_prob": 0.53
-   }
+   },
+   "class": "laughter"
   },
   {
    "kind": "control",
@@ -2210,7 +2303,8 @@
    "whisper": "We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back. We'll be right back.",
    "words": 296,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "short"
   },
   {
    "kind": "control",
@@ -2222,7 +2316,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "control",
@@ -2234,7 +2329,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -2258,7 +2354,8 @@
     "energy_cov": 1.0,
     "silero_stock_mean_prob": 0.9,
     "silero_r30_mean_prob": 0.81
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -2284,7 +2381,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.15,
     "silero_r30_mean_prob": 0.18
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unvoiced",
@@ -2310,7 +2408,8 @@
     "nemotron_cov": 0.93,
     "silero_stock_mean_prob": 0.05,
     "silero_r30_mean_prob": 0.11
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -2336,7 +2435,8 @@
     "nemotron_cov": 0.98,
     "silero_stock_mean_prob": 0.05,
     "silero_r30_mean_prob": 0.06
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -2362,7 +2462,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 1.0,
     "silero_r30_mean_prob": 0.99
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "control",
@@ -2374,7 +2475,8 @@
    "whisper": "CHEERING",
    "words": 1,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -2400,7 +2502,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.26,
     "silero_r30_mean_prob": 0.26
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -2426,7 +2529,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.29,
     "silero_r30_mean_prob": 0.4
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -2452,7 +2556,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.78,
     "silero_r30_mean_prob": 0.71
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -2476,7 +2581,8 @@
     "webrtc_cov": 1.0,
     "silero_stock_mean_prob": 0.06,
     "silero_r30_mean_prob": 0.03
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -2500,7 +2606,8 @@
     "energy_cov": 1.0,
     "silero_stock_mean_prob": 0.06,
     "silero_r30_mean_prob": 0.03
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -2526,7 +2633,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.04,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -2552,7 +2660,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.94,
     "silero_r30_mean_prob": 0.92
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -2576,7 +2685,8 @@
     "energy_cov": 0.98,
     "silero_stock_mean_prob": 0.01,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -2600,7 +2710,8 @@
     "energy_cov": 1.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -2626,7 +2737,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 1.0,
     "silero_r30_mean_prob": 1.0
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "control",
@@ -2638,7 +2750,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -2664,7 +2777,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.79,
     "silero_r30_mean_prob": 0.73
-   }
+   },
+   "class": "laughter"
   },
   {
    "kind": "unvoiced",
@@ -2690,7 +2804,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.58,
     "silero_r30_mean_prob": 0.57
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -2716,7 +2831,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -2742,7 +2858,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -2768,7 +2885,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -2794,7 +2912,8 @@
     "nemotron_cov": 0.8,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -2820,7 +2939,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.36,
     "silero_r30_mean_prob": 0.35
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "control",
@@ -2832,7 +2952,8 @@
    "whisper": "Thank you.",
    "words": 2,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -2858,7 +2979,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.61,
     "silero_r30_mean_prob": 0.45
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -2884,7 +3006,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.03,
     "silero_r30_mean_prob": 0.02
-   }
+   },
+   "class": "none"
   },
   {
    "kind": "unref",
@@ -2910,7 +3033,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.02,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unref",
@@ -2936,7 +3060,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.02,
     "silero_r30_mean_prob": 0.01
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -2962,7 +3087,8 @@
     "nemotron_cov": 0.93,
     "silero_stock_mean_prob": 0.07,
     "silero_r30_mean_prob": 0.07
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -2988,7 +3114,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.04,
     "silero_r30_mean_prob": 0.03
-   }
+   },
+   "class": "short"
   },
   {
    "kind": "control",
@@ -3000,7 +3127,8 @@
    "whisper": "Hmph.",
    "words": 1,
    "speech": false,
-   "evidence": {}
+   "evidence": {},
+   "class": "short"
   },
   {
    "kind": "unvoiced",
@@ -3026,7 +3154,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.92,
     "silero_r30_mean_prob": 0.93
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -3052,7 +3181,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.89,
     "silero_r30_mean_prob": 0.91
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -3078,7 +3208,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.96,
     "silero_r30_mean_prob": 0.96
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -3104,7 +3235,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.92,
     "silero_r30_mean_prob": 0.93
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unvoiced",
@@ -3130,7 +3262,8 @@
     "nemotron_cov": 1.0,
     "silero_stock_mean_prob": 0.97,
     "silero_r30_mean_prob": 0.98
-   }
+   },
+   "class": "speech"
   },
   {
    "kind": "unref",
@@ -3156,7 +3289,8 @@
     "nemotron_cov": 0.0,
     "silero_stock_mean_prob": 0.0,
     "silero_r30_mean_prob": 0.0
-   }
+   },
+   "class": "none"
   }
  ],
  "summary": {
@@ -3164,43 +3298,85 @@
    "regions": 20,
    "with_speech": 2,
    "seconds": 48.1,
-   "seconds_with_speech": 6.47
+   "seconds_with_speech": 6.47,
+   "classes": {
+    "speech": 2,
+    "short": 6,
+    "laughter": 0,
+    "none": 12
+   }
   },
   "unvoiced:energy": {
    "regions": 20,
    "with_speech": 19,
    "seconds": 110.11,
-   "seconds_with_speech": 106.79
+   "seconds_with_speech": 106.79,
+   "classes": {
+    "speech": 16,
+    "short": 1,
+    "laughter": 0,
+    "none": 3
+   }
   },
   "unref:energy": {
    "regions": 20,
    "with_speech": 1,
    "seconds": 585.83,
-   "seconds_with_speech": 17.18
+   "seconds_with_speech": 17.18,
+   "classes": {
+    "speech": 1,
+    "short": 8,
+    "laughter": 1,
+    "none": 10
+   }
   },
   "unref:silero_x2": {
    "regions": 20,
    "with_speech": 10,
    "seconds": 94.41,
-   "seconds_with_speech": 53.98
+   "seconds_with_speech": 53.98,
+   "classes": {
+    "speech": 9,
+    "short": 5,
+    "laughter": 3,
+    "none": 3
+   }
   },
   "unvoiced:silero_x2": {
    "regions": 20,
    "with_speech": 11,
    "seconds": 163.98,
-   "seconds_with_speech": 80.43
+   "seconds_with_speech": 80.43,
+   "classes": {
+    "speech": 11,
+    "short": 5,
+    "laughter": 1,
+    "none": 3
+   }
   },
   "unref:webrtc": {
    "regions": 20,
    "with_speech": 4,
    "seconds": 531.12,
-   "seconds_with_speech": 82.39
+   "seconds_with_speech": 82.39,
+   "classes": {
+    "speech": 4,
+    "short": 7,
+    "laughter": 1,
+    "none": 8
+   }
   },
   "unvoiced:webrtc": {
    "regions": 14,
    "with_speech": 9,
    "seconds": 26.09,
-   "seconds_with_speech": 14.13
+   "seconds_with_speech": 14.13,
+   "classes": {
+    "speech": 9,
+    "short": 3,
+    "laughter": 0,
+    "none": 2
+   }
   }
  }
 }

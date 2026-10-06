@@ -162,13 +162,23 @@ def whisper_check(disagreements, per_kind):
         text = transcribe(x, sr, a, b)
         rows.append({"kind": kind, "channel": ch, "start": round(a, 2), "end": round(b, 2), "dur": round(b - a, 2),
                      "whisper": text, "words": len(words(text)), "speech": is_speech(text)})
+    return {"summary": summarize_disagreements(rows), "regions": rows}
+
+
+def summarize_disagreements(rows) -> dict:
+    """Counts per disagreement kind, with the transcript classes of ``vad_whisper_check.classify``."""
+    from vad_whisper_check import classify
+
     summ = {}
     for r in rows:
-        d = summ.setdefault(r["kind"], {"regions": 0, "with_speech": 0, "with_any_word": 0})
+        r["class"] = classify(r["whisper"])
+        d = summ.setdefault(r["kind"], {"regions": 0, "with_speech": 0, "seconds": 0.0,
+                                        "classes": {"speech": 0, "short": 0, "laughter": 0, "none": 0}})
         d["regions"] += 1
         d["with_speech"] += int(r["speech"])
-        d["with_any_word"] += int(r["words"] > 0)
-    return {"summary": summ, "regions": rows}
+        d["seconds"] = round(d["seconds"] + r["dur"], 2)
+        d["classes"][r["class"]] += 1
+    return summ
 
 
 if __name__ == "__main__":

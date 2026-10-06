@@ -1,0 +1,186 @@
+{
+ "tag": "scotus.default",
+ "sessions": [
+  "scotus__2022_21-869_25448"
+ ],
+ "hours": 1.708,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2244,
+     "fa": 0.0109,
+     "miss": 0.0811,
+     "conf": 0.1324,
+     "jer": 0.4948,
+     "ref_speech_h": 1.7074
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2089,
+     "fa": 0.0045,
+     "miss": 0.074,
+     "conf": 0.1304,
+     "jer": 0.4825,
+     "ref_speech_h": 1.6565
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "scotus__2022_21-869_25448",
+     "primary@0.0": {
+      "der": 0.2244,
+      "fa": 0.0109,
+      "miss": 0.0811,
+      "conf": 0.1324,
+      "jer": 0.4948,
+      "ref_speech_s": 6146.79
+     },
+     "primary@0.25": {
+      "der": 0.2089,
+      "fa": 0.0045,
+      "miss": 0.074,
+      "conf": 0.1304,
+      "jer": 0.4825,
+      "ref_speech_s": 5963.465
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2244,
+     "fa": 0.0109,
+     "miss": 0.0811,
+     "conf": 0.1324,
+     "jer": 0.4948,
+     "ref_speech_h": 1.7074
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2089,
+     "fa": 0.0045,
+     "miss": 0.074,
+     "conf": 0.1304,
+     "jer": 0.4825,
+     "ref_speech_h": 1.6565
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "scotus__2022_21-869_25448",
+     "primary@0.0": {
+      "der": 0.2244,
+      "fa": 0.0109,
+      "miss": 0.0811,
+      "conf": 0.1324,
+      "jer": 0.4948,
+      "ref_speech_s": 6146.79
+     },
+     "primary@0.25": {
+      "der": 0.2089,
+      "fa": 0.0045,
+      "miss": 0.074,
+      "conf": 0.1304,
+      "jer": 0.4825,
+      "ref_speech_s": 5963.465
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2959,
+     "fa": 0.0109,
+     "miss": 0.0908,
+     "conf": 0.1941,
+     "jer": 0.5173,
+     "ref_speech_h": 1.7074
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2822,
+     "fa": 0.0042,
+     "miss": 0.0837,
+     "conf": 0.1943,
+     "jer": 0.5054,
+     "ref_speech_h": 1.6565
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "scotus__2022_21-869_25448",
+     "primary@0.0": {
+      "der": 0.2959,
+      "fa": 0.0109,
+      "miss": 0.0908,
+      "conf": 0.1941,
+      "jer": 0.5173,
+      "ref_speech_s": 6146.79
+     },
+     "primary@0.25": {
+      "der": 0.2822,
+      "fa": 0.0042,
+      "miss": 0.0837,
+      "conf": 0.1943,
+      "jer": 0.5054,
+      "ref_speech_s": 5963.465
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3051,
+     "fa": 0.0115,
+     "miss": 0.0794,
+     "conf": 0.2141,
+     "jer": 0.5196,
+     "ref_speech_h": 1.7074
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2921,
+     "fa": 0.0047,
+     "miss": 0.0729,
+     "conf": 0.2145,
+     "jer": 0.5076,
+     "ref_speech_h": 1.6565
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "scotus__2022_21-869_25448",
+     "primary@0.0": {
+      "der": 0.3051,
+      "fa": 0.0115,
+      "miss": 0.0794,
+      "conf": 0.2141,
+      "jer": 0.5196,
+      "ref_speech_s": 6146.79
+     },
+     "primary@0.25": {
+      "der": 0.2921,
+      "fa": 0.0047,
+      "miss": 0.0729,
+      "conf": 0.2145,
+      "jer": 0.5076,
+      "ref_speech_s": 5963.465
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.708,
+  "trim": 1.692,
+  "zero": 1.708
+ }
+}

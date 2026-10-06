@@ -1,0 +1,322 @@
+{
+ "tag": "icsi.sdm",
+ "sessions": [
+  "icsi__Bro021"
+ ],
+ "hours": 1.008,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1455,
+     "fa": 0.0854,
+     "miss": 0.0514,
+     "conf": 0.0087,
+     "jer": 0.1368,
+     "ref_speech_h": 0.8555
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0523,
+     "fa": 0.0229,
+     "miss": 0.0258,
+     "conf": 0.0037,
+     "jer": 0.0545,
+     "ref_speech_h": 0.6525
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.431,
+     "fa": 0.4144,
+     "miss": 0.0117,
+     "conf": 0.0049,
+     "jer": 0.3353,
+     "ref_speech_h": 0.6306
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.2321,
+     "fa": 0.2301,
+     "miss": 0.0014,
+     "conf": 0.0006,
+     "jer": 0.2373,
+     "ref_speech_h": 0.3906
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "icsi__Bro021",
+     "primary@0.0": {
+      "der": 0.1455,
+      "fa": 0.0854,
+      "miss": 0.0514,
+      "conf": 0.0087,
+      "jer": 0.1368,
+      "ref_speech_s": 3079.955
+     },
+     "primary@0.25": {
+      "der": 0.0523,
+      "fa": 0.0229,
+      "miss": 0.0258,
+      "conf": 0.0037,
+      "jer": 0.0545,
+      "ref_speech_s": 2349.036
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.431,
+      "fa": 0.4144,
+      "miss": 0.0117,
+      "conf": 0.0049,
+      "jer": 0.3353,
+      "ref_speech_s": 2270.315
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.2321,
+      "fa": 0.2301,
+      "miss": 0.0014,
+      "conf": 0.0006,
+      "jer": 0.2373,
+      "ref_speech_s": 1406.071
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1455,
+     "fa": 0.0854,
+     "miss": 0.0514,
+     "conf": 0.0087,
+     "jer": 0.1368,
+     "ref_speech_h": 0.8555
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0523,
+     "fa": 0.0229,
+     "miss": 0.0258,
+     "conf": 0.0037,
+     "jer": 0.0545,
+     "ref_speech_h": 0.6525
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.431,
+     "fa": 0.4144,
+     "miss": 0.0117,
+     "conf": 0.0049,
+     "jer": 0.3353,
+     "ref_speech_h": 0.6306
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.2321,
+     "fa": 0.2301,
+     "miss": 0.0014,
+     "conf": 0.0006,
+     "jer": 0.2373,
+     "ref_speech_h": 0.3906
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "icsi__Bro021",
+     "primary@0.0": {
+      "der": 0.1455,
+      "fa": 0.0854,
+      "miss": 0.0514,
+      "conf": 0.0087,
+      "jer": 0.1368,
+      "ref_speech_s": 3079.955
+     },
+     "primary@0.25": {
+      "der": 0.0523,
+      "fa": 0.0229,
+      "miss": 0.0258,
+      "conf": 0.0037,
+      "jer": 0.0545,
+      "ref_speech_s": 2349.036
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.431,
+      "fa": 0.4144,
+      "miss": 0.0117,
+      "conf": 0.0049,
+      "jer": 0.3353,
+      "ref_speech_s": 2270.315
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.2321,
+      "fa": 0.2301,
+      "miss": 0.0014,
+      "conf": 0.0006,
+      "jer": 0.2373,
+      "ref_speech_s": 1406.071
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2769,
+     "fa": 0.0663,
+     "miss": 0.2048,
+     "conf": 0.0058,
+     "jer": 0.281,
+     "ref_speech_h": 0.8555
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1873,
+     "fa": 0.0165,
+     "miss": 0.1682,
+     "conf": 0.0025,
+     "jer": 0.2048,
+     "ref_speech_h": 0.6525
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.4821,
+     "fa": 0.3232,
+     "miss": 0.1543,
+     "conf": 0.0046,
+     "jer": 0.4111,
+     "ref_speech_h": 0.6306
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.2983,
+     "fa": 0.1664,
+     "miss": 0.1312,
+     "conf": 0.0008,
+     "jer": 0.3081,
+     "ref_speech_h": 0.3906
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "icsi__Bro021",
+     "primary@0.0": {
+      "der": 0.2769,
+      "fa": 0.0663,
+      "miss": 0.2048,
+      "conf": 0.0058,
+      "jer": 0.281,
+      "ref_speech_s": 3079.955
+     },
+     "primary@0.25": {
+      "der": 0.1873,
+      "fa": 0.0165,
+      "miss": 0.1682,
+      "conf": 0.0025,
+      "jer": 0.2048,
+      "ref_speech_s": 2349.036
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.4821,
+      "fa": 0.3232,
+      "miss": 0.1543,
+      "conf": 0.0046,
+      "jer": 0.4111,
+      "ref_speech_s": 2270.315
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.2983,
+      "fa": 0.1664,
+      "miss": 0.1312,
+      "conf": 0.0008,
+      "jer": 0.3081,
+      "ref_speech_s": 1406.071
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3276,
+     "fa": 0.0319,
+     "miss": 0.2907,
+     "conf": 0.0049,
+     "jer": 0.343,
+     "ref_speech_h": 0.8555
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2641,
+     "fa": 0.0095,
+     "miss": 0.2517,
+     "conf": 0.0029,
+     "jer": 0.2876,
+     "ref_speech_h": 0.6525
+    },
+    "words_gap0.2@0.0": {
+     "collar": 0.0,
+     "der": 0.3887,
+     "fa": 0.1951,
+     "miss": 0.1896,
+     "conf": 0.0041,
+     "jer": 0.3795,
+     "ref_speech_h": 0.6306
+    },
+    "words_gap0.2@0.25": {
+     "collar": 0.25,
+     "der": 0.274,
+     "fa": 0.1144,
+     "miss": 0.1586,
+     "conf": 0.001,
+     "jer": 0.3006,
+     "ref_speech_h": 0.3906
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "icsi__Bro021",
+     "primary@0.0": {
+      "der": 0.3276,
+      "fa": 0.0319,
+      "miss": 0.2907,
+      "conf": 0.0049,
+      "jer": 0.343,
+      "ref_speech_s": 3079.955
+     },
+     "primary@0.25": {
+      "der": 0.2641,
+      "fa": 0.0095,
+      "miss": 0.2517,
+      "conf": 0.0029,
+      "jer": 0.2876,
+      "ref_speech_s": 2349.036
+     },
+     "words_gap0.2@0.0": {
+      "der": 0.3887,
+      "fa": 0.1951,
+      "miss": 0.1896,
+      "conf": 0.0041,
+      "jer": 0.3795,
+      "ref_speech_s": 2270.315
+     },
+     "words_gap0.2@0.25": {
+      "der": 0.274,
+      "fa": 0.1144,
+      "miss": 0.1586,
+      "conf": 0.001,
+      "jer": 0.3006,
+      "ref_speech_s": 1406.071
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.008,
+  "trim": 0.723,
+  "zero": 1.008
+ }
+}

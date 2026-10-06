@@ -1,0 +1,322 @@
+{
+ "tag": "chime6.ihm-mix",
+ "sessions": [
+  "chime6__S21"
+ ],
+ "hours": 2.556,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3189,
+     "fa": 0.085,
+     "miss": 0.1415,
+     "conf": 0.0924,
+     "jer": 0.3416,
+     "ref_speech_h": 2.052
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2225,
+     "fa": 0.0414,
+     "miss": 0.0827,
+     "conf": 0.0983,
+     "jer": 0.2717,
+     "ref_speech_h": 1.0179
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.3844,
+     "fa": 0.0126,
+     "miss": 0.3039,
+     "conf": 0.0679,
+     "jer": 0.4146,
+     "ref_speech_h": 2.7315
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.3009,
+     "fa": 0.0108,
+     "miss": 0.2097,
+     "conf": 0.0804,
+     "jer": 0.3403,
+     "ref_speech_h": 1.5487
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S21",
+     "primary@0.0": {
+      "der": 0.3189,
+      "fa": 0.085,
+      "miss": 0.1415,
+      "conf": 0.0924,
+      "jer": 0.3416,
+      "ref_speech_s": 7387.15
+     },
+     "primary@0.25": {
+      "der": 0.2225,
+      "fa": 0.0414,
+      "miss": 0.0827,
+      "conf": 0.0983,
+      "jer": 0.2717,
+      "ref_speech_s": 3664.62
+     },
+     "annotation@0.0": {
+      "der": 0.3844,
+      "fa": 0.0126,
+      "miss": 0.3039,
+      "conf": 0.0679,
+      "jer": 0.4146,
+      "ref_speech_s": 9833.37
+     },
+     "annotation@0.25": {
+      "der": 0.3009,
+      "fa": 0.0108,
+      "miss": 0.2097,
+      "conf": 0.0804,
+      "jer": 0.3403,
+      "ref_speech_s": 5575.41
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3189,
+     "fa": 0.085,
+     "miss": 0.1415,
+     "conf": 0.0924,
+     "jer": 0.3416,
+     "ref_speech_h": 2.052
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2225,
+     "fa": 0.0414,
+     "miss": 0.0827,
+     "conf": 0.0983,
+     "jer": 0.2717,
+     "ref_speech_h": 1.0179
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.3844,
+     "fa": 0.0126,
+     "miss": 0.3039,
+     "conf": 0.0679,
+     "jer": 0.4146,
+     "ref_speech_h": 2.7315
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.3009,
+     "fa": 0.0108,
+     "miss": 0.2097,
+     "conf": 0.0804,
+     "jer": 0.3403,
+     "ref_speech_h": 1.5487
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S21",
+     "primary@0.0": {
+      "der": 0.3189,
+      "fa": 0.085,
+      "miss": 0.1415,
+      "conf": 0.0924,
+      "jer": 0.3416,
+      "ref_speech_s": 7387.15
+     },
+     "primary@0.25": {
+      "der": 0.2225,
+      "fa": 0.0414,
+      "miss": 0.0827,
+      "conf": 0.0983,
+      "jer": 0.2717,
+      "ref_speech_s": 3664.62
+     },
+     "annotation@0.0": {
+      "der": 0.3844,
+      "fa": 0.0126,
+      "miss": 0.3039,
+      "conf": 0.0679,
+      "jer": 0.4146,
+      "ref_speech_s": 9833.37
+     },
+     "annotation@0.25": {
+      "der": 0.3009,
+      "fa": 0.0108,
+      "miss": 0.2097,
+      "conf": 0.0804,
+      "jer": 0.3403,
+      "ref_speech_s": 5575.41
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2394,
+     "fa": 0.0979,
+     "miss": 0.1178,
+     "conf": 0.0237,
+     "jer": 0.2599,
+     "ref_speech_h": 2.052
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1269,
+     "fa": 0.0451,
+     "miss": 0.0656,
+     "conf": 0.0163,
+     "jer": 0.1641,
+     "ref_speech_h": 1.0179
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.3115,
+     "fa": 0.0157,
+     "miss": 0.2794,
+     "conf": 0.0164,
+     "jer": 0.3432,
+     "ref_speech_h": 2.7315
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.2204,
+     "fa": 0.0123,
+     "miss": 0.193,
+     "conf": 0.0152,
+     "jer": 0.2559,
+     "ref_speech_h": 1.5487
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S21",
+     "primary@0.0": {
+      "der": 0.2394,
+      "fa": 0.0979,
+      "miss": 0.1178,
+      "conf": 0.0237,
+      "jer": 0.2599,
+      "ref_speech_s": 7387.15
+     },
+     "primary@0.25": {
+      "der": 0.1269,
+      "fa": 0.0451,
+      "miss": 0.0656,
+      "conf": 0.0163,
+      "jer": 0.1641,
+      "ref_speech_s": 3664.62
+     },
+     "annotation@0.0": {
+      "der": 0.3115,
+      "fa": 0.0157,
+      "miss": 0.2794,
+      "conf": 0.0164,
+      "jer": 0.3432,
+      "ref_speech_s": 9833.37
+     },
+     "annotation@0.25": {
+      "der": 0.2204,
+      "fa": 0.0123,
+      "miss": 0.193,
+      "conf": 0.0152,
+      "jer": 0.2559,
+      "ref_speech_s": 5575.41
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2335,
+     "fa": 0.089,
+     "miss": 0.1195,
+     "conf": 0.025,
+     "jer": 0.2575,
+     "ref_speech_h": 2.052
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.125,
+     "fa": 0.0422,
+     "miss": 0.0656,
+     "conf": 0.0172,
+     "jer": 0.1641,
+     "ref_speech_h": 1.0179
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.3163,
+     "fa": 0.0136,
+     "miss": 0.2853,
+     "conf": 0.0175,
+     "jer": 0.3487,
+     "ref_speech_h": 2.7315
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.2229,
+     "fa": 0.011,
+     "miss": 0.1957,
+     "conf": 0.0161,
+     "jer": 0.2586,
+     "ref_speech_h": 1.5487
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S21",
+     "primary@0.0": {
+      "der": 0.2335,
+      "fa": 0.089,
+      "miss": 0.1195,
+      "conf": 0.025,
+      "jer": 0.2575,
+      "ref_speech_s": 7387.15
+     },
+     "primary@0.25": {
+      "der": 0.125,
+      "fa": 0.0422,
+      "miss": 0.0656,
+      "conf": 0.0172,
+      "jer": 0.1641,
+      "ref_speech_s": 3664.62
+     },
+     "annotation@0.0": {
+      "der": 0.3163,
+      "fa": 0.0136,
+      "miss": 0.2853,
+      "conf": 0.0175,
+      "jer": 0.3487,
+      "ref_speech_s": 9833.37
+     },
+     "annotation@0.25": {
+      "der": 0.2229,
+      "fa": 0.011,
+      "miss": 0.1957,
+      "conf": 0.0161,
+      "jer": 0.2586,
+      "ref_speech_s": 5575.41
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 2.556,
+  "trim": 2.033,
+  "zero": 2.556
+ }
+}

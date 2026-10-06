@@ -1,15 +1,15 @@
 {
  "definition": "How often does Silero VAD go silent over clear speech? Stock streaming vs state-reset variants.\n\nSilero's per-frame output depends on its recurrent state. On some recordings (telephone speech in particular) the\nmodel is bistable: the same stretch of clear speech gets probabilities near 1 or near 0 depending on where the\nstream started. This script measures that failure on the sessions Nemotron was evaluated on, using two independent\nwitnesses: a 10 s window is a *clear-speech window* when Nemotron's speech covers >= 50% of it and WebRTC VAD\n(mode 3, the strictest) fires on >= 50% of its frames; Silero *drops out* on such a window when its maximum\nprobability in the window is < 0.2. Compared variants (all from the cache):\n\n* ``stock``: the streaming loop as ``silero_vad.get_speech_timestamps`` runs it (state never reset);\n* ``r30``: state reset every 30 s with a 2 s warm-up;\n* ``max``: frame-wise maximum of the two (two different state histories).\n\nIt also reports, for all cached sessions, how much speech each variant finds.",
- "total_clear_windows": 75077,
+ "total_clear_windows": 79654,
  "total_dropout_windows": {
   "stock": 293,
   "r30": 104,
   "max": 52
  },
  "total_dropout_pct": {
-  "stock": 0.39,
-  "r30": 0.139,
-  "max": 0.069
+  "stock": 0.368,
+  "r30": 0.131,
+  "max": 0.065
  },
  "per_tag": {
   "afrispeech_dialog.default": {
@@ -833,6 +833,31 @@
     "stock": 12.25,
     "r30": 12.27,
     "max": 12.28
+   },
+   "dropout_windows": {
+    "stock": 0,
+    "r30": 0,
+    "max": 0
+   },
+   "worst_sessions": {
+    "stock": [],
+    "r30": [],
+    "max": []
+   },
+   "dropout_pct": {
+    "stock": 0.0,
+    "r30": 0.0,
+    "max": 0.0
+   }
+  },
+  "notsofar1.sc": {
+   "sessions": 129,
+   "hours": 13.34,
+   "clear_windows": 4577,
+   "speech_h": {
+    "stock": 12.18,
+    "r30": 12.2,
+    "max": 12.21
    },
    "dropout_windows": {
     "stock": 0,

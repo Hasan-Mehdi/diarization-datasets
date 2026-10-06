@@ -1,0 +1,340 @@
+{
+ "tag": "sbcsae.default",
+ "sessions": [
+  "sbcsae__SBC027",
+  "sbcsae__SBC029",
+  "sbcsae__SBC036"
+ ],
+ "hours": 1.175,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2228,
+     "fa": 0.0466,
+     "miss": 0.1671,
+     "conf": 0.0091,
+     "jer": 0.5315,
+     "ref_speech_h": 1.1037
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1636,
+     "fa": 0.0322,
+     "miss": 0.1265,
+     "conf": 0.0049,
+     "jer": 0.5058,
+     "ref_speech_h": 0.7981
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "sbcsae__SBC027",
+     "primary@0.0": {
+      "der": 0.1484,
+      "fa": 0.013,
+      "miss": 0.1352,
+      "conf": 0.0002,
+      "jer": 0.8224,
+      "ref_speech_s": 922.18
+     },
+     "primary@0.25": {
+      "der": 0.0982,
+      "fa": 0.006,
+      "miss": 0.0923,
+      "conf": 0.0,
+      "jer": 0.8159,
+      "ref_speech_s": 810.06
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC029",
+     "primary@0.0": {
+      "der": 0.2144,
+      "fa": 0.0446,
+      "miss": 0.1606,
+      "conf": 0.0092,
+      "jer": 0.1777,
+      "ref_speech_s": 1342.03
+     },
+     "primary@0.25": {
+      "der": 0.1312,
+      "fa": 0.0399,
+      "miss": 0.0863,
+      "conf": 0.005,
+      "jer": 0.0915,
+      "ref_speech_s": 915.53
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC036",
+     "primary@0.0": {
+      "der": 0.2696,
+      "fa": 0.0663,
+      "miss": 0.1894,
+      "conf": 0.0139,
+      "jer": 0.2825,
+      "ref_speech_s": 1709.247
+     },
+     "primary@0.25": {
+      "der": 0.2357,
+      "fa": 0.0445,
+      "miss": 0.1828,
+      "conf": 0.0083,
+      "jer": 0.2652,
+      "ref_speech_s": 1147.433
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2228,
+     "fa": 0.0466,
+     "miss": 0.1671,
+     "conf": 0.0091,
+     "jer": 0.5315,
+     "ref_speech_h": 1.1037
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1636,
+     "fa": 0.0322,
+     "miss": 0.1265,
+     "conf": 0.0049,
+     "jer": 0.5058,
+     "ref_speech_h": 0.7981
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "sbcsae__SBC027",
+     "primary@0.0": {
+      "der": 0.1484,
+      "fa": 0.013,
+      "miss": 0.1352,
+      "conf": 0.0002,
+      "jer": 0.8224,
+      "ref_speech_s": 922.18
+     },
+     "primary@0.25": {
+      "der": 0.0982,
+      "fa": 0.006,
+      "miss": 0.0923,
+      "conf": 0.0,
+      "jer": 0.8159,
+      "ref_speech_s": 810.06
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC029",
+     "primary@0.0": {
+      "der": 0.2144,
+      "fa": 0.0446,
+      "miss": 0.1606,
+      "conf": 0.0092,
+      "jer": 0.1777,
+      "ref_speech_s": 1342.03
+     },
+     "primary@0.25": {
+      "der": 0.1312,
+      "fa": 0.0399,
+      "miss": 0.0863,
+      "conf": 0.005,
+      "jer": 0.0915,
+      "ref_speech_s": 915.53
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC036",
+     "primary@0.0": {
+      "der": 0.2696,
+      "fa": 0.0663,
+      "miss": 0.1894,
+      "conf": 0.0139,
+      "jer": 0.2825,
+      "ref_speech_s": 1709.247
+     },
+     "primary@0.25": {
+      "der": 0.2357,
+      "fa": 0.0445,
+      "miss": 0.1828,
+      "conf": 0.0083,
+      "jer": 0.2652,
+      "ref_speech_s": 1147.433
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2333,
+     "fa": 0.0413,
+     "miss": 0.1846,
+     "conf": 0.0074,
+     "jer": 0.5423,
+     "ref_speech_h": 1.1037
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1738,
+     "fa": 0.0261,
+     "miss": 0.144,
+     "conf": 0.0037,
+     "jer": 0.5179,
+     "ref_speech_h": 0.7981
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "sbcsae__SBC027",
+     "primary@0.0": {
+      "der": 0.1496,
+      "fa": 0.0133,
+      "miss": 0.1358,
+      "conf": 0.0004,
+      "jer": 0.8227,
+      "ref_speech_s": 922.18
+     },
+     "primary@0.25": {
+      "der": 0.0993,
+      "fa": 0.0057,
+      "miss": 0.0936,
+      "conf": 0.0,
+      "jer": 0.8162,
+      "ref_speech_s": 810.06
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC029",
+     "primary@0.0": {
+      "der": 0.2281,
+      "fa": 0.0273,
+      "miss": 0.1952,
+      "conf": 0.0056,
+      "jer": 0.2081,
+      "ref_speech_s": 1342.03
+     },
+     "primary@0.25": {
+      "der": 0.1474,
+      "fa": 0.0193,
+      "miss": 0.1256,
+      "conf": 0.0025,
+      "jer": 0.1273,
+      "ref_speech_s": 915.53
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC036",
+     "primary@0.0": {
+      "der": 0.2825,
+      "fa": 0.0674,
+      "miss": 0.2025,
+      "conf": 0.0126,
+      "jer": 0.2978,
+      "ref_speech_s": 1709.247
+     },
+     "primary@0.25": {
+      "der": 0.2474,
+      "fa": 0.0459,
+      "miss": 0.1944,
+      "conf": 0.0072,
+      "jer": 0.2813,
+      "ref_speech_s": 1147.433
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2261,
+     "fa": 0.0342,
+     "miss": 0.1845,
+     "conf": 0.0074,
+     "jer": 0.5378,
+     "ref_speech_h": 1.1037
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1687,
+     "fa": 0.0211,
+     "miss": 0.1439,
+     "conf": 0.0037,
+     "jer": 0.5119,
+     "ref_speech_h": 0.7981
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "sbcsae__SBC027",
+     "primary@0.0": {
+      "der": 0.1774,
+      "fa": 0.0116,
+      "miss": 0.1648,
+      "conf": 0.001,
+      "jer": 0.8285,
+      "ref_speech_s": 922.18
+     },
+     "primary@0.25": {
+      "der": 0.129,
+      "fa": 0.0084,
+      "miss": 0.1203,
+      "conf": 0.0003,
+      "jer": 0.8222,
+      "ref_speech_s": 810.06
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC029",
+     "primary@0.0": {
+      "der": 0.2208,
+      "fa": 0.0282,
+      "miss": 0.1875,
+      "conf": 0.005,
+      "jer": 0.2005,
+      "ref_speech_s": 1342.03
+     },
+     "primary@0.25": {
+      "der": 0.1429,
+      "fa": 0.021,
+      "miss": 0.1197,
+      "conf": 0.0021,
+      "jer": 0.1211,
+      "ref_speech_s": 915.53
+     }
+    },
+    {
+     "session_id": "sbcsae__SBC036",
+     "primary@0.0": {
+      "der": 0.2566,
+      "fa": 0.051,
+      "miss": 0.1928,
+      "conf": 0.0128,
+      "jer": 0.2781,
+      "ref_speech_s": 1709.247
+     },
+     "primary@0.25": {
+      "der": 0.2173,
+      "fa": 0.03,
+      "miss": 0.1799,
+      "conf": 0.0074,
+      "jer": 0.2554,
+      "ref_speech_s": 1147.433
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.175,
+  "trim": 1.021,
+  "zero": 1.175
+ }
+}

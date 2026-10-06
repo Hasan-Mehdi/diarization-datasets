@@ -108,27 +108,31 @@ def whisper_rows():
 
 
 def table_whisper(W):
+    """Cells: strict speech / verbal (strict + 1-2 words or fillers) / regions checked; laughter in brackets."""
     kinds = [("unref", "silero_x2"), ("unref", "energy"), ("unref", "webrtc"),
              ("unvoiced", "silero_x2"), ("unvoiced", "energy"), ("unvoiced", "webrtc"), ("control", None)]
     head = ["unannotated: Silero", "unannotated: energy", "unannotated: WebRTC",
             "silent-ref: Silero", "silent-ref: energy", "silent-ref: WebRTC", "control (both silent)"]
     lines = ["| dataset | " + " | ".join(head) + " |", "|---|" + "---:|" * len(head)]
-    tot = {k: [0, 0] for k in kinds}
+    tot = {k: [0, 0, 0, 0] for k in kinds}
     for name, r in W.items():
         cells = []
         for kind, vad in kinds:
             key = f"{kind}:{vad}" if vad else "control"
             d = r["summary"].get(key)
             if d:
-                cells.append(f"{d['with_speech']}/{d['regions']}")
-                tot[(kind, vad)][0] += d["with_speech"]
-                tot[(kind, vad)][1] += d["regions"]
+                c = d["classes"]
+                verbal = c["speech"] + c["short"]
+                cells.append(f"{c['speech']} / {verbal} / {d['regions']}" + (f" ({c['laughter']} laugh)" if c["laughter"] else ""))
+                for i, v in enumerate((c["speech"], verbal, c["laughter"], d["regions"])):
+                    tot[(kind, vad)][i] += v
             else:
                 cells.append("-")
         lines.append(f"| {name} | " + " | ".join(cells) + " |")
     lines.append("| **all** | " + " | ".join(
-        f"**{a}/{b} ({100 * a / b:.0f}%)**" if b else "-" for a, b in tot.values()) + " |")
-    return "\n".join(lines), {f"{k}:{v}": t for (k, v), t in tot.items()}
+        f"**{a} / {v} / {n}** ({100 * a / n:.0f}% / {100 * v / n:.0f}%)" if n else "-" for a, v, l, n in tot.values()) + " |")
+    return "\n".join(lines), {f"{k}:{v}": dict(zip(("speech", "verbal", "laughter", "regions"), t))
+                              for (k, v), t in tot.items()}
 
 
 def table_refs(A, N):
@@ -320,22 +324,36 @@ def table_dataprep(D):
 
 
 def table_calibration(A):
-    """VAD accuracy against the tightest references (frame level, collar 0)."""
-    tight = [("maptask", "primary", "word-level"), ("libricss", "primary", "exact (synthetic)"),
+    """VAD accuracy against the tightest references (frame level; collar 0 and 0.25 s around reference boundaries)."""
+    tight = [("maptask", "primary", "word-level"), ("libricss", "primary", "exact playback times (synthetic)"),
              ("ami", "primary", "forced-aligned (MFA)"), ("notsofar1", "fastmss_mfa", "forced-aligned (MFA)"),
              ("primock57", "channel_activity", "per-channel energy (diagnostic)")]
     dets = [d for d in DETECTORS if d != "silero"]
-    lines = ["| dataset | reference | " + " | ".join(f"{LABEL[d]} FA / miss %" for d in dets) +
-             " | Silero onset / offset p50 s |", "|---|---|" + "---|" * len(dets) + "---|"]
+    lines = ["| dataset | reference | " + " | ".join(f"{LABEL[d]}" for d in dets) +
+             " | Silero x2 onset / offset p50 s |", "|---|---|" + "---|" * len(dets) + "---|"]
     for name, ref, desc in tight:
         r = A.get(name)
         if not r or ref not in r["summary"]:
             continue
-        s = r["summary"][ref]
-        cells = [f"{s[d]['fa_pct']:.1f} / {s[d]['miss_pct']:.1f}" if d in s else "-" for d in dets]
-        x = s.get("silero_x2", {})
+        c = r.get("common_subset", {"summary": r["summary"]})["summary"].get(ref, r["summary"][ref])
+        cells = [f"{c[d]['fa_pct']:.1f} / {c[d]['miss_pct']:.1f}; {f(c[d].get('fa_c25_pct'))} / {f(c[d].get('miss_c25_pct'))}"
+                 if d in c else "-" for d in dets]
+        x = c.get("silero_x2", {})
         lines.append(f"| {name} ({r['view']}) | {ref}: {desc} | " + " | ".join(cells) +
                      f" | {f(x.get('onset', {}).get('p50'), 3)} / {f(x.get('offset', {}).get('p50'), 3)} |")
+    return "\n".join(lines)
+
+
+def table_dropouts(Rc):
+    lines = ["| tag | hours | clear-speech 10 s windows | stock Silero drop-outs | 30 s reset | Silero x2 (max of both) |",
+             "|---|---:|---:|---:|---:|---:|"]
+    for tag, x in Rc["per_tag"].items():
+        d, p = x["dropout_windows"], x["dropout_pct"]
+        lines.append(f"| {tag} | {x['hours']} | {x['clear_windows']} | {d['stock']} ({p['stock']}%) | {d['r30']} ({p['r30']}%) | "
+                     f"{d['max']} ({p['max']}%) |")
+    t, tp = Rc["total_dropout_windows"], Rc["total_dropout_pct"]
+    lines.append(f"| **all** | | **{Rc['total_clear_windows']}** | **{t['stock']} ({tp['stock']}%)** | **{t['r30']} ({tp['r30']}%)** | "
+                 f"**{t['max']} ({tp['max']}%)** |")
     return "\n".join(lines)
 
 
@@ -361,13 +379,27 @@ def main():
              "## 1. Ground-truth audit (primary reference, Silero x2)", "", table_audit(A), "",
              "### Unannotated speech (% of reference speech) by detector", "", table_detectors(A, "unref_pct"), "",
              "### Silent reference speech (% of reference speech) by detector", "", table_detectors(A, "unvoiced_pct"), "",
-             "### Whisper check of the longest flagged regions (regions with intelligible speech / regions checked)", "",
+             "### Whisper check of the longest flagged regions",
+             "",
+             "Cells: regions whose Whisper transcript is intelligible speech (>= 3 words, not a hallucination) / regions "
+             "with any verbal content (also 1-2 words or fillers such as \"yeah\", \"um\") / regions checked. "
+             "Unannotated + speech = the reference is missing speech; silent-ref + speech = the detector missed speech.",
+             "",
              wt, "",
              "## 2. Boundary precision per reference variant (vs Silero) and Nemotron error against the same reference", "",
              table_refs(A, N), "",
-             "### VAD accuracy against the tightest references (frame level, collar 0)", "", table_calibration(A), "",
+             "### VAD accuracy against the tightest references",
+             "",
+             "Cells: FA / miss % at collar 0; FA / miss % outside +/- 0.25 s of reference boundaries (sessions where "
+             "every detector is available).", "", table_calibration(A), "",
              "### Does Silero-vs-reference disagreement predict Nemotron's error? (every evaluated tag x reference)", "",
              table_corr_stats(corr_stats), "", table_corr(corr_rows), ""]
+    Rc = load(V / "reset_check.json")
+    if Rc:
+        parts += ["## Silero drop-outs (stock vs state reset vs max of both)", "",
+                  "A 10 s window is clear speech when Nemotron covers >= 50% of it and WebRTC (mode 3) fires on >= 50% "
+                  "of its frames; Silero drops out when its maximum probability in the window is < 0.2 "
+                  "(`scripts/vad_reset_check.py`).", "", table_dropouts(Rc), ""]
     if P:
         parts += ["## 3. VAD-assisted Nemotron (post-hoc on cached outputs): change in DER (points)", "",
                   "Primary reference, collar 0:", "", table_posthoc(P, "primary@0.0"), "",
@@ -389,8 +421,13 @@ def main():
             if a and b:
                 parts.append(f"| {ref} | {100 * a['der']:.2f} | {100 * a['fa']:.2f} | {100 * a['miss']:.2f} | {100 * b['der']:.2f} |")
         if "whisper_disagreements" in pm:
-            parts += ["", "Energy-vs-Silero disagreements on the isolated channels, checked with Whisper:", "", "```json",
-                      json.dumps(pm["whisper_disagreements"]["summary"], indent=1), "```"]
+            parts += ["", "Energy-vs-Silero disagreements on the isolated channels (30 longest of each kind), Whisper "
+                      "transcript classes:", "", "| kind | regions | seconds | speech | short | laughter | none |",
+                      "|---|---:|---:|---:|---:|---:|---:|"]
+            for k, d in pm["whisper_disagreements"]["summary"].items():
+                c = d.get("classes", {})
+                parts.append(f"| {k} | {d['regions']} | {d.get('seconds', '-')} | {c.get('speech', '-')} | "
+                             f"{c.get('short', '-')} | {c.get('laughter', '-')} | {c.get('none', '-')} |")
         parts.append("")
     if D:
         parts += ["## 4. Data preparation", "", table_dataprep(D), ""]

@@ -1,0 +1,1917 @@
+{
+ "tag": "chime6.farfield.dev",
+ "sessions": 2,
+ "hours": 4.46,
+ "variants": {
+  "baseline": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.317,
+     "fa": 0.0852,
+     "miss": 0.1871,
+     "conf": 0.0448,
+     "jer": 0.326,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1906,
+     "fa": 0.0536,
+     "miss": 0.1057,
+     "conf": 0.0313,
+     "jer": 0.2092,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.4165,
+     "fa": 0.0113,
+     "miss": 0.3813,
+     "conf": 0.0238,
+     "jer": 0.4253,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.3509,
+     "fa": 0.0126,
+     "miss": 0.3169,
+     "conf": 0.0215,
+     "jer": 0.3567,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.298,
+      "fa": 0.079,
+      "miss": 0.1874,
+      "conf": 0.0316,
+      "jer": 0.3012,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1782,
+      "fa": 0.0419,
+      "miss": 0.118,
+      "conf": 0.0183,
+      "jer": 0.1937,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4177,
+      "fa": 0.0061,
+      "miss": 0.4001,
+      "conf": 0.0116,
+      "jer": 0.4239,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3622,
+      "fa": 0.007,
+      "miss": 0.3446,
+      "conf": 0.0106,
+      "jer": 0.3693,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.3465,
+      "fa": 0.0948,
+      "miss": 0.1866,
+      "conf": 0.0651,
+      "jer": 0.3508,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.2093,
+      "fa": 0.0713,
+      "miss": 0.0871,
+      "conf": 0.0509,
+      "jer": 0.2248,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.4146,
+      "fa": 0.0202,
+      "miss": 0.3499,
+      "conf": 0.0445,
+      "jer": 0.4267,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.3295,
+      "fa": 0.0231,
+      "miss": 0.2645,
+      "conf": 0.042,
+      "jer": 0.3442,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate:silero_x2": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.432,
+     "fa": 0.0656,
+     "miss": 0.3404,
+     "conf": 0.026,
+     "jer": 0.4539,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3329,
+     "fa": 0.0393,
+     "miss": 0.279,
+     "conf": 0.0146,
+     "jer": 0.3654,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5187,
+     "fa": 0.0079,
+     "miss": 0.4992,
+     "conf": 0.0115,
+     "jer": 0.5465,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4597,
+     "fa": 0.009,
+     "miss": 0.4406,
+     "conf": 0.0101,
+     "jer": 0.4942,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3112,
+      "fa": 0.0719,
+      "miss": 0.2093,
+      "conf": 0.0301,
+      "jer": 0.3142,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1927,
+      "fa": 0.0374,
+      "miss": 0.1379,
+      "conf": 0.0175,
+      "jer": 0.208,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4349,
+      "fa": 0.0053,
+      "miss": 0.419,
+      "conf": 0.0106,
+      "jer": 0.4403,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.38,
+      "fa": 0.0061,
+      "miss": 0.3641,
+      "conf": 0.0098,
+      "jer": 0.3862,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.6187,
+      "fa": 0.0559,
+      "miss": 0.5432,
+      "conf": 0.0197,
+      "jer": 0.5936,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.5443,
+      "fa": 0.0423,
+      "miss": 0.4918,
+      "conf": 0.0102,
+      "jer": 0.5229,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.6594,
+      "fa": 0.0123,
+      "miss": 0.6339,
+      "conf": 0.0131,
+      "jer": 0.6527,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.6103,
+      "fa": 0.0145,
+      "miss": 0.5852,
+      "conf": 0.0106,
+      "jer": 0.6022,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate+0.25:silero_x2": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.42,
+     "fa": 0.0702,
+     "miss": 0.3228,
+     "conf": 0.027,
+     "jer": 0.4405,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3196,
+     "fa": 0.0414,
+     "miss": 0.2633,
+     "conf": 0.0149,
+     "jer": 0.3509,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5048,
+     "fa": 0.0085,
+     "miss": 0.4842,
+     "conf": 0.0122,
+     "jer": 0.532,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4461,
+     "fa": 0.0096,
+     "miss": 0.4261,
+     "conf": 0.0104,
+     "jer": 0.4797,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3025,
+      "fa": 0.0764,
+      "miss": 0.1952,
+      "conf": 0.0309,
+      "jer": 0.3056,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1827,
+      "fa": 0.0392,
+      "miss": 0.1257,
+      "conf": 0.0178,
+      "jer": 0.1982,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4234,
+      "fa": 0.0057,
+      "miss": 0.4067,
+      "conf": 0.011,
+      "jer": 0.4293,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3687,
+      "fa": 0.0066,
+      "miss": 0.352,
+      "conf": 0.0101,
+      "jer": 0.3754,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.6016,
+      "fa": 0.0606,
+      "miss": 0.5199,
+      "conf": 0.0211,
+      "jer": 0.5755,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.5261,
+      "fa": 0.0448,
+      "miss": 0.4708,
+      "conf": 0.0105,
+      "jer": 0.5036,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.6414,
+      "fa": 0.0132,
+      "miss": 0.6142,
+      "conf": 0.0141,
+      "jer": 0.6347,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.5925,
+      "fa": 0.0152,
+      "miss": 0.5662,
+      "conf": 0.0111,
+      "jer": 0.5841,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate:silero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.4512,
+     "fa": 0.0625,
+     "miss": 0.3637,
+     "conf": 0.0249,
+     "jer": 0.476,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3552,
+     "fa": 0.0376,
+     "miss": 0.3036,
+     "conf": 0.0141,
+     "jer": 0.3911,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5355,
+     "fa": 0.0074,
+     "miss": 0.5172,
+     "conf": 0.0109,
+     "jer": 0.5667,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4771,
+     "fa": 0.0085,
+     "miss": 0.459,
+     "conf": 0.0096,
+     "jer": 0.5161,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3187,
+      "fa": 0.0704,
+      "miss": 0.2187,
+      "conf": 0.0296,
+      "jer": 0.3209,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.2018,
+      "fa": 0.0372,
+      "miss": 0.1472,
+      "conf": 0.0174,
+      "jer": 0.2164,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.442,
+      "fa": 0.0052,
+      "miss": 0.4264,
+      "conf": 0.0104,
+      "jer": 0.447,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3876,
+      "fa": 0.0061,
+      "miss": 0.3718,
+      "conf": 0.0097,
+      "jer": 0.3934,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.656,
+      "fa": 0.0504,
+      "miss": 0.5879,
+      "conf": 0.0177,
+      "jer": 0.6311,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.5868,
+      "fa": 0.0382,
+      "miss": 0.5395,
+      "conf": 0.0091,
+      "jer": 0.5658,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.6924,
+      "fa": 0.011,
+      "miss": 0.6697,
+      "conf": 0.0118,
+      "jer": 0.6864,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.6464,
+      "fa": 0.013,
+      "miss": 0.6239,
+      "conf": 0.0095,
+      "jer": 0.6389,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate+0.25:silero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.4363,
+     "fa": 0.0675,
+     "miss": 0.3426,
+     "conf": 0.0261,
+     "jer": 0.4605,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3388,
+     "fa": 0.0396,
+     "miss": 0.2849,
+     "conf": 0.0143,
+     "jer": 0.3743,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.519,
+     "fa": 0.0079,
+     "miss": 0.4995,
+     "conf": 0.0116,
+     "jer": 0.5503,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4609,
+     "fa": 0.009,
+     "miss": 0.4419,
+     "conf": 0.01,
+     "jer": 0.5,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3053,
+      "fa": 0.0758,
+      "miss": 0.1987,
+      "conf": 0.0308,
+      "jer": 0.3082,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1864,
+      "fa": 0.039,
+      "miss": 0.1298,
+      "conf": 0.0177,
+      "jer": 0.2018,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4259,
+      "fa": 0.0056,
+      "miss": 0.4094,
+      "conf": 0.0109,
+      "jer": 0.4317,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3718,
+      "fa": 0.0065,
+      "miss": 0.3552,
+      "conf": 0.0101,
+      "jer": 0.3783,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.6387,
+      "fa": 0.0546,
+      "miss": 0.5651,
+      "conf": 0.0189,
+      "jer": 0.6127,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.5688,
+      "fa": 0.0406,
+      "miss": 0.5189,
+      "conf": 0.0093,
+      "jer": 0.5467,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.6751,
+      "fa": 0.0118,
+      "miss": 0.6506,
+      "conf": 0.0127,
+      "jer": 0.669,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.6294,
+      "fa": 0.0137,
+      "miss": 0.6056,
+      "conf": 0.01,
+      "jer": 0.6217,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate:silero_r30": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.4741,
+     "fa": 0.0575,
+     "miss": 0.3937,
+     "conf": 0.0228,
+     "jer": 0.505,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3788,
+     "fa": 0.0333,
+     "miss": 0.3325,
+     "conf": 0.0129,
+     "jer": 0.4206,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5573,
+     "fa": 0.0066,
+     "miss": 0.541,
+     "conf": 0.0097,
+     "jer": 0.5943,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4999,
+     "fa": 0.0076,
+     "miss": 0.4836,
+     "conf": 0.0087,
+     "jer": 0.547,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3234,
+      "fa": 0.0691,
+      "miss": 0.2253,
+      "conf": 0.029,
+      "jer": 0.3252,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.2053,
+      "fa": 0.0355,
+      "miss": 0.1529,
+      "conf": 0.0169,
+      "jer": 0.2201,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4471,
+      "fa": 0.0052,
+      "miss": 0.4316,
+      "conf": 0.0102,
+      "jer": 0.4518,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3929,
+      "fa": 0.006,
+      "miss": 0.3774,
+      "conf": 0.0095,
+      "jer": 0.3985,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.707,
+      "fa": 0.0396,
+      "miss": 0.6542,
+      "conf": 0.0133,
+      "jer": 0.6848,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.6405,
+      "fa": 0.0301,
+      "miss": 0.6035,
+      "conf": 0.007,
+      "jer": 0.6211,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.7423,
+      "fa": 0.0089,
+      "miss": 0.7245,
+      "conf": 0.0089,
+      "jer": 0.7369,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.7022,
+      "fa": 0.0106,
+      "miss": 0.6844,
+      "conf": 0.0072,
+      "jer": 0.6956,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate+0.25:silero_r30": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.4597,
+     "fa": 0.0623,
+     "miss": 0.3734,
+     "conf": 0.024,
+     "jer": 0.4894,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.363,
+     "fa": 0.0356,
+     "miss": 0.314,
+     "conf": 0.0134,
+     "jer": 0.4035,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5415,
+     "fa": 0.0072,
+     "miss": 0.524,
+     "conf": 0.0104,
+     "jer": 0.5782,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4842,
+     "fa": 0.0082,
+     "miss": 0.4669,
+     "conf": 0.0091,
+     "jer": 0.5306,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3115,
+      "fa": 0.074,
+      "miss": 0.2073,
+      "conf": 0.0302,
+      "jer": 0.3139,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1924,
+      "fa": 0.0373,
+      "miss": 0.1376,
+      "conf": 0.0175,
+      "jer": 0.2076,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4327,
+      "fa": 0.0055,
+      "miss": 0.4164,
+      "conf": 0.0107,
+      "jer": 0.438,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3788,
+      "fa": 0.0064,
+      "miss": 0.3625,
+      "conf": 0.0099,
+      "jer": 0.3849,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.6889,
+      "fa": 0.0442,
+      "miss": 0.6303,
+      "conf": 0.0144,
+      "jer": 0.6649,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.6204,
+      "fa": 0.033,
+      "miss": 0.5801,
+      "conf": 0.0073,
+      "jer": 0.5993,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.7243,
+      "fa": 0.01,
+      "miss": 0.7046,
+      "conf": 0.0097,
+      "jer": 0.7184,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.6834,
+      "fa": 0.0116,
+      "miss": 0.6643,
+      "conf": 0.0075,
+      "jer": 0.6763,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate:webrtc": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.519,
+     "fa": 0.0642,
+     "miss": 0.4266,
+     "conf": 0.0282,
+     "jer": 0.5229,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.4562,
+     "fa": 0.0447,
+     "miss": 0.3943,
+     "conf": 0.0172,
+     "jer": 0.47,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5849,
+     "fa": 0.0093,
+     "miss": 0.562,
+     "conf": 0.0136,
+     "jer": 0.6008,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.5353,
+     "fa": 0.0107,
+     "miss": 0.5121,
+     "conf": 0.0125,
+     "jer": 0.555,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.4357,
+      "fa": 0.0582,
+      "miss": 0.3517,
+      "conf": 0.0259,
+      "jer": 0.4315,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.3551,
+      "fa": 0.0348,
+      "miss": 0.3051,
+      "conf": 0.0152,
+      "jer": 0.3628,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.538,
+      "fa": 0.0047,
+      "miss": 0.5245,
+      "conf": 0.0088,
+      "jer": 0.5422,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.4902,
+      "fa": 0.0056,
+      "miss": 0.4762,
+      "conf": 0.0084,
+      "jer": 0.4947,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.6477,
+      "fa": 0.0734,
+      "miss": 0.5424,
+      "conf": 0.0318,
+      "jer": 0.6142,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.6089,
+      "fa": 0.0598,
+      "miss": 0.5288,
+      "conf": 0.0203,
+      "jer": 0.5772,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.6637,
+      "fa": 0.0169,
+      "miss": 0.6251,
+      "conf": 0.0217,
+      "jer": 0.6594,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.6204,
+      "fa": 0.0202,
+      "miss": 0.5798,
+      "conf": 0.0204,
+      "jer": 0.6154,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate+0.25:webrtc": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.4418,
+     "fa": 0.0749,
+     "miss": 0.3345,
+     "conf": 0.0324,
+     "jer": 0.4496,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.361,
+     "fa": 0.0485,
+     "miss": 0.2932,
+     "conf": 0.0193,
+     "jer": 0.3802,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5172,
+     "fa": 0.0103,
+     "miss": 0.4909,
+     "conf": 0.016,
+     "jer": 0.5346,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4679,
+     "fa": 0.0116,
+     "miss": 0.4422,
+     "conf": 0.0141,
+     "jer": 0.4893,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3591,
+      "fa": 0.0705,
+      "miss": 0.2597,
+      "conf": 0.0289,
+      "jer": 0.3578,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.2578,
+      "fa": 0.0386,
+      "miss": 0.2028,
+      "conf": 0.0164,
+      "jer": 0.2697,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4701,
+      "fa": 0.0055,
+      "miss": 0.4544,
+      "conf": 0.0101,
+      "jer": 0.4749,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.4226,
+      "fa": 0.0066,
+      "miss": 0.4068,
+      "conf": 0.0092,
+      "jer": 0.4278,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.5696,
+      "fa": 0.0817,
+      "miss": 0.4501,
+      "conf": 0.0379,
+      "jer": 0.5414,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.5168,
+      "fa": 0.0635,
+      "miss": 0.4296,
+      "conf": 0.0236,
+      "jer": 0.4907,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.5962,
+      "fa": 0.0183,
+      "miss": 0.5522,
+      "conf": 0.0258,
+      "jer": 0.5943,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.5535,
+      "fa": 0.0212,
+      "miss": 0.5091,
+      "conf": 0.0232,
+      "jer": 0.5507,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate:energy": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.4625,
+     "fa": 0.0674,
+     "miss": 0.364,
+     "conf": 0.0311,
+     "jer": 0.4588,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3707,
+     "fa": 0.0458,
+     "miss": 0.3053,
+     "conf": 0.0197,
+     "jer": 0.3759,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.5411,
+     "fa": 0.0094,
+     "miss": 0.516,
+     "conf": 0.0156,
+     "jer": 0.5462,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4856,
+     "fa": 0.0106,
+     "miss": 0.4607,
+     "conf": 0.0143,
+     "jer": 0.4901,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.4243,
+      "fa": 0.0585,
+      "miss": 0.3395,
+      "conf": 0.0263,
+      "jer": 0.4185,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.3268,
+      "fa": 0.0344,
+      "miss": 0.276,
+      "conf": 0.0164,
+      "jer": 0.333,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.5297,
+      "fa": 0.0045,
+      "miss": 0.5158,
+      "conf": 0.0093,
+      "jer": 0.5322,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.4782,
+      "fa": 0.0053,
+      "miss": 0.464,
+      "conf": 0.0089,
+      "jer": 0.4804,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.5215,
+      "fa": 0.0812,
+      "miss": 0.4019,
+      "conf": 0.0384,
+      "jer": 0.4992,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.437,
+      "fa": 0.063,
+      "miss": 0.3494,
+      "conf": 0.0246,
+      "jer": 0.4189,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.5603,
+      "fa": 0.0177,
+      "miss": 0.5164,
+      "conf": 0.0262,
+      "jer": 0.5601,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.4997,
+      "fa": 0.0205,
+      "miss": 0.4546,
+      "conf": 0.0246,
+      "jer": 0.4997,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate+0.25:energy": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3926,
+     "fa": 0.0784,
+     "miss": 0.2784,
+     "conf": 0.0357,
+     "jer": 0.3951,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2905,
+     "fa": 0.0502,
+     "miss": 0.2183,
+     "conf": 0.022,
+     "jer": 0.3021,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.4781,
+     "fa": 0.0106,
+     "miss": 0.4494,
+     "conf": 0.0182,
+     "jer": 0.4868,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.4214,
+     "fa": 0.0117,
+     "miss": 0.3936,
+     "conf": 0.0161,
+     "jer": 0.4291,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3508,
+      "fa": 0.0716,
+      "miss": 0.2497,
+      "conf": 0.0295,
+      "jer": 0.349,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.2437,
+      "fa": 0.0388,
+      "miss": 0.1877,
+      "conf": 0.0172,
+      "jer": 0.2546,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4627,
+      "fa": 0.0054,
+      "miss": 0.4468,
+      "conf": 0.0105,
+      "jer": 0.4667,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.4121,
+      "fa": 0.0063,
+      "miss": 0.3961,
+      "conf": 0.0097,
+      "jer": 0.4164,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.4571,
+      "fa": 0.089,
+      "miss": 0.3227,
+      "conf": 0.0454,
+      "jer": 0.4413,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.3612,
+      "fa": 0.0674,
+      "miss": 0.2645,
+      "conf": 0.0293,
+      "jer": 0.3497,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.504,
+      "fa": 0.0192,
+      "miss": 0.4537,
+      "conf": 0.0311,
+      "jer": 0.5068,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.439,
+      "fa": 0.0219,
+      "miss": 0.3888,
+      "conf": 0.0283,
+      "jer": 0.4419,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate:pyannote": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3338,
+     "fa": 0.0794,
+     "miss": 0.2133,
+     "conf": 0.0411,
+     "jer": 0.341,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2084,
+     "fa": 0.0494,
+     "miss": 0.1311,
+     "conf": 0.028,
+     "jer": 0.2251,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.4354,
+     "fa": 0.0107,
+     "miss": 0.4031,
+     "conf": 0.0216,
+     "jer": 0.4426,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.3701,
+     "fa": 0.0118,
+     "miss": 0.3387,
+     "conf": 0.0196,
+     "jer": 0.3743,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3117,
+      "fa": 0.0724,
+      "miss": 0.2096,
+      "conf": 0.0296,
+      "jer": 0.3141,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1923,
+      "fa": 0.0379,
+      "miss": 0.1377,
+      "conf": 0.0167,
+      "jer": 0.2068,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4355,
+      "fa": 0.0057,
+      "miss": 0.4192,
+      "conf": 0.0106,
+      "jer": 0.4407,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3804,
+      "fa": 0.0067,
+      "miss": 0.3637,
+      "conf": 0.01,
+      "jer": 0.3866,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.368,
+      "fa": 0.0902,
+      "miss": 0.219,
+      "conf": 0.0588,
+      "jer": 0.3678,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.2328,
+      "fa": 0.0667,
+      "miss": 0.1211,
+      "conf": 0.045,
+      "jer": 0.2434,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.4353,
+      "fa": 0.019,
+      "miss": 0.3761,
+      "conf": 0.0402,
+      "jer": 0.4444,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.3505,
+      "fa": 0.0215,
+      "miss": 0.2914,
+      "conf": 0.0377,
+      "jer": 0.3621,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "gate+0.25:pyannote": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3287,
+     "fa": 0.0828,
+     "miss": 0.2034,
+     "conf": 0.0424,
+     "jer": 0.3362,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.2031,
+     "fa": 0.051,
+     "miss": 0.1233,
+     "conf": 0.0288,
+     "jer": 0.2203,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.4275,
+     "fa": 0.011,
+     "miss": 0.3941,
+     "conf": 0.0224,
+     "jer": 0.4357,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.3627,
+     "fa": 0.0121,
+     "miss": 0.3304,
+     "conf": 0.0201,
+     "jer": 0.368,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3061,
+      "fa": 0.0767,
+      "miss": 0.1988,
+      "conf": 0.0306,
+      "jer": 0.3086,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1861,
+      "fa": 0.0393,
+      "miss": 0.1294,
+      "conf": 0.0173,
+      "jer": 0.201,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4262,
+      "fa": 0.0059,
+      "miss": 0.4092,
+      "conf": 0.0111,
+      "jer": 0.432,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.3718,
+      "fa": 0.0069,
+      "miss": 0.3546,
+      "conf": 0.0103,
+      "jer": 0.3785,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.3635,
+      "fa": 0.0923,
+      "miss": 0.2106,
+      "conf": 0.0606,
+      "jer": 0.3639,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.2287,
+      "fa": 0.0686,
+      "miss": 0.114,
+      "conf": 0.046,
+      "jer": 0.2396,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.4297,
+      "fa": 0.0194,
+      "miss": 0.3687,
+      "conf": 0.0415,
+      "jer": 0.4394,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.3455,
+      "fa": 0.022,
+      "miss": 0.2848,
+      "conf": 0.0386,
+      "jer": 0.3575,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "fill:silero_x2": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3194,
+     "fa": 0.1035,
+     "miss": 0.1652,
+     "conf": 0.0507,
+     "jer": 0.3264,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1854,
+     "fa": 0.0609,
+     "miss": 0.091,
+     "conf": 0.0334,
+     "jer": 0.205,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.3935,
+     "fa": 0.0126,
+     "miss": 0.3544,
+     "conf": 0.0266,
+     "jer": 0.4065,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.331,
+     "fa": 0.0134,
+     "miss": 0.2945,
+     "conf": 0.0231,
+     "jer": 0.3407,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.3014,
+      "fa": 0.1039,
+      "miss": 0.1576,
+      "conf": 0.0399,
+      "jer": 0.3024,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1701,
+      "fa": 0.0517,
+      "miss": 0.097,
+      "conf": 0.0214,
+      "jer": 0.1861,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.3866,
+      "fa": 0.0074,
+      "miss": 0.3643,
+      "conf": 0.0149,
+      "jer": 0.3947,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.336,
+      "fa": 0.0079,
+      "miss": 0.3155,
+      "conf": 0.0126,
+      "jer": 0.3444,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.3473,
+      "fa": 0.103,
+      "miss": 0.1769,
+      "conf": 0.0674,
+      "jer": 0.3504,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.2084,
+      "fa": 0.0749,
+      "miss": 0.082,
+      "conf": 0.0516,
+      "jer": 0.2238,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.4052,
+      "fa": 0.0212,
+      "miss": 0.3378,
+      "conf": 0.0463,
+      "jer": 0.4183,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.3215,
+      "fa": 0.0237,
+      "miss": 0.2548,
+      "conf": 0.043,
+      "jer": 0.337,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "vad_decides:silero_x2": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.4347,
+     "fa": 0.0839,
+     "miss": 0.3189,
+     "conf": 0.0319,
+     "jer": 0.4531,
+     "ref_speech_h": 4.5541
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.3277,
+     "fa": 0.0466,
+     "miss": 0.2643,
+     "conf": 0.0167,
+     "jer": 0.3605,
+     "ref_speech_h": 2.0666
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.496,
+     "fa": 0.0092,
+     "miss": 0.4725,
+     "conf": 0.0143,
+     "jer": 0.5275,
+     "ref_speech_h": 6.4924
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.44,
+     "fa": 0.0099,
+     "miss": 0.4184,
+     "conf": 0.0118,
+     "jer": 0.478,
+     "ref_speech_h": 3.9055
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.315,
+      "fa": 0.0968,
+      "miss": 0.1799,
+      "conf": 0.0383,
+      "jer": 0.3153,
+      "ref_speech_s": 9955.42
+     },
+     "primary@0.25": {
+      "der": 0.1846,
+      "fa": 0.0471,
+      "miss": 0.1169,
+      "conf": 0.0206,
+      "jer": 0.2002,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4041,
+      "fa": 0.0067,
+      "miss": 0.3835,
+      "conf": 0.0139,
+      "jer": 0.4112,
+      "ref_speech_s": 14646.89
+     },
+     "annotation@0.25": {
+      "der": 0.354,
+      "fa": 0.0071,
+      "miss": 0.3352,
+      "conf": 0.0118,
+      "jer": 0.3614,
+      "ref_speech_s": 9195.49
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.6198,
+      "fa": 0.0641,
+      "miss": 0.5337,
+      "conf": 0.022,
+      "jer": 0.5909,
+      "ref_speech_s": 6439.47
+     },
+     "primary@0.25": {
+      "der": 0.5435,
+      "fa": 0.0458,
+      "miss": 0.4867,
+      "conf": 0.0109,
+      "jer": 0.5207,
+      "ref_speech_s": 2965.58
+     },
+     "annotation@0.0": {
+      "der": 0.6502,
+      "fa": 0.0133,
+      "miss": 0.6219,
+      "conf": 0.0149,
+      "jer": 0.6438,
+      "ref_speech_s": 8725.67
+     },
+     "annotation@0.25": {
+      "der": 0.6025,
+      "fa": 0.0152,
+      "miss": 0.5757,
+      "conf": 0.0117,
+      "jer": 0.5946,
+      "ref_speech_s": 4864.47
+     }
+    }
+   ]
+  },
+  "uem_span:silero_x2": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.3164,
+     "fa": 0.0853,
+     "miss": 0.1865,
+     "conf": 0.0446,
+     "jer": 0.3256,
+     "ref_speech_h": 4.5301
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1902,
+     "fa": 0.0538,
+     "miss": 0.1053,
+     "conf": 0.0311,
+     "jer": 0.209,
+     "ref_speech_h": 2.054
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.4162,
+     "fa": 0.0114,
+     "miss": 0.3811,
+     "conf": 0.0238,
+     "jer": 0.425,
+     "ref_speech_h": 6.4594
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.3507,
+     "fa": 0.0126,
+     "miss": 0.3168,
+     "conf": 0.0213,
+     "jer": 0.3565,
+     "ref_speech_h": 3.8856
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.298,
+      "fa": 0.079,
+      "miss": 0.1874,
+      "conf": 0.0316,
+      "jer": 0.3011,
+      "ref_speech_s": 9955.08
+     },
+     "primary@0.25": {
+      "der": 0.1782,
+      "fa": 0.0419,
+      "miss": 0.118,
+      "conf": 0.0183,
+      "jer": 0.1937,
+      "ref_speech_s": 4474.22
+     },
+     "annotation@0.0": {
+      "der": 0.4176,
+      "fa": 0.0061,
+      "miss": 0.4,
+      "conf": 0.0116,
+      "jer": 0.4239,
+      "ref_speech_s": 14645.072
+     },
+     "annotation@0.25": {
+      "der": 0.3622,
+      "fa": 0.007,
+      "miss": 0.3446,
+      "conf": 0.0106,
+      "jer": 0.3693,
+      "ref_speech_s": 9194.59
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.3454,
+      "fa": 0.0952,
+      "miss": 0.1852,
+      "conf": 0.0649,
+      "jer": 0.3501,
+      "ref_speech_s": 6353.4
+     },
+     "primary@0.25": {
+      "der": 0.2085,
+      "fa": 0.072,
+      "miss": 0.0858,
+      "conf": 0.0507,
+      "jer": 0.2242,
+      "ref_speech_s": 2920.26
+     },
+     "annotation@0.0": {
+      "der": 0.4138,
+      "fa": 0.0204,
+      "miss": 0.3488,
+      "conf": 0.0445,
+      "jer": 0.4262,
+      "ref_speech_s": 8608.842
+     },
+     "annotation@0.25": {
+      "der": 0.3287,
+      "fa": 0.0233,
+      "miss": 0.2636,
+      "conf": 0.0418,
+      "jer": 0.3437,
+      "ref_speech_s": 4793.742
+     }
+    }
+   ]
+  },
+  "uem_speech:silero_x2": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.2913,
+     "fa": 0.0867,
+     "miss": 0.1715,
+     "conf": 0.0331,
+     "jer": 0.291,
+     "ref_speech_h": 3.7522
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1703,
+     "fa": 0.0517,
+     "miss": 0.1005,
+     "conf": 0.0182,
+     "jer": 0.1768,
+     "ref_speech_h": 1.7044
+    },
+    "annotation@0.0": {
+     "collar": 0.0,
+     "der": 0.3957,
+     "fa": 0.0106,
+     "miss": 0.3702,
+     "conf": 0.015,
+     "jer": 0.3877,
+     "ref_speech_h": 5.3627
+    },
+    "annotation@0.25": {
+     "collar": 0.25,
+     "der": 0.3371,
+     "fa": 0.0117,
+     "miss": 0.3128,
+     "conf": 0.0126,
+     "jer": 0.3233,
+     "ref_speech_h": 3.2861
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "chime6__S02",
+     "primary@0.0": {
+      "der": 0.2947,
+      "fa": 0.0779,
+      "miss": 0.1854,
+      "conf": 0.0313,
+      "jer": 0.2987,
+      "ref_speech_s": 9869.048
+     },
+     "primary@0.25": {
+      "der": 0.1754,
+      "fa": 0.0403,
+      "miss": 0.1171,
+      "conf": 0.018,
+      "jer": 0.1916,
+      "ref_speech_s": 4442.868
+     },
+     "annotation@0.0": {
+      "der": 0.4119,
+      "fa": 0.0059,
+      "miss": 0.3947,
+      "conf": 0.0113,
+      "jer": 0.4189,
+      "ref_speech_s": 14411.032
+     },
+     "annotation@0.25": {
+      "der": 0.3561,
+      "fa": 0.0068,
+      "miss": 0.3389,
+      "conf": 0.0104,
+      "jer": 0.3641,
+      "ref_speech_s": 9042.152
+     }
+    },
+    {
+     "session_id": "chime6__S09",
+     "primary@0.0": {
+      "der": 0.2822,
+      "fa": 0.1105,
+      "miss": 0.1337,
+      "conf": 0.038,
+      "jer": 0.2832,
+      "ref_speech_s": 3638.882
+     },
+     "primary@0.25": {
+      "der": 0.1568,
+      "fa": 0.0814,
+      "miss": 0.0569,
+      "conf": 0.0185,
+      "jer": 0.162,
+      "ref_speech_s": 1693.106
+     },
+     "annotation@0.0": {
+      "der": 0.3482,
+      "fa": 0.0243,
+      "miss": 0.2981,
+      "conf": 0.0258,
+      "jer": 0.3566,
+      "ref_speech_s": 4894.73
+     },
+     "annotation@0.25": {
+      "der": 0.2754,
+      "fa": 0.0275,
+      "miss": 0.2283,
+      "conf": 0.0197,
+      "jer": 0.2825,
+      "ref_speech_s": 2787.972
+     }
+    }
+   ]
+  }
+ },
+ "hyp_raster_roundtrip": true,
+ "uem_hours": {
+  "official": 4.433,
+  "uem_span": 4.394,
+  "uem_speech": 3.237
+ }
+}

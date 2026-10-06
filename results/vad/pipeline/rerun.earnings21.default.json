@@ -1,0 +1,263 @@
+{
+ "tag": "earnings21.default",
+ "sessions": [
+  "earnings21__4366522",
+  "earnings21__4383161"
+ ],
+ "hours": 1.443,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1261,
+     "fa": 0.0837,
+     "miss": 0.0058,
+     "conf": 0.0367,
+     "jer": 0.3274,
+     "ref_speech_h": 1.2026
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0461,
+     "fa": 0.0077,
+     "miss": 0.0011,
+     "conf": 0.0373,
+     "jer": 0.2909,
+     "ref_speech_h": 1.0087
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "earnings21__4366522",
+     "primary@0.0": {
+      "der": 0.0749,
+      "fa": 0.0661,
+      "miss": 0.008,
+      "conf": 0.0008,
+      "jer": 0.0623,
+      "ref_speech_s": 1509.294
+     },
+     "primary@0.25": {
+      "der": 0.0109,
+      "fa": 0.0084,
+      "miss": 0.0022,
+      "conf": 0.0003,
+      "jer": 0.0138,
+      "ref_speech_s": 1269.746
+     }
+    },
+    {
+     "session_id": "earnings21__4383161",
+     "primary@0.0": {
+      "der": 0.1536,
+      "fa": 0.0932,
+      "miss": 0.0046,
+      "conf": 0.0559,
+      "jer": 0.4479,
+      "ref_speech_s": 2820.087
+     },
+     "primary@0.25": {
+      "der": 0.065,
+      "fa": 0.0073,
+      "miss": 0.0006,
+      "conf": 0.0572,
+      "jer": 0.4168,
+      "ref_speech_s": 2361.585
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1261,
+     "fa": 0.0837,
+     "miss": 0.0058,
+     "conf": 0.0367,
+     "jer": 0.3274,
+     "ref_speech_h": 1.2026
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0461,
+     "fa": 0.0077,
+     "miss": 0.0011,
+     "conf": 0.0373,
+     "jer": 0.2909,
+     "ref_speech_h": 1.0087
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "earnings21__4366522",
+     "primary@0.0": {
+      "der": 0.0749,
+      "fa": 0.0661,
+      "miss": 0.008,
+      "conf": 0.0008,
+      "jer": 0.0623,
+      "ref_speech_s": 1509.294
+     },
+     "primary@0.25": {
+      "der": 0.0109,
+      "fa": 0.0084,
+      "miss": 0.0022,
+      "conf": 0.0003,
+      "jer": 0.0138,
+      "ref_speech_s": 1269.746
+     }
+    },
+    {
+     "session_id": "earnings21__4383161",
+     "primary@0.0": {
+      "der": 0.1536,
+      "fa": 0.0932,
+      "miss": 0.0046,
+      "conf": 0.0559,
+      "jer": 0.4479,
+      "ref_speech_s": 2820.087
+     },
+     "primary@0.25": {
+      "der": 0.065,
+      "fa": 0.0073,
+      "miss": 0.0006,
+      "conf": 0.0572,
+      "jer": 0.4168,
+      "ref_speech_s": 2361.585
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1199,
+     "fa": 0.0805,
+     "miss": 0.012,
+     "conf": 0.0274,
+     "jer": 0.3059,
+     "ref_speech_h": 1.2026
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0414,
+     "fa": 0.0062,
+     "miss": 0.0068,
+     "conf": 0.0284,
+     "jer": 0.2696,
+     "ref_speech_h": 1.0087
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "earnings21__4366522",
+     "primary@0.0": {
+      "der": 0.0649,
+      "fa": 0.0548,
+      "miss": 0.0097,
+      "conf": 0.0004,
+      "jer": 0.0566,
+      "ref_speech_s": 1509.294
+     },
+     "primary@0.25": {
+      "der": 0.0067,
+      "fa": 0.0041,
+      "miss": 0.0025,
+      "conf": 0.0001,
+      "jer": 0.0103,
+      "ref_speech_s": 1269.746
+     }
+    },
+    {
+     "session_id": "earnings21__4383161",
+     "primary@0.0": {
+      "der": 0.1493,
+      "fa": 0.0943,
+      "miss": 0.0132,
+      "conf": 0.0419,
+      "jer": 0.4193,
+      "ref_speech_s": 2820.087
+     },
+     "primary@0.25": {
+      "der": 0.0601,
+      "fa": 0.0073,
+      "miss": 0.0091,
+      "conf": 0.0436,
+      "jer": 0.3874,
+      "ref_speech_s": 2361.585
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.121,
+     "fa": 0.0658,
+     "miss": 0.0062,
+     "conf": 0.049,
+     "jer": 0.2927,
+     "ref_speech_h": 1.2026
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0532,
+     "fa": 0.0022,
+     "miss": 0.0009,
+     "conf": 0.0501,
+     "jer": 0.2601,
+     "ref_speech_h": 1.0087
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "earnings21__4366522",
+     "primary@0.0": {
+      "der": 0.0781,
+      "fa": 0.0479,
+      "miss": 0.0075,
+      "conf": 0.0227,
+      "jer": 0.1422,
+      "ref_speech_s": 1509.294
+     },
+     "primary@0.25": {
+      "der": 0.0236,
+      "fa": 0.0006,
+      "miss": 0.0012,
+      "conf": 0.0217,
+      "jer": 0.0997,
+      "ref_speech_s": 1269.746
+     }
+    },
+    {
+     "session_id": "earnings21__4383161",
+     "primary@0.0": {
+      "der": 0.1439,
+      "fa": 0.0754,
+      "miss": 0.0055,
+      "conf": 0.0631,
+      "jer": 0.361,
+      "ref_speech_s": 2820.087
+     },
+     "primary@0.25": {
+      "der": 0.0692,
+      "fa": 0.003,
+      "miss": 0.0008,
+      "conf": 0.0654,
+      "jer": 0.333,
+      "ref_speech_s": 2361.585
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.443,
+  "trim": 1.388,
+  "zero": 1.443
+ }
+}

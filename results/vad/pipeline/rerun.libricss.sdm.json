@@ -1,0 +1,571 @@
+{
+ "tag": "libricss.sdm",
+ "sessions": [
+  "libricss__0L_session2",
+  "libricss__0S_session1",
+  "libricss__0S_session6",
+  "libricss__0S_session7",
+  "libricss__OV20_session1",
+  "libricss__OV40_session6"
+ ],
+ "hours": 1.008,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.135,
+     "fa": 0.0051,
+     "miss": 0.0853,
+     "conf": 0.0446,
+     "jer": 0.173,
+     "ref_speech_h": 0.9999
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1226,
+     "fa": 0.0,
+     "miss": 0.0788,
+     "conf": 0.0438,
+     "jer": 0.1615,
+     "ref_speech_h": 0.8998
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "libricss__0L_session2",
+     "primary@0.0": {
+      "der": 0.1075,
+      "fa": 0.0027,
+      "miss": 0.0914,
+      "conf": 0.0135,
+      "jer": 0.1316,
+      "ref_speech_s": 420.17
+     },
+     "primary@0.25": {
+      "der": 0.0983,
+      "fa": 0.0,
+      "miss": 0.0859,
+      "conf": 0.0123,
+      "jer": 0.1228,
+      "ref_speech_s": 388.67
+     }
+    },
+    {
+     "session_id": "libricss__0S_session1",
+     "primary@0.0": {
+      "der": 0.1068,
+      "fa": 0.0055,
+      "miss": 0.0875,
+      "conf": 0.0138,
+      "jer": 0.1321,
+      "ref_speech_s": 594.88
+     },
+     "primary@0.25": {
+      "der": 0.0958,
+      "fa": 0.0,
+      "miss": 0.0821,
+      "conf": 0.0137,
+      "jer": 0.1223,
+      "ref_speech_s": 552.88
+     }
+    },
+    {
+     "session_id": "libricss__0S_session6",
+     "primary@0.0": {
+      "der": 0.202,
+      "fa": 0.0066,
+      "miss": 0.0869,
+      "conf": 0.1085,
+      "jer": 0.2476,
+      "ref_speech_s": 589.77
+     },
+     "primary@0.25": {
+      "der": 0.1893,
+      "fa": 0.0002,
+      "miss": 0.0801,
+      "conf": 0.1091,
+      "jer": 0.2383,
+      "ref_speech_s": 544.27
+     }
+    },
+    {
+     "session_id": "libricss__0S_session7",
+     "primary@0.0": {
+      "der": 0.1571,
+      "fa": 0.0057,
+      "miss": 0.0689,
+      "conf": 0.0825,
+      "jer": 0.2316,
+      "ref_speech_s": 591.48
+     },
+     "primary@0.25": {
+      "der": 0.1403,
+      "fa": 0.0,
+      "miss": 0.0616,
+      "conf": 0.0787,
+      "jer": 0.2198,
+      "ref_speech_s": 556.98
+     }
+    },
+    {
+     "session_id": "libricss__OV20_session1",
+     "primary@0.0": {
+      "der": 0.1138,
+      "fa": 0.0057,
+      "miss": 0.0853,
+      "conf": 0.0228,
+      "jer": 0.1463,
+      "ref_speech_s": 654.3
+     },
+     "primary@0.25": {
+      "der": 0.098,
+      "fa": 0.0,
+      "miss": 0.0763,
+      "conf": 0.0217,
+      "jer": 0.1308,
+      "ref_speech_s": 547.986
+     }
+    },
+    {
+     "session_id": "libricss__OV40_session6",
+     "primary@0.0": {
+      "der": 0.1212,
+      "fa": 0.004,
+      "miss": 0.092,
+      "conf": 0.0252,
+      "jer": 0.1484,
+      "ref_speech_s": 748.89
+     },
+     "primary@0.25": {
+      "der": 0.1096,
+      "fa": 0.0,
+      "miss": 0.0876,
+      "conf": 0.022,
+      "jer": 0.1351,
+      "ref_speech_s": 648.605
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.135,
+     "fa": 0.0051,
+     "miss": 0.0853,
+     "conf": 0.0446,
+     "jer": 0.173,
+     "ref_speech_h": 0.9999
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1226,
+     "fa": 0.0,
+     "miss": 0.0788,
+     "conf": 0.0438,
+     "jer": 0.1615,
+     "ref_speech_h": 0.8998
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "libricss__0L_session2",
+     "primary@0.0": {
+      "der": 0.1075,
+      "fa": 0.0027,
+      "miss": 0.0914,
+      "conf": 0.0135,
+      "jer": 0.1316,
+      "ref_speech_s": 420.17
+     },
+     "primary@0.25": {
+      "der": 0.0983,
+      "fa": 0.0,
+      "miss": 0.0859,
+      "conf": 0.0123,
+      "jer": 0.1228,
+      "ref_speech_s": 388.67
+     }
+    },
+    {
+     "session_id": "libricss__0S_session1",
+     "primary@0.0": {
+      "der": 0.1068,
+      "fa": 0.0055,
+      "miss": 0.0875,
+      "conf": 0.0138,
+      "jer": 0.1321,
+      "ref_speech_s": 594.88
+     },
+     "primary@0.25": {
+      "der": 0.0958,
+      "fa": 0.0,
+      "miss": 0.0821,
+      "conf": 0.0137,
+      "jer": 0.1223,
+      "ref_speech_s": 552.88
+     }
+    },
+    {
+     "session_id": "libricss__0S_session6",
+     "primary@0.0": {
+      "der": 0.202,
+      "fa": 0.0066,
+      "miss": 0.0869,
+      "conf": 0.1085,
+      "jer": 0.2476,
+      "ref_speech_s": 589.77
+     },
+     "primary@0.25": {
+      "der": 0.1893,
+      "fa": 0.0002,
+      "miss": 0.0801,
+      "conf": 0.1091,
+      "jer": 0.2383,
+      "ref_speech_s": 544.27
+     }
+    },
+    {
+     "session_id": "libricss__0S_session7",
+     "primary@0.0": {
+      "der": 0.1571,
+      "fa": 0.0057,
+      "miss": 0.0689,
+      "conf": 0.0825,
+      "jer": 0.2316,
+      "ref_speech_s": 591.48
+     },
+     "primary@0.25": {
+      "der": 0.1403,
+      "fa": 0.0,
+      "miss": 0.0616,
+      "conf": 0.0787,
+      "jer": 0.2198,
+      "ref_speech_s": 556.98
+     }
+    },
+    {
+     "session_id": "libricss__OV20_session1",
+     "primary@0.0": {
+      "der": 0.1138,
+      "fa": 0.0057,
+      "miss": 0.0853,
+      "conf": 0.0228,
+      "jer": 0.1463,
+      "ref_speech_s": 654.3
+     },
+     "primary@0.25": {
+      "der": 0.098,
+      "fa": 0.0,
+      "miss": 0.0763,
+      "conf": 0.0217,
+      "jer": 0.1308,
+      "ref_speech_s": 547.986
+     }
+    },
+    {
+     "session_id": "libricss__OV40_session6",
+     "primary@0.0": {
+      "der": 0.1212,
+      "fa": 0.004,
+      "miss": 0.092,
+      "conf": 0.0252,
+      "jer": 0.1484,
+      "ref_speech_s": 748.89
+     },
+     "primary@0.25": {
+      "der": 0.1096,
+      "fa": 0.0,
+      "miss": 0.0876,
+      "conf": 0.022,
+      "jer": 0.1351,
+      "ref_speech_s": 648.605
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1525,
+     "fa": 0.0052,
+     "miss": 0.1087,
+     "conf": 0.0386,
+     "jer": 0.2071,
+     "ref_speech_h": 0.9999
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1403,
+     "fa": 0.0002,
+     "miss": 0.102,
+     "conf": 0.038,
+     "jer": 0.1953,
+     "ref_speech_h": 0.8998
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "libricss__0L_session2",
+     "primary@0.0": {
+      "der": 0.1808,
+      "fa": 0.0036,
+      "miss": 0.1243,
+      "conf": 0.053,
+      "jer": 0.2532,
+      "ref_speech_s": 420.17
+     },
+     "primary@0.25": {
+      "der": 0.1667,
+      "fa": 0.0008,
+      "miss": 0.1138,
+      "conf": 0.0521,
+      "jer": 0.245,
+      "ref_speech_s": 388.67
+     }
+    },
+    {
+     "session_id": "libricss__0S_session1",
+     "primary@0.0": {
+      "der": 0.1589,
+      "fa": 0.0055,
+      "miss": 0.1221,
+      "conf": 0.0313,
+      "jer": 0.2181,
+      "ref_speech_s": 594.88
+     },
+     "primary@0.25": {
+      "der": 0.1457,
+      "fa": 0.0,
+      "miss": 0.1167,
+      "conf": 0.029,
+      "jer": 0.206,
+      "ref_speech_s": 552.88
+     }
+    },
+    {
+     "session_id": "libricss__0S_session6",
+     "primary@0.0": {
+      "der": 0.0991,
+      "fa": 0.0065,
+      "miss": 0.0787,
+      "conf": 0.0139,
+      "jer": 0.1076,
+      "ref_speech_s": 589.77
+     },
+     "primary@0.25": {
+      "der": 0.0845,
+      "fa": 0.0,
+      "miss": 0.0711,
+      "conf": 0.0134,
+      "jer": 0.0936,
+      "ref_speech_s": 544.27
+     }
+    },
+    {
+     "session_id": "libricss__0S_session7",
+     "primary@0.0": {
+      "der": 0.2143,
+      "fa": 0.0062,
+      "miss": 0.1422,
+      "conf": 0.0659,
+      "jer": 0.3319,
+      "ref_speech_s": 591.48
+     },
+     "primary@0.25": {
+      "der": 0.2013,
+      "fa": 0.0004,
+      "miss": 0.134,
+      "conf": 0.0669,
+      "jer": 0.3227,
+      "ref_speech_s": 556.98
+     }
+    },
+    {
+     "session_id": "libricss__OV20_session1",
+     "primary@0.0": {
+      "der": 0.121,
+      "fa": 0.0052,
+      "miss": 0.0976,
+      "conf": 0.0182,
+      "jer": 0.1493,
+      "ref_speech_s": 654.3
+     },
+     "primary@0.25": {
+      "der": 0.1029,
+      "fa": 0.0003,
+      "miss": 0.0869,
+      "conf": 0.0157,
+      "jer": 0.1289,
+      "ref_speech_s": 547.986
+     }
+    },
+    {
+     "session_id": "libricss__OV40_session6",
+     "primary@0.0": {
+      "der": 0.1522,
+      "fa": 0.004,
+      "miss": 0.0962,
+      "conf": 0.052,
+      "jer": 0.1825,
+      "ref_speech_s": 748.89
+     },
+     "primary@0.25": {
+      "der": 0.1458,
+      "fa": 0.0001,
+      "miss": 0.0936,
+      "conf": 0.0521,
+      "jer": 0.1757,
+      "ref_speech_s": 648.605
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1292,
+     "fa": 0.0053,
+     "miss": 0.1009,
+     "conf": 0.023,
+     "jer": 0.1681,
+     "ref_speech_h": 0.9999
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.1154,
+     "fa": 0.0006,
+     "miss": 0.0934,
+     "conf": 0.0214,
+     "jer": 0.1543,
+     "ref_speech_h": 0.8998
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "libricss__0L_session2",
+     "primary@0.0": {
+      "der": 0.1277,
+      "fa": 0.002,
+      "miss": 0.1172,
+      "conf": 0.0085,
+      "jer": 0.1522,
+      "ref_speech_s": 420.17
+     },
+     "primary@0.25": {
+      "der": 0.1151,
+      "fa": 0.0,
+      "miss": 0.1073,
+      "conf": 0.0079,
+      "jer": 0.141,
+      "ref_speech_s": 388.67
+     }
+    },
+    {
+     "session_id": "libricss__0S_session1",
+     "primary@0.0": {
+      "der": 0.156,
+      "fa": 0.0052,
+      "miss": 0.1205,
+      "conf": 0.0302,
+      "jer": 0.2318,
+      "ref_speech_s": 594.88
+     },
+     "primary@0.25": {
+      "der": 0.1421,
+      "fa": 0.0,
+      "miss": 0.1139,
+      "conf": 0.0283,
+      "jer": 0.2213,
+      "ref_speech_s": 552.88
+     }
+    },
+    {
+     "session_id": "libricss__0S_session6",
+     "primary@0.0": {
+      "der": 0.0997,
+      "fa": 0.0063,
+      "miss": 0.0933,
+      "conf": 0.0002,
+      "jer": 0.1005,
+      "ref_speech_s": 589.77
+     },
+     "primary@0.25": {
+      "der": 0.0835,
+      "fa": 0.0,
+      "miss": 0.0835,
+      "conf": 0.0,
+      "jer": 0.0851,
+      "ref_speech_s": 544.27
+     }
+    },
+    {
+     "session_id": "libricss__0S_session7",
+     "primary@0.0": {
+      "der": 0.1452,
+      "fa": 0.0047,
+      "miss": 0.1008,
+      "conf": 0.0396,
+      "jer": 0.2037,
+      "ref_speech_s": 591.48
+     },
+     "primary@0.25": {
+      "der": 0.1312,
+      "fa": 0.0,
+      "miss": 0.0912,
+      "conf": 0.0401,
+      "jer": 0.1911,
+      "ref_speech_s": 556.98
+     }
+    },
+    {
+     "session_id": "libricss__OV20_session1",
+     "primary@0.0": {
+      "der": 0.1107,
+      "fa": 0.0056,
+      "miss": 0.0806,
+      "conf": 0.0246,
+      "jer": 0.1478,
+      "ref_speech_s": 654.3
+     },
+     "primary@0.25": {
+      "der": 0.0945,
+      "fa": 0.0001,
+      "miss": 0.0723,
+      "conf": 0.022,
+      "jer": 0.1287,
+      "ref_speech_s": 547.986
+     }
+    },
+    {
+     "session_id": "libricss__OV40_session6",
+     "primary@0.0": {
+      "der": 0.1357,
+      "fa": 0.0067,
+      "miss": 0.1001,
+      "conf": 0.0289,
+      "jer": 0.1725,
+      "ref_speech_s": 748.89
+     },
+     "primary@0.25": {
+      "der": 0.1234,
+      "fa": 0.0029,
+      "miss": 0.0956,
+      "conf": 0.0249,
+      "jer": 0.1585,
+      "ref_speech_s": 648.605
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.008,
+  "trim": 0.944,
+  "zero": 1.008
+ }
+}

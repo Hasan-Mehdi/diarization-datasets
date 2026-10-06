@@ -1,0 +1,863 @@
+{
+ "tag": "ami.sdm",
+ "sessions": [
+  "ami__EN2002b",
+  "ami__TS3003c"
+ ],
+ "hours": 1.21,
+ "variants": {
+  "baseline(cached)": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1127,
+     "fa": 0.0487,
+     "miss": 0.0554,
+     "conf": 0.0086,
+     "jer": 0.115,
+     "ref_speech_h": 0.7734
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0502,
+     "fa": 0.0281,
+     "miss": 0.0187,
+     "conf": 0.0034,
+     "jer": 0.0555,
+     "ref_speech_h": 0.4158
+    },
+    "only_words@0.0": {
+     "collar": 0.0,
+     "der": 0.3105,
+     "fa": 0.0131,
+     "miss": 0.2924,
+     "conf": 0.005,
+     "jer": 0.3099,
+     "ref_speech_h": 1.066
+    },
+    "only_words@0.25": {
+     "collar": 0.25,
+     "der": 0.2967,
+     "fa": 0.0077,
+     "miss": 0.2872,
+     "conf": 0.0019,
+     "jer": 0.2948,
+     "ref_speech_h": 0.845
+    },
+    "segments@0.0": {
+     "collar": 0.0,
+     "der": 0.3614,
+     "fa": 0.0038,
+     "miss": 0.3547,
+     "conf": 0.0029,
+     "jer": 0.3669,
+     "ref_speech_h": 1.1835
+    },
+    "segments@0.25": {
+     "collar": 0.25,
+     "der": 0.3132,
+     "fa": 0.0039,
+     "miss": 0.3078,
+     "conf": 0.0014,
+     "jer": 0.3184,
+     "ref_speech_h": 0.8934
+    },
+    "word_and_vocalsounds@0.0": {
+     "collar": 0.0,
+     "der": 0.326,
+     "fa": 0.0109,
+     "miss": 0.3095,
+     "conf": 0.0056,
+     "jer": 0.3287,
+     "ref_speech_h": 1.0955
+    },
+    "word_and_vocalsounds@0.25": {
+     "collar": 0.25,
+     "der": 0.3048,
+     "fa": 0.0061,
+     "miss": 0.2964,
+     "conf": 0.0023,
+     "jer": 0.3064,
+     "ref_speech_h": 0.847
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ami__EN2002b",
+     "primary@0.0": {
+      "der": 0.151,
+      "fa": 0.0652,
+      "miss": 0.0719,
+      "conf": 0.0139,
+      "jer": 0.1615,
+      "ref_speech_s": 1434.72
+     },
+     "primary@0.25": {
+      "der": 0.0835,
+      "fa": 0.0472,
+      "miss": 0.0291,
+      "conf": 0.0073,
+      "jer": 0.0933,
+      "ref_speech_s": 693.031
+     },
+     "only_words@0.0": {
+      "der": 0.3128,
+      "fa": 0.0191,
+      "miss": 0.2858,
+      "conf": 0.0079,
+      "jer": 0.3177,
+      "ref_speech_s": 1943.44
+     },
+     "only_words@0.25": {
+      "der": 0.2972,
+      "fa": 0.0121,
+      "miss": 0.2817,
+      "conf": 0.0035,
+      "jer": 0.2993,
+      "ref_speech_s": 1420.77
+     },
+     "segments@0.0": {
+      "der": 0.3602,
+      "fa": 0.0057,
+      "miss": 0.3501,
+      "conf": 0.0045,
+      "jer": 0.3725,
+      "ref_speech_s": 2173.778
+     },
+     "segments@0.25": {
+      "der": 0.3181,
+      "fa": 0.006,
+      "miss": 0.31,
+      "conf": 0.0022,
+      "jer": 0.3291,
+      "ref_speech_s": 1493.845
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.3327,
+      "fa": 0.0152,
+      "miss": 0.3086,
+      "conf": 0.0089,
+      "jer": 0.3419,
+      "ref_speech_s": 2016.903
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3077,
+      "fa": 0.0094,
+      "miss": 0.2939,
+      "conf": 0.0044,
+      "jer": 0.3146,
+      "ref_speech_s": 1427.223
+     }
+    },
+    {
+     "session_id": "ami__TS3003c",
+     "primary@0.0": {
+      "der": 0.072,
+      "fa": 0.0313,
+      "miss": 0.0378,
+      "conf": 0.0029,
+      "jer": 0.0686,
+      "ref_speech_s": 1349.562
+     },
+     "primary@0.25": {
+      "der": 0.0216,
+      "fa": 0.0116,
+      "miss": 0.0098,
+      "conf": 0.0001,
+      "jer": 0.0177,
+      "ref_speech_s": 803.917
+     },
+     "only_words@0.0": {
+      "der": 0.308,
+      "fa": 0.0069,
+      "miss": 0.2991,
+      "conf": 0.002,
+      "jer": 0.3021,
+      "ref_speech_s": 1894.25
+     },
+     "only_words@0.25": {
+      "der": 0.2963,
+      "fa": 0.0039,
+      "miss": 0.2919,
+      "conf": 0.0004,
+      "jer": 0.2903,
+      "ref_speech_s": 1621.13
+     },
+     "segments@0.0": {
+      "der": 0.3627,
+      "fa": 0.002,
+      "miss": 0.3594,
+      "conf": 0.0013,
+      "jer": 0.3612,
+      "ref_speech_s": 2086.646
+     },
+     "segments@0.25": {
+      "der": 0.3089,
+      "fa": 0.0021,
+      "miss": 0.306,
+      "conf": 0.0007,
+      "jer": 0.3077,
+      "ref_speech_s": 1722.572
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.319,
+      "fa": 0.0063,
+      "miss": 0.3105,
+      "conf": 0.0021,
+      "jer": 0.3156,
+      "ref_speech_s": 1926.74
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3023,
+      "fa": 0.0033,
+      "miss": 0.2986,
+      "conf": 0.0004,
+      "jer": 0.2983,
+      "ref_speech_s": 1621.799
+     }
+    }
+   ]
+  },
+  "none": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1127,
+     "fa": 0.0487,
+     "miss": 0.0554,
+     "conf": 0.0086,
+     "jer": 0.115,
+     "ref_speech_h": 0.7734
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0502,
+     "fa": 0.0281,
+     "miss": 0.0187,
+     "conf": 0.0034,
+     "jer": 0.0555,
+     "ref_speech_h": 0.4158
+    },
+    "only_words@0.0": {
+     "collar": 0.0,
+     "der": 0.3105,
+     "fa": 0.0131,
+     "miss": 0.2924,
+     "conf": 0.005,
+     "jer": 0.3099,
+     "ref_speech_h": 1.066
+    },
+    "only_words@0.25": {
+     "collar": 0.25,
+     "der": 0.2967,
+     "fa": 0.0077,
+     "miss": 0.2872,
+     "conf": 0.0019,
+     "jer": 0.2948,
+     "ref_speech_h": 0.845
+    },
+    "segments@0.0": {
+     "collar": 0.0,
+     "der": 0.3614,
+     "fa": 0.0038,
+     "miss": 0.3547,
+     "conf": 0.0029,
+     "jer": 0.3669,
+     "ref_speech_h": 1.1835
+    },
+    "segments@0.25": {
+     "collar": 0.25,
+     "der": 0.3132,
+     "fa": 0.0039,
+     "miss": 0.3078,
+     "conf": 0.0014,
+     "jer": 0.3184,
+     "ref_speech_h": 0.8934
+    },
+    "word_and_vocalsounds@0.0": {
+     "collar": 0.0,
+     "der": 0.326,
+     "fa": 0.0109,
+     "miss": 0.3095,
+     "conf": 0.0056,
+     "jer": 0.3287,
+     "ref_speech_h": 1.0955
+    },
+    "word_and_vocalsounds@0.25": {
+     "collar": 0.25,
+     "der": 0.3048,
+     "fa": 0.0061,
+     "miss": 0.2964,
+     "conf": 0.0023,
+     "jer": 0.3064,
+     "ref_speech_h": 0.847
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ami__EN2002b",
+     "primary@0.0": {
+      "der": 0.151,
+      "fa": 0.0652,
+      "miss": 0.0719,
+      "conf": 0.0139,
+      "jer": 0.1615,
+      "ref_speech_s": 1434.72
+     },
+     "primary@0.25": {
+      "der": 0.0835,
+      "fa": 0.0472,
+      "miss": 0.0291,
+      "conf": 0.0073,
+      "jer": 0.0933,
+      "ref_speech_s": 693.031
+     },
+     "only_words@0.0": {
+      "der": 0.3128,
+      "fa": 0.0191,
+      "miss": 0.2858,
+      "conf": 0.0079,
+      "jer": 0.3177,
+      "ref_speech_s": 1943.44
+     },
+     "only_words@0.25": {
+      "der": 0.2972,
+      "fa": 0.0121,
+      "miss": 0.2817,
+      "conf": 0.0035,
+      "jer": 0.2993,
+      "ref_speech_s": 1420.77
+     },
+     "segments@0.0": {
+      "der": 0.3602,
+      "fa": 0.0057,
+      "miss": 0.3501,
+      "conf": 0.0045,
+      "jer": 0.3725,
+      "ref_speech_s": 2173.778
+     },
+     "segments@0.25": {
+      "der": 0.3181,
+      "fa": 0.006,
+      "miss": 0.31,
+      "conf": 0.0022,
+      "jer": 0.3291,
+      "ref_speech_s": 1493.845
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.3327,
+      "fa": 0.0152,
+      "miss": 0.3086,
+      "conf": 0.0089,
+      "jer": 0.3419,
+      "ref_speech_s": 2016.903
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3077,
+      "fa": 0.0094,
+      "miss": 0.2939,
+      "conf": 0.0044,
+      "jer": 0.3146,
+      "ref_speech_s": 1427.223
+     }
+    },
+    {
+     "session_id": "ami__TS3003c",
+     "primary@0.0": {
+      "der": 0.072,
+      "fa": 0.0313,
+      "miss": 0.0378,
+      "conf": 0.0029,
+      "jer": 0.0686,
+      "ref_speech_s": 1349.562
+     },
+     "primary@0.25": {
+      "der": 0.0216,
+      "fa": 0.0116,
+      "miss": 0.0098,
+      "conf": 0.0001,
+      "jer": 0.0177,
+      "ref_speech_s": 803.917
+     },
+     "only_words@0.0": {
+      "der": 0.308,
+      "fa": 0.0069,
+      "miss": 0.2991,
+      "conf": 0.002,
+      "jer": 0.3021,
+      "ref_speech_s": 1894.25
+     },
+     "only_words@0.25": {
+      "der": 0.2963,
+      "fa": 0.0039,
+      "miss": 0.2919,
+      "conf": 0.0004,
+      "jer": 0.2903,
+      "ref_speech_s": 1621.13
+     },
+     "segments@0.0": {
+      "der": 0.3627,
+      "fa": 0.002,
+      "miss": 0.3594,
+      "conf": 0.0013,
+      "jer": 0.3612,
+      "ref_speech_s": 2086.646
+     },
+     "segments@0.25": {
+      "der": 0.3089,
+      "fa": 0.0021,
+      "miss": 0.306,
+      "conf": 0.0007,
+      "jer": 0.3077,
+      "ref_speech_s": 1722.572
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.319,
+      "fa": 0.0063,
+      "miss": 0.3105,
+      "conf": 0.0021,
+      "jer": 0.3156,
+      "ref_speech_s": 1926.74
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3023,
+      "fa": 0.0033,
+      "miss": 0.2986,
+      "conf": 0.0004,
+      "jer": 0.2983,
+      "ref_speech_s": 1621.799
+     }
+    }
+   ]
+  },
+  "trim": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.145,
+     "fa": 0.0428,
+     "miss": 0.094,
+     "conf": 0.0082,
+     "jer": 0.144,
+     "ref_speech_h": 0.7734
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0693,
+     "fa": 0.0233,
+     "miss": 0.0424,
+     "conf": 0.0035,
+     "jer": 0.0711,
+     "ref_speech_h": 0.4158
+    },
+    "only_words@0.0": {
+     "collar": 0.0,
+     "der": 0.3389,
+     "fa": 0.011,
+     "miss": 0.3226,
+     "conf": 0.0054,
+     "jer": 0.3362,
+     "ref_speech_h": 1.066
+    },
+    "only_words@0.25": {
+     "collar": 0.25,
+     "der": 0.3209,
+     "fa": 0.006,
+     "miss": 0.3125,
+     "conf": 0.0024,
+     "jer": 0.3168,
+     "ref_speech_h": 0.845
+    },
+    "segments@0.0": {
+     "collar": 0.0,
+     "der": 0.3883,
+     "fa": 0.0029,
+     "miss": 0.3828,
+     "conf": 0.0026,
+     "jer": 0.3911,
+     "ref_speech_h": 1.1835
+    },
+    "segments@0.25": {
+     "collar": 0.25,
+     "der": 0.3407,
+     "fa": 0.0027,
+     "miss": 0.3364,
+     "conf": 0.0016,
+     "jer": 0.3431,
+     "ref_speech_h": 0.8934
+    },
+    "word_and_vocalsounds@0.0": {
+     "collar": 0.0,
+     "der": 0.3535,
+     "fa": 0.0089,
+     "miss": 0.339,
+     "conf": 0.0057,
+     "jer": 0.354,
+     "ref_speech_h": 1.0955
+    },
+    "word_and_vocalsounds@0.25": {
+     "collar": 0.25,
+     "der": 0.3288,
+     "fa": 0.0045,
+     "miss": 0.3217,
+     "conf": 0.0026,
+     "jer": 0.3279,
+     "ref_speech_h": 0.847
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ami__EN2002b",
+     "primary@0.0": {
+      "der": 0.1711,
+      "fa": 0.0574,
+      "miss": 0.1011,
+      "conf": 0.0125,
+      "jer": 0.1789,
+      "ref_speech_s": 1434.72
+     },
+     "primary@0.25": {
+      "der": 0.0881,
+      "fa": 0.04,
+      "miss": 0.0412,
+      "conf": 0.0068,
+      "jer": 0.0977,
+      "ref_speech_s": 693.031
+     },
+     "only_words@0.0": {
+      "der": 0.3352,
+      "fa": 0.0165,
+      "miss": 0.3105,
+      "conf": 0.0081,
+      "jer": 0.3382,
+      "ref_speech_s": 1943.44
+     },
+     "only_words@0.25": {
+      "der": 0.3156,
+      "fa": 0.0101,
+      "miss": 0.3013,
+      "conf": 0.0042,
+      "jer": 0.317,
+      "ref_speech_s": 1420.77
+     },
+     "segments@0.0": {
+      "der": 0.382,
+      "fa": 0.0048,
+      "miss": 0.3736,
+      "conf": 0.0036,
+      "jer": 0.3913,
+      "ref_speech_s": 2173.778
+     },
+     "segments@0.25": {
+      "der": 0.3381,
+      "fa": 0.0049,
+      "miss": 0.3312,
+      "conf": 0.002,
+      "jer": 0.3471,
+      "ref_speech_s": 1493.845
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.3539,
+      "fa": 0.0128,
+      "miss": 0.3325,
+      "conf": 0.0086,
+      "jer": 0.361,
+      "ref_speech_s": 2016.903
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3258,
+      "fa": 0.0075,
+      "miss": 0.3138,
+      "conf": 0.0045,
+      "jer": 0.3314,
+      "ref_speech_s": 1427.223
+     }
+    },
+    {
+     "session_id": "ami__TS3003c",
+     "primary@0.0": {
+      "der": 0.1172,
+      "fa": 0.0272,
+      "miss": 0.0863,
+      "conf": 0.0036,
+      "jer": 0.109,
+      "ref_speech_s": 1349.562
+     },
+     "primary@0.25": {
+      "der": 0.0531,
+      "fa": 0.0089,
+      "miss": 0.0435,
+      "conf": 0.0007,
+      "jer": 0.0446,
+      "ref_speech_s": 803.917
+     },
+     "only_words@0.0": {
+      "der": 0.3427,
+      "fa": 0.0053,
+      "miss": 0.3349,
+      "conf": 0.0025,
+      "jer": 0.3342,
+      "ref_speech_s": 1894.25
+     },
+     "only_words@0.25": {
+      "der": 0.3256,
+      "fa": 0.0024,
+      "miss": 0.3223,
+      "conf": 0.0008,
+      "jer": 0.3165,
+      "ref_speech_s": 1621.13
+     },
+     "segments@0.0": {
+      "der": 0.395,
+      "fa": 0.001,
+      "miss": 0.3924,
+      "conf": 0.0016,
+      "jer": 0.391,
+      "ref_speech_s": 2086.646
+     },
+     "segments@0.25": {
+      "der": 0.343,
+      "fa": 0.0008,
+      "miss": 0.3409,
+      "conf": 0.0013,
+      "jer": 0.339,
+      "ref_speech_s": 1722.572
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.3531,
+      "fa": 0.0048,
+      "miss": 0.3457,
+      "conf": 0.0026,
+      "jer": 0.3471,
+      "ref_speech_s": 1926.74
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3314,
+      "fa": 0.0019,
+      "miss": 0.3287,
+      "conf": 0.0008,
+      "jer": 0.3243,
+      "ref_speech_s": 1621.799
+     }
+    }
+   ]
+  },
+  "zero": {
+   "summary": {
+    "primary@0.0": {
+     "collar": 0.0,
+     "der": 0.1665,
+     "fa": 0.0529,
+     "miss": 0.1037,
+     "conf": 0.0099,
+     "jer": 0.1656,
+     "ref_speech_h": 0.7734
+    },
+    "primary@0.25": {
+     "collar": 0.25,
+     "der": 0.0835,
+     "fa": 0.0303,
+     "miss": 0.0489,
+     "conf": 0.0043,
+     "jer": 0.0898,
+     "ref_speech_h": 0.4158
+    },
+    "only_words@0.0": {
+     "collar": 0.0,
+     "der": 0.3438,
+     "fa": 0.0127,
+     "miss": 0.3241,
+     "conf": 0.007,
+     "jer": 0.3434,
+     "ref_speech_h": 1.066
+    },
+    "only_words@0.25": {
+     "collar": 0.25,
+     "der": 0.3246,
+     "fa": 0.0076,
+     "miss": 0.3135,
+     "conf": 0.0035,
+     "jer": 0.3222,
+     "ref_speech_h": 0.845
+    },
+    "segments@0.0": {
+     "collar": 0.0,
+     "der": 0.3899,
+     "fa": 0.0035,
+     "miss": 0.3832,
+     "conf": 0.0032,
+     "jer": 0.394,
+     "ref_speech_h": 1.1835
+    },
+    "segments@0.25": {
+     "collar": 0.25,
+     "der": 0.3427,
+     "fa": 0.0036,
+     "miss": 0.337,
+     "conf": 0.0021,
+     "jer": 0.3458,
+     "ref_speech_h": 0.8934
+    },
+    "word_and_vocalsounds@0.0": {
+     "collar": 0.0,
+     "der": 0.3558,
+     "fa": 0.0098,
+     "miss": 0.3396,
+     "conf": 0.0063,
+     "jer": 0.3575,
+     "ref_speech_h": 1.0955
+    },
+    "word_and_vocalsounds@0.25": {
+     "collar": 0.25,
+     "der": 0.3306,
+     "fa": 0.0052,
+     "miss": 0.3224,
+     "conf": 0.003,
+     "jer": 0.3301,
+     "ref_speech_h": 0.847
+    }
+   },
+   "per_session": [
+    {
+     "session_id": "ami__EN2002b",
+     "primary@0.0": {
+      "der": 0.1953,
+      "fa": 0.0709,
+      "miss": 0.1107,
+      "conf": 0.0137,
+      "jer": 0.205,
+      "ref_speech_s": 1434.72
+     },
+     "primary@0.25": {
+      "der": 0.1143,
+      "fa": 0.0562,
+      "miss": 0.0507,
+      "conf": 0.0074,
+      "jer": 0.1302,
+      "ref_speech_s": 693.031
+     },
+     "only_words@0.0": {
+      "der": 0.3395,
+      "fa": 0.0194,
+      "miss": 0.3106,
+      "conf": 0.0095,
+      "jer": 0.3448,
+      "ref_speech_s": 1943.44
+     },
+     "only_words@0.25": {
+      "der": 0.3189,
+      "fa": 0.0138,
+      "miss": 0.2996,
+      "conf": 0.0055,
+      "jer": 0.3226,
+      "ref_speech_s": 1420.77
+     },
+     "segments@0.0": {
+      "der": 0.3819,
+      "fa": 0.0061,
+      "miss": 0.3724,
+      "conf": 0.0034,
+      "jer": 0.3919,
+      "ref_speech_s": 2173.778
+     },
+     "segments@0.25": {
+      "der": 0.3389,
+      "fa": 0.0067,
+      "miss": 0.3305,
+      "conf": 0.0018,
+      "jer": 0.3482,
+      "ref_speech_s": 1493.845
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.3532,
+      "fa": 0.0141,
+      "miss": 0.3312,
+      "conf": 0.0079,
+      "jer": 0.3604,
+      "ref_speech_s": 2016.903
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3253,
+      "fa": 0.0093,
+      "miss": 0.3117,
+      "conf": 0.0042,
+      "jer": 0.3304,
+      "ref_speech_s": 1427.223
+     }
+    },
+    {
+     "session_id": "ami__TS3003c",
+     "primary@0.0": {
+      "der": 0.1359,
+      "fa": 0.0339,
+      "miss": 0.0963,
+      "conf": 0.0058,
+      "jer": 0.1262,
+      "ref_speech_s": 1349.562
+     },
+     "primary@0.25": {
+      "der": 0.057,
+      "fa": 0.008,
+      "miss": 0.0473,
+      "conf": 0.0017,
+      "jer": 0.0495,
+      "ref_speech_s": 803.917
+     },
+     "only_words@0.0": {
+      "der": 0.3482,
+      "fa": 0.0059,
+      "miss": 0.3378,
+      "conf": 0.0045,
+      "jer": 0.3419,
+      "ref_speech_s": 1894.25
+     },
+     "only_words@0.25": {
+      "der": 0.3296,
+      "fa": 0.0022,
+      "miss": 0.3257,
+      "conf": 0.0017,
+      "jer": 0.3219,
+      "ref_speech_s": 1621.13
+     },
+     "segments@0.0": {
+      "der": 0.3983,
+      "fa": 0.0009,
+      "miss": 0.3945,
+      "conf": 0.003,
+      "jer": 0.3961,
+      "ref_speech_s": 2086.646
+     },
+     "segments@0.25": {
+      "der": 0.3459,
+      "fa": 0.0008,
+      "miss": 0.3427,
+      "conf": 0.0024,
+      "jer": 0.3433,
+      "ref_speech_s": 1722.572
+     },
+     "word_and_vocalsounds@0.0": {
+      "der": 0.3585,
+      "fa": 0.0053,
+      "miss": 0.3485,
+      "conf": 0.0047,
+      "jer": 0.3547,
+      "ref_speech_s": 1926.74
+     },
+     "word_and_vocalsounds@0.25": {
+      "der": 0.3352,
+      "fa": 0.0015,
+      "miss": 0.3318,
+      "conf": 0.0019,
+      "jer": 0.3297,
+      "ref_speech_s": 1621.799
+     }
+    }
+   ]
+  }
+ },
+ "audio_hours": {
+  "none": 1.21,
+  "trim": 0.867,
+  "zero": 1.21
+ }
+}
