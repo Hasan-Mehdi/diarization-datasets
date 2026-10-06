@@ -11,6 +11,7 @@
   "raw_label_issue_totals": {},
   "sessions_with_raw_label_issues": 0,
   "vad": {
+   "backend": "energy",
    "ref_speech_h": 7.91,
    "vad_not_in_ref_frac": 0.0026,
    "ref_not_in_vad_frac": 0.0125,

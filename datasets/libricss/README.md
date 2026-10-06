@@ -57,6 +57,7 @@ Computed by `python -m diards stats libricss` from the normalized primary refere
 View `clean-mix`: 60 sessions, **0 errors**, 0 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.2% of reference speech; reference speech without energy = 1.5%. Most-flagged sessions: `libricss__0L_session8` (0.00), `libricss__0L_session2` (0.00), `libricss__0L_session5` (0.00), `libricss__0L_session3` (0.00), `libricss__0L_session4` (0.00)
 - full report: [`results/validation/validation.libricss.clean-mix.md`](../../results/validation/validation.libricss.clean-mix.md)
+- **Silero VAD x2 audit** (view `clean-mix`, from the [VAD study](../../docs/silero_vad_study.md)): 6.67% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.0% of reference speech.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

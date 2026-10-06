@@ -10,6 +10,8 @@ Annotations from ICSI_core_NXT.zip (v1.0, 2016):
     across pauses < 0.2 s (DIHARD-style rule); words without timing are skipped (their share is recorded in the
     manifest as extra.untimed_word_frac).
 Splits: the Kaldi/Lhotse partition (train 70 / dev 2 / test 3 meetings).
+UEM: the transcribed span +/- 1 s. Six meetings have talk outside it (Bed003: transcript ends at 3,499 s, audio at
+4,449 s; test meeting Bmr013: 67 s of pre-meeting talk before 92.5 s), found by the Silero VAD study.
 """
 from __future__ import annotations
 
@@ -56,7 +58,7 @@ META = DatasetMeta(
     gt_rating_reason=("All participants on headsets and fully transcribed (overlap and backchannels included); "
                       "segment boundaries are hand-placed but transcription-oriented (padding, merged pauses)."),
     choices=["Splits: Kaldi/Lhotse ICSI partition.", "Speaker ids: ICSI participant ids (e.g. me013), global.",
-             "UEM: whole meeting.", "Segments without any word (noise/breath/laugh only) are excluded."],
+             "UEM: transcribed span +/- 1 s.", "Segments without any word (noise/breath/laugh only) are excluded."],
     domain="meetings",
 )
 
@@ -143,7 +145,9 @@ def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
                 except Exception as exc:
                     print(f"  [icsi] {meeting}: sdm unavailable ({exc})")
             segs, word_segs, words, untimed = _parse_meeting(nxt, meeting)
+            lo, hi = min(g.start for g in segs), max(g.end for g in segs)
             w.add_session(meeting, split, segs, audio=audio, words=words, alt_refs={"words_gap0.2": word_segs},
+                          uem=[(max(0.0, lo - 1.0), hi + 1.0)],
                           extra={"untimed_word_frac": round(untimed, 4)})
             print(f"  [icsi] {split} {meeting} ok", flush=True)
     w.finalize([{"url": NXT_ZIP}, {"url": f"{BASE_URL}/ICSIsignals/"}])

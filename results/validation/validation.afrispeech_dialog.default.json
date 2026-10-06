@@ -4,11 +4,10 @@
   "view": "default",
   "sessions": 46,
   "errors": 0,
-  "warnings": 35,
+  "warnings": 30,
   "issue_counts": {
    "info:segments_under_50ms": 20,
-   "info:silence_over_30s": 5,
-   "warning:possible_unannotated_speech": 7,
+   "warning:possible_unannotated_speech": 2,
    "warning:segments_over_60s": 28
   },
   "raw_label_issue_totals": {
@@ -19,49 +18,50 @@
   },
   "sessions_with_raw_label_issues": 21,
   "vad": {
+   "backend": "energy",
    "ref_speech_h": 6.16,
-   "vad_not_in_ref_frac": 0.0278,
+   "vad_not_in_ref_frac": 0.0115,
    "ref_not_in_vad_frac": 0.0473,
    "worst_sessions": [
     [
-     "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
-     0.2569
-    ],
-    [
-     "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
-     0.2206
-    ],
-    [
-     "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
-     0.1212
-    ],
-    [
      "afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d",
-     0.1051
-    ],
-    [
-     "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
-     0.0896
-    ],
-    [
-     "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
-     0.0833
+     0.1015
     ],
     [
      "afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92",
      0.06
     ],
     [
-     "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
-     0.042
-    ],
-    [
      "afrispeech_dialog__eceb9468-7001-4ee0-9475-13486e5352ae",
      0.041
     ],
     [
+     "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
+     0.0403
+    ],
+    [
+     "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
+     0.0336
+    ],
+    [
+     "afrispeech_dialog__fd258274-0797-4cdd-b6ea-426ae9723bf7",
+     0.0289
+    ],
+    [
+     "afrispeech_dialog__818f0aa2-ce0f-4e82-96ee-d66e192a2fca",
+     0.0262
+    ],
+    [
+     "afrispeech_dialog__3e27c06c-8ba1-4511-88e6-c75b2d9d8839",
+     0.0257
+    ],
+    [
+     "afrispeech_dialog__d2f0bed6-f3e1-48a8-9fb2-ceb137670bc4",
+     0.0223
+    ],
+    [
      "afrispeech_dialog__cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d",
-     0.03
+     0.0215
     ]
    ]
   }
@@ -139,10 +139,10 @@
      "floor_db": -53.2,
      "threshold_db": -42.5,
      "p99_db": -17.5,
-     "vad_speech_s": 309.0,
+     "vad_speech_s": 308.6,
      "ref_speech_s": 364.9,
-     "vad_not_in_ref_s": 3.6,
-     "vad_not_in_ref_frac_of_ref": 0.0098,
+     "vad_not_in_ref_s": 3.2,
+     "vad_not_in_ref_frac_of_ref": 0.0087,
      "ref_not_in_vad_s": 10.9,
      "ref_not_in_vad_frac": 0.0298,
      "longest_vad_not_in_ref": [
@@ -151,7 +151,7 @@
        361.65
       ],
       [
-       0.57,
+       0.96,
        1.71
       ]
      ]
@@ -196,7 +196,7 @@
      "floor_db": -68.8,
      "threshold_db": -57.1,
      "p99_db": -29.9,
-     "vad_speech_s": 709.4,
+     "vad_speech_s": 709.1,
      "ref_speech_s": 825.0,
      "vad_not_in_ref_s": 12.4,
      "vad_not_in_ref_frac_of_ref": 0.0151,
@@ -285,17 +285,13 @@
      "floor_db": -46.9,
      "threshold_db": -36.0,
      "p99_db": -10.7,
-     "vad_speech_s": 348.1,
+     "vad_speech_s": 347.6,
      "ref_speech_s": 467.0,
-     "vad_not_in_ref_s": 1.1,
-     "vad_not_in_ref_frac_of_ref": 0.0022,
+     "vad_not_in_ref_s": 0.5,
+     "vad_not_in_ref_frac_of_ref": 0.0011,
      "ref_not_in_vad_s": 37.1,
      "ref_not_in_vad_frac": 0.0795,
      "longest_vad_not_in_ref": [
-      [
-       0.0,
-       0.53
-      ],
       [
        158.25,
        158.77
@@ -419,7 +415,7 @@
      "floor_db": -58.1,
      "threshold_db": -45.9,
      "p99_db": -17.6,
-     "vad_speech_s": 1012.5,
+     "vad_speech_s": 1012.2,
      "ref_speech_s": 1176.1,
      "vad_not_in_ref_s": 6.3,
      "vad_not_in_ref_frac_of_ref": 0.0053,
@@ -504,7 +500,7 @@
      "floor_db": -69.9,
      "threshold_db": -54.8,
      "p99_db": -19.7,
-     "vad_speech_s": 357.9,
+     "vad_speech_s": 357.4,
      "ref_speech_s": 370.9,
      "vad_not_in_ref_s": 9.5,
      "vad_not_in_ref_frac_of_ref": 0.0257,
@@ -537,7 +533,7 @@
       ],
       [
        400.31,
-       401.01
+       400.99
       ],
       [
        87.23,
@@ -576,10 +572,10 @@
      "floor_db": -50.2,
      "threshold_db": -41.1,
      "p99_db": -19.9,
-     "vad_speech_s": 343.2,
+     "vad_speech_s": 342.7,
      "ref_speech_s": 381.9,
-     "vad_not_in_ref_s": 3.6,
-     "vad_not_in_ref_frac_of_ref": 0.0093,
+     "vad_not_in_ref_s": 3.0,
+     "vad_not_in_ref_frac_of_ref": 0.0078,
      "ref_not_in_vad_s": 15.7,
      "ref_not_in_vad_frac": 0.041,
      "longest_vad_not_in_ref": [
@@ -590,10 +586,6 @@
       [
        0.03,
        0.74
-      ],
-      [
-       405.81,
-       406.4
       ],
       [
        132.25,
@@ -670,10 +662,10 @@
      "floor_db": -56.8,
      "threshold_db": -43.7,
      "p99_db": -13.1,
-     "vad_speech_s": 536.0,
+     "vad_speech_s": 535.0,
      "ref_speech_s": 560.1,
-     "vad_not_in_ref_s": 23.5,
-     "vad_not_in_ref_frac_of_ref": 0.042,
+     "vad_not_in_ref_s": 22.6,
+     "vad_not_in_ref_frac_of_ref": 0.0403,
      "ref_not_in_vad_s": 18.6,
      "ref_not_in_vad_frac": 0.0331,
      "longest_vad_not_in_ref": [
@@ -684,10 +676,6 @@
       [
        465.7,
        470.94
-      ],
-      [
-       0.0,
-       1.69
       ],
       [
        514.24,
@@ -704,6 +692,10 @@
       [
        382.85,
        383.71
+      ],
+      [
+       0.94,
+       1.69
       ],
       [
        420.2,
@@ -749,20 +741,16 @@
      "floor_db": -54.2,
      "threshold_db": -42.6,
      "p99_db": -15.5,
-     "vad_speech_s": 769.3,
+     "vad_speech_s": 767.5,
      "ref_speech_s": 896.9,
-     "vad_not_in_ref_s": 2.5,
-     "vad_not_in_ref_frac_of_ref": 0.0028,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0008,
      "ref_not_in_vad_s": 31.8,
      "ref_not_in_vad_frac": 0.0355,
      "longest_vad_not_in_ref": [
       [
        897.2,
-       898.54
-      ],
-      [
-       899.01,
-       900.17
+       897.95
       ]
      ]
     }
@@ -850,10 +838,10 @@
      "floor_db": -61.9,
      "threshold_db": -50.7,
      "p99_db": -24.5,
-     "vad_speech_s": 435.4,
+     "vad_speech_s": 435.1,
      "ref_speech_s": 527.0,
-     "vad_not_in_ref_s": 6.1,
-     "vad_not_in_ref_frac_of_ref": 0.0115,
+     "vad_not_in_ref_s": 5.8,
+     "vad_not_in_ref_frac_of_ref": 0.011,
      "ref_not_in_vad_s": 32.1,
      "ref_not_in_vad_frac": 0.0609,
      "longest_vad_not_in_ref": [
@@ -866,12 +854,12 @@
        474.79
       ],
       [
-       0.73,
-       1.75
-      ],
-      [
        534.29,
        535.09
+      ],
+      [
+       1.0,
+       1.75
       ],
       [
        536.13,
@@ -938,22 +926,6 @@
      "code": "segments_over_60s",
      "message": "4 segment(s) longer than 60 s (merged turns?)",
      "longest": 168.0
-    },
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       797.0,
-       885.5
-      ]
-     ]
-    },
-    {
-     "level": "warning",
-     "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 66 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 8.3% of reference speech"
     }
    ],
    "metrics": {
@@ -962,52 +934,16 @@
      "floor_db": -52.2,
      "threshold_db": -43.0,
      "p99_db": -21.6,
-     "vad_speech_s": 723.0,
+     "vad_speech_s": 656.6,
      "ref_speech_s": 797.0,
-     "vad_not_in_ref_s": 66.4,
-     "vad_not_in_ref_frac_of_ref": 0.0833,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0009,
      "ref_not_in_vad_s": 47.2,
      "ref_not_in_vad_frac": 0.0593,
      "longest_vad_not_in_ref": [
       [
-       829.94,
-       839.97
-      ],
-      [
-       862.56,
-       868.89
-      ],
-      [
-       815.15,
-       820.49
-      ],
-      [
-       809.4,
-       813.87
-      ],
-      [
-       846.46,
-       850.86
-      ],
-      [
-       853.82,
-       857.31
-      ],
-      [
-       825.08,
-       828.47
-      ],
-      [
-       869.85,
-       872.97
-      ],
-      [
        797.25,
-       800.15
-      ],
-      [
-       841.05,
-       843.89
+       798.0
       ]
      ]
     }
@@ -1153,10 +1089,10 @@
      "floor_db": -70.6,
      "threshold_db": -56.8,
      "p99_db": -24.8,
-     "vad_speech_s": 715.7,
+     "vad_speech_s": 714.8,
      "ref_speech_s": 787.0,
-     "vad_not_in_ref_s": 5.5,
-     "vad_not_in_ref_frac_of_ref": 0.007,
+     "vad_not_in_ref_s": 4.6,
+     "vad_not_in_ref_frac_of_ref": 0.0059,
      "ref_not_in_vad_s": 6.7,
      "ref_not_in_vad_frac": 0.0085,
      "longest_vad_not_in_ref": [
@@ -1175,10 +1111,6 @@
       [
        66.71,
        67.72
-      ],
-      [
-       0.0,
-       0.88
       ]
      ]
     }
@@ -1201,15 +1133,15 @@
      "floor_db": -72.7,
      "threshold_db": -57.6,
      "p99_db": -22.4,
-     "vad_speech_s": 739.9,
+     "vad_speech_s": 739.3,
      "ref_speech_s": 819.0,
-     "vad_not_in_ref_s": 1.5,
-     "vad_not_in_ref_frac_of_ref": 0.0019,
+     "vad_not_in_ref_s": 1.3,
+     "vad_not_in_ref_frac_of_ref": 0.0016,
      "ref_not_in_vad_s": 26.8,
      "ref_not_in_vad_frac": 0.0327,
      "longest_vad_not_in_ref": [
       [
-       0.74,
+       0.98,
        1.73
       ],
       [
@@ -1288,20 +1220,20 @@
      "floor_db": -69.2,
      "threshold_db": -55.1,
      "p99_db": -22.2,
-     "vad_speech_s": 399.9,
+     "vad_speech_s": 398.9,
      "ref_speech_s": 416.1,
-     "vad_not_in_ref_s": 3.4,
-     "vad_not_in_ref_frac_of_ref": 0.0083,
+     "vad_not_in_ref_s": 2.5,
+     "vad_not_in_ref_frac_of_ref": 0.006,
      "ref_not_in_vad_s": 4.4,
      "ref_not_in_vad_frac": 0.0105,
      "longest_vad_not_in_ref": [
       [
-       427.23,
-       428.92
-      ],
-      [
        0.0,
        0.75
+      ],
+      [
+       427.23,
+       427.98
       ],
       [
        98.25,
@@ -1454,22 +1386,6 @@
      "code": "segments_over_60s",
      "message": "3 segment(s) longer than 60 s (merged turns?)",
      "longest": 110.0
-    },
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       566.0,
-       622.4
-      ]
-     ]
-    },
-    {
-     "level": "warning",
-     "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 50 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 9.0% of reference speech"
     }
    ],
    "metrics": {
@@ -1478,52 +1394,20 @@
      "floor_db": -50.2,
      "threshold_db": -40.8,
      "p99_db": -19.1,
-     "vad_speech_s": 489.4,
+     "vad_speech_s": 440.8,
      "ref_speech_s": 553.7,
-     "vad_not_in_ref_s": 49.6,
-     "vad_not_in_ref_frac_of_ref": 0.0896,
+     "vad_not_in_ref_s": 1.0,
+     "vad_not_in_ref_frac_of_ref": 0.0018,
      "ref_not_in_vad_s": 37.9,
      "ref_not_in_vad_frac": 0.0684,
      "longest_vad_not_in_ref": [
       [
-       608.05,
-       622.45
+       375.26,
+       375.77
       ],
       [
-       596.29,
-       607.64
-      ],
-      [
-       575.1,
-       580.34
-      ],
-      [
-       581.09,
-       586.0
-      ],
-      [
-       589.36,
-       592.63
-      ],
-      [
-       593.08,
-       595.52
-      ],
-      [
-       586.74,
-       589.06
-      ],
-      [
-       572.29,
-       574.14
-      ],
-      [
-       569.74,
-       571.16
-      ],
-      [
-       568.31,
-       569.13
+       250.24,
+       250.74
       ]
      ]
     }
@@ -1565,10 +1449,10 @@
      "floor_db": -46.7,
      "threshold_db": -36.4,
      "p99_db": -12.3,
-     "vad_speech_s": 460.5,
+     "vad_speech_s": 459.5,
      "ref_speech_s": 473.2,
-     "vad_not_in_ref_s": 9.2,
-     "vad_not_in_ref_frac_of_ref": 0.0194,
+     "vad_not_in_ref_s": 8.2,
+     "vad_not_in_ref_frac_of_ref": 0.0172,
      "ref_not_in_vad_s": 3.5,
      "ref_not_in_vad_frac": 0.0074,
      "longest_vad_not_in_ref": [
@@ -1583,10 +1467,6 @@
       [
        341.26,
        342.72
-      ],
-      [
-       502.38,
-       503.39
       ],
       [
        19.26,
@@ -1633,16 +1513,16 @@
      "floor_db": -74.3,
      "threshold_db": -59.4,
      "p99_db": -24.4,
-     "vad_speech_s": 481.3,
+     "vad_speech_s": 475.9,
      "ref_speech_s": 522.0,
-     "vad_not_in_ref_s": 6.2,
-     "vad_not_in_ref_frac_of_ref": 0.0119,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0014,
      "ref_not_in_vad_s": 9.6,
      "ref_not_in_vad_frac": 0.0184,
      "longest_vad_not_in_ref": [
       [
        522.21,
-       528.41
+       522.96
       ]
      ]
     }
@@ -1730,16 +1610,16 @@
      "floor_db": -61.2,
      "threshold_db": -49.1,
      "p99_db": -20.9,
-     "vad_speech_s": 112.8,
+     "vad_speech_s": 112.4,
      "ref_speech_s": 208.0,
-     "vad_not_in_ref_s": 1.1,
-     "vad_not_in_ref_frac_of_ref": 0.005,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0036,
      "ref_not_in_vad_s": 65.3,
      "ref_not_in_vad_frac": 0.314,
      "longest_vad_not_in_ref": [
       [
        208.23,
-       209.28
+       208.98
       ]
      ]
     }
@@ -1757,7 +1637,7 @@
     {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 69 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.5% of reference speech"
+     "message": "energy VAD finds 66 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.1% of reference speech"
     }
    ],
    "metrics": {
@@ -1766,10 +1646,10 @@
      "floor_db": -88.5,
      "threshold_db": -66.1,
      "p99_db": -13.8,
-     "vad_speech_s": 717.2,
+     "vad_speech_s": 714.8,
      "ref_speech_s": 654.3,
-     "vad_not_in_ref_s": 68.8,
-     "vad_not_in_ref_frac_of_ref": 0.1051,
+     "vad_not_in_ref_s": 66.4,
+     "vad_not_in_ref_frac_of_ref": 0.1015,
      "ref_not_in_vad_s": 31.6,
      "ref_not_in_vad_frac": 0.0482,
      "longest_vad_not_in_ref": [
@@ -1794,10 +1674,6 @@
        543.74
       ],
       [
-       0.0,
-       1.75
-      ],
-      [
        456.27,
        457.79
       ],
@@ -1812,6 +1688,10 @@
       [
        546.24,
        547.74
+      ],
+      [
+       370.27,
+       371.76
       ]
      ]
     }
@@ -1825,22 +1705,6 @@
      "level": "info",
      "code": "segments_under_50ms",
      "message": "1 segment(s) shorter than 50 ms"
-    },
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       531.0,
-       685.3
-      ]
-     ]
-    },
-    {
-     "level": "warning",
-     "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 116 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 25.7% of reference speech"
     }
    ],
    "metrics": {
@@ -1849,52 +1713,52 @@
      "floor_db": -67.7,
      "threshold_db": -53.8,
      "p99_db": -21.4,
-     "vad_speech_s": 532.3,
+     "vad_speech_s": 431.1,
      "ref_speech_s": 450.0,
-     "vad_not_in_ref_s": 115.6,
-     "vad_not_in_ref_frac_of_ref": 0.2569,
+     "vad_not_in_ref_s": 15.1,
+     "vad_not_in_ref_frac_of_ref": 0.0336,
      "ref_not_in_vad_s": 18.8,
      "ref_not_in_vad_frac": 0.0418,
      "longest_vad_not_in_ref": [
       [
-       532.93,
-       537.62
+       492.25,
+       494.58
       ],
       [
-       548.08,
-       552.64
+       220.27,
+       221.77
       ],
       [
-       611.92,
-       616.16
+       509.27,
+       510.75
       ],
       [
-       676.63,
-       680.7
+       453.27,
+       454.73
       ],
       [
-       639.41,
-       643.47
+       5.67,
+       6.75
       ],
       [
-       651.29,
-       655.28
+       34.01,
+       34.74
       ],
       [
-       583.39,
-       587.24
+       323.27,
+       323.89
       ],
       [
-       622.76,
-       626.38
+       531.26,
+       531.87
       ],
       [
-       658.94,
-       662.45
+       342.28,
+       342.86
       ],
       [
-       662.99,
-       665.9
+       413.27,
+       413.84
       ]
      ]
     }
@@ -1955,18 +1819,13 @@
      "floor_db": -59.4,
      "threshold_db": -50.4,
      "p99_db": -31.2,
-     "vad_speech_s": 197.4,
+     "vad_speech_s": 197.1,
      "ref_speech_s": 294.0,
-     "vad_not_in_ref_s": 0.6,
-     "vad_not_in_ref_frac_of_ref": 0.0019,
+     "vad_not_in_ref_s": 0,
+     "vad_not_in_ref_frac_of_ref": 0.0,
      "ref_not_in_vad_s": 38.8,
      "ref_not_in_vad_frac": 0.1319,
-     "longest_vad_not_in_ref": [
-      [
-       294.7,
-       295.26
-      ]
-     ]
+     "longest_vad_not_in_ref": []
     }
    },
    "raw_label_issues": {
@@ -2043,20 +1902,16 @@
      "floor_db": -70.7,
      "threshold_db": -55.6,
      "p99_db": -20.6,
-     "vad_speech_s": 353.6,
+     "vad_speech_s": 348.4,
      "ref_speech_s": 400.0,
-     "vad_not_in_ref_s": 5.9,
-     "vad_not_in_ref_frac_of_ref": 0.0149,
+     "vad_not_in_ref_s": 0.8,
+     "vad_not_in_ref_frac_of_ref": 0.0019,
      "ref_not_in_vad_s": 7.9,
      "ref_not_in_vad_frac": 0.0198,
      "longest_vad_not_in_ref": [
       [
        400.23,
-       405.68
-      ],
-      [
-       406.06,
-       406.56
+       400.98
       ]
      ]
     }
@@ -2071,22 +1926,6 @@
      "code": "segments_over_60s",
      "message": "1 segment(s) longer than 60 s (merged turns?)",
      "longest": 70.1
-    },
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       471.0,
-       542.0
-      ]
-     ]
-    },
-    {
-     "level": "warning",
-     "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 57 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 12.1% of reference speech"
     }
    ],
    "metrics": {
@@ -2095,52 +1934,16 @@
      "floor_db": -55.3,
      "threshold_db": -46.3,
      "p99_db": -26.1,
-     "vad_speech_s": 420.8,
+     "vad_speech_s": 364.0,
      "ref_speech_s": 471.0,
-     "vad_not_in_ref_s": 57.1,
-     "vad_not_in_ref_frac_of_ref": 0.1212,
+     "vad_not_in_ref_s": 0.7,
+     "vad_not_in_ref_frac_of_ref": 0.0014,
      "ref_not_in_vad_s": 48.3,
      "ref_not_in_vad_frac": 0.1026,
      "longest_vad_not_in_ref": [
       [
-       475.81,
-       481.08
-      ],
-      [
-       531.91,
-       536.61
-      ],
-      [
-       520.13,
-       524.44
-      ],
-      [
-       514.06,
-       517.72
-      ],
-      [
-       536.99,
-       540.59
-      ],
-      [
-       482.72,
-       486.14
-      ],
-      [
-       486.55,
-       489.92
-      ],
-      [
-       509.92,
-       513.27
-      ],
-      [
-       490.4,
-       493.55
-      ],
-      [
-       527.63,
-       530.64
+       471.24,
+       471.91
       ]
      ]
     }
@@ -2332,7 +2135,7 @@
      "floor_db": -59.8,
      "threshold_db": -48.7,
      "p99_db": -22.9,
-     "vad_speech_s": 170.2,
+     "vad_speech_s": 170.1,
      "ref_speech_s": 198.0,
      "vad_not_in_ref_s": 2.0,
      "vad_not_in_ref_frac_of_ref": 0.01,
@@ -2350,76 +2153,23 @@
   },
   {
    "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       305.0,
-       404.0
-      ]
-     ]
-    },
-    {
-     "level": "warning",
-     "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 67 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 22.1% of reference speech"
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 2,
     "vad": {
      "floor_db": -46.0,
      "threshold_db": -37.0,
      "p99_db": -17.2,
-     "vad_speech_s": 267.5,
+     "vad_speech_s": 200.1,
      "ref_speech_s": 305.0,
-     "vad_not_in_ref_s": 67.3,
-     "vad_not_in_ref_frac_of_ref": 0.2206,
+     "vad_not_in_ref_s": 0.5,
+     "vad_not_in_ref_frac_of_ref": 0.0017,
      "ref_not_in_vad_s": 55.5,
      "ref_not_in_vad_frac": 0.1821,
      "longest_vad_not_in_ref": [
       [
-       398.54,
-       402.91
-      ],
-      [
-       377.09,
-       381.3
-      ],
-      [
-       337.05,
-       341.09
-      ],
-      [
-       321.44,
-       324.92
-      ],
-      [
-       345.81,
-       349.11
-      ],
-      [
-       357.11,
-       360.28
-      ],
-      [
-       382.83,
-       385.88
-      ],
-      [
-       390.23,
-       393.26
-      ],
-      [
-       363.64,
-       366.21
-      ],
-      [
        305.44,
-       307.91
+       305.96
       ]
      ]
     }
@@ -2441,10 +2191,10 @@
      "floor_db": -47.0,
      "threshold_db": -38.0,
      "p99_db": -21.6,
-     "vad_speech_s": 156.2,
+     "vad_speech_s": 154.5,
      "ref_speech_s": 162.6,
-     "vad_not_in_ref_s": 4.9,
-     "vad_not_in_ref_frac_of_ref": 0.03,
+     "vad_not_in_ref_s": 3.5,
+     "vad_not_in_ref_frac_of_ref": 0.0215,
      "ref_not_in_vad_s": 4.4,
      "ref_not_in_vad_frac": 0.0271,
      "longest_vad_not_in_ref": [
@@ -2453,16 +2203,8 @@
        143.19
       ],
       [
-       200.25,
-       200.97
-      ],
-      [
        115.05,
        115.73
-      ],
-      [
-       201.33,
-       201.99
       ],
       [
        151.73,
@@ -2518,10 +2260,10 @@
      "floor_db": -47.4,
      "threshold_db": -38.4,
      "p99_db": -18.0,
-     "vad_speech_s": 264.4,
+     "vad_speech_s": 263.8,
      "ref_speech_s": 292.9,
-     "vad_not_in_ref_s": 7.1,
-     "vad_not_in_ref_frac_of_ref": 0.0243,
+     "vad_not_in_ref_s": 6.5,
+     "vad_not_in_ref_frac_of_ref": 0.0223,
      "ref_not_in_vad_s": 17.1,
      "ref_not_in_vad_frac": 0.0585,
      "longest_vad_not_in_ref": [
@@ -2536,10 +2278,6 @@
       [
        163.26,
        163.87
-      ],
-      [
-       0.0,
-       0.59
       ],
       [
        30.25,
@@ -2564,6 +2302,10 @@
       [
        203.25,
        203.76
+      ],
+      [
+       123.23,
+       123.73
       ]
      ]
     }

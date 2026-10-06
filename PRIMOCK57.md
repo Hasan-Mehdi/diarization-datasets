@@ -83,6 +83,8 @@ all 57 consultations (8.64 h), overlap included, UEM = whole file
 | official TextGrid utterances | 0.25 s | 15.99% | 0.07% | 15.88% | 0.04% | 15.97% |
 | own-channel activity (this repo) | 0 | **10.38%** | 1.12% | 9.15% | 0.11% | 10.55% |
 | own-channel activity (this repo) | 0.25 s | 4.08% | 0.04% | 4.01% | 0.03% | 3.78% |
+| Silero VAD on each own channel (VAD study) | 0 | **9.85%** | 1.74% | 7.99% | 0.12% | 10.08% |
+| Silero VAD on each own channel (VAD study) | 0.25 s | 2.55% | 0.60% | 1.92% | 0.03% | 2.53% |
 
 * Against the TextGrids, almost all error is "missed speech". **79.6% of that missed time is in stretches
   where the labelled speaker's own microphone is silent for >= 0.3 s**, i.e. annotation padding and pauses.
@@ -97,8 +99,10 @@ all 57 consultations (8.64 h), overlap included, UEM = whole file
 * Do not use the PriMock57 TextGrids at collar 0 to judge a diarizer. Even at collar 0.25 s they add roughly 12
   points of DER that are not model error.
 * If you need PriMock57 (it is still the best free English doctor-patient audio), use the doctor+patient mix with
-  the **channel-activity RTTMs** from this repo (`rttm_alt/channel_activity` in the normalized dataset). Keep the
-  TextGrids for ASR and word-level work.
+  a **channel-based reference** from this repo: preferably the Silero per-channel RTTMs from the follow-up VAD study
+  (`rttm_alt/silero_channel`; [results/vad/primock57/silero_channel_rttm/](results/vad/primock57/silero_channel_rttm/)),
+  which ignore breaths and noise that the energy-based `channel_activity` counts (Whisper: 22 of the 30 longest
+  energy-only regions are breath/noise). Keep the TextGrids for ASR and word-level work.
 * For truly human-annotated, diarization-grade references in a two-party setting, see the catalog in the
   [README](README.md) (Map Task, CallHome/CallFriend, AMI/NOTSOFAR close-talk-derived references).
 

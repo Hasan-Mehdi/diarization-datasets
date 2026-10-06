@@ -85,6 +85,7 @@ View `ihm-mix`: 170 sessions, **0 errors**, 263 warnings (normalized files); 0 s
 - checks that fired (sessions): `info:segments_under_50ms` 157, `info:silence_over_30s` 113, `warning:possible_unannotated_speech` 93, `warning:words_outside_reference` 170
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 5.7% of reference speech; reference speech without energy = 0.2%. Most-flagged sessions: `ami__ES2005a` (0.50), `ami__IS1003a` (0.35), `ami__TS3010a` (0.32), `ami__ES2013a` (0.24), `ami__ES2005d` (0.24)
 - full report: [`results/validation/validation.ami.ihm-mix.md`](../../results/validation/validation.ami.ihm-mix.md)
+- **Silero VAD x2 audit** (view `ihm-mix`, from the [VAD study](../../docs/silero_vad_study.md)): 2.08% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 1.29% of reference speech; Whisper finds intelligible speech in 20 of the 20 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
@@ -139,6 +140,14 @@ longest audible "false alarms" on the SDM test set. Six of them are in EN2002a/b
 (*"which I guess first thing just sort of did it"*), which lies inside the 48.3-62.3 s stretch that the MFA reference
 lost. The total is small (about 21 s in 9 h), so the MFA reference is still the right primary reference, but these
 are reference errors, not model false alarms.
+
+**Silero VAD study (docs/silero_vad_study.md) adds two findings.** The MFA reference also drops utterances whose
+manual word timings exist in train and dev meetings (e.g. IB4002, IS1003a), not only in EN2002. And 36 meetings
+(33 train, 3 dev, none in test) have speech before or after the transcribed span. The BUT setup's UEM covers the
+whole recording, and this repo keeps that convention for comparability; if you train on AMI, consider cropping those
+meetings to the transcribed span. As a quality metric, Silero calls 2.1% of the MFA reference silence, versus 13-15%
+of the manual-derived references.
+
 
 
 ## Quality rating

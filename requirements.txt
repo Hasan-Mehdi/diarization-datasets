@@ -22,3 +22,5 @@ transformers>=5.0
 accelerate>=1.0
 # tests
 pytest>=8
+# optional: Silero VAD for `diards validate --vad --vad-backend silero_x2` and the VAD study scripts
+# (install WITHOUT dependencies so torch is not touched: pip install --no-deps silero-vad==6.2.3)

@@ -59,6 +59,7 @@ View `default`: 12 sessions, **0 errors**, 12 warnings (normalized files); 0 ses
 - checks that fired (sessions): `info:segments_under_50ms` 6, `info:speaker_under_1s` 1, `warning:segments_over_60s` 12
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.0% of reference speech; reference speech without energy = 2.9%. Most-flagged sessions: `scotus__2022_20-1199_25450` (0.00), `scotus__2022_21-1168_25458` (0.00), `scotus__2022_21-376_25455` (0.00), `scotus__2022_21-432_25444` (0.00), `scotus__2022_21-442_25445` (0.00)
 - full report: [`results/validation/validation.scotus.default.md`](../../results/validation/validation.scotus.default.md)
+- **Silero VAD x2 audit** (view `default`, from the [VAD study](../../docs/silero_vad_study.md)): 7.51% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.0% of reference speech.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

@@ -4,12 +4,14 @@
 - sessions: 57 (8.64 h); speaker-count accuracy 84.2%, MAE 0.16; RTFx None
 - scoring: pyannote.metrics, overlap included, UEM applied; collar = half-width in seconds
 
-| reference | collar | DER % | FA % | Miss % | Conf % | JER % | ref speech h |
+| reference | collar | DER % | FA % | Miss % | Conf % | JER % | scored ref speaker-time h |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | primary | 0.0 | 24.15 | 0.10 | 24.00 | 0.05 | 24.92 | 8.41 |
 | primary | 0.25 | 15.99 | 0.07 | 15.88 | 0.04 | 15.97 | 7.01 |
 | channel_activity | 0.0 | 10.38 | 1.12 | 9.15 | 0.11 | 10.55 | 6.96 |
 | channel_activity | 0.25 | 4.08 | 0.04 | 4.01 | 0.03 | 3.78 | 4.68 |
+| silero_channel | 0.0 | 9.85 | 1.74 | 7.99 | 0.12 | 10.08 | 6.83 |
+| silero_channel | 0.25 | 2.55 | 0.60 | 1.92 | 0.03 | 2.53 | 4.91 |
 
 Per session (primary reference, collar 0):
 

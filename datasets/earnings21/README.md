@@ -59,6 +59,7 @@ View `default`: 44 sessions, **0 errors**, 8 warnings (normalized files); 0 sess
 - checks that fired (sessions): `info:segments_under_50ms` 36, `info:silence_over_30s` 4, `info:speaker_under_1s` 2, `warning:possible_unannotated_speech` 2, `warning:segments_over_60s` 6
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.0% of reference speech; reference speech without energy = 1.3%. Most-flagged sessions: `earnings21__4387383` (0.27), `earnings21__4384964` (0.12), `earnings21__4384198` (0.04), `earnings21__4394084` (0.02), `earnings21__4384683` (0.02)
 - full report: [`results/validation/validation.earnings21.default.md`](../../results/validation/validation.earnings21.default.md)
+- **Silero VAD x2 audit** (view `default`, from the [VAD study](../../docs/silero_vad_study.md)): 3.12% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.43% of reference speech; Whisper finds intelligible speech in 20 of the 20 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
@@ -92,6 +93,11 @@ Diarization outputs **at most 8**: it
 returned 8 speakers on 28 of the 44 calls. Analysts who ask one question each get merged into existing speakers.
 Speech detection is fine (FA 3.6%, miss 4.0%). Earnings-21 is therefore a good test of *many-speaker* long-form
 diarization, which is exactly where 4- and 8-speaker end-to-end models fall short; it is not evidence of bad labels.
+
+One exception found by the Silero VAD study: call **4384964** has fluent speech worth about 12% of its reference
+speech with no label at all (confirmed by Nemotron and Whisper; also flagged by the energy-VAD check above, together
+with 4387383).
+
 
 
 ## Quality rating

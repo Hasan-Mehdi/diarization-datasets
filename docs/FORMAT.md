@@ -55,7 +55,7 @@ Conventions:
 ```bash
 python -m diards list
 python -m diards prepare  <dataset> [--split S ...] [--view V ...] [--limit N] [--opt key=value]
-python -m diards validate <dataset> [--view V] [--vad] [--out results/validation]
+python -m diards validate <dataset> [--view V] [--vad [--vad-backend energy|silero_x2]] [--out results/validation]
 python -m diards stats    <dataset> [--out results/stats]
 python -m diards export   <dataset> --format nemo|pyannote|lhotse [--view V] [--out DIR]
 python -m diards evaluate <dataset> [--view V] [--split S] [--limit N] [--max-hours H] [--out DIR]

@@ -60,6 +60,7 @@ View `glasses`: 12 sessions, **0 errors**, 0 warnings (normalized files); 0 sess
 - checks that fired (sessions): `info:segments_under_50ms` 1
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.0% of reference speech; reference speech without energy = 53.7%. Most-flagged sessions: `easycom__Session_3` (0.00), `easycom__Session_1` (0.00), `easycom__Session_10` (0.00), `easycom__Session_11` (0.00), `easycom__Session_12` (0.00)
 - full report: [`results/validation/validation.easycom.glasses.md`](../../results/validation/validation.easycom.glasses.md)
+- **Silero VAD x2 audit** (view `glasses`, from the [VAD study](../../docs/silero_vad_study.md)): 47.45% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.01% of reference speech.
 <!-- /auto:validation -->
 
 The energy-VAD cross-check is **not informative for EasyCom**: restaurant babble is played from loudspeakers

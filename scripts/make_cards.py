@@ -85,6 +85,25 @@ def block_stats(name):
     return "\n".join(rows)
 
 
+def _vad_audit(name):
+    """Silero x2 audit of the primary reference from the VAD study (results/vad/audit), plus the Whisper check of the
+    longest Silero speech regions outside the reference (results/vad/whisper)."""
+    files = sorted((REPO / "results" / "vad" / "audit").glob(f"audit.{name}.*.json"))
+    if not files:
+        return None
+    a = json.loads(files[0].read_text(encoding="utf-8"))
+    sx = a["summary"].get("primary", {}).get("silero_x2")
+    if not sx:
+        return None
+    out = {"view": a["view"], "silent_pct": sx["miss_pct"], "unref_pct": sx["unref_pct"]}
+    wf = REPO / "results" / "vad" / "whisper" / f"whisper.{name}.{a['view']}.json"
+    if wf.exists():
+        w = json.loads(wf.read_text(encoding="utf-8"))["summary"].get("unref:silero_x2")
+        if w:
+            out["whisper"] = (w["with_speech"], w["regions"])
+    return out
+
+
 def block_validation(name):
     files = sorted((REPO / "results" / "validation").glob(f"validation.{name}.*.json"))
     if not files:
@@ -107,6 +126,14 @@ def block_validation(name):
                        f"{fmt(100 * v['ref_not_in_vad_frac'], 1)}%. Most-flagged sessions: "
                        + ", ".join(f"`{a}` ({b:.2f})" for a, b in v["worst_sessions"][:5]))
         out.append(f"- full report: [`results/validation/{f.stem}.md`](../../results/validation/{f.stem}.md)")
+    va = _vad_audit(name)
+    if va:
+        line = (f"- **Silero VAD x2 audit** (view `{va['view']}`, from the [VAD study](../../docs/silero_vad_study.md)): "
+                f"{va['silent_pct']}% of reference speech is silence to Silero (padding / pauses labelled as speech; "
+                f"collar 0); Silero speech outside the reference = {va['unref_pct']}% of reference speech")
+        if "whisper" in va:
+            line += f"; Whisper finds intelligible speech in {va['whisper'][0]} of the {va['whisper'][1]} longest such regions"
+        out.append(line + ".")
     return "\n".join(out)
 
 
@@ -246,8 +273,8 @@ def _best_nemotron(name):
 
 
 def block_catalog(prefix=""):
-    lines = ["| # | dataset | domain | hours | recs | spk min/med/max | overlap | reference | GT | licence | access | size | mirrors | known issue |",
-             "|---:|---|---|---:|---:|---|---:|---|---|---|---|---|---|---|"]
+    lines = ["| # | dataset | domain | hours | recs | spk min/med/max | overlap | reference | GT | Silero-silent ref % / unannotated % | licence | access | size | mirrors | known issue |",
+             "|---:|---|---|---:|---:|---|---:|---|---|---:|---|---|---|---|---|"]
     for i, (name, size, gran, issue) in enumerate(CATALOG, 1):
         m = get_recipe(name).META
         st = _stats(name)
@@ -255,8 +282,10 @@ def block_catalog(prefix=""):
         recs = st["sessions"] if st else "-"
         spk = f"{st['speakers_min']}/{st['speakers_median']:g}/{st['speakers_max']}" if st else "-"
         ovl = f"{100 * st['overlap_ratio']:.1f}%" if st and st["overlap_ratio"] is not None else "-"
+        va = _vad_audit(name)
+        sil = f"{va['silent_pct']:.1f} / {va['unref_pct']:.1f}" if va else "-"
         lines.append(f"| {i} | [{name}]({prefix}datasets/{name}/README.md) | {m.domain} | {hours} | {recs} | {spk} | {ovl} | {gran} | "
-                     f"**{m.gt_rating}** | {m.license} | {m.access} | {size} | {MIRRORS.get(name, '')} | {issue} |")
+                     f"**{m.gt_rating}** | {sil} | {m.license} | {m.access} | {size} | {MIRRORS.get(name, '')} | {issue} |")
     return "\n".join(lines)
 
 

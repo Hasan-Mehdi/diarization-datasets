@@ -33,7 +33,10 @@ def main(argv=None) -> int:
     p = sub.add_parser("validate")
     p.add_argument("dataset")
     p.add_argument("--view")
-    p.add_argument("--vad", action="store_true", help="also compare reference speech with an energy VAD")
+    p.add_argument("--vad", action="store_true", help="also compare reference speech with a VAD")
+    p.add_argument("--vad-backend", default="energy", choices=["energy", "silero_x2"],
+                   help="energy (default, no torch) or silero_x2 (recommended on close-talk / single-channel audio, "
+                        "needs `pip install --no-deps silero-vad`; see docs/silero_vad_study.md)")
     p.add_argument("--out", help="write the report (json + md) here")
 
     p = sub.add_parser("stats")
@@ -81,7 +84,8 @@ def main(argv=None) -> int:
     if args.cmd == "validate":
         from .validate import validate_dataset
 
-        report = validate_dataset(args.dataset, root=args.root, view=args.view, vad=args.vad, out=args.out)
+        report = validate_dataset(args.dataset, root=args.root, view=args.view, vad=args.vad, out=args.out,
+                                  vad_backend=args.vad_backend)
         return 1 if report["summary"]["errors"] else 0
 
     if args.cmd == "stats":

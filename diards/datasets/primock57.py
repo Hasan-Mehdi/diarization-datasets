@@ -10,6 +10,9 @@ References:
     (the channels are isolated by ~50 dB). Level threshold halfway (in dB) between the channel's median level inside
     and outside its labelled utterances; 10 ms frames, 5-frame smoothing, gaps < 0.2 s bridged, < 0.1 s dropped.
     Not human ground truth, but a much tighter speech/non-speech reference; see PRIMOCK57.md.
+  * rttm_alt/silero_channel: Silero VAD ("x2": max of a stock run and a run with the state reset every 30 s) on each
+    speaker's own channel, from the Silero VAD study (results/vad/primock57/silero_channel_rttm, CC BY 4.0). It
+    ignores breaths and noise that the energy-based channel_activity counts; see docs/silero_vad_study.md.
 Speaker ids: <consultation>_doctor / <consultation>_patient (doctor identities are not published per file).
 Split: ``all``. UEM: whole recording.
 """
@@ -20,7 +23,7 @@ from pathlib import Path
 
 import numpy as np
 
-from ..annotation import Segment
+from ..annotation import Segment, read_rttm_single
 from ..audio import is_normalized, load_mono16k, write_array
 from ..config import raw_root
 from ..core import DatasetMeta, DatasetWriter
@@ -29,6 +32,7 @@ from ..annotation import merge_intervals
 from ..vad import HOP, frame_energy_db
 
 REPO = "https://github.com/babylonhealth/primock57.git"
+REPO_ROOT = Path(__file__).resolve().parents[2]
 MEDIA = "https://media.githubusercontent.com/media/babylonhealth/primock57/main/audio/{name}"
 
 META = DatasetMeta(
@@ -45,7 +49,7 @@ META = DatasetMeta(
     reference="Utterance-level TextGrid transcripts per channel (made for ASR evaluation).",
     default_view="mix",
     views={"mix": "Doctor + patient channels summed (as scripts/mix_audio.sh)"},
-    gt_rating="D (official) / B (channel-activity RTTM)",
+    gt_rating="D (official) / B (channel-based RTTMs)",
     gt_rating_reason="Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems.",
     choices=["Speaker ids: <consultation>_doctor / _patient.", "UEM: whole recording.",
              "Alternative reference rttm_alt/channel_activity from calibrated per-channel activity (diagnostic)."],
@@ -107,6 +111,10 @@ def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
             segs += [Segment(a, b, spk) for a, b in utts]
             ivs, _ = channel_activity(chans[role], utts)
             act_segs += [Segment(a, b, spk) for a, b in ivs]
-        w.add_session(c, "all", segs, alt_refs={"channel_activity": act_segs})
+        alt = {"channel_activity": act_segs}
+        silero = REPO_ROOT / "results" / "vad" / "primock57" / "silero_channel_rttm" / f"{sid}.rttm"
+        if silero.exists():
+            alt["silero_channel"] = read_rttm_single(silero)
+        w.add_session(c, "all", segs, alt_refs=alt)
         print(f"  [primock57] {c} ok", flush=True)
     w.finalize([{"url": REPO}])

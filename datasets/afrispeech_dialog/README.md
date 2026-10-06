@@ -46,9 +46,9 @@ as `MM:SS:cc` lines before and after `[Speaker N]: text`.
 <!-- auto:stats -->
 | split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
 |---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
-| general | 29 | 4.93 | 4.76 | 0.965 | 0.001 | 0.0 | 2/2/2 | 0.026/7.02/94.374 | 0.0717 | 8.96 | 2.39 |
-| medical | 17 | 1.7 | 1.4 | 0.822 | 0.002 | 0.0 | 2/2/2 | 0.03/2.05/13.014 | 0.0794 | 3.96 | 11.45 |
-| ALL | 46 | 6.63 | 6.16 | 0.928 | 0.001 | 0.0 | 2/2/2 | 0.03/3.01/46.999 | 0.0765 | 4.05 | 4.71 |
+| general | 29 | 4.93 | 4.76 | 0.974 | 0.001 | 0.0 | 2/2/2 | 0.026/7.02/94.374 | 0.0717 | 8.96 | 2.41 |
+| medical | 17 | 1.7 | 1.4 | 0.87 | 0.002 | 0.0 | 2/2/2 | 0.03/2.05/13.014 | 0.0794 | 3.96 | 12.12 |
+| ALL | 46 | 6.63 | 6.16 | 0.948 | 0.001 | 0.0 | 2/2/2 | 0.03/3.01/46.999 | 0.0765 | 4.05 | 4.82 |
 
 Computed by `python -m diards stats afrispeech_dialog` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.afrispeech_dialog.md`](../../results/stats/stats.afrispeech_dialog.md).
 <!-- /auto:stats -->
@@ -56,11 +56,12 @@ Computed by `python -m diards stats afrispeech_dialog` from the normalized prima
 ## Ground-truth validation
 
 <!-- auto:validation -->
-View `default`: 46 sessions, **0 errors**, 35 warnings (normalized files); 21 sessions had problems in the ORIGINAL labels that normalization fixed.
+View `default`: 46 sessions, **0 errors**, 30 warnings (normalized files); 21 sessions had problems in the ORIGINAL labels that normalization fixed.
 - original-label issues: zero_duration = 63, same_speaker_overlap = 5, negative_duration = 16, negative_start = 1
-- checks that fired (sessions): `info:segments_under_50ms` 20, `info:silence_over_30s` 5, `warning:possible_unannotated_speech` 7, `warning:segments_over_60s` 28
-- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 2.8% of reference speech; reference speech without energy = 4.7%. Most-flagged sessions: `afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99` (0.26), `afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b` (0.22), `afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce` (0.12), `afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d` (0.11), `afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3` (0.09)
+- checks that fired (sessions): `info:segments_under_50ms` 20, `warning:possible_unannotated_speech` 2, `warning:segments_over_60s` 28
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.1% of reference speech; reference speech without energy = 4.7%. Most-flagged sessions: `afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d` (0.10), `afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92` (0.06), `afrispeech_dialog__eceb9468-7001-4ee0-9475-13486e5352ae` (0.04), `afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16` (0.04), `afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99` (0.03)
 - full report: [`results/validation/validation.afrispeech_dialog.default.md`](../../results/validation/validation.afrispeech_dialog.default.md)
+- **Silero VAD x2 audit** (view `default`, from the [VAD study](../../docs/silero_vad_study.md)): 13.86% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 2.59% of reference speech; Whisper finds intelligible speech in 19 of the 20 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
@@ -68,7 +69,7 @@ View `default`: 46 sessions, **0 errors**, 35 warnings (normalized files); 21 se
 <!-- auto:nemotron -->
 | view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
-| default (general, medical) | 46 | 6.63 | primary | **26.69** | 6.44 | 15.15 | 5.10 | 32.18 | 24.51 | 93% |
+| default (general, medical) | 46 | 6.63 | primary | **25.00** | 4.76 | 15.15 | 5.10 | 31.27 | 22.75 | 93% |
 
 Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/afrispeech_dialog.*/results.md`.
 <!-- /auto:nemotron -->
@@ -97,6 +98,13 @@ Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar
   46 files; 6 files individually clearly shifted, by 0.3-0.6 s). That is consistent with times typed by hand while
   listening.
 The model's speaker counting is fine (93% exact). Do not use these timestamps for DER without re-alignment.
+
+**UEM fix (from the Silero VAD study).** Five recordings continue for 48-100 s of conversation after the last
+labelled turn (Whisper-confirmed). The UEM is now the transcribed span +/- 1 s, which lowers Nemotron's DER from
+26.7% to 25.0% at collar 0 (24.5% to 22.8% at 0.25 s) and its false alarm from 6.4% to 4.8%; the tables above use
+the corrected UEM. The study's Silero-based lag search independently confirms the ~0.45 s early reference
+(7 of 46 sessions clearly shifted).
+
 
 
 ## Quality rating

@@ -86,7 +86,25 @@ def _issue(level, code, msg, **kw):
     return d
 
 
-def validate_session(s: Session, vad: bool = False, vad_tolerance: float = 0.25) -> dict:
+def silero_x2_intervals(s: Session, x=None) -> tuple[list[tuple[float, float]], dict]:
+    """Silero VAD "x2" (frame-wise max of a stock run and a run with the state reset every 30 s; see
+    docs/silero_vad_study.md). Uses the VAD-study cache when it exists, otherwise computes on CPU."""
+    import numpy as np
+
+    from . import vads
+
+    try:
+        cache = vads.VadCache.load(s.dataset, s.view, s.session_id)
+        return cache.silero(variant="x2"), {"backend": "silero_x2", "source": "cache"}
+    except Exception:
+        pass
+    if x is None:
+        x = load_mono16k(s.audio_path)
+    p = np.maximum(vads.silero_probs(x), vads.silero_probs(x, reset_every=30.0))
+    return vads.silero_intervals(p, len(x)), {"backend": "silero_x2", "source": "computed"}
+
+
+def validate_session(s: Session, vad: bool = False, vad_tolerance: float = 0.25, vad_backend: str = "energy") -> dict:
     issues = []
     metrics: dict = {}
     # ---- audio
@@ -179,7 +197,10 @@ def validate_session(s: Session, vad: bool = False, vad_tolerance: float = 0.25)
         from .vad import energy_vad
 
         x = load_mono16k(s.audio_path)
-        v_ivs, vinfo = energy_vad(x)
+        if vad_backend == "silero_x2":
+            v_ivs, vinfo = silero_x2_intervals(s, x)
+        else:
+            v_ivs, vinfo = energy_vad(x)
         v_ivs = intersect(v_ivs, uem_m)
         ref_padded = merge_intervals((max(0, a - vad_tolerance), b + vad_tolerance) for a, b in ref_speech)
         missing = [(a, b) for a, b in subtract(v_ivs, ref_padded) if b - a >= 0.5]
@@ -206,14 +227,14 @@ def validate_session(s: Session, vad: bool = False, vad_tolerance: float = 0.25)
     return {"session_id": s.session_id, "issues": issues, "metrics": metrics}
 
 
-def validate_dataset(name: str, root=None, view: str | None = None, vad: bool = False, out=None,
+def validate_dataset(name: str, root=None, view: str | None = None, vad: bool = False, out=None, vad_backend: str = "energy",
                      echo: bool = True) -> dict:
     ds = NormalizedDataset(name, root)
     sessions = ds.sessions(view=view)
     recs = {r["session_id"]: r for r in ds.records(view)}
     results = []
     for s in sessions:
-        r = validate_session(s, vad=vad)
+        r = validate_session(s, vad=vad, vad_backend=vad_backend)
         raw = recs[s.session_id].get("label_issues") or {}
         r["raw_label_issues"] = raw
         results.append(r)
@@ -239,6 +260,7 @@ def validate_dataset(name: str, root=None, view: str | None = None, vad: bool = 
         vals = [r["metrics"]["vad"] for r in results if "vad" in r["metrics"]]
         ref = sum(v["ref_speech_s"] for v in vals)
         summary["vad"] = {
+            "backend": vad_backend,
             "ref_speech_h": round(ref / 3600, 2),
             "vad_not_in_ref_frac": round(sum(v["vad_not_in_ref_s"] for v in vals) / ref, 4) if ref else None,
             "ref_not_in_vad_frac": round(sum(v["ref_not_in_vad_s"] for v in vals) / ref, 4) if ref else None,
@@ -270,11 +292,11 @@ def _md(report: dict, max_sessions: int | None = None) -> str:
         lines += [f"| {k} | {v} |" for k, v in s["issue_counts"].items()]
     if "vad" in s:
         v = s["vad"]
-        lines += ["", "Energy-VAD cross-check (same view audio):",
+        lines += ["", f"VAD cross-check ({v.get('backend', 'energy')} VAD, same view audio):",
                   f"- reference speech: {v['ref_speech_h']} h",
-                  f"- energy speech outside reference (+/-0.25 s, chunks >= 0.5 s): {v['vad_not_in_ref_frac']} of reference speech",
+                  f"- VAD speech outside reference (+/-0.25 s, chunks >= 0.5 s): {v['vad_not_in_ref_frac']} of reference speech",
                   f"- reference speech where the VAD sees no energy: {v['ref_not_in_vad_frac']}",
-                  "- sessions with most energy-speech outside the reference: " +
+                  "- sessions with most VAD speech outside the reference: " +
                   ", ".join(f"{a} ({b})" for a, b in v["worst_sessions"])]
     shown = 0
     for r in report["sessions"]:

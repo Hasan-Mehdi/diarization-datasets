@@ -46,6 +46,11 @@ words merged across pauses < 0.2 s.
   minutes past the end of the 2122.6 s recording (the end time is roughly double the start). The validator flags it
   (`beyond_audio_end`) and normalization clips it.
 - 986 pairs of overlapping segments of the same speaker in the original segments (merged during normalization).
+- **Untranscribed speech outside the transcript** (found by the Silero VAD study): six meetings have talk before
+  the first or after the last transcribed segment, e.g. Bed003 (transcript ends at 3,499 s, audio at 4,449 s,
+  426 s of talk) and test meeting Bmr013 (67 s of pre-meeting talk before 92.5 s). The UEM is therefore the
+  transcribed span +/- 1 s. (Nemotron output nothing in Bmr013's head, so its ICSI scores barely change; other
+  diarizers' would.)
 
 - **Training-data contamination:** ICSI (full corpus) is in Nemotron 3 Diarization's training data, so scores here
   are not held-out results.
@@ -55,10 +60,10 @@ words merged across pauses < 0.2 s.
 <!-- auto:stats -->
 | split | sessions | hours | speech h | speech ratio | overlap ratio | >=3-spk ovl | speakers min/med/max | segment p5/p50/p95 s | segs < 0.2 s | same-spk pause p50 s | spk changes / min |
 |---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---:|
-| dev | 2 | 2.28 | 1.86 | 0.818 | 0.082 | 0.0053 | 6/6.5/7 | 0.25/1.749/6.43 | 0.0271 | 0.704 | 8.95 |
-| test | 3 | 2.77 | 2.25 | 0.815 | 0.109 | 0.0125 | 7/7/7 | 0.23/1.57/6.65 | 0.031 | 0.973 | 13.85 |
-| train | 70 | 66.64 | 54.69 | 0.821 | 0.108 | 0.0134 | 3/6/10 | 0.23/1.523/7.0 | 0.0319 | 1.09 | 13.91 |
-| ALL | 75 | 71.69 | 58.8 | 0.82 | 0.107 | 0.0131 | 3/6/10 | 0.23/1.533/6.963 | 0.0317 | 1.069 | 13.75 |
+| dev | 2 | 2.28 | 1.86 | 0.819 | 0.082 | 0.0053 | 6/6.5/7 | 0.25/1.749/6.43 | 0.0271 | 0.704 | 8.96 |
+| test | 3 | 2.77 | 2.25 | 0.823 | 0.109 | 0.0125 | 7/7/7 | 0.23/1.57/6.65 | 0.031 | 0.973 | 13.99 |
+| train | 70 | 66.64 | 54.69 | 0.831 | 0.108 | 0.0134 | 3/6/10 | 0.23/1.523/7.0 | 0.0319 | 1.09 | 14.08 |
+| ALL | 75 | 71.69 | 58.8 | 0.83 | 0.107 | 0.0131 | 3/6/10 | 0.23/1.533/6.963 | 0.0317 | 1.069 | 13.91 |
 
 Computed by `python -m diards stats icsi` from the normalized primary reference inside each UEM (overlap ratio = time with >= 2 speakers / speech time). Source: [`results/stats/stats.icsi.md`](../../results/stats/stats.icsi.md).
 <!-- /auto:stats -->
@@ -71,6 +76,7 @@ View `ihm-mix`: 75 sessions, **0 errors**, 16 warnings (normalized files); 74 se
 - checks that fired (sessions): `info:segments_under_50ms` 10, `info:silence_over_30s` 19, `info:speaker_under_1s` 1, `warning:possible_unannotated_speech` 10, `warning:segments_over_60s` 6
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 2.4% of reference speech; reference speech without energy = 4.7%. Most-flagged sessions: `icsi__Bed008` (0.18), `icsi__Bed016` (0.14), `icsi__Bed012` (0.11), `icsi__Bed010` (0.11), `icsi__Bed003` (0.09)
 - full report: [`results/validation/validation.icsi.ihm-mix.md`](../../results/validation/validation.icsi.ihm-mix.md)
+- **Silero VAD x2 audit** (view `ihm-mix`, from the [VAD study](../../docs/silero_vad_study.md)): 8.28% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.91% of reference speech; Whisper finds intelligible speech in 20 of the 20 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
@@ -78,10 +84,10 @@ View `ihm-mix`: 75 sessions, **0 errors**, 16 warnings (normalized files); 74 se
 <!-- auto:nemotron -->
 | view (subset) | sessions | hours | reference | DER % (collar 0) | FA | Miss | Conf | JER % | DER % (collar 0.25) | spk-count acc |
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
-| ihm-mix (test) | 3 | 2.77 | primary | **15.86** | 12.22 | 2.89 | 0.76 | 16.36 | 5.31 | 100% |
-| ihm-mix (test) | 3 | 2.77 | words_gap0.2 | **39.44** | 38.39 | 0.64 | 0.41 | 33.15 | 22.96 | 100% |
-| sdm (test) | 3 | 2.77 | primary | **15.85** | 11.08 | 3.77 | 1.00 | 16.10 | 5.39 | 100% |
-| sdm (test) | 3 | 2.77 | words_gap0.2 | **38.23** | 36.35 | 1.14 | 0.74 | 33.67 | 22.40 | 100% |
+| ihm-mix (test) | 3 | 2.77 | primary | **15.84** | 12.20 | 2.89 | 0.76 | 16.36 | 5.29 | 100% |
+| ihm-mix (test) | 3 | 2.77 | words_gap0.2 | **39.42** | 38.37 | 0.64 | 0.41 | 33.14 | 22.92 | 100% |
+| sdm (test) | 3 | 2.77 | primary | **15.84** | 11.06 | 3.77 | 1.00 | 16.10 | 5.36 | 100% |
+| sdm (test) | 3 | 2.77 | words_gap0.2 | **38.20** | 36.33 | 1.14 | 0.74 | 33.67 | 22.37 | 100% |
 
 Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/icsi.*/results.md`.
 

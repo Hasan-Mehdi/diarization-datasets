@@ -66,6 +66,7 @@ Computed by `python -m diards stats notsofar1` from the normalized primary refer
 View `ihm-mix`: 165 sessions, **0 errors**, 0 warnings (normalized files); 0 sessions had problems in the ORIGINAL labels that normalization fixed.
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.0% of reference speech; reference speech without energy = 0.4%. Most-flagged sessions: `notsofar1__MTG_32091` (0.01), `notsofar1__MTG_32049` (0.01), `notsofar1__MTG_32082` (0.01), `notsofar1__MTG_30893` (0.01), `notsofar1__MTG_32051` (0.01)
 - full report: [`results/validation/validation.notsofar1.ihm-mix.md`](../../results/validation/validation.notsofar1.ihm-mix.md)
+- **Silero VAD x2 audit** (view `ihm-mix`, from the [VAD study](../../docs/silero_vad_study.md)): 2.37% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.02% of reference speech; Whisper finds intelligible speech in 5 of the 5 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

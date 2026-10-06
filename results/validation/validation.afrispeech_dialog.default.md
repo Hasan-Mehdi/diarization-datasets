@@ -1,21 +1,20 @@
 # Validation: afrispeech_dialog (view: default)
 
-- sessions: 46, errors: 0, warnings: 35
+- sessions: 46, errors: 0, warnings: 30
 - sessions whose ORIGINAL labels needed fixing during normalization: 21
 - original-label issue totals: zero_duration=63, same_speaker_overlap=5, negative_duration=16, negative_start=1
 
 | level:code | sessions |
 |---|---:|
 | info:segments_under_50ms | 20 |
-| info:silence_over_30s | 5 |
-| warning:possible_unannotated_speech | 7 |
+| warning:possible_unannotated_speech | 2 |
 | warning:segments_over_60s | 28 |
 
-Energy-VAD cross-check (same view audio):
+VAD cross-check (energy VAD, same view audio):
 - reference speech: 6.16 h
-- energy speech outside reference (+/-0.25 s, chunks >= 0.5 s): 0.0278 of reference speech
+- VAD speech outside reference (+/-0.25 s, chunks >= 0.5 s): 0.0115 of reference speech
 - reference speech where the VAD sees no energy: 0.0473
-- sessions with most energy-speech outside the reference: afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99 (0.2569), afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b (0.2206), afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce (0.1212), afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d (0.1051), afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3 (0.0896), afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496 (0.0833), afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92 (0.06), afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16 (0.042), afrispeech_dialog__eceb9468-7001-4ee0-9475-13486e5352ae (0.041), afrispeech_dialog__cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d (0.03)
+- sessions with most VAD speech outside the reference: afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d (0.1015), afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92 (0.06), afrispeech_dialog__eceb9468-7001-4ee0-9475-13486e5352ae (0.041), afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16 (0.0403), afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99 (0.0336), afrispeech_dialog__fd258274-0797-4cdd-b6ea-426ae9723bf7 (0.0289), afrispeech_dialog__818f0aa2-ce0f-4e82-96ee-d66e192a2fca (0.0262), afrispeech_dialog__3e27c06c-8ba1-4511-88e6-c75b2d9d8839 (0.0257), afrispeech_dialog__d2f0bed6-f3e1-48a8-9fb2-ceb137670bc4 (0.0223), afrispeech_dialog__cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d (0.0215)
 
 ## Sessions with errors/warnings
 
@@ -33,7 +32,7 @@ Energy-VAD cross-check (same view audio):
 - **afrispeech_dialog__98cc8263-54e8-4101-8942-7ae18f1e082b**: segments_over_60s (2 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__9c267f6c-5a01-4174-bdd3-a53ff045f506**: segments_over_60s (4 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__ad6848ae-2614-4da8-b129-62b0d86e8926**: segments_over_60s (2 segment(s) longer than 60 s (merged turns?))
-- **afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496**: segments_over_60s (4 segment(s) longer than 60 s (merged turns?)); possible_unannotated_speech (energy VAD finds 66 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 8.3% of reference speech)
+- **afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496**: segments_over_60s (4 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__b945928d-8fd3-4b41-80ce-6c029486c454**: segments_over_60s (2 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__bb52e43b-e30c-4fb7-87d6-97ee79ce25ea**: segments_over_60s (2 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__c1fd9c2e-cd94-46d4-83c1-7ad12c4720a2**: segments_over_60s (3 segment(s) longer than 60 s (merged turns?))
@@ -42,12 +41,10 @@ Energy-VAD cross-check (same view audio):
 - **afrispeech_dialog__ce541c27-b35d-4b11-ba04-24d3abcb85d3**: segments_over_60s (2 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__df50b219-f5aa-4d56-9f33-6865c96fda2b**: segments_over_60s (3 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__e0b202dc-17fe-4936-a3c7-d89c639d9cda**: segments_over_60s (2 segment(s) longer than 60 s (merged turns?))
-- **afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3**: segments_over_60s (3 segment(s) longer than 60 s (merged turns?)); possible_unannotated_speech (energy VAD finds 50 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 9.0% of reference speech)
+- **afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3**: segments_over_60s (3 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__f01e751c-11e3-498b-a6ee-5d9bf11ac8cd**: segments_over_60s (1 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__f1345c7a-87ca-4c7c-a22f-04dd30bdea30**: segments_over_60s (3 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92**: possible_unannotated_speech (energy VAD finds 20 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 6.0% of reference speech)
-- **afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d**: possible_unannotated_speech (energy VAD finds 69 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.5% of reference speech)
-- **afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99**: possible_unannotated_speech (energy VAD finds 116 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 25.7% of reference speech)
-- **afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce**: segments_over_60s (1 segment(s) longer than 60 s (merged turns?)); possible_unannotated_speech (energy VAD finds 57 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 12.1% of reference speech)
-- **afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b**: possible_unannotated_speech (energy VAD finds 67 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 22.1% of reference speech)
+- **afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d**: possible_unannotated_speech (energy VAD finds 66 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.1% of reference speech)
+- **afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce**: segments_over_60s (1 segment(s) longer than 60 s (merged turns?))
 - **afrispeech_dialog__d2f0bed6-f3e1-48a8-9fb2-ceb137670bc4**: segments_over_60s (1 segment(s) longer than 60 s (merged turns?))

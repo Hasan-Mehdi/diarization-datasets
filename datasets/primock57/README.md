@@ -15,7 +15,7 @@ timings are padded and ASR-oriented, but the clean separate channels let us deri
 | Domain | medical consultations (remote, 2 speakers) |
 | Views (normalized) | `mix`: Doctor + patient channels summed (as scripts/mix_audio.sh) |
 | Reference used as primary RTTM | Utterance-level TextGrid transcripts per channel (made for ASR evaluation). |
-| Ground-truth rating | **D (official) / B (channel-activity RTTM)** - Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems. |
+| Ground-truth rating | **D (official) / B (channel-based RTTMs)** - Utterance-level, ASR-oriented timings; see PRIMOCK57.md for measured problems. |
 | Prepared splits (sessions) | all: 57 |
 <!-- /auto:meta -->
 
@@ -33,6 +33,12 @@ Tags: `<UNSURE>`, `<UNIN/>`.
 This repo adds `rttm_alt/channel_activity`: when each person is actually making sound, measured on their own
 channel (the channels are isolated by ~50 dB). The same RTTMs are published under
 [`results/primock57/channel_activity_rttm/`](../../results/primock57/channel_activity_rttm/) (CC BY 4.0 allows it).
+
+The Silero VAD study added a second channel-based reference, `rttm_alt/silero_channel`: Silero VAD ("x2") on each
+speaker's isolated channel ([`results/vad/primock57/silero_channel_rttm/`](../../results/vad/primock57/silero_channel_rttm/)).
+It is more speech-specific (Whisper: 22 of the 30 longest regions that only the energy reference marks are breath or
+noise), and Nemotron scores **9.85% / 2.55%** against it (collar 0 / 0.25 s). It is the best available reference
+for PriMock57 diarization scoring.
 
 ## Known issues and errata (measured, see PRIMOCK57.md)
 
@@ -59,6 +65,7 @@ View `mix`: 57 sessions, **0 errors**, 19 warnings (normalized files); 0 session
 - checks that fired (sessions): `warning:segments_over_60s` 19
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 0.3% of reference speech; reference speech without energy = 1.2%. Most-flagged sessions: `primock57__day4_consultation08` (0.01), `primock57__day4_consultation10` (0.01), `primock57__day1_consultation02` (0.01), `primock57__day4_consultation09` (0.01), `primock57__day1_consultation09` (0.01)
 - full report: [`results/validation/validation.primock57.mix.md`](../../results/validation/validation.primock57.mix.md)
+- **Silero VAD x2 audit** (view `mix`, from the [VAD study](../../docs/silero_vad_study.md)): 14.56% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.01% of reference speech; Whisper finds intelligible speech in 0 of the 1 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
@@ -68,6 +75,7 @@ View `mix`: 57 sessions, **0 errors**, 19 warnings (normalized files); 0 session
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
 | mix (all) | 57 | 8.64 | primary | **24.15** | 0.10 | 24.00 | 0.05 | 24.92 | 15.99 | 84% |
 | mix (all) | 57 | 8.64 | channel_activity | **10.38** | 1.12 | 9.15 | 0.11 | 10.55 | 4.08 | 84% |
+| mix (all) | 57 | 8.64 | silero_channel | **9.85** | 1.74 | 7.99 | 0.12 | 10.08 | 2.55 | 84% |
 
 Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunking, threshold 0.5, no post-processing); pyannote.metrics, overlap scored, UEM applied, collar = half-width. Per-session tables: `results/nemotron/primock57.*/results.md`.
 <!-- /auto:nemotron -->
@@ -93,8 +101,8 @@ speaker's own microphone is silent. Against the channel-activity reference the D
 ## Quality rating
 
 **D** for the official TextGrids as a diarization reference (padded utterances, inflated overlap). **B** with the
-channel-activity reference from this repo (automatic, but measured on isolated close-talk channels; counts breaths
-and coughs too).
+channel-based references from this repo (`silero_channel` preferred; `channel_activity` also counts breaths and
+coughs). Both are automatic, but measured on isolated close-talk channels.
 
 ## Download and prepare
 

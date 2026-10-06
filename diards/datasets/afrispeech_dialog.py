@@ -10,7 +10,9 @@ the others cannot be used for diarization scoring and are skipped. Transcripts l
 
 i.e. a start time, the turn, an end time, written by hand as MM:SS:cc. The hundredths field clusters at 96-100
 and 00-04, so the effective precision is about one second (and values such as ``100`` or ``-1`` occur).
-Splits: ``medical`` / ``general`` (domain field). UEM: whole file.
+Splits: ``medical`` / ``general`` (domain field).
+UEM: the transcribed span +/- 1 s. Five recordings continue for 48-100 s of conversation after the last
+labelled turn (found by the Silero VAD study, Whisper-confirmed; results/vad/uem_check.json).
 """
 from __future__ import annotations
 
@@ -46,7 +48,8 @@ META = DatasetMeta(
     gt_rating_reason=("Human transcripts, but timestamps are hand-typed with ~1 s effective precision and are "
                       "~0.45 s early on median; overlap/backchannels absent; untimed speech; 3/49 files without times."),
     choices=["Only the 30 conversations with timestamps are included.", "Times parsed as MM:SS + cc/100.",
-             "Speaker ids: <file>_<Speaker N>.", "Splits: medical / general."],
+             "Speaker ids: <file>_<Speaker N>.", "Splits: medical / general.",
+             "UEM: transcribed span +/- 1 s (untranscribed tails excluded)."],
     domain="medical-like consultations + general conversation",
 )
 
@@ -100,7 +103,8 @@ def prepare(root=None, raw=None, splits=None, views=None, limit=None, **kw):
             src = hf_download(REPO, r.file_name, base / "hf")
             convert(src, w.audio_path(sid))
         segs = [Segment(a, b, f"{fid}_{s.replace(' ', '')}") for a, b, s in turns]
-        w.add_session(fid, r.domain, segs, extra={"accent": r.accent, "country": r.country,
+        lo, hi = min(g.start for g in segs), max(g.end for g in segs)
+        w.add_session(fid, r.domain, segs, uem=[(max(0.0, lo - 1.0), hi + 1.0)], extra={"accent": r.accent, "country": r.country,
                                                   "original_file": r.file_name, "turns_with_times": len(turns)})
         print(f"  [afrispeech_dialog] {r.domain} {fid} ok ({len(turns)} turns)", flush=True)
     w.finalize([{"url": f"https://huggingface.co/datasets/{REPO}"}])

@@ -61,6 +61,7 @@ View `default`: 60 sessions, **0 errors**, 26 warnings (normalized files); 51 se
 - checks that fired (sessions): `info:silence_over_30s` 6, `info:speaker_under_1s` 7, `warning:fewer_than_two_speakers` 1, `warning:possible_unannotated_speech` 4, `warning:segments_over_60s` 21
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.3% of reference speech; reference speech without energy = 20.2%. Most-flagged sessions: `sbcsae__SBC024` (0.11), `sbcsae__SBC055` (0.08), `sbcsae__SBC038` (0.07), `sbcsae__SBC045` (0.06), `sbcsae__SBC058` (0.04)
 - full report: [`results/validation/validation.sbcsae.default.md`](../../results/validation/validation.sbcsae.default.md)
+- **Silero VAD x2 audit** (view `default`, from the [VAD study](../../docs/silero_vad_study.md)): 22.13% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.57% of reference speech; Whisper finds intelligible speech in 10 of the 20 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization

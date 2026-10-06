@@ -64,6 +64,7 @@ View `ihm-mix`: 10 sessions, **0 errors**, 4 warnings (normalized files); 10 ses
 - checks that fired (sessions): `info:segments_under_50ms` 1, `info:silence_over_30s` 1, `warning:segments_over_60s` 4
 - energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 1.2% of reference speech; reference speech without energy = 3.7%. Most-flagged sessions: `dipco__S04` (0.03), `dipco__S05` (0.02), `dipco__S02` (0.01), `dipco__S08` (0.01), `dipco__S01` (0.01)
 - full report: [`results/validation/validation.dipco.ihm-mix.md`](../../results/validation/validation.dipco.ihm-mix.md)
+- **Silero VAD x2 audit** (view `ihm-mix`, from the [VAD study](../../docs/silero_vad_study.md)): 14.29% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.28% of reference speech; Whisper finds intelligible speech in 9 of the 18 longest such regions.
 <!-- /auto:validation -->
 
 ## Nemotron 3 Diarization
