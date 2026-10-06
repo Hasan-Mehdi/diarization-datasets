@@ -6,20 +6,19 @@ experiments, not opinion. Deliverable: [docs/silero_vad_study.md](docs/silero_va
 
 ## Current status
 
-_Last updated: 2026-10-05 20:41 EDT (system clock)_
+_Last updated: 2026-10-05 21:02 EDT (system clock)_
 
-- **Now doing:** last jobs (ICSI full-meeting VAD cache + audit + Whisper check; AMI post-hoc variants), then final
-  report tables, write-up polish, rebase, INBOX note for the main agent.
-- **Done:** VAD cache for all 18 datasets (Silero stock + 30 s reset, WebRTC, energy; pyannote on evaluated
-  subsets); audits + Whisper checks on 17 datasets; post-hoc VAD-assisted scoring on 23 of 25 tags (baseline
-  reproduces results/nemotron exactly on all of them); re-inference trim/zero on all 25 tags (re-running on
-  unmodified audio reproduces the cached outputs exactly); drop-out check; PriMock57 per-channel analysis with
-  Whisper; docs/silero_vad_study.md drafted.
-- **Verdict (draft):** use Silero (two-pass x2) as a witness for reference QA: unannotated-speech flags are 68%
-  intelligible speech (energy 42%, WebRTC 46%), its "% of reference speech called silence" predicts Nemotron's
-  reference-induced miss (Pearson 0.74 close-talk) and ranks GT grades best; Silero channel reference for
-  PriMock57 beats the energy one. Do not use it in the Nemotron pipeline: gating, filling, trimming and zeroing all
-  raise DER (far-field catastrophically); VAD UEMs change nothing useful.
+- **Now doing:** final commit, rebase onto origin/main, tests, push, INBOX note for the main agent, DONE.
+- **Done:** everything in the brief. Write-up: [docs/silero_vad_study.md](docs/silero_vad_study.md); tables and
+  exact commands: [results/vad/README.md](results/vad/README.md).
+- **Verdict:** use Silero (run twice, stock + 30 s state reset, frame-wise max = "x2") as a witness for reference
+  and UEM QA on close-talk / single-channel audio: its unannotated-speech flags are 70% intelligible speech
+  (energy 42%, WebRTC 46%) and found real gaps in AMI, ICSI, Earnings-21, CallHome, CallFriend, AfriSpeech; its
+  "% of reference speech called silence" predicts Nemotron's reference-induced miss (Pearson 0.74) and ranks GT
+  grades best; it finds speech outside the transcribed span in 36 AMI, 6 ICSI and 5 AfriSpeech sessions (cutting
+  the AfriSpeech UEMs lowers Nemotron DER 26.7 -> 25.1%); a Silero channel reference for PriMock57 beats the
+  energy one. Do not use it in the Nemotron pipeline (gating worse on 25/25 tags, trimming on 22/25, zeroing on
+  21/25, filling only imitates padding), not for VAD-made UEMs, not on far-field audio, and never stock (drop-outs).
 
 ## Environment decisions
 
@@ -55,10 +54,10 @@ _Last updated: 2026-10-05 20:41 EDT (system clock)_
   the cache and made it the default Silero variant for the audit and pipeline experiments; stock Silero is kept
   for comparison. Earlier audit/Whisper outputs deleted and will be regenerated.
 - 2026-10-05 17:12: corrected the timestamps in this file to the system clock (an earlier edit had estimated them).
-- 2026-10-05 17:23: rebased onto origin/main (main agent finished EasyCom / LibriCSS evaluations).
 - 2026-10-05 17:15: pyannote.audio 4.0.7 installed in a separate venv `D:\diarization-data\envs\vad`
   (`python -m venv --system-site-packages`, so it reuses the shared torch; nothing installed into the shared env).
   segmentation-3.0 VAD computed on every evaluated subset on GPU (~800x real time, ~10 min of GPU in total).
+- 2026-10-05 17:23: rebased onto origin/main (main agent finished EasyCom / LibriCSS evaluations).
 - 2026-10-05 17:45: Whisper check on CallHome with the 30 s-reset variant: 18/20 longest "silent reference" regions
   were still clear speech; stock Silero had high probability there. Fresh starts 1-10 s apart on the same audio
   give either ~0.8 or ~0.0 speech fraction (eng_110, eng_121): the model is bistable on this audio.
@@ -76,3 +75,12 @@ _Last updated: 2026-10-05 20:41 EDT (system clock)_
   audits, Whisper checks, most post-hoc and all but one re-inference runs.
 - 2026-10-05 20:32: resumed; INBOX checked (no new messages). Restarted the ICSI cache job and the CHiME-6 dev
   re-inference; wrote docs/silero_vad_study.md.
+- 2026-10-05 20:47-20:55: ICSI cache, audit and Whisper check done; AMI post-hoc done (all 25 tags); CHiME-6 dev
+  re-inference done. Baseline re-scoring reproduces results/nemotron on all 25 tags; re-running Nemotron on
+  unmodified audio reproduces the cached outputs on all 25.
+- 2026-10-05 20:50: new check `scripts/vad_uem_check.py`: Silero speech outside the transcribed span inside
+  whole-file UEMs (AMI 36 sessions, ICSI 6 incl. test `Bmr013`, AfriSpeech 5; Whisper: all real speech).
+  AfriSpeech-Dialog DER 26.69 -> 25.09% with those 5 UEMs cut to the transcribed span.
+- 2026-10-05 21:00: results JSON compacted (39 MB -> 17 MB: no indentation, flagged-region evidence only for the
+  three Whisper-checked detectors, per-session pipeline rows only for the main variants); report regenerated;
+  docs/silero_vad_study.md finalised; 32 tests pass.

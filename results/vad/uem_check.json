@@ -1,0 +1,870 @@
+{
+ "afrispeech_dialog": {
+  "view": "default",
+  "sessions": 46,
+  "speech_before_first_ref_s": 5.2,
+  "speech_after_last_ref_s": 363.4,
+  "sessions_flagged": 5,
+  "flagged": [
+   {
+    "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
+    "split": "medical",
+    "duration": 685.3,
+    "uem": [
+     [
+      0.0,
+      685.33
+     ]
+    ],
+    "first_ref_start": 2.02,
+    "last_ref_end": 531.01,
+    "silero_speech_before_s": 0.4,
+    "silero_speech_after_s": 99.7
+   },
+   {
+    "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
+    "split": "general",
+    "duration": 885.5,
+    "uem": [
+     [
+      0.0,
+      885.52
+     ]
+    ],
+    "first_ref_start": 0.0,
+    "last_ref_end": 797.0,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 71.8
+   },
+   {
+    "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
+    "split": "medical",
+    "duration": 404.0,
+    "uem": [
+     [
+      0.0,
+      404.0
+     ]
+    ],
+    "first_ref_start": 0.0,
+    "last_ref_end": 304.96,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 68.4
+   },
+   {
+    "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
+    "split": "medical",
+    "duration": 542.0,
+    "uem": [
+     [
+      0.0,
+      542.02
+     ]
+    ],
+    "first_ref_start": 0.0,
+    "last_ref_end": 470.99,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 60.3
+   },
+   {
+    "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
+    "split": "general",
+    "duration": 622.4,
+    "uem": [
+     [
+      0.0,
+      622.45
+     ]
+    ],
+    "first_ref_start": 0.97,
+    "last_ref_end": 566.0,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 47.7
+   }
+  ]
+ },
+ "ami": {
+  "view": "ihm-mix",
+  "sessions": 170,
+  "speech_before_first_ref_s": 541.0,
+  "speech_after_last_ref_s": 744.9,
+  "sessions_flagged": 36,
+  "flagged": [
+   {
+    "session_id": "ami__TS3007d",
+    "split": "train",
+    "duration": 2824.3,
+    "uem": [
+     [
+      0.0,
+      2824.3
+     ]
+    ],
+    "first_ref_start": 100.07,
+    "last_ref_end": 2758.51,
+    "silero_speech_before_s": 64.9,
+    "silero_speech_after_s": 16.9
+   },
+   {
+    "session_id": "ami__IN1013",
+    "split": "train",
+    "duration": 3142.1,
+    "uem": [
+     [
+      0.0,
+      3142.13
+     ]
+    ],
+    "first_ref_start": 30.79,
+    "last_ref_end": 3054.27,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 79.2
+   },
+   {
+    "session_id": "ami__TS3005c",
+    "split": "train",
+    "duration": 2403.0,
+    "uem": [
+     [
+      0.0,
+      2403.0
+     ]
+    ],
+    "first_ref_start": 211.02,
+    "last_ref_end": 2368.6,
+    "silero_speech_before_s": 52.7,
+    "silero_speech_after_s": 26.0
+   },
+   {
+    "session_id": "ami__TS3009c",
+    "split": "train",
+    "duration": 2580.0,
+    "uem": [
+     [
+      0.0,
+      2580.0
+     ]
+    ],
+    "first_ref_start": 37.53,
+    "last_ref_end": 2457.7,
+    "silero_speech_before_s": 15.9,
+    "silero_speech_after_s": 51.2
+   },
+   {
+    "session_id": "ami__IS1002b",
+    "split": "train",
+    "duration": 2367.7,
+    "uem": [
+     [
+      0.0,
+      2367.67
+     ]
+    ],
+    "first_ref_start": 91.25,
+    "last_ref_end": 2337.54,
+    "silero_speech_before_s": 53.5,
+    "silero_speech_after_s": 4.8
+   },
+   {
+    "session_id": "ami__IS1000b",
+    "split": "train",
+    "duration": 2343.7,
+    "uem": [
+     [
+      0.0,
+      2343.67
+     ]
+    ],
+    "first_ref_start": 202.53,
+    "last_ref_end": 2308.46,
+    "silero_speech_before_s": 50.8,
+    "silero_speech_after_s": 0
+   },
+   {
+    "session_id": "ami__IN1016",
+    "split": "train",
+    "duration": 3604.3,
+    "uem": [
+     [
+      0.0,
+      3604.29
+     ]
+    ],
+    "first_ref_start": 39.95,
+    "last_ref_end": 3555.09,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 43.8
+   },
+   {
+    "session_id": "ami__TS3010c",
+    "split": "train",
+    "duration": 2142.0,
+    "uem": [
+     [
+      0.0,
+      2142.0
+     ]
+    ],
+    "first_ref_start": 47.65,
+    "last_ref_end": 2051.29,
+    "silero_speech_before_s": 5.6,
+    "silero_speech_after_s": 34.4
+   },
+   {
+    "session_id": "ami__TS3008c",
+    "split": "train",
+    "duration": 2508.0,
+    "uem": [
+     [
+      0.0,
+      2508.0
+     ]
+    ],
+    "first_ref_start": 94.79,
+    "last_ref_end": 2329.09,
+    "silero_speech_before_s": 3.1,
+    "silero_speech_after_s": 35.3
+   },
+   {
+    "session_id": "ami__ES2005d",
+    "split": "train",
+    "duration": 1731.2,
+    "uem": [
+     [
+      0.0,
+      1731.18
+     ]
+    ],
+    "first_ref_start": 41.37,
+    "last_ref_end": 1663.92,
+    "silero_speech_before_s": 17.9,
+    "silero_speech_after_s": 18.2
+   },
+   {
+    "session_id": "ami__EN2009d",
+    "split": "train",
+    "duration": 5324.4,
+    "uem": [
+     [
+      0.0,
+      5324.37
+     ]
+    ],
+    "first_ref_start": 0.0,
+    "last_ref_end": 5122.22,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 28.6
+   },
+   {
+    "session_id": "ami__IB4003",
+    "split": "dev",
+    "duration": 2023.3,
+    "uem": [
+     [
+      0.0,
+      2023.25
+     ]
+    ],
+    "first_ref_start": 45.39,
+    "last_ref_end": 1981.85,
+    "silero_speech_before_s": 16.2,
+    "silero_speech_after_s": 11.8
+   },
+   {
+    "session_id": "ami__IN1012",
+    "split": "train",
+    "duration": 3108.9,
+    "uem": [
+     [
+      0.0,
+      3108.93
+     ]
+    ],
+    "first_ref_start": 21.77,
+    "last_ref_end": 3072.92,
+    "silero_speech_before_s": 10.8,
+    "silero_speech_after_s": 16.4
+   },
+   {
+    "session_id": "ami__TS3009d",
+    "split": "train",
+    "duration": 2056.2,
+    "uem": [
+     [
+      0.0,
+      2056.2
+     ]
+    ],
+    "first_ref_start": 33.6,
+    "last_ref_end": 2054.0,
+    "silero_speech_before_s": 25.8,
+    "silero_speech_after_s": 0.2
+   },
+   {
+    "session_id": "ami__TS3010d",
+    "split": "train",
+    "duration": 1920.7,
+    "uem": [
+     [
+      0.0,
+      1920.7
+     ]
+    ],
+    "first_ref_start": 8.78,
+    "last_ref_end": 1777.6,
+    "silero_speech_before_s": 2.0,
+    "silero_speech_after_s": 23.7
+   },
+   {
+    "session_id": "ami__TS3004c",
+    "split": "dev",
+    "duration": 2970.0,
+    "uem": [
+     [
+      0.0,
+      2970.0
+     ]
+    ],
+    "first_ref_start": 46.07,
+    "last_ref_end": 2452.66,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 25.3
+   },
+   {
+    "session_id": "ami__ES2002a",
+    "split": "train",
+    "duration": 1272.6,
+    "uem": [
+     [
+      0.0,
+      1272.64
+     ]
+    ],
+    "first_ref_start": 50.41,
+    "last_ref_end": 1108.93,
+    "silero_speech_before_s": 9.6,
+    "silero_speech_after_s": 15.4
+   },
+   {
+    "session_id": "ami__IN1001",
+    "split": "train",
+    "duration": 3463.7,
+    "uem": [
+     [
+      0.0,
+      3463.75
+     ]
+    ],
+    "first_ref_start": 33.13,
+    "last_ref_end": 3442.92,
+    "silero_speech_before_s": 15.7,
+    "silero_speech_after_s": 8.5
+   },
+   {
+    "session_id": "ami__ES2005a",
+    "split": "train",
+    "duration": 477.9,
+    "uem": [
+     [
+      0.0,
+      477.88
+     ]
+    ],
+    "first_ref_start": 0.09,
+    "last_ref_end": 306.05,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 21.6
+   },
+   {
+    "session_id": "ami__IN1009",
+    "split": "train",
+    "duration": 1256.3,
+    "uem": [
+     [
+      0.0,
+      1256.35
+     ]
+    ],
+    "first_ref_start": 32.89,
+    "last_ref_end": 1200.74,
+    "silero_speech_before_s": 0.5,
+    "silero_speech_after_s": 21.1
+   },
+   {
+    "session_id": "ami__IS1003a",
+    "split": "train",
+    "duration": 913.5,
+    "uem": [
+     [
+      0.0,
+      913.49
+     ]
+    ],
+    "first_ref_start": 74.96,
+    "last_ref_end": 819.93,
+    "silero_speech_before_s": 8.8,
+    "silero_speech_after_s": 11.3
+   },
+   {
+    "session_id": "ami__IN1007",
+    "split": "train",
+    "duration": 2411.3,
+    "uem": [
+     [
+      0.0,
+      2411.33
+     ]
+    ],
+    "first_ref_start": 4.96,
+    "last_ref_end": 2375.07,
+    "silero_speech_before_s": 2.4,
+    "silero_speech_after_s": 17.1
+   },
+   {
+    "session_id": "ami__TS3009b",
+    "split": "train",
+    "duration": 2460.1,
+    "uem": [
+     [
+      0.0,
+      2460.05
+     ]
+    ],
+    "first_ref_start": 61.63,
+    "last_ref_end": 2450.39,
+    "silero_speech_before_s": 12.2,
+    "silero_speech_after_s": 6.8
+   },
+   {
+    "session_id": "ami__IN1005",
+    "split": "train",
+    "duration": 2798.8,
+    "uem": [
+     [
+      0.0,
+      2798.83
+     ]
+    ],
+    "first_ref_start": 32.85,
+    "last_ref_end": 2769.33,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 18.9
+   },
+   {
+    "session_id": "ami__TS3008d",
+    "split": "train",
+    "duration": 2795.0,
+    "uem": [
+     [
+      0.0,
+      2795.0
+     ]
+    ],
+    "first_ref_start": 75.62,
+    "last_ref_end": 2767.09,
+    "silero_speech_before_s": 18.7,
+    "silero_speech_after_s": 0
+   },
+   {
+    "session_id": "ami__ES2002d",
+    "split": "train",
+    "duration": 2624.2,
+    "uem": [
+     [
+      0.0,
+      2624.17
+     ]
+    ],
+    "first_ref_start": 2.52,
+    "last_ref_end": 2400.86,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 17.9
+   },
+   {
+    "session_id": "ami__TS3011c",
+    "split": "train",
+    "duration": 2395.0,
+    "uem": [
+     [
+      0.0,
+      2395.0
+     ]
+    ],
+    "first_ref_start": 2.2,
+    "last_ref_end": 2315.66,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 16.8
+   },
+   {
+    "session_id": "ami__IN1008",
+    "split": "train",
+    "duration": 3415.7,
+    "uem": [
+     [
+      0.0,
+      3415.71
+     ]
+    ],
+    "first_ref_start": 43.06,
+    "last_ref_end": 3388.23,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 14.6
+   },
+   {
+    "session_id": "ami__IS1002c",
+    "split": "train",
+    "duration": 2080.8,
+    "uem": [
+     [
+      0.0,
+      2080.83
+     ]
+    ],
+    "first_ref_start": 7.31,
+    "last_ref_end": 2054.94,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 13.4
+   },
+   {
+    "session_id": "ami__IS1008b",
+    "split": "dev",
+    "duration": 1768.5,
+    "uem": [
+     [
+      0.0,
+      1768.5
+     ]
+    ],
+    "first_ref_start": 34.64,
+    "last_ref_end": 1735.95,
+    "silero_speech_before_s": 13.0,
+    "silero_speech_after_s": 0.3
+   },
+   {
+    "session_id": "ami__ES2015d",
+    "split": "train",
+    "duration": 1931.6,
+    "uem": [
+     [
+      0.0,
+      1931.56
+     ]
+    ],
+    "first_ref_start": 58.46,
+    "last_ref_end": 1930.39,
+    "silero_speech_before_s": 12.8,
+    "silero_speech_after_s": 0
+   },
+   {
+    "session_id": "ami__ES2013c",
+    "split": "train",
+    "duration": 2358.1,
+    "uem": [
+     [
+      0.0,
+      2358.12
+     ]
+    ],
+    "first_ref_start": 54.54,
+    "last_ref_end": 2358.12,
+    "silero_speech_before_s": 12.7,
+    "silero_speech_after_s": 0
+   },
+   {
+    "session_id": "ami__IS1004d",
+    "split": "train",
+    "duration": 1965.3,
+    "uem": [
+     [
+      0.0,
+      1965.33
+     ]
+    ],
+    "first_ref_start": 25.5,
+    "last_ref_end": 1935.94,
+    "silero_speech_before_s": 0.6,
+    "silero_speech_after_s": 11.8
+   },
+   {
+    "session_id": "ami__TS3010a",
+    "split": "train",
+    "duration": 1041.0,
+    "uem": [
+     [
+      0.0,
+      1041.02
+     ]
+    ],
+    "first_ref_start": 40.99,
+    "last_ref_end": 944.89,
+    "silero_speech_before_s": 10.6,
+    "silero_speech_after_s": 1.6
+   },
+   {
+    "session_id": "ami__IS1007c",
+    "split": "train",
+    "duration": 2113.2,
+    "uem": [
+     [
+      0.0,
+      2113.17
+     ]
+    ],
+    "first_ref_start": 52.43,
+    "last_ref_end": 2066.76,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 11.9
+   },
+   {
+    "session_id": "ami__EN2001a",
+    "split": "train",
+    "duration": 5250.2,
+    "uem": [
+     [
+      0.0,
+      5250.24
+     ]
+    ],
+    "first_ref_start": 3.34,
+    "last_ref_end": 5132.43,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 10.3
+   }
+  ]
+ },
+ "ava_avd_en": {
+  "view": "default",
+  "sessions": 96,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "callfriend_eng": {
+  "view": "default",
+  "sessions": 40,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "callhome_eng": {
+  "view": "default",
+  "sessions": 140,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "chime6": {
+  "view": "ihm-mix",
+  "sessions": 4,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 3.8,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "dipco": {
+  "view": "ihm-mix",
+  "sessions": 10,
+  "speech_before_first_ref_s": 0.4,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "earnings21": {
+  "view": "default",
+  "sessions": 44,
+  "speech_before_first_ref_s": 0.4,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "easycom": {
+  "view": "glasses",
+  "sessions": 12,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "icsi": {
+  "view": "ihm-mix",
+  "sessions": 75,
+  "speech_before_first_ref_s": 115.8,
+  "speech_after_last_ref_s": 511.0,
+  "sessions_flagged": 6,
+  "flagged": [
+   {
+    "session_id": "icsi__Bed003",
+    "split": "train",
+    "duration": 4448.9,
+    "uem": [
+     [
+      0.0,
+      4448.89
+     ]
+    ],
+    "first_ref_start": 38.95,
+    "last_ref_end": 3499.23,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 426.0
+   },
+   {
+    "session_id": "icsi__Bmr013",
+    "split": "test",
+    "duration": 2907.4,
+    "uem": [
+     [
+      0.0,
+      2907.44
+     ]
+    ],
+    "first_ref_start": 92.5,
+    "last_ref_end": 2899.31,
+    "silero_speech_before_s": 66.8,
+    "silero_speech_after_s": 0
+   },
+   {
+    "session_id": "icsi__Bed016",
+    "split": "train",
+    "duration": 2828.9,
+    "uem": [
+     [
+      0.0,
+      2828.91
+     ]
+    ],
+    "first_ref_start": 0.07,
+    "last_ref_end": 2631.23,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 40.4
+   },
+   {
+    "session_id": "icsi__Bed008",
+    "split": "train",
+    "duration": 5153.4,
+    "uem": [
+     [
+      0.0,
+      5153.36
+     ]
+    ],
+    "first_ref_start": 54.13,
+    "last_ref_end": 5079.21,
+    "silero_speech_before_s": 24.3,
+    "silero_speech_after_s": 5.7
+   },
+   {
+    "session_id": "icsi__Bed012",
+    "split": "train",
+    "duration": 2634.3,
+    "uem": [
+     [
+      0.0,
+      2634.32
+     ]
+    ],
+    "first_ref_start": 81.84,
+    "last_ref_end": 2598.98,
+    "silero_speech_before_s": 20.7,
+    "silero_speech_after_s": 1.4
+   },
+   {
+    "session_id": "icsi__Bns002",
+    "split": "train",
+    "duration": 6157.8,
+    "uem": [
+     [
+      0.0,
+      6157.82
+     ]
+    ],
+    "first_ref_start": 2.24,
+    "last_ref_end": 6118.8,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 10.3
+   }
+  ]
+ },
+ "libricss": {
+  "view": "clean-mix",
+  "sessions": 60,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "maptask": {
+  "view": "default",
+  "sessions": 128,
+  "speech_before_first_ref_s": 1.3,
+  "speech_after_last_ref_s": 0.6,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "msdwild_en": {
+  "view": "default",
+  "sessions": 894,
+  "speech_before_first_ref_s": 0.1,
+  "speech_after_last_ref_s": 24.6,
+  "sessions_flagged": 1,
+  "flagged": [
+   {
+    "session_id": "msdwild_en__00260",
+    "split": "few.train",
+    "duration": 103.7,
+    "uem": [
+     [
+      0.0,
+      103.72
+     ]
+    ],
+    "first_ref_start": 0.04,
+    "last_ref_end": 86.95,
+    "silero_speech_before_s": 0,
+    "silero_speech_after_s": 14.7
+   }
+  ]
+ },
+ "notsofar1": {
+  "view": "ihm-mix",
+  "sessions": 165,
+  "speech_before_first_ref_s": 0.4,
+  "speech_after_last_ref_s": 1.6,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "primock57": {
+  "view": "mix",
+  "sessions": 57,
+  "speech_before_first_ref_s": 0.6,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "sbcsae": {
+  "view": "default",
+  "sessions": 60,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "scotus": {
+  "view": "default",
+  "sessions": 12,
+  "speech_before_first_ref_s": 0.0,
+  "speech_after_last_ref_s": 0.0,
+  "sessions_flagged": 0,
+  "flagged": []
+ },
+ "voxconverse": {
+  "view": "default",
+  "sessions": 448,
+  "speech_before_first_ref_s": 4.8,
+  "speech_after_last_ref_s": 53.5,
+  "sessions_flagged": 0,
+  "flagged": []
+ }
+}

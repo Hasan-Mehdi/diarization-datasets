@@ -29,16 +29,27 @@ DETECTORS = ("silero_x2", "silero", "silero_r30", "webrtc", "energy", "pyannote"
 LABEL = {"silero_x2": "Silero x2", "silero_r30": "Silero (30 s reset)", "silero": "Silero (stock)", "webrtc": "WebRTC (mode 2)",
          "energy": "energy", "pyannote": "pyannote seg-3.0", "nemotron": "Nemotron (union)"}
 CMDS = """```bash
-# env: D:\\diarization-data\\envs\\diar (+ silero-vad 6.2.3 installed with --no-deps); pyannote in envs\\vad
-WORKERS=8 bash scripts/vad_compute_all.sh                       # Silero / WebRTC / energy VAD cache (CPU)
-<envs/vad python> scripts/vad_pyannote.py                       # pyannote segmentation-3.0 baseline (GPU, ~6 min)
-for d in <every dataset>; do python -m diards.vad_audit $d; done   # coverage, boundaries, lag, evidence
-for d in <every dataset>; do python scripts/vad_whisper_check.py $d; done   # Whisper check of flagged regions
-JOBS=6 bash scripts/vad_pipeline_all.sh                         # post-hoc VAD-assisted Nemotron variants (CPU)
-for t in <tags>; do python -m diards.vad_assist rerun $t --max-hours 1.0; done   # trim / zero re-inference (GPU)
-python scripts/vad_primock57_channels.py --whisper              # PriMock57 per-channel analysis
-python scripts/vad_dataprep.py                                  # trimming potential, VAD-derived UEMs
-python scripts/vad_report.py                                    # this README + summary.json
+# Windows 11, D:\\diarization-data\\envs\\diar: Python 3.12.15, torch 2.11.0+cu128, numpy 2.5.3, pyannote.metrics 4.1,
+# transformers 5.19.0.dev0; plus `pip install --no-deps silero-vad==6.2.3` and webrtcvad-wheels 2.0.14.post1.
+# pyannote.audio 4.0.7 only in a separate venv: python -m venv --system-site-packages D:\\diarization-data\\envs\\vad
+# DIARDS_BASE=D:\\diarization-data (VAD cache: <base>/vad-study/vad, override with DIARDS_VAD_STUDY)
+WORKERS=8 bash scripts/vad_compute_all.sh                    # Silero (stock + 30 s reset) / WebRTC / energy cache, CPU
+<envs/vad python> scripts/vad_pyannote.py                    # pyannote segmentation-3.0 on evaluated subsets, GPU
+for d in <each of the 18 datasets>; do
+  python -m diards.vad_audit $d                              # results/vad/audit/audit.<dataset>.<view>.json
+  python scripts/vad_whisper_check.py $d                     # results/vad/whisper/whisper.<dataset>.<view>.json (GPU)
+done
+python scripts/vad_whisper_check.py --rescore                # transcript classes + summaries
+JOBS=6 bash scripts/vad_pipeline_all.sh                      # results/vad/pipeline/posthoc.<tag>.json (CPU)
+for t in <each results/nemotron tag>; do
+  python -m diards.vad_assist rerun $t --max-hours 1.0       # results/vad/pipeline/rerun.<tag>.json (GPU)
+done
+python scripts/vad_reset_check.py                            # results/vad/reset_check.json (Silero drop-outs)
+python scripts/vad_primock57_channels.py --whisper           # results/vad/primock57/
+python scripts/vad_dataprep.py                               # results/vad/dataprep.json
+python scripts/vad_uem_check.py                              # results/vad/uem_check.json
+python scripts/vad_worst_cases.py                            # results/vad/worst_cases.md
+python scripts/vad_report.py                                 # this README + results/vad/summary.json
 ```"""
 
 
@@ -430,7 +441,24 @@ def main():
                              f"{c.get('short', '-')} | {c.get('laughter', '-')} | {c.get('none', '-')} |")
         parts.append("")
     if D:
-        parts += ["## 4. Data preparation", "", table_dataprep(D), ""]
+        parts += ["## 4. Data preparation", "",
+                  "Silero x2 speech share, non-speech in long stretches, audio left by `trim_plan` (stretches > 1 s "
+                  "shortened to 0.5 s), and whether a VAD span (first speech - 1 s .. last speech + 1 s) reproduces "
+                  "official UEMs that are not the whole file (`scripts/vad_dataprep.py`).", "", table_dataprep(D), ""]
+    U = load(V / "uem_check.json")
+    if U:
+        parts += ["### Untranscribed speech inside the UEM (before the first / after the last reference segment)", "",
+                  "Silero x2 speech more than 1 s outside the transcribed span but inside the UEM "
+                  "(`scripts/vad_uem_check.py`); it is scored as false alarm for any diarizer.", "",
+                  "| dataset | sessions | speech before first segment s | after last segment s | sessions with >= 10 s | worst |",
+                  "|---|---:|---:|---:|---:|---|"]
+        for name, x in U.items():
+            w = x["flagged"][0] if x["flagged"] else None
+            parts.append(f"| {name} | {x['sessions']} | {x['speech_before_first_ref_s']} | {x['speech_after_last_ref_s']} | "
+                         f"{x['sessions_flagged']} | " + (f"{w['session_id']} ({w['split']}): {w['silero_speech_before_s']} s "
+                                                         f"before {w['first_ref_start']} s, {w['silero_speech_after_s']} s after "
+                                                         f"{w['last_ref_end']} s" if w else "-") + " |")
+        parts.append("")
     (V / "README.md").write_text("\n".join(parts) + "\n", encoding="utf-8", newline="\n")
     summary = {"whisper_totals": wtot, "correlation": corr_stats, "correlation_rows": corr_rows}
     (V / "summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8", newline="\n")

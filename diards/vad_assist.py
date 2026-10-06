@@ -299,6 +299,17 @@ def rerun(tag: str, variants=("none", "trim", "zero"), max_hours: float = 1.0, l
     return out
 
 
+KEEP_ROWS = ("baseline", "gate:silero_x2", "fill:silero_x2")
+
+
+def compact(r: dict) -> dict:
+    """Per-session rows only for the baseline and the main variants (summaries are kept for every variant)."""
+    for k, v in r["variants"].items():
+        if k not in KEEP_ROWS:
+            v.pop("per_session", None)
+    return r
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -322,7 +333,8 @@ def main(argv=None):
             except FileNotFoundError as exc:
                 print(f"  {tag}: skipped ({exc})", flush=True)
                 continue
-            (out / f"posthoc.{tag}.json").write_text(json.dumps(r, indent=1), encoding="utf-8", newline="\n")
+            (out / f"posthoc.{tag}.json").write_text(json.dumps(compact(r), separators=(",", ":")), encoding="utf-8",
+                                                     newline="\n")
     else:
         from .evaluate import NemotronDiarizer
 

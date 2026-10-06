@@ -226,6 +226,32 @@ Detector: silero_x2; primary reference. Columns: region (s), duration, level abo
 - easycom__Session_11 74.6-88.0 (13.4 s): level 2.9 dB, ref 1.0, nemotron 0.93, energy 0.01, webrtc 0.06, words -, p(silero) 0.03/0.04.
 - easycom__Session_11 107.8-120.0 (12.2 s): level 3.8 dB, ref 1.0, nemotron 0.88, energy 0.07, webrtc 0.09, words -, p(silero) 0.0/0.0.
 
+## icsi (ihm-mix)
+
+**Most unannotated speech** (% of the session's reference speech): icsi__Bed003 (15.58%), icsi__Bed008 (14.62%), icsi__Bed016 (4.84%)
+
+- icsi__Bed003 4031.3-4041.4 (10.2 s): level 10.0 dB, ref 0.0, nemotron -, energy 0.32, webrtc 0.74, words 0.0, p(silero) 0.9/0.93. Whisper: "Mushroom is not a vegetable. OK. Basically, since mushroom is not a vegetable, we can declare it as " [speech]
+- icsi__Bed003 4170.8-4178.9 (8.1 s): level 13.4 dB, ref 0.0, nemotron -, energy 0.67, webrtc 0.92, words 0.0, p(silero) 0.84/0.85. Whisper: "sign these twins because then you get into fun guys yeah exactly so it's like it's singular yet" [speech]
+- icsi__Bed003 3577.7-3584.7 (7.0 s): level 15.7 dB, ref 0.0, nemotron -, energy 0.7, webrtc 0.96, words 0.0, p(silero) 0.76/0.73. Whisper: "What was the name? What was the website again?" [speech]
+- icsi__Bed008 4802.2-4813.4 (11.2 s): level 15.3 dB, ref 0.0, nemotron -, energy 0.76, webrtc 0.75, words 0.0, p(silero) 0.78/0.86. Whisper: "you know you've got the contextual you've built systems like this basically none of the rest of us h" [speech]
+- icsi__Bed008 4752.0-4759.3 (7.3 s): level 10.0 dB, ref 0.0, nemotron -, energy 0.25, webrtc 0.31, words 0.0, p(silero) 0.48/0.86. Whisper: "was not really how can we display it, because if it's a mess, it's a mess. It doesn't really matter." [speech]
+- icsi__Bed008 4905.2-4912.2 (7.0 s): level 11.8 dB, ref 0.0, nemotron -, energy 0.55, webrtc 0.63, words 0.0, p(silero) 0.73/0.79. Whisper: "I mean, ultimately, wouldn't it be a goal to sort of try to persuade them to abandon the way they fi" [speech]
+- icsi__Bed016 2610.5-2613.3 (2.8 s): level 2.0 dB, ref 0.0, nemotron -, energy 0.0, webrtc 0.78, words 0.0, p(silero) 0.58/0.8.
+- icsi__Bed016 2664.6-2666.6 (1.9 s): level -7.6 dB, ref 0.0, nemotron -, energy 0.0, webrtc 0.17, words 0.0, p(silero) 0.47/0.54.
+- icsi__Bed016 2601.2-2603.0 (1.8 s): level 8.3 dB, ref 0.0, nemotron -, energy 0.42, webrtc 1.0, words 0.0, p(silero) 0.39/0.53.
+
+**Most silent reference speech** (% of the session's reference speech): icsi__Bed016 (14.19%), icsi__Bro011 (9.44%), icsi__Bro025 (8.22%)
+
+- icsi__Bed016 632.5-657.0 (24.5 s): level 13.1 dB, ref 1.0, nemotron -, energy 0.52, webrtc 0.79, words 0.0, p(silero) 0.04/0.01. Whisper: "I'm sorry, something seems to have gone wrong with our system, so I'm going to have to take over fro" [speech]
+- icsi__Bed016 3.5-14.8 (11.3 s): level 24.3 dB, ref 1.0, nemotron -, energy 0.89, webrtc 0.91, words 0.0, p(silero) 0.04/0.04. Whisper: "Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm-hm. Mm"
+- icsi__Bed016 1311.9-1317.6 (5.7 s): level 25.6 dB, ref 1.0, nemotron -, energy 0.86, webrtc 0.89, words 0.94, p(silero) 0.1/0.0.
+- icsi__Bro011 787.9-817.7 (29.8 s): level 7.9 dB, ref 1.0, nemotron -, energy 0.36, webrtc 0.58, words 0.07, p(silero) 0.02/0.01. Whisper: "Um, so, leaving the, um, extent of that, it's all cool. I think it's pretty, um, how, how, how you c"
+- icsi__Bro011 1060.8-1084.7 (23.9 s): level 7.7 dB, ref 1.0, nemotron -, energy 0.21, webrtc 0.71, words 0.02, p(silero) 0.03/0.04. Whisper: "Yeah, so they're working on the data that's still out, where you have acoustic features and things." [speech]
+- icsi__Bro011 1001.9-1023.2 (21.3 s): level 3.3 dB, ref 1.0, nemotron -, energy 0.07, webrtc 0.59, words 0.01, p(silero) 0.04/0.06. Whisper: "Yeah, so there's a group at Edinburgh that is working on this MOCA database where they have measurem" [speech]
+- icsi__Bro025 674.2-679.9 (5.6 s): level 17.7 dB, ref 1.0, nemotron -, energy 0.57, webrtc 0.74, words 0.67, p(silero) 0.08/0.01.
+- icsi__Bro025 1651.2-1656.2 (4.9 s): level 16.5 dB, ref 1.0, nemotron -, energy 0.71, webrtc 0.77, words 0.87, p(silero) 0.15/0.1.
+- icsi__Bro025 64.0-68.2 (4.2 s): level 18.5 dB, ref 1.0, nemotron -, energy 0.74, webrtc 0.94, words 0.61, p(silero) 0.17/0.06.
+
 ## libricss (clean-mix)
 
 **Most unannotated speech** (% of the session's reference speech): libricss__0L_session0 (0.0%), libricss__0S_session0 (0.0%), libricss__OV10_session0 (0.0%)

@@ -3,16 +3,27 @@
 Produced by the code on branch `vad-study`; write-up and verdict: [docs/silero_vad_study.md](../../docs/silero_vad_study.md). Exact commands:
 
 ```bash
-# env: D:\diarization-data\envs\diar (+ silero-vad 6.2.3 installed with --no-deps); pyannote in envs\vad
-WORKERS=8 bash scripts/vad_compute_all.sh                       # Silero / WebRTC / energy VAD cache (CPU)
-<envs/vad python> scripts/vad_pyannote.py                       # pyannote segmentation-3.0 baseline (GPU, ~6 min)
-for d in <every dataset>; do python -m diards.vad_audit $d; done   # coverage, boundaries, lag, evidence
-for d in <every dataset>; do python scripts/vad_whisper_check.py $d; done   # Whisper check of flagged regions
-JOBS=6 bash scripts/vad_pipeline_all.sh                         # post-hoc VAD-assisted Nemotron variants (CPU)
-for t in <tags>; do python -m diards.vad_assist rerun $t --max-hours 1.0; done   # trim / zero re-inference (GPU)
-python scripts/vad_primock57_channels.py --whisper              # PriMock57 per-channel analysis
-python scripts/vad_dataprep.py                                  # trimming potential, VAD-derived UEMs
-python scripts/vad_report.py                                    # this README + summary.json
+# Windows 11, D:\diarization-data\envs\diar: Python 3.12.15, torch 2.11.0+cu128, numpy 2.5.3, pyannote.metrics 4.1,
+# transformers 5.19.0.dev0; plus `pip install --no-deps silero-vad==6.2.3` and webrtcvad-wheels 2.0.14.post1.
+# pyannote.audio 4.0.7 only in a separate venv: python -m venv --system-site-packages D:\diarization-data\envs\vad
+# DIARDS_BASE=D:\diarization-data (VAD cache: <base>/vad-study/vad, override with DIARDS_VAD_STUDY)
+WORKERS=8 bash scripts/vad_compute_all.sh                    # Silero (stock + 30 s reset) / WebRTC / energy cache, CPU
+<envs/vad python> scripts/vad_pyannote.py                    # pyannote segmentation-3.0 on evaluated subsets, GPU
+for d in <each of the 18 datasets>; do
+  python -m diards.vad_audit $d                              # results/vad/audit/audit.<dataset>.<view>.json
+  python scripts/vad_whisper_check.py $d                     # results/vad/whisper/whisper.<dataset>.<view>.json (GPU)
+done
+python scripts/vad_whisper_check.py --rescore                # transcript classes + summaries
+JOBS=6 bash scripts/vad_pipeline_all.sh                      # results/vad/pipeline/posthoc.<tag>.json (CPU)
+for t in <each results/nemotron tag>; do
+  python -m diards.vad_assist rerun $t --max-hours 1.0       # results/vad/pipeline/rerun.<tag>.json (GPU)
+done
+python scripts/vad_reset_check.py                            # results/vad/reset_check.json (Silero drop-outs)
+python scripts/vad_primock57_channels.py --whisper           # results/vad/primock57/
+python scripts/vad_dataprep.py                               # results/vad/dataprep.json
+python scripts/vad_uem_check.py                              # results/vad/uem_check.json
+python scripts/vad_worst_cases.py                            # results/vad/worst_cases.md
+python scripts/vad_report.py                                 # this README + results/vad/summary.json
 ```
 
 Conventions: reference speech = union of the RTTM segments inside the UEM; percentages are of reference speech time. *unannotated* = VAD speech >= 0.5 s long and > 0.25 s away from any reference speech; *silent-ref* = reference speech >= 0.5 s long and > 0.25 s away from any VAD speech; FA / miss = frame-level disagreement at collar 0. Boundary offsets: positive = the reference is wider than the VAD (starts earlier / ends later). Silero = `silero-vad` 6.2.3 defaults (threshold 0.5, min speech 250 ms, min silence 100 ms, pad 30 ms) applied to the frame-wise maximum of two runs (stock streaming, and state reset every 30 s): *Silero x2*. *stock* = the plain streaming run.
@@ -30,6 +41,7 @@ Conventions: reference speech = union of the RTTM segments inside the UEM; perce
 | dipco | ihm-mix | B | 10 | 4.87 | 4.22 | 0.9 | 14.3 | 0.28 | 4.69 | 0.236 | 0.052 | 0 |
 | earnings21 | default | B- | 44 | 32.82 | 33.12 | 4.0 | 3.1 | 0.43 | 0.30 | 0.047 | -0.110 | 0 |
 | easycom | glasses | B | 12 | 4.11 | 2.19 | 0.8 | 47.5 | 0.01 | 35.55 | 0.118 | 0.066 | 0 |
+| icsi | ihm-mix | B | 75 | 58.80 | 57.46 | 6.0 | 8.3 | 0.91 | 1.78 | -0.002 | -0.122 | 0 |
 | libricss | clean-mix | S (synthetic) | 60 | 9.43 | 8.82 | 0.2 | 6.7 | 0.00 | 0.18 | 0.046 | -0.030 | 0 |
 | maptask | default | A | 128 | 9.27 | 10.36 | 13.6 | 1.8 | 0.62 | 0.16 | -0.009 | -0.120 | 0 |
 | msdwild_en | default | B | 894 | 25.78 | 25.94 | 3.4 | 2.8 | 0.32 | 0.46 | 0.011 | -0.107 | 0 |
@@ -52,6 +64,7 @@ Conventions: reference speech = union of the RTTM segments inside the UEM; perce
 | dipco | 5 | 0.34 | 0.34 | 0.34 | 1.35 | 0.70 | 0.38 | 0.18 |
 | earnings21 | 44 | 0.43 | 0.43 | 0.43 | 1.50 | 1.00 | 0.44 | 0.46 |
 | easycom | 12 | 0.01 | 0.00 | 0.01 | 0.01 | 0.00 | 1.52 | 0.10 |
+| icsi | 3 | 1.10 | 1.06 | 1.00 | 4.43 | 3.19 | 2.14 | 0.23 |
 | libricss | 54 | 0.00 | 0.00 | 0.00 | 0.01 | 0.18 | 0.00 | 0.00 |
 | maptask | 128 | 0.62 | 0.61 | 0.49 | 4.35 | 1.76 | 3.95 | 0.19 |
 | msdwild_en | 150 | 0.45 | 0.44 | 0.40 | 1.75 | 0.92 | 0.23 | 0.23 |
@@ -74,6 +87,7 @@ Conventions: reference speech = union of the RTTM segments inside the UEM; perce
 | dipco | 5 | 1.18 | 1.32 | 1.43 | 0.42 | 1.11 | 1.08 | 1.74 |
 | earnings21 | 44 | 0.30 | 0.31 | 0.34 | 0.01 | 1.22 | 0.31 | 1.38 |
 | easycom | 12 | 35.55 | 42.18 | 37.92 | 65.59 | 50.42 | 3.21 | 4.69 |
+| icsi | 3 | 0.56 | 0.62 | 0.76 | 0.03 | 1.75 | 0.60 | 0.06 |
 | libricss | 54 | 0.19 | 0.19 | 0.19 | 0.13 | 0.39 | 0.21 | 0.30 |
 | maptask | 128 | 0.16 | 0.19 | 0.22 | 0.08 | 0.12 | 0.06 | 0.06 |
 | msdwild_en | 150 | 2.23 | 3.09 | 2.51 | 0.03 | 9.29 | 0.27 | 0.63 |
@@ -98,6 +112,7 @@ Cells: regions whose Whisper transcript is intelligible speech (>= 3 words, not 
 | dipco | 9 / 14 / 18 (2 laugh) | 5 / 14 / 20 | 6 / 12 / 20 | 13 / 18 / 20 | 10 / 16 / 20 | 8 / 13 / 17 | 1 / 6 / 20 |
 | earnings21 | 20 / 20 / 20 | 10 / 12 / 20 | 10 / 10 / 20 | 7 / 9 / 17 | 6 / 6 / 7 | 0 / 0 / 2 | 1 / 1 / 20 |
 | easycom | - | - | - | 15 / 19 / 20 | 17 / 19 / 20 | 15 / 20 / 20 | 0 / 3 / 20 |
+| icsi | 20 / 20 / 20 | 8 / 12 / 20 (1 laugh) | 11 / 13 / 20 (1 laugh) | 11 / 13 / 20 | 15 / 15 / 20 | 11 / 13 / 20 | 2 / 5 / 20 |
 | libricss | - | 0 / 0 / 20 | 0 / 0 / 3 | 0 / 1 / 15 | 0 / 4 / 20 | 0 / 0 / 8 | 0 / 0 / 20 |
 | maptask | 3 / 11 / 20 (8 laugh) | 3 / 14 / 20 (1 laugh) | 8 / 14 / 20 (3 laugh) | 8 / 13 / 13 | 6 / 8 / 8 | 4 / 5 / 5 | 1 / 3 / 20 |
 | msdwild_en | 8 / 16 / 20 (3 laugh) | 8 / 13 / 20 (1 laugh) | 6 / 11 / 20 | 17 / 20 / 20 | 19 / 20 / 20 | 2 / 4 / 4 | 0 / 5 / 20 (1 laugh) |
@@ -106,7 +121,7 @@ Cells: regions whose Whisper transcript is intelligible speech (>= 3 words, not 
 | sbcsae | 10 / 11 / 20 (6 laugh) | 5 / 11 / 20 (2 laugh) | 1 / 13 / 20 | 10 / 16 / 20 | 15 / 18 / 20 | 5 / 14 / 20 | 0 / 4 / 20 |
 | scotus | - | - | - | 0 / 5 / 20 | 1 / 5 / 20 | 0 / 4 / 20 | - |
 | voxconverse | 9 / 14 / 20 (3 laugh) | 1 / 9 / 20 (1 laugh) | 4 / 11 / 20 (1 laugh) | 11 / 16 / 20 (1 laugh) | 16 / 17 / 20 | 9 / 12 / 14 | 2 / 8 / 20 |
-| **all** | **166 / 209 / 244** (68% / 86%) | **119 / 195 / 286** (42% / 68%) | **129 / 192 / 283** (46% / 68%) | **146 / 222 / 312** (47% / 71%) | **169 / 200 / 292** (58% / 68%) | **85 / 129 / 222** (38% / 58%) | **14 / 52 / 320** (4% / 16%) |
+| **all** | **186 / 229 / 264** (70% / 87%) | **127 / 207 / 306** (42% / 68%) | **140 / 205 / 303** (46% / 68%) | **157 / 235 / 332** (47% / 71%) | **184 / 215 / 312** (59% / 69%) | **96 / 142 / 242** (40% / 59%) | **16 / 57 / 340** (5% / 17%) |
 
 ## 2. Boundary precision per reference variant (vs Silero) and Nemotron error against the same reference
 
@@ -126,6 +141,8 @@ Cells: regions whose Whisper transcript is intelligible speech (>= 3 words, not 
 | dipco | closetalk_activity | 4.04 | -0.02 / -0.01 / 0.01 | -0.21 / -0.16 / -0.13 | 5.7 | 20.0 | 10.5 | 31.5 |
 | earnings21 | primary | 32.82 | 0.03 / 0.05 / 0.06 | -0.15 / -0.11 / -0.08 | 3.1 | 4.0 | 3.6 | 19.5 |
 | easycom | primary | 4.11 | 0.02 / 0.12 / 0.37 | -0.03 / 0.07 / 0.43 | 47.5 | 19.6 | 4.1 | 30.4 |
+| icsi | primary | 58.80 | -0.04 / -0.00 / 0.04 | -0.20 / -0.12 / -0.05 | 8.3 | 2.9 | 12.2 | 15.9 |
+| icsi | words_gap0.2 | 47.59 | -0.05 / -0.01 / 0.02 | -0.24 / -0.15 / -0.10 | 2.8 | 0.6 | 38.4 | 39.4 |
 | libricss | primary | 9.43 | 0.03 / 0.05 / 0.06 | -0.05 / -0.03 / -0.00 | 6.7 | 4.5 | 0.1 | 5.1 |
 | maptask | primary | 9.27 | -0.02 / -0.01 / 0.01 | -0.16 / -0.12 / -0.09 | 1.8 | 3.3 | 4.5 | 7.9 |
 | msdwild_en | primary | 25.78 | -0.04 / 0.01 / 0.07 | -0.19 / -0.11 / -0.02 | 2.8 | 9.6 | 3.9 | 17.8 |
@@ -256,6 +273,8 @@ Primary reference, collar 0:
 | tag | sessions | baseline DER % | gate:silero_x2 | gate+0.25:silero_x2 | gate:silero | gate:silero_r30 | gate:webrtc | gate:energy | gate:pyannote | gate+0.25:pyannote | fill:silero_x2 | vad_decides:silero_x2 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | afrispeech_dialog.default | 46 | 26.69 | +1.93 | +0.03 | +2.10 | +1.99 | +1.60 | +3.69 | +1.03 | +0.03 | -2.58 | -0.62 |
+| ami.ihm-mix | 16 | 9.22 | +0.77 | +0.24 | +0.90 | +0.95 | +0.50 | +1.00 | +0.09 | +0.00 | +5.69 | +6.53 |
+| ami.sdm | 16 | 11.35 | +5.58 | +3.28 | +7.47 | +6.08 | +22.41 | +13.46 | +0.33 | +0.18 | +3.74 | +9.41 |
 | ava_avd_en.default | 29 | 49.79 | +6.72 | +7.51 | +7.98 | +7.00 | +0.62 | -0.07 | -0.45 | +1.67 | +3.32 | +10.00 |
 | callfriend_eng.default | 40 | 30.80 | +1.92 | +0.37 | +1.99 | +2.54 | +0.64 | +1.38 | +1.76 | +0.40 | -1.04 | +0.97 |
 | callhome_eng.default | 140 | 11.68 | +1.17 | +0.34 | +2.38 | +2.19 | +0.23 | +0.87 | +1.61 | +0.30 | +0.56 | +1.77 |
@@ -284,6 +303,8 @@ Primary reference, collar 0.25 s:
 | tag | sessions | baseline DER % | gate:silero_x2 | gate+0.25:silero_x2 | gate:silero | gate:silero_r30 | gate:webrtc | gate:energy | gate:pyannote | gate+0.25:pyannote | fill:silero_x2 | vad_decides:silero_x2 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | afrispeech_dialog.default | 46 | 24.51 | +1.99 | +0.02 | +2.16 | +2.04 | +1.64 | +3.81 | +1.08 | +0.02 | -2.74 | -0.72 |
+| ami.ihm-mix | 16 | 3.56 | +0.24 | -0.05 | +0.30 | +0.31 | +0.44 | +0.52 | -0.08 | -0.09 | +0.75 | +0.99 |
+| ami.sdm | 16 | 4.73 | +3.79 | +2.24 | +5.45 | +4.18 | +22.69 | +11.73 | +0.08 | +0.05 | +0.23 | +4.03 |
 | ava_avd_en.default | 29 | 33.98 | +11.68 | +11.09 | +13.49 | +11.92 | +3.01 | +1.89 | +2.59 | +2.44 | +2.51 | +14.07 |
 | callfriend_eng.default | 40 | 23.24 | +1.84 | +0.36 | +1.92 | +2.47 | +0.66 | +1.66 | +1.90 | +0.39 | -1.70 | +0.21 |
 | callhome_eng.default | 140 | 7.23 | +1.38 | +0.24 | +2.75 | +2.25 | +0.44 | +1.12 | +1.67 | +0.21 | -0.98 | +0.42 |
@@ -312,6 +333,8 @@ Error components, gate with Silero (collar 0):
 | tag | baseline FA / miss / conf % | gate:silero_x2 FA / miss / conf % |
 |---|---|---|
 | afrispeech_dialog.default | 6.44 / 15.15 / 5.10 | 6.29 / 17.37 / 4.97 |
+| ami.ihm-mix | 3.66 / 4.68 / 0.88 | 3.18 / 5.97 / 0.84 |
+| ami.sdm | 4.12 / 5.86 / 1.38 | 3.02 / 12.76 / 1.16 |
 | ava_avd_en.default | 11.78 / 23.30 / 14.70 | 7.38 / 37.85 / 11.28 |
 | callfriend_eng.default | 7.90 / 18.58 / 4.32 | 7.63 / 20.93 / 4.16 |
 | callhome_eng.default | 3.92 / 7.35 / 0.41 | 3.25 / 9.23 / 0.37 |
@@ -340,6 +363,8 @@ Protocol variants (scoring region changed; not comparable to official numbers):
 | tag | official UEM h | uem_span h | uem_speech h | baseline DER % c=0 | uem_span | uem_speech |
 |---|---:|---:|---:|---:|---:|---:|
 | afrispeech_dialog.default | 6.632 | 6.63 | 6.487 | 26.69 | 26.69 | 25.60 |
+| ami.ihm-mix | 9.062 | 8.928 | 7.844 | 9.22 | 9.19 | 8.97 |
+| ami.sdm | 9.062 | 8.817 | 7.366 | 11.35 | 11.22 | 10.47 |
 | ava_avd_en.default | 2.318 | 2.216 | 1.13 | 49.79 | 48.74 | 44.75 |
 | callfriend_eng.default | 10.438 | 10.432 | 10.053 | 30.80 | 30.77 | 29.18 |
 | callhome_eng.default | 20.296 | 20.294 | 19.912 | 11.68 | 11.68 | 11.44 |
@@ -373,6 +398,7 @@ Protocol variants (scoring region changed; not comparable to official numbers):
 | ava_avd_en.default | 12 | 1.00 | 50.06 | 50.06 | 58.33 (44%) | 59.05 | 34.13 | 34.13 | 45.76 | 47.84 |
 | callfriend_eng.default | 5 | 1.15 | 37.37 | 37.37 | 37.83 (88%) | 38.33 | 32.93 | 32.93 | 33.50 | 34.40 |
 | callhome_eng.default | 9 | 1.09 | 10.97 | 10.97 | 11.34 (95%) | 11.78 | 6.57 | 6.57 | 6.89 | 7.31 |
+| chime6.farfield.dev | 1 | 1.99 | 34.65 | 34.65 | 60.21 (44%) | 60.57 | 20.93 | 20.93 | 52.63 | 53.05 |
 | chime6.farfield | 1 | 2.56 | 33.03 | 33.03 | 70.09 (28%) | 71.05 | 21.22 | 21.22 | 63.34 | 64.16 |
 | chime6.ihm-mix | 1 | 2.56 | 31.89 | 31.89 | 23.94 (80%) | 23.35 | 22.25 | 22.25 | 12.69 | 12.50 |
 | dipco.farfield | 2 | 1.11 | 35.90 | 35.90 | 50.08 (69%) | 50.32 | 27.73 | 27.73 | 43.62 | 43.97 |
@@ -447,4 +473,54 @@ Energy-vs-Silero disagreements on the isolated channels (30 longest of each kind
 |---|---:|---:|---:|---:|---:|---:|
 | energy_not_silero | 30 | 46.44 | 2 | 6 | 0 | 22 |
 | silero_not_energy | 17 | 5.78 | 1 | 11 | 0 | 5 |
+
+## 4. Data preparation
+
+Silero x2 speech share, non-speech in long stretches, audio left by `trim_plan` (stretches > 1 s shortened to 0.5 s), and whether a VAD span (first speech - 1 s .. last speech + 1 s) reproduces official UEMs that are not the whole file (`scripts/vad_dataprep.py`).
+
+| dataset | hours | Silero speech % | non-speech in stretches > 1 s % | > 5 s % | audio left after trim % | non-trivial UEMs reproduced within 2 s |
+|---|---:|---:|---:|---:|---:|---:|
+| afrispeech_dialog | 6.63 | 84.4 | 5.5 | 0.3 | 96.2 | - |
+| ami | 99.4 | 72.6 | 17.7 | 8.1 | 85.2 | - |
+| ava_avd_en | 8.0 | 36.9 | 57.1 | 43.1 | 47.3 | 31/71 |
+| callfriend_eng | 10.44 | 81.1 | 8.2 | 0.9 | 94.1 | - |
+| callhome_eng | 20.3 | 85.1 | 4.8 | 0.4 | 96.7 | - |
+| chime6 | 9.67 | 71.0 | 21.7 | 12.6 | 81.1 | 0/3 |
+| dipco | 5.33 | 79.2 | 12.5 | 6.1 | 89.4 | - |
+| earnings21 | 39.26 | 84.3 | 7.2 | 1.6 | 94.5 | - |
+| easycom | 5.3 | 41.3 | 52.0 | 35.4 | 53.0 | - |
+| icsi | 71.69 | 80.2 | 9.6 | 2.7 | 92.6 | - |
+| libricss | 10.08 | 87.5 | 5.6 | 0.0 | 95.4 | - |
+| maptask | 14.31 | 72.4 | 14.5 | 1.5 | 89.4 | - |
+| msdwild_en | 27.91 | 93.0 | 2.1 | 0.6 | 98.4 | - |
+| notsofar1 | 17.07 | 91.9 | 3.5 | 2.0 | 97.0 | - |
+| primock57 | 8.64 | 78.5 | 8.7 | 0.3 | 94.1 | - |
+| sbcsae | 23.31 | 73.0 | 17.8 | 7.8 | 85.2 | 20/40 |
+| scotus | 20.5 | 92.5 | 1.8 | 0.3 | 98.7 | 9/12 |
+| voxconverse | 63.83 | 89.5 | 5.8 | 2.7 | 95.2 | - |
+
+### Untranscribed speech inside the UEM (before the first / after the last reference segment)
+
+Silero x2 speech more than 1 s outside the transcribed span but inside the UEM (`scripts/vad_uem_check.py`); it is scored as false alarm for any diarizer.
+
+| dataset | sessions | speech before first segment s | after last segment s | sessions with >= 10 s | worst |
+|---|---:|---:|---:|---:|---|
+| afrispeech_dialog | 46 | 5.2 | 363.4 | 5 | afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99 (medical): 0.4 s before 2.02 s, 99.7 s after 531.01 s |
+| ami | 170 | 541.0 | 744.9 | 36 | ami__TS3007d (train): 64.9 s before 100.07 s, 16.9 s after 2758.51 s |
+| ava_avd_en | 96 | 0.0 | 0.0 | 0 | - |
+| callfriend_eng | 40 | 0.0 | 0.0 | 0 | - |
+| callhome_eng | 140 | 0.0 | 0.0 | 0 | - |
+| chime6 | 4 | 0.0 | 3.8 | 0 | - |
+| dipco | 10 | 0.4 | 0.0 | 0 | - |
+| earnings21 | 44 | 0.4 | 0.0 | 0 | - |
+| easycom | 12 | 0.0 | 0.0 | 0 | - |
+| icsi | 75 | 115.8 | 511.0 | 6 | icsi__Bed003 (train): 0 s before 38.95 s, 426.0 s after 3499.23 s |
+| libricss | 60 | 0.0 | 0.0 | 0 | - |
+| maptask | 128 | 1.3 | 0.6 | 0 | - |
+| msdwild_en | 894 | 0.1 | 24.6 | 1 | msdwild_en__00260 (few.train): 0 s before 0.04 s, 14.7 s after 86.95 s |
+| notsofar1 | 165 | 0.4 | 1.6 | 0 | - |
+| primock57 | 57 | 0.6 | 0.0 | 0 | - |
+| sbcsae | 60 | 0.0 | 0.0 | 0 | - |
+| scotus | 12 | 0.0 | 0.0 | 0 | - |
+| voxconverse | 448 | 4.8 | 53.5 | 0 | - |
 

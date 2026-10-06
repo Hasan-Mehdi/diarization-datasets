@@ -45,6 +45,7 @@ TOL = 0.25
 MIN_LEN = 0.5
 ISLAND_GAP = 0.3
 LAG_MAX = 5.0
+TOP_VADS = ("silero_x2", "energy", "webrtc")  # detectors whose longest flagged regions are listed with evidence
 LAG_MIN_DURATION = 120.0
 
 
@@ -182,7 +183,7 @@ def audit_session(s: Session, vads, view: str, refs: dict, hyp_path: Path | None
                        onsets=[round(x, 3) for x in b["onsets"]], offsets=[round(x, 3) for x in b["offsets"]])
             if ref_name == "primary":
                 rec["lag"] = best_lag(ref, ivs, s.duration, LAG_MAX)
-                if v not in ("nemotron", "pyannote"):
+                if v in TOP_VADS:
                     rstarts = [a for a, _ in ref]
                     rec["top_unref"] = [_evidence(a, b_, v, detected, starts, words, cache, floor, ref, rstarts)
                                         for a, b_ in sorted(m["_unref"], key=lambda t: t[0] - t[1])[:top]]
@@ -240,7 +241,9 @@ def audit_dataset(name: str, view: str | None = None, vads=DEFAULT_VADS, root=No
     if out:
         out = Path(out)
         out.mkdir(parents=True, exist_ok=True)
-        (out / f"audit.{name}.{view}.json").write_text(json.dumps(result, indent=1), encoding="utf-8", newline="\n")
+        # compact: with per-session rows an indented file of a large dataset is several MB
+        (out / f"audit.{name}.{view}.json").write_text(json.dumps(result, separators=(",", ":")), encoding="utf-8",
+                                                       newline="\n")
     if echo:
         for ref_name, by_vad in result["summary"].items():
             for v, x in by_vad.items():
