@@ -4,10 +4,10 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 21:11 EDT (from the system clock)_
+_Last updated: 2026-10-05 21:13 EDT (from the system clock)_
 
-- **State:** all items of the brief are done and pushed. The Silero VAD study reported at 21:03 and its
-  recommendations are integrated (branch `vad-study` merged); finishing the last ICSI refresh, then DONE.
+- **State: COMPLETE.** All items of the brief and of every INBOX message are done and pushed, including the
+  integration of the Silero VAD study (branch `vad-study` merged). DONE marker written.
 - **Delivered:** 18 free English datasets downloaded, normalized (one layout, NeMo/pyannote/Lhotse exports), validated
   (label sanity + energy VAD), profiled, evaluated with Nemotron 3 Diarization (25 dataset/view runs, collar 0 and
   0.25 s, every reference variant), and diagnosed (energy split, Whisper audit of false alarms, time-offset check).
@@ -104,6 +104,8 @@ Times before 13:27 are approximate (reconstructed from commit times).
   (call 4384964 ~12% unlabelled), ICSI, AfriSpeech, PriMock57; README section on the study. VAD_PROGRESS.md kept as
   the study's log.
 - 2026-10-05 21:11: refresh of stats/validation/diagnosis for the re-prepared datasets.
+
+- 2026-10-05 21:13: final refresh done (ICSI/AfriSpeech/PriMock57 stats, validation, diagnosis), numbers updated, 0 broken links, 32 tests pass; DONE written.
 
 ## Skipped / blocked (with reasons)
 
