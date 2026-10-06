@@ -192,14 +192,15 @@ pyannote.metrics DER/JER, overlap included, UEM applied, collar = half-width (0 
 1. **The reference is half the result.** Same model output, different reference, very different DER:
    AMI SDM test 11.3% (forced-aligned MFA) vs 27.5% (BUT `only_words`) vs 32.5% (transcriber segments);
    NOTSOFAR-1 far-field 18.4% (official utterances) vs 15.0% (word-based) vs 11.3% (MFA);
-   PriMock57 24.2% (official TextGrids) vs 10.4% (per-channel activity); CHiME-6 far-field 37.6% (official alignment
+   PriMock57 24.2% (official TextGrids) vs 9.9% (Silero per-channel reference); CHiME-6 far-field 37.6% (official alignment
    RTTM) vs 43.6% (human utterance RTTM). The gap is almost entirely missed speech in pauses that loose references
    label as speech, and it survives a 0.25 s collar. Always report which reference you used.
 2. **Reference errors verified, not just suspected.** The checks combine an energy split of errors, a Whisper
    transcription of the longest audible "false alarms", and a time-offset search. They found:
    - missing turns in CallHome English (38 of the 40 longest audible false alarms are real speech) and CallFriend
      (39/40), both TalkBank conversions;
-   - hand-typed AfriSpeech-Dialog times that are about 0.45 s early (median best lag), plus untimed speech (35/40);
+   - hand-typed AfriSpeech-Dialog times that are about 0.45 s early (median best lag), plus speech without labels (19 of 28 long audible
+     false alarms inside the transcribed span, after cutting 48-100 s untranscribed tails from 5 recordings);
    - utterances dropped by the MFA reference in AMI's EN2002 test meetings (up to 5% of a meeting's speech;
      confirmed by the model's false alarms);
    - pauses labelled as speech in tiled or padded references: SBCSAE, SCOTUS, PriMock57, CallFriend, DiPCo,

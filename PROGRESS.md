@@ -15,8 +15,8 @@ _Last updated: 2026-10-05 21:11 EDT (from the system clock)_
 - **Headline results (Nemotron 3 Diarization, collar 0 / 0.25 s, primary reference):** Map Task 7.9 / 1.9;
   VoxConverse test 8.4 / 5.7 (in training data); AMI test close-talk 9.2 / 3.6 (model card 9.25); AMI SDM 11.3 / 4.7;
   CallHome Eng 11.7 / 7.2; LibriCSS room 14.3 / 13.0 (clean mix 5.1); NOTSOFAR far-field 18.4 / 6.9;
-  MSDWild-en 17.8 / 10.7; Earnings-21 19.5 / 15.9; PriMock57 24.2 / 16.0 (10.4 / 4.1 vs channel activity);
-  AfriSpeech 26.7 / 24.5; SBCSAE 27.4 / 24.2; DiPCo close-talk 27.3 / 19.4; EasyCom 30.4 / 21.7;
+  MSDWild-en 17.8 / 10.7; Earnings-21 19.5 / 15.9; PriMock57 24.2 / 16.0 (9.85 / 2.55 vs Silero per-channel reference);
+  AfriSpeech 25.0 / 22.8 (after UEM fix); SBCSAE 27.4 / 24.2; DiPCo close-talk 27.3 / 19.4; EasyCom 30.4 / 21.7;
   CallFriend 30.8 / 23.2; SCOTUS 31.7 / 30.3; CHiME-6 far-field 37.6 / 25.6; AVA-AVD-en 49.8 / 34.0.
 - **Needs Hasan (optional):** free sign-ups I could not do unattended: Ego4D, MMCSG, CHiME-9 ECHI, Fearless Steps,
   MLC-SLM (steps in docs/OTHER_DATASETS.md section A). After signing up, add a recipe following diards/datasets/*.py.

@@ -5,13 +5,15 @@ the *timing* is utterance-level and loose. About 10-14% of the time labelled as 
 "utterances" contain several sentences with long pauses (607 are longer than 10 s), and the padding produces
 twice as much "overlap" as there really is. Scored against the official TextGrids, NVIDIA Nemotron 3 Diarization
 gets **24.2% DER** (collar 0), almost all of it "missed speech". Scored against speech activity measured on each
-speaker's own isolated channel, the same output gets **10.4%** (collar 0) and **4.1%** (collar 0.25 s). Most of the
-apparent error is in the reference, not the model.
+speaker's own isolated channel, the same output gets **10.4%** (collar 0) and **4.1%** (collar 0.25 s) with an energy
+detector, and **9.85% / 2.55%** with Silero VAD per channel (follow-up [VAD study](docs/silero_vad_study.md)). Most
+of the apparent error is in the reference, not the model.
 
 The claim that PriMock57 is weak for diarization holds, with one correction: the problem is coarse, padded
 timing, not missing or wrong speakers. Because the two channels are recorded separately, it can be fixed. This
-repo ships tighter per-channel activity RTTMs for all 57 consultations
-([`results/primock57/channel_activity_rttm/`](results/primock57/channel_activity_rttm/)).
+repo ships tighter per-channel RTTMs for all 57 consultations: energy-based
+([`results/primock57/channel_activity_rttm/`](results/primock57/channel_activity_rttm/)) and, preferred, Silero-based
+([`results/vad/primock57/silero_channel_rttm/`](results/vad/primock57/silero_channel_rttm/)).
 
 ## What PriMock57 is
 

@@ -79,21 +79,22 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 <!-- auto:diagnosis -->
 | hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| default | default | 46 | 15.11 | 11.56 | 3.55 | 4.44 | 3.17 | 1.27 |
+| default | default | 46 | 15.11 | 11.56 | 3.55 | 2.79 | 1.94 | 0.85 |
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 
-**Whisper audit of the longest audible false alarms (default):** 35 of 40 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (69.6 of 76.4 s). Examples: `afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16` 471.8-475.2 s: "celebrating their birthday, they were not being reminded that this was the day t"; `afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99` 533.2-536.4 s: "Okay, I'm going to go through what..."; `afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce` 486.6-489.2 s: "worsening over time and change in Boer."
+**Whisper audit of the longest audible false alarms (default):** 19 of 28 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (28.3 of 38.9 s). Examples: `afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16` 471.8-475.2 s: "celebrating their birthday, they were not being reminded that this was the day t"; `afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16` 478.5-480.8 s: "they would actually remember the dates they were born and they would be able"; `afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16` 475.8-477.9 s: "Because if they were remembering this is what they did, they would not"
 
 **Time-offset check (default):** 6 of 46 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.45 s; shifted: `afrispeech_dialog__94009039-0507-492f-8b26-e53d20642089` (+0.40 s), `afrispeech_dialog__d2f0bed6-f3e1-48a8-9fb2-ceb137670bc4` (+0.45 s), `afrispeech_dialog__5b8a8e4c-7463-47c4-858f-5cd8dd278d42` (+0.60 s).
 <!-- /auto:diagnosis -->
 
-**Reading the AfriSpeech-Dialog numbers: the reference is the main problem.** DER is 26.7% at collar 0 and still
-24.5% at 0.25 s. Three independent checks point at the timestamps:
+**Reading the AfriSpeech-Dialog numbers: the reference is the main problem.** DER is 25.0% at collar 0 and still
+22.8% at 0.25 s (with the corrected UEM below). Three independent checks point at the timestamps:
 - **Pauses labelled as speech:** 11.6 of the 15.1 points of missed speech fall where the audio is silent (turn times
   are hand-typed around whole turns). In `304d6402...` the two speakers' turns cover 208 s of a 210 s file.
-- **Missing speech:** 35 of the 40 longest audible false alarms contain intelligible speech per Whisper (turns
-  without times, or times that end early).
+- **Missing speech:** with the UEM cut to the transcribed span (see below), 19 of the 28 longest audible false
+  alarms still contain intelligible speech per Whisper (turns without times, or times that end early). Before the cut
+  it was 35 of 40, most of the difference being the untranscribed tails.
 - **Systematic shift:** the time-offset check finds the reference about **0.45 s early** (median best lag over
   46 files; 6 files individually clearly shifted, by 0.3-0.6 s). That is consistent with times typed by hand while
   listening.

@@ -8,9 +8,9 @@
   "miss_pct": 1.16,
   "miss_in_silence_pct": 0.59,
   "miss_with_energy_pct": 0.57,
-  "fa_pct": 7.37,
+  "fa_pct": 7.36,
   "fa_with_energy_pct": 2.4,
-  "fa_in_silence_pct": 4.97,
+  "fa_in_silence_pct": 4.96,
   "note": "speech-detection errors only (speaker-agnostic union of segments), % of reference speech time"
  },
  "sessions": [
@@ -72,11 +72,11 @@
    "session_id": "icsi__Bmr018",
    "ref": 2963.49,
    "miss": 12.32,
-   "fa": 253.72,
+   "fa": 252.51,
    "miss_silent": 8.08,
-   "fa_energy": 62.54,
+   "fa_energy": 62.29,
    "miss_energy": 4.24,
-   "fa_silent": 191.18,
+   "fa_silent": 190.21,
    "examples_miss_silent": [
     [
      2823.41,
@@ -113,12 +113,12 @@
      1142.43
     ],
     [
-     3420.25,
-     3420.85
-    ],
-    [
      2708.54,
      2709.12
+    ],
+    [
+     468.24,
+     468.79
     ]
    ]
   },

@@ -8,9 +8,9 @@
   "miss_pct": 15.11,
   "miss_in_silence_pct": 11.56,
   "miss_with_energy_pct": 3.55,
-  "fa_pct": 4.44,
-  "fa_with_energy_pct": 3.17,
-  "fa_in_silence_pct": 1.27,
+  "fa_pct": 2.79,
+  "fa_with_energy_pct": 1.94,
+  "fa_in_silence_pct": 0.85,
   "note": "speech-detection errors only (speaker-agnostic union of segments), % of reference speech time"
  },
  "sessions": [
@@ -72,11 +72,11 @@
    "session_id": "afrispeech_dialog__0f572000-4660-4c37-addc-3443e3448e0c",
    "ref": 364.93,
    "miss": 20.34,
-   "fa": 6.3,
+   "fa": 5.71,
    "miss_silent": 16.43,
-   "fa_energy": 3.99,
+   "fa_energy": 3.62,
    "miss_energy": 3.91,
-   "fa_silent": 2.31,
+   "fa_silent": 2.09,
    "examples_miss_silent": [
     [
      151.88,
@@ -109,16 +109,16 @@
      1.96
     ],
     [
-     0.58,
-     0.95
-    ],
-    [
      362.66,
      363.0
     ],
     [
      361.28,
      361.61
+    ],
+    [
+     360.54,
+     360.84
     ]
    ]
   },
@@ -126,11 +126,11 @@
    "session_id": "afrispeech_dialog__136be64d-ca9e-473e-9c0e-fc4b008de0cd",
    "ref": 824.96,
    "miss": 96.11,
-   "fa": 34.45,
+   "fa": 34.27,
    "miss_silent": 87.33,
-   "fa_energy": 21.78,
+   "fa_energy": 21.66,
    "miss_energy": 8.78,
-   "fa_silent": 12.67,
+   "fa_silent": 12.61,
    "examples_miss_silent": [
     [
      247.45,
@@ -180,11 +180,11 @@
    "session_id": "afrispeech_dialog__17745a2c-6705-42df-9949-bbe78aa70307",
    "ref": 467.0,
    "miss": 84.36,
-   "fa": 2.53,
+   "fa": 1.95,
    "miss_silent": 68.16,
-   "fa_energy": 1.67,
+   "fa_energy": 1.17,
    "miss_energy": 16.2,
-   "fa_silent": 0.86,
+   "fa_silent": 0.78,
    "examples_miss_silent": [
     [
      7.81,
@@ -213,10 +213,6 @@
      158.61
     ],
     [
-     0.0,
-     0.5
-    ],
-    [
      1.8,
      1.97
     ],
@@ -227,6 +223,10 @@
     [
      29.91,
      29.98
+    ],
+    [
+     158.68,
+     158.75
     ]
    ]
   },
@@ -342,11 +342,11 @@
    "session_id": "afrispeech_dialog__30a5b6a2-8370-4dac-bc7f-e4ae7c1d8562",
    "ref": 1176.12,
    "miss": 108.42,
-   "fa": 9.63,
+   "fa": 9.17,
    "miss_silent": 83.47,
-   "fa_energy": 7.34,
+   "fa_energy": 7.04,
    "miss_energy": 24.95,
-   "fa_silent": 2.29,
+   "fa_silent": 2.13,
    "examples_miss_silent": [
     [
      911.82,
@@ -450,11 +450,11 @@
    "session_id": "afrispeech_dialog__3e27c06c-8ba1-4511-88e6-c75b2d9d8839",
    "ref": 370.93,
    "miss": 39.26,
-   "fa": 17.9,
+   "fa": 17.39,
    "miss_silent": 29.72,
-   "fa_energy": 14.15,
+   "fa_energy": 13.77,
    "miss_energy": 9.54,
-   "fa_silent": 3.75,
+   "fa_silent": 3.62,
    "examples_miss_silent": [
     [
      391.01,
@@ -558,9 +558,9 @@
    "session_id": "afrispeech_dialog__4d398d1f-5058-4e5b-8070-23f42089f14e",
    "ref": 619.81,
    "miss": 78.48,
-   "fa": 2.69,
+   "fa": 2.68,
    "miss_silent": 54.34,
-   "fa_energy": 2.03,
+   "fa_energy": 2.02,
    "miss_energy": 24.14,
    "fa_silent": 0.66,
    "examples_miss_silent": [
@@ -599,7 +599,7 @@
      626.02
     ],
     [
-     0.0,
+     0.01,
      0.28
     ],
     [
@@ -612,11 +612,11 @@
    "session_id": "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
    "ref": 560.14,
    "miss": 86.01,
-   "fa": 34.52,
+   "fa": 33.58,
    "miss_silent": 74.55,
-   "fa_energy": 24.01,
+   "fa_energy": 23.08,
    "miss_energy": 11.46,
-   "fa_silent": 10.51,
+   "fa_silent": 10.5,
    "examples_miss_silent": [
     [
      365.07,
@@ -666,9 +666,9 @@
    "session_id": "afrispeech_dialog__83a0b048-c0e3-4929-9b29-278a873ab7c6",
    "ref": 896.95,
    "miss": 106.82,
-   "fa": 1.07,
+   "fa": 0.47,
    "miss_silent": 74.87,
-   "fa_energy": 0.99,
+   "fa_energy": 0.39,
    "miss_energy": 31.95,
    "fa_silent": 0.08,
    "examples_miss_silent": [
@@ -694,10 +694,6 @@
     ]
    ],
    "examples_fa_energy": [
-    [
-     899.55,
-     900.15
-    ],
     [
      896.95,
      897.34
@@ -862,11 +858,11 @@
    "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
    "ref": 797.0,
    "miss": 122.07,
-   "fa": 70.89,
+   "fa": 1.0,
    "miss_silent": 92.42,
-   "fa_energy": 43.43,
+   "fa_energy": 0.55,
    "miss_energy": 29.65,
-   "fa_silent": 27.46,
+   "fa_silent": 0.45,
    "examples_miss_silent": [
     [
      339.53,
@@ -891,24 +887,24 @@
    ],
    "examples_fa_energy": [
     [
-     831.78,
-     834.32
+     797.5,
+     797.82
     ],
     [
-     855.51,
-     857.26
+     797.0,
+     797.17
     ],
     [
-     829.95,
-     831.63
+     797.94,
+     798.0
     ],
     [
-     836.4,
-     837.72
+     210.02,
+     210.02
     ],
     [
-     866.15,
-     867.42
+     71.04,
+     71.04
     ]
    ]
   },
@@ -970,11 +966,11 @@
    "session_id": "afrispeech_dialog__bb52e43b-e30c-4fb7-87d6-97ee79ce25ea",
    "ref": 786.96,
    "miss": 123.64,
-   "fa": 8.02,
+   "fa": 7.3,
    "miss_silent": 89.16,
-   "fa_energy": 6.3,
+   "fa_energy": 5.71,
    "miss_energy": 34.48,
-   "fa_silent": 1.72,
+   "fa_silent": 1.59,
    "examples_miss_silent": [
     [
      104.71,
@@ -1015,8 +1011,8 @@
      87.65
     ],
     [
-     0.26,
-     0.7
+     82.11,
+     82.54
     ]
    ]
   },
@@ -1024,11 +1020,11 @@
    "session_id": "afrispeech_dialog__c1fd9c2e-cd94-46d4-83c1-7ad12c4720a2",
    "ref": 819.03,
    "miss": 134.27,
-   "fa": 1.68,
+   "fa": 1.0,
    "miss_silent": 119.88,
-   "fa_energy": 1.29,
+   "fa_energy": 1.0,
    "miss_energy": 14.39,
-   "fa_silent": 0.39,
+   "fa_silent": 0.0,
    "examples_miss_silent": [
     [
      455.21,
@@ -1053,12 +1049,8 @@
    ],
    "examples_fa_energy": [
     [
-     0.78,
+     0.98,
      1.98
-    ],
-    [
-     0.0,
-     0.09
     ]
    ]
   },
@@ -1336,11 +1328,11 @@
    "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
    "ref": 553.67,
    "miss": 82.45,
-   "fa": 57.3,
+   "fa": 9.0,
    "miss_silent": 73.8,
-   "fa_energy": 39.71,
+   "fa_energy": 3.98,
    "miss_energy": 8.65,
-   "fa_silent": 17.59,
+   "fa_silent": 5.02,
    "examples_miss_silent": [
     [
      313.53,
@@ -1365,24 +1357,24 @@
    ],
    "examples_fa_energy": [
     [
-     582.25,
-     584.69
+     425.0,
+     425.6
     ],
     [
-     597.37,
-     599.54
+     250.04,
+     250.54
     ],
     [
-     618.7,
-     620.7
+     499.54,
+     499.98
     ],
     [
-     608.05,
-     610.04
+     345.59,
+     346.02
     ],
     [
-     601.45,
-     602.99
+     334.23,
+     334.54
     ]
    ]
   },
@@ -1390,11 +1382,11 @@
    "session_id": "afrispeech_dialog__f01e751c-11e3-498b-a6ee-5d9bf11ac8cd",
    "ref": 473.2,
    "miss": 12.96,
-   "fa": 23.95,
+   "fa": 22.79,
    "miss_silent": 10.08,
-   "fa_energy": 14.31,
+   "fa_energy": 13.74,
    "miss_energy": 2.88,
-   "fa_silent": 9.64,
+   "fa_silent": 9.05,
    "examples_miss_silent": [
     [
      407.79,
@@ -1444,11 +1436,11 @@
    "session_id": "afrispeech_dialog__f1345c7a-87ca-4c7c-a22f-04dd30bdea30",
    "ref": 521.96,
    "miss": 93.86,
-   "fa": 5.55,
+   "fa": 1.0,
    "miss_silent": 77.85,
-   "fa_energy": 4.21,
+   "fa_energy": 0.87,
    "miss_energy": 16.01,
-   "fa_silent": 1.34,
+   "fa_silent": 0.13,
    "examples_miss_silent": [
     [
      203.55,
@@ -1474,23 +1466,7 @@
    "examples_fa_energy": [
     [
      522.09,
-     523.52
-    ],
-    [
-     527.22,
-     528.18
-    ],
-    [
-     524.83,
-     525.33
-    ],
-    [
-     526.55,
-     527.05
-    ],
-    [
-     524.09,
-     524.43
+     522.96
     ]
    ]
   },
@@ -1594,9 +1570,9 @@
    "session_id": "afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d",
    "ref": 654.31,
    "miss": 156.92,
-   "fa": 63.36,
+   "fa": 63.18,
    "miss_silent": 96.25,
-   "fa_energy": 55.86,
+   "fa_energy": 55.68,
    "miss_energy": 60.67,
    "fa_silent": 7.5,
    "examples_miss_silent": [
@@ -1648,11 +1624,11 @@
    "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
    "ref": 450.04,
    "miss": 92.38,
-   "fa": 118.96,
+   "fa": 21.78,
    "miss_silent": 67.25,
-   "fa_energy": 96.87,
+   "fa_energy": 15.49,
    "miss_energy": 25.13,
-   "fa_silent": 22.09,
+   "fa_silent": 6.29,
    "examples_miss_silent": [
     [
      402.74,
@@ -1677,24 +1653,24 @@
    ],
    "examples_fa_energy": [
     [
-     533.25,
-     536.39
+     323.02,
+     323.77
     ],
     [
-     647.58,
-     650.04
+     72.25,
+     72.97
     ],
     [
-     603.28,
-     605.63
+     502.12,
+     502.83
     ],
     [
-     613.82,
-     616.04
+     201.37,
+     202.04
     ],
     [
-     564.91,
-     566.91
+     342.03,
+     342.63
     ]
    ]
   },
@@ -1756,11 +1732,11 @@
    "session_id": "afrispeech_dialog__63e6abb7-2d8e-4df3-a52e-8e09aea762c6",
    "ref": 294.0,
    "miss": 87.45,
-   "fa": 0.87,
+   "fa": 0.6,
    "miss_silent": 61.47,
-   "fa_energy": 0.54,
+   "fa_energy": 0.34,
    "miss_energy": 25.98,
-   "fa_silent": 0.33,
+   "fa_silent": 0.26,
    "examples_miss_silent": [
     [
      5.67,
@@ -1784,10 +1760,6 @@
     ]
    ],
    "examples_fa_energy": [
-    [
-     295.04,
-     295.24
-    ],
     [
      294.69,
      294.88
@@ -1864,11 +1836,11 @@
    "session_id": "afrispeech_dialog__68f2adb6-06ab-46a6-9de6-395d89c2e1a3",
    "ref": 399.98,
    "miss": 59.37,
-   "fa": 5.77,
+   "fa": 1.0,
    "miss_silent": 53.09,
-   "fa_energy": 4.09,
+   "fa_energy": 0.64,
    "miss_energy": 6.28,
-   "fa_silent": 1.68,
+   "fa_silent": 0.36,
    "examples_miss_silent": [
     [
      335.22,
@@ -1893,24 +1865,16 @@
    ],
    "examples_fa_energy": [
     [
-     401.69,
-     402.73
-    ],
-    [
-     403.18,
-     403.87
-    ],
-    [
-     404.8,
-     405.39
-    ],
-    [
-     404.33,
-     404.66
-    ],
-    [
      399.98,
      400.29
+    ],
+    [
+     400.42,
+     400.6
+    ],
+    [
+     400.83,
+     400.98
     ]
    ]
   },
@@ -1918,11 +1882,11 @@
    "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
    "ref": 470.99,
    "miss": 72.92,
-   "fa": 64.26,
+   "fa": 0.94,
    "miss_silent": 66.68,
-   "fa_energy": 42.89,
+   "fa_energy": 0.37,
    "miss_energy": 6.24,
-   "fa_silent": 21.37,
+   "fa_silent": 0.57,
    "examples_miss_silent": [
     [
      314.31,
@@ -1947,24 +1911,20 @@
    ],
    "examples_fa_energy": [
     [
-     486.57,
-     489.2
+     471.33,
+     471.52
     ],
     [
-     532.81,
-     534.4
+     470.99,
+     471.09
     ],
     [
-     511.46,
-     512.89
+     471.72,
+     471.8
     ],
     [
-     503.29,
-     504.7
-    ],
-    [
-     498.3,
-     499.62
+     428.98,
+     428.98
     ]
    ]
   },
@@ -2188,11 +2148,11 @@
    "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
    "ref": 304.96,
    "miss": 95.56,
-   "fa": 69.33,
+   "fa": 1.0,
    "miss_silent": 84.34,
-   "fa_energy": 56.44,
+   "fa_energy": 0.52,
    "miss_energy": 11.22,
-   "fa_silent": 12.89,
+   "fa_silent": 0.48,
    "examples_miss_silent": [
     [
      234.25,
@@ -2217,24 +2177,16 @@
    ],
    "examples_fa_energy": [
     [
-     363.65,
-     366.11
-    ],
-    [
      305.45,
-     307.83
+     305.96
     ],
     [
-     390.24,
-     392.49
+     304.96,
+     304.97
     ],
     [
-     360.74,
-     362.85
-    ],
-    [
-     377.39,
-     379.49
+     92.98,
+     92.98
     ]
    ]
   },
@@ -2242,11 +2194,11 @@
    "session_id": "afrispeech_dialog__cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d",
    "ref": 162.58,
    "miss": 20.29,
-   "fa": 25.67,
+   "fa": 23.58,
    "miss_silent": 14.42,
-   "fa_energy": 17.64,
+   "fa_energy": 16.29,
    "miss_energy": 5.87,
-   "fa_silent": 8.03,
+   "fa_silent": 7.29,
    "examples_miss_silent": [
     [
      127.01,
@@ -2287,8 +2239,8 @@
      41.83
     ],
     [
-     200.25,
-     200.96
+     70.01,
+     70.71
     ]
    ]
   },
@@ -2296,11 +2248,11 @@
    "session_id": "afrispeech_dialog__d2f0bed6-f3e1-48a8-9fb2-ceb137670bc4",
    "ref": 292.89,
    "miss": 41.56,
-   "fa": 26.83,
+   "fa": 26.09,
    "miss_silent": 31.06,
-   "fa_energy": 16.94,
+   "fa_energy": 16.39,
    "miss_energy": 10.5,
-   "fa_silent": 9.89,
+   "fa_silent": 9.7,
    "examples_miss_silent": [
     [
      345.88,
@@ -2350,9 +2302,9 @@
    "session_id": "afrispeech_dialog__eceb9468-7001-4ee0-9475-13486e5352ae",
    "ref": 173.87,
    "miss": 38.47,
-   "fa": 16.23,
+   "fa": 16.22,
    "miss_silent": 26.56,
-   "fa_energy": 11.14,
+   "fa_energy": 11.13,
    "miss_energy": 11.91,
    "fa_silent": 5.09,
    "examples_miss_silent": [

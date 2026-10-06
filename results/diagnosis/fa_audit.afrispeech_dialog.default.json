@@ -1,7 +1,7 @@
 {
  "dataset": "afrispeech_dialog",
  "view": "default",
- "regions_checked": 40,
+ "regions_checked": 28,
  "regions": [
   {
    "session_id": "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
@@ -10,87 +10,6 @@
    "dur": 3.44,
    "whisper": "celebrating their birthday, they were not being reminded that this was the day they were born.",
    "words": 16,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
-   "start": 533.25,
-   "end": 536.39,
-   "dur": 3.14,
-   "whisper": "Okay, I'm going to go through what...",
-   "words": 7,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
-   "start": 486.57,
-   "end": 489.2,
-   "dur": 2.63,
-   "whisper": "worsening over time and change in Boer.",
-   "words": 7,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
-   "start": 831.78,
-   "end": 834.32,
-   "dur": 2.54,
-   "whisper": "Yeah, and I heard that she started it.",
-   "words": 8,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
-   "start": 363.65,
-   "end": 366.11,
-   "dur": 2.46,
-   "whisper": "or having to undergo any surgery recently.",
-   "words": 7,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
-   "start": 647.58,
-   "end": 650.04,
-   "dur": 2.46,
-   "whisper": "You don't take any recreational drugs.",
-   "words": 6,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
-   "start": 582.25,
-   "end": 584.69,
-   "dur": 2.44,
-   "whisper": "it's a beautiful name and even when you say",
-   "words": 9,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
-   "start": 305.45,
-   "end": 307.83,
-   "dur": 2.38,
-   "whisper": "That will be all for the consultation. Thanks.",
-   "words": 8,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
-   "start": 603.28,
-   "end": 605.63,
-   "dur": 2.35,
-   "whisper": "You also said your father died of stroke.",
-   "words": 8,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
-   "start": 390.24,
-   "end": 392.49,
-   "dur": 2.25,
-   "whisper": "She is also on anti-hypertensive",
-   "words": 6,
    "speech": true
   },
   {
@@ -103,75 +22,12 @@
    "speech": true
   },
   {
-   "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
-   "start": 613.82,
-   "end": 616.04,
-   "dur": 2.22,
-   "whisper": "pain and swelling in your legs and abdomen.",
-   "words": 8,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
-   "start": 597.37,
-   "end": 599.54,
-   "dur": 2.17,
-   "whisper": "How are you? You know, it's a beauty.",
-   "words": 8,
-   "speech": true
-  },
-  {
    "session_id": "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
    "start": 475.81,
    "end": 477.93,
    "dur": 2.12,
    "whisper": "Because if they were remembering this is what they did, they would not",
    "words": 13,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
-   "start": 360.74,
-   "end": 362.85,
-   "dur": 2.11,
-   "whisper": "She doesn't also have any history of trauma.",
-   "words": 8,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__c46ac19c-edf5-4bc2-8162-110ff52ef78b",
-   "start": 377.39,
-   "end": 379.49,
-   "dur": 2.1,
-   "whisper": "the only family medical history she has",
-   "words": 7,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
-   "start": 618.7,
-   "end": 620.7,
-   "dur": 2.0,
-   "whisper": "What up, bro? Where have you been?",
-   "words": 7,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__4fc2c19e-de60-4be0-91b5-7870f60f2d99",
-   "start": 564.91,
-   "end": 566.91,
-   "dur": 2.0,
-   "whisper": "and you do struggle with your breath,",
-   "words": 7,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
-   "start": 608.05,
-   "end": 610.04,
-   "dur": 1.99,
-   "whisper": "That you're not able... And they can't tell you.",
-   "words": 9,
    "speech": true
   },
   {
@@ -211,42 +67,6 @@
    "speech": false
   },
   {
-   "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
-   "start": 855.51,
-   "end": 857.26,
-   "dur": 1.75,
-   "whisper": "when we were in high school.",
-   "words": 6,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
-   "start": 829.95,
-   "end": 831.63,
-   "dur": 1.68,
-   "whisper": "And I heard that she was.",
-   "words": 6,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
-   "start": 532.81,
-   "end": 534.4,
-   "dur": 1.59,
-   "whisper": "of bowel disease.",
-   "words": 3,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__ebcde1b4-bd3b-49b7-b777-e7d87a7cb7f3",
-   "start": 601.45,
-   "end": 602.99,
-   "dur": 1.54,
-   "whisper": "it gives you some kind of",
-   "words": 6,
-   "speech": true
-  },
-  {
    "session_id": "afrispeech_dialog__df50b219-f5aa-4d56-9f33-6865c96fda2b",
    "start": 480.57,
    "end": 482.09,
@@ -262,51 +82,6 @@
    "dur": 1.51,
    "whisper": "fatigue, easy fatigability,",
    "words": 3,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
-   "start": 511.46,
-   "end": 512.89,
-   "dur": 1.43,
-   "whisper": "and there are no other",
-   "words": 5,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__f1345c7a-87ca-4c7c-a22f-04dd30bdea30",
-   "start": 522.09,
-   "end": 523.52,
-   "dur": 1.43,
-   "whisper": "to having me on this platform.",
-   "words": 6,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
-   "start": 503.29,
-   "end": 504.7,
-   "dur": 1.41,
-   "whisper": "and breast cancer.",
-   "words": 3,
-   "speech": true
-  },
-  {
-   "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
-   "start": 836.4,
-   "end": 837.72,
-   "dur": 1.32,
-   "whisper": "Drinking alcohol.",
-   "words": 2,
-   "speech": false
-  },
-  {
-   "session_id": "afrispeech_dialog__7e832fef-ddde-4f8b-8687-eefcf95fe1ce",
-   "start": 498.3,
-   "end": 499.62,
-   "dur": 1.32,
-   "whisper": "and there's also, um,",
-   "words": 4,
    "speech": true
   },
   {
@@ -328,24 +103,6 @@
    "speech": false
   },
   {
-   "session_id": "afrispeech_dialog__b5079ba2-df1c-448d-89f4-685241747496",
-   "start": 866.15,
-   "end": 867.42,
-   "dur": 1.27,
-   "whisper": "Influences.",
-   "words": 1,
-   "speech": false
-  },
-  {
-   "session_id": "afrispeech_dialog__c1fd9c2e-cd94-46d4-83c1-7ad12c4720a2",
-   "start": 0.78,
-   "end": 1.98,
-   "dur": 1.2,
-   "whisper": "Today we will be discussing",
-   "words": 5,
-   "speech": true
-  },
-  {
    "session_id": "afrispeech_dialog__cd255fe0-ebc2-47a0-a990-2ab1ba9ca23d",
    "start": 141.97,
    "end": 143.16,
@@ -362,9 +119,144 @@
    "whisper": "So...",
    "words": 1,
    "speech": false
+  },
+  {
+   "session_id": "afrispeech_dialog__0f572000-4660-4c37-addc-3443e3448e0c",
+   "start": 358.97,
+   "end": 360.12,
+   "dur": 1.15,
+   "whisper": "Thank you very much.",
+   "words": 4,
+   "speech": false
+  },
+  {
+   "session_id": "afrispeech_dialog__95aed576-a1d6-42f3-9651-7103e0717e5e",
+   "start": 124.03,
+   "end": 125.15,
+   "dur": 1.12,
+   "whisper": "No.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d",
+   "start": 215.03,
+   "end": 216.13,
+   "dur": 1.1,
+   "whisper": "no relief.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "afrispeech_dialog__95aed576-a1d6-42f3-9651-7103e0717e5e",
+   "start": 130.04,
+   "end": 131.11,
+   "dur": 1.07,
+   "whisper": "songs like this.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d",
+   "start": 62.06,
+   "end": 63.12,
+   "dur": 1.06,
+   "whisper": "No, I'm not married.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__3e27c06c-8ba1-4511-88e6-c75b2d9d8839",
+   "start": 165.95,
+   "end": 167.0,
+   "dur": 1.05,
+   "whisper": "I agree with you.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__392c7093-7347-40b8-ab37-db1dcc90945d",
+   "start": 453.94,
+   "end": 454.98,
+   "dur": 1.04,
+   "whisper": "Yeah, it's true.",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__3e27c06c-8ba1-4511-88e6-c75b2d9d8839",
+   "start": 86.98,
+   "end": 88.01,
+   "dur": 1.03,
+   "whisper": "You need that knowledge.",
+   "words": 4,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__3e27c06c-8ba1-4511-88e6-c75b2d9d8839",
+   "start": 395.99,
+   "end": 397.02,
+   "dur": 1.03,
+   "whisper": "you don't have anything else to add.",
+   "words": 7,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__95aed576-a1d6-42f3-9651-7103e0717e5e",
+   "start": 57.03,
+   "end": 58.04,
+   "dur": 1.01,
+   "whisper": "this morning.",
+   "words": 2,
+   "speech": false
+  },
+  {
+   "session_id": "afrispeech_dialog__136be64d-ca9e-473e-9c0e-fc4b008de0cd",
+   "start": 653.01,
+   "end": 654.02,
+   "dur": 1.01,
+   "whisper": "Yeah, I agree with that.",
+   "words": 5,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__f533e2de-bac6-4866-8803-b33407813e92",
+   "start": 373.98,
+   "end": 374.98,
+   "dur": 1.0,
+   "whisper": "Yes.",
+   "words": 1,
+   "speech": false
+  },
+  {
+   "session_id": "afrispeech_dialog__c1fd9c2e-cd94-46d4-83c1-7ad12c4720a2",
+   "start": 0.98,
+   "end": 1.98,
+   "dur": 1.0,
+   "whisper": "will be discussed",
+   "words": 3,
+   "speech": true
+  },
+  {
+   "session_id": "afrispeech_dialog__60344b07-b93e-4e14-8b1b-d544d9cd6a16",
+   "start": 24.98,
+   "end": 25.98,
+   "dur": 1.0,
+   "whisper": "Dead deep. Dead deep.",
+   "words": 4,
+   "speech": false
+  },
+  {
+   "session_id": "afrispeech_dialog__136be64d-ca9e-473e-9c0e-fc4b008de0cd",
+   "start": 510.01,
+   "end": 511.01,
+   "dur": 1.0,
+   "whisper": "Something else. Yeah.",
+   "words": 3,
+   "speech": true
   }
  ],
- "regions_with_speech": 35,
- "seconds_checked": 76.4,
- "seconds_with_speech": 69.6
+ "regions_with_speech": 19,
+ "seconds_checked": 38.9,
+ "seconds_with_speech": 28.3
 }

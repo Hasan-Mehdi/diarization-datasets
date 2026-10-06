@@ -71,10 +71,10 @@ Computed by `python -m diards stats icsi` from the normalized primary reference 
 ## Ground-truth validation
 
 <!-- auto:validation -->
-View `ihm-mix`: 75 sessions, **0 errors**, 16 warnings (normalized files); 74 sessions had problems in the ORIGINAL labels that normalization fixed.
+View `ihm-mix`: 75 sessions, **0 errors**, 15 warnings (normalized files); 74 sessions had problems in the ORIGINAL labels that normalization fixed.
 - original-label issues: same_speaker_overlap = 986, beyond_audio_end = 1, seconds_beyond_audio_end = 2122.62
-- checks that fired (sessions): `info:segments_under_50ms` 10, `info:silence_over_30s` 19, `info:speaker_under_1s` 1, `warning:possible_unannotated_speech` 10, `warning:segments_over_60s` 6
-- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 2.4% of reference speech; reference speech without energy = 4.7%. Most-flagged sessions: `icsi__Bed008` (0.18), `icsi__Bed016` (0.14), `icsi__Bed012` (0.11), `icsi__Bed010` (0.11), `icsi__Bed003` (0.09)
+- checks that fired (sessions): `info:segments_under_50ms` 10, `info:silence_over_30s` 4, `info:speaker_under_1s` 1, `warning:possible_unannotated_speech` 9, `warning:segments_over_60s` 6
+- energy-VAD cross-check: energy speech outside the reference (+/-0.25 s, >= 0.5 s chunks) = 2.2% of reference speech; reference speech without energy = 4.7%. Most-flagged sessions: `icsi__Bed008` (0.17), `icsi__Bed016` (0.13), `icsi__Bed010` (0.11), `icsi__Bed012` (0.09), `icsi__Bed009` (0.06)
 - full report: [`results/validation/validation.icsi.ihm-mix.md`](../../results/validation/validation.icsi.ihm-mix.md)
 - **Silero VAD x2 audit** (view `ihm-mix`, from the [VAD study](../../docs/silero_vad_study.md)): 8.28% of reference speech is silence to Silero (padding / pauses labelled as speech; collar 0); Silero speech outside the reference = 0.91% of reference speech; Whisper finds intelligible speech in 20 of the 20 longest such regions.
 <!-- /auto:validation -->
@@ -99,12 +99,14 @@ Model `nvidia/Nemotron-3-Diarization` (Transformers port, offline 30.4 s chunkin
 <!-- auto:diagnosis -->
 | hypothesis view | audio used for energy | sessions | missed speech % | ...in silence (reference padding) | ...with energy (model miss) | false alarm % | ...with energy (unlabelled sound?) | ...in silence (model) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| ihm-mix | ihm-mix | 3 | 1.16 | 0.59 | 0.57 | 7.37 | 2.4 | 4.97 |
-| sdm | ihm-mix | 3 | 1.86 | 0.79 | 1.07 | 6.91 | 2.2 | 4.71 |
+| ihm-mix | ihm-mix | 3 | 1.16 | 0.59 | 0.57 | 7.36 | 2.4 | 4.96 |
+| sdm | ihm-mix | 3 | 1.86 | 0.79 | 1.07 | 6.89 | 2.19 | 4.7 |
 
 Speech-detection errors of Nemotron (speaker-agnostic, primary reference, collar 0), as % of reference speech, split by whether the audio has energy there (`python -m diards.diagnose`; level threshold calibrated per session). "Miss in silence" is a lower bound on reference padding; "FA with energy" mixes unlabelled speech and non-speech sounds and needs listening (examples in `results/diagnosis/*.json`).
 
 **Whisper audit of the longest audible false alarms (ihm-mix):** 0 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 7.7 s).
+
+**Time-offset check (ihm-mix):** 0 of 3 sessions look shifted against the audio (|best lag| >= 0.3 s and agreement gain >= 2 points); median best lag 0.0 s.
 
 **Whisper audit of the longest audible false alarms (sdm):** 0 of 5 regions (>= 1 s) contain intelligible speech (>= 3 non-repetitive words; Whisper's loops on music/laughter are rejected), i.e. speech the reference does not label (0 of 7.6 s).
 
