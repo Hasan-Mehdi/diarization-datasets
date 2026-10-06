@@ -4,12 +4,12 @@
   "view": "ihm-mix",
   "sessions": 75,
   "errors": 0,
-  "warnings": 16,
+  "warnings": 15,
   "issue_counts": {
    "info:segments_under_50ms": 10,
-   "info:silence_over_30s": 19,
+   "info:silence_over_30s": 4,
    "info:speaker_under_1s": 1,
-   "warning:possible_unannotated_speech": 10,
+   "warning:possible_unannotated_speech": 9,
    "warning:segments_over_60s": 6
   },
   "raw_label_issue_totals": {
@@ -19,49 +19,50 @@
   },
   "sessions_with_raw_label_issues": 74,
   "vad": {
+   "backend": "energy",
    "ref_speech_h": 58.8,
-   "vad_not_in_ref_frac": 0.0238,
+   "vad_not_in_ref_frac": 0.0221,
    "ref_not_in_vad_frac": 0.0466,
    "worst_sessions": [
     [
      "icsi__Bed008",
-     0.1824
+     0.1695
     ],
     [
      "icsi__Bed016",
-     0.1351
-    ],
-    [
-     "icsi__Bed012",
-     0.1121
+     0.1337
     ],
     [
      "icsi__Bed010",
-     0.1097
+     0.1092
     ],
     [
-     "icsi__Bed003",
-     0.0942
+     "icsi__Bed012",
+     0.086
     ],
     [
      "icsi__Bed009",
-     0.0618
+     0.0573
     ],
     [
      "icsi__Bed014",
-     0.0567
-    ],
-    [
-     "icsi__Bro007",
-     0.0557
+     0.0554
     ],
     [
      "icsi__Bro026",
-     0.0541
+     0.0537
     ],
     [
-     "icsi__Bmr013",
-     0.0513
+     "icsi__Bro007",
+     0.0535
+    ],
+    [
+     "icsi__Bed003",
+     0.051
+    ],
+    [
+     "icsi__Bed013",
+     0.0464
     ]
    ]
   }
@@ -77,10 +78,10 @@
      "floor_db": -51.2,
      "threshold_db": -38.8,
      "p99_db": -9.8,
-     "vad_speech_s": 1782.8,
+     "vad_speech_s": 1780.5,
      "ref_speech_s": 1846.3,
-     "vad_not_in_ref_s": 24.3,
-     "vad_not_in_ref_frac_of_ref": 0.0132,
+     "vad_not_in_ref_s": 22.1,
+     "vad_not_in_ref_frac_of_ref": 0.012,
      "ref_not_in_vad_s": 71.5,
      "ref_not_in_vad_frac": 0.0387,
      "longest_vad_not_in_ref": [
@@ -101,10 +102,6 @@
        292.21
       ],
       [
-       2209.12,
-       2210.45
-      ],
-      [
        766.37,
        767.48
       ],
@@ -123,6 +120,10 @@
       [
        293.43,
        294.38
+      ],
+      [
+       680.2,
+       681.03
       ]
      ]
     }
@@ -167,10 +168,10 @@
      "floor_db": -51.3,
      "threshold_db": -42.3,
      "p99_db": -23.7,
-     "vad_speech_s": 4727.4,
+     "vad_speech_s": 4726.0,
      "ref_speech_s": 4852.5,
-     "vad_not_in_ref_s": 73.3,
-     "vad_not_in_ref_frac_of_ref": 0.0151,
+     "vad_not_in_ref_s": 72.0,
+     "vad_not_in_ref_frac_of_ref": 0.0148,
      "ref_not_in_vad_s": 168.0,
      "ref_not_in_vad_frac": 0.0346,
      "longest_vad_not_in_ref": [
@@ -242,24 +243,7 @@
   },
   {
    "session_id": "icsi__Bmr013",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       0.0,
-       92.5
-      ]
-     ]
-    },
-    {
-     "level": "warning",
-     "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 117 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.1% of reference speech"
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 7,
     "word_time_outside_reference": 0.0001,
@@ -267,52 +251,52 @@
      "floor_db": -52.3,
      "threshold_db": -42.2,
      "p99_db": -18.6,
-     "vad_speech_s": 2410.3,
+     "vad_speech_s": 2330.5,
      "ref_speech_s": 2281.9,
-     "vad_not_in_ref_s": 117.0,
-     "vad_not_in_ref_frac_of_ref": 0.0513,
+     "vad_not_in_ref_s": 37.4,
+     "vad_not_in_ref_frac_of_ref": 0.0164,
      "ref_not_in_vad_s": 67.4,
      "ref_not_in_vad_frac": 0.0296,
      "longest_vad_not_in_ref": [
-      [
-       64.9,
-       78.63
-      ],
-      [
-       78.94,
-       89.47
-      ],
-      [
-       53.49,
-       61.99
-      ],
-      [
-       43.81,
-       51.3
-      ],
-      [
-       38.09,
-       43.25
-      ],
-      [
-       28.43,
-       33.11
-      ],
       [
        93.28,
        97.77
       ],
       [
-       23.7,
-       27.58
+       2610.27,
+       2612.62
       ],
       [
-       19.8,
-       23.33
+       779.54,
+       781.58
       ],
       [
-       3.6,
-       7.04
+       1864.11,
+       1865.55
+      ],
+      [
+       556.56,
+       557.93
+      ],
+      [
+       1517.06,
+       1518.33
+      ],
+      [
+       265.98,
+       267.25
+      ],
+      [
+       1443.9,
+       1445.16
+      ],
+      [
+       367.07,
+       368.07
+      ],
+      [
+       2410.88,
+       2411.83
       ]
      ]
     }
@@ -340,10 +324,10 @@
      "floor_db": -50.3,
      "threshold_db": -38.3,
      "p99_db": -10.6,
-     "vad_speech_s": 2697.6,
+     "vad_speech_s": 2697.5,
      "ref_speech_s": 2963.5,
-     "vad_not_in_ref_s": 9.7,
-     "vad_not_in_ref_frac_of_ref": 0.0033,
+     "vad_not_in_ref_s": 9.6,
+     "vad_not_in_ref_frac_of_ref": 0.0032,
      "ref_not_in_vad_s": 129.7,
      "ref_not_in_vad_frac": 0.0438,
      "longest_vad_not_in_ref": [
@@ -365,7 +349,7 @@
       ],
       [
        3419.93,
-       3420.78
+       3420.68
       ],
       [
        2343.03,
@@ -423,10 +407,10 @@
      "floor_db": -55.0,
      "threshold_db": -42.4,
      "p99_db": -12.9,
-     "vad_speech_s": 2890.4,
+     "vad_speech_s": 2888.7,
      "ref_speech_s": 2868.5,
-     "vad_not_in_ref_s": 132.3,
-     "vad_not_in_ref_frac_of_ref": 0.0461,
+     "vad_not_in_ref_s": 130.6,
+     "vad_not_in_ref_frac_of_ref": 0.0455,
      "ref_not_in_vad_s": 57.2,
      "ref_not_in_vad_frac": 0.02,
      "longest_vad_not_in_ref": [
@@ -673,24 +657,9 @@
    "session_id": "icsi__Bed003",
    "issues": [
     {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "2 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       0.0,
-       39.0
-      ],
-      [
-       3499.2,
-       4448.9
-      ]
-     ]
-    },
-    {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 257 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 9.4% of reference speech"
+     "message": "energy VAD finds 139 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.1% of reference speech"
     }
    ],
    "metrics": {
@@ -700,29 +669,13 @@
      "floor_db": -62.3,
      "threshold_db": -46.9,
      "p99_db": -10.9,
-     "vad_speech_s": 3229.0,
+     "vad_speech_s": 3081.0,
      "ref_speech_s": 2727.0,
-     "vad_not_in_ref_s": 256.9,
-     "vad_not_in_ref_frac_of_ref": 0.0942,
+     "vad_not_in_ref_s": 139.1,
+     "vad_not_in_ref_frac_of_ref": 0.051,
      "ref_not_in_vad_s": 14.6,
      "ref_not_in_vad_frac": 0.0053,
      "longest_vad_not_in_ref": [
-      [
-       3513.86,
-       3518.13
-      ],
-      [
-       3528.3,
-       3531.44
-      ],
-      [
-       4244.07,
-       4247.14
-      ],
-      [
-       3548.93,
-       3551.83
-      ],
       [
        1958.31,
        1961.12
@@ -740,12 +693,28 @@
        1488.73
       ],
       [
-       4202.32,
-       4205.02
-      ],
-      [
        1973.08,
        1975.53
+      ],
+      [
+       2788.85,
+       2791.3
+      ],
+      [
+       1493.37,
+       1495.7
+      ],
+      [
+       847.17,
+       849.47
+      ],
+      [
+       1892.15,
+       1894.14
+      ],
+      [
+       63.67,
+       65.64
       ]
      ]
     }
@@ -775,19 +744,7 @@
   },
   {
    "session_id": "icsi__Bed004",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       3321.3,
-       3399.1
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 7,
     "word_time_outside_reference": 0.0003,
@@ -795,20 +752,16 @@
      "floor_db": -61.6,
      "threshold_db": -48.1,
      "p99_db": -16.7,
-     "vad_speech_s": 2538.9,
+     "vad_speech_s": 2534.9,
      "ref_speech_s": 2654.1,
-     "vad_not_in_ref_s": 77.6,
-     "vad_not_in_ref_frac_of_ref": 0.0292,
+     "vad_not_in_ref_s": 73.5,
+     "vad_not_in_ref_frac_of_ref": 0.0277,
      "ref_not_in_vad_s": 105.8,
      "ref_not_in_vad_frac": 0.0399,
      "longest_vad_not_in_ref": [
       [
        740.74,
        744.12
-      ],
-      [
-       2.98,
-       6.32
       ],
       [
        893.81,
@@ -841,6 +794,10 @@
       [
        1677.98,
        1679.31
+      ],
+      [
+       126.57,
+       127.88
       ]
      ]
     }
@@ -870,19 +827,7 @@
   },
   {
    "session_id": "icsi__Bed005",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       3816.3,
-       3962.1
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 6,
     "word_time_outside_reference": 0.0007,
@@ -890,17 +835,13 @@
      "floor_db": -54.1,
      "threshold_db": -40.1,
      "p99_db": -7.6,
-     "vad_speech_s": 3277.7,
+     "vad_speech_s": 3273.1,
      "ref_speech_s": 3076.6,
-     "vad_not_in_ref_s": 141.1,
-     "vad_not_in_ref_frac_of_ref": 0.0459,
+     "vad_not_in_ref_s": 136.9,
+     "vad_not_in_ref_frac_of_ref": 0.0445,
      "ref_not_in_vad_s": 31.3,
      "ref_not_in_vad_frac": 0.0102,
      "longest_vad_not_in_ref": [
-      [
-       3828.31,
-       3831.36
-      ],
       [
        1499.0,
        1501.72
@@ -936,6 +877,10 @@
       [
        73.99,
        75.85
+      ],
+      [
+       1036.92,
+       1038.7
       ]
      ]
     }
@@ -973,10 +918,10 @@
      "floor_db": -49.4,
      "threshold_db": -37.1,
      "p99_db": -8.5,
-     "vad_speech_s": 3122.6,
+     "vad_speech_s": 3118.9,
      "ref_speech_s": 3220.5,
-     "vad_not_in_ref_s": 68.2,
-     "vad_not_in_ref_frac_of_ref": 0.0212,
+     "vad_not_in_ref_s": 64.5,
+     "vad_not_in_ref_frac_of_ref": 0.02,
      "ref_not_in_vad_s": 68.5,
      "ref_not_in_vad_frac": 0.0213,
      "longest_vad_not_in_ref": [
@@ -1001,10 +946,6 @@
        3721.95
       ],
       [
-       3734.21,
-       3735.92
-      ],
-      [
        9.96,
        11.63
       ],
@@ -1013,12 +954,16 @@
        935.87
       ],
       [
-       3739.57,
-       3741.09
-      ],
-      [
        2252.14,
        2253.59
+      ],
+      [
+       1008.09,
+       1009.5
+      ],
+      [
+       1075.09,
+       1076.47
       ]
      ]
     }
@@ -1052,12 +997,8 @@
     {
      "level": "info",
      "code": "silence_over_30s",
-     "message": "9 stretch(es) > 30 s with no reference speech",
+     "message": "7 stretch(es) > 30 s with no reference speech",
      "regions": [
-      [
-       0.0,
-       54.1
-      ],
       [
        4169.6,
        4201.9
@@ -1073,13 +1014,17 @@
       [
        4521.1,
        4556.7
+      ],
+      [
+       4631.8,
+       4678.2
       ]
      ]
     },
     {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 549 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 18.2% of reference speech"
+     "message": "energy VAD finds 511 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 17.0% of reference speech"
     }
    ],
    "metrics": {
@@ -1089,17 +1034,13 @@
      "floor_db": -60.6,
      "threshold_db": -45.2,
      "p99_db": -9.4,
-     "vad_speech_s": 3735.0,
+     "vad_speech_s": 3694.6,
      "ref_speech_s": 3012.1,
-     "vad_not_in_ref_s": 549.3,
-     "vad_not_in_ref_frac_of_ref": 0.1824,
+     "vad_not_in_ref_s": 510.7,
+     "vad_not_in_ref_frac_of_ref": 0.1695,
      "ref_not_in_vad_s": 70.6,
      "ref_not_in_vad_frac": 0.0234,
      "longest_vad_not_in_ref": [
-      [
-       28.48,
-       34.83
-      ],
       [
        4169.82,
        4175.95
@@ -1125,16 +1066,20 @@
        4552.72
       ],
       [
-       36.41,
-       40.38
-      ],
-      [
-       5083.47,
-       5087.4
-      ],
-      [
        3461.57,
        3465.47
+      ],
+      [
+       4565.52,
+       4569.35
+      ],
+      [
+       4202.28,
+       4206.06
+      ],
+      [
+       4748.12,
+       4751.64
       ]
      ]
     }
@@ -1173,7 +1118,7 @@
     {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 149 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 6.2% of reference speech"
+     "message": "energy VAD finds 138 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.7% of reference speech"
     }
    ],
    "metrics": {
@@ -1183,17 +1128,13 @@
      "floor_db": -54.1,
      "threshold_db": -41.2,
      "p99_db": -11.2,
-     "vad_speech_s": 2723.0,
+     "vad_speech_s": 2711.5,
      "ref_speech_s": 2412.6,
-     "vad_not_in_ref_s": 149.1,
-     "vad_not_in_ref_frac_of_ref": 0.0618,
+     "vad_not_in_ref_s": 138.3,
+     "vad_not_in_ref_frac_of_ref": 0.0573,
      "ref_not_in_vad_s": 23.2,
      "ref_not_in_vad_frac": 0.0096,
      "longest_vad_not_in_ref": [
-      [
-       3202.05,
-       3208.8
-      ],
       [
        2749.47,
        2753.48
@@ -1229,6 +1170,10 @@
       [
        2727.76,
        2729.9
+      ],
+      [
+       427.25,
+       429.36
       ]
      ]
     }
@@ -1281,7 +1226,7 @@
     {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 263 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 11.0% of reference speech"
+     "message": "energy VAD finds 262 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 10.9% of reference speech"
     }
    ],
    "metrics": {
@@ -1291,10 +1236,10 @@
      "floor_db": -49.5,
      "threshold_db": -37.6,
      "p99_db": -10.0,
-     "vad_speech_s": 2724.8,
+     "vad_speech_s": 2722.0,
      "ref_speech_s": 2397.8,
-     "vad_not_in_ref_s": 263.1,
-     "vad_not_in_ref_frac_of_ref": 0.1097,
+     "vad_not_in_ref_s": 261.8,
+     "vad_not_in_ref_frac_of_ref": 0.1092,
      "ref_not_in_vad_s": 24.9,
      "ref_not_in_vad_frac": 0.0104,
      "longest_vad_not_in_ref": [
@@ -1366,19 +1311,7 @@
   },
   {
    "session_id": "icsi__Bed011",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       3234.2,
-       3276.9
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 7,
     "word_time_outside_reference": 0.0001,
@@ -1386,20 +1319,16 @@
      "floor_db": -54.2,
      "threshold_db": -40.6,
      "p99_db": -8.7,
-     "vad_speech_s": 2702.1,
+     "vad_speech_s": 2694.2,
      "ref_speech_s": 2577.0,
-     "vad_not_in_ref_s": 84.2,
-     "vad_not_in_ref_frac_of_ref": 0.0327,
+     "vad_not_in_ref_s": 76.3,
+     "vad_not_in_ref_frac_of_ref": 0.0296,
      "ref_not_in_vad_s": 30.2,
      "ref_not_in_vad_frac": 0.0117,
      "longest_vad_not_in_ref": [
       [
        2627.63,
        2630.13
-      ],
-      [
-       3244.71,
-       3246.82
       ],
       [
        2619.02,
@@ -1430,8 +1359,12 @@
        99.7
       ],
       [
-       3236.46,
-       3237.88
+       45.03,
+       46.39
+      ],
+      [
+       2348.34,
+       2349.66
       ]
      ]
     }
@@ -1465,26 +1398,18 @@
     {
      "level": "info",
      "code": "silence_over_30s",
-     "message": "3 stretch(es) > 30 s with no reference speech",
+     "message": "1 stretch(es) > 30 s with no reference speech",
      "regions": [
-      [
-       0.0,
-       81.8
-      ],
       [
        566.3,
        601.8
-      ],
-      [
-       2599.0,
-       2634.3
       ]
      ]
     },
     {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 183 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 11.2% of reference speech"
+     "message": "energy VAD finds 141 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 8.6% of reference speech"
     }
    ],
    "metrics": {
@@ -1494,21 +1419,13 @@
      "floor_db": -60.1,
      "threshold_db": -46.5,
      "p99_db": -14.9,
-     "vad_speech_s": 2002.0,
+     "vad_speech_s": 1957.4,
      "ref_speech_s": 1636.7,
-     "vad_not_in_ref_s": 183.4,
-     "vad_not_in_ref_frac_of_ref": 0.1121,
+     "vad_not_in_ref_s": 140.8,
+     "vad_not_in_ref_frac_of_ref": 0.086,
      "ref_not_in_vad_s": 10.4,
      "ref_not_in_vad_frac": 0.0063,
      "longest_vad_not_in_ref": [
-      [
-       62.77,
-       69.33
-      ],
-      [
-       51.67,
-       57.56
-      ],
       [
        655.03,
        658.99
@@ -1518,16 +1435,8 @@
        683.71
       ],
       [
-       37.13,
-       40.31
-      ],
-      [
        2514.21,
        2517.33
-      ],
-      [
-       13.46,
-       16.49
       ],
       [
        566.57,
@@ -1540,6 +1449,22 @@
       [
        1527.83,
        1530.3
+      ],
+      [
+       988.26,
+       990.69
+      ],
+      [
+       2395.13,
+       2397.02
+      ],
+      [
+       2323.54,
+       2325.42
+      ],
+      [
+       603.87,
+       605.71
       ]
      ]
     }
@@ -1569,19 +1494,7 @@
   },
   {
    "session_id": "icsi__Bed013",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       3548.2,
-       3579.3
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 5,
     "word_time_outside_reference": 0.0001,
@@ -1589,10 +1502,10 @@
      "floor_db": -54.3,
      "threshold_db": -41.0,
      "p99_db": -10.1,
-     "vad_speech_s": 2960.1,
+     "vad_speech_s": 2958.9,
      "ref_speech_s": 2728.9,
-     "vad_not_in_ref_s": 128.0,
-     "vad_not_in_ref_frac_of_ref": 0.0469,
+     "vad_not_in_ref_s": 126.7,
+     "vad_not_in_ref_frac_of_ref": 0.0464,
      "ref_not_in_vad_s": 42.2,
      "ref_not_in_vad_frac": 0.0155,
      "longest_vad_not_in_ref": [
@@ -1625,16 +1538,16 @@
        20.57
       ],
       [
-       3548.46,
-       3550.46
-      ],
-      [
        628.14,
        630.1
       ],
       [
        1820.51,
        1822.36
+      ],
+      [
+       2691.89,
+       2693.7
       ]
      ]
     }
@@ -1671,20 +1584,9 @@
      "message": "1 segment(s) shorter than 50 ms"
     },
     {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       3173.1,
-       3544.6
-      ]
-     ]
-    },
-    {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 148 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.7% of reference speech"
+     "message": "energy VAD finds 144 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.5% of reference speech"
     }
    ],
    "metrics": {
@@ -1694,10 +1596,10 @@
      "floor_db": -72.5,
      "threshold_db": -53.6,
      "p99_db": -9.3,
-     "vad_speech_s": 3016.8,
+     "vad_speech_s": 3013.4,
      "ref_speech_s": 2604.5,
-     "vad_not_in_ref_s": 147.6,
-     "vad_not_in_ref_frac_of_ref": 0.0567,
+     "vad_not_in_ref_s": 144.2,
+     "vad_not_in_ref_frac_of_ref": 0.0554,
      "ref_not_in_vad_s": 1.2,
      "ref_not_in_vad_frac": 0.0005,
      "longest_vad_not_in_ref": [
@@ -1759,19 +1661,7 @@
   },
   {
    "session_id": "icsi__Bed015",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       4810.0,
-       4861.7
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 6,
     "word_time_outside_reference": 0.0001,
@@ -1779,20 +1669,16 @@
      "floor_db": -51.7,
      "threshold_db": -39.3,
      "p99_db": -10.4,
-     "vad_speech_s": 4015.1,
+     "vad_speech_s": 4011.8,
      "ref_speech_s": 4315.6,
-     "vad_not_in_ref_s": 58.3,
-     "vad_not_in_ref_frac_of_ref": 0.0135,
+     "vad_not_in_ref_s": 56.2,
+     "vad_not_in_ref_frac_of_ref": 0.013,
      "ref_not_in_vad_s": 162.4,
      "ref_not_in_vad_frac": 0.0376,
      "longest_vad_not_in_ref": [
       [
        15.86,
        18.4
-      ],
-      [
-       4810.27,
-       4812.51
       ],
       [
        3863.55,
@@ -1825,6 +1711,10 @@
       [
        4213.9,
        4215.11
+      ],
+      [
+       3276.91,
+       3278.1
       ]
      ]
     }
@@ -1861,20 +1751,9 @@
      "message": "1 segment(s) shorter than 50 ms"
     },
     {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       2631.2,
-       2828.9
-      ]
-     ]
-    },
-    {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 261 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 13.5% of reference speech"
+     "message": "energy VAD finds 258 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 13.4% of reference speech"
     }
    ],
    "metrics": {
@@ -1884,10 +1763,10 @@
      "floor_db": -56.0,
      "threshold_db": -41.5,
      "p99_db": -7.9,
-     "vad_speech_s": 2298.7,
+     "vad_speech_s": 2295.2,
      "ref_speech_s": 1930.9,
-     "vad_not_in_ref_s": 260.8,
-     "vad_not_in_ref_frac_of_ref": 0.1351,
+     "vad_not_in_ref_s": 258.2,
+     "vad_not_in_ref_frac_of_ref": 0.1337,
      "ref_not_in_vad_s": 40.3,
      "ref_not_in_vad_frac": 0.0209,
      "longest_vad_not_in_ref": [
@@ -1949,19 +1828,7 @@
   },
   {
    "session_id": "icsi__Bed017",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       2321.9,
-       2381.5
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 6,
     "word_time_outside_reference": 0.0001,
@@ -1969,10 +1836,10 @@
      "floor_db": -50.6,
      "threshold_db": -38.4,
      "p99_db": -10.2,
-     "vad_speech_s": 2035.3,
+     "vad_speech_s": 2032.9,
      "ref_speech_s": 1846.3,
-     "vad_not_in_ref_s": 78.5,
-     "vad_not_in_ref_frac_of_ref": 0.0425,
+     "vad_not_in_ref_s": 76.0,
+     "vad_not_in_ref_frac_of_ref": 0.0412,
      "ref_not_in_vad_s": 24.8,
      "ref_not_in_vad_frac": 0.0134,
      "longest_vad_not_in_ref": [
@@ -2098,10 +1965,10 @@
      "floor_db": -57.8,
      "threshold_db": -46.7,
      "p99_db": -20.8,
-     "vad_speech_s": 1919.7,
+     "vad_speech_s": 1918.2,
      "ref_speech_s": 2025.6,
-     "vad_not_in_ref_s": 47.3,
-     "vad_not_in_ref_frac_of_ref": 0.0234,
+     "vad_not_in_ref_s": 46.3,
+     "vad_not_in_ref_frac_of_ref": 0.0229,
      "ref_not_in_vad_s": 157.1,
      "ref_not_in_vad_frac": 0.0775,
      "longest_vad_not_in_ref": [
@@ -2181,7 +2048,7 @@
      "floor_db": -56.2,
      "threshold_db": -44.5,
      "p99_db": -17.1,
-     "vad_speech_s": 3777.3,
+     "vad_speech_s": 3776.6,
      "ref_speech_s": 4107.8,
      "vad_not_in_ref_s": 31.7,
      "vad_not_in_ref_frac_of_ref": 0.0077,
@@ -2347,9 +2214,9 @@
      "floor_db": -49.3,
      "threshold_db": -39.3,
      "p99_db": -15.9,
-     "vad_speech_s": 3887.4,
+     "vad_speech_s": 3887.1,
      "ref_speech_s": 4121.1,
-     "vad_not_in_ref_s": 29.0,
+     "vad_not_in_ref_s": 28.7,
      "vad_not_in_ref_frac_of_ref": 0.007,
      "ref_not_in_vad_s": 114.3,
      "ref_not_in_vad_frac": 0.0277,
@@ -2379,10 +2246,6 @@
        2152.21
       ],
       [
-       0.0,
-       1.05
-      ],
-      [
        188.38,
        189.32
       ],
@@ -2393,6 +2256,10 @@
       [
        2272.93,
        2273.7
+      ],
+      [
+       0.3,
+       1.05
       ]
      ]
     }
@@ -2685,10 +2552,10 @@
      "floor_db": -54.3,
      "threshold_db": -43.4,
      "p99_db": -17.7,
-     "vad_speech_s": 2353.8,
+     "vad_speech_s": 2353.6,
      "ref_speech_s": 2876.7,
-     "vad_not_in_ref_s": 16.1,
-     "vad_not_in_ref_frac_of_ref": 0.0056,
+     "vad_not_in_ref_s": 15.9,
+     "vad_not_in_ref_frac_of_ref": 0.0055,
      "ref_not_in_vad_s": 234.1,
      "ref_not_in_vad_frac": 0.0814,
      "longest_vad_not_in_ref": [
@@ -2713,12 +2580,12 @@
        2802.65
       ],
       [
-       2.34,
-       3.33
-      ],
-      [
        15.15,
        16.09
+      ],
+      [
+       2.58,
+       3.33
       ],
       [
        304.34,
@@ -2768,24 +2635,16 @@
      "floor_db": -53.6,
      "threshold_db": -44.0,
      "p99_db": -21.6,
-     "vad_speech_s": 3184.6,
+     "vad_speech_s": 3180.6,
      "ref_speech_s": 3586.6,
-     "vad_not_in_ref_s": 23.7,
-     "vad_not_in_ref_frac_of_ref": 0.0066,
+     "vad_not_in_ref_s": 20.1,
+     "vad_not_in_ref_frac_of_ref": 0.0056,
      "ref_not_in_vad_s": 187.4,
      "ref_not_in_vad_frac": 0.0522,
      "longest_vad_not_in_ref": [
       [
-       4018.96,
-       4021.84
-      ],
-      [
        4011.18,
        4012.84
-      ],
-      [
-       4014.85,
-       4016.29
       ],
       [
        3891.59,
@@ -2814,6 +2673,14 @@
       [
        2131.71,
        2132.54
+      ],
+      [
+       353.66,
+       354.47
+      ],
+      [
+       119.47,
+       120.26
       ]
      ]
     }
@@ -2857,10 +2724,10 @@
      "floor_db": -47.6,
      "threshold_db": -37.9,
      "p99_db": -15.3,
-     "vad_speech_s": 1905.1,
+     "vad_speech_s": 1901.8,
      "ref_speech_s": 2133.4,
-     "vad_not_in_ref_s": 29.4,
-     "vad_not_in_ref_frac_of_ref": 0.0138,
+     "vad_not_in_ref_s": 25.6,
+     "vad_not_in_ref_frac_of_ref": 0.012,
      "ref_not_in_vad_s": 159.0,
      "ref_not_in_vad_frac": 0.0745,
      "longest_vad_not_in_ref": [
@@ -2869,20 +2736,12 @@
        218.44
       ],
       [
-       0.0,
-       2.08
-      ],
-      [
        6.66,
        8.71
       ],
       [
        198.09,
        199.97
-      ],
-      [
-       3.51,
-       5.22
       ],
       [
        23.3,
@@ -2903,6 +2762,14 @@
       [
        134.96,
        136.09
+      ],
+      [
+       1281.28,
+       1282.36
+      ],
+      [
+       1908.53,
+       1909.52
       ]
      ]
     }
@@ -2940,10 +2807,10 @@
      "floor_db": -48.3,
      "threshold_db": -37.5,
      "p99_db": -12.6,
-     "vad_speech_s": 2137.8,
+     "vad_speech_s": 2137.7,
      "ref_speech_s": 2624.7,
-     "vad_not_in_ref_s": 46.4,
-     "vad_not_in_ref_frac_of_ref": 0.0177,
+     "vad_not_in_ref_s": 46.3,
+     "vad_not_in_ref_frac_of_ref": 0.0176,
      "ref_not_in_vad_s": 343.7,
      "ref_not_in_vad_frac": 0.131,
      "longest_vad_not_in_ref": [
@@ -3023,10 +2890,10 @@
      "floor_db": -52.6,
      "threshold_db": -42.1,
      "p99_db": -17.8,
-     "vad_speech_s": 2383.5,
+     "vad_speech_s": 2380.0,
      "ref_speech_s": 2407.0,
-     "vad_not_in_ref_s": 41.8,
-     "vad_not_in_ref_frac_of_ref": 0.0174,
+     "vad_not_in_ref_s": 38.9,
+     "vad_not_in_ref_frac_of_ref": 0.0162,
      "ref_not_in_vad_s": 95.2,
      "ref_not_in_vad_frac": 0.0396,
      "longest_vad_not_in_ref": [
@@ -3041,10 +2908,6 @@
       [
        695.15,
        697.83
-      ],
-      [
-       5.09,
-       7.42
       ],
       [
        374.37,
@@ -3069,6 +2932,10 @@
       [
        542.46,
        543.6
+      ],
+      [
+       512.47,
+       513.51
       ]
      ]
     }
@@ -3112,7 +2979,7 @@
      "floor_db": -48.2,
      "threshold_db": -37.8,
      "p99_db": -13.6,
-     "vad_speech_s": 3408.9,
+     "vad_speech_s": 3408.7,
      "ref_speech_s": 3502.2,
      "vad_not_in_ref_s": 19.7,
      "vad_not_in_ref_frac_of_ref": 0.0056,
@@ -3902,10 +3769,10 @@
      "floor_db": -53.1,
      "threshold_db": -41.3,
      "p99_db": -13.5,
-     "vad_speech_s": 2025.2,
+     "vad_speech_s": 2024.6,
      "ref_speech_s": 1971.9,
-     "vad_not_in_ref_s": 49.9,
-     "vad_not_in_ref_frac_of_ref": 0.0253,
+     "vad_not_in_ref_s": 49.3,
+     "vad_not_in_ref_frac_of_ref": 0.025,
      "ref_not_in_vad_s": 21.4,
      "ref_not_in_vad_frac": 0.0109,
      "longest_vad_not_in_ref": [
@@ -3942,12 +3809,12 @@
        2234.72
       ],
       [
-       2595.6,
-       2596.89
-      ],
-      [
        1488.6,
        1489.89
+      ],
+      [
+       2032.15,
+       2033.32
       ]
      ]
     }
@@ -4134,15 +4001,11 @@
     {
      "level": "info",
      "code": "silence_over_30s",
-     "message": "2 stretch(es) > 30 s with no reference speech",
+     "message": "1 stretch(es) > 30 s with no reference speech",
      "regions": [
       [
        6026.4,
        6108.1
-      ],
-      [
-       6118.8,
-       6157.8
       ]
      ]
     }
@@ -4154,10 +4017,10 @@
      "floor_db": -56.2,
      "threshold_db": -45.9,
      "p99_db": -21.7,
-     "vad_speech_s": 4844.6,
+     "vad_speech_s": 4836.8,
      "ref_speech_s": 5312.0,
-     "vad_not_in_ref_s": 68.3,
-     "vad_not_in_ref_frac_of_ref": 0.0129,
+     "vad_not_in_ref_s": 61.8,
+     "vad_not_in_ref_frac_of_ref": 0.0116,
      "ref_not_in_vad_s": 130.1,
      "ref_not_in_vad_frac": 0.0245,
      "longest_vad_not_in_ref": [
@@ -4190,16 +4053,16 @@
        6073.86
       ],
       [
-       6123.42,
-       6125.63
-      ],
-      [
        6089.1,
        6090.98
       ],
       [
-       6129.62,
-       6131.19
+       6068.93,
+       6070.46
+      ],
+      [
+       5920.07,
+       5921.58
       ]
      ]
     }
@@ -4243,10 +4106,10 @@
      "floor_db": -55.1,
      "threshold_db": -46.1,
      "p99_db": -26.2,
-     "vad_speech_s": 2275.9,
+     "vad_speech_s": 2274.3,
      "ref_speech_s": 2275.9,
-     "vad_not_in_ref_s": 44.7,
-     "vad_not_in_ref_frac_of_ref": 0.0197,
+     "vad_not_in_ref_s": 43.4,
+     "vad_not_in_ref_frac_of_ref": 0.0191,
      "ref_not_in_vad_s": 77.5,
      "ref_not_in_vad_frac": 0.0341,
      "longest_vad_not_in_ref": [
@@ -4421,17 +4284,6 @@
      "code": "segments_over_60s",
      "message": "1 segment(s) longer than 60 s (merged turns?)",
      "longest": 66.8
-    },
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       4148.0,
-       4207.7
-      ]
-     ]
     }
    ],
    "metrics": {
@@ -4441,10 +4293,10 @@
      "floor_db": -53.6,
      "threshold_db": -41.3,
      "p99_db": -12.5,
-     "vad_speech_s": 2951.9,
+     "vad_speech_s": 2947.8,
      "ref_speech_s": 3497.5,
-     "vad_not_in_ref_s": 60.1,
-     "vad_not_in_ref_frac_of_ref": 0.0172,
+     "vad_not_in_ref_s": 58.1,
+     "vad_not_in_ref_frac_of_ref": 0.0166,
      "ref_not_in_vad_s": 258.1,
      "ref_not_in_vad_frac": 0.0738,
      "longest_vad_not_in_ref": [
@@ -4481,12 +4333,12 @@
        76.04
       ],
       [
-       4187.44,
-       4188.83
-      ],
-      [
        193.72,
        195.11
+      ],
+      [
+       651.08,
+       652.41
       ]
      ]
     }
@@ -4516,19 +4368,7 @@
   },
   {
    "session_id": "icsi__Bro005",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       4199.2,
-       4234.1
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 7,
     "word_time_outside_reference": 0.0002,
@@ -4536,10 +4376,10 @@
      "floor_db": -56.2,
      "threshold_db": -46.6,
      "p99_db": -24.2,
-     "vad_speech_s": 3103.7,
+     "vad_speech_s": 3102.7,
      "ref_speech_s": 3217.8,
-     "vad_not_in_ref_s": 100.3,
-     "vad_not_in_ref_frac_of_ref": 0.0312,
+     "vad_not_in_ref_s": 99.5,
+     "vad_not_in_ref_frac_of_ref": 0.0309,
      "ref_not_in_vad_s": 148.1,
      "ref_not_in_vad_frac": 0.046,
      "longest_vad_not_in_ref": [
@@ -4613,20 +4453,9 @@
    "session_id": "icsi__Bro007",
    "issues": [
     {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       2050.3,
-       2134.3
-      ]
-     ]
-    },
-    {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 79 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.6% of reference speech"
+     "message": "energy VAD finds 76 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.4% of reference speech"
     }
    ],
    "metrics": {
@@ -4636,10 +4465,10 @@
      "floor_db": -51.6,
      "threshold_db": -42.5,
      "p99_db": -21.3,
-     "vad_speech_s": 1488.2,
+     "vad_speech_s": 1484.4,
      "ref_speech_s": 1425.4,
-     "vad_not_in_ref_s": 79.4,
-     "vad_not_in_ref_frac_of_ref": 0.0557,
+     "vad_not_in_ref_s": 76.3,
+     "vad_not_in_ref_frac_of_ref": 0.0535,
      "ref_not_in_vad_s": 41.0,
      "ref_not_in_vad_frac": 0.0287,
      "longest_vad_not_in_ref": [
@@ -4650,10 +4479,6 @@
       [
        1181.16,
        1183.51
-      ],
-      [
-       6.59,
-       8.08
       ],
       [
        1776.32,
@@ -4682,6 +4507,10 @@
       [
        958.08,
        959.29
+      ],
+      [
+       1150.7,
+       1151.89
       ]
      ]
     }
@@ -4726,10 +4555,10 @@
      "floor_db": -43.7,
      "threshold_db": -32.1,
      "p99_db": -4.9,
-     "vad_speech_s": 1178.6,
+     "vad_speech_s": 1177.3,
      "ref_speech_s": 1813.9,
-     "vad_not_in_ref_s": 50.7,
-     "vad_not_in_ref_frac_of_ref": 0.0279,
+     "vad_not_in_ref_s": 49.5,
+     "vad_not_in_ref_frac_of_ref": 0.0273,
      "ref_not_in_vad_s": 488.9,
      "ref_not_in_vad_frac": 0.2696,
      "longest_vad_not_in_ref": [
@@ -4750,10 +4579,6 @@
        1605.2
       ],
       [
-       2.19,
-       4.08
-      ],
-      [
        1354.75,
        1356.42
       ],
@@ -4772,6 +4597,10 @@
       [
        1295.02,
        1296.31
+      ],
+      [
+       932.49,
+       933.71
       ]
      ]
     }
@@ -4809,10 +4638,10 @@
      "floor_db": -55.2,
      "threshold_db": -44.1,
      "p99_db": -18.1,
-     "vad_speech_s": 2275.0,
+     "vad_speech_s": 2268.3,
      "ref_speech_s": 2355.5,
-     "vad_not_in_ref_s": 43.5,
-     "vad_not_in_ref_frac_of_ref": 0.0185,
+     "vad_not_in_ref_s": 36.8,
+     "vad_not_in_ref_frac_of_ref": 0.0156,
      "ref_not_in_vad_s": 72.0,
      "ref_not_in_vad_frac": 0.0306,
      "longest_vad_not_in_ref": [
@@ -4821,28 +4650,12 @@
        17.79
       ],
       [
-       2899.69,
-       2902.25
-      ],
-      [
-       0.53,
-       2.69
-      ],
-      [
-       2897.37,
-       2899.32
-      ],
-      [
        1569.88,
        1571.56
       ],
       [
        1585.34,
        1586.95
-      ],
-      [
-       3.13,
-       4.69
       ],
       [
        2319.38,
@@ -4855,6 +4668,22 @@
       [
        6.92,
        8.29
+      ],
+      [
+       63.46,
+       64.77
+      ],
+      [
+       2847.63,
+       2848.85
+      ],
+      [
+       813.23,
+       814.39
+      ],
+      [
+       2406.8,
+       2407.83
       ]
      ]
     }
@@ -4887,17 +4716,13 @@
      "floor_db": -57.9,
      "threshold_db": -41.5,
      "p99_db": -3.2,
-     "vad_speech_s": 1633.6,
+     "vad_speech_s": 1630.9,
      "ref_speech_s": 1719.2,
-     "vad_not_in_ref_s": 38.6,
-     "vad_not_in_ref_frac_of_ref": 0.0224,
+     "vad_not_in_ref_s": 36.3,
+     "vad_not_in_ref_frac_of_ref": 0.0211,
      "ref_not_in_vad_s": 142.8,
      "ref_not_in_vad_frac": 0.0831,
      "longest_vad_not_in_ref": [
-      [
-       2263.94,
-       2266.2
-      ],
       [
        24.5,
        26.15
@@ -4933,6 +4758,10 @@
       [
        13.71,
        14.88
+      ],
+      [
+       1596.13,
+       1597.3
       ]
      ]
     }
@@ -4977,10 +4806,10 @@
      "floor_db": -57.4,
      "threshold_db": -43.8,
      "p99_db": -12.1,
-     "vad_speech_s": 2928.1,
+     "vad_speech_s": 2927.5,
      "ref_speech_s": 3537.3,
-     "vad_not_in_ref_s": 42.2,
-     "vad_not_in_ref_frac_of_ref": 0.0119,
+     "vad_not_in_ref_s": 41.5,
+     "vad_not_in_ref_frac_of_ref": 0.0117,
      "ref_not_in_vad_s": 311.4,
      "ref_not_in_vad_frac": 0.088,
      "longest_vad_not_in_ref": [
@@ -5017,12 +4846,12 @@
        243.04
       ],
       [
-       3988.55,
-       3989.7
-      ],
-      [
        252.54,
        253.64
+      ],
+      [
+       3374.24,
+       3375.27
       ]
      ]
     }
@@ -5060,10 +4889,10 @@
      "floor_db": -54.6,
      "threshold_db": -42.8,
      "p99_db": -15.1,
-     "vad_speech_s": 1614.8,
+     "vad_speech_s": 1613.7,
      "ref_speech_s": 1882.5,
-     "vad_not_in_ref_s": 40.8,
-     "vad_not_in_ref_frac_of_ref": 0.0217,
+     "vad_not_in_ref_s": 39.9,
+     "vad_not_in_ref_frac_of_ref": 0.0212,
      "ref_not_in_vad_s": 147.8,
      "ref_not_in_vad_frac": 0.0785,
      "longest_vad_not_in_ref": [
@@ -5221,7 +5050,7 @@
      "floor_db": -52.6,
      "threshold_db": -41.7,
      "p99_db": -16.3,
-     "vad_speech_s": 810.4,
+     "vad_speech_s": 810.2,
      "ref_speech_s": 865.9,
      "vad_not_in_ref_s": 27.1,
      "vad_not_in_ref_frac_of_ref": 0.0313,
@@ -5953,7 +5782,7 @@
     {
      "level": "warning",
      "code": "possible_unannotated_speech",
-     "message": "energy VAD finds 144 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.4% of reference speech"
+     "message": "energy VAD finds 143 s of energy-speech (>= 0.5 s chunks) outside reference speech (+/-0.25 s): 5.4% of reference speech"
     }
    ],
    "metrics": {
@@ -5963,10 +5792,10 @@
      "floor_db": -57.2,
      "threshold_db": -45.0,
      "p99_db": -16.7,
-     "vad_speech_s": 2884.9,
+     "vad_speech_s": 2883.2,
      "ref_speech_s": 2666.5,
-     "vad_not_in_ref_s": 144.2,
-     "vad_not_in_ref_frac_of_ref": 0.0541,
+     "vad_not_in_ref_s": 143.2,
+     "vad_not_in_ref_frac_of_ref": 0.0537,
      "ref_not_in_vad_s": 64.0,
      "ref_not_in_vad_frac": 0.024,
      "longest_vad_not_in_ref": [
@@ -6305,19 +6134,7 @@
   },
   {
    "session_id": "icsi__Btr001",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       3854.8,
-       3978.4
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 7,
     "word_time_outside_reference": 0.0,
@@ -6390,19 +6207,7 @@
   },
   {
    "session_id": "icsi__Btr002",
-   "issues": [
-    {
-     "level": "info",
-     "code": "silence_over_30s",
-     "message": "1 stretch(es) > 30 s with no reference speech",
-     "regions": [
-      [
-       5206.5,
-       5318.9
-      ]
-     ]
-    }
-   ],
+   "issues": [],
    "metrics": {
     "num_speakers": 7,
     "word_time_outside_reference": 0.0002,

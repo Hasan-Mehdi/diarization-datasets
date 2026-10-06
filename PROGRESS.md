@@ -4,11 +4,10 @@ Running log for the unattended build of this repo. Work is tracked here, not in 
 
 ## Current status
 
-_Last updated: 2026-10-05 20:32 EDT (from the system clock)_
+_Last updated: 2026-10-05 21:11 EDT (from the system clock)_
 
-- **State:** all items of the original brief are done and pushed. **Waiting for the parallel Silero VAD study** (INBOX
-  16:49) to post its verdict, then integrating what it recommends; DONE marker after that. No verdict yet: the VAD study's last
-  activity was 18:55 (both sessions were paused by the usage limit; mine 18:43-20:32). I check the INBOX every ~10 minutes.
+- **State:** all items of the brief are done and pushed. The Silero VAD study reported at 21:03 and its
+  recommendations are integrated (branch `vad-study` merged); finishing the last ICSI refresh, then DONE.
 - **Delivered:** 18 free English datasets downloaded, normalized (one layout, NeMo/pyannote/Lhotse exports), validated
   (label sanity + energy VAD), profiled, evaluated with Nemotron 3 Diarization (25 dataset/view runs, collar 0 and
   0.25 s, every reference variant), and diagnosed (energy split, Whisper audit of false alarms, time-offset check).
@@ -95,6 +94,16 @@ Times before 13:27 are approximate (reconstructed from commit times).
 
 - 18:43-20:32: paused by usage limit (launcher waited).
 - 2026-10-05 20:32: resumed; no VAD-study verdict in INBOX yet; waiting.
+
+- 21:04: INBOX 21:03 (VAD study verdict) read and acknowledged. Merged `origin/vad-study` (fast-forward, files only
+  added; 32 tests pass). Integrated its recommendations: ICSI and AfriSpeech-Dialog UEMs cut to the transcribed span
+  +/- 1 s (AfriSpeech DER 26.7 -> 25.0%; ICSI unchanged for Nemotron); PriMock57 `rttm_alt/silero_channel`
+  (Nemotron 9.85% / 2.55%); `diards validate --vad --vad-backend silero_x2` (energy remains default/fallback);
+  optional `silero-vad` requirement (`--no-deps`); Silero metrics column in the catalog and Silero audit line in every
+  card; card findings for AMI (MFA drops in train/dev, 36 meetings with speech outside the transcript), Earnings-21
+  (call 4384964 ~12% unlabelled), ICSI, AfriSpeech, PriMock57; README section on the study. VAD_PROGRESS.md kept as
+  the study's log.
+- 2026-10-05 21:11: refresh of stats/validation/diagnosis for the re-prepared datasets.
 
 ## Skipped / blocked (with reasons)
 
