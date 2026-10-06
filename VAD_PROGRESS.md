@@ -6,9 +6,9 @@ experiments, not opinion. Deliverable: [docs/silero_vad_study.md](docs/silero_va
 
 ## Current status
 
-_Last updated: 2026-10-05 21:02 EDT (system clock)_
+_Last updated: 2026-10-05 21:05 EDT (system clock)_
 
-- **Now doing:** final commit, rebase onto origin/main, tests, push, INBOX note for the main agent, DONE.
+- **Now doing:** nothing; the study is finished (DONE written).
 - **Done:** everything in the brief. Write-up: [docs/silero_vad_study.md](docs/silero_vad_study.md); tables and
   exact commands: [results/vad/README.md](results/vad/README.md).
 - **Verdict:** use Silero (run twice, stock + 30 s state reset, frame-wise max = "x2") as a witness for reference
@@ -84,3 +84,6 @@ _Last updated: 2026-10-05 21:02 EDT (system clock)_
 - 2026-10-05 21:00: results JSON compacted (39 MB -> 17 MB: no indentation, flagged-region evidence only for the
   three Whisper-checked detectors, per-session pipeline rows only for the main variants); report regenerated;
   docs/silero_vad_study.md finalised; 32 tests pass.
+- 2026-10-05 21:03: rebased onto origin/main (only PROGRESS.md had changed there; no conflicts), 32 tests pass,
+  pushed; appended the verdict and integration list to D:\diarization-data\_session\INBOX.md.
+- 2026-10-05 21:05: wrote D:\diarization-data\_vad_session\DONE.
